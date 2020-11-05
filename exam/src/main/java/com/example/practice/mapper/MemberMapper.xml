@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.practice.mapper.MemberMapper">
+
+<!-- 회원가입 -->
+<insert id="register" parameterType="com.example.practice.domain.MemberVO">
+INSERT INTO user
+      (UID,   UPW,    UNAME,    UEMAIL)
+VALUES (#{uid},#{upw},#{uname},#{uemail})
+</insert>
+
+<!-- 로그인 -->
+<select id="login" resultType="com.example.practice.domain.MemberVO">
+SELECT UID,UNAME
+FROM user
+WHERE UID=#{uid} and UPW=#{upw}
+</select>
+
+
+</mapper>
