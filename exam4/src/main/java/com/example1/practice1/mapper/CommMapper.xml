@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example1.practice1.mapper.CommMapper">
+
+<!-- 커뮤니티 글 등록 -->
+<insert id="insertComm" parameterType="com.example1.practice1.domain.CommVO">
+INSERT INTO pro_comm
+	(cno,bno,subject,writer,content, reg_date)
+VALUES (#{cno}, #{bno}, #{subject}, #{writer}, #{content}, now())
+</insert>
+
+<!-- 커뮤니티 글 목록 
+<select id="commList" resultType="com.example1.practice1.domain.CommVO">
+SELECT * 
+FROM pro_comm
+ORDER BY cno  DESC
+</select>-->
+
+<!-- 게시글 페이징 -->
+<select id="commList" resultType="com.example1.practice1.domain.CommVO" parameterType="com.example1.practice1.domain.Criteria">
+SELECT cno, 
+		        SUBJECT, 
+		        CONTENT,
+		        WRITER, 
+		        REG_DATE
+		 FROM ( 
+		        SELECT CNO, 
+		               SUBJECT, 
+		               CONTENT, 
+		               WRITER, 
+		               REG_DATE, 
+		               ROW_NUMBER() OVER(ORDER BY BNO DESC) AS RNUM
+		         FROM pro_comm
+		         WHERE 1=1 
+		         	<include refid="search"></include>
+		                       ) MP
+		WHERE RNUM BETWEEN #{rowStart} AND #{rowEnd}
+		ORDER BY CNO DESC
+	</select>
+
+<!-- 게시글페이지 개수 -->
+<select id="listCount" parameterType="com.example1.practice1.domain.SearchCriteria" resultType="int">
+
+SELECT COUNT(cno)
+FROM pro_comm
+WHERE cno > 0  <!-- 참이라는 의미,bno가 0이상인 데이터들을 모두 조회한다는 의미  -->
+<include refid="search"></include>
+
+</select>
+<!-- 검색기능 -->
+<sql id="search">
+		<if test="searchType != null">
+			<if test="searchType == 's'.toString()">AND SUBJECT LIKE CONCAT('%',#{keyword},'%')</if>
+			<if test="searchType == 'c'.toString()">AND CONTENT LIKE CONCAT('%',#{keyword},'%')</if>
+			<if test="searchType == 'w'.toString()">AND WRITER LIKE CONCAT('%',#{keyword},'%')</if>
+			<if test="searchType == 'sc'.toString()">AND (SUBJECT LIKE CONCAT('%',#{keyword},'%')) or (CONTENT LIKE CONCAT('%',#{keyword},'%'))</if>
+		</if>
+	</sql>
+
+ 
+<!-- 커뮤니티 글 상세보기 -->
+<select id="commDetail" parameterType="int" resultType="com.example1.practice1.domain.CommVO" >
+SELECT * 
+FROM pro_comm
+WHERE cno = #{cno}
+</select>
+
+<!-- cno에 해당하는 게시글의 정보를 수정한다. -->
+<update id="commUpdate" parameterType="com.example1.practice1.domain.CommVO">
+UPDATE	pro_comm
+SET		<if test="subject != null and subject !=''">subject = #{subject}</if>
+		<if test="subject != null and subject !='' and content != null and content !=''"> , </if> <!-- ,의 의미는 여러개 넘어와야할때 사용. -->
+		<if test="content != null and content !=''">content = #{content}</if>
+WHERE	cno	= #{cno}
+</update>
+<!-- 게시글 삭제 -->
+<delete id="commDelete">
+DELETE FROM
+pro_comm
+WHERE cno = #{cno}
+
+</delete>
+
+
+
+</mapper>
