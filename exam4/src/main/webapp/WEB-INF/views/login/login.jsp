@@ -38,6 +38,7 @@
 						<button class="btn btn-info" type="button" id="proRegisterBtn">회원가입</button>
 					</div>
 				</div>
+				
 			</c:if>
 			<c:if test="${member != null }">
 				<div>

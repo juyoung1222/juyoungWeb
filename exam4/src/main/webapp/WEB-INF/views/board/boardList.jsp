@@ -27,7 +27,7 @@
 <div class="container-fluid">
 	<h2 align="left">자 유 게 시 판</h2>
 	<button class="btn btn-primary" onclick="location.href='/board/boardInsert'">글쓰기</button>
-	
+	<form action="/board/boardHit" method="post">
 	<table class="table table-hover table-bodered">
 		<thead>
 		
@@ -37,6 +37,7 @@
 				<th>작성자</th>
 				<th>내용</th>
 				<th>작성일시</th>
+				<th>조회수</th>
 			</tr>
 		</thead>
 		<c:if test="${list.size() <= 0}">
@@ -49,6 +50,8 @@
 		
 				<c:forEach var="board" items="${list}">
 			<tr>
+				<!-- <td class="info" onclick="location.href='/board/boardDetail/${board.bno}'">${board.bno}</td> -->
+				
 				<td class="info" onclick="location.href='/board/boardDetail/${board.bno}'">${board.bno}</td>
 				<td>${board.subject}
 				&nbsp;
@@ -60,11 +63,13 @@
 				<td>${board.writer}</td>
 				<td>${board.content}</td>
 				<td><fmt:formatDate value="${board.reg_date}" pattern="yyyy년 MM월 dd일"/></td>
+				<td><c:out value="${board.hit}"/></td>
 				<td class="warning" onclick="location.href='/board/detailComment/${board.bno}'">댓글</td>
 			</tr>
 		</c:forEach>
+	
 	</table>
-
+	</form>
 	<ul class="pagination justify-content-center">
 		<c:if test="${pageMaker.prev}">
 			<li class="page-item"><a href="/board/boardList${pageMaker.makeSearch(pageMaker.startPage-1)}">이전</a></li>

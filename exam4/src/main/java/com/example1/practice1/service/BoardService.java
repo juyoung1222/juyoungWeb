@@ -7,6 +7,8 @@ import javax.annotation.Resource;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Isolation;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.example1.practice1.controller.BoardController;
 import com.example1.practice1.domain.BoardVO;
@@ -29,6 +31,7 @@ public class BoardService {
 		return mapper.insertBoard(vo);
 	}
 	//게시글 목록보기
+	@Transactional(isolation = Isolation.READ_COMMITTED)
 	public List<BoardVO> boardList(SearchCriteria scri) throws Exception{
 		logger.info("service :" + scri );
 		List<BoardVO> list = mapper.boardList(scri);
@@ -44,8 +47,8 @@ public class BoardService {
 					}
 				}
 		
-		
-		return list;
+			
+			return mapper.boardList(scri);
 	
 		
 	}
@@ -74,5 +77,14 @@ public class BoardService {
 		return mapper.delete(bno);
 	}
 	
+	//게시글 조회수
+	public int boardHit(int bno) throws Exception{
+		logger.info("service hit ..." + bno);
+		return mapper.boardHit(bno);
+	
+	}
+
+		
+		
 	
 }

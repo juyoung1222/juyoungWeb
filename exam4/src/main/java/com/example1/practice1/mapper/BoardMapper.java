@@ -32,6 +32,8 @@ public int update(BoardVO vo) throws Exception;
 //게시글 삭제
 public int delete(int bno) throws Exception;
 
+//게시글 조회수
+public int boardHit(int bno) throws Exception;
 
 
 

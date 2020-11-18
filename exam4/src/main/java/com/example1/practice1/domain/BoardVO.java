@@ -15,7 +15,7 @@ public class BoardVO {
 	private Date reg_date;//게시글 작성일시
 	//신규 게시물에 new마크를 붙일지 말지 결정하는 논리필드 선언.
 	private boolean newMark;
-	
+	private int hit;//게시글 조회수
 	public BoardVO() {}
 	
 	public void setNewMark(boolean newMark) {
@@ -25,5 +25,17 @@ public class BoardVO {
 	public boolean isNewMark() {
 		return newMark;
 	}
+
+	public int getHit() {
+		return hit;
+	}
+
+	public void setHit(int hit) {
+		this.hit = hit;
+	}
+
+	
+
+
 
 }

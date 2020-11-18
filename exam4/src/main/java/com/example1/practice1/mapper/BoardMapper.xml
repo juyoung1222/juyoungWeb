@@ -26,13 +26,15 @@ SELECT bno,
 		        SUBJECT, 
 		        CONTENT,
 		        WRITER, 
-		        REG_DATE
+		        REG_DATE,
+		        HIT
 		 FROM ( 
 		        SELECT BNO, 
 		               SUBJECT, 
 		               CONTENT, 
 		               WRITER, 
 		               REG_DATE, 
+		               HIT,
 		               ROW_NUMBER() OVER(ORDER BY BNO DESC) AS RNUM
 		         FROM pro_board
 		         WHERE 1=1 
@@ -88,5 +90,10 @@ WHERE bno = #{bno}
 
 </delete>
 
-
+<!-- 게시글 조회수 -->
+<update id="boardHit" parameterType="int">
+	UPDATE pro_board
+	SET hit = hit + 1
+	WHERE bno = #{bno}
+</update>
 </mapper>
