@@ -17,9 +17,10 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
-      <li><a href="/board/boardList">Board</a></li>
-      <li><a href="/comm/commList">Community</a></li>
-     </ul>
+      <li><a href="/board/boardList">Community</a></li>
+      <li><a href="/board/uploadInsert">Upload</a></li>
+   </ul>   
+    
     <ul class="nav navbar-nav navbar-right">
       <li><a href="/login/register"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
      <c:if test="${member == null}">

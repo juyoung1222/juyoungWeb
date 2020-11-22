@@ -46,6 +46,8 @@
 					<button id="proUpdateBtn" type="button">회원정보수정</button>
 					<button id="proDeleteBtn" type="button">회원탈퇴</button>
 					<button id="logoutBtn" type="button">로그아웃</button> 
+					<button id="boardBtn" type="button">게시판</button>
+					<button id="commBtn" type="button">커뮤니티</button>
 				</div>
 			</c:if>
 			<c:if test="${msg == false}">
@@ -94,7 +96,12 @@ $(document).ready(function(){
 	$("#proDeleteBtn").on("click",function(){
 		location.href="/login/proDelete";
 		});
-	
+	$("#boardBtn").on("click",function(){
+		location.href="/board/boardList";
+		});
+	$("#commBtn").on("click",function(){
+		location.href="/comm/commList";
+		});
 })
 
 </script>

@@ -25,7 +25,12 @@
 <body>
 <div class="container-fluid">
 	<h2 align="left">자 유 게 시 판</h2>
+	<c:if test="${member != null }">
 	<button class="btn btn-primary" onclick="location.href='/comm/commInsert'">글쓰기</button>
+	</c:if>
+	<c:if test="${member == null}">
+	
+	</c:if>
 	<table class="table table-hover table-bodered">
 		<thead>
 			<tr>

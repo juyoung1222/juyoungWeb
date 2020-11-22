@@ -1,11 +1,14 @@
 package com.example1.practice1.controller;
 
+import java.io.File;
 import java.util.List;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
+import org.apache.commons.io.FilenameUtils;
+import org.apache.commons.lang3.RandomStringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.http.HttpRequest;
@@ -17,9 +20,13 @@ import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.multipart.MultipartFile;
 
 import com.example1.practice1.domain.BoardVO;
 import com.example1.practice1.domain.Criteria;
+import com.example1.practice1.domain.FileVO;
+import com.example1.practice1.domain.MemberVO;
 import com.example1.practice1.domain.PageMaker;
 import com.example1.practice1.domain.SearchCriteria;
 import com.example1.practice1.service.BoardService;
@@ -38,6 +45,8 @@ public class BoardController {
 	@RequestMapping(value = "/boardInsert", method = { RequestMethod.GET, RequestMethod.POST })
 	private String boardInsertForm() {
 		System.out.println("BoardController insert......");
+		
+		
 		return "/board/boardInsert";
 	}// end - private String boardInsertForm()
 	/*
@@ -49,27 +58,73 @@ public class BoardController {
 	 * logger.info("insert post...." + vo); service.insertBoard(vo); return
 	 * "/board/boardList"; }//end - private String postBoardInsert
 	 */
+	//파일 등록
+	@RequestMapping("/uploadInsert")
+	private String uploadInsert(FileVO file, Model model) throws Exception{
+		logger.info("uploadInsert get...");
+		
+		return "/board/uploadInsert";
+	}
 
 	@RequestMapping("/insertProc")
-	private String boardInsertProc(HttpServletRequest request) throws Exception {
+	private String boardInsertProc(HttpServletRequest request,@RequestPart MultipartFile files) throws Exception {
 
 		logger.info("insertproc get........");
 		BoardVO vo = new BoardVO();
+		FileVO file = new FileVO();
+		
+		logger.info("Files:"+files.getOriginalFilename());
+		logger.info("subject : " + request.getParameter("subject") );
 
 		vo.setSubject(request.getParameter("subject"));
 		vo.setContent(request.getParameter("content"));
 		vo.setWriter(request.getParameter("writer"));
-
+		
 		service.insertBoard(vo);
+		
+		if(files.isEmpty()) {
+			logger.info("isEmpty.....");
+			service.insertBoard(vo);
+		}else {
+			logger.info("NOT isEmpty.....");
+			
+			String fileName = files.getOriginalFilename();
+			String fileNameExtension = FilenameUtils.getExtension(fileName).toLowerCase();
+			File destinationFile;
+			String destinationFileName;
+			String fileUrl = "D:\\project\\juyoungWeb\\exam4\\src\\main\\webapp\\WEB-INF\\views\\upload";
+			
+			do {
+				destinationFileName = RandomStringUtils.randomAlphanumeric(32) + "." + fileNameExtension;
+				destinationFile = new File(fileUrl + destinationFileName);
+			}while(destinationFile.exists());
+			
+			destinationFile.getParentFile().mkdir();
+			files.transferTo(destinationFile);
+			
+		
+			
+			logger.info("FileName : " + destinationFileName);
+			//파일관련 자료를 files테이블에 등록한다.
+			file.setBno(vo.getBno());
+			file.setFileName(destinationFileName);
+			file.setFileOriName(fileName);
+			file.setFileUrl(fileUrl);
+			
+			service.fileInsert(file);
+		}
 		return "redirect:/board/boardList";
-	}
+		
+		}
 
 	// 게시글 목록보기
-	@RequestMapping(value = "/boardList", method = RequestMethod.GET)
+	@RequestMapping(value = "/boardList", method = { RequestMethod.GET, RequestMethod.POST })
 	private String boardList(Model model, @ModelAttribute("scri") SearchCriteria scri) throws Exception {
 
 		logger.info("boardList get...");
-
+		
+		
+		
 		List<BoardVO> list = service.boardList(scri);
 		model.addAttribute("list", list);
 		
@@ -79,18 +134,23 @@ public class BoardController {
 		pageMaker.setCri(scri);
 		pageMaker.setTotalCount(service.listCount(scri));
 		model.addAttribute("pageMaker", pageMaker);
+		
+		List<BoardVO> search = service.searchList(scri);
+		model.addAttribute("search", search);
 
 		return "/board/boardList";
 	}// end - private String boardList(Model model,@ModelAttribute("scri")
 		// SearchCriteria scri) throws Exception
+	
 
 	// 게시글 상세보기GET
 	@RequestMapping(value = "/boardDetail/{bno}", method = RequestMethod.GET)
-	private String detail(@PathVariable int bno, Model model) throws Exception {
+	private String detail(@PathVariable int bno,Model model) throws Exception {
 
 		logger.info("boarddatail get...");
 		model.addAttribute("detail", service.detail(bno));
-		 model.addAttribute("board", service.boardHit(bno));
+		model.addAttribute("board", service.boardHit(bno));
+		model.addAttribute("upload", service.uploadFileList(bno));
 		return "/board/boardDetail";
 	}// end - public String detail(@PathVariable int bno, Model model) throws
 		// Exception

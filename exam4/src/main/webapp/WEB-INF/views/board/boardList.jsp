@@ -26,7 +26,14 @@
 <body>
 <div class="container-fluid">
 	<h2 align="left">자 유 게 시 판</h2>
+	
+	<c:if test="${member != null }">
 	<button class="btn btn-primary" onclick="location.href='/board/boardInsert'">글쓰기</button>
+	</c:if>
+	<c:if test="${member == null}">
+	</c:if>
+	
+	
 	<form action="/board/boardHit" method="post">
 	<table class="table table-hover table-bodered">
 		<thead>
@@ -36,6 +43,7 @@
 				<th>제목</th>
 				<th>작성자</th>
 				<th>내용</th>
+				<th>파일업로드</th>
 				<th>작성일시</th>
 				<th>조회수</th>
 			</tr>
@@ -62,6 +70,7 @@
 				
 				<td>${board.writer}</td>
 				<td>${board.content}</td>
+				<td>${upload.fileUrl}</td>
 				<td><fmt:formatDate value="${board.reg_date}" pattern="yyyy년 MM월 dd일"/></td>
 				<td><c:out value="${board.hit}"/></td>
 				<td class="warning" onclick="location.href='/board/detailComment/${board.bno}'">댓글</td>

@@ -31,6 +31,10 @@
 			<label>내 용</label>
 			<p>${detail.content}</p>
 		</div>
+		<div class="form-group">
+			<label>파일 업로드</label>
+			<p>${upload.fileUrl}</p>
+		</div>
 		<button  class="btn btn-primary" onclick="location.href='/board/boardList'">목록으로</button>
 		<button class="btn btn-success" onclick="location.href='/board/boardUpdate/${detail.bno}'">수정</button>
 		<button class="btn btn-danger" onclick="location.href='/board/boardDelete/${detail.bno}'">삭제</button>

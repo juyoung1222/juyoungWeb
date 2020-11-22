@@ -145,6 +145,7 @@ $(document).ready(function() {
 			$("#userId").focus();
 			return false;
 		}
+		
 		if($("#userPw").val() == ""){
 			alert("비밀번호를 입력하세요");
 			$("#userPw").focus();

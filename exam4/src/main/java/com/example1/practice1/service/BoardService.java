@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.example1.practice1.controller.BoardController;
 import com.example1.practice1.domain.BoardVO;
 import com.example1.practice1.domain.Criteria;
+import com.example1.practice1.domain.FileVO;
 import com.example1.practice1.domain.SearchCriteria;
 import com.example1.practice1.mapper.BoardMapper;
 
@@ -27,7 +28,7 @@ public class BoardService {
 	
 	//게시글 등록
 	public int insertBoard(BoardVO vo) throws Exception{
-		logger.info("service : " + vo);
+		logger.info("service insertBoard...." + vo);
 		return mapper.insertBoard(vo);
 	}
 	//게시글 목록보기
@@ -46,7 +47,6 @@ public class BoardService {
 						article.setNewMark(true);
 					}
 				}
-		
 			
 			return mapper.boardList(scri);
 	
@@ -54,18 +54,18 @@ public class BoardService {
 	}
 	//게시글 총 갯수
 	public int listCount(SearchCriteria scri) throws Exception {
-		logger.info("service ...." + scri);
+		logger.info("service listCount....." + scri);
 		return mapper.listCount(scri);
 	}
 	
 	//게시글 상세보기
 	public BoardVO detail(int bno) throws Exception{
-		logger.info("service :" + bno);
+		logger.info("service detail....." + bno);
 		return mapper.detail(bno);
 	}
 	//게시글 수정
 	public int update(BoardVO vo) throws Exception{
-		logger.info("service : " + vo);
+		logger.info("service update..... " + vo);
 		System.out.println("BNO : " + vo.getBno());
 		System.out.println("SUBJECT : " + vo.getSubject());
 		System.out.println("CONTENT : " + vo.getContent());
@@ -73,7 +73,7 @@ public class BoardService {
 	}
 	//게시글 삭제
 	public int delete(int bno) throws Exception{
-		logger.info("service : " + bno);
+		logger.info("service delete.... " + bno);
 		return mapper.delete(bno);
 	}
 	
@@ -82,6 +82,22 @@ public class BoardService {
 		logger.info("service hit ..." + bno);
 		return mapper.boardHit(bno);
 	
+	}
+	//파일 올리기
+	public int fileInsert(FileVO file) throws Exception{
+		logger.info("service fileInsert..... " + file);
+		return mapper.fileInsert(file);
+	}
+	//파일 업로드 url보기
+	public FileVO uploadFileList(int bno) throws Exception{
+		logger.info("service upload.... " + bno);
+		return mapper.uploadFileList(bno);
+	}
+	//검색기능
+	public List<BoardVO> searchList(SearchCriteria scri) throws Exception{
+		logger.info("service search..." );
+		return  mapper.searchList(scri);
+		
 	}
 
 		
