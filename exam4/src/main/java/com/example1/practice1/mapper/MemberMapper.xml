@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example1.practice1.mapper.MemberMapper">
+<select id="idCheck" resultType="int">
+SELECT COUNT(*)
+FROM USERTABLE
+WHERE userId=#{userId}
+</select>
+
+<insert id="register">
+INSERT INTO USERTABLE
+	(USERID, USERPW, USERNAME, USERBIRTH, USERADDR1,USERADDR2, USERPHONE1, USERPHONE2, USERPHONE3, USEREMAIL)
+VALUES (#{userId}, #{userPw}, #{userName},#{userBirth}, #{address01}, #{address02}, #{tel1}, #{tel2}, #{tel3}, #{userEmail})
+</insert>
+
+<select id="login" resultType="com.example1.practice1.domain.MemberDTO">
+SELECT USERID,USERPW
+FROM USERTABLE
+WHERE USERID = #{userId}
+AND USERPW = #{userPw}
+</select>
+
+<update id="update" parameterType="com.example1.practice1.domain.MemberDTO">
+UPDATE USERTABLE
+	SET USERPW = #{userPw}, USERNAME = #{userName}
+	WHERE USERID = #{userId}
+</update>
+
+<delete id="delete">
+DELETE FROM
+USERTABLE
+WHERE USERID=#{userId}
+</delete>
+
+
+</mapper>

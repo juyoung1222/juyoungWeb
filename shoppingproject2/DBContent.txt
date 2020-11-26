@@ -1,0 +1,29 @@
+create table pro_member(
+	userId varchar(50) primary key,
+    userPw varchar(100) not null,
+    userName varchar(30) not null,
+    gender varchar(10) not null,
+    userBirth varchar(30) not null,
+    address01 varchar(200) not null,
+    address02 varchar(200) not null,
+    tel1 varchar(10) not null,
+    tel2 varchar(10) not null,
+    tel3 varchar(10) not null,
+    userEmail varchar(100) not null
+);
+
+create table pro_board(
+	bno int primary key auto_increment,
+    subject varchar(100) not null,
+    content varchar(200) not null,
+    writer varchar(50) not null,
+    reg_date datetime default current_timestamp
+);
+
+create table pro_comment(
+	cno int primary key auto_increment,
+    bno int not null,
+    content text,
+    writer varchar(40),
+    reg_date datetime default current_timestamp
+); 
