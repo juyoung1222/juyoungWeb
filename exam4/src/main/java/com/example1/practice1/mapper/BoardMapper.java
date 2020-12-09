@@ -34,8 +34,8 @@ public int update(BoardDTO boardDTO ) throws Exception;
 //게시글 삭제
 public int delete(int boardno) throws Exception;
 
-////게시글 조회수
-////public int boardHit(int boardno) throws Exception;
+//게시글 조회수
+public int boardHit(int boardno) throws Exception;
 //
 ////파일 올리기
 //public int fileInsert(FileVO file) throws Exception;
@@ -48,6 +48,7 @@ public int delete(int boardno) throws Exception;
 
 //댓글목록
 public List<CommentDTO> commentList(int boardno) throws Exception;
+
 
 
 

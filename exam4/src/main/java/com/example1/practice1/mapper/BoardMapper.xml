@@ -8,13 +8,13 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <!-- 게시글 등록 -->
 <insert id="insertBoard" parameterType="com.example1.practice1.domain.BoardDTO">
 INSERT	INTO	BOARDTABLE
-			(BOARDNO, 		SUBJECT, 	CONTENT, 	WRITER, 	REGDATE)
-	VALUES	(#{boardno},	#{subject},	#{content},	#{writer},	now() )
+			(BOARDNO, 		SUBJECT, 	CONTENT, 	WRITER, 	REGDATE, BOARDHIT)
+	VALUES	(#{boardno},	#{subject},	#{content},	#{writer},	now(), #{boardhit} )
 
 </insert>
 
  <!--게시글 목록보기   
-<select id="boardList" resultType="com.example1.practice1.domain.BoardBTO">
+<select id="boardList" resultType="com.example1.practice1.domain.BoardDTO">
 SELECT *
 FROM BOARDTABLE
 ORDER BY boardno DESC
@@ -34,24 +34,17 @@ SELECT BOARDNO,
 		        SUBJECT, 
 		        CONTENT,
 		        WRITER, 
-		        REGDATE
+		        REGDATE,
+		        BOARDHIT
 		        
-		 FROM ( 
-		        SELECT BOARDNO, 
-		               SUBJECT, 
-		               CONTENT, 
-		               WRITER, 
-		               REGDATE, 
-		               
-		               ROW_NUMBER() OVER(ORDER BY BOARDNO DESC) AS RNUM
-		         FROM BOARDTABLE
-		         WHERE 1=1 
-		         	<include refid="search"></include>
-		                       ) MP
-		WHERE RNUM BETWEEN #{rowStart} AND #{rowEnd}
-		ORDER BY BOARDNO DESC
-	</select>
+		 
+FROM BOARDTABLE
+WHERE 1=1
 
+	<include refid="search"></include>
+LIMIT #{rowStart}, #{rowEnd}	         	
+
+	</select>
 
 <!-- 게시글페이지 개수 -->
 <select id="listCount" parameterType="com.example1.practice1.domain.SearchCriteria" resultType="int">
@@ -60,8 +53,8 @@ SELECT COUNT(boardno)
 FROM BOARDTABLE
 WHERE boardno > 0  <!-- 참이라는 의미,bno가 0이상인 데이터들을 모두 조회한다는 의미  -->
 <include refid="search"></include>
-
 </select>
+
 <!-- 검색기능 -->
 <sql id="search">
 		<if test="searchType != null">
@@ -123,8 +116,10 @@ WHERE replycontentid = #{boardno}
 ORDER BY REPLYNO 
 </select>
 
-
-
-
-
+<!-- 게시글 조회수 -->
+<update id="boardHit" parameterType="int">
+	UPDATE BOARDTABLE
+	SET boardhit = boardhit + 1
+	WHERE boardno = #{boardno}
+</update>
 </mapper>

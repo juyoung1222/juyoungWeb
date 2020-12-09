@@ -1,3 +1,4 @@
+//회원테이블
 create table USERTABLE(
 USERID		VARCHAR(50) not null PRIMARY KEY,
 USERPW		VARCHAR(100) not null,
@@ -11,14 +12,17 @@ USERPHONE3	VARCHAR(20) not null,
 USEREMAIL	VARCHAR(100) not null
 );
 
+//게시판 테이블
 create table  BOARDTABLE( 
 BOARDNO	INT PRIMARY KEY AUTO_INCREMENT,
 SUBJECT		VARCHAR(100) NOT NULL,
 WRITER		VARCHAR(50) NOT NULL,
 CONTENT		VARCHAR(200) NOT NULL,
-REGDATE 	DATETIME DEFAULT CURRENT_TIMESTAMP
+REGDATE 	DATETIME DEFAULT CURRENT_TIMESTAMP,
+BOARDHIT INT not null 
 );
 
+//댓글 테이블
 create table REPLYTABLE(
 REPLYNO		INT PRIMARY KEY AUTO_INCREMENT,
 REPLYWRITERID		VARCHAR(50) not null,
@@ -31,14 +35,8 @@ REPLYTEXT		VARCHAR(500) not null
 );
 
 
-create table PRODUCTTABLE(
-PRODUCTNO		INT PRIMARY KEY AUTO_INCREMENT,
-PRODUCTIMAGEFILE	VARCHAR(500) not null,
-PRODUCTNAME		VARCHAR(500) not null,
-PRODUCTPRICE		INT not null,
-PRODUCTSALESCNT	INT not null
-);
 
+//장바구니테이블
 create table CARTTABLE(
 CARTNO			INT PRIMARY KEY AUTO_INCREMENT,
 CARTPRODUCTID 	INT  not null,
@@ -46,5 +44,40 @@ FOREIGN KEY (CARTPRODUCTID) REFERENCES PRODUCTTABLE(PRODUCTNO),
 CARTDATE		DATE not null,
 CARTUSERID 		VARCHAR(50) not null,
 FOREIGN KEY (CARTUSERID) REFERENCES USERTABLE(USERID)
+
 );
 
+//관리자테이블
+CREATE TABLE ADMINTABLE(
+MANAGERID  varchar(100) primary key not null,
+MANAGERPASSWD varchar(100) not null,
+MANAGERNAME varchar(100) not null
+);
+
+//상품테이블
+create table PRODUCTTABLE(
+PRODUCTNO		INT PRIMARY KEY AUTO_INCREMENT, ---------- 상품 번호
+PRODUCTIMAGEFILE	VARCHAR(500) not null, ---------- 상품 이미지파일
+PRODUCTIMAGENAME varchar(500) not null, ---------- 저장될 파일명
+PRODUCTIMAGEORINAME varchar(500) not null, ---------- 상품 이미지 원본 이름
+PRODUCTIMAGEURL varchar(500) not null, ---------- 상품 URL
+PRODUCTNAME		VARCHAR(500) not null,  ---------- 상품 이름
+PRODUCTPRICE		INT not null, ---------- 상품 가격
+PRODUCTSALESCNT	INT not null, ---------- 상품 판매 개수
+PRODUCTCID		INT not null, ---------- 상품 카테고리 ID 
+FOREIGN KEY (PRODUCTCID) REFERENCES PRODUCTCATEGORYTABLE(PRODUCTCATEGORYID) --------- 상품 카테고리별 분류 및 검색을 제공하기 위한 컬럼
+);
+
+//상품 카테고리 테이블
+CREATE TABLE PRODUCTCATEGORYTABLE(
+PRODUCTCATEGORYID	INT PRIMARY KEY AUTO_INCREMENT,  ---------- 상품 카테고리별 분류값 >> localhost8080/product/productlist?cid=2 >> 카테고리가 드레스인 상품 정보를 나타네는 상품 리스트 페이지
+PRODUCTCATEGORYNAME 	VARCHAR(100) not null ---------- 상품 카테고리 이름 예) 셔츠 바지 드레스...
+);
+
+//카테고리 더미 글 예시
+insert into PRODUCTCATEGORYTABLE  ----------
+(PRODUCTCATEGORYNAME ) values ('셔츠');  ----------
+insert into PRODUCTCATEGORYTABLE
+(PRODUCTCATEGORYNAME ) values ('드레스');
+insert into PRODUCTCATEGORYTABLE
+(PRODUCTCATEGORYNAME ) values ( '바지');

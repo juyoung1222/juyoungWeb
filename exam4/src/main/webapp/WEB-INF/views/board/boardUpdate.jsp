@@ -19,7 +19,7 @@
 		</div>
 		<div class="form-group">
 			<label for="writer">작 성 자</label>
-			<input type="text" class="form-control" id="writer" name="writer"readonly="readonly"/>
+			<input type="text" class="form-control" id="writer" name="writer" value="${detail.writer}" readonly="readonly"/>
 		</div>
 		<div class="form-group">
 			<label for="content">내 용</label>
@@ -31,6 +31,18 @@
 		
 	</form>
 </div>
+<script>
+$(document).ready(function(){
+	$(".btn-primary").on("click",function(){
+		if(${member == null}){
+			alert("로그인을 하셔야 합니다.");
+			location.href="/login/login";
+			}
+		
+		});
+	})
+</script>
+
 </body>
 </html>
 </layoutTag:layout>

@@ -29,51 +29,54 @@ public class MemberController {
 	
 	//메인
 	@GetMapping("/")
-	public String mainForm() {
+	private String mainForm() {
 		return "main";
 	}
 	//채팅
-	@RequestMapping("/chat/chat")
-	public String chatMain() throws Exception{
-		return "/chat/chat";
-	}
+//	@RequestMapping("/chat/chat")
+//	private String chatMain() throws Exception{
+//		return "/chat/chat";
+//	}
 
 	//회원가입GET
 	@RequestMapping(value="/login/register",method=RequestMethod.GET)
-	public String getRegister() throws Exception{
+	private String getRegister() throws Exception{
 		
 		logger.info("get register........");
+		
 		return "/login/register";
-	}//end - public String getRegister() throws Exception
+	}//end - private String getRegister() throws Exception
 
 	//회원가입POST
 	@RequestMapping(value="/login/register",method=RequestMethod.POST)
-	public String postRegister(MemberDTO memberDTO) throws Exception{
+	private String postRegister(MemberDTO memberDTO) throws Exception{
 		logger.info("post register......");
 		
+		//아이디 중복검사
 		int result = service.idCheck(memberDTO);
 		logger.info("ProjectController Return Count[" + result + "]" + memberDTO);
 		
 		try {
 			if(result == 1) {//아이디를 이미 사용하고 있으면
+				//회원가입창으로 보낸다.
 				return "/login/register";
-			}else if(result == 0) {//아이디가 존재하지 않다면
+			}else  {//아이디가 존재하지 않다면
 				System.out.println(memberDTO);
+				//회원가입 서비스로 간다.
 				service.register(memberDTO);
-			}
-			
-		} catch (Exception e) {
+				}
+		  } catch (Exception e) {
 			
 			
 		}
 		return "redirect:/login/login";
 		
-		}//end - public String postRegister(MemberVO vo) throws Exceptio
+		}//end - private String postRegister(MemberVO vo) throws Exceptio
 		
-	//아이디 중복검사
+		//아이디 중복검사
 		@ResponseBody
-		@RequestMapping(value="/login/idCheck",method=RequestMethod.POST)
-		public int idCheck(MemberDTO memberDTO) throws Exception{
+		@RequestMapping(value="/login/idCheck",method= {RequestMethod.POST,RequestMethod.GET})
+		private int idCheck(MemberDTO memberDTO) throws Exception{
 			logger.info("MemberController : " + memberDTO);
 			
 			//아이디 중복검사를 위해서 vo를 service에게 넘겨준다.
@@ -81,19 +84,20 @@ public class MemberController {
 			logger.info("MemberController Return Value [" + result + "]");
 			
 			return result;
-		}
+		}//end - private int idCheck(MemberDTO memberDTO) throws Exception
 		
 		//로그인 GET
 		@RequestMapping(value="/login/login", method=RequestMethod.GET)
-		public String getLogin() throws Exception{
+		private String getLogin() throws Exception{
 			
 			logger.info("login get.....");
 			return "/login/login";
 				
-		}//end - public String getLogin() throws Exception
+		}//end - private String getLogin() throws Exception
 		
+		//로그인 POST
 		@RequestMapping(value="/login/login", method=RequestMethod.POST)
-		public String postLogin(MemberDTO memberDTO,HttpServletRequest req, RedirectAttributes rttr) throws Exception{
+		private String postLogin(MemberDTO memberDTO,HttpServletRequest req, RedirectAttributes rttr) throws Exception{
 			logger.info("login post.....");
 			
 			HttpSession session = req.getSession();
@@ -113,37 +117,54 @@ public class MemberController {
 			}
 			return "redirect:/login/login";
 			
-		}
+		}//end - private String postLogin(MemberDTO memberDTO,HttpServletRequest req, RedirectAttributes rttr) throws Exception
+		
 		//로그아웃 GET
 		@RequestMapping(value="/login/logout",method=RequestMethod.GET)
-		public String getLogout(HttpSession session) throws Exception{
+		private String getLogout(HttpSession session) throws Exception{
+			
 			logger.info("projectController getLogout...");
+			
 			session.invalidate();
+			
 			return "redirect:/login/login";
-	     }
+	     }//end - private String getLogout(HttpSession session) throws Exception
+		
 		//회원정보수정GET
 		@RequestMapping(value="/login/proUpdate",method=RequestMethod.GET)
-		public String getUpdateView() throws Exception{
+		private String getUpdateView() throws Exception{
+			
 			logger.info("projectController getUpdate");
+			
 			return "/login/proUpdate";
-		}
+		}//end - private String getUpdateView() throws Exception
+		
 		//회원정보수정POST
 		@RequestMapping(value="/login/proUpdate",method=RequestMethod.POST)
-		public String postUpdate(MemberDTO memberDTO, HttpSession session) throws Exception{
+		private String postUpdate(MemberDTO memberDTO, HttpSession session) throws Exception{
+			
 			logger.info("projectController postUpdate");
+			
 			service.update(memberDTO);
+			
+			//세션을 종료
 			session.invalidate();
+			
 			return "redirect:/login/login";
-		}
+		}//end - private String postUpdate(MemberDTO memberDTO, HttpSession session) throws Exception
+		
 		//회원정보삭제GET
 		@RequestMapping(value="/login/proDelete",method=RequestMethod.GET)
-		public String getDeleteView() throws Exception{
+		private String getDeleteView() throws Exception{
+			
 			logger.info("projectController getDelete");
+			
 			return "/login/proDelete";
-		}
+		}//end - private String getDeleteView() throws Exception
+		
 		//회원정보삭제POST
 		@RequestMapping(value="/login/proDelete",method=RequestMethod.POST)
-		public String postDelete(MemberDTO memberDTO, HttpSession session, RedirectAttributes rttr) throws Exception{
+		private String postDelete(MemberDTO memberDTO, HttpSession session, RedirectAttributes rttr) throws Exception{
 			logger.info("projectController postDelete");
 			
 			//세션에 들어있는 member정보를 가져와서 member변수에 저장한다.
@@ -160,10 +181,12 @@ public class MemberController {
 				return "redirect:/login/proDelete";
 			}
 			service.delete(memberDTO);
+			//세션을 종료
 			session.invalidate();
+			
 			return "redirect:/login/login";
 			
-		}
+		}//end - private String postDelete(MemberDTO memberDTO, HttpSession session, RedirectAttributes rttr) throws Exception
 		
 		
 	

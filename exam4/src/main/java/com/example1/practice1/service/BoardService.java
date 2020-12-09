@@ -37,9 +37,20 @@ public class BoardService {
 	public List<BoardDTO> boardList(SearchCriteria scri) throws Exception{
 		logger.info("service :" + scri );
 		List<BoardDTO> list = mapper.boardList(scri);
-			return list;
-		
-	}
+		//1일 이내 신규글 new마크 처리 로직
+				for(BoardDTO article : list) {
+					//현재 시간 읽어오기
+					long now = System.currentTimeMillis();//밀리초로 읽기 15억... * 1000초  
+					//각 게시물들의 작성 시간 밀리초로 읽어오기
+					long regTime = article.getRegdate().getTime();
+					
+					if(now - regTime < 60 * 60 * 24 * 5 * 1000) {
+						article.setNewMark(true);
+					}
+				}
+				
+				return list;
+			}
 	//게시글 총 갯수
 	public int listCount(SearchCriteria scri) throws Exception {
 		logger.info("service listCount....." + scri);
@@ -67,11 +78,11 @@ public class BoardService {
 	}
 	
 	//게시글 조회수
-//	public int boardHit(int boardno) throws Exception{
-//		logger.info("service hit ..." + boardno);
-//		return mapper.boardHit(boardno);
-//	
-//	}
+	public int boardHit(int boardno) throws Exception{
+		logger.info("service hit ..." + boardno);
+		return mapper.boardHit(boardno);
+	
+	}
 //	//파일 올리기
 //	public int fileInsert(FileVO file) throws Exception{
 //		logger.info("service fileInsert..... " + file);
@@ -94,7 +105,7 @@ public class BoardService {
 		return mapper.commentList(boardno);
 	}
 	
-	
+
 
 	
 	

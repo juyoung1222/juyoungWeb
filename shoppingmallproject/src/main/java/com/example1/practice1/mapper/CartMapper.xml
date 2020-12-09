@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example1.practice1.mapper.CartMapper">
+
+<!-- 장바구니추가 -->
+<insert id="cartInsert" parameterType="com.example1.practice1.domain.CartDTO">
+INSERT INTO CARTTABLE
+	(CARTNO, CARTPRODUCTID, CARTDATE, CARTUSERID, CARTAMOUNT)
+VALUES (#{cartno},#{cartproductid},now(),#{cartuserid},#{cartamount})
+</insert>
+
+<!-- 장바구니목록 -->
+<select id="cartList" resultType="com.example1.practice1.domain.CartDTO">
+SELECT 
+	c.cartno as cartno,
+	c.cartuserid as cartuserid,
+	p.productno as productno,
+	m.username as username,
+	p.productname as productname,
+	c.amount,
+	p.productprice as productprice,
+	(productprice * cartamount) money
+FROM
+	MEMBERTABLE m, PRODUCTTABLE p, CARTTABLE c
+WHERE m.userid = c.cartproductid
+AND p.productno = c.cartproductid
+AND c.cartuserid = #{cartuserid}
+ORDER BY c.productid
+</select>
+
+<!--장바구니 전체 금액  -->
+<select id="sumMoney" resultType="int">
+SELECT NVL(SUM(productprict * cartamount),0) money
+FROM CARTTABLE c , PRODUCTTABLE p
+WEHRE c.cartproductid = p.productno and c.cartuserid = #{cartuserid}
+
+</select>
+
+</mapper>
