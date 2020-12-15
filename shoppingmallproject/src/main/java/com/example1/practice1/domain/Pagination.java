@@ -1,13 +1,13 @@
 package com.example1.practice1.domain;
 
 public class Pagination {
-	private int listSize = 10; // 초기값으로 목록개수를 10으로 셋팅
+	private int listSize = 4; // 초기값으로 목록개수를 10으로 셋팅
 
-	private int rangeSize = 10; // 초기값으로 페이지범위를 10으로 셋팅
+	private int rangeSize =7; // 초기값으로 페이지범위를 10으로 셋팅
 
-	private int page;//현재 페이지
+	private int page=1;//현재 페이지
 
-	private int range;//현재 페이지 범위
+	private int range=1;//현재 페이지 범위
 
 	private int listCnt;//게시물의 총개수
 
@@ -22,6 +22,7 @@ public class Pagination {
 	private boolean prev;
 
 	private boolean next;
+	
 	
 	private int	productcid;
 	
@@ -133,13 +134,14 @@ public class Pagination {
 
 	}
 	
+
 	
 
 	public int getProductcid() {
 		return productcid;
 	}
 
-	public void setProductid(int productcid) {
+	public void setProductcid(int productcid) {
 		this.productcid = productcid;
 	}
 
@@ -157,11 +159,11 @@ public class Pagination {
 
 		// 시작 페이지
 
-		this.startPage = (range - 1) * rangeSize + 1;
+		this.startPage = ((range - 1) * rangeSize) +1;
 
 		// 끝 페이지
 
-		this.endPage = range * rangeSize;
+		this.endPage = range + rangeSize ;
 
 		// 게시판 시작번호
 
@@ -187,8 +189,8 @@ public class Pagination {
 	public String toString() {
 		return "Pagination [listSize=" + listSize + ", rangeSize=" + rangeSize + ", page=" + page + ", range=" + range
 				+ ", listCnt=" + listCnt + ", pageCnt=" + pageCnt + ", startPage=" + startPage + ", startList="
-				+ startList + ", endPage=" + endPage + ", prev=" + prev + ", next=" + next + ", productcid="
-				+ productcid + "]";
+				+ startList + ", endPage=" + endPage + ", prev=" + prev + ", next=" + next + ", productcid=" + productcid
+				+ "]";
 	}
 
 	

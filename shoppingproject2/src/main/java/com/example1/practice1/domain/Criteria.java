@@ -2,10 +2,10 @@ package com.example1.practice1.domain;
 
 public class Criteria {
 
-	private int page;
-	private int perPageNum;
-	private int rowStart;
-	private int rowEnd;
+	private int page; 		// 페이지
+	private int perPageNum; //보여줄 게시글 페이지
+	private int rowStart;	//첫번째 페이지
+	private int rowEnd;		//끝페이지
 	
 	public Criteria() {
 		this.page = 1;

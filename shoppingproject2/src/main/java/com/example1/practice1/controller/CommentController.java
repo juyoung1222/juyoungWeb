@@ -35,28 +35,24 @@ public class CommentController {
 	CommentService mCommentService;
 	
 	// 로깅을 위한 변수
-		private static final Logger logger = LoggerFactory.getLogger(CommentController.class);
+	private static final Logger logger
+		= LoggerFactory.getLogger(CommentController.class);
+	
 	//댓글 등록
 	@RequestMapping(value="/insert",method= {RequestMethod.POST, RequestMethod.GET } )
 	@ResponseBody
 	private int mCommentServiceInsert(@RequestParam String replywriterid, @RequestParam String replytext, @RequestParam int replycontentid) throws Exception{
-		
 		logger.info("comment insert ....");
 		System.out.println("mCommentServiceInsert...");
 		//System.out.println("replyno[" + replyno + "]");
 		
+		//댓글내용, 댓글작성자아이디, 게시글 번호
 		logger.info("replytext[" + replytext + "]");
 		logger.info("replywriterid ===> " + replywriterid);
 		logger.info("replycontentid ===> " + replycontentid);
 		
-		
+		//ip주소 추가
 		HttpServletRequest req = ((ServletRequestAttributes)RequestContextHolder.currentRequestAttributes()).getRequest();
-		/*
-		String replyip = req.getHeader("X-FORWARDED-FOR");
-		if (replyip == null)
-			replyip = req.getRemoteAddr();
-		*/
-		
 		String replyip = req.getRemoteAddr();
 		if(replyip.equalsIgnoreCase("0:0:0:0:0:0:0:1")) {
 		    InetAddress inetAddress=InetAddress.getLocalHost();
@@ -69,11 +65,12 @@ public class CommentController {
 		
 		CommentDTO comment = new CommentDTO();
 		//comment.setReplyno(replyno);
+		
+		//댓글작성자아이디, 댓글내용, 댓글작성자ip, 게시글 번호
 		comment.setReplywriterid(replywriterid);
 		comment.setReplytext(replytext);
 		comment.setReplyip(replyip);
 		comment.setReplycontentid(replycontentid);
-		
 		logger.info("comment:"+comment);
 		
 		return mCommentService.commentInsertService(comment);
@@ -100,4 +97,34 @@ public class CommentController {
 		 return mCommentService.commentListService(boardno);		
 		
 	}//end - private List<CommentDTO> mCommentServiceList(@RequestParam String replywriterid, @RequestParam String replytext,@RequestParam Date replydate ) throws Exception
+	
+	//댓글수정
+	@ResponseBody
+	@RequestMapping("/update")
+	private int mCommentServiceUpdate(@RequestParam int replyno, @RequestParam String replytext) throws Exception{
+		logger.info("comment update....");
+		System.out.println("mCommentService Update......");
+		
+		logger.info("replyno[" +replyno+ "]");
+		logger.info("replytext[" + replytext + "]");
+		
+		//댓글번호,댓글내용 
+		CommentDTO comment = new CommentDTO();
+		comment.setReplyno(replyno);
+		comment.setReplytext(replytext);
+		
+		return mCommentService.commentUpdateService(comment);
+		
+	}//end - private int mCommentServiceUpdate(@RequestParam int replyno, @RequestParam String replytext) throws Exception
+	
+	//댓글 삭제
+	@ResponseBody
+	@RequestMapping("/delete/{replyno}")
+	private int mCommentServiceDelete(@PathVariable int replyno) throws Exception{
+		logger.info("comment delete.....");
+		System.out.println("mCommentService Delete......");
+		
+		return mCommentService.commentDeleteService(replyno);
+	} 
+	
 }

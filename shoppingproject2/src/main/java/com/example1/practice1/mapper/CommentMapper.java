@@ -13,9 +13,14 @@ public interface CommentMapper {
 	//댓글 목록
 	public List<CommentDTO> commentList(int replycontentid) throws Exception;
 	
-	
 	//댓글 등록
 	public int commentInsert(CommentDTO comment) throws Exception;
+	
+	//댓글 수정
+	public int commentUpdate(CommentDTO comment) throws Exception;
+	
+	//댓글 삭제
+	public int commentDelete(int replyno) throws Exception;
 	
 	
 	

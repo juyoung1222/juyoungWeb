@@ -19,4 +19,18 @@ FROM REPLYTABLE
 WHERE replycontentid = #{replycontentid}
 ORDER BY REPLYNO 
 </select>
+
+<!-- 댓글 수정 -->
+<update id="commentUpdate" parameterType="com.example1.practice1.domain.CommentDTO">
+UPDATE REPLYTABLE
+SET REPLYTEXT = #{replytext}
+WHERE REPLYNO = #{replyno}
+</update>
+
+<!-- 댓글 삭제 -->
+<delete id="commentDelete" parameterType="int">
+DELETE 
+FROM REPLYTABLE
+WHERE REPLYNO = #{replyno}
+</delete>
 </mapper>

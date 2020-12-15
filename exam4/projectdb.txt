@@ -56,27 +56,27 @@ MANAGERNAME varchar(100) not null
 
 //상품테이블
 create table PRODUCTTABLE(
-PRODUCTNO		INT PRIMARY KEY AUTO_INCREMENT, ---------- 상품 번호
-PRODUCTIMAGEFILE	VARCHAR(500) not null, ---------- 상품 이미지파일
-PRODUCTIMAGENAME varchar(500) not null, ---------- 저장될 파일명
-PRODUCTIMAGEORINAME varchar(500) not null, ---------- 상품 이미지 원본 이름
-PRODUCTIMAGEURL varchar(500) not null, ---------- 상품 URL
-PRODUCTNAME		VARCHAR(500) not null,  ---------- 상품 이름
-PRODUCTPRICE		INT not null, ---------- 상품 가격
-PRODUCTSALESCNT	INT not null, ---------- 상품 판매 개수
-PRODUCTCID		INT not null, ---------- 상품 카테고리 ID 
-FOREIGN KEY (PRODUCTCID) REFERENCES PRODUCTCATEGORYTABLE(PRODUCTCATEGORYID) --------- 상품 카테고리별 분류 및 검색을 제공하기 위한 컬럼
+PRODUCTNO		INT PRIMARY KEY AUTO_INCREMENT, 
+PRODUCTIMAGEFILE	VARCHAR(500) not null, 
+PRODUCTIMAGENAME varchar(500) not null, 
+PRODUCTIMAGEORINAME varchar(500) not null, 
+PRODUCTIMAGEURL varchar(500) not null, 
+PRODUCTNAME		VARCHAR(500) not null,  
+PRODUCTPRICE		INT not null, 
+PRODUCTSALESCNT	INT not null, 
+PRODUCTCID		INT not null, 
+FOREIGN KEY (PRODUCTCID) REFERENCES PRODUCTCATEGORYTABLE(PRODUCTCATEGORYID)
 );
 
 //상품 카테고리 테이블
 CREATE TABLE PRODUCTCATEGORYTABLE(
-PRODUCTCATEGORYID	INT PRIMARY KEY AUTO_INCREMENT,  ---------- 상품 카테고리별 분류값 >> localhost8080/product/productlist?cid=2 >> 카테고리가 드레스인 상품 정보를 나타네는 상품 리스트 페이지
-PRODUCTCATEGORYNAME 	VARCHAR(100) not null ---------- 상품 카테고리 이름 예) 셔츠 바지 드레스...
+PRODUCTCATEGORYID	INT PRIMARY KEY AUTO_INCREMENT,  
+PRODUCTCATEGORYNAME 	VARCHAR(100) not null 
 );
 
 //카테고리 더미 글 예시
-insert into PRODUCTCATEGORYTABLE  ----------
-(PRODUCTCATEGORYNAME ) values ('셔츠');  ----------
+insert into PRODUCTCATEGORYTABLE  
+(PRODUCTCATEGORYNAME ) values ('셔츠');  
 insert into PRODUCTCATEGORYTABLE
 (PRODUCTCATEGORYNAME ) values ('드레스');
 insert into PRODUCTCATEGORYTABLE

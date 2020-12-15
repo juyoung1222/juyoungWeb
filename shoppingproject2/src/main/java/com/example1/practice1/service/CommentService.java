@@ -34,5 +34,17 @@ public class CommentService {
 		return mCommentMapper.commentList(replycontentid);
 	}
 	
+	//댓글수정
+	public int commentUpdateService(CommentDTO comment) throws Exception{
+		logger.info("commentUpdateService.....");
+		return mCommentMapper.commentUpdate(comment);
+	}
+	
+	//댓글 삭제
+	public int commentDeleteService(int replyno) throws Exception{
+		logger.info("commentDeleteService...");
+		return mCommentMapper.commentDelete(replyno);
+	}
+	
 	
 }

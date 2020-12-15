@@ -42,7 +42,6 @@
 						<!--  <input type="hidden" id="cartno" name="cartno" value="${cartinsert.cartno}"/>-->
 						<!--<input type="hidden" id="cartproductid" name="cartproductid" value="${productdetail.productno}"/>-->
 						<input type="hidden" id="cartuserid" name="cartuserid" value="${member.userId}"/>
-						<input type="hidden" id="productimagefile" name="productimagefile" value="${product.productimagefile}"/>
 						<input type="hidden" id="productimagefileName" name="productimagefileName" value="${product.productimagefileName}"/>
 						<input type="hidden" id="productimagefileOriName" name="productimagefileOriName" value="${product.productimagefileOriName}"/>
 						<input type="hidden" id="productimagefileUrl" name="productimagefileUrl" value="${product.productimagefileUrl}"/>

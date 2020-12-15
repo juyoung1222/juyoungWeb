@@ -13,7 +13,7 @@ public class ProductDTO {
 	
 	private int productno;//상품번호
 	private String productkind;//상품종류
-	private String 	productimagefile;//상품이미지파일
+	//private String 	productimagefile;//상품이미지파일
 	private String productimagefileName;//상품이미지이름
 	private String productimagefileOriName;//상품이미지실제이름
 	private String productimagefileUrl;//상품이미지url

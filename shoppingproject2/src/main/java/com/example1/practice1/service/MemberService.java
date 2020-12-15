@@ -19,31 +19,31 @@ public class MemberService {
 	MemberMapper mapper;
 	
 	//아이디체크
-	public int idCheck(MemberDTO vo) throws Exception{
-		logger.info("ProjectService idCheck.......");
-		int result = mapper.idCheck(vo);
+	public int idCheck(MemberDTO memberDTO) throws Exception{
+		logger.info("MemberService idCheck.......");
+		int result = mapper.idCheck(memberDTO);
 		return result;
 	}
 	//회원가입
-	public void register(MemberDTO vo) throws Exception{
-		logger.info("ProjectService register........");
-		mapper.register(vo);
+	public void register(MemberDTO memberDTO) throws Exception{
+		logger.info("MemberService register........");
+		mapper.register(memberDTO);
 	}
 	
 	//로그인
-	public MemberDTO login(MemberDTO vo) throws Exception{
-		logger.info("ProjectService login......");
-		return mapper.login(vo);
+	public MemberDTO login(MemberDTO memberDTO) throws Exception{
+		logger.info("MemberService login......");
+		return mapper.login(memberDTO);
 	}
 	
 	//회원정보수정
-	public void update(MemberDTO vo) throws Exception{
-		logger.info("ProjectService update....");
-		mapper.update(vo);
+	public void update(MemberDTO memberDTO) throws Exception{
+		logger.info("MemberService update....");
+		mapper.update(memberDTO);
 	}
 	//회원탈퇴
-	public void delete(MemberDTO vo) throws Exception{
-		logger.info("ProjectService delete....");
-		mapper.delete(vo);
+	public void delete(MemberDTO memberDTO) throws Exception{
+		logger.info("MemberService delete....");
+		mapper.delete(memberDTO);
 	}
 }

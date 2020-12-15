@@ -47,7 +47,7 @@ public class ProductService {
 		@Transactional(isolation = Isolation.READ_COMMITTED)
 		public List<ProductDTO> productList(SearchCriteria scri) throws Exception{
 			logger.info("productlistservice :" + scri );
-			List<ProductDTO> list = mapper.productList(scri);
+			//List<ProductDTO> list = mapper.productList(scri);
 			return mapper.productList(scri);
 		}
 		
@@ -98,7 +98,7 @@ public class ProductService {
 			return mapper.search(searchName);
 		}
 		
-		//게시글 카테고리목록 보기
+//		//게시글 카테고리목록 보기
 		public List<ProductDTO> productcateListService(Pagination pagination) throws Exception {
 			System.out.println("productListService : " + pagination);
 			return mapper.ProductcateList(pagination);

@@ -33,6 +33,11 @@
 	.header{
 		background-color: #009900;
 	}
+  .fakeimg {
+    height: 200px;
+    background: #aaa;
+  }
+  
 </style>
 </head>
 <body>
@@ -57,12 +62,12 @@
           <li><a href="/product/productList/400">생필품</a></li>
          </ul>
       </li>
-      <li><a href="/product/productList">PRODUCT</a></li>
-      <li><a href="/board/boardList">COMMUNITY</a></li>
-      <li><a href="/login/register">SIGN UP</a></li>
-      <li><a href="/login/login">LOGIN</a></li>
-    </ul>
-  </div>
+	      <li><a href="/product/productList">PRODUCT</a></li>
+	      <li><a href="/board/boardList">COMMUNITY</a></li>
+	      <li><a href="/login/register">SIGN UP</a></li>
+	      <li><a href="/login/login">LOGIN</a></li>
+      </ul>
+   </div>
 </nav>
 
 <br>
@@ -76,6 +81,40 @@
 		<button type="submit">검색</button>
 	</form>
 </div>
+
+<div class="container">
+  <div class="row">
+    <div class="col-sm-4">
+     <h5>브랜드패션</h5>
+      	  <img src="/static/imagefile/dresses.jpg" alt="dresses">
+	      <p>드레스입니다.</p>
+	   <hr class="hidden-sm hidden-md hidden-lg">
+    </div>
+    <div class="col-sm-4">
+      <h5>스포츠</h5>
+     	  <img src="/static/imagefile/gym.jpg" alt="gym">
+	      <p>트레이닝입니다.</p>
+	  <h5>컴퓨터/가전</h5>
+	     	<img src="/static/imagefile/핸드폰.jpg" alt="핸드폰">
+      		<p>핸드폰입니다.</p>
+    </div>
+  </div>
+</div>
+
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <footer class="container-fluid text-center">
+<br>
+<hr>
+	<div id="copy">
+		All contents Copyright 2020 JYCHOI Inc. all rights reservied<br>
+		Contact mail : AAAA@naver.com Tel: +82 02 1234 5678 Fax +82 02
+		7777 8888
+	</div>
+	<a href="http://www.facebook.com"><i class="fa fa-facebook-square fa-2x" aria-hidden="true"></i></a>
+	<a href="http://www.instagram.com"><i class="fa fa-instagram fa-2x" aria-hidden="true"></i></a>
+</footer>
+</div>
+
   
 <script>
 	var availableTags = [
@@ -100,6 +139,7 @@ $(document).ready(function(){
 		});
 })
 </script>
+
 
 </body>
 </html>

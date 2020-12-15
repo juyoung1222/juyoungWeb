@@ -142,7 +142,7 @@ public class ProductController {
 			
 	}
 	
-//	// 게시글 카테고리 목록 보여주기
+	// 게시글 카테고리 목록 보여주기
 //	@RequestMapping(value = "/productList/{productcid}", method = RequestMethod.GET)
 //	private String ProductcateList(@PathVariable int productcid, Model model) throws Exception {
 //		
@@ -156,7 +156,7 @@ public class ProductController {
 //		int page = 1;
 //		int range = 1;
 //			pagination.pageInfo(page, range, listCnt);
-//			pagination.setProductid(productcid);
+//			pagination.setProductcid(productcid);
 //				System.out.println("*****productcid : " + pagination.getProductcid());
 //				
 //			model.addAttribute("pagination", pagination);
@@ -165,7 +165,7 @@ public class ProductController {
 //				
 //		return "/product/productList";
 //	}//end - private String ProductcateList(@PathVariable int productid, Model model) throws Exception
-//	
+	
 	
 	//상품리스트 상세보기
 	@RequestMapping(value = "/productDetail/{productno}", method = RequestMethod.GET)

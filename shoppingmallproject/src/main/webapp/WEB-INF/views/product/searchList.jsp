@@ -16,9 +16,14 @@
 		border: 2;
 		border-radius: 4;
 	}
-	.btn{
-		
-	}
+	.btn {
+	padding: 8px 10px;
+	background-color: #333;
+	color: #f1f1f1;
+	border-radius: 4;
+	transition: .2s;
+	margin-left: 35%;
+}
 </style>
 <meta charset="UTF-8">
 <title>searchList.jsp</title>
@@ -29,8 +34,7 @@
 				<c:forEach var="product" items="${search}">
 					<div class="col-sm-3">
 						<div class="thumbnail">
-							<img src="/static/upload/${product.productimageName}"
-								alt="이미지 업로드">
+							<img src="/static/upload/${product.productimagefileName}" alt="이미지 업로드">
 								<ul>
 								  <li>제품명 : ${product.productname}</li>
 								  <li>가격 : ${product.productprice} 원</li>

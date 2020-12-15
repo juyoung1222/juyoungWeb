@@ -11,7 +11,7 @@
 <title>boardUpdate.jsp</title>
 </head>
 <div class="container-fluid">
-	<h2 align="left">게 시 글 작 성</h2>
+	<h2 align="left">게 시 글 수 정</h2>
 	<form class="form-horizontal" action="/board/updateProc" method="post">
 		<div class="form-group">
 			<label for="subject">제 목</label>
@@ -19,7 +19,7 @@
 		</div>
 		<div class="form-group">
 			<label for="writer">작 성 자</label>
-			<input type="text" class="form-control" id="writer" name="writer"readonly="readonly"/>
+			<input type="text" class="form-control" id="writer" name="writer" value="${detail.writer}" readonly="readonly"/>
 		</div>
 		<div class="form-group">
 			<label for="content">내 용</label>
@@ -31,6 +31,18 @@
 		
 	</form>
 </div>
+<script>
+$(document).ready(function(){
+	$(".btn-primary").on("click",function(){
+		if(${member == null}){
+			alert("로그인을 하셔야 합니다.");
+			location.href="/login/login";
+			}
+		
+		});
+	})
+</script>
+
 </body>
 </html>
 </layoutTag:layout>

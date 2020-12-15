@@ -15,7 +15,14 @@ public class BoardDTO {
 	private String writer;//게시글 작성자
 	private String content;//게시글 내용
 	private Date regdate;//게시글 작성일시
+	private boolean newMark;//게시글 new 버튼
+	private int boardhit;//조회수
+	
 	
 	public BoardDTO() {}
+
+	
+	
+	
 
 }
