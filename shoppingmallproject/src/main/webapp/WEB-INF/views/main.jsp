@@ -8,86 +8,99 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<meta charset="UTF-8">
+<title>메인</title>
+	<script type="text/javascript" src="/static/jquery/lib/jquery.js"></script>
+	<script type='text/javascript' src='/static/jquery/lib/jquery.bgiframe.min.js'></script>
+	<script type='text/javascript' src='/static/jquery/lib/jquery.ajaxQueue.js'></script>
+	<script type='text/javascript' src='/static/jquery/jquery.autocomplete.js'></script>
+	<link rel="stylesheet" type="text/css" href="/static/jquery/jquery.autocomplete.css" />
+
 <style>
-body {
-  margin: 0;
-  font-size: 28px;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.header {
-  background-color: #f1f1f1;
-  padding: 30px;
-  text-align: center;
-}
-
-#navbar {
-  overflow: hidden;
-  background-color: #333;
-}
-
-#navbar a {
-  float: left;
-  display: block;
-  color: #f2f2f2;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 17px;
-}
-
-#navbar a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-#navbar a.active {
-  background-color: #4CAF50;
-  color: white;
-}
-
-.content {
-  padding: 16px;
-}
-
-.sticky {
-  position: fixed;
-  top: 0;
-  width: 100%;
-}
-
-.sticky + .content {
-  padding-top: 60px;
-}
-
+	
+	h2{
+		color : white;
+	}
+	p{
+		text-align:center;
+		
+	}
+	.header{
+		background-color: #009900;
+	}
 </style>
-<script type="text/javascript" src="/static/jquery/lib/jquery.js"></script>
-<script type='text/javascript' src='/static/jquery/lib/jquery.bgiframe.min.js'></script>
-<script type='text/javascript' src='/static/jquery/lib/jquery.ajaxQueue.js'></script>
-<script type='text/javascript' src='/static/jquery/jquery.autocomplete.js'></script>
-<link rel="stylesheet" type="text/css" href="/static/jquery/jquery.autocomplete.css" />
 </head>
 <body>
 
 <div class="header">
-  <h2>쇼핑몰</h2>
+  <h2 align="center">SHOPPING MALL</h2>
   <p>안녕하세요 오신것을 환영합니다.</p>
 </div>
 
-<div id="navbar">
-  <a class="active" href="/">Home</a>
-  <a href="/board/boardList">COMMUNITY</a>
-  <a href="/product/productList">product</a>
-  <a href="/login/register">SIGN UP</a>
-  <a href="/login/login">LOGIN</a>
-  
-</div>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/">ShoppingMall</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li class="active"><a href="/">Home</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CATEGORY<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/product/productList/100">컴퓨터/가전</a></li>
+          <li><a href="/product/productList/200">브랜드패션</a></li>
+          <li><a href="/product/productList/300">스포츠</a></li>
+          <li><a href="/product/productList/400">생필품</a></li>
+         </ul>
+      </li>
+      <li><a href="/product/productList">PRODUCT</a></li>
+      <li><a href="/board/boardList">COMMUNITY</a></li>
+      <li><a href="/login/register">SIGN UP</a></li>
+      <li><a href="/login/login">LOGIN</a></li>
+    </ul>
+  </div>
+</nav>
 
-<div class="content">
-  <h3></h3>
-  
+<br>
+<br>
+<br>
+<!-- 검색창 -->
+<div class="container">
+	<form class="form-inline" action="/product/searchList" method="post">
+		<input type="text" class="form-control" id="searchBox" name="searchName" size="100"
+			placeholder="검색어를 입력하세요">
+		<button type="submit">검색</button>
+	</form>
 </div>
+  
+<script>
+	var availableTags = [
+						'컴퓨터',
+						'노트북',
+						'핸드폰',
+						'폴로',
+						'지오다노',
+						'탑텐',
+						'나이키',
+						'아디다스',
+						'데상트',
+						'휴지',
+						'장갑'
+						];
+</script>
+<script>
+$(document).ready(function(){
+	$("#searchBox").autocomplete(availableTags,{
+			matchContains:true,
+			selectFirst : false
+		});
+})
+</script>
 
 </body>
 </html>
+

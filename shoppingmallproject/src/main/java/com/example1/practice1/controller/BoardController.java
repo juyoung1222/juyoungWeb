@@ -5,6 +5,7 @@ import java.util.List;
 
 import javax.annotation.Resource;
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -17,6 +18,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 
 import com.example1.practice1.domain.BoardDTO;
 import com.example1.practice1.domain.CommentDTO;
+import com.example1.practice1.domain.MemberDTO;
 import com.example1.practice1.domain.PageMaker;
 import com.example1.practice1.domain.SearchCriteria;
 import com.example1.practice1.service.BoardService;
@@ -38,20 +40,25 @@ public class BoardController {
 		return "/board/boardInsert";	
 	}
 	@RequestMapping("/insertProc")
-	private String boardInsertProc(HttpServletRequest request) throws Exception {
+	private String boardInsertProc(@ModelAttribute BoardDTO boardDTO, HttpServletRequest request,HttpSession session,Model model) throws Exception {
 
 		logger.info("insertproc get........");
-		BoardDTO boardDTO = new BoardDTO();
+		MemberDTO memberDTO = new MemberDTO();
+		
+		String writer = (String) session.getAttribute("userId"); 
 		
 		logger.info("subject : " + request.getParameter("subject") );
-
+		logger.info("writer : " + request.getParameter("writer"));
+		
+		//입력할 창의 값들을 요청한다.
 		boardDTO .setSubject(request.getParameter("subject"));
 		boardDTO .setContent(request.getParameter("content"));
-		boardDTO .setWriter(request.getParameter("writer"));
+		//boardDTO .setWriter(request.getParameter("writer"));
+		
+		
+		memberDTO.setUserId(writer);
 		
 		service.insertBoard(boardDTO);
-		
-		
 		return "redirect:/board/boardList";
 }
 	// 게시글 목록보기
@@ -62,6 +69,7 @@ public class BoardController {
 			List<BoardDTO> list = service.boardList(scri);
 			model.addAttribute("list", list);
 			
+			//페이징처리
 			PageMaker pageMaker = new PageMaker();
 			pageMaker.setCri(scri);
 			pageMaker.setTotalCount(service.listCount(scri));

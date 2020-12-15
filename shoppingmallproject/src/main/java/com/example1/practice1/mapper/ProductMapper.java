@@ -4,12 +4,15 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 
-
+import com.example1.practice1.domain.Pagination;
 import com.example1.practice1.domain.ProductDTO;
 import com.example1.practice1.domain.SearchCriteria;
 
 @Repository("com.example1.practice1.mapper.ProductMapper")
 public interface ProductMapper {
+	
+	//게시글의 개수
+	public int getproductListCnt() throws Exception;
 	
 	//상품추가
 	public int productInsert(ProductDTO productDTO) throws Exception;
@@ -37,6 +40,12 @@ public interface ProductMapper {
 	
 	//상품삭제
 	public int deleteProduct(int productno) throws Exception;
+	
+	//메인 검색 기능
+    public List<ProductDTO> search(String searchName) throws Exception;
+    
+    //product 카테고리
+    public List<ProductDTO> ProductcateList(Pagination pagination) throws Exception;
 
 
 }

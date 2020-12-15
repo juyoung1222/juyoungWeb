@@ -44,13 +44,14 @@
 						<ul class="dropdown-menu">
 							<li><a href="/product/productinsert">상품등록</a></li>
 							<li><a href="/product/productlist">상품목록(수정/삭제)</a></li>
+							<li><a href="/cart/list">장바구니</a></li>
 						</ul>
 					</li>
 					<li class="dropdown">
 						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
 						 게시판관리 <span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li><a href="/board/boardinsert">게시판등록</a></li>
+							<li><a href="/board/boardInsert">게시판등록</a></li>
 							<li><a href="/board/boardList">게시판목록(수정/삭제)</a></li>
 						</ul>
 					</li>

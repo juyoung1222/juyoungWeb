@@ -11,17 +11,17 @@ public class productPagination {
 
 	private int listCnt;//게시물의 총개수
 
-	private int pageCnt;
+	private int pageCnt;//페이지개수
 
-	private int startPage;
+	private int startPage;//첫페이지
 
-	private int startList;
+	private int startList;// 게시판 시작번호
 
-	private int endPage;
+	private int endPage; // 끝 페이지
 
-	private boolean prev;
+	private boolean prev; // 이전
 
-	private boolean next;
+	private boolean next; // 다음
 	
 	public int getRangeSize() {
 

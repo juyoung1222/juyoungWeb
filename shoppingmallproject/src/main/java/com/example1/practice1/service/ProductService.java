@@ -13,6 +13,7 @@ import org.springframework.transaction.annotation.Transactional;
 import com.example1.practice1.controller.ProductController;
 import com.example1.practice1.domain.BoardDTO;
 import com.example1.practice1.domain.FileDTO;
+import com.example1.practice1.domain.Pagination;
 import com.example1.practice1.domain.ProductDTO;
 import com.example1.practice1.domain.SearchCriteria;
 import com.example1.practice1.mapper.ProductMapper;
@@ -27,9 +28,15 @@ public class ProductService {
 	private static final Logger logger 
 		= LoggerFactory.getLogger(ProductController.class);
 	
-		//상품등록
-		public int productInsert(ProductDTO productDTO) throws Exception{
-			return mapper.productInsert(productDTO);
+	//상품등록
+	public int productInsert(ProductDTO productDTO) throws Exception{
+		logger.info("productDTO : " + productDTO);
+		return mapper.productInsert(productDTO);
+	}
+	//상품리스트 개수
+	public int getProductListCnt() throws Exception{
+		logger.info("listcnt.......");
+		return mapper.getproductListCnt();
 	}
 //	//파일 올리기
 //	public int fileInsert(FileDTO file) throws Exception{
@@ -83,6 +90,18 @@ public class ProductService {
 			
 			return mapper.deleteProduct(productno);
 			
+		}
+		//메인 검색 기능
+		public List<ProductDTO> search(String searchName) throws Exception{
+			logger.info("service search...." + searchName);
+			
+			return mapper.search(searchName);
+		}
+		
+		//게시글 카테고리목록 보기
+		public List<ProductDTO> productcateListService(Pagination pagination) throws Exception {
+			System.out.println("productListService : " + pagination);
+			return mapper.ProductcateList(pagination);
 		}
 			
 	}

@@ -8,6 +8,11 @@
 <!DOCTYPE html>
 <html>
 <head>
+<style>
+	.container{
+			margin-top: 5%;
+		}
+</style>
 <meta charset="UTF-8">
 <title>productInsert.jsp</title>
 </head>
@@ -85,6 +90,18 @@
 				</div>
 			</div>
 		</div>
+		<div class="form-group">
+			<label class="control-label col-sm-2">카테고리</label>
+				<div class="col-sm-2">
+					<select name="productcid" id="productcid">
+					    <option value="">종류 선택</option>
+					    <option value=1>컴퓨터/가전</option>
+					    <option value=2>브랜드패션</option>
+					    <option value=3>스포츠</option>
+					    <option value=4>생필품</option>
+					 </select>
+				</div>
+			</div>
 		<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-4">
 			<button class="btn btn-success" type="submit" id="submit">상품등록</button>

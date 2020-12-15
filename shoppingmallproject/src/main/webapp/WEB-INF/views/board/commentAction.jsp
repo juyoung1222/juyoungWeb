@@ -10,6 +10,11 @@ var boardno= '${detail.boardno}';	//게시글 번호
 $('[name=commentInsertBtn]').click(function() {
 	//alert("commentInsertBtn.....");
 	//alert("commentList....");
+	
+	//로그인을 하지않고 댓글 등록버튼을 눌렀을 때 alert창이 뜸.
+	if(${member == null}){
+		alert("로그인을 하셔야 합니다.");
+	}
 	var insertData = $('[name=commentInsertForm]').serialize();	//commentInsertForm의 내용을 가져온다.
 	
 	commentInsert(insertData);	
@@ -80,11 +85,25 @@ function commentUpdate(replyno, replytext){
 	//alert("commentUpdate replyno:"+replyno);
 	//alert("commentUpdate replytext:"+replytext);
 
+	str +='<c:if test="${member != null}">';
+		alert('로그인한 회원입니다.');
+	
 	str += '<div class="input-group">';
 	//str += '<input type="text" class="form-control" name="replytext_' +replytext +'" value="' +replytext + '"/>';
 	str += '<input type="text" class="form-control" name="replytext_' +replyno +'" value="' +replytext + '"/>';
 	str += '<span class="input-group-btn"><button class="btn btn-warning" type="button" onclick="mCommentServiceUpdate('+replyno+')";>수정</button></span>';
 	str += '</div>';
+	str += '</c:if>';
+
+	str += '<c:if test="${member == null}">';
+	alert('수정할 권한이 없습니다.');
+
+	//str += '<div class="input-group">';
+	str += '<input type="text" class="form-control" name="replytext_' +replyno +'" value="' +replytext + '"/>';
+	str += '</c:if>';
+	//str += '<span class="input-group-btn"><button class="btn btn-warning" type="button" onclick="mCommentServiceUpdate('+replyno+')";>수정</button></span>';
+	//str += '</div>';
+	
 	$('.commentContent' + replyno).html(str);
 }
 
@@ -108,7 +127,25 @@ function mCommentServiceUpdate(replyno){
 //댓글 삭제
 function commentDelete(replyno){
 	//alert("commentDelete");
+	var str = '';
+	//alert("commentUpdate replyno:"+replyno);
+	//alert("commentUpdate replytext:"+replytext);
+	
+	str += '<c:if test="${member == null}">';
 
+	alert('삭제할 권한이 없습니다.');
+
+		//str += '<div class="input-group">';
+		str += '<input type="text" class="form-control" name="replytext_' +replyno +'" value="' +replytext + '"/>';
+		//str += '<span class="input-group-btn"><button class="btn btn-warning" type="button" onclick="mCommentServiceUpdate('+replyno+')";>수정</button></span>';
+		//str += '</div>';
+		str += '</c:if>';
+		//str += '<p>테스트</p>';
+		
+		//str += '<c:if test="${admin != null || member !=null}">';
+			//alert('관리자입니다.');
+		//str += '</c:if>';
+		
 	$.ajax({
 		url : '/comment/delete/' + replyno,
 		type : 'post',

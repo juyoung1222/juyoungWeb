@@ -75,21 +75,26 @@ public class BoardController {
 //	}
 
 	@RequestMapping("/insertProc")
-	private String boardInsertProc(HttpServletRequest request) throws Exception {
+	private String boardInsertProc(@ModelAttribute BoardDTO boardDTO, HttpServletRequest request,HttpSession session,Model model) throws Exception {
 
 		logger.info("insertproc get........");
-		BoardDTO boardDTO = new BoardDTO();
+		MemberDTO memberDTO = new MemberDTO();
+		
+		//작성자를 memberdto에 userId를 부른다.
+		String writer = (String) session.getAttribute("userId"); 
 		
 		logger.info("subject : " + request.getParameter("subject") );
+		logger.info("writer : " + request.getParameter("writer"));
 		
 		//입력할 창의 값들을 요청한다.
 		boardDTO .setSubject(request.getParameter("subject"));
 		boardDTO .setContent(request.getParameter("content"));
-		boardDTO .setWriter(request.getParameter("writer"));
+		//boardDTO .setWriter(request.getParameter("writer"));
+		
+		
+		memberDTO.setUserId(writer);
 		
 		service.insertBoard(boardDTO);
-		
-		
 		return "redirect:/board/boardList";
 		
 		}//end - private String boardInsertProc(HttpServletRequest request) throws Exception 
@@ -108,9 +113,6 @@ public class BoardController {
 		pageMaker.setTotalCount(service.listCount(scri));
 		model.addAttribute("pageMaker", pageMaker);
 		
-//		List<BoardVO> search = service.searchList(scri);
-//		model.addAttribute("search", search);
-		
 		return "/board/boardList";
 	}// end - private String boardList(Model model,@ModelAttribute("scri")
 		// SearchCriteria scri) throws Exception
@@ -123,7 +125,7 @@ public class BoardController {
 		logger.info("boarddatail get...");
 		model.addAttribute("detail", service.detail(boardno));
 		
-//		model.addAttribute("upload", service.uploadFileList(boardno));
+
 		return "/board/detailComment";
 	}// end - private String detail(@PathVariable int bno, Model model) throws
 		// Exception

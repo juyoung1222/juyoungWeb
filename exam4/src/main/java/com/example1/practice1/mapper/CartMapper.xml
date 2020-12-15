@@ -11,6 +11,7 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 			pro.PRODUCTIMAGEFILE, pro.productimageName, pro.productimageOriName, pro.productimageUrl, pro.PRODUCTNAME, pro.PRODUCTPRICE, pro.PRODUCTSALESCNT
 	FROM	CARTTABLE cart, PRODUCTTABLE pro
 	WHERE	cart.CARTPRODUCTID = pro.PRODUCTNO
+	ORDER BY PRODUCTNO DESC
 	</select>
 	
 	<!-- 장바구니 등록 -->

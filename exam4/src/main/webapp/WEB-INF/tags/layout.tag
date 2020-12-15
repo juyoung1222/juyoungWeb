@@ -4,3 +4,4 @@
 <tag:header/>
 <tag:navbar/>
 <jsp:doBody/>
+<tag:footer/>

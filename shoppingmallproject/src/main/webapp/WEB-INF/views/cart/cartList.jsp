@@ -13,58 +13,77 @@
 </head>
 <body>
 <h2>장바구니 확인</h2>
-<c:choose>
-	<c:when test="${map.cartamount == 0}">
+
+	<c:if test="${map.cartamount == 0}">
 		장바구니가 비었습니다.
-	</c:when>
-	<c:otherwise>
-		<form action="/cart/cartList" method="post">
-			<table border="1">
+	</c:if>
+<div class="container">
+	<form action="/cart/cartList" method="post">
+		<table class="table table-hover table-bordered">
+			<thead>
 				<tr>
+					<th>번호</th>
+					<th>이미지</th>
 					<th>상품명</th>
-					<th>단가</th>
-					<th>수량</th>
-					<th>금액</th>
+					<th>구매아이디</th>
+					<th>가격</th>
+					<th>구매 수량</th>
+					<!-- <th>할인 판매 가격</th> -->
+					
 				</tr>
-				<c:forEach var="row" items="${map.list}" varStatus="i">
-					<tr>
-						<td>
-							${row.productname}
-						</td>
-						<td>
-							<fmt:formatNumber pattern="###,###,###" value="${row.productprice}"/>
-						</td>
-						<td>
-							<input type="number" style="width:40px" name="amount" value="${row.amount}"/>
-							<input type="hidden" name="productname" value="${row.productname}"/>
-						</td>
-						<td style="width:100px" align="right">
-							<fmt:formatNumber pattern="###,###,###" value="${row.productprice}"/>
-						</td>
-					</tr>
-				</c:forEach>
+			</thead>
+			<c:forEach var="cart" items="${map.list}">
 				<tr>
-					<td colspan="5" align="right">
-					장바구니 금액 합계 : <fmt:formatNumber pattern="###,###,###" value="${map.sumMoney}"/><br>
-					배송료 : ${map.fee}<br>
-					전체 주문금액 : <fmt:formatNumber pattern="###,###,###" value="${map.allSum}"/>
+					<td>${cart.cartno}</td>
+					<td><img src="/static/upload/${cart.productimagefile}" alt="이미지업로드"></td>
+					<td>${cart.productname}</td>
+					<td>${member.userId}</td>
+					<td>
+						<fmt:formatNumber pattern="###,###,###" value="${cart.productprice}"/>
+					</td>
+					<!--  <td><select name="productsalescnt">
+						<c:forEach begin="1" end="10" var="i">
+							<option value="${i}">${i}</option>
+						</c:forEach>
+						</select>&nbsp;개
+							<a href="/cart/cartUpdate">변경</a>
+					</td>-->
+					<!--<td>
+					 <c:set var="sum" value="${Math.round(cart.productprice * (100-cart.productdiscount)/100) }"/>
+					 <fmt:formatNumber pattern="###,###,###" value="${sum}"/>
+					</td>-->
+					<td><button type="button" class="btn btn-danger" onclick="location.href='/cart/cartDelete/${cart.cartno}',alert('삭제 완료')">삭제</button>
+					<button class="btn btn-warning"  onclick="location.href='/cart/cartDelete/${cart.cartno}',alert('구매 완료')">구매 하기</button>
+					<!--  <button class="btn btn-primary" onclick="location.href='/cart/cartUpdate/${cart.cartno}'">수정하기</button></td>-->
+				</tr>
+					<c:set var="sum1" value="${sum1 + (cart.productprice * cart.productsalescnt )}"/>
+					<!-- <fmt:formatNumber pattern="###,###,###" value="${sum}"/>-->
+		</c:forEach>
+	
+				<tr class="danger">
+					<td colspan="7" align="right">
+						<b><font size="+1">총 구매금액 :<fmt:formatNumber pattern="###,###,###" value="${sum1}" />원</font></b>
 					</td>
 				</tr>
-			</table>
-			<input type="hidden" name="count" value="${map.count}">
-			<button type="submit" class="btn btn-danger" id="btnUpdate">수정</button>
-		</form>
-	</c:otherwise>
-			<button type="button" id="btnList" class="btn btn-success">상품 목록</button>
-</c:choose>
-<script>
-$(document).ready(function(){
-	$("#btnList").on("click",function(){
-		location.href="/product/productList";
-		});
-})
-</script>
-
+				
+				
+			<tbody></tbody>
+			
+		</table>
+		<div class="input-group">
+					<input type="hidden" name="cartproductid" value="${product.productno}"/>
+					<input type="hidden" id="productname" name="productname" value="${product.productname}"/>
+					<!--  <input type="hidden" id="cartno" name="cartno" value="${cartinsert.cartno}"/>-->
+					<!--<input type="hidden" id="cartproductid" name="cartproductid" value="${productdetail.productno}"/>-->
+					<input type="hidden" id="cartuserid" name="cartuserid" value="${member.userId}"/>
+					<input type="hidden" id="productimagefileName" name="productimagefileName" value="${product.productimagefileName}"/>
+					<input type="hidden" id="productimagefileOriName" name="productimagefileOriName" value="${product.productimagefileOriName}"/>
+					<input type="hidden" id="productimagefileUrl" name="productimagefileUrl" value="${product.productimagefileUrl}"/>
+					<!--<input type="hidden" id="productprice" name="productprice" value="${product.productprice}"/>-->
+					<!--  <input type="hidden" id="productsalescnt" name="productsalescnt" value="${product.productsalescnt}"/>-->
+				</div>	
+	</form>
+</div>
 </body>
 </html>
 </layoutTag:layout>

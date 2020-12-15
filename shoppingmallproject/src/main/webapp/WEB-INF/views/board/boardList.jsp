@@ -50,7 +50,7 @@ ul{list-style:none; float:center; padding:6px;}
 		</thead>
 		<c:if test="${list.size() <= 0}">
 			<tr>
-				<td colspan="5" align="center">
+				<td colspan="6" align="center">
 				<strong>검색 결과가 없습니다!!</strong>
 				</td>
 			</tr>
@@ -63,7 +63,7 @@ ul{list-style:none; float:center; padding:6px;}
 				<td class="info" onclick="location.href='/board/detailComment/${board.boardno}'">${board.boardno}</td>
 				<td>${board.subject}
 				&nbsp;
-									<c:if test="${b.newMark}">
+									<c:if test="${board.newMark}">
 										<span class="badge badge-pill badge-danger">new</span>
 									</c:if>
 									
@@ -98,10 +98,10 @@ ul{list-style:none; float:center; padding:6px;}
 		<form id="searchForm" action="/board/boardList">
 			<select name="searchType">
 				<option value="n"<c:out value="${scri.searchType == null ? 'selected' : ''}"/>>-----</option>
-      		<option value="s"<c:out value="${scri.searchType eq 's' ? 'selected' : ''}"/>>제목</option>
-      		<option value="c"<c:out value="${scri.searchType eq 'c' ? 'selected' : ''}"/>>내용</option>
-      		<option value="w"<c:out value="${scri.searchType eq 'w' ? 'selected' : ''}"/>>작성자</option>
-      		<option value="sc"<c:out value="${scri.searchType eq 'sc' ? 'selected' : ''}"/>>제목+내용</option>
+	      		<option value="s"<c:out value="${scri.searchType eq 's' ? 'selected' : ''}"/>>제목</option>
+	      		<option value="c"<c:out value="${scri.searchType eq 'c' ? 'selected' : ''}"/>>내용</option>
+	      		<option value="w"<c:out value="${scri.searchType eq 'w' ? 'selected' : ''}"/>>작성자</option>
+	      		<option value="sc"<c:out value="${scri.searchType eq 'sc' ? 'selected' : ''}"/>>제목+내용</option>
 				</select>
 			<input type="text" name="keyword" id="keywordInput" value="${scri.keyword}"/>
 			<button class="btn btn-primary btn-sm">검색</button>
@@ -111,7 +111,7 @@ ul{list-style:none; float:center; padding:6px;}
 
   <script>
 $(document).ready(function(){
-        $('#searchBtn').click(function() {
+        $('.btn-primary').click(function() {
        self.location = "/board/boardList" + '${pageMaker.makeQuery(1)}' + "&searchType=" + $("select option:selected").val() + "&keyword=" + encodeURIComponent($('#keywordInput').val());
         });
       }); 

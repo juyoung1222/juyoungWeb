@@ -64,9 +64,7 @@ public class ProductService {
 		System.out.println("productListService : " + pagination);
 		return productMapper.ProductcateList(pagination);
 	}
-//	// 서비스는 매퍼를 호출한다.
-//	@Resource(name = "com.edu.Product.mapper.ProductMapper")
-//	ProductMapper ProductMapper;
+
 
 	//메인 검색 기능
 	public List<ProductDTO> search(String searchName) throws Exception{

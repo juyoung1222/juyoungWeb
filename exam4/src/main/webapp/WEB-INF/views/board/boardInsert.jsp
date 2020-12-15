@@ -13,15 +13,24 @@
 <body>
 <div class="container-fluid">
 	<h2 align="left">게 시 글 작 성</h2>
-	<form class="form-horizontal" action="/board/insertProc" method="post" enctype="multipart/form-data">
+	<form class="form-horizontal" action="/board/insertProc" method="post">
 		<div class="form-group">
 			<label for="subject">제 목</label>
 			<input type="text" class="form-control" id="subject" name="subject" placeholder="제목을 입력하세요"/>
 		</div>
+		<c:if test="${member != null}">
 		<div class="form-group">
 			<label for="writer">작 성 자</label>
-			<input type="text" class="form-control" id="writer" name="writer" placeholder="작성자를 입력하세요"/>
+			 <input type="text" class="form-control" id="writer" name="writer" value="${member.userId}" readonly="readonly"/>
 		</div>
+	</c:if> 
+		
+		<c:if test="${member == null}">
+		<div class="form-group">
+			<label for="writer">작 성 자</label>
+			 <input type="text" class="form-control" id="writer" name="writer" placeholder="작성자를 입력하세요"/>
+		</div>
+	</c:if> 
 		<div class="form-group">
 			<label for="content">내 용</label>
 			<textarea rows="4" cols="100" class="form-control" id="content" name="content" placeholder="내용을 입력하세요"></textarea>

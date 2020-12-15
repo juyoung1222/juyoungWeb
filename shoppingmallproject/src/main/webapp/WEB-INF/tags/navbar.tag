@@ -17,8 +17,18 @@
     </div>
     <ul class="nav navbar-nav">
       <li class="active"><a href="/">Home</a></li>
-      <li><a href="/board/boardList">Community</a></li>
-      <li><a href="/product/productInsert">Product</a></li>
+      <li><a href="/board/boardList">COMMUNITY</a></li>
+      <li><a href="/product/productList">PRODUCT</a></li>
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">CATEGORY<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/product/productList/100">컴퓨터/가전</a></li>
+          <li><a href="/product/productList/200">브랜드패션</a></li>
+          <li><a href="/product/productList/300">스포츠</a></li>
+          <li><a href="/product/productList/400">생필품</a></li>
+        
+          
+        </ul>
+      </li>
    </ul>   
     
     <ul class="nav navbar-nav navbar-right">

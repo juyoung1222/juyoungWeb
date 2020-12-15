@@ -42,7 +42,6 @@ public class CommentController {
 	@RequestMapping(value="/insert",method= {RequestMethod.POST, RequestMethod.GET } )
 	@ResponseBody
 	private int mCommentServiceInsert(@RequestParam String replywriterid, @RequestParam String replytext, @RequestParam int replycontentid) throws Exception{
-		
 		logger.info("comment insert ....");
 		System.out.println("mCommentServiceInsert...");
 		//System.out.println("replyno[" + replyno + "]");
@@ -54,12 +53,6 @@ public class CommentController {
 		
 		//ip주소 추가
 		HttpServletRequest req = ((ServletRequestAttributes)RequestContextHolder.currentRequestAttributes()).getRequest();
-		/*
-		String replyip = req.getHeader("X-FORWARDED-FOR");
-		if (replyip == null)
-			replyip = req.getRemoteAddr();
-		*/
-		
 		String replyip = req.getRemoteAddr();
 		if(replyip.equalsIgnoreCase("0:0:0:0:0:0:0:1")) {
 		    InetAddress inetAddress=InetAddress.getLocalHost();
@@ -78,7 +71,6 @@ public class CommentController {
 		comment.setReplytext(replytext);
 		comment.setReplyip(replyip);
 		comment.setReplycontentid(replycontentid);
-		
 		logger.info("comment:"+comment);
 		
 		return mCommentService.commentInsertService(comment);

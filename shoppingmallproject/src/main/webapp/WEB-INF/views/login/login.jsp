@@ -48,6 +48,7 @@
 					<button id="logoutBtn" type="button">로그아웃</button> 
 					<button id="boardBtn" type="button">게시판</button>
 					<button id="productBtn" type="button">상품리스트</button>
+					<button id="cartBtn" type="button">장바구니리스트</button>
 				</div>
 			</c:if>
 			<c:if test="${msg == false}">
@@ -100,8 +101,12 @@ $(document).ready(function(){
 	$("#boardBtn").on("click",function(){
 		location.href="/board/boardList";
 		});
+	//상품리스트버튼을 눌렀을 경우
 	$("#productBtn").on("click",function(){
 		location.href="/product/productList";
+		});
+	$("#cartBtn").on("click",function(){
+		location.href="/cart/cartList";
 		});
 })
 

@@ -40,7 +40,7 @@ public class CartController {
 	
 	@RequestMapping(value = "/insertCart", method = { RequestMethod.GET, RequestMethod.POST})
 	//@RequestMapping(value = "/insertCart", method = RequestMethod.POST)
-	private String insertCart(CartDTO cartDTO, Model model, HttpServletRequest request) throws Exception {
+	private String insertCart(CartDTO cartDTO, Model model, HttpServletRequest request,HttpSession session) throws Exception {
 		logger.info("insertCart()....");
 		
 		//CartDTO cartDTO = new CartDTO();
@@ -51,6 +51,8 @@ public class CartController {
 		logger.info("cartuserid : " + cartuserid);
 		
 		////cartService.insertCart(cartDTO);
+	
+	
 		
 		model.addAttribute("inserCart", cartService.insertCart(cartDTO));
 		

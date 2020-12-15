@@ -115,13 +115,15 @@ public class MemberController {
 					logger.info("projectController getLogout...");
 					session.invalidate();
 					return "redirect:/login/login";
-			     }
+			     }//end - public String getLogout(HttpSession session) throws Exception
+				
 				//회원정보수정GET
 				@RequestMapping(value="/login/proUpdate",method=RequestMethod.GET)
 				public String getUpdateView() throws Exception{
 					logger.info("projectController getUpdate");
 					return "/login/proUpdate";
-				}
+				}//end - public String getUpdateView() throws Exception
+				
 				//회원정보수정POST
 				@RequestMapping(value="/login/proUpdate",method=RequestMethod.POST)
 				public String postUpdate(MemberDTO memberDTO, HttpSession session) throws Exception{
@@ -129,13 +131,15 @@ public class MemberController {
 					service.update(memberDTO);
 					session.invalidate();
 					return "redirect:/login/login";
-				}
+				}//end - public String postUpdate(MemberDTO memberDTO, HttpSession session) throws Exception
+				
 				//회원정보삭제GET
 				@RequestMapping(value="/login/proDelete",method=RequestMethod.GET)
 				public String getDeleteView() throws Exception{
 					logger.info("projectController getDelete");
 					return "/login/proDelete";
-				}
+				}//end - public String getDeleteView() throws Exception
+				
 				//회원정보삭제POST
 				@RequestMapping(value="/login/proDelete",method=RequestMethod.POST)
 				public String postDelete(MemberDTO memberDTO, HttpSession session, RedirectAttributes rttr) throws Exception{
@@ -158,7 +162,7 @@ public class MemberController {
 					session.invalidate();
 					return "redirect:/login/login";
 					
-				}
+				}//end - public String postDelete(MemberDTO memberDTO, HttpSession session, RedirectAttributes rttr) throws Exception
 				
 				
 			

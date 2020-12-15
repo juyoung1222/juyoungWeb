@@ -13,7 +13,7 @@ public class PageMaker {
 	private int endPage;//끝 페이지
 	private boolean prev;//이전
 	private boolean next;//다음
-	private int displayPageNum = 4;
+	private int displayPageNum = 4;//보여지는 게시글 개수
 	private Criteria cri;
 	
 	public Criteria getCri() {

@@ -71,7 +71,7 @@ public class MemberController {
 		}
 		return "redirect:/login/login";
 		
-		}//end - private String postRegister(MemberVO vo) throws Exceptio
+		}//end - private String postRegister(MemberVO vo) throws Exception
 		
 		//아이디 중복검사
 		@ResponseBody
@@ -101,11 +101,11 @@ public class MemberController {
 			logger.info("login post.....");
 			
 			HttpSession session = req.getSession();
-			logger.info("projectcontroller postlogin : " + session);
+			logger.info("Membercontroller postlogin : " + session);
 			
 			//넘겨받은 회원정보를 가지고 서비스에게 의뢰한다.
 			MemberDTO login = service.login(memberDTO);
-			logger.info("projectcontroller return value : " + login);
+			logger.info("Membercontroller return value : " + login);
 			
 			//해당하는 회원의 정보가 없으면
 			if(login == null) {
@@ -123,7 +123,7 @@ public class MemberController {
 		@RequestMapping(value="/login/logout",method=RequestMethod.GET)
 		private String getLogout(HttpSession session) throws Exception{
 			
-			logger.info("projectController getLogout...");
+			logger.info("MemberController getLogout...");
 			
 			session.invalidate();
 			
@@ -134,7 +134,7 @@ public class MemberController {
 		@RequestMapping(value="/login/proUpdate",method=RequestMethod.GET)
 		private String getUpdateView() throws Exception{
 			
-			logger.info("projectController getUpdate");
+			logger.info("MemberController getUpdate");
 			
 			return "/login/proUpdate";
 		}//end - private String getUpdateView() throws Exception
@@ -143,7 +143,7 @@ public class MemberController {
 		@RequestMapping(value="/login/proUpdate",method=RequestMethod.POST)
 		private String postUpdate(MemberDTO memberDTO, HttpSession session) throws Exception{
 			
-			logger.info("projectController postUpdate");
+			logger.info("MemberController postUpdate");
 			
 			service.update(memberDTO);
 			
@@ -157,7 +157,7 @@ public class MemberController {
 		@RequestMapping(value="/login/proDelete",method=RequestMethod.GET)
 		private String getDeleteView() throws Exception{
 			
-			logger.info("projectController getDelete");
+			logger.info("MemberController getDelete");
 			
 			return "/login/proDelete";
 		}//end - private String getDeleteView() throws Exception
@@ -165,7 +165,7 @@ public class MemberController {
 		//회원정보삭제POST
 		@RequestMapping(value="/login/proDelete",method=RequestMethod.POST)
 		private String postDelete(MemberDTO memberDTO, HttpSession session, RedirectAttributes rttr) throws Exception{
-			logger.info("projectController postDelete");
+			logger.info("MemberController postDelete");
 			
 			//세션에 들어있는 member정보를 가져와서 member변수에 저장한다.
 			MemberDTO member = (MemberDTO) session.getAttribute("member");

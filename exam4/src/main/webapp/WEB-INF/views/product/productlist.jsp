@@ -11,7 +11,7 @@
 <link rel="icon" type="image/x-icon" href="/static/images/aland.jpg" />
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <meta charset="UTF-8">
-<title>product</title>
+<title>productlist.jsp</title>
 
 <style>
 .btn {
@@ -44,13 +44,40 @@
 </style>
 </head>
 <body>
-	<div class=" text-center">
-		<p>각각의 장인들이 올린 작품들을 확인해보세요</p>
+	<!-- Sidebar/menu -->
+<nav class="w3-sidebar w3-bar-block w3-white w3-collapse w3-top"
+	style="z-index: 3; width: 120px" id="mySidebar">
+	<div class="w3-container w3-display-container w3-padding-16">
+		<i onclick="w3_close()"
+			class="fa fa-remove w3-hide-large w3-button w3-display-topright"></i>
+		<h3 class="w3-wide">
+			<b>SHOP</b>
+		</h3>
 	</div>
+	<div class="w3-padding-64 w3-large w3-text-grey"
+		style="font-weight: bold">
+		<a href="/product/productlist/1" class="w3-bar-item w3-button">Shirts</a> 
+		<a href="/product/productlist/2" class="w3-bar-item w3-button">Dresses</a> 
+		<a onclick="myAccFunc()" href="/product/productlist/3" class="w3-bar-item w3-button">Jeans</a>
+		<div id="demoAcc"class="w3-bar-block w3-hide w3-padding-large w3-medium">
+		<a href="/product/productlist/3" class="w3-bar-item w3-button w3-light-grey"><i class="fa fa-caret-right w3-margin-right"></i>Skinny</a>
+	</div>
+		<a href="/product/productlist/4" class="w3-bar-item w3-button">Jackets</a>
+		<a href="/product/productlist/5" class="w3-bar-item w3-button">Gymwear</a> 
+		<a href="/product/productlist/6" class="w3-bar-item w3-button">Blazers</a> 
+		<a href="/product/productlist/7" class="w3-bar-item w3-button">Shoes</a>
+	</div>
+</nav>
 
 	<div class="container">
 		<div class="row">
-			<div class="col-sm-10">
+		
+			<div class="col-sm-14">
+			<br>
+	<div class=" text-center">
+	<img src="/static/images/best_main.png" alt="모델1">
+	</div>
+	<br>
 				<div id="myCarousel" class="carousel slide" data-ride="carousel">
 					<!-- Indicators -->
 					<ol class="carousel-indicators">
@@ -96,7 +123,14 @@
 				</div>
 			</div>
 				
-			<div class="col-sm-10">
+				
+				
+			<div class="col-sm-13">
+			<br>
+			<div class=" text-center">
+			<img src="/static/images/category.png">
+			</div>
+			<br>
 				<c:forEach var="product" items="${list}">
 					<div class="col-sm-3">
 						<div class="thumbnail">
@@ -114,8 +148,8 @@
 			</div>
 		</div>
 	</div>
-
-
+	
+	
 		<div id="paginationBox" >
 			<ul class="pagination">
 				<c:if test="${productpagination.prev}">
@@ -233,8 +267,7 @@
 </layoutTag:layout>
 </body>
 </html>
-
-
+	
 <!-- layoutTag를 적용하므로 bootstrap.jsp 파일이 필요 없어졌다. -->
 <%--== : eq
 != : ne

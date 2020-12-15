@@ -37,35 +37,35 @@
 				<select class="form-control"  id="productkind" name="productkind" onchange="location.href='/product/productList/' + this.value">
 				<c:if test="${productkind == all}">
 						
-						
-						<option value="100"<c:if test="${productkind == 100}"></c:if>>컴퓨터/가전</option>
-						<option value="200"<c:if test="${productkind == 200}"></c:if>>브랜드패션</option>
-						<option value="300"<c:if test="${productkind == 300}"></c:if>>스포츠</option>
-						<option value="400"<c:if test="${productkind == 400}"></c:if>>생필품</option>
+						<option value="500"<c:if test="${productkind == 500}">selected</c:if>>전체</option>
+						<option value="100"<c:if test="${productkind == 100}">selected</c:if>>컴퓨터/가전</option>
+						<option value="200"<c:if test="${productkind == 200}">selected</c:if>>브랜드패션</option>
+						<option value="300"<c:if test="${productkind == 300}">selected</c:if>>스포츠</option>
+						<option value="400"<c:if test="${productkind == 400}">selected</c:if>>생필품</option>
 				</c:if>
 				<c:if test="${productkind == '100'}">
-						
+						<option value="500"<c:if test="${productkind == 500}">selected</c:if>>전체</option>
 						<option value="100"<c:if test="${productkind == 100}"> selected </c:if>>컴퓨터/가전</option>
 						<option value="200"<c:if test="${productkind == 200}"></c:if>>브랜드패션</option>
 						<option value="300"<c:if test="${productkind == 300}"></c:if>>스포츠</option>
 						<option value="400"<c:if test="${productkind == 400}"></c:if>>생필품</option>
 				</c:if>
 				<c:if test="${productkind == '200'}">
-						
+						<option value="500"<c:if test="${productkind == 500}">selected</c:if>>전체</option>
 						<option value="100"<c:if test="${productkind == 100}"></c:if>>컴퓨터/가전</option>
 						<option value="200"<c:if test="${productkind == 200}"> selected </c:if>>브랜드패션</option>
 						<option value="300"<c:if test="${productkind == 300}"></c:if>>스포츠</option>
 						<option value="400"<c:if test="${productkind == 400}"></c:if>>생필품</option>
 				</c:if>
 				<c:if test="${productkind == '300'}">
-						
+						<option value="500"<c:if test="${productkind == 500}">selected</c:if>>전체</option>
 						<option value="100"<c:if test="${productkind == 100}"></c:if>>컴퓨터/가전</option>
 						<option value="200"<c:if test="${productkind == 200}"></c:if>>브랜드패션</option>
 						<option value="300"<c:if test="${productkind == 300}"> selected </c:if>>스포츠</option>
 						<option value="400"<c:if test="${productkind == 400}"></c:if>>생필품</option>
 				</c:if>
 				<c:if test="${productkind == '400'}">
-						
+						<option value="500"<c:if test="${productkind == 500}">selected</c:if>>전체</option>
 						<option value="100"<c:if test="${productkind == 100}"></c:if>>컴퓨터/가전</option>
 						<option value="200"<c:if test="${productkind == 200}"></c:if>>브랜드패션</option>
 						<option value="300"<c:if test="${productkind == 300}"></c:if>>스포츠</option>
@@ -84,6 +84,7 @@
 						<th>이미지명</th>
 						<th>내용</th>
 						<th>할인율</th>
+						<th>카테고리번호</th>
 						
 		<c:if test="${list.size() <= 0}">
 			<tr>
@@ -101,28 +102,31 @@
 				<td>${detail.productimagefileName}</td>
 				<td>${detail.productcontent}</td>
 				<td>${detail.productdiscount}</td>
+				<td>${detail.productcid}</td>
 			</tr>
 		</c:forEach>
-	
 	</table>
+	<div class="input-group">
+			<input type="hidden" id="productcid" name="productcid" value="${detail.productcid}"/>
+	</div>
 	
 	<ul class="pager justify-content-center">
 		<c:if test="${pageMaker.prev}">
-			<li class="page-item"><a href="/board/boardList${pageMaker.makeSearch(pageMaker.startPage-1)}">이전</a></li>
+			<li class="page-item"><a href="/product/productList${pageMaker.makeSearch(pageMaker.startPage-1)}">이전</a></li>
 		</c:if>
 		
 		<c:forEach begin="${pageMaker.startPage}" end="${pageMaker.endPage}" var="idx">
-			<li class="page-item"><a href="/board/boardList${pageMaker.makeSearch(idx)}">${idx}</a></li>
+			<li class="page-item"><a href="/product/productList${pageMaker.makeSearch(idx)}">${idx}</a></li>
 		</c:forEach>
 		
 		<c:if test="${pageMaker.next && pageMaker.endPage >0}">
-			<li class="page-item"><a href="/board/boardList${pageMaker.makeSearch(pageMaker.endPage+1)}">다음</a></li>
+			<li class="page-item"><a href="/product/productList${pageMaker.makeSearch(pageMaker.endPage+1)}">다음</a></li>
 		</c:if>
 	</ul>
 <!-- 검색 버튼 -->
 <div class="row" style="clear:right;width:400px;margin:auto">
 	<div class="col-lg-12">
-		<form id="searchForm" action="/board/boardList">
+		<form id="searchForm" action="/product/productList">
 			<select name="searchType">
 				<option value="n"<c:out value="${scri.searchType == null ? 'selected' : ''}"/>>-----</option>
       		<option value="n"<c:out value="${scri.searchType eq 's' ? 'selected' : ''}"/>>상품이름</option>
@@ -139,22 +143,20 @@
   <script>
 $(document).ready(function(){
         $('#searchBtn').click(function() {
-       self.location = "/board/boardList" + '${pageMaker.makeQuery(1)}' + "&searchType=" + $("select option:selected").val() + "&keyword=" + encodeURIComponent($('#keywordInput').val());
+       self.location = "/product/productList" + '${pageMaker.makeQuery(1)}' + "&searchType=" + $("select option:selected").val() + "&keyword=" + encodeURIComponent($('#keywordInput').val());
         });
       }); 
 </script>
 
 <script>
 $(document).ready(function(){
-	$(".btn-primary").on("click",function(){
+	$(".btn-primary btn-sm").on("click",function(){
 		
 		if(${member == null}){
 			alert("로그인을 하셔야 합니다.");
 			location.href="/login/login";
 			}
-		else if(${member != null}){
-			location.href="/board/boardInsert";
-			}
+		
 		});
 });
 </script>

@@ -25,6 +25,7 @@ import org.springframework.web.multipart.MultipartFile;
 import com.example1.practice1.domain.BoardDTO;
 import com.example1.practice1.domain.FileDTO;
 import com.example1.practice1.domain.PageMaker;
+import com.example1.practice1.domain.Pagination;
 import com.example1.practice1.domain.ProductDTO;
 import com.example1.practice1.domain.SearchCriteria;
 import com.example1.practice1.service.ProductService;
@@ -51,6 +52,7 @@ public class ProductController {
 		logger.info("insertProc post...");
 		
 		ProductDTO productDTO = new ProductDTO();
+		//Pagination page = new Pagination();
 		
 		//logger.info("Files : "+request.getParameter("productimagefile"));
 		logger.info("productname : " + request.getParameter("productname"));
@@ -62,11 +64,10 @@ public class ProductController {
 		productDTO.setProductsalescnt(Integer.parseInt(request.getParameter("productsalescnt")));
 		productDTO.setProductcontent(request.getParameter("productcontent"));
 		productDTO.setProductdiscount(Integer.parseInt(request.getParameter("productdiscount")));
+		productDTO.setProductcid(Integer.parseInt(request.getParameter("productcid")));
 		
 		//service.productInsert(productDTO);
 		
-		
-
 		if(productimagefile.isEmpty()) {
 			logger.info("isEmpty........" );
 			//service.productInsert(productDTO);
@@ -75,19 +76,20 @@ public class ProductController {
 			
 			System.out.println("productimagefile" + productimagefile);
 			
-			String 	imagefileName = productimagefile.getOriginalFilename();
+			String 	Productimagefile = productimagefile.getOriginalFilename();
 			//String ProductimageOriName = productimagefile.getOriginalFilename();
-			String 	imagefileNameExtension = FilenameUtils.getExtension(imagefileName).toLowerCase();
+			String 	imagefileNameExtension = FilenameUtils.getExtension(Productimagefile).toLowerCase();
 			File 	destinationFile;
 			String 	destinationFileName;
 			// fileUrl = "uploadFiles 폴더의 위치";
-			// uploadFiles 폴더의 위치 확인 : uploadFiles 우클릭 -> Properties -> Resource - >
+			// upload 폴더의 위치 확인 : upload 우클릭 -> Properties -> Resource - >
 			// Location
-			String imagefileUrl = "C:\\Users\\JY-CHOI\\Documents\\workspace-spring-tool-suite-4-4.8.0.RELEASE\\shoppingmallproject\\src\\main\\resources\\static\\imagefile";
+			String productimagefileUrl = "C:\\Users\\JY-CHOI\\Desktop\\shoppingmallproject\\src\\main\\resources\\static\\upload\\";
+			
 			                          
 			do {
 				destinationFileName = RandomStringUtils.randomAlphanumeric(100) + "." + imagefileNameExtension;
-				destinationFile = new File(imagefileUrl + destinationFileName);
+				destinationFile = new File(productimagefileUrl + destinationFileName);
 			} while (destinationFile.exists());
 
 			// MultipartFile.transferTo() : 요청 시점의 임시 파일을 로컬 파일 시스템에 영구적으로 복사해준다.
@@ -96,9 +98,9 @@ public class ProductController {
 			
 			productDTO.setProductno(productDTO.getProductno());
 			productDTO.setProductimagefileName(destinationFileName);
-			productDTO.setProductimagefileOriName(imagefileName);
+			productDTO.setProductimagefileOriName(Productimagefile);
 			//productDTO.setProductimageoriname(ProductimageOriName);
-			productDTO.setProductimagefileUrl(imagefileUrl);
+			productDTO.setProductimagefileUrl(productimagefileUrl);
 
 			
 			System.out.println("Product Controller product : " + productDTO);
@@ -126,6 +128,7 @@ public class ProductController {
 			return "/product/productList";
 		}//end - private String productList(Model model, @ModelAttribute("scri") SearchCriteria scri) throws Exception 
 	
+	//말머리별 리스트
 	@RequestMapping("/productList/{productkind}")
 	private String productkindList(@PathVariable String productkind, Model model,HttpServletRequest request) throws Exception{
 		
@@ -139,6 +142,30 @@ public class ProductController {
 			
 	}
 	
+//	// 게시글 카테고리 목록 보여주기
+//	@RequestMapping(value = "/productList/{productcid}", method = RequestMethod.GET)
+//	private String ProductcateList(@PathVariable int productcid, Model model) throws Exception {
+//		
+//		logger.info("productcid : " + productcid);
+//		// 전체 게시글 개수
+//		int listCnt = service.getProductListCnt();
+//
+//		// Pagination 객체생성
+//		Pagination pagination = new Pagination();
+//
+//		int page = 1;
+//		int range = 1;
+//			pagination.pageInfo(page, range, listCnt);
+//			pagination.setProductid(productcid);
+//				System.out.println("*****productcid : " + pagination.getProductcid());
+//				
+//			model.addAttribute("pagination", pagination);
+//				
+//			model.addAttribute("list", service.productcateListService(pagination));
+//				
+//		return "/product/productList";
+//	}//end - private String ProductcateList(@PathVariable int productid, Model model) throws Exception
+//	
 	
 	//상품리스트 상세보기
 	@RequestMapping(value = "/productDetail/{productno}", method = RequestMethod.GET)
@@ -149,7 +176,20 @@ public class ProductController {
 		
 		return "/product/productDetail";
 	
-	}//end - private String detailProduct(@PathVariable int productno ,Model model) throws Exception 
+	}//end - private String detailProduct(@PathVariable int productno ,Model model) throws Exception
+	
+	//메인 검색 기능
+	@RequestMapping("/searchList")
+	private String searchList( Model model, HttpServletRequest request) throws Exception {
+
+		logger.info("ProductController productlist.....");
+				
+		logger.info("searchList :  " + request.getParameter("searchName"));
+				
+		model.addAttribute("search", service.search(request.getParameter("searchName")));
+				
+		return "/product/searchList";
+	}//end - private String searchList( Model model, HttpServletRequest request) throws Exception  
 	
 
 	//상품수정

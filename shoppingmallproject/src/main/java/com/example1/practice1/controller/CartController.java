@@ -5,12 +5,14 @@ import java.util.List;
 import java.util.Map;
 
 import javax.annotation.Resource;
+import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 
 import org.apache.ibatis.annotations.Param;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -33,56 +35,60 @@ public class CartController {
 	
 	//장바구니추가
 	@RequestMapping(value="/cartInsert",method= {RequestMethod.GET,RequestMethod.POST})
-	private String cartInsert(@ModelAttribute CartDTO cartDTO,HttpSession session) throws Exception{
+	private String cartInsert(CartDTO cartDTO, Model model, HttpServletRequest request) throws Exception{
 		
 		logger.info("cartinsert : " + cartDTO);
-		String cartuserid = (String)session.getAttribute("cartuserid");
 		
-		cartDTO.setCartuserid(cartuserid);
+		String cartuserid = request.getParameter("cartuserid");
+		logger.info("cartuserid : " + cartuserid);
 		
-		if (cartuserid != null) {
-           return "redirect:/login/login";
-			}
-			cartDTO.setCartuserid(cartuserid);
-        	service.cartInsert(cartDTO);
-			
-        	return "redirect:/cart/cartList";
-    	}//end - private String cartInsert(@ModelAttribute CartDTO cartDTO,HttpSession session) throws Exception
+		model.addAttribute("cartinsert", service.cartInsert(cartDTO));
+		
+		return "redirect:/cart/cartList";
+    	}//end - private String cartInsert(CartDTO cartDTO,HttpServletRequest request) throws Exception
 	
 	//장바구니리스트
-	@RequestMapping("/cartList")
-	private ModelAndView cartList(ModelAndView mav , HttpSession session) throws Exception{
-		
-		logger.info("cartList......");
-		//장바구니목록, 금액합계, 배송료, 리스트의 사이즈(주문아이템갯수등)
-		//dto로 표현되지않는 여러자지 정보를 담아 뷰로 넘겨야 하므로 HashMap사용
-		Map<String, Object> map = new HashMap<String, Object>();
-		
-		String cartuserid = (String) session.getAttribute("cartuserid");
-		
-			if(cartuserid != null) {//로그인한 상태라면
-				List<CartDTO> list = service.cartList(cartuserid);//서비스단에서 장바구니목록 가져옴.
-				int sumMoney = service.sumMoney(cartuserid);//금액합계를 가져오고
-				int fee = sumMoney >= 30000 ? 0 : 2500; //금액합계에 대한 배송료를 계산하고
-					//금액,배송비,총액,리스트사이즈,장바구니목록 각 값들을 map에 넣어준다.
-					map.put("sumMoney", sumMoney);
-						map.put("fee", fee);
-					map.put("sum", fee + sumMoney);
-						map.put("list", list);
-					map.put("count", list.size());
-					
-					mav.setViewName("/cart/cartList");//장바구니리스트로 뷰 설정
-						mav.addObject("map", map);
-						//ModelAndView객체에 map을 담고 리스트 뷰를 설정해준뒤 포워딩
-						
-						return mav;
-			}else {
-				//로그인하지않은상태이면 로그인페이지로 
-				mav.setViewName("/login/login");
-					return mav;
-				}
-			}// end - private ModelAndView cartList(ModelAndView mav , HttpSession session) throws Exception
+	@RequestMapping(value="/cartList", method= {RequestMethod.GET, RequestMethod.POST})
+	private ModelAndView cartList(CartDTO cartDTO,HttpServletRequest request, ModelAndView mav) throws Exception{
 	
-}
+		
+		String cartuserid = request.getParameter("cartuserid");
+		logger.info("cartList... " + cartDTO);
+		//logger.info("cartuserid " + cartuserid);
+		
+		Map<String,Object> map = new HashMap<String, Object>();
+		List<CartDTO> list = service.cartList(cartuserid);//장바구니정보
+		logger.info("cartlist...."  + list);
+		
+		int sumMoney = service.sumMoney(cartuserid);//장바구니 전체 금액 호출
+		logger.info("sumMoney .." + cartuserid);
+		
+		//장바구니 전체 금액에 따라 배송비 구분
+		//배송료(10만원 이상 =>무료, 미만 =>2500원)
+		
+		int fee = sumMoney >=100000 ? 0 : 2500;
+		map.put("list", list); //장바구니정보를 map에 저장
+		map.put("count", list.size());//장바구니 상품의 유무
+		map.put("sumMoney", sumMoney);//장바구니 전체금액
+		map.put("fee", fee);//배송금액
+		map.put("allSum", sumMoney + fee);//주문상품전체금액
+		mav.setViewName("/cart/cartList");//view(jsp)의 이름저장
+		mav.addObject("map", map); //map 변수저장
+		
+		return mav;
+	}//end - private ModelAndView cartList(HttpSession session, ModelAndView mav) throws Exception
+	
+	//삭제
+		@RequestMapping("/cartDelete/{cartno}")
+		private String cartDelete(@PathVariable int cartno, Model model) throws Exception {
+			
+			logger.info("delete" + cartno);
+			service.cartDelete(cartno);
+			return "redirect:/cart/cartList";
+		}//end - private String cartDelete(@PathVariable int cartno, Model model) throws Exception
+}//end - public class CartController
+	
+	
+
 
 

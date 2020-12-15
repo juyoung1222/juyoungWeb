@@ -8,8 +8,8 @@ PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
 <!-- 상품등록 -->
 <insert id="productInsert" parameterType="com.example1.practice1.domain.ProductDTO">
 INSERT INTO PRODUCTTABLE
-	(PRODUCTNO,  PRODUCTKIND, PRODUCTIMAGENAME, PRODUCTIMAGEORINAME, PRODUCTIMAGEURL, PRODUCTNAME, PRODUCTPRICE, PRODUCTSALESCNT,PRODUCTCONTENT,PRODUCTDISCOUNT,PRODUCTREGDATE)
-VALUES (#{productno}, #{productkind}, #{productimagefileName}, #{productimagefileOriName}, #{productimagefileUrl},#{productname}, #{productprice}, #{productsalescnt},#{productcontent},#{productdiscount},now())
+	(PRODUCTNO,  PRODUCTKIND, PRODUCTIMAGENAME, PRODUCTIMAGEORINAME, PRODUCTIMAGEURL, PRODUCTNAME, PRODUCTPRICE, PRODUCTSALESCNT,PRODUCTCONTENT,PRODUCTDISCOUNT,PRODUCTREGDATE,PRODUCTCID)
+VALUES (#{productno}, #{productkind}, #{productimagefileName}, #{productimagefileOriName}, #{productimagefileUrl},#{productname}, #{productprice}, #{productsalescnt},#{productcontent},#{productdiscount},now(),#{productcid})
 </insert>
 <!-- 상품 페이징 -->
 <select id="productList" resultType="com.example1.practice1.domain.ProductDTO" parameterType="com.example1.practice1.domain.Criteria">
@@ -23,7 +23,8 @@ SELECT PRODUCTNO,
 		       PRODUCTSALESCNT,
 		       PRODUCTCONTENT,
 		       PRODUCTDISCOUNT,
-		       PRODUCTREGDATE
+		       PRODUCTREGDATE,
+		       PRODUCTCID
 		  
 FROM PRODUCTTABLE
 WHERE 1=1 
@@ -50,6 +51,21 @@ WHERE productno > 0  <!-- 참이라는 의미,bno가 0이상인 데이터들을 
 			<if test="searchType == 'nc'.toString()">AND (PRODUCTNAME LIKE CONCAT('%',#{keyword},'%')) or (PRODUCTCONTENT LIKE CONCAT('%',#{keyword},'%'))</if>
 		</if>
 	</sql>
+
+<!-- 상품카테고리 리스트 -->
+<select id="ProductcateList" resultType="com.example1.practice1.domain.ProductDTO">
+SELECT	
+	PRODUCTNO, PRODUCTIMAGENAME, PRODUCTIMAGEORINAME, PRODUCTIMAGEURL, PRODUCTNAME, PRODUCTPRICE, PRODUCTSALESCNT, PRODUCTCID
+FROM PRODUCTTABLE
+WHERE PRODUCTCID = #{productcid}
+</select>
+
+<!-- 상품리스트 개수 -->
+<select id="getproductListCnt" resultType="int">
+SELECT
+	count(*) as listCut
+FROM PRODUCTTABLE
+</select>
 
 <!-- 말머리리스트 -->
 <select id="productkindList" resultType="com.example1.practice1.domain.ProductDTO">
@@ -88,5 +104,12 @@ DELETE FROM
 PRODUCTTABLE
 WHERE productno = #{productno}
 </delete>
+
+<!-- 메인검색 기능 -->
+<select id="search" resultType="com.example1.practice1.domain.ProductDTO">
+SELECT *
+FROM PRODUCTTABLE
+WHERE productname  LIKE CONCAT('%',#{searchName},'%')
+</select>	
 
 </mapper>

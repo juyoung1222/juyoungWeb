@@ -23,8 +23,12 @@
 				<div class="col-sm-6">
 					<h2><span class="glyphicon glyphicon-file">게시글 상세 정보</span></h2>
 				</div>
-				
-			</div>
+	</div>
+	<c:if test="${admin != null}">
+			<button type="button" class="btn btn-primary"    onclick="location.href='/board/boardDelete/${detail.boardno}'">삭제</button>
+			<button type="button" class="btn btn-default" onclick="location.href='/board/boardUpdate/${detail.boardno}'">수정</button>
+			<button type="button" class="btn btn-warning " onclick="location.href='/board/boardList'">목록</button>
+	</c:if>
 	<div class="form-group">
 			<label class="control-label col-sm-2">게시글 번호</label>
 				<div class="col-sm-4">
@@ -105,21 +109,29 @@ $(document).ready(function(){
 </script>
 <script>
 $(document).ready(function(){
-	$(".btn-success").on("click",function(){
-		if(${admin != null}){
-			alert("관리자입니다.");
-			location.href="/board/boardUpdate/${detail.boardno}";
-			}
-		});
-	$(".btn-info").on("click",function(){
+	$(".btn-primary").on("click",function(){
 		if(${admin != null}){
 			alert("관리자입니다.");
 			location.href="/board/boardDelete/${detail.boardno}";
 			}
 		});
+	$(".btn-default").on("click",function(){
+		if(${admin != null}){
+			alert("관리자입니다.");
+			location.href="/board/boardUpdate/${detail.boardno}";
+			}
+		});
+	$(".btn-warning").on("click",function(){
+		if(${admin != null}){
+			alert("관리자입니다.");
+			location.href="location.href='/board/boardList";
+			}
+		});
+	
 	
 })
 </script>
+
 
 
 

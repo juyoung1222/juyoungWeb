@@ -24,26 +24,34 @@ public class CartService {
 	CartMapper mapper;
 	
 	//장바구니 추가
-	public void cartInsert(CartDTO cartDTO) throws Exception{
+	public int cartInsert(CartDTO cartDTO) throws Exception{
 		logger.info("cartInsertService : " + cartDTO);
 		
-		mapper.cartInsert(cartDTO);
+		return mapper.cartInsert(cartDTO);
 	}
 	
 	//장바구니목록
 	public List<CartDTO> cartList(String cartuserid) throws Exception{
 		logger.info("cartListService : " + cartuserid);
+		//logger.info("cartuserid " + cartuserid);
 		
 		return mapper.cartList(cartuserid);
 	}
 	
 	//장바구니금액합계
 	public int sumMoney(String cartuserid) throws Exception{
-		logger.info("sumMoney : " + cartuserid);
+		logger.info("sumMoney : " +  cartuserid);
+		//logger.info("cartuserid " + cartuserid);
 		
-		return mapper.sumMoney(cartuserid);
+		return mapper.sumMoney( cartuserid);
 	}
 	
+
+	//장바구니삭제
+	public int cartDelete(int cartno) throws Exception{
+		logger.info("cartdelete : " + cartno);
+		return mapper.cartDelete(cartno);
+	}
 	
 
 }

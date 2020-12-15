@@ -12,31 +12,26 @@ INSERT INTO CARTTABLE
 VALUES (#{cartno},#{cartproductid},now(),#{cartuserid},#{cartamount})
 </insert>
 
-<!-- 장바구니목록 -->
-<select id="cartList" resultType="com.example1.practice1.domain.CartDTO">
-SELECT 
-	c.cartno as cartno,
-	c.cartuserid as cartuserid,
-	p.productno as productno,
-	m.username as username,
-	p.productname as productname,
-	c.amount,
-	p.productprice as productprice,
-	(productprice * cartamount) money
-FROM
-	MEMBERTABLE m, PRODUCTTABLE p, CARTTABLE c
-WHERE m.userid = c.cartproductid
-AND p.productno = c.cartproductid
-AND c.cartuserid = #{cartuserid}
-ORDER BY c.productid
-</select>
+<!-- 장바구니 목록 보기 -->
+	<select id="cartList" resultType="com.example1.practice1.domain.CartDTO">
+	SELECT	cart.CARTNO, cart.CARTPRODUCTID, cart.CARTDATE, cart.CARTUSERID,
+			pro.PRODUCTIMAGENAME, pro.PRODUCTIMAGEORINAME, pro.PRODUCTIMAGEURL, pro.productname, pro.productprice, pro.productsalescnt,pro.productdiscount
+	FROM	CARTTABLE cart, PRODUCTTABLE pro
+	WHERE	cart.CARTPRODUCTID = pro.PRODUCTNO
+	ORDER BY PRODUCTNO DESC
+	</select>
 
-<!--장바구니 전체 금액  -->
+<!-- 장바구니 전체 금액 -->
 <select id="sumMoney" resultType="int">
-SELECT NVL(SUM(productprict * cartamount),0) money
-FROM CARTTABLE c , PRODUCTTABLE p
-WEHRE c.cartproductid = p.productno and c.cartuserid = #{cartuserid}
-
+SELECT IFNULL(SUM(PRODUCTPRICE * PRODUCTSALESCNT),0) PRODUCTPRICE
+FROM CARTTABLE cart, PRODUCTTABLE pro
+WHERE cart.CARTPRODUCTID = pro.PRODUCTNO AND cart.cartuserid = #{cartuserid}
 </select>
 
+<!-- 장바구니삭제 -->
+<delete id="cartDelete">
+DELETE 
+FROM CARTTABLE
+WHERE CARTNO = #{cartno}
+</delete>
 </mapper>

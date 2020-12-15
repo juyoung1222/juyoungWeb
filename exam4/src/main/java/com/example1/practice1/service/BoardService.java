@@ -56,7 +56,6 @@ public class BoardService {
 		logger.info("service listCount....." + scri);
 		return mapper.listCount(scri);
 	}
-	
 	//게시글 상세보기
 	public BoardDTO detail(int boardno) throws Exception{
 		logger.info("service detail....." + boardno);
@@ -81,8 +80,13 @@ public class BoardService {
 	public int boardHit(int boardno) throws Exception{
 		logger.info("service hit ..." + boardno);
 		return mapper.boardHit(boardno);
-	
 	}
+	
+	//댓글목록
+	public List<CommentDTO> commentList(int boardno) throws Exception{
+		logger.info("service comment...." + boardno);
+		return mapper.commentList(boardno);
+		}
 //	//파일 올리기
 //	public int fileInsert(FileVO file) throws Exception{
 //		logger.info("service fileInsert..... " + file);
@@ -99,11 +103,7 @@ public class BoardService {
 //		return  mapper.searchList(scri);
 //		
 	//}
-	//댓글목록
-	public List<CommentDTO> commentList(int boardno) throws Exception{
-		logger.info("service comment...." + boardno);
-		return mapper.commentList(boardno);
-	}
+	
 	
 
 

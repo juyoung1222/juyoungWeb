@@ -11,7 +11,7 @@
 <title>boardUpdate.jsp</title>
 </head>
 <div class="container-fluid">
-	<h2 align="left">게 시 글 작 성</h2>
+	<h2 align="left">게 시 글 수 정</h2>
 	<form class="form-horizontal" action="/board/updateProc" method="post">
 		<div class="form-group">
 			<label for="subject">제 목</label>
