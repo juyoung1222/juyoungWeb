@@ -40,17 +40,7 @@
 				</div>
 				
 			</c:if>
-			<c:if test="${member != null }">
-				<div>
-					<p><h2>${member.userId}님 환영합니다.</h2></p>
-					<button id="proUpdateBtn" type="button">회원정보수정</button>
-					<button id="proDeleteBtn" type="button">회원탈퇴</button>
-					<button id="logoutBtn" type="button">로그아웃</button> 
-					<button id="boardBtn" type="button">게시판</button>
-					<button id="productBtn" type="button">상품리스트</button>
-					<button id="cartBtn" type="button">장바구니리스트</button>
-				</div>
-			</c:if>
+			
 			<c:if test="${msg == false}">
 				<div class="form-group">
 					<div class="col-sm-8">
@@ -80,34 +70,7 @@ $(document).ready(function(){
 			return false;
 			}
 		});
-	//로그아웃 버튼을 눌렀을 경우
-	$("#logoutBtn").on("click",function(){
-		alert("진짜 로그아웃하시는거에요?");
-		location.href="/login/logout"
-		});
-	//회원가입 버튼을 눌렀을 경우
-	$("#proRegisterBtn").on("click",function(){
-		location.href="/login/register";
-		});
-	//회원정보수정버튼을 눌렀을 경우
-	$("#proUpdateBtn").on("click",function(){
-		location.href="/login/proUpdate";
-		});
-	//회원탈퇴버튼을 눌렀을 경우
-	$("#proDeleteBtn").on("click",function(){
-		location.href="/login/proDelete";
-		});
-	//게시판 버튼을 눌렀을 경우
-	$("#boardBtn").on("click",function(){
-		location.href="/board/boardList";
-		});
-	//상품리스트버튼을 눌렀을 경우
-	$("#productBtn").on("click",function(){
-		location.href="/product/productList";
-		});
-	$("#cartBtn").on("click",function(){
-		location.href="/cart/cartList";
-		});
+
 })
 
 </script>

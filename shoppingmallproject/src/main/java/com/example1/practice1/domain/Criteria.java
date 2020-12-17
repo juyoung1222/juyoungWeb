@@ -21,13 +21,7 @@ public class Criteria {
 		}
 		
 	}
-	public void setPerPageNum(int perPageNum) {
-		if(perPageNum <= 0 || perPageNum > 100) {
-			this.perPageNum = 3;
-			return;
-		}
-		this.perPageNum = perPageNum;
-	}
+	
 		public int getPage() {
 			return page;
 		}
@@ -40,6 +34,15 @@ public class Criteria {
 			return this.perPageNum;
 		}
 		
+		public void setPerPageNum(int pageCount) {
+			int cnt = this.perPageNum;
+			if(pageCount != cnt) {
+				this.perPageNum = cnt;
+			}else {
+				this.perPageNum = pageCount;
+			}
+		}
+			
 		public int getRowStart() {
 			rowStart = ((page - 1) * perPageNum) + 1;
 			return rowStart;

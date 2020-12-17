@@ -29,7 +29,8 @@ SELECT PRODUCTNO,
 FROM PRODUCTTABLE
 WHERE 1=1 
 	<include refid="search"></include>
-LIMIT #{rowStart}, #{rowEnd}
+order by PRODUCTNO DESC	
+LIMIT #{rowStart}, #{perPageNum}
 	</select>
 
 

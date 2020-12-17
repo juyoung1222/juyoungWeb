@@ -11,7 +11,7 @@
 <title>Update.jsp</title>
 </head>
 <div class="container-fluid">
-	<h2 align="left">게 시 글 업데이트</h2>
+	<h2 align="left">상품 업데이트</h2>
 	<form class="form-horizontal" action="/product/updateProc" method="post">
 		<div class="inputArea">
 			<label for="productimagefile">이미지</label>

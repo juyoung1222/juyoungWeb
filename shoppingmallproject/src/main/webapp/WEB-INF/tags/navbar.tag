@@ -25,10 +25,15 @@
           <li><a href="/product/productList/200">브랜드패션</a></li>
           <li><a href="/product/productList/300">스포츠</a></li>
           <li><a href="/product/productList/400">생필품</a></li>
-        
-          
         </ul>
       </li>
+      <c:if test="${member != null}">
+      <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MY PAGE<span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li><a href="/login/proUpdate">회원정보수정</a></li>
+        </ul>
+      </li>
+      </c:if>
    </ul>   
     
     <ul class="nav navbar-nav navbar-right">

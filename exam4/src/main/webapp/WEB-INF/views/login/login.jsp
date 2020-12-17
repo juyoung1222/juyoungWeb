@@ -40,19 +40,10 @@
 				</div>
 				
 			</c:if>
-			<c:if test="${member != null }">
-				<div>
-					<p><h2>${member.userId}님 환영합니다.</h2></p>
-					<button id="proUpdateBtn" type="button">회원정보수정</button>
-					<button id="proDeleteBtn" type="button">회원탈퇴</button>
-				</div>
-			</c:if>
+			
+		
+			
 			<c:if test="${msg == false}">
-				<div class="form-group">
-					<div class="col-sm-8">
-						<h3><span class="label label-danger">로그인에 실패하였습니다.다시 입력하세요</span></h3>
-					</div>
-				</div>
 				<div class="form-group">
 					<div class="col-sm-8">
 						<div style="background-color: #CF0; color:red"><h3>로그인에 실패하였습니다. 다시 입력하세요</h3></div>
@@ -61,6 +52,7 @@
 			</c:if>
 		</form>
 	</div>
+
 <script>
 $(document).ready(function(){
 	//로그인 버튼을 눌렀을 경우
@@ -81,14 +73,7 @@ $(document).ready(function(){
 	$("#proRegisterBtn").on("click",function(){
 		location.href="/login/register";
 		});
-	//회원정보수정버튼을 눌렀을 경우
-	$("#proUpdateBtn").on("click",function(){
-		location.href="/login/proUpdate";
-		});
-	//회원탈퇴버튼을 눌렀을 경우
-	$("#proDeleteBtn").on("click",function(){
-		location.href="/login/proDelete";
-		});
+	
 
 	
 })

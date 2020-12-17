@@ -39,15 +39,7 @@
 				</div>
 			</div>
 		</c:if>
-				<c:if test="${admin != null }">
-				<div>
-					<p><h2>${admin.managerId}님 환영합니다.</h2></p>
-					<button id="mainBtn" type="button">메인으로</button>
-					
-					
-					
-				</div>
-			</c:if>
+		
 			<c:if test="${msg == false}">
 				<div class="form-group">
 					<div class="col-sm-8">
@@ -81,14 +73,7 @@ $("#submit").on("click",function(){
 	});
 })
 </script>
-<script>
-//메인버튼을 눌렀을 경우
-$(document).ready(function(){
-$("#mainBtn").on("click",function(){
-	location.href="/admin/adminindex"
-	});
-})
-</script>
+
 </body>
 </html>
 </layoutTag:layout>

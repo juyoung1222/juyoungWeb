@@ -4,7 +4,6 @@
 <%@ taglib prefix="fmt" 		uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="layoutTag" 	tagdir="/WEB-INF/tags" %>
 
-
 <layoutTag:layout>
 <!DOCTYPE html>
 <html>
@@ -12,6 +11,9 @@
 <style>
 	.navbar-default{
 		height : 50px;
+	}
+	h4{
+		color : white;
 	}
 </style>
 <meta charset="UTF-8">
@@ -56,12 +58,16 @@
 							<li><a href="/board/boardList">게시판목록(수정/삭제)</a></li>
 						</ul>
 					</li>
-					
+				
 					<c:if test="${admin == null}">
 					<li><a href="/admin/adminloginform">로그인</a></li>
 					</c:if>
 					<c:if test="${admin != null}">
 			      	<li><a href="/admin/adminlogout" role="button">로그아웃</a></li>
+			     	</c:if>
+			     	
+			     	<c:if test="${admin != null}">
+			     		<li><h4 align="center"><span class="glyphicon glyphicon-user">${admin.managerId}님 안녕하세요!</span></h4></li>
 			     	</c:if>
 					
 				</ul>

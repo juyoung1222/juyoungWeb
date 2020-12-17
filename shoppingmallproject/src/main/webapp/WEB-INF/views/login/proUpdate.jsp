@@ -109,6 +109,7 @@
 		<div class="col-sm-offset-2 col-sm-4">
 			<button class="btn btn-success" type="submit" id="submit">회원정보수정</button>
 			<button class="btn btn-danger cancel" type="button">취소</button> 
+			<input type="button" value="회원탈퇴" class="btn btn-warning" onclick="location.href='/login/proDelete'"/>
 		</div>
 	</div>
 </form>

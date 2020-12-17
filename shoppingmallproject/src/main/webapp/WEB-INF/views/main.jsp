@@ -28,6 +28,7 @@
 	}
 	p{
 		text-align:center;
+		color : white;
 		
 	}
 	.header{
@@ -64,8 +65,22 @@
       </li>
 	      <li><a href="/product/productList">PRODUCT</a></li>
 	      <li><a href="/board/boardList">COMMUNITY</a></li>
-	      <li><a href="/login/register">SIGN UP</a></li>
-	      <li><a href="/login/login">LOGIN</a></li>
+	      
+	      <c:if test="${member == null}">
+		      <li><a href="/login/register">SIGN UP</a></li>
+		      <li><a href="/login/login">LOGIN</a></li>
+	      </c:if>
+	      
+	      
+	      <c:if test="${member != null}">
+      			<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">MY PAGE<span class="caret"></span></a>
+        	<ul class="dropdown-menu">
+          		<li><a href="/login/proUpdate">회원정보수정</a></li>
+        	</ul>
+      	</li>
+      		<li><a href="/login/logout">LOGOUT</a>
+      		<li><p>${member.userId}님 안녕하세요!</p></li>
+      </c:if>
       </ul>
    </div>
 </nav>

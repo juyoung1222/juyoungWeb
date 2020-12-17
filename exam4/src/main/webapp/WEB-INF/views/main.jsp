@@ -203,8 +203,12 @@
 						<img
 							src="https://ext.fmkorea.com/files/attach/new/20191012/486616/1351010096/2272376735/ba9a8fb2a6735f4f2787821924619db5.jpeg"
 							class="img-circle" height="65" width="65" alt="Avatar">
-					</div>
-				</c:if>
+									<p><font color="#000066">${member.userId}님 안녕하세요!</font></p>
+										<input type="button" value="회원정보수정" class="btn btn-default" onclick="location.href='/login/proUpdate'"/>
+										<input type="button" value="회원탈퇴" class="btn btn-default" onclick="location.href='/login/proDelete'"/>
+							
+							</div>
+					</c:if>
 
 				<div class="well">
 					<p>
@@ -421,6 +425,8 @@
 		});
 	})
 </script>
+
+
 </body>
 	</html>
 </layoutTag:layout>

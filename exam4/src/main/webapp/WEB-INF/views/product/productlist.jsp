@@ -30,17 +30,19 @@
 	margin: auto;
 }
 
-.thumbnail {
+.thumbnail-wrapper {
 	margin-top: 10px;
 	font-size: 15px;
 	padding: 0 0 15px 0;
 	border: 2;
 	border-radius: 4;
+	width: 70%;
 }
 
 .pagination {
 	margin-left: 46%;
 }
+
 </style>
 </head>
 <body>

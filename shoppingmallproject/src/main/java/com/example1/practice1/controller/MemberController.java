@@ -105,7 +105,7 @@ public class MemberController {
 						//해당하는 회원의 정보가 있으면
 						session.setAttribute("member", login);
 					}
-					return "redirect:/login/login";
+					return "redirect:/";
 					
 				}//end - private String postLogin(MemberDTO memberDTO,HttpServletRequest req, RedirectAttributes rttr) throws Exception
 				
