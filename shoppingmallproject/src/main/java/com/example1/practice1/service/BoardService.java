@@ -11,6 +11,7 @@ import org.springframework.transaction.annotation.Isolation;
 import org.springframework.transaction.annotation.Transactional;
 
 import com.example1.practice1.domain.BoardDTO;
+
 import com.example1.practice1.domain.CommentDTO;
 import com.example1.practice1.domain.SearchCriteria;
 import com.example1.practice1.mapper.BoardMapper;
@@ -80,6 +81,22 @@ public class BoardService {
 			return mapper.boardHit(boardno);
 		
 		}
+		//게시글 좋아요
+		public int insertLike(int boardno) throws Exception{
+			logger.info("service addlike..." + boardno);
+			return mapper.insertLike(boardno);
+		}
+		//게시글 추가
+		public int writeLike(int boardno, String userid) throws Exception{
+			logger.info("service writelike..." + boardno + userid );
+			return mapper.writeLike(boardno,userid);
+		}
+		//좋아요수 가져오기
+		public int getLike(int boardno) throws Exception{
+			logger.info("service getlikes.. " + boardno);
+			return mapper.getLike(boardno);
+		}
+
 //		//파일 올리기
 //		public int fileInsert(FileVO file) throws Exception{
 //			logger.info("service fileInsert..... " + file);
@@ -101,4 +118,6 @@ public class BoardService {
 			logger.info("service comment...." + boardno);
 			return mapper.commentList(boardno);
 		}
+		
+		
 }

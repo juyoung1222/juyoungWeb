@@ -107,4 +107,26 @@ ORDER BY REPLYNO
 	SET boardhit = boardhit + 1
 	WHERE boardno = #{boardno}
 </update>
+
+<!-- 좋아요 -->
+<update id="insertLike" parameterType="int">
+	UPDATE BOARDTABLE
+	SET boardlike = boardlike +1
+	WHERE boardno = #{boardno}
+</update>
+
+<!-- 좋아요 내용추가 -->
+<insert id="writeLike">
+INSERT INTO LIKETABLE
+	(boardno,userid )
+VALUES (#{boardno}, #{userid})
+
+</insert>
+
+<!-- 게시글 좋아요수 가져오기 -->
+<select id="getLike" resultType="int">
+SELECT boardlike
+FROM BOARDTABLE
+WHERE boardno = #{boardno}
+</select>
 </mapper>

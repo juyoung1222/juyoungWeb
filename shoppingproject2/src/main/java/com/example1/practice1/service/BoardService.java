@@ -81,7 +81,23 @@ public class BoardService {
 		logger.info("service hit ..." + boardno);
 		return mapper.boardHit(boardno);
 	}
-	
+	//게시글 좋아요
+	public int insertLike(int boardno) throws Exception{
+		logger.info("service addlike..." + boardno);
+		return mapper.insertLike(boardno);
+	}
+	//게시글 추가
+	public int writeLike(int boardno, String userid) throws Exception{
+		logger.info("service writelike..." + boardno + userid );
+		return mapper.writeLike(boardno,userid);
+	}
+	//좋아요수 가져오기
+	public int getLike(int boardno) throws Exception{
+		logger.info("service getlikes.. " + boardno);
+		return mapper.getLike(boardno);
+	}
+
+
 	//댓글목록
 	public List<CommentDTO> commentList(int boardno) throws Exception{
 		logger.info("service comment...." + boardno);

@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.stereotype.Repository;
 import com.example1.practice1.domain.BoardDTO;
+
 import com.example1.practice1.domain.CommentDTO;
 import com.example1.practice1.domain.SearchCriteria;
 
@@ -29,6 +30,15 @@ public interface BoardMapper {
 
 	//게시글 조회수
 	public int boardHit(int boardno) throws Exception;
+	
+	//게시글 좋아요
+	public int insertLike(int boardno) throws Exception;
+	
+	//게시글 기록
+	public int writeLike(int boardno,String userid) throws Exception;
+	
+	//좋아요수 가져오기
+	public int getLike(int boardno) throws Exception;
 	//
 	////파일 올리기
 	//public int fileInsert(FileVO file) throws Exception;
@@ -41,5 +51,8 @@ public interface BoardMapper {
 
 	//댓글목록
 	public List<CommentDTO> commentList(int boardno) throws Exception;
-
+	
+	
+	
+	
 }

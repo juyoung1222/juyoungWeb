@@ -115,7 +115,7 @@ public class MemberController {
 				//해당하는 회원의 정보가 있으면
 				session.setAttribute("member", login);
 			}
-			return "redirect:/login/login";
+			return "redirect:/";
 			
 		}//end - private String postLogin(MemberDTO memberDTO,HttpServletRequest req, RedirectAttributes rttr) throws Exception
 		
@@ -129,6 +129,38 @@ public class MemberController {
 			
 			return "redirect:/login/login";
 	     }//end - private String getLogout(HttpSession session) throws Exception
+		
+		//로그인 창에서 회원정보수정버튼을 눌렀을 때 회원정보수정창으로 가기(get)
+		@RequestMapping(value="/memberUpdate",method=RequestMethod.GET)
+		private String getMemberUpdateView() throws Exception{
+			logger.info("MemberController getMemberUpdate..");
+			
+			return "/login/memberUpdate";
+		}//end - private String getMemberUpdateView() throws Exception
+		
+		@RequestMapping(value="/memberUpdate", method=RequestMethod.POST)
+		private String postMemberUpdate(MemberDTO memberDTO,HttpSession session,RedirectAttributes rttr) throws Exception{
+			logger.info("MemberController postMemberUpdate");
+			
+			//세션에 들어있는 member정보를 가져와서 member변수에 저장한다.
+			MemberDTO member = (MemberDTO) session.getAttribute("member");
+			
+			//세션에 들어있는 비밀번호만 변수에 저장
+			String sessionPasswd = member.getUserPw();
+			
+			//사용자가 입력한 비밀번호 => memberVO에 들어있는 비밀번호
+			String memberDTOPasswd = memberDTO.getUserPw();
+			
+			if(!sessionPasswd.equals(memberDTOPasswd)) {
+				rttr.addFlashAttribute("msg", false);
+				return "redirect:/login/proDelete";
+			}
+			service.delete(memberDTO);
+			//세션을 종료
+			session.invalidate();
+			
+			return "redirect:/login/login";
+		}
 		
 		//회원정보수정GET
 		@RequestMapping(value="/login/proUpdate",method=RequestMethod.GET)
@@ -152,6 +184,7 @@ public class MemberController {
 			
 			return "redirect:/login/login";
 		}//end - private String postUpdate(MemberDTO memberDTO, HttpSession session) throws Exception
+		
 		
 		//회원정보삭제GET
 		@RequestMapping(value="/login/proDelete",method=RequestMethod.GET)

@@ -24,16 +24,17 @@ $('[name=commentInsertBtn]').click(function() {
 
 
 function commentInsert(insertData){
-	alert(insertData)
+	//alert(insertData)
     $.ajax({
         url : '/comment/insert',
         type : 'post',
         data : insertData,
         success : function(data){
             if(data == 1) {
-                commentList(); //댓글 작성 후 댓글 목록 reload
+ 					commentList(); //댓글 작성 후 댓글 목록 reload
 				$('[name=replytext]').val('');
             } else{
+               
             	commentList(); // 댓글 목록 reload
             }     
         }
@@ -104,7 +105,7 @@ function commentUpdate(replyno, replytext){
 	//str += '<span class="input-group-btn"><button class="btn btn-warning" type="button" onclick="mCommentServiceUpdate('+replyno+')";>수정</button></span>';
 	//str += '</div>';
 	
-	$('.commentContent' + replyno).html(str);
+	$('.commentContent' + replyno).innerHTML(str);
 }
 
 //댓글 수정 - 수정한 댓글 내용을 테이블에 업데이트 한다.
@@ -145,6 +146,14 @@ function commentDelete(replyno){
 		//str += '<c:if test="${admin != null || member !=null}">';
 			//alert('관리자입니다.');
 		//str += '</c:if>';
+		
+		str += '<c:if test="${member != null}">';
+
+		alert('삭제하시겠습니까?');
+
+		str += '</c:if>';
+
+		//$('#commentList' + replyno).innerHTML(str);
 		
 	$.ajax({
 		url : '/comment/delete/' + replyno,

@@ -17,7 +17,7 @@ public class BoardDTO {
 	private Date regdate;//게시글 작성일시
 	private boolean newMark;//게시글 new 버튼
 	private int boardhit;//조회수
-	
+	private int boardlike;//좋아요
 	
 	public BoardDTO() {}
 

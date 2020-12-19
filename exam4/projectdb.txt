@@ -19,8 +19,20 @@ SUBJECT		VARCHAR(100) NOT NULL,
 WRITER		VARCHAR(50) NOT NULL,
 CONTENT		VARCHAR(200) NOT NULL,
 REGDATE 	DATETIME DEFAULT CURRENT_TIMESTAMP,
-BOARDHIT INT not null 
+BOARDHIT INT not null ,
+BOARDLIKE INT not null
 );
+
+//좋아요테이블
+create table LIKETABLE(
+	
+    BOARDNO INT NOT NULL,
+    userid varchar(50) NOT NULL,
+    
+	foreign key (userid) references USERTABLE(USERID),
+    foreign key (boardno) references BOARDTABLE(boardno)
+);
+
 
 //댓글 테이블
 create table REPLYTABLE(
@@ -33,6 +45,7 @@ REPLYIP			VARCHAR(100) not null,
 REPLYDATE		DATE not null,
 REPLYTEXT		VARCHAR(500) not null
 );
+
 
 
 

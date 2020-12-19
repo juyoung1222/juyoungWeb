@@ -15,8 +15,11 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.example1.practice1.domain.BoardDTO;
+
 import com.example1.practice1.domain.CommentDTO;
 import com.example1.practice1.domain.MemberDTO;
 import com.example1.practice1.domain.PageMaker;
@@ -53,7 +56,7 @@ public class BoardController {
 		//입력할 창의 값들을 요청한다.
 		boardDTO .setSubject(request.getParameter("subject"));
 		boardDTO .setContent(request.getParameter("content"));
-		//boardDTO .setWriter(request.getParameter("writer"));
+		boardDTO .setWriter(request.getParameter("writer"));
 		
 		
 		memberDTO.setUserId(writer);
@@ -103,7 +106,8 @@ public class BoardController {
 			model.addAttribute("detail", service.detail(boardno));// 게시글으리 정보를 가져와서 저장한다.
 			//model.addAttribute("comment", service.commentList(boardno));
 			model.addAttribute("board", service.boardHit(boardno));
-			
+			//model.addAttribute("like", service.insertLike(boardno));
+			//model.addAttribute("unlike", service.boardUnLike(boardno));
 			//댓글리스트 보기 
 			List<CommentDTO> commentDTO = new ArrayList<CommentDTO>();
 			commentDTO = service.commentList(boardno);
@@ -114,8 +118,23 @@ public class BoardController {
 
 		}// end - public String comment(@PathVariable int bno,Model model) throws
 			// Exception
-		
-
+		//게시글 좋아요
+		@ResponseBody
+		@RequestMapping(value="/like",method=RequestMethod.POST)
+		private int like(@RequestParam int boardno,String userid,HttpSession session) throws Exception{
+			logger.info("boardcontroller like..." + boardno);
+			logger.info("boardcontroller like..."  + userid);
+			
+			
+			service.insertLike(boardno);
+			
+			service.writeLike(boardno,userid);
+			
+			int result = service.getLike(boardno);
+			logger.info("boardcontroller return value [" + result +"]");
+			return result;
+		}//end - private int like(@RequestParam int boardno,String userid,HttpSession session) throws Exception
+	
 		// 게시글 수정 화면
 		@RequestMapping(value = "/boardUpdate/{boardno}", method = RequestMethod.GET)
 		private String getUpdate(@PathVariable int boardno, Model model) throws Exception {
@@ -148,6 +167,9 @@ public class BoardController {
 			service.delete(boardno);
 			return "redirect:/board/boardList";
 		}//end - private String getDelete(@PathVariable int boardno, Model model) throws Exception
+	
+		
+		
 
 	}// end - public class BoardController
 	

@@ -2,6 +2,8 @@
 <%@ taglib prefix="c"   		uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fmt" 		uri="http://java.sun.com/jsp/jstl/fmt"%>
 <%@ taglib prefix="layoutTag" 	tagdir="/WEB-INF/tags" %>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <!-- <style>
 body {
   font-family: 'Lato', sans-serif;
@@ -220,7 +222,7 @@ function closeNav() {
 	color: #1abc9c !important;
 }
 
-/* 드롭 서치 */
+/* 드롭 서치 
 .dropbtn {
 background-color: #fcfcfc;
 color: 808080;
@@ -271,7 +273,7 @@ cursor: pointer;
 }
 .dropdown a:hover {background-color: #ddd;}
 .show {display: block;}
-
+*/
 
 
 </style>
@@ -289,12 +291,14 @@ cursor: pointer;
 				<li><a href="/product/productlist">PRODUCT</a></li>
 				<li><a href="/board/boardList">COMMUNITY</a></li>
 				
+				
+				
 				<c:if test="${member == null}">
-				<li><a onclick="alert('회원정보가 없습니다 로그인 해주세요')"><span class="glyphicon hlyphicon-shopping-cart"></span>CART</a></li>
+					<li><a onclick="alert('회원정보가 없습니다 로그인 해주세요')"><span class="glyphicon hlyphicon-shopping-cart"></span>CART</a></li>
 				</c:if>
 				
 				<c:if test="${member != null}">
-				<li><a href="/cart/list"><span class="glyphicon hlyphicon-shopping-cart"></span>CART</a></li>
+					<li><a href="/cart/list"><span class="glyphicon hlyphicon-shopping-cart"></span>CART</a></li>
 				</c:if>
 					
 				<c:if test="${member == null}">
@@ -312,30 +316,5 @@ cursor: pointer;
 			</ul>
 		</div>
 	</div>
-	
-	
-	
-<script>
-/* When the user clicks on the button,
-toggle between hiding and showing the dropdown content */
-function myFunction() {
-  document.getElementById("myDropdown").classList.toggle("show");
-}
-function filterFunction() {
-  var input, filter, ul, li, a, i;
-  input = document.getElementById("myInput");
-  filter = input.value.toUpperCase();
-  div = document.getElementById("myDropdown");
-  a = div.getElementsByTagName("a");
-  for (i = 0; i < a.length; i++) {
-    txtValue = a[i].textContent || a[i].innerText;
-    if (txtValue.toUpperCase().indexOf(filter) > -1) {
-      a[i].style.display = "";
-    } else {
-      a[i].style.display = "none";
-    }
-  }
-}
-</script>
-
 </nav>
+

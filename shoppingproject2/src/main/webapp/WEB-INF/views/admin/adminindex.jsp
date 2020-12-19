@@ -61,6 +61,10 @@
 					</c:if>
 					<c:if test="${admin != null}">
 			      	<li><a href="/admin/adminlogout" role="button">로그아웃</a></li>
+			      	
+			     	</c:if>
+			     	<c:if test="${admin != null}">
+			     		<li><h4 align="center"><span class="glyphicon glyphicon-user">${admin.managerId}님 안녕하세요!</span></h4></li>
 			     	</c:if>
 					
 				</ul>

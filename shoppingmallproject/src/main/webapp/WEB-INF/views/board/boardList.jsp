@@ -45,6 +45,9 @@ ul{list-style:none; float:center; padding:6px;}
 				<th>내용</th>
 				<th>작성일시</th>
 				<th>조회수</th>
+				
+			
+				
 			
 			</tr>
 		</thead>
@@ -72,6 +75,8 @@ ul{list-style:none; float:center; padding:6px;}
 				<td>${board.content}</td>
 				<td><fmt:formatDate value="${board.regdate}" pattern="yyyy년 MM월 dd일"/></td>
 				<td><c:out value="${board.boardhit}"/></td>
+				
+				
 				
 				
 			</tr>

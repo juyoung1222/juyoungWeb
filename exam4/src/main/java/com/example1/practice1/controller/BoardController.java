@@ -24,6 +24,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RequestPart;
+import org.springframework.web.bind.annotation.ResponseBody;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.example1.practice1.domain.BoardDTO;
@@ -154,6 +155,23 @@ public class BoardController {
 	}// end - private String comment(@PathVariable int bno,Model model) throws
 		// Exception
 	
+	//게시글 좋아요
+	@ResponseBody
+	@RequestMapping(value="/like",method=RequestMethod.POST)
+	private int like(@RequestParam int boardno,String userid,HttpSession session) throws Exception{
+		logger.info("boardcontroller like..." + boardno);
+		logger.info("boardcontroller like..."  + userid);
+		
+		
+		service.insertLike(boardno);
+		
+		service.writeLike(boardno,userid);
+		
+		int result = service.getLike(boardno);
+		logger.info("boardcontroller return value [" + result +"]");
+		return result;
+	}//end - private int like(@RequestParam int boardno,String userid,HttpSession session) throws Exception
+
 
 	// 게시글 수정 화면
 	@RequestMapping(value = "/boardUpdate/{boardno}", method = RequestMethod.GET)

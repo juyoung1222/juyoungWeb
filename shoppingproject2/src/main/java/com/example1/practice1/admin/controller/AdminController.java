@@ -76,7 +76,7 @@ public class AdminController {
 			//해당하는 회원의 정보가 있으면
 			session.setAttribute("admin", adminLogin);
 		}
-		return "redirect:/admin/adminloginform";
+		return "redirect:/admin/adminindex";
 		
 		}
 		//로그아웃 GET
@@ -87,7 +87,7 @@ public class AdminController {
 				
 				session.invalidate();
 				
-				return "redirect:/admin/adminloginform";
+				return "redirect:/admin/adminindex";
 		     }
 		
 	}
