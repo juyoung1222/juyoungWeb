@@ -226,7 +226,7 @@
 							class="label label-danger">#스킨</span>
 					</p>
 				</div>
-				<div class="alert alert-success fade in">
+				<!--  <div class="alert alert-success fade in">
 					<a href="#" class="close" data-dismiss="alert" aria-label="close">×</a>
 					<p>
 						<strong>광고!</strong>
@@ -241,7 +241,7 @@
 				</p>
 				<p>
 					<a href="#">링크3</a>
-				</p>
+				</p>-->
 			</div>
 		</div>
 	</div>
