@@ -38,7 +38,7 @@
 <c:if test="${admin != null}">
 			<button type="button" class="btn btn-primary"    onclick="location.href='/board/boardDelete/${detail.boardno}'">삭제</button>
 			<button type="button" class="btn btn-default" onclick="location.href='/board/boardUpdate/${detail.boardno}'">수정</button>
-			<button type="button" class="btn btn-warning " onclick="location.href='/board/boardList'">목록</button>
+			<button type="button" class="btn btn-warning" onclick="location.href='/board/boardList'" >목록</button>
 </c:if>
 
 <div class="form-group">
@@ -141,7 +141,7 @@ $(document).ready(function(){
 	$(".btn-warning").on("click",function(){
 		if(${admin != null}){
 			alert("관리자입니다.");
-			location.href="location.href='/board/boardList";
+			location.href="/board/boardList";
 			}
 		});
 	

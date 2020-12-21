@@ -48,7 +48,13 @@
 	body, h1, h2, h3, h4, h5, h6, .w3-wide {
 		font-family: "Montserrat", sans-serif;
 	}
+	
 }
+#searchBox{
+	width: 500px;
+	
+}
+	
 </style>
 </head>
 <!-- 메인사진(글) -->
@@ -89,11 +95,11 @@
 </nav>
 
 <!-- 검색창 -->
-<div class="container">
+<div class="container" align="center">
 	<form class="form-inline" action="/product/searchList" method="post">
-		<input type="text" class="form-control" id="searchBox"
+		<input type="text" class="form-control" id="searchBox" 
 			name="searchName" size="100" placeholder="검색어를 입력하세요">
-		<button type="submit">검색</button>
+		<button type="submit" class="btn btn-default right">검색</button>
 	</form>
 </div>
 

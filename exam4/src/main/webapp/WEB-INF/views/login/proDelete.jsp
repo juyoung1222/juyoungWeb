@@ -37,7 +37,7 @@
 	</div>
 	<div class="form-group">
 		<div class="col-sm-offset-2 col-sm-4">
-			<button class="btn btn-danger" type="submit" id="submit">회원탈퇴</button>
+			<button class="btn btn-danger" type="submit" id="submit" >회원탈퇴</button>
 			<button class="btn btn-warning cancel" type="button">취소</button>
 		</div>
 	</div>
@@ -56,6 +56,7 @@ $(document).ready(function(){
 	$(".cancel").on("click",function(){
 		location.href="/login/login";
 	});
+	//아무것도 입력하지않고 탈퇴버튼을 눌렀을때
 	$("#submit").on("click",function(){
 		if($("#userId").val() == ""){
 			alert("아이디를 입력하세요");
@@ -68,7 +69,13 @@ $(document).ready(function(){
 			return false;
 			}
 		});
-	
+	})
+</script>
+<script>
+$(document).ready(function(){
+	$("#submit").on("click",function(){
+		alert("진짜로 탈퇴하시겠습니까?");
+		});
 })
 </script>
 

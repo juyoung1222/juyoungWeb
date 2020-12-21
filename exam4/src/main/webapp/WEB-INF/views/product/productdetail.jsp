@@ -75,7 +75,7 @@
 				</select>
 		<button class="btn btn-warning"
 			onclick="'location.href='/cart/list'">구매 하기</button>
-		<input type="submit" value="장바구니담기">
+		<input type="submit" class="btn btn-default" value="장바구니담기">
 		</c:if>
 	</form>
 		<c:if test="${member == null}">
@@ -89,7 +89,9 @@
 		</c:if>
 		
 		<c:if test="${admin != null}">
+			
 			<!--  <button class="btn btn-success" onclick="location.href='/product/Update/${productdetail.productno}'">수정</button>-->
+			
 			<button class="btn btn-danger"  onclick="location.href='/product/delete/${productdetail.productno}'">삭제</button>
 		</c:if>
 </div>
