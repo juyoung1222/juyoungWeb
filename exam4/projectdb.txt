@@ -26,11 +26,11 @@ BOARDLIKE INT not null
 //좋아요테이블
 create table LIKETABLE(
 	
-    BOARDNO INT NOT NULL,
-    userid varchar(50) NOT NULL,
-    
-	foreign key (userid) references USERTABLE(USERID),
-    foreign key (boardno) references BOARDTABLE(boardno)
+BOARDNO INT NOT NULL,
+userid varchar(50) NOT NULL,
+
+foreign key (userid) references USERTABLE(USERID),
+foreign key (boardno) references BOARDTABLE(boardno)
 );
 
 
@@ -94,3 +94,11 @@ insert into PRODUCTCATEGORYTABLE
 (PRODUCTCATEGORYNAME ) values ('드레스');
 insert into PRODUCTCATEGORYTABLE
 (PRODUCTCATEGORYNAME ) values ( '바지');
+insert into PRODUCTCATEGORYTABLE
+(PRODUCTCATEGORYNAME ) values ( '자켓');
+insert into PRODUCTCATEGORYTABLE
+(PRODUCTCATEGORYNAME ) values ( '체육복');
+insert into PRODUCTCATEGORYTABLE
+(PRODUCTCATEGORYNAME ) values ( '블레이져');
+insert into PRODUCTCATEGORYTABLE
+(PRODUCTCATEGORYNAME ) values ( '신발');

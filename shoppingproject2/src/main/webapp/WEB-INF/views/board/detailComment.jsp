@@ -151,7 +151,7 @@ $(document).ready(function(){
 <script>
 //alert("script start...");
 
-var loginId = document.getElementById("userId").value;
+var userid = document.getElementById("userId").value;
 
 var boardlike='${detail.boardlike}';//좋아요
 
@@ -163,12 +163,12 @@ function boardLike(f){
 				url : '/board/like',
 				type : 'post',
 				dataType : 'json',
-				data : {'boardno' : boardno,'userid' : loginId },
+				data : {'boardno' : boardno,'userid' : userid },
 				success : function(data){
 					boardlike++;
 		
 					document.getElementById("like").value = "N";
-					document.getElementById("like").style.backgroundColor = "#ffffff";
+					document.getElementById("like").style.backgroundcolor = "#ffffff";
 					document.getElementById("like").style.color = "#000000";
 					document.getElementById("like").innerHTML
 						= '<span class="glyphicon glyphicon-thumbs-up"></span>&nbsp;좋아요&nbsp;' + data + '';
