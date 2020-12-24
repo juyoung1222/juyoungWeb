@@ -23,7 +23,7 @@ VALUES (#{cartno},#{cartproductid},now(),#{cartuserid},#{cartamount})
 
 <!-- 장바구니 전체 금액 -->
 <select id="sumMoney" resultType="int">
-SELECT IFNULL(SUM(PRODUCTPRICE * PRODUCTSALESCNT),0) PRODUCTPRICE
+SELECT IFNULL(SUM(PRODUCTPRICE * PRODUCTSALESCNT),0) money
 FROM CARTTABLE cart, PRODUCTTABLE pro
 WHERE cart.CARTPRODUCTID = pro.PRODUCTNO AND cart.cartuserid = #{cartuserid}
 </select>

@@ -27,7 +27,6 @@ BOARDLIKE INT not null
 create table LIKETABLE(
 BOARDNO INT NOT NULL,
 userid varchar(50) NOT NULL,
-
 foreign key (userid) references USERTABLE(USERID),
 foreign key (boardno) references BOARDTABLE(boardno)
 );

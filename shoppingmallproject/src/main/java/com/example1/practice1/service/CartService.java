@@ -31,19 +31,19 @@ public class CartService {
 	}
 	
 	//장바구니목록
-	public List<CartDTO> cartList(String cartuserid) throws Exception{
-		logger.info("cartListService : " + cartuserid);
-		//logger.info("cartuserid " + cartuserid);
+	public List<CartDTO> cartList(String userId) throws Exception{
+		logger.info("cartListService : " + userId);
+		logger.info("cartuserid " + userId);
 		
-		return mapper.cartList(cartuserid);
+		return mapper.cartList(userId);
 	}
 	
 	//장바구니금액합계
-	public int sumMoney(String cartuserid) throws Exception{
-		logger.info("sumMoney : " +  cartuserid);
-		//logger.info("cartuserid " + cartuserid);
+	public int sumMoney(String userId) throws Exception{
+		logger.info("sumMoney : " +  userId);
+		logger.info("cartuserid " + userId);
 		
-		return mapper.sumMoney( cartuserid);
+		return mapper.sumMoney(userId);
 	}
 	
 

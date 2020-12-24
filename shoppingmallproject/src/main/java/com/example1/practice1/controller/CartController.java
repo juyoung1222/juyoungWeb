@@ -21,6 +21,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
 import com.example1.practice1.domain.CartDTO;
+import com.example1.practice1.domain.MemberDTO;
+import com.example1.practice1.domain.ProductDTO;
 import com.example1.practice1.service.CartService;
 
 @Controller
@@ -49,19 +51,29 @@ public class CartController {
 	
 	//장바구니리스트
 	@RequestMapping(value="/cartList", method= {RequestMethod.GET, RequestMethod.POST})
-	private ModelAndView cartList(CartDTO cartDTO,HttpServletRequest request, ModelAndView mav) throws Exception{
+	private ModelAndView cartList(CartDTO cartDTO,HttpServletRequest request,HttpSession session, ModelAndView mav) throws Exception{
 	
+	
+		//MemberDTO memberDTO = new MemberDTO();
 		
-		String cartuserid = request.getParameter("cartuserid");
+		String userId = (String)session.getAttribute("userId");
+		//memberDTO.setUserId(userId);
+		
 		logger.info("cartList... " + cartDTO);
-		//logger.info("cartuserid " + cartuserid);
+		//logger.info("cartuserid " +userId);
 		
 		Map<String,Object> map = new HashMap<String, Object>();
-		List<CartDTO> list = service.cartList(cartuserid);//장바구니정보
+		
+		List<CartDTO> list = service.cartList(userId);//장바구니정보
+		
 		logger.info("cartlist...."  + list);
 		
-		int sumMoney = service.sumMoney(cartuserid);//장바구니 전체 금액 호출
-		logger.info("sumMoney .." + cartuserid);
+		//ProductDTO productDTO = new ProductDTO();
+		
+		//productDTO.setProductprice(Integer.parseInt(request.getParameter("productprice")));
+		//productDTO.setProductsalescnt(Integer.parseInt(request.getParameter("productsalescnt")));
+		int sumMoney = service.sumMoney(userId);//장바구니 전체 금액 호출
+		//logger.info("sumMoney .." + cartuserid);
 		
 		//장바구니 전체 금액에 따라 배송비 구분
 		//배송료(10만원 이상 =>무료, 미만 =>2500원)
