@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example1.practice1.mapper.QnAMapper">
+
+<!-- 질문등록 -->
+<insert id="qnaInsert" parameterType="com.example1.practice1.domain.QnADTO">
+INSERT INTO COMMQNATABLE
+	(BOARDNO, QNAIMAGEFILE, QNAIMAGENAME, QNAIMAGEORINAME, QNAIMAGEURL, QNASUBJECT, QNACONTENT, QNACID,QNAREGDATE)
+VALUES (#{boardNo}, #{qnaimagefile}, #{qnaimagename}, #{qnaimageoriname}, #{qnaimageurl}, #{qnasubject}, #{qnacontent}, #{qnacid},now())
+</insert>
+
+<!-- 질문 페이징 -->
+<select id="qnaList" resultType="com.example1.practice1.domain.QnADTO" parameterType="com.example1.practice1.domain.Criteria">
+SELECT BOARDNO,
+			QNAIMAGEFILE,
+			QNAIMAGENAME,
+			QNAIMAGEORINAME,
+			QNAIMAGEURL,
+			QNASUBJECT,
+			QNACONTENT,
+			QNACID,
+			QNAREGDATE
+FROM COMMQNATABLE
+	<include refid="search"></include>
+LIMIT #{rowStart}, #{perPageNum}
+</select>
+
+<!-- 질문글 개수 -->
+<select id="listCount" parameterType="com.example1.practice1.domain.SearchCriteria" resultType="int">
+SELECT COUNT(BOARDNO)
+FROM COMMQNATABLE
+WHERE BOARDNO > 0
+<include refid="search"></include>
+ORDER BY BOARDNO DESC
+</select>
+
+<!-- 검색기능 -->
+<sql id="search">
+		<if test="searchType != null">
+			<if test="searchType == 's'.toString()">AND QNASUBJECT LIKE CONCAT('%',#{keyword},'%')</if>
+			<if test="searchType == 'c'.toString()">AND QNACONTENT LIKE CONCAT('%',#{keyword},'%')</if>
+			<if test="searchType == 'sc'.toString()">AND (QNASUBJECT LIKE CONCAT('%',#{keyword},'%')) or (QNACONTENT LIKE CONCAT('%',#{keyword},'%'))</if>
+		</if>
+</sql>
+
+<!--질문글 상세보기-->
+<select id="qnaDetail" resultType="com.example1.practice1.domain.QnADTO">
+SELECT * 
+FROM COMMQNATABLE
+WHERE BOARDNO = #{boardNo}
+</select>
+
+<!-- 댓글 -->
+<select id="commentList" resultType="com.example1.practice1.domain.CommentDTO">
+SELECT * 
+FROM COMMREPLYTABLE
+WHERE REPLYCONTENTID = #{boardNo}
+ORDER BY REPLYNO
+</select>
+
+
+
+
+
+</mapper>

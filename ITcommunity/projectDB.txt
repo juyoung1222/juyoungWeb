@@ -1,0 +1,84 @@
+//회원테이블
+create table COMMUSERTABLE(
+	userId varchar(50) primary key not null,
+    userPw varchar(100) not null,
+    userName varchar(30) not null,
+    gender varchar(10) not null,
+    userBirth varchar(30) not null,
+    address01 varchar(200) not null,
+    address02 varchar(200) not null,
+    tel1 varchar(10) not null,
+    tel2 varchar(10) not null,
+    tel3 varchar(10) not null,
+    userEmail varchar(100) not null
+);
+
+
+//커뮤니티글테이블
+create table COMMBOARDTABLE(
+	BOARDNO INT primary key auto_increment,
+	BOARDCHOICE VARCHAR(50) NOT NULL,
+    SUBJECT VARCHAR(100) NOT NULL,
+    WRITER VARCHAR(50) NOT NULL,
+    CONTENT VARCHAR(200) NOT NULL,
+    REGDATE DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+    BOARDHIT INT NOT NULL,
+    BOARDLIKE INT NOT NULL
+);
+
+
+//커뮤니티댓글테이블
+create table COMMREPLYTABLE(
+	REPLYNO		INT PRIMARY KEY AUTO_INCREMENT,
+	REPLYWRITERID		VARCHAR(50) not null,
+	FOREIGN KEY (REPLYWRITERID) REFERENCES USERTABLE(userId),
+	REPLYCONTENTID		INT not null,
+	FOREIGN KEY (REPLYCONTENTID)REFERENCES BOARDTABLE(BOARDNO),
+	REPLYIP			VARCHAR(100) not null,
+	REPLYDATE		DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL ,
+	REPLYTEXT		VARCHAR(500) not null
+);
+
+
+//좋아요테이블
+create table COMMLIKETABLE(
+	boardNo INT NOT NULL,
+    userid varchar(50) NOT NULL,
+    foreign key (userid) references COMMUSERTABLE(USERID),
+    foreign key (boardNo) references COMMBOARDTABLE(boardNo)
+);
+
+
+//질문답변글테이블
+create table COMMQNATABLE(
+	BOARDNO		INT PRIMARY KEY AUTO_INCREMENT, 
+	QNAIMAGEFILE	VARCHAR(500) not null,
+	QNAIMAGENAME varchar(500) not null,
+	QNAIMAGEORINAME varchar(500) not null, 
+	QNAIMAGEURL varchar(500) not null, 
+	QNASUBJECT VARCHAR(500) not null,
+	QNACONTENT VARCHAR(500) not null,
+	QNAREGDATE DATETIME DEFAULT CURRENT_TIMESTAMP NOT NULL,
+	QNACID		INT not null,  
+	FOREIGN KEY (QNACID) REFERENCES SUBJECTCATEGORYTABLE(SUBJECTCATEGORYID) 
+);
+
+//과목카테고리테이블
+CREATE TABLE SUBJECTCATEGORYTABLE(
+	SUBJECTCATEGORYID	INT PRIMARY KEY AUTO_INCREMENT,   
+	SUBJECTCATEGORYNAME 	VARCHAR(100) not null  
+);
+-- 더미글 예시
+insert into SUBJECTCATEGORYTABLE  
+(SUBJECTCATEGORYNAME ) values ('JAVA');  
+insert into SUBJECTCATEGORYTABLE
+(SUBJECTCATEGORYNAME ) values ('JSP');
+insert into SUBJECTCATEGORYTABLE
+(SUBJECTCATEGORYNAME ) values ( 'SPRING');
+insert into SUBJECTCATEGORYTABLE
+(SUBJECTCATEGORYNAME ) values ( 'MYSQL');
+insert into SUBJECTCATEGORYTABLE
+(SUBJECTCATEGORYNAME ) values ('ANDROID');
+
+
+
