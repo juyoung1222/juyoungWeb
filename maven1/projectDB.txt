@@ -1,0 +1,20 @@
+create table sequence_freeboard(
+	seq int auto_increment primary key,
+    name varchar(20) not null,
+    title varchar(100) not null,
+    content varchar(1000) not null,
+    regdate datetime
+);
+
+create table sequence_freeboardfile(
+		seq int auto_increment primary key,
+        title varchar(100) not null,
+        name varchar(20) not null,
+        regdate datetime,
+        content varchar(1000) not null,
+        boardimagefile varchar(500) not null,
+        boardimageName varchar(500) not null,
+        boardimageOriName varchar(500) not null,
+        boardimageUrl varchar(500) not null
+
+);

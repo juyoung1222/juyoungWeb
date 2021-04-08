@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="ino.web.freeBoard.mapper.FreeBoardMapper">
+	 
+	<select id="selectList" resultType="ino.web.freeBoard.dto.FreeBoardDto" parameterType="ino.web.freeBoard.dto.Criteria">
+		 	
+		SELECT SEQ,
+				TITLE,
+				NAME, 
+				CONTENT,
+				REGDATE
+		FROM SEQUENCE_FREEBOARD
+		
+		ORDER BY seq DESC
+			<include refid="search"></include>
+		LIMIT #{rowStart}, #{perPageNum}
+	</select> 
+
+<select id="selectList1" resultType="ino.web.freeBoard.dto.FreeBoardFileDto" parameterType="ino.web.freeBoard.dto.Criteria">
+				
+	
+			SELECT  seq, 
+				title, 
+				name, 
+				regdate, 
+				content, 
+				boardimagefile, 
+				boardimageName, 
+				boardimageOriName, 
+				boardimageUrl  
+			FROM  SEQUENCE_FREEBOARDFILE 
+			WHERE 1=1  
+			ORDER BY seq DESC		
+				<include refid="search"></include> 
+			LIMIT  #{rowStart} ,  #{perPageNum}
+	</select> 
+	
+	
+	
+	
+	
+	<select id="selectOne" resultType="ino.web.freeBoard.dto.FreeBoardDto">
+		SELECT seq, TITLE, CONTENT, NAME, REGDATE FROM SEQUENCE_FREEBOARD 
+		WHERE seq = #{seq}
+	</select>
+	
+	<select id="selectOne1" parameterType="ino.web.freeBoard.dto.FreeBoardFileDto">
+		SELECT seq, title, name, regdate, content, boardimagegefile, boardimageName, boardimageOriName, boardimageUrl FROM SEQUENCE_FREEBOARDFILE 
+		WHERE seq = #{seq}
+	</select>
+	
+	<update id="modify" parameterType="ino.web.freeBoard.dto.FreeBoardDto">
+		UPDATE SEQUENCE_FREEBOARD SET TITLE=#{title}, CONTENT=#{content} WHERE seq=#{seq}
+	</update>
+	
+	<update id="modify1" parameterType="ino.web.freeBoard.dto.FreeBoardFileDto">
+		UPDATE SEQUENCE_FREEBOARDFILE SET TITLE = #{title}  WHERE seq = #{seq}
+	</update>
+	
+	
+	<insert id="insertPro" parameterType="ino.web.freeBoard.dto.FreeBoardDto">
+		INSERT INTO SEQUENCE_FREEBOARD(seq, TITLE, CONTENT, NAME, REGDATE)
+		VALUES(#{seq} #{title}, #{content}, #{name}, now())
+	</insert>
+	<!-- 
+	<select id="maxNum" resultType="Integer">
+		SELECT MAX(NUM) FROM SEQUENCE_FREEBOARD
+	</select>
+	 -->	
+	<delete id="delete" parameterType="int">
+		DELETE FROM SEQUENCE_FREEBOARD WHERE seq=#{seq}
+	</delete>
+	
+	<delete id="delete1" parameterType="int">
+		DELETE FROM SEQUENCE_FREEBOARDFILE WHERE seq = #{seq}
+	</delete>
+	 
+	<update id="deletefile"> <!--  첨부파일 삭제시 쿼리 -->
+		update sequence_freeboardfile set boardimageName ='' 
+		where 1=1 and boardimageName 
+		= (select * from (select boardimageName from sequence_freeboardfile where seq=#{seq} ) as temp );
+	</update>
+	 
+	 <select id="totalCount" resultType="int" >
+		SELECT COUNT(seq) FROM SEQUENCE_FREEBOARD 
+		WHERE seq >0
+		<include refid="search"></include> 
+	</select>
+	<sql id="search">
+		<if test="searchType != null">
+			<if test="searchType == 't'.toString()">AND title LIKE CONCAT('%',#{keyword},'%')</if>
+			<if test="searchType == 'n'.toString()">AND name LIKE CONCAT('%',#{keyword},'%')</if>
+			<if test="searchType == 'tn'.toString()">AND (title LIKE CONCAT('%',#{keyword},'%') or (name LIKE CONCAT('%',#{keyword},'%'))</if>
+		</if>
+	</sql>
+	 
+	 <select id="totalCount1" resultType="int" >
+		SELECT COUNT(seq) FROM SEQUENCE_FREEBOARDFILE 
+		WHERE seq >0
+		<include refid="search"></include> 
+	</select>
+	<sql id="search">
+		<if test="searchType != null">
+			<if test="searchType == 't'.toString()">AND title LIKE CONCAT('%',#{keyword},'%')</if>
+			<if test="searchType == 'n'.toString()">AND name LIKE CONCAT('%',#{keyword},'%')</if>
+			<if test="searchType == 'tn'.toString()">AND (title LIKE CONCAT('%',#{keyword},'%') or (name LIKE CONCAT('%',#{keyword},'%'))</if>
+		</if>
+	</sql>
+	
+	<insert id="fileInsert" parameterType="ino.web.freeBoard.dto.FreeBoardFileDto">
+		INSERT INTO SEQUENCE_FREEBOARDFILE VALUES(#{seq}, #{title}, #{name}, now(), #{content}, #{boardimagegefile}, #{boardimageName}, #{boardimageOriName}, #{boardimageUrl})
+	</insert>
+	<!--  
+	<select id="fileDetail" resultType="ino.web.freeBoard.dto.FreeBoardDto">
+		SELECT NUM, TITLE, NAME, REGDATE, CONTENT, fileno, fileimagefile, fileimagename, tileimageOriName, fileeimageUrl FROM FREEBOARDFILE WHERE NUM = #{num}
+	</select>
+	 -->
+	
+</mapper>

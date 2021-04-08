@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE  tiles-definitions PUBLIC
+    "-//Aapche Software Foundation//DTD Tiles Configuration 2.0//EN"
+    "http://tiles.apache.org/dtds/tiles-config_2_0.dtd">
+
+<tiles-definitions>    
+    <definition name="mainTemplate" template="/WEB-INF/view/template/defaultMain.jsp"/>
+    
+    <definition name="boardMain" extends="mainTemplate">
+        <put-attribute name="header" value="/WEB-INF/view/template/defaultHeader.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/view/template/defaultMenu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/view/template/defaultFooter.jsp" />
+        <put-attribute name="content" value="/WEB-INF/view/freeBoard/freeBoardMain.jsp" />
+    </definition>  
+    <definition name="freeBoardInsert" extends="mainTemplate">
+        <put-attribute name="header" value="/WEB-INF/view/template/defaultHeader.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/view/template/defaultMenu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/view/template/defaultFooter.jsp" />
+        <put-attribute name="content" value="/WEB-INF/view/freeBoard/freeBoardInsert.jsp" />
+    </definition>  
+    <definition name="freeBoardDetail" extends="mainTemplate">
+        <put-attribute name="header" value="/WEB-INF/view/template/defaultHeader.jsp" />
+        <put-attribute name="menu" value="/WEB-INF/view/template/defaultMenu.jsp" />
+        <put-attribute name="footer" value="/WEB-INF/view/template/defaultFooter.jsp" />
+        <put-attribute name="content" value="/WEB-INF/view/freeBoard/freeBoardDetail.jsp" />
+    </definition>  
+    
+</tiles-definitions>
