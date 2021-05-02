@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.bil.user.service.impl.UserMapper">
+
+<insert id="insertUser" parameterType="com.bil.user.vo.UserVO">
+	INSERT INTO
+		USERTABLE
+	VALUES(#{userSeq}, #{userId}, #{pwd}, #{userName}, now())
+</insert>
+
+
+<select id="idCheck" resultType="int" parameterType="com.bil.user.vo.UserVO">
+	SELECT COUNT(*) FROM USERTABLE WHERE userId = #{userId}
+
+</select>
+
+<select id="pwdCheck" resultType="int" parameterType="com.bil.user.vo.UserVO">
+	SELECT COUNT(*) FROM USERTABLE WHERE pwd = #{pwd}
+</select>
+</mapper>
