@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tiles-definitions PUBLIC "-//Apache Software Foundation//DTD Tiles Configuration 3.0//EN" "C:/tomcat7/workspace/boardAjax/src/main/webapp/WEB-INF/config/tiles/dtds/tiles-config_3_0.dtd">
+<tiles-definitions>
+
+	<!-- // type0 의 layout
+	┌───────────────────┐
+	│      				│
+	│                   │
+	│       body        │
+	│                   │
+	│                   │
+	└───────────────────┘
+	 -->
+	<!-- scm : 템플릿에 설정된 페이지의 구성 요소에 대한 실제 파일을 지정합니다. -->
+	<definition name="tiles.layouts.type0" template="/WEB-INF/config/tiles/layouts/type0.jsp">
+		<put-attribute name="title" value="/WEB-INF/config/tiles/layouts/type2/type2_1_title.jsp" /><!-- style/script -->
+		<put-attribute name="header" value="/WEB-INF/config/tiles/layouts/type2/type2_2_header.jsp" /><!-- top/header -->
+		<put-attribute name="body" value="/WEB-INF/config/tiles/layouts/type2/type2_3_body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/config/tiles/layouts/type2/type2_4_footer.jsp" />
+	</definition>
+
+
+	<definition name="/login/*" extends="tiles.layouts.type0">
+		<put-attribute name="body" value="/WEB-INF/jsp/login/{1}.jsp" />
+	</definition>
+
+	<definition name="/user/*" extends="tiles.layouts.type0">
+		<put-attribute name="body" value="/WEB-INF/jsp/user/{1}.jsp" />
+	</definition>
+
+
+
+
+
+
+
+	<!-- // type2 의 layout
+	┌───────────────────┐
+	│      header       │
+	├───────────────────┤
+	│                   │
+	│                   │
+	│       body        │
+	│                   │
+	│                   │
+	├───────────────────┤
+	│      footer       │
+	└───────────────────┘
+	 -->
+	<!-- type2 : 템플릿에 설정된 페이지의 구성 요소에 대한 실제 파일을 지정합니다. -->
+	<definition name="tiles.layouts.type2" template="/WEB-INF/config/tiles/layouts/type2.jsp">
+		<put-attribute name="title" value="/WEB-INF/config/tiles/layouts/type2/type2_1_title.jsp" /><!-- style/script -->
+		<put-attribute name="header" value="/WEB-INF/config/tiles/layouts/type2/type2_2_header.jsp" /><!-- top/header -->
+		<put-attribute name="body" value="/WEB-INF/config/tiles/layouts/type2/type2_3_body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/config/tiles/layouts/type2/type2_4_footer.jsp" />
+	</definition>
+
+	<definition name="/cmmn/*" extends="tiles.layouts.type2">
+		<put-attribute name="body" value="/WEB-INF/views/cmmn/{1}.jsp" />
+	</definition>
+
+	<definition name="/board/*" extends="tiles.layouts.type2">
+		<put-attribute name="body" value="/WEB-INF/jsp/board/{1}.jsp" />
+	</definition>
+
+	<definition name="/account/*" extends="tiles.layouts.type2">
+		<put-attribute name="body" value="/WEB-INF/jsp/account/{1}.jsp" />
+	</definition>
+
+
+
+	<!-- // type Popup 의 layout
+	┌───────────────────┐
+	│      header       │
+	├───────────────────┤
+	│                   │
+	│                   │
+	│       body        │
+	│                   │
+	│                   │
+	├───────────────────┤
+	│      footer       │
+	└───────────────────┘
+	 -->
+	 <definition name="tiles.layouts.typeInclude" template="/WEB-INF/config/tiles/layouts/typeInclude.jsp">
+		<put-attribute name="title" value="/WEB-INF/config/tiles/layouts/type2/type2_1_title.jsp" /><!-- style/script -->
+		<put-attribute name="body" value="/WEB-INF/config/tiles/layouts/type2/type2_3_body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/config/tiles/layouts/type2/type2_4_footer.jsp" />
+	</definition>
+
+
+	<!-- 팝업 : 템플릿에 설정된 페이지의 구성 요소에 대한 실제 파일을 지정합니다. -->
+	<!--
+	<definition name="tiles.layouts.typePopup" template="/WEB-INF/config/tiles/layouts/typePopup.jsp">
+		<put-attribute name="title" value="/WEB-INF/config/tiles/layouts/typePopup/typePopup_1_title.jsp" />style/script
+		<put-attribute name="header" value="/WEB-INF/config/tiles/layouts/typePopup/typePopup_2_header.jsp" />top/header
+		<put-attribute name="body" value="/WEB-INF/config/tiles/layouts/typePopup/typePopup_3_body.jsp" />
+		<put-attribute name="footer" value="/WEB-INF/config/tiles/layouts/typePopup/typePopup_4_footer.jsp" />
+	</definition>
+
+	<definition name="/system/commpop/*" extends="tiles.layouts.typePopup">
+		<put-attribute name="body" value="/WEB-INF/views/system/commpop/{1}.jsp" />
+	</definition>
+	 -->
+
+</tiles-definitions>
+<!-- [참고 자료] http://tiles.apache.org -->
