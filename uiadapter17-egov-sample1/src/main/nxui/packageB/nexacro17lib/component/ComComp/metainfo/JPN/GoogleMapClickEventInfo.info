@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GoogleMapClickEventInfo">
+    <ObjectInfo inheritance="" classname="nexacro.GoogleMapClickEventInfo" shorttypename="GoogleMapClickEventInfo" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapコンポーネントにロードされた地図をクリックすると、発生するイベントに渡すEventInfoオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="イベントのIDを持つ読み取り専用のプロパティです。" csspropertyname="" csselementname="" normalpropertyname="eventid" />
+      <Property name="fromobject" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="イベントが発生した原因となるコンポーネントを持つプロパティです。&#xA;　" csspropertyname="" csselementname="" normalpropertyname="fromobject" />
+      <Property name="fromreferenceobject" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="イベント発生の原因となるコンポーネントまたはサブコントロールを持つプロパティです。" csspropertyname="" csselementname="" normalpropertyname="fromreferenceobject" />
+      <Property name="latitude" group="Information" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapコンポーネントにロードされた地図でクリックした位置の緯度の値を持つ、読み取り専用のプロパティです。" csspropertyname="" csselementname="" normalpropertyname="latitude" />
+      <Property name="longitude" group="Information" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapコンポーネントにロードされた地図でクリックされた位置の経度の値を持つ、読み取り専用のプロパティです。" csspropertyname="" csselementname="" normalpropertyname="longitude" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

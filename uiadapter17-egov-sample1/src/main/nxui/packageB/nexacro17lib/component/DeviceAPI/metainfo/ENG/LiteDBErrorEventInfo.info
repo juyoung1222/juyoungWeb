@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.LiteDBErrorEventInfo">
+    <ObjectInfo inheritance="" classname="nexacro.LiteDBErrorEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This EventInfo object is delivered to the events triggered by an error in a request to the LiteDB." />
+    <PropertyInfo>
+      <Property name="errormsg" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is a property to restore error message." csspropertyname="" csselementname="" normalpropertyname="errormsg" />
+      <Property name="errortype" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is a property to return the type of an error." csspropertyname="" csselementname="" normalpropertyname="errortype" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This read-only property holds the ID of an event." csspropertyname="" csselementname="" normalpropertyname="eventid" />
+      <Property name="ldberrorcode" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is a property to return local DB error codes." csspropertyname="" csselementname="" normalpropertyname="ldberrorcode" />
+      <Property name="ldberrormsg" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is a property that returns the local DB error message." csspropertyname="" csselementname="" normalpropertyname="ldberrormsg" />
+      <Property name="statuscode" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is a property to restore error code." csspropertyname="" csselementname="" normalpropertyname="statuscode" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

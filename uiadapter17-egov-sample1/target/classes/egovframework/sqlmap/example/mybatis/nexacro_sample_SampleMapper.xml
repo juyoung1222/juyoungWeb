@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- <mapper namespace="nexacro.sample.service.impl.mybatis.NexacroSampleMapper"> -->
+<mapper namespace="com.nexacro.sample.service.impl.mybatis.UiAdapterSampleMapper">
+
+    <!-- Sample resultObject -->
+    <resultMap id="sample" type="com.nexacro.sample.vo.SampleVO">
+        <result property="title" column="TITLE" />
+        <result property="regId" column="REG_ID" />
+        <result property="regDate" column="REG_DATE" />
+        <result property="postId" column="POST_ID" />
+        <result property="contents" column="CONTENTS" />
+        <result property="communityId" column="COMMUNITY_ID" />
+        <result property="hitCount" column="HIT_COUNT" />
+    </resultMap>
+    
+	<resultMap id="sampleMap" type="java.util.HashMap">
+		<result property="title" column="TITLE" />
+		<result property="regId" column="REG_ID" />
+		<result property="regDate" column="REG_DATE" />
+		<result property="postId" column="POST_ID" />
+		<result property="contents" column="CONTENTS" />
+		<result property="communityId" column="COMMUNITY_ID" />
+		<result property="hitCount" column="HIT_COUNT" />
+	</resultMap>
+    
+     <resultMap id="data" type="java.util.HashMap">
+        <result property="largeId" column="LARGE_ID" javaType="int"/>
+        <result property="name" column="NAME" javaType="java.lang.String"/>
+    </resultMap>
+    
+     <select id="selectSampleVoList" parameterType="com.nexacro.sample.vo.SampleVO" resultMap="sample">
+            SELECT
+                A.TITLE AS TITLE, 
+                A.REG_ID AS REG_ID, 
+                A.REG_DATE AS REG_DATE, 
+                A.POST_ID AS POST_ID, 
+                A.CONTENTS AS CONTENTS, 
+                A.COMMUNITY_ID AS COMMUNITY_ID,
+                A.HIT_COUNT AS HIT_COUNT
+            FROM TB_BOARD A
+            WHERE 1=1
+           	<if test="searchCondition == 'TITLE'">
+                AND TITLE LIKE '%' || #{searchKeyword} || '%'
+            </if>
+            <if test="searchCondition == 'CONTENTS'">
+                AND CONTENTS LIKE '%' || #{searchKeyword} || '%'
+            </if>
+    </select>
+    
+  	<select id="selectSampleMapList" parameterType="java.util.Map" resultMap="sampleMap">
+            SELECT
+                A.TITLE AS TITLE, 
+                A.REG_ID AS REG_ID, 
+                A.REG_DATE AS REG_DATE, 
+                A.POST_ID AS POST_ID, 
+                A.CONTENTS AS CONTENTS, 
+                A.COMMUNITY_ID AS COMMUNITY_ID,
+                A.HIT_COUNT AS HIT_COUNT
+            FROM TB_BOARD A
+            WHERE 1=1
+            <if test="searchCondition == 'TITLE'">
+				AND TITLE LIKE '%' || #{searchKeyword} || '%'
+			</if>
+			<if test="searchCondition == 'CONTENTS'">
+                AND CONTENTS LIKE '%' || #{searchKeyword} || '%'
+            </if>
+    </select>
+    
+  	<select id="selectLargeData"  resultMap="data">
+            SELECT LARGE_ID, NAME FROM TB_LARGE
+    </select>
+	<insert id="initData" parameterType="int">
+    		{call SP_DATA_CREATE(#{initDataCount, mode=IN, jdbcType=INTEGER, javaType=integer})}
+    </insert>
+	
+	<delete id="deleteLargeData">
+			DELETE
+			FROM TB_LARGE
+	</delete>
+	
+    
+</mapper>

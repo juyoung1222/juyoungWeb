@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.SmsErrorEventInfo">
+    <ObjectInfo inheritance="" classname="nexacro.SmsErrorEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser" description="This EventInfo object is delivered to the events triggered by an error that is caused while processing an SMS." />
+    <PropertyInfo>
+      <Property name="errormsg" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="It returns error messages." csspropertyname="" csselementname="" normalpropertyname="errormsg" />
+      <Property name="errortype" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="This property represents the type of an error that has occurred." csspropertyname="" csselementname="" normalpropertyname="errortype" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="This read-only property holds the ID of an event." csspropertyname="" csselementname="" normalpropertyname="eventid" />
+      <Property name="message" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="Contents text of sent or received message." csspropertyname="" csselementname="" normalpropertyname="message" />
+      <Property name="phonenumber" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="Phone number of a mobile device of a person who calling to me." csspropertyname="" csselementname="" normalpropertyname="phonenumber" />
+      <Property name="smsid" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="It is a message ID." csspropertyname="" csselementname="" normalpropertyname="smsid" />
+      <Property name="statuscode" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="Error code" csspropertyname="" csselementname="" normalpropertyname="statuscode" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

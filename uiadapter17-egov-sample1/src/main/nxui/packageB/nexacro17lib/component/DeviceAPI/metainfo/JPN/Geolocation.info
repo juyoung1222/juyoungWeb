@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Geolocation">
+    <ObjectInfo inheritance="" classname="nexacro.Geolocation" shorttypename="Geolocation" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器の位置情報を提供します。" />
+    <PropertyInfo>
+      <Property name="coords" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器の位置情報を持っているプロパティです。" csspropertyname="" csselementname="" normalpropertyname="coords" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="Geolocationの一意識別子を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="Geolocationの名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="Geolocationの親オブジェクトを持つプロパティです。" csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="sourcetype" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="モバイル機器の位置情報が受信されたソースタイプを持つプロパティです。" csspropertyname="" csselementname="" normalpropertyname="sourcetype" />
+      <Property name="timestamp" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器の位置情報が受信された時刻を持っているプロパティです。" csspropertyname="" csselementname="" normalpropertyname="timestamp" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Geolocationの特定イベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="Geolocation.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="関数を検索してGeolocationの特定のイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="Geolocation.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されない場合は、上位の領域に検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数の名前を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="Geolocation.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Geolocationの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="Geolocation.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントで検索しようとするハンドラ関数のインデックスを返します。&#xA;検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCurrentPosition" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器の位置情報を要請するメソッドです。">
+        <Syntax text="Geolocation.getCurrentPosition ( nAccuracy, nTimeout )">
+          <Return type="Boolean" description="nAccuracyまたはnTimeoutが省略されるか、使用できない数字や文字が入力された場合にはfalse、ない場合はtrueを返します。　" />
+          <Arguments>
+            <Argument name="nAccuracy" type="Number" in="false" out="false" option="false" variable="false" description="要請するの位置情報の精度を設定します。&#xD;&#xA;iOS：ACCURACY_0~ACCURACY_4（5段階に設定可能）&#xD;&#xA;Android：ACCURACY_0~ACCURACY_2（3段階に設定可能）" />
+            <Argument name="nTimeout" type="Number" in="false" out="false" option="false" variable="false" description="応答制限時間（ms : 200ms ~ 86400000ms）　&#xD;&#xA;制限時間を超えた場合onrecverror発生。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Geolocationの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="Geolocation.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;インデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Geolocationの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="Geolocation.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Geolocationの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="Geolocation.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Geolocationの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="Geolocation.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Geolocationの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="Geolocation.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="watchStart" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器の位置情報の受信の監視を開始します。">
+        <Syntax text="Geolocation.watchStart(nAccuracy, nIntervalTime)">
+          <Return type="Boolean" description="nAccuracyまたはnIntervalTimeが省略されるか、使用できない数字や文字が入力された場合にはfalse、ない場合はtrueを返します。　" />
+          <Arguments>
+            <Argument name="nAccuracy" type="Number" in="false" out="false" option="false" variable="false" description="要請する位置情報の精度を設定します。&#xD;&#xA;iOS：ACCURACY_0~ACCURACY_4（5段階に設定可能）&#xD;&#xA;Android：ACCURACY_0~ACCURACY_2（3段階に設定可能）　" />
+            <Argument name="nIntervalTime" type="Number" in="false" out="false" option="false" variable="false" description="イベントの発生間隔(ms : 200ms ~ 86400000ms)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="watchStop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器の位置情報モニタリングを終了するメソッドです。">
+        <Syntax text="Geolocation.watchStop()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onrecverror" group="" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で位置情報受信に失敗したときに発生するイベントです。　">
+        <Syntax text="Geolocation.onrecverror(obj:nexacro.Geolocation,e:nexacro.GeolocationErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="GeolocationErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrecvsuccess" group="" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で位置情報受信に成功したときに発生するイベントです。">
+        <Syntax text="Geolocation.onrecvsuccess(obj:nexacro.Geolocation,e:nexacro.GeolocationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="GeolocationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

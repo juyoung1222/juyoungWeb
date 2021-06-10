@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.SocketReceiveEventInfo">
+    <ObjectInfo inheritance="" classname="nexacro.SocketReceiveEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows nexacro Browser" description="This is an EventInfo object delivered to the events that occur when a connected server holds data. Here, the server is connected through a TCPClientSocket component." />
+    <PropertyInfo>
+      <Property name="bytesread" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This read-only property holds the data length that a TCPClientSocket can receive. The data length is specified in byte." csspropertyname="" csselementname="" normalpropertyname="bytesread" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This read-only property holds the ID of an event." csspropertyname="" csselementname="" normalpropertyname="eventid" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

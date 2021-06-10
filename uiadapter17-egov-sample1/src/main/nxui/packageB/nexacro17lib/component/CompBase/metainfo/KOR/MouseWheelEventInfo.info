@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.MouseWheelEventInfo">
+    <ObjectInfo inheritance="" classname="nexacro.MouseWheelEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="마우스의 Wheel 버튼을 회전시켰을 때 발생하는 이벤트에 전달되는 EventInfo 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="altkey" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생 시 Alt 키가 눌렸는지 여부를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="altkey" />
+      <Property name="amount" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="입력된 마우스 Wheel 의 방향 및 가중치 값을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="amount" />
+      <Property name="button" group="Eventinfo" subgroup="" refreshinfo="" edittype="" defaultvalue="none" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트를 발생시킨 마우스 버튼에 대한 정보를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="button" />
+      <Property name="canvasx" group="Eventinfo" subgroup="" refreshinfo="" edittype="" defaultvalue="-1" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생 시 컴포넌트 영역을 기준으로 마우스 또는 터치 위치의 x 좌표값을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="canvasx" />
+      <Property name="canvasy" group="Eventinfo" subgroup="" refreshinfo="" edittype="" defaultvalue="-1" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생 시 컴포넌트 영역을 기준으로 마우스 또는 터치 위치의 y 좌표값을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="canvasy" />
+      <Property name="clientx" group="Eventinfo" subgroup="" refreshinfo="" edittype="" defaultvalue="-1" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생 시 컴포넌트의 클라이언트 영역을 기준으로 마우스 또는 터치 위치의 x 좌표값을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="clientx" />
+      <Property name="clienty" group="Eventinfo" subgroup="" refreshinfo="" edittype="" defaultvalue="-1" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생 시 컴포넌트의 클라이언트 영역을 기준으로 마우스 또는 터치 위치의 y 좌표값을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="clienty" />
+      <Property name="ctrlkey" group="Eventinfo" subgroup="" refreshinfo="" edittype="" defaultvalue="false" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생시 Ctrl 키가 눌렸는지 여부를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="ctrlkey" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트의 ID를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="eventid" />
+      <Property name="fromobject" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생의 원인이 되는 컴포넌트를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="fromobject" />
+      <Property name="fromreferenceobject" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생의 원인이 되는 컴포넌트 또는 서브컨트롤을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="fromreferenceobject" />
+      <Property name="screenx" group="Eventinfo" subgroup="" refreshinfo="" edittype="" defaultvalue="-1" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생 시 모니터 영역을 기준으로 마우스 또는 터치 위치의 x 좌표값을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="screenx" />
+      <Property name="screeny" group="Eventinfo" subgroup="" refreshinfo="" edittype="" defaultvalue="-1" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생 시 모니터 영역을 기준으로 마우스 또는 터치 위치의 y 좌표값을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="screeny" />
+      <Property name="shiftkey" group="Eventinfo" subgroup="" refreshinfo="" edittype="" defaultvalue="false" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생시 Shift 키가 눌렸는지 여부를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="shiftkey" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="preventDefault" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="현재 이벤트의 Default Action 을 취소하는 메소드입니다.">
+        <Syntax text="MouseWheelEventInfo.preventDefault()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="stopPropagation" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="현재 이벤트를 상위컴포넌트로 전파하지 않게 중지시키는 메소드입니다.">
+        <Syntax text="MouseWheelEventInfo.stopPropagation()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

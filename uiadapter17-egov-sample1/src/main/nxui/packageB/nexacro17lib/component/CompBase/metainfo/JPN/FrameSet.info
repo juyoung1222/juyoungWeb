@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.FrameSet">
+    <ObjectInfo inheritance="nexacro.Component" classname="nexacro.FrameSet" shorttypename="FrameSet" csstypename="FrameSet" csscontrolname="" group="Frame" subgroup="" csspseudo="true" container="false" composite="false" tabstop="false" cssstyle="true" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="MainFrameの下に来るFrameとして、アプリケーションの画面配列のための基本単位画面として使用されます。&#xA;&#xA;FrameSetは下位にFrameSet、HFrameSet、VFrameSet、TileFrameSet、ChildFrameを繰り返して持つことができます。&#xA;また、下位Frameを自由に配列できる機能を持っています。" />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="&quot;all&quot;" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="AccessibilityDescReadType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilityrole" />
+      <Property name="all" group="Collection" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetに登録されたFrameを持つ、読み取り専用のプロパティです。" csspropertyname="" csselementname="" normalpropertyname="all" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetの背景領域を設定するプロパティです。" csspropertyname="background" csselementname="" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="FrameSetの角の形を設定するプロパティです。" csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="FrameSetを表示するための下部の座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetに影効果を設定するプロパティです。" csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetに表示されるテキストの色を設定するプロパティです。" csspropertyname="color" csselementname="" normalpropertyname="color" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのStyleをXCSSファイルに定義されたclassに設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet領域内で表示されるマウスポインタの種類を設定するプロパティです。" csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetを使用可否を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetでイベントを発生させるか否かを決定するプロパティです。 &#xA;　&#xA;　" csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetで使用するフォントを設定するプロパティです。" csspropertyname="font" csselementname="" normalpropertyname="font" />
+      <Property name="frames" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetに登録された子フレームをCollection形で取得する読み取り専用プロパティです。" csspropertyname="" csselementname="" normalpropertyname="frames" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="FrameSetを表示するための高さを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのデフォルトアクションを実行するためのホットキーを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetの一意識別子を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetに適用されるInitValueのIDを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="initvalueid" />
+      <Property name="layered" group="Hidden" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="layered" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetを表示するための左の座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="FrameSetに表示される文字の間隔（字間）を設定するプロパティです。" csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minheight" />
+      <Property name="minimizedchildposition" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="bottom" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="MinimizedChildFramePos" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Childフレームの中でを最小化されたChildフレームが配置される位置を指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="minimizedchildposition" />
+      <Property name="minimizeheight" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ComponentのChildフレームを最小化した時のサイズの中で heightを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="minimizeheight" />
+      <Property name="minimizewidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Componentの Childフレームを最小化した時のサイズの中で widthを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="minimizewidth" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetの名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetの境界線を設定するプロパティです。" csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet領域の内側の余白を設定するプロパティです。" csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetに表示される文字列またはコンテンツの横方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="MultiEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetに表示されるテキストに適用する効果を設定するプロパティです。" csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetに表示される文字列またはコンテンツの縦方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetに表示される文字列が出力領域よりも長い場合、自動改行されるように設定するプロパティです。" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet領域の透明度を設定するプロパティです。" csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="コンポーネントの親オブジェクトを表示するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="positionstep" />
+      <Property name="progressbardirection" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのStatusBarに表示されるProgressBarの進行方向を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="progressbardirection" />
+      <Property name="progressbargap" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのステータスバーに表示されるプログレスバーの右側領域のサイズを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="progressbargap" />
+      <Property name="progressbarsize" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのステータスバーに表示されるプログレスバーの幅を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="progressbarsize" />
+      <Property name="progressbarsmooth" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="MainFrameのStatusBarに表示されるProgressBarの進行バーが連続した形で表示されるかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="progressbarsmooth" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetを表示するための右側の座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="showcascadestatustext" group="Action" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのStatusBarに下位FrameとFormのstatustextプロパティ値を表示するかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="showcascadestatustext" />
+      <Property name="showcascadetitletext" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのTitleBarに下位フレームとフォームのtitletextプロパティ値をすべて表示するかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="showcascadetitletext" />
+      <Property name="showstatusbar" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetにステータスバーを表示するか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="showstatusbar" />
+      <Property name="showtitlebar" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのタイトルバーを表示するか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="showtitlebar" />
+      <Property name="showtitleicon" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのタイトルバーにアイコンを表示するか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="showtitleicon" />
+      <Property name="statusbar" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのstatusbarオブジェクトを持つプロパティです。" csspropertyname="" csselementname="" normalpropertyname="statusbar" />
+      <Property name="statusbarheight" group="Appearance" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのステータスバーの高さを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="statusbarheight" />
+      <Property name="statustext" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのステータスバーに表示する文字列を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="statustext" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="&quot;&quot;" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Tabキーの入力でコンポーネント間のフォーカス移動時に、FrameSetのフォーカス受け取り可否を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="tabstop" />
+      <Property name="text" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetに表示される文字列を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="titlebar" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのtitlebarオブジェクトを持つプロパティです。　" csspropertyname="" csselementname="" normalpropertyname="titlebar" />
+      <Property name="titlebarbuttongap" group="Appearance" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのタイトルバーに表示されるシステムのボタンの間隔を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="titlebarbuttongap" />
+      <Property name="titlebarbuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="" description="FrameSetのタイトルバーに表示されるシステムのボタンのサイズを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="titlebarbuttonsize" />
+      <Property name="titlebarheight" group="Appearance" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのタイトルバーの高さを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="titlebarheight" />
+      <Property name="titletext" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetのタイトルバーに表示する文字列を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="titletext" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ツールチップを表示する方式を指定するプロパティです。　" csspropertyname="" csselementname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetを表示するための上部の座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSetが画面に表示されるか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="FrameSetを表示するための幅を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="FrameSetに表示されるテキストの単語の間の間隔を設定するプロパティです。" csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSetの背景領域を設定するプロパティです。" csspropertyname="background" csselementname="" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="FrameSetの角の形を設定するプロパティです。" csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSetに影効果を設定するプロパティです。" csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSetに表示されるテキストの色を設定するプロパティです。" csspropertyname="color" csselementname="" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="" description="FrameSet領域内で表示されるマウスポインタの種類を設定するプロパティです。" csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSetで使用するフォントを設定するプロパティです。" csspropertyname="font" csselementname="" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="FrameSetに表示される文字の間隔（字間）を設定するプロパティです。" csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSetの境界線を設定するプロパティです。" csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSetの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSet領域の内側の余白を設定するプロパティです。" csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" defaultvalue="left" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetに表示される文字列またはコンテンツの横方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="MultiEnum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetに表示されるテキストに適用する効果を設定するプロパティです。" csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" defaultvalue="middle" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetに表示される文字列またはコンテンツの縦方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetに表示される文字列が出力領域よりも長い場合、自動改行されるように設定するプロパティです。" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSet領域の透明度を設定するプロパティです。" csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="FrameSetに表示されるテキストの単語の間の間隔を設定するプロパティです。" csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="deactivate" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="titlebar" classname="nexacro.TitleBarControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="statusbar" classname="nexacro.StatusBarControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したFrameをFrameSetの子フレームに追加するメソッドです。">
+        <Syntax text="FrameSet.addChild( strChildID, objFrame )">
+          <Return type="Number" description="追加された子フレームのインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="子として追加するフレームのオブジェクトを設定します。" />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="子として追加するフレームのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetの特定イベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="FrameSet.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="関数を検索してFrameSetの特定のイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="FrameSet.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されない場合は、上位の領域に検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数の名前を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetの警告ダイアログボックスを表示するメソッドです。">
+        <Syntax text="FrameSet.alert( strText )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="ダイアログボックスに表示する文字列を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="arrange" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのChildフレームをソートするメソッドです。&#xD;&#xA;　&#xD;&#xA;　&#xD;&#xA;　">
+        <Syntax text="FrameSet.arrange( strArrangeType )">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="strArrangeType" type="String" in="false" out="false" option="false" variable="false" description="整列の方法を指定する文字列です。　&#xD;&#xA;&quot;cascade&quot; : Child Frameが 重なるように階段式に並べます。&#xD;&#xA;&quot;tilevertical&quot; : Child Frameが 重ならないように垂直に並べます。&#xD;&#xA;&quot;tilehorizontal&quot; : Child Frameが 重ならないように水平に並べます。&#xD;&#xA;&quot;vertical&quot; : Child Frameを垂直に並べます。&#xD;&#xA;&quot;horizontal&quot; : Child Frameを水平に並べます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="FrameSet.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetの選択ダイアログボックスを表示するメソッドです。">
+        <Syntax text="FrameSet.confirm( strText [,strCaption [,strType]] )">
+          <Return type="Boolean" description="表示されたダイアログボックスで、「OK」ボタンを選択すると、「true」を返します。&#xA;表示されたダイアログボックスで、「キャンセル」ボタンを選択すると、「false」を返します。" />
+          <Arguments>
+            <Argument name="strCaption" type="String" in="false" out="false" option="false" variable="false" description="ダイアログボックスのTitleBarに表示する文字列を設定します。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="ダイアログボックスに表示する文字列を設定します。" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="ダイアログボックスの左側の領域に表示されるアイコンの種類を文字列に設定します。&#xA;&#xA;「error」設定時、赤い 「X」アイコンが表示されます。&#xA;「question」設定時、疑問符（「？」）の形のアイコンが表示されます。&#xA;「warning」設定時、黄色の背景に感嘆符（「！」）の形のアイコンが表示されます。&#xA;「information」設定時、青色の背景に感嘆符（「！」）の形のアイコンが表示されます。&#xA;&#xA;値を設定しない場合は、アイコンを表示しません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したFrameSetを削除するメソッドです。">
+        <Syntax text="FrameSet.destroy()">
+          <Return type="Boolean" description="FrameSetが正常に削除されると、「true」を返します。&#xA;FrameSetが正常に削除されないと、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="FrameSet.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントで検索しようとするハンドラ関数のインデックスを返します。&#xA;検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getActiveFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetの子フレームの有効状態であるFrameオブジェクトを返すメソッドです。">
+        <Syntax text="FrameSet.getActiveFrame() ;">
+          <Return type="Object" description="FrameSetの子フレームの有効状態のFrameオブジェクトを返します。&#xA;FrameSetの子フレームの有効状態のFrameがない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="FrameSetに実際に表示される文字列の値を返すメソッドです。">
+        <Syntax text="FrameSet.getDisplayText()">
+          <Return type="String" description="FrameSetに実際の画面に表示される文字列を返します。&#xA;&#xA;exprプロパティ値によりtextプロパティ値が画面に変更されて表示されると、実際の画面に表示される値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="FrameSet.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;インデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アクセシビリティインターフェイスが実行されるときに、キー入力が処理される前に先に発生されるイベントです。">
+        <Syntax text="FrameSet.getFocus()">
+          <Return type="Object" description="true를 리턴하면, 해당 key에 대한 onkeydown(onkeyup?)、onchar event가 발생되지 않습니다. &#xD;&#xA;&#xD;&#xA;c" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの位置情報のbottomプロパティのピクセル値を取得するメソッドです。">
+        <Syntax text="FrameSet.getOffsetBottom();">
+          <Return type="Number" description="ピクセル(pixel)単位の値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのheight位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="FrameSet.getOffsetHeight();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのleft位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="FrameSet.getOffsetLeft();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのright位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="FrameSet.getOffsetRight();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのtop位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="FrameSet.getOffsetTop();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのwidth位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="FrameSet.getOffsetWidth();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOwnerFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetが所属する親Frameを返すメソッドです。">
+        <Syntax text="FrameSet.getOwnerFrame()">
+          <Return type="Object" description="FrameSetが所属する親Frameオブジェクトを返します。&#xA;FrameSetが所属するFrameがない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのbottom位置情報のピクセル値を取得するメソッドです。&#xA;　">
+        <Syntax text="FrameSet.getPixelBottom();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのheight位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="FrameSet.getPixelHeight();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのleft位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="FrameSet.getPixelLeft();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのright位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="FrameSet.getPixelRight();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのtop位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="FrameSet.getPixelTop();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのwidth情報のピクセル値を取得するメソッドです。">
+        <Syntax text="FrameSet.getPixelWidth();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトでFrameSetを動的に生成した後に初期化するメソッドです。">
+        <Syntax text="FrameSet.init( strName, nLeft, nTop, nWidth, nHeight [, nRight, nBottom] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="親Frameの右下端を基準にFrameSetのbottomプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。&#xA;nTop、nHeight値をすべて設定した場合、nBottom値は無視されます。" />
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="FrameSetのheightプロパティ値を設定します。Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="親Frameの左上を基準にFrameSetのleftプロパティ値を設定します。Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="親Frameの右下端を基準にFrameSetのrightプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。&#xA;nLeft、nWidth値をすべて設定した場合、nRight値は無視されます。" />
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="親Frameの左上を基準にFrameSetのtopプロパティ値を設定します。Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="FrameSetのwidthプロパティ値を設定します。Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="FrameSetのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したFrameをFrameSetの子フレームに特定の順序に追加するメソッドです。">
+        <Syntax text="FrameSet.insertChild( nIdx, strChildID, objComp )">
+          <Return type="Number" description="追加された子フレームのインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="親フレームに追加する順序を設定します。&#xA;「-1」に設定すると、子フレームの中で一番最後に追加されます。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="子として追加するフレームのオブジェクトを設定します。" />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="子として追加するフレームのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetの位置とサイズを変更するメソッドです。">
+        <Syntax text="FrameSet.move( nLeft, nTop [, nWidth, nHeight [, nRight, nBottom]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="FrameSetのbottomプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。vTop、vHeight値をすべて設定した場合、vBottom値は無視されます。" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="FrameSetのheightプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="FrameSetのleftプロパティの値をpixelまたは割合（「％」）単位の数値に設定します。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="FrameSetのrightプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。vLeft、vWidth値をすべて設定した場合、vRight値は無視されます。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="FrameSetのtopプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="FrameSetのwidthプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetに動的に追加されたFrameを削除するメソッドです。">
+        <Syntax text="FrameSet.removeChild( strChildID )">
+          <Return type="Object" description="Frameの削除に成功した場合、削除されたFrameのオブジェクトを返します。&#xA;Frameの削除に失敗した場合、「null」を返します。" />
+          <Arguments>
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="削除する子FrameのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="FrameSet.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="FrameSet.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのサイズを変更するメソッドです。">
+        <Syntax text="FrameSet.resize( nWidth, nHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Integer" in="false" out="false" option="false" variable="false" description="変更する縦サイズです。" />
+            <Argument name="nWidth" type="Integer" in="false" out="false" option="false" variable="false" description="変更される横のサイズです。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="FrameSet.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="FrameSet.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSetを有効にして、フォーカスを与えるメソッドです。">
+        <Syntax text="FrameSet.setFocus()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのparent left、topを基準にしてbottom値を設定します。">
+        <Syntax text="FrameSet.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="数値です。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのparent left、topを基準にしてheight値を設定します。　">
+        <Syntax text="FrameSet.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="数値です。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのparent left、topを基準にしてleftの値を設定します。">
+        <Syntax text="FrameSet.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="数値です。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetのparent left、topを基準にしてrightの値を設定します。">
+        <Syntax text="FrameSet.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="数値です。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの親コンポーネントleft、topの位置を基準にしてtopの値を設定するメソッドでス。">
+        <Syntax text="FrameSet.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="数値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの親コンポーネントleft、topに位置を基準にしてwidth値を設定するメソッドです。">
+        <Syntax text="FrameSet.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Object" in="false" out="false" option="false" variable="false" description="数値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したFrameSetを画面に表示するメソッドです">
+        <Syntax text="FrameSet.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onactivate" group="" deprecated="false" unused="false" requirement="" description="FrameSetが有効になったときに発生するイベントです。">
+        <Syntax text="FrameSet.onactivate(obj:nexacro.FrameSet,e:nexacro.ActivateEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ActivateEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeclose" group="Event" deprecated="false" unused="false" requirement="" description="FrameSetが終了する前に発生するイベントです。">
+        <Syntax text="FrameSet.onbeforeclose(obj:nexacro.FrameSet,e:nexacro.CloseEventInfo);">
+          <Return type="String" description="イベントの返り値として、文字列設定の際にFrameSet終了のための確認ウィンドウが表示されます。&#xA;返り値に設定した文字列が終了のための確認ウィンドウに使用されます。&#xA;&#xA;イベントの返り値を省略したり、「null」、「undefined」、「empty string」に設定すると確認ウィンドウが表示されません。" />
+          <Arguments>
+            <Argument name="e" type="CloseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの領域内でマウス左ボタンをクリックしたときに発生するイベントです。">
+        <Syntax text="FrameSet.onclick(obj:nexacro.FrameSet,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclose" group="Event" deprecated="false" unused="false" requirement="" description="Xcomponentが終了するときに発生するイベントです。">
+        <Syntax text="FrameSet.onclose(obj:nexacro.FrameSet,e:nexacro.CloseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="CloseEventInfo" in="false" out="false" option="false" variable="false" description="イベントオブジェクト." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="FrameSet.oncontextmenu(obj:nexacro.FrameSet,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの領域内でマウスの左ボタンをダブルクリックしたときに発生するイベントです。">
+        <Syntax text="FrameSet.ondblclick(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondeactivate" group="" deprecated="false" unused="false" requirement="" description="FrameSetが無効になったときに発生するイベントです。">
+        <Syntax text="FrameSet.ondeactivate(obj:nexacro.FrameSet,e:nexacro.ActivateEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ActivateEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet領域内でマウス左ボタンを押してドラッグを行ったときに発生するイベントです。">
+        <Syntax text="FrameSet.ondrag(obj:nexacro.FrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="コンポーネント領域にドラッグされたコンポーネントが入ったときに発生するイベントです。">
+        <Syntax text="FrameSet.ondragenter(obj:nexacro.FrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントを処理するかどうかの結果。trueを返すと上位コンポーネントでイベントが発生しません。&#xA;デフォルト値 : false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="コンポーネント領域にドラッグされたコンポーネントが解除されるときに発生するイベントです。　">
+        <Syntax text="FrameSet.ondragleave(obj:nexacro.FrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントを処理するかどうかを指定、trueを返すと上位コンポーネントでイベントが発生しません。&#xA;デフォルト値 : false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの領域内でドラッグ状態のマウスポインタが移動したときに発生するイベントです。">
+        <Syntax text="FrameSet.ondragmove(obj:nexacro.FrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの領域内でドラッグ状態のマウスボタンを離したときに発生するイベントです。">
+        <Syntax text="FrameSet.ondrop(obj:nexacro.FrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetにキーボードで値が入力されたときに発生するイベントです。">
+        <Syntax text="FrameSet.oninput(obj:nexacro.FrameSet,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetにフォーカスがある状態でキーボードのキーが押されたときに発生するイベントです。&#xA;　">
+        <Syntax text="FrameSet.onkeydown(obj:nexacro.FrameSet,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として&quot;true&quot;を返す場合、上位のコンポーネントにイベントが伝播されません。&#xA;イベントの返り値として&quot;false&quot;を返す場合、上位のコンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetにフォーカスがある状態で、押下されていたキーが外されたときに発生するイベントです。">
+        <Syntax text="FrameSet.onkeyup(obj:nexacro.FrameSet,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetでフォーカスが出るときに発生するイベントです。">
+        <Syntax text="FrameSet.onkillfocus(obj:nexacro.FrameSet,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの領域内でマウスの左ボタンを押したときに発生するイベントです。">
+        <Syntax text="FrameSet.onlbuttondown(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの領域内で押下されたマウスの左ボタンを離したときに発生するイベントです。">
+        <Syntax text="FrameSet.onlbuttonup(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="マウスの左ボタン/右ボタンを除いた他のボタンが押されたときに発生するイベントです。">
+        <Syntax text="FrameSet.onmousedown(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベント処理の指定、trueを返すと上位コンポーネントでイベントが発生しません。　&#xA;デフォルト値：false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet領域の中にマウスのカーソルが入ってきたときに発生するイベントです。　">
+        <Syntax text="FrameSet.onmouseenter(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントを処理するかどうかを指定。True値を返す場合、上位コンポーネントのonmouseenterイベントが発生しません。&#xD;&#xA;デフォルト値：false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの領域外にマウスポインタが出るときに発生するイベントです。">
+        <Syntax text="FrameSet.onmouseleave(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの領域内でマウスポインタが移動するときに発生するイベントです。">
+        <Syntax text="FrameSet.onmousemove(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの領域内で押下されたマウスのボタン（左/右ボタンを除く）を離したときに発生するイベントです。">
+        <Syntax text="FrameSet.onmouseup(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet領域内でマウスホイールをスクロールしたときに発生するイベントです。">
+        <Syntax text="FrameSet.onmousewheel(obj:nexacro.FrameSet,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、、マウスホイールの回転値が無視され、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、ホイールボタンの回転値が処理され、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="" description="FrameSetの位置を移動したときに発生するイベントです。">
+        <Syntax text="FrameSet.onmove(obj:nexacro.FrameSet,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onorientationchange" group="Event" deprecated="false" unused="false" requirement="" description="モバイル機器の画面の向きが変更されたときに発生するイベントです。">
+        <Syntax text="FrameSet.onorientationchange(obj:nexacro.FrameSet,e:nexacro.OrientationChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="OrientationChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetでマウス右ボタンが押されたときに発生するイベントです。　&#xA;　　">
+        <Syntax text="FrameSet.onrbuttondown(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetの領域内でマウスの右ボタンを離したときに発生するイベントです。">
+        <Syntax text="FrameSet.onrbuttonup(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSetにフォーカスが入るときに発生するイベントです。&#xA;　">
+        <Syntax text="FrameSet.onsetfocus(obj:nexacro.FrameSet,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="" description="FrameSetのサイズが変更されたときに発生するイベントです。">
+        <Syntax text="FrameSet.onsize(obj:nexacro.FrameSet,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsyscommand" group="Event" deprecated="false" unused="false" requirement="" description="FrameSetにシステムコマンドメッセージが入ったときに発生するイベントです。">
+        <Syntax text="FrameSet.onsyscommand(obj:nexacro.FrameSet,e:nexacro.SysCommandEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位フレームにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位フレームにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「true」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="SysCommandEventInfo" in="false" out="false" option="false" variable="false" description="イベントオブジェクト" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="タッチ終了(アップ)時に発生するイベントです。">
+        <Syntax text="FrameSet.ontouchend(obj:nexacro.FrameSet,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベント処理可否、trueを返すと上位コンポーネントでイベントが発生しません。&#xD;&#xA;デフォルト : false" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="タッチ中(ムーブ)に発生するイベントです。">
+        <Syntax text="FrameSet.ontouchmove(obj:nexacro.FrameSet,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベント処理可否、trueを返すと上位コンポーネントでイベントが発生しません。&#xD;&#xA;デフォルト : false" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="タッチ開始(ダウン)時に発生するイベントです。">
+        <Syntax text="FrameSet.ontouchstart(obj:nexacro.FrameSet,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベント処理可否、trueを返すと上位コンポーネントでイベントが発生しません。&#xA;デフォルト : false" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

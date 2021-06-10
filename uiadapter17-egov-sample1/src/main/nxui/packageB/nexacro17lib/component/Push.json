@@ -1,0 +1,23 @@
+﻿{
+	"name": "Push",
+	"version": "17.0.0.1",
+	"description": "nexacro platform 17 Unified Framework Library",
+	"license": "",
+	"scripts": [
+		"Push/lib/sockjs.js",
+		"Push/XPushAPI_Web.js",
+		"Push/XPushAPI_Runtime.js",
+		"Push/XPush.js"
+	],
+	"objInfo": [
+		"Push/metainfo/XPush.info",
+		"Push/metainfo/PushMessageObject.info",
+		"Push/metainfo/XPushErrorEventInfo.info",
+		"Push/metainfo/XPushEventInfo.info",
+		"Push/metainfo/XPushKeepAliveEventInfo.info"
+	],
+	"designscripts": [
+		"Push/Design/DesignXPush.js"
+	]
+}
+//# sourceURL=Push.json

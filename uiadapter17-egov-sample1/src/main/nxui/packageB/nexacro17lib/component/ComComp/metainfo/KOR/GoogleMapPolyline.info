@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GoogleMapPolyline">
+    <ObjectInfo inheritance="" classname="nexacro.GoogleMapPolyline" shorttypename="GoogleMapPolyline" csstypename="GoogleMapPolyline" csscontrolname="" group="Object" subgroup="" csspseudo="false" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMap 컴포넌트에 로드된 지도에 특정라인을 표시를 할 때 사용하는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="linecolor" group="" subgroup="" refreshinfo="" edittype="Color" defaultvalue="black" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="NamedColor" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapPolyline 의 locationdata 속성에 설정된 위치를 연결하는 선의 색상을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="linecolor" />
+      <Property name="linewidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapPolyline 의 locationdata 속성에 설정된 위치를 연결하는 선의 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="linewidth" />
+      <Property name="locationdata" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="지도에 표시할 GoogleMapPolyline 의 좌표를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="locationdata" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapPolyline 을 지도에 표시할 지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="visible" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

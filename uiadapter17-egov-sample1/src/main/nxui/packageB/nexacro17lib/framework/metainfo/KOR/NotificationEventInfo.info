@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.NotificationEventInfo">
+    <ObjectInfo inheritance="" classname="nexacro.NotificationEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 nexacro platform 이 Notification 을 수신하여 발생하는 이벤트에 전달되는 EventInfo 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="이벤트의 ID를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="eventid" />
+      <Property name="reason" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="이벤트가 발생한 원인에 대한 정보를 정수로 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="reason" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

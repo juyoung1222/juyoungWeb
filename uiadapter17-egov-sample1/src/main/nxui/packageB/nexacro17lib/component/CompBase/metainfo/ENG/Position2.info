@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro._Position2">
+    <ObjectInfo inheritance="" classname="nexacro._Position2" shorttypename="" csstypename="" csscontrolname="" group="" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is an Object which sets margin in area." />
+    <PropertyInfo>
+      <Property name="bottom" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Point" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to designate size value of the lower part of Component area." csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="left" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Point" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to designate a left size value of Component area." csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="right" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Point" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to designate a right size value of Component area." csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="top" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Point" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to designate size value of the upper part of Component area." csspropertyname="" csselementname="" normalpropertyname="top" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

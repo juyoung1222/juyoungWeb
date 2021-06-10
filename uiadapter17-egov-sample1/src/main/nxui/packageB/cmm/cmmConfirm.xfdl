@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.0">
+  <Form id="cmmConfirm" width="330" height="150" titletext="확인창" onload="form_onload">
+    <Layouts>
+      <Layout height="150" width="330">
+        <Static id="staMsgContent" taborder="0" text="Static00" left="15" top="20" width="" height="85" right="15" bottom="" textAlign="center"/>
+        <Button id="btnOk" taborder="1" text="확인" left="110" top="" width="50" height="20" right="" bottom="10" onclick="btnOk_onclick"/>
+        <Button id="btnCancle" taborder="1" text="취소" left="170" top="" width="50" height="20" right="" bottom="10" onclick="btnCancle_onclick"/>
+        <Static id="Static00" taborder="2" text="Static00" left="0" top="0" width="" height="20" right="0" bottom="" color="black" background="black"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/**
+*  컨설팅 표준화 작업
+*  @MenuPath        cmm > cmmConfirm (공통메세지)
+*  @FileName 		cmmConfirm.xfdl 
+*  @Creator 			soojeong
+*  @CreateDate 	2017.03.09
+*  @Desction         메세지팝업
+************** 소스 수정 이력 ***************************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2017.03.09     	soojeong 	           최초 생성 
+*  2017.10.17     	kyk       	           주석 정비
+*  2017.10.26     	soojeong 	           주석 정비
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+ ************************************************************************************************/
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.form_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.gfnFormOnLoad(this); //초기화[필수]
+	
+	var sContents = this.getOwnerFrame().paramContents;
+	this.fnMsgSetting(sContents);
+};
+/************************************************************************************************
+* TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+
+/************************************************************************************************
+ * CALLBACK 콜백 처리부분
+ ************************************************************************************************/
+
+ /************************************************************************************************
+ * 사용자 FUNCTION 영역
+ ************************************************************************************************/
+/**
+* @description 메세지설정
+*/
+  this.fnMsgSetting = function (sMsgContent)
+ {
+ 	this.staMsgContent.set_text(sMsgContent);
+ };
+ 
+ /************************************************************************************************
+ * 각 COMPONENT 별 EVENT 영역
+ ************************************************************************************************/
+/**
+* @description 확인버튼
+*/
+this.btnOk_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.close(true);
+};
+
+/**
+* @description 취소버튼
+*/
+this.btnCancle_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.close(false);
+};
+
+
+]]></Script>
+  </Form>
+</FDL>

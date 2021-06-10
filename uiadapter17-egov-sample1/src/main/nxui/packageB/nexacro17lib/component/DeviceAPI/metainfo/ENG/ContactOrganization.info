@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ContactOrganization">
+    <ObjectInfo inheritance="" classname="nexacro.ContactOrganization" shorttypename="ContactOrganization" csstypename="ContactOrganization" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="Organization Object field that is used in the contact." />
+    <PropertyInfo>
+      <Property name="company" group="" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to set the name of an organization in a mobile device's contact application." csspropertyname="" csselementname="" normalpropertyname="company" />
+      <Property name="department" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to set the name of a department in a mobile device's contact application." csspropertyname="" csselementname="" normalpropertyname="department" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to set the identification of a ContactOrganization." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="label" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to set the name of a field in a mobile device's contact application." csspropertyname="" csselementname="" normalpropertyname="label" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to specify the name of a ContactOrganization." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="title" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to set a title in a mobile device's contact application." csspropertyname="" csselementname="" normalpropertyname="title" />
+      <Property name="type" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to set the type of an organization in a mobile device's contact application." csspropertyname="" csselementname="" normalpropertyname="type" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

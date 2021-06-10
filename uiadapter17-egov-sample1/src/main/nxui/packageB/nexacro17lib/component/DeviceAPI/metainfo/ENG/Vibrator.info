@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Vibrator">
+    <ObjectInfo inheritance="" classname="nexacro.Vibrator" shorttypename="Vibrator" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="Provides vibration of mobile equipment" />
+    <PropertyInfo>
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to set the identification of a Vibrator." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to specify the name of a Vibrator." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This read-only property holds the parent object of a Vibrator." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="patterns" group="" subgroup="" refreshinfo="" edittype="Object" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="This property is used to set the pattern of vibration conducted in a mobile device. The pattern is specified in the form of an array." csspropertyname="" csselementname="" normalpropertyname="patterns" />
+      <Property name="repeatcount" group="" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to specify the number of repeating a vibration pattern in a mobile device." csspropertyname="" csselementname="" normalpropertyname="repeatcount" />
+      <Property name="startpos" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="It is a property to set the starting point of a vibration pattern on a mobile device." csspropertyname="" csselementname="" normalpropertyname="startpos" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to add a handler to a certain event of a Vibrator.">
+        <Syntax text="Vibrator.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="Vibrator.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method finds a handler in a certain event of a Vibrator and returns the index of the handler.">
+        <Syntax text="Vibrator.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method returns a specific handler from a certain event of a Vibrator by specifying the index number of the handler.">
+        <Syntax text="Vibrator.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="hasVibrator" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="To confirm whether to use vibration function in mobile device.">
+        <Syntax text="Vibrator.hasVibrator()">
+          <Return type="Boolean" description="If you can use the vibration function returns true, if you can not use you will return false." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="play" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="This method is used to generate vibration in a mobile device.">
+        <Syntax text="Vibrator.play()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to remove a handler in a certain event of a Vibrator.">
+        <Syntax text="Vibrator.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to change the first handler in a certain event of a Vibrator.">
+        <Syntax text="Vibrator.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method finds a function and uses it to replace the first handler in a certain event of a Vibrator.">
+        <Syntax text="Vibrator.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="stop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="This method is used for a mobile device to stop vibration.">
+        <Syntax text="Vibrator.stop()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="This event occurs when vibration fails to be performed in a mobile device.">
+        <Syntax text="Vibrator.onerror(obj:nexacro.Vibrator,e:nexacro.VibratorErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VibratorErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onplay" group="" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="It is an event that occurs after the vibration process begins in mobile devices.">
+        <Syntax text="Vibrator.onplay(obj:nexacro.Vibrator,e:nexacro.VibratorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VibratorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onstop" group="" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="It is Event to occur after treatment of vibration is stopped in mobile device.">
+        <Syntax text="Vibrator.onstop(obj:nexacro.Vibrator,e:nexacro.VibratorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VibratorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

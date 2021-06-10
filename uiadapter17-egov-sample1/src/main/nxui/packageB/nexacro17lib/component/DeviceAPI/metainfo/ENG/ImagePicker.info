@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ImagePicker">
+    <ObjectInfo inheritance="" classname="nexacro.ImagePicker" shorttypename="ImagePicker" csstypename="ImagePicker" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="Get the path of the image or images are stored in conjunction with the photo album mobile device." />
+    <PropertyInfo>
+      <Property name="encodingtype" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="이벤트 핸들러 함수를 추가하는 메소드입니다." csspropertyname="" csselementname="" normalpropertyname="encodingtype" />
+      <Property name="gettype" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="설정된 이벤트 핸들러 함수를 모두 제거하는 메소드입니다." csspropertyname="" csselementname="" normalpropertyname="gettype" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to set the identification of a ImagePicker." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="imageheight" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="지정한 이벤트 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다." csspropertyname="" csselementname="" normalpropertyname="imageheight" />
+      <Property name="imagequality" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="지정한 인덱스 또는 이벤트 핸들러 함수를 제거하는 메소드입니다." csspropertyname="" csselementname="" normalpropertyname="imagequality" />
+      <Property name="imagewidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="" csspropertyname="" csselementname="" normalpropertyname="imagewidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to specify the name of a ImagePicker." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This read-only property holds the parent object of a ImagePicker." csspropertyname="" csselementname="" normalpropertyname="parent" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="It calls a photo album of a mobile device to get images.">
+        <Syntax text="ImagePicker.open( enumGettype, enumEncodingype )">
+          <Return type="Boolean" description="If strGetType is omitted or an unusable letter is input, it returns false. Otherwise, it returns true." />
+          <Arguments>
+            <Argument name="enumEncodingype" type="String" in="false" out="false" option="false" variable="false" description="An image type. It is changed to a designated method. (0: JPEG, 1:PNG) &#xA;It is not supported on Android. (Only PNG type is available)" />
+            <Argument name="enumGettype" type="String" in="false" out="false" option="false" variable="false" description="How to get images ( 0:imageurl, 1:imagedata)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="This event occurs when the import of an image fails in a mobile device.">
+        <Syntax text="ImagePicker.onerror(obj:nexacro.ImagePicker,e:nexacro.ImagePickerErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ImagePickerErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="It is Event to occur when Bring a selected image from photo album is successful.">
+        <Syntax text="ImagePicker.onsuccess(obj:nexacro.ImagePicker,e:nexacro.ImagePickerEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ImagePickerEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

@@ -1,0 +1,263 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.nexacro.sample.service.impl.mybatis.NexaBoardMapper">
+    
+	<!-- 공통 코드 불러오기  -->
+	<select id="selectAllCode" resultType="egovMap">
+		SELECT 
+			CODE, COM_KOR, TO_CHAR(CODE_SEQ) AS CODE_SEQ, CATEGORY, SUB_COM, USE_YN, REG_DT
+		FROM CODE_MASTER
+		ORDER BY CODE_SEQ
+	</select>
+	
+	<select id="selectCodeInLvl" parameterType="map" resultType="egovMap">
+		SELECT CODE, COM_KOR, CATEGORY
+		FROM CODE_MASTER 
+		WHERE LEVEL = #{level}
+		START WITH CODE = 'A000000'
+		CONNECT BY PRIOR CODE = CATEGORY
+		ORDER SIBLINGS BY CODE_SEQ
+	</select>
+	
+	<select id="selectComboBox" parameterType="map" resultType="egovMap">
+		SELECT CODE, COM_KOR
+		FROM CODE_MASTER
+		WHERE CATEGORY = #{code}
+	</select>
+	
+	<!-- 전체 account List  -->
+	<select id="selectAccountList" resultType="egovMap">
+		SELECT
+			A.ACCOUNT_SEQ AS ACCOUNT_SEQ,
+			A.PROFIT_COST AS PROFIT_COST,
+			A.PROFIT_COST_NM AS PROFIT_COST_NM,
+			A.BIG_GROUP AS BIG_GROUP,
+			A.BIG_GROUP_NM AS BIG_GROUP_NM,
+			A.MIDDLE_GROUP AS MIDDLE_GROUP,
+			A.MIDDLE_GROUP_NM AS MIDDLE_GROUP_NM,
+			A.SMALL_GROUP AS SMALL_GROUP,
+			A.SMALL_GROUP_NM AS SMALL_GROUP_NM,
+			A.DETAIL_GROUP AS DETAIL_GROUP,
+			A.DETAIL_GROUP_NM AS DETAIL_GROUP_NM,
+			A.COMMENTS AS COMMENTS,
+			A.TRANSACTION_MONEY AS TRANSACTION_MONEY,
+			A.TRANSACTION_DATE AS TRANSACTION_DATE,
+			A.WRITER AS WRITER,
+			A.REG_DATE AS REG_DATE
+		FROM VW_ACCOUNT_TB A
+		WHERE 1=1
+		ORDER BY
+			A.PROFIT_COST,
+			A.BIG_GROUP,
+			A.MIDDLE_GROUP,
+			A.SMALL_GROUP,
+			A.DETAIL_GROUP
+	</select>
+	
+	<!-- insert Account -->
+	
+	<insert id="insertAccount" parameterType="map">
+		<selectKey keyProperty="accountSeq" resultType="int" order="BEFORE" >
+			SELECT ACCOUNT_SEQ.nextval
+			FROM DUAL
+		</selectKey>
+		INSERT INTO ACCOUNT_TB
+			(
+			ACCOUNT_SEQ,
+			PROFIT_COST,
+			BIG_GROUP,
+			MIDDLE_GROUP, 
+			SMALL_GROUP,
+			DETAIL_GROUP, 
+			COMMENTS,
+			TRANSACTION_MONEY,
+			TRANSACTION_DATE,
+			WRITER,
+			REG_DATE)
+		VALUES
+			(
+			#{accountSeq},
+			#{profitCost},
+			#{bigGroup},
+			#{middleGroup},
+			#{smallGroup},
+			#{detailGroup},
+			#{comments},
+			#{transactionMoney},
+			#{transactionDate},
+			#{writer},
+			SYSDATE
+			)
+	</insert>
+	
+	<!-- update -->
+	<update id="updateAccount" parameterType="map" >
+		UPDATE ACCOUNT_TB
+		SET 
+			PROFIT_COST = #{profitCost},
+			BIG_GROUP = #{bigGroup},
+			MIDDLE_GROUP = #{middleGroup}, 
+			SMALL_GROUP = #{smallGroup},
+			DETAIL_GROUP = #{detailGroup}, 
+			COMMENTS = #{comments},
+			TRANSACTION_MONEY = #{transactionMoney},
+			TRANSACTION_DATE = #{transactionDate}
+		WHERE ACCOUNT_SEQ = #{accountSeq}
+	</update>
+	
+	<!-- delete -->
+	<delete id="deleteAccount" parameterType="map">
+		DELETE 
+		FROM ACCOUNT_TB
+		WHERE ACCOUNT_SEQ = #{accountSeq}
+	</delete>
+    
+    
+    
+    
+    <!-- 강사등록샘플 -->
+    
+    <select id="selectCodeList" parameterType="map" resultType="egovMap">
+		SELECT
+		    CODE_SE_CD,
+		    CODE,
+		    CODE_NM,
+		    DESCRIPTION,
+		    REG_DT
+		FROM CODE_TB
+		WHERE CODE_SE_CD = #{codeSeCd}
+		ORDER BY CODE
+	</select>
+	
+	<select id="selectLecturerList" resultType="egovMap">
+		SELECT 
+		    A.LEC_NO,
+		    A.LEC_NM,
+		    A.TEL_NO,
+		    A.BIRTH_DY,
+		    A.ADDRESS,
+		    A.LEC_LV_SE_CD,
+		    (SELECT CODE_NM 
+		     FROM CODE_TB 
+		     WHERE CODE_SE_CD = 'LEC_LV_SE_CD' 
+		     AND CODE = A.LEC_LV_SE_CD) LEC_LV_SE_NM,
+		    A.HIRE_DY,
+		    A.REG_DT
+		FROM LECTURER_TB A
+	</select>
+
+	<select id="selectCareerList" parameterType="map" resultType="egovMap">
+		SELECT
+		    LEC_NO,
+		    CAREER_SE_CD,
+		    CAREER_NO,
+		    DESCRIPTION,
+		    START_DY,
+		    END_DY,
+		    SORT_NO,
+		    REG_DT
+		FROM CAREER_TB
+		WHERE LEC_NO = #{lecNo}
+		AND CAREER_SE_CD = #{careerSeCd}
+	</select>
+	
+	<insert id="mergeLecturer" parameterType="map">
+		<selectKey resultType="string" keyProperty="newLecNo" order="BEFORE">
+			SELECT NVL(MAX(LEC_NO)+1, 1)
+			FROM LECTURER_TB        
+		</selectKey>    
+		MERGE INTO LECTURER_TB T
+	    USING DUAL
+			ON ( T.LEC_NO = #{lecNo} )
+	    WHEN MATCHED THEN
+			UPDATE SET 
+				LEC_NM       = #{lecNm},      
+				TEL_NO       = #{telNo},      
+				BIRTH_DY     = #{birthDy},    
+				ADDRESS      = #{address},    
+				LEC_LV_SE_CD = #{lecLvSeCd},  
+				HIRE_DY      = #{hireDy}  
+	    WHEN NOT MATCHED THEN
+	        INSERT
+	        (
+		        LEC_NO,
+				LEC_NM,
+				TEL_NO,
+				BIRTH_DY,
+				ADDRESS,
+				LEC_LV_SE_CD,
+				HIRE_DY,
+				REG_DT
+			) 
+	        VALUES
+	        (
+		        #{newLecNo},
+				#{lecNm},
+				#{telNo},
+				#{birthDy},
+				#{address},
+				#{lecLvSeCd},
+				#{hireDy},
+				#{regDt}
+	        )
+	</insert>
+	
+	<insert id="mergeCareer" parameterType="map">
+		<selectKey resultType="string" keyProperty="newCareerNo" order="BEFORE">
+			SELECT NVL(MAX(CAREER_NO)+1, 1)
+			FROM CAREER_TB      
+			WHERE LEC_NO = #{lecNo}
+			AND CAREER_SE_CD = #{careerSeCd}  
+		</selectKey>    
+		MERGE INTO CAREER_TB
+	    USING DUAL
+			ON ( LEC_NO = #{lecNo}
+				AND CAREER_SE_CD = #{careerSeCd}
+				AND CAREER_NO = #{careerNo} )
+	    WHEN MATCHED THEN
+			UPDATE SET 
+				DESCRIPTION = #{description},
+			    START_DY	= #{startDy},
+			    END_DY		= #{endDy}
+	    WHEN NOT MATCHED THEN
+	        INSERT
+	        (
+		        LEC_NO,
+			    CAREER_SE_CD,
+			    CAREER_NO,
+			    DESCRIPTION,
+			    START_DY,
+			    END_DY,
+			    REG_DT
+			) 
+	        VALUES
+	        (
+		        #{lecNo},
+			    #{careerSeCd},
+			    #{newCareerNo},
+			    #{description},
+			    #{startDy},
+			    #{endDy},
+			    #{regDt}
+	        )
+	</insert>
+	
+	<delete id="deleteLecturer" parameterType="map">
+		DELETE FROM LECTURER_TB
+		WHERE LEC_NO = #{lecNo}
+	</delete>
+	
+	<delete id="deleteCareer" parameterType="map">
+		DELETE FROM CAREER_TB
+		WHERE LEC_NO = #{lecNo}
+		AND CAREER_SE_CD = #{careerSeCd}
+		AND CAREER_NO = #{careerNo}
+	
+	</delete>
+	<select id="login" resultType="com.nexacro.sample.vo.UserVO" parameterType="map">
+		SELECT USER_ID, PASSWORD
+		FROM tb_user1 
+		WHERE USER_ID = #{userId} AND PASSWORD = #{password}
+	</select>
+</mapper>

@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Crypto">
+    <ObjectInfo inheritance="" classname="nexacro.Crypto" shorttypename="" csstypename="" csscontrolname="" group="" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="暗号化/復号化処理をサポートするオブジェクトです。　" />
+    <PropertyInfo>
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Cryptoの名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="type" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="暗号化アルゴリズムを表すプロパティです。" csspropertyname="" csselementname="" normalpropertyname="type" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="decrypt" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="暗号化されたバッファを復号化するメソッドです。">
+        <Syntax text="Crypto.decrypt(objBuffer, objKey)">
+          <Return type="Object" description="復号処理されたBufferオブジェクトが返されます。" />
+          <Arguments>
+            <Argument name="objBuffer" type="Object" in="false" out="false" option="false" variable="false" description="復号化Bufferオブジェクトです。" />
+            <Argument name="objKey" type="Object" in="false" out="false" option="false" variable="false" description="getKey()メソッドを使用して生成されたKeyオブジェクトです。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="encrypt" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="バッファを暗号化しているメソッドです。">
+        <Syntax text="Crypto.encrypt(objBuffer, objKey)">
+          <Return type="Object" description="暗号処理されたBufferオブジェクトが返されます。" />
+          <Arguments>
+            <Argument name="objBuffer" type="Object" in="false" out="false" option="false" variable="false" description="暗号化するBufferオブジェクトです。" />
+            <Argument name="objKey" type="Object" in="false" out="false" option="false" variable="false" description="getKey()メソッドを使用して生成されたKeyオブジェクトです。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getKey" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="暗号化キーを生成するメソッドです。">
+        <Syntax text="Crypto.getKey(strUserKey)">
+          <Return type="Object" description="ユーザーのキーの値との組み合わせによって生成されたKeyオブジェクトを返します。" />
+          <Arguments>
+            <Argument name="strUserKey" type="String" in="false" out="false" option="false" variable="false" description="ユーザーのキーの値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="暗号化方式を初期化するメソッドです。">
+        <Syntax text="Crypto.init(strType, nBit)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBit" type="Integer" in="false" out="false" option="false" variable="false" description="暗号化レベル、bit単位で、bitは省略し、数字のみを入力する必要があります。&#xD;&#xA;&#xD;&#xA;ex）128、256、1024" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="暗号化アルゴリズム&#xD;&#xA;&#xD;&#xA;&quot;seed&quot;：シードアルゴリズム" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

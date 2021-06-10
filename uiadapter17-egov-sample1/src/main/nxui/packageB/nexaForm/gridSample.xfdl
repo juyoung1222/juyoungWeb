@@ -1,0 +1,3600 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.0">
+  <Form id="example0001" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" mobileorientation="landscape" width="1280">
+        <Grid id="Grid00" taborder="0" left="70" top="110" width="1170" height="550" binddataset="dsGrdData">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="64" band="left"/>
+                <Column size="76" band="left"/>
+                <Column size="81" band="left"/>
+                <Column size="96" band="left"/>
+                <Column size="81"/>
+                <Column size="78"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+                <Row size="24"/>
+                <Row size="24" band="summ"/>
+                <Row size="24" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell rowspan="2" text="사업부"/>
+                <Cell col="1" rowspan="2" text="사업장"/>
+                <Cell col="2" rowspan="2" text="제품그룹"/>
+                <Cell col="3" rowspan="2" text="Total"/>
+                <Cell col="4" colspan="5" text="2018-01"/>
+                <Cell col="9" colspan="5" text="2018-02"/>
+                <Cell col="14" colspan="5" text="2018-03"/>
+                <Cell col="19" colspan="5"/>
+                <Cell col="24" colspan="5"/>
+                <Cell col="29" colspan="5"/>
+                <Cell row="1" col="4" text="2018-W01"/>
+                <Cell row="1" col="5" text="2018-W02"/>
+                <Cell row="1" col="6" text="2018-W03"/>
+                <Cell row="1" col="7" text="2018-W04"/>
+                <Cell row="1" col="8"/>
+                <Cell row="1" col="9" text="2018-W05"/>
+                <Cell row="1" col="10" text="2018-W06"/>
+                <Cell row="1" col="11" text="2018-W07"/>
+                <Cell row="1" col="12" text="2018-W08"/>
+                <Cell row="1" col="13"/>
+                <Cell row="1" col="14" text="2018-W09"/>
+                <Cell row="1" col="15" text="2018-W10"/>
+                <Cell row="1" col="16" text="2018-W11"/>
+                <Cell row="1" col="17" text="2018-W12"/>
+                <Cell row="1" col="18" text="2018-W13"/>
+                <Cell row="1" col="19"/>
+                <Cell row="1" col="20"/>
+                <Cell row="1" col="21"/>
+                <Cell row="1" col="22"/>
+                <Cell row="1" col="23"/>
+                <Cell row="1" col="24"/>
+                <Cell row="1" col="25"/>
+                <Cell row="1" col="26"/>
+                <Cell row="1" col="27"/>
+                <Cell row="1" col="28"/>
+                <Cell row="1" col="29"/>
+                <Cell row="1" col="30"/>
+                <Cell row="1" col="31"/>
+                <Cell row="1" col="32"/>
+                <Cell row="1" col="33"/>
+              </Band>
+              <Band id="body">
+                <Cell rowspan="2" text="bind:gbmNm" suppress="1"/>
+                <Cell col="1" rowspan="2" text="bind:fctNm" suppress="1"/>
+                <Cell col="2" rowspan="2" text="bind:prodGrp" suppress="2"/>
+                <Cell col="3" rowspan="2" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="4" colspan="5" text="expr:w01+w02+w03+w04" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0" suppressalign="first" textAlign="center"/>
+                <Cell col="9" colspan="5" text="expr:w05+w06+w07+w08" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0" textAlign="center"/>
+                <Cell col="14" colspan="5" text="expr:w09+w10+w11+w12+w13" maskeditmaskchar="0" maskeditformat="0.000" displaytype="mask" textAlign="center"/>
+                <Cell col="19" colspan="5" text="expr:w09+w10+w11+w12+w13" displaytype="mask" textAlign="center" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="24" colspan="5" text="expr:w09+w10+w11+w12+w13" displaytype="mask" textAlign="center" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="29" colspan="5" text="expr:w09+w10+w11+w12+w13" displaytype="mask" textAlign="center" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="4" maskeditformat="0.000" maskeditmaskchar="0" textAlign="right" displaytype="expr:dataset.getColumn(currow, 'w01') &lt;1 ? normal : mask" text="expr:dataset.getColumn(currow, 'w01') &lt;1 ? '-' : dataset.getColumn(currow,'w01')"/>
+                <Cell row="1" col="5" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w02') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w02') &lt;1 ? '-' : dataset.getColumn(currow,'w02')"/>
+                <Cell row="1" col="6" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w03') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w03') &lt;1 ? '-' : dataset.getColumn(currow,'w03')"/>
+                <Cell row="1" col="7" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w04') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w04') &lt;1 ? '-' : dataset.getColumn(currow,'w04')"/>
+                <Cell row="1" col="8" maskeditformat="0.000" maskeditmaskchar="0" displaytype="number" textAlign="right"/>
+                <Cell row="1" col="9" text="bind:w05" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w05') &lt;1 ? normal : mask" textAlign="right"/>
+                <Cell row="1" col="10" text="bind:w06" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w06') &lt;1 ? normal : mask" textAlign="right"/>
+                <Cell row="1" col="11" text="bind:w07" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w07') &lt;1 ? normal : mask" textAlign="right"/>
+                <Cell row="1" col="12" text="bind:w08" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w08') &lt;1 ? normal : mask" textAlign="right"/>
+                <Cell row="1" col="13" maskeditformat="0.000" maskeditmaskchar="0" textAlign="right" displaytype="expr:dataset.getColumn(currow, 'w01') &lt;1 ? normal : mask" text="expr:dataset.getColumn(currow, 'w01') &lt;1 ? '-' : dataset.getColumn(currow,'w01')"/>
+                <Cell row="1" col="14" maskeditformat="0.000" maskeditmaskchar="0" textAlign="right" displaytype="expr:dataset.getColumn(currow, 'w01') &lt;1 ? normal : mask" text="expr:dataset.getColumn(currow, 'w01') &lt;1 ? '-' : dataset.getColumn(currow,'w01')"/>
+                <Cell row="1" col="15" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w02') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w02') &lt;1 ? '-' : dataset.getColumn(currow,'w02')"/>
+                <Cell row="1" col="16" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w03') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w03') &lt;1 ? '-' : dataset.getColumn(currow,'w03')"/>
+                <Cell row="1" col="17" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w04') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w04') &lt;1 ? '-' : dataset.getColumn(currow,'w04')"/>
+                <Cell row="1" col="18" maskeditformat="0.000" maskeditmaskchar="0" displaytype="number" textAlign="right"/>
+                <Cell row="1" col="19" maskeditformat="0.000" maskeditmaskchar="0" textAlign="right" displaytype="expr:dataset.getColumn(currow, 'w01') &lt;1 ? normal : mask" text="expr:dataset.getColumn(currow, 'w01') &lt;1 ? '-' : dataset.getColumn(currow,'w01')"/>
+                <Cell row="1" col="20" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w02') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w02') &lt;1 ? '-' : dataset.getColumn(currow,'w02')"/>
+                <Cell row="1" col="21" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w03') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w03') &lt;1 ? '-' : dataset.getColumn(currow,'w03')"/>
+                <Cell row="1" col="22" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w04') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w04') &lt;1 ? '-' : dataset.getColumn(currow,'w04')"/>
+                <Cell row="1" col="23" maskeditformat="0.000" maskeditmaskchar="0" displaytype="number" textAlign="right"/>
+                <Cell row="1" col="24" maskeditformat="0.000" maskeditmaskchar="0" textAlign="right" displaytype="expr:dataset.getColumn(currow, 'w01') &lt;1 ? normal : mask" text="expr:dataset.getColumn(currow, 'w01') &lt;1 ? '-' : dataset.getColumn(currow,'w01')"/>
+                <Cell row="1" col="25" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w02') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w02') &lt;1 ? '-' : dataset.getColumn(currow,'w02')"/>
+                <Cell row="1" col="26" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w03') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w03') &lt;1 ? '-' : dataset.getColumn(currow,'w03')"/>
+                <Cell row="1" col="27" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w04') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w04') &lt;1 ? '-' : dataset.getColumn(currow,'w04')"/>
+                <Cell row="1" col="28" maskeditformat="0.000" maskeditmaskchar="0" displaytype="number" textAlign="right"/>
+                <Cell row="1" col="29" maskeditformat="0.000" maskeditmaskchar="0" textAlign="right" displaytype="expr:dataset.getColumn(currow, 'w01') &lt;1 ? normal : mask" text="expr:dataset.getColumn(currow, 'w01') &lt;1 ? '-' : dataset.getColumn(currow,'w01')"/>
+                <Cell row="1" col="30" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w02') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w02') &lt;1 ? '-' : dataset.getColumn(currow,'w02')"/>
+                <Cell row="1" col="31" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w03') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w03') &lt;1 ? '-' : dataset.getColumn(currow,'w03')"/>
+                <Cell row="1" col="32" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w04') &lt;1 ? normal : mask" textAlign="right" text="expr:dataset.getColumn(currow, 'w04') &lt;1 ? '-' : dataset.getColumn(currow,'w04')"/>
+                <Cell row="1" col="33" maskeditformat="0.000" maskeditmaskchar="0" displaytype="expr:dataset.getColumn(currow, 'w04') &lt;1 ? normal : mask" textAlign="right"/>
+              </Band>
+              <Band id="summary">
+                <Cell colspan="2" text="Total"/>
+                <Cell col="2" colspan="2"/>
+                <Cell col="4" text="expr:dataset.getSum(&quot;w01&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="5" text="expr:dataset.getSum(&quot;w02&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="6" text="expr:dataset.getSum(&quot;w03&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="7" text="expr:dataset.getSum(&quot;w04&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="8" text="expr:dataset.getSum(&quot;w05&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="9" text="expr:dataset.getSum(&quot;w06&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="10" text="expr:dataset.getSum(&quot;w07&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="11" text="expr:dataset.getSum(&quot;w08&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="12" text="expr:dataset.getSum(&quot;w09&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="13" text="expr:dataset.getSum(&quot;w10&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="14" text="expr:dataset.getSum(&quot;w11&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="15" text="expr:dataset.getSum(&quot;w12&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="16" text="expr:dataset.getSum(&quot;w13&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="17" text="expr:dataset.getSum(&quot;w14&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="18" text="expr:dataset.getSum(&quot;w15&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="19" text="expr:dataset.getSum(&quot;w16&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="20" text="expr:dataset.getSum(&quot;w17&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="21" text="expr:dataset.getSum(&quot;w18&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="22" text="expr:dataset.getSum(&quot;w19&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="23" text="expr:dataset.getSum(&quot;w20&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="24" text="expr:dataset.getSum(&quot;w21&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="25" text="expr:dataset.getSum(&quot;w22&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="26" text="expr:dataset.getSum(&quot;w23&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="27" text="expr:dataset.getSum(&quot;w24&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="28" text="expr:dataset.getSum(&quot;w25&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="29" text="expr:dataset.getSum(&quot;w26&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="30" text="expr:dataset.getSum(&quot;w28&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="31" text="expr:dataset.getSum(&quot;w28&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="32" text="expr:dataset.getSum(&quot;w29&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell col="33" text="expr:dataset.getSum(&quot;w30&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" colspan="2" text="Average"/>
+                <Cell row="1" col="2" colspan="2"/>
+                <Cell row="1" col="4" text="expr:dataset.getAvg(&quot;w01&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="5" text="expr:dataset.getAvg(&quot;w02&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="6" text="expr:dataset.getAvg(&quot;w03&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="7" text="expr:dataset.getAvg(&quot;w04&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="8" text="expr:dataset.getAvg(&quot;w05&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="9" text="expr:dataset.getAvg(&quot;w06&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="10" text="expr:dataset.getAvg(&quot;w07&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="11" text="expr:dataset.getAvg(&quot;w08&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="12" text="expr:dataset.getAvg(&quot;w09&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="13" text="expr:dataset.getAvg(&quot;w10&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="14" text="expr:dataset.getAvg(&quot;w11&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="15" text="expr:dataset.getAvg(&quot;w12&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="16" text="expr:dataset.getAvg(&quot;w13&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="17" text="expr:dataset.getAvg(&quot;w14&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="18" text="expr:dataset.getAvg(&quot;w15&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="19" text="expr:dataset.getAvg(&quot;w16&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="20" text="expr:dataset.getAvg(&quot;w17&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="21" text="expr:dataset.getAvg(&quot;w18&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="22" text="expr:dataset.getAvg(&quot;w19&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="23" text="expr:dataset.getAvg(&quot;w20&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="24" text="expr:dataset.getAvg(&quot;w21&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="25" text="expr:dataset.getAvg(&quot;w22&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="26" text="expr:dataset.getAvg(&quot;w23&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="27" text="expr:dataset.getAvg(&quot;w24&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="28" text="expr:dataset.getAvg(&quot;w25&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="29" text="expr:dataset.getAvg(&quot;w26&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="30" text="expr:dataset.getAvg(&quot;w27&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="31" text="expr:dataset.getAvg(&quot;w28&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="32" text="expr:dataset.getAvg(&quot;w29&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+                <Cell row="1" col="33" text="expr:dataset.getAvg(&quot;w30&quot;)" displaytype="mask" maskeditformat="0.000" maskeditmaskchar="0"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="search3mthBtn" taborder="1" text="3개월" left="388" top="75" width="132" height="25" onclick="search3mthBtn_onclick"/>
+        <Button id="search6mthBtn" taborder="2" text="6개월" left="534" top="75" width="132" height="25" onclick="search6mthBtn_onclick"/>
+        <Button id="wayofselectBtn" taborder="3" text="조회방식 : 주간" left="680" top="75" width="132" height="25" onclick="wayofselectBtn_onclick"/>
+        <Combo id="Combo00" taborder="4" text="Combo00" left="70" top="73" width="140" height="27" innerdataset="months" codecolumn="code" datacolumn="months" onitemchanged="Combo00_onitemchanged"/>
+        <Combo id="Combo01" taborder="5" text="Combo00" left="240" top="73" width="135" height="27" innerdataset="months" codecolumn="code" datacolumn="months" onitemchanged="Combo01_onitemchanged"/>
+        <Div id="Div00" taborder="6" text="~" left="215" top="73" width="21" height="29" border="0px"/>
+        <Button id="Button00" taborder="7" text="조회" left="822" top="74" width="38" height="28" onclick="Button00_onclick"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsGrdData">
+        <ColumnInfo>
+          <Column id="gbmNm" type="STRING" size="256" sumtext="" description=""/>
+          <Column id="fctNm" type="STRING" size="256"/>
+          <Column id="prodGrp" type="STRING" size="256"/>
+          <Column id="w01" type="FLOAT" size="256"/>
+          <Column id="w02" type="FLOAT" size="256"/>
+          <Column id="w03" type="FLOAT" size="256"/>
+          <Column id="w04" type="FLOAT" size="256"/>
+          <Column id="w05" type="FLOAT" size="256"/>
+          <Column id="w06" type="FLOAT" size="256"/>
+          <Column id="w07" type="FLOAT" size="256"/>
+          <Column id="w08" type="FLOAT" size="256"/>
+          <Column id="w09" type="FLOAT" size="256"/>
+          <Column id="w10" type="FLOAT" size="256"/>
+          <Column id="w11" type="FLOAT" size="256"/>
+          <Column id="w12" type="FLOAT" size="256"/>
+          <Column id="w13" type="FLOAT" size="256"/>
+          <Column id="w14" type="FLOAT" size="256"/>
+          <Column id="w15" type="FLOAT" size="256"/>
+          <Column id="w16" type="FLOAT" size="256"/>
+          <Column id="w17" type="FLOAT" size="256"/>
+          <Column id="w18" type="FLOAT" size="256"/>
+          <Column id="w19" type="FLOAT" size="256"/>
+          <Column id="w20" type="FLOAT" size="256"/>
+          <Column id="w21" type="FLOAT" size="256"/>
+          <Column id="w22" type="FLOAT" size="256"/>
+          <Column id="w23" type="FLOAT" size="256"/>
+          <Column id="w24" type="FLOAT" size="256"/>
+          <Column id="w25" type="FLOAT" size="256"/>
+          <Column id="w26" type="FLOAT" size="256"/>
+          <Column id="w27" type="FLOAT" size="256"/>
+          <Column id="w28" type="FLOAT" size="256"/>
+          <Column id="w29" type="FLOAT" size="256"/>
+          <Column id="w30" type="FLOAT" size="256"/>
+          <Column id="w31" type="FLOAT" size="256"/>
+          <Column id="w32" type="FLOAT" size="256"/>
+          <Column id="w33" type="FLOAT" size="256"/>
+          <Column id="w34" type="FLOAT" size="256"/>
+          <Column id="w35" type="FLOAT" size="256"/>
+          <Column id="w36" type="FLOAT" size="256"/>
+          <Column id="w37" type="FLOAT" size="256"/>
+          <Column id="w38" type="FLOAT" size="256"/>
+          <Column id="w39" type="FLOAT" size="256"/>
+          <Column id="w40" type="FLOAT" size="256"/>
+          <Column id="w41" type="FLOAT" size="256"/>
+          <Column id="w42" type="FLOAT" size="256"/>
+          <Column id="w43" type="FLOAT" size="256"/>
+          <Column id="w44" type="FLOAT" size="256"/>
+          <Column id="w45" type="FLOAT" size="256"/>
+          <Column id="w46" type="FLOAT" size="256"/>
+          <Column id="w47" type="FLOAT" size="256"/>
+          <Column id="w48" type="FLOAT" size="256"/>
+          <Column id="w49" type="FLOAT" size="256"/>
+          <Column id="w50" type="FLOAT" size="256"/>
+          <Column id="w51" type="FLOAT" size="256"/>
+          <Column id="w52" type="FLOAT" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">A100D</Col>
+            <Col id="prodGrp">B7440DE8</Col>
+            <Col id="w01">5.762</Col>
+            <Col id="w02">5.302</Col>
+            <Col id="w03">3.895</Col>
+            <Col id="w04">3.716</Col>
+            <Col id="w05">8.125</Col>
+            <Col id="w06">3.68</Col>
+            <Col id="w07">8.034</Col>
+            <Col id="w08">5.999</Col>
+            <Col id="w09">3.439</Col>
+            <Col id="w10">4.692</Col>
+            <Col id="w11">7.602</Col>
+            <Col id="w12">0.15</Col>
+            <Col id="w13">2.799</Col>
+            <Col id="w14">6.616</Col>
+            <Col id="w15">0.299</Col>
+            <Col id="w16">8.47</Col>
+            <Col id="w17">1.514</Col>
+            <Col id="w18">8.03</Col>
+            <Col id="w19">8.745</Col>
+            <Col id="w20">1.155</Col>
+            <Col id="w21">6.875</Col>
+            <Col id="w22">3.314</Col>
+            <Col id="w23">9.35</Col>
+            <Col id="w24">3.663</Col>
+            <Col id="w25">2.278</Col>
+            <Col id="w26">8.874</Col>
+            <Col id="w27">3.985</Col>
+            <Col id="w28">6.164</Col>
+            <Col id="w29">3.393</Col>
+            <Col id="w30">4.739</Col>
+            <Col id="w31">7.355</Col>
+            <Col id="w32">2.417</Col>
+            <Col id="w33">8.187</Col>
+            <Col id="w34">8.407</Col>
+            <Col id="w35">3.109</Col>
+            <Col id="w36">9.619</Col>
+            <Col id="w37">8.831</Col>
+            <Col id="w38">6.927</Col>
+            <Col id="w39">8.044</Col>
+            <Col id="w40">5.93</Col>
+            <Col id="w41">9.869</Col>
+            <Col id="w42">3.688</Col>
+            <Col id="w43">0.457</Col>
+            <Col id="w44">8.286</Col>
+            <Col id="w45">9.257</Col>
+            <Col id="w46">7.737</Col>
+            <Col id="w47">1.171</Col>
+            <Col id="w48">9.063</Col>
+            <Col id="w49">2.24</Col>
+            <Col id="w50">6.652</Col>
+            <Col id="w51">9.273</Col>
+            <Col id="w52">7.784</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">A100D</Col>
+            <Col id="prodGrp">E7DEF656</Col>
+            <Col id="w01">1.233</Col>
+            <Col id="w02">1.533</Col>
+            <Col id="w03">2.337</Col>
+            <Col id="w04">4.571</Col>
+            <Col id="w05">4.747</Col>
+            <Col id="w06">7.641</Col>
+            <Col id="w07">5.991</Col>
+            <Col id="w08">1.528</Col>
+            <Col id="w09">2.634</Col>
+            <Col id="w10">9.37</Col>
+            <Col id="w11">2.505</Col>
+            <Col id="w12">1.121</Col>
+            <Col id="w13">9.028</Col>
+            <Col id="w14">7.657</Col>
+            <Col id="w15">6.329</Col>
+            <Col id="w16">0.824</Col>
+            <Col id="w17">6.949</Col>
+            <Col id="w18">8.413</Col>
+            <Col id="w19">4.508</Col>
+            <Col id="w20">4.647</Col>
+            <Col id="w21">6.055</Col>
+            <Col id="w22">6.087</Col>
+            <Col id="w23">2.028</Col>
+            <Col id="w24">8.355</Col>
+            <Col id="w25">1.229</Col>
+            <Col id="w26">8.492</Col>
+            <Col id="w27">8.807</Col>
+            <Col id="w28">5.5</Col>
+            <Col id="w29">0.799</Col>
+            <Col id="w30">4.184</Col>
+            <Col id="w31">5.105</Col>
+            <Col id="w32">8.076</Col>
+            <Col id="w33">6.164</Col>
+            <Col id="w34">1.538</Col>
+            <Col id="w35">6.652</Col>
+            <Col id="w36">3.047</Col>
+            <Col id="w37">8.148</Col>
+            <Col id="w38">7.316</Col>
+            <Col id="w39">1.978</Col>
+            <Col id="w40">3.472</Col>
+            <Col id="w41">2.631</Col>
+            <Col id="w42">5.903</Col>
+            <Col id="w43">9.519</Col>
+            <Col id="w44">7.518</Col>
+            <Col id="w45">5.684</Col>
+            <Col id="w46">9.478</Col>
+            <Col id="w47">4.799</Col>
+            <Col id="w48">1.61</Col>
+            <Col id="w49">5.812</Col>
+            <Col id="w50">4.371</Col>
+            <Col id="w51">6.295</Col>
+            <Col id="w52">1.72</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">A100D</Col>
+            <Col id="prodGrp">07D34EA3</Col>
+            <Col id="w01">6.564</Col>
+            <Col id="w02">6.909</Col>
+            <Col id="w03">2.594</Col>
+            <Col id="w04">2.003</Col>
+            <Col id="w05">8.786</Col>
+            <Col id="w06">9.167</Col>
+            <Col id="w07">0.806</Col>
+            <Col id="w08">6.344</Col>
+            <Col id="w09">4.383</Col>
+            <Col id="w10">0.22</Col>
+            <Col id="w11">6.418</Col>
+            <Col id="w12">5.855</Col>
+            <Col id="w13">4.105</Col>
+            <Col id="w14">8.45</Col>
+            <Col id="w15">8.031</Col>
+            <Col id="w16">4.283</Col>
+            <Col id="w17">1.642</Col>
+            <Col id="w18">8.786</Col>
+            <Col id="w19">9.016</Col>
+            <Col id="w20">9.058</Col>
+            <Col id="w21">6.7</Col>
+            <Col id="w22">0.729</Col>
+            <Col id="w23">3.868</Col>
+            <Col id="w24">9.141</Col>
+            <Col id="w25">2.738</Col>
+            <Col id="w26">3.547</Col>
+            <Col id="w27">7.198</Col>
+            <Col id="w28">1.285</Col>
+            <Col id="w29">5.995</Col>
+            <Col id="w30">5.821</Col>
+            <Col id="w31">4.123</Col>
+            <Col id="w32">5.677</Col>
+            <Col id="w33">6.086</Col>
+            <Col id="w34">7.427</Col>
+            <Col id="w35">8.229</Col>
+            <Col id="w36">0.554</Col>
+            <Col id="w37">5.507</Col>
+            <Col id="w38">0.067</Col>
+            <Col id="w39">9.231</Col>
+            <Col id="w40">2.252</Col>
+            <Col id="w41">3.92</Col>
+            <Col id="w42">5.692</Col>
+            <Col id="w43">1.029</Col>
+            <Col id="w44">9.585</Col>
+            <Col id="w45">3.588</Col>
+            <Col id="w46">6.431</Col>
+            <Col id="w47">8.176</Col>
+            <Col id="w48">8.835</Col>
+            <Col id="w49">8.731</Col>
+            <Col id="w50">4.904</Col>
+            <Col id="w51">3.708</Col>
+            <Col id="w52">7.286</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">A100D</Col>
+            <Col id="prodGrp">ECEB86C0</Col>
+            <Col id="w01">0.351</Col>
+            <Col id="w02">3.361</Col>
+            <Col id="w03">1.301</Col>
+            <Col id="w04">3.62</Col>
+            <Col id="w05">2.118</Col>
+            <Col id="w06">1.896</Col>
+            <Col id="w07">9.193</Col>
+            <Col id="w08">7.565</Col>
+            <Col id="w09">6.066</Col>
+            <Col id="w10">7.896</Col>
+            <Col id="w11">6.921</Col>
+            <Col id="w12">0.788</Col>
+            <Col id="w13">4.331</Col>
+            <Col id="w14">7.038</Col>
+            <Col id="w15">3.529</Col>
+            <Col id="w16">8.655</Col>
+            <Col id="w17">7.168</Col>
+            <Col id="w18">7.656</Col>
+            <Col id="w19">2.334</Col>
+            <Col id="w20">0.459</Col>
+            <Col id="w21">1.488</Col>
+            <Col id="w22">4.465</Col>
+            <Col id="w23">6.133</Col>
+            <Col id="w24">2.978</Col>
+            <Col id="w25">7.289</Col>
+            <Col id="w26">2.736</Col>
+            <Col id="w27">5.255</Col>
+            <Col id="w28">3.074</Col>
+            <Col id="w29">7.997</Col>
+            <Col id="w30">9.563</Col>
+            <Col id="w31">8.857</Col>
+            <Col id="w32">7.255</Col>
+            <Col id="w33">9.09</Col>
+            <Col id="w34">9.701</Col>
+            <Col id="w35">1.662</Col>
+            <Col id="w36">6.892</Col>
+            <Col id="w37">0.17</Col>
+            <Col id="w38">9.538</Col>
+            <Col id="w39">6.886</Col>
+            <Col id="w40">3.898</Col>
+            <Col id="w41">4.556</Col>
+            <Col id="w42">2.218</Col>
+            <Col id="w43">9.053</Col>
+            <Col id="w44">8.279</Col>
+            <Col id="w45">3.379</Col>
+            <Col id="w46">9.722</Col>
+            <Col id="w47">5.358</Col>
+            <Col id="w48">1.031</Col>
+            <Col id="w49">7.065</Col>
+            <Col id="w50">3.731</Col>
+            <Col id="w51">5.469</Col>
+            <Col id="w52">1.23</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">A100E</Col>
+            <Col id="prodGrp">E7DEF656</Col>
+            <Col id="w01">1.353</Col>
+            <Col id="w02">0.1</Col>
+            <Col id="w03">8.051</Col>
+            <Col id="w04">8.251</Col>
+            <Col id="w05">2.333</Col>
+            <Col id="w06">9.183</Col>
+            <Col id="w07">4.348</Col>
+            <Col id="w08">8.826</Col>
+            <Col id="w09">4.211</Col>
+            <Col id="w10">4.957</Col>
+            <Col id="w11">0.977</Col>
+            <Col id="w12">9.97</Col>
+            <Col id="w13">5.157</Col>
+            <Col id="w14">1.733</Col>
+            <Col id="w15">2.378</Col>
+            <Col id="w16">2.696</Col>
+            <Col id="w17">2.443</Col>
+            <Col id="w18">6.847</Col>
+            <Col id="w19">4.274</Col>
+            <Col id="w20">6.97</Col>
+            <Col id="w21">9.783</Col>
+            <Col id="w22">3.209</Col>
+            <Col id="w23">9.037</Col>
+            <Col id="w24">7.477</Col>
+            <Col id="w25">4.845</Col>
+            <Col id="w26">7.385</Col>
+            <Col id="w27">1.849</Col>
+            <Col id="w28">5.86</Col>
+            <Col id="w29">4.641</Col>
+            <Col id="w30">6.981</Col>
+            <Col id="w31">4.231</Col>
+            <Col id="w32">6.018</Col>
+            <Col id="w33">2.913</Col>
+            <Col id="w34">2.278</Col>
+            <Col id="w35">0.857</Col>
+            <Col id="w36">3.629</Col>
+            <Col id="w37">3.484</Col>
+            <Col id="w38">8.354</Col>
+            <Col id="w39">3.587</Col>
+            <Col id="w40">4.537</Col>
+            <Col id="w41">1.016</Col>
+            <Col id="w42">5.48</Col>
+            <Col id="w43">2.289</Col>
+            <Col id="w44">9.691</Col>
+            <Col id="w45">5.94</Col>
+            <Col id="w46">3.759</Col>
+            <Col id="w47">7.965</Col>
+            <Col id="w48">6.014</Col>
+            <Col id="w49">4.738</Col>
+            <Col id="w50">6.946</Col>
+            <Col id="w51">7.558</Col>
+            <Col id="w52">5.975</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">A100E</Col>
+            <Col id="prodGrp">ECEB86C0</Col>
+            <Col id="w01">0.123</Col>
+            <Col id="w02">2.417</Col>
+            <Col id="w03">5.195</Col>
+            <Col id="w04">2.828</Col>
+            <Col id="w05">8.202</Col>
+            <Col id="w06">3.72</Col>
+            <Col id="w07">4.652</Col>
+            <Col id="w08">1.978</Col>
+            <Col id="w09">3.981</Col>
+            <Col id="w10">1.635</Col>
+            <Col id="w11">4.603</Col>
+            <Col id="w12">3.917</Col>
+            <Col id="w13">0.838</Col>
+            <Col id="w14">8.598</Col>
+            <Col id="w15">5.054</Col>
+            <Col id="w16">0.001</Col>
+            <Col id="w17">1.329</Col>
+            <Col id="w18">1.957</Col>
+            <Col id="w19">4.073</Col>
+            <Col id="w20">5.643</Col>
+            <Col id="w21">8.402</Col>
+            <Col id="w22">7.623</Col>
+            <Col id="w23">1.788</Col>
+            <Col id="w24">3.22</Col>
+            <Col id="w25">8.717</Col>
+            <Col id="w26">7.265</Col>
+            <Col id="w27">7.582</Col>
+            <Col id="w28">4.749</Col>
+            <Col id="w29">9.361</Col>
+            <Col id="w30">4.84</Col>
+            <Col id="w31">2.256</Col>
+            <Col id="w32">2.836</Col>
+            <Col id="w33">4.595</Col>
+            <Col id="w34">0.988</Col>
+            <Col id="w35">5.171</Col>
+            <Col id="w36">8.313</Col>
+            <Col id="w37">2.626</Col>
+            <Col id="w38">4.323</Col>
+            <Col id="w39">4.352</Col>
+            <Col id="w40">6.264</Col>
+            <Col id="w41">2.205</Col>
+            <Col id="w42">0.482</Col>
+            <Col id="w43">7.147</Col>
+            <Col id="w44">4.236</Col>
+            <Col id="w45">2.588</Col>
+            <Col id="w46">3.917</Col>
+            <Col id="w47">9.005</Col>
+            <Col id="w48">6.955</Col>
+            <Col id="w49">8.38</Col>
+            <Col id="w50">6.987</Col>
+            <Col id="w51">3.302</Col>
+            <Col id="w52">1.393</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">A100E</Col>
+            <Col id="prodGrp">06F66952</Col>
+            <Col id="w01">4.217</Col>
+            <Col id="w02">8.942</Col>
+            <Col id="w03">5.272</Col>
+            <Col id="w04">5.02</Col>
+            <Col id="w05">4.185</Col>
+            <Col id="w06">5.703</Col>
+            <Col id="w07">7.42</Col>
+            <Col id="w08">6.24</Col>
+            <Col id="w09">2.35</Col>
+            <Col id="w10">0.606</Col>
+            <Col id="w11">7.775</Col>
+            <Col id="w12">8.843</Col>
+            <Col id="w13">5.342</Col>
+            <Col id="w14">6.656</Col>
+            <Col id="w15">3.793</Col>
+            <Col id="w16">2.412</Col>
+            <Col id="w17">8.455</Col>
+            <Col id="w18">7.258</Col>
+            <Col id="w19">1.807</Col>
+            <Col id="w20">8.637</Col>
+            <Col id="w21">2.823</Col>
+            <Col id="w22">8.949</Col>
+            <Col id="w23">8.958</Col>
+            <Col id="w24">3.259</Col>
+            <Col id="w25">2.184</Col>
+            <Col id="w26">6.521</Col>
+            <Col id="w27">9.359</Col>
+            <Col id="w28">6.841</Col>
+            <Col id="w29">4.232</Col>
+            <Col id="w30">0.303</Col>
+            <Col id="w31">2.447</Col>
+            <Col id="w32">3.672</Col>
+            <Col id="w33">3.503</Col>
+            <Col id="w34">8.956</Col>
+            <Col id="w35">9.385</Col>
+            <Col id="w36">0.289</Col>
+            <Col id="w37">6.972</Col>
+            <Col id="w38">8.692</Col>
+            <Col id="w39">7.408</Col>
+            <Col id="w40">5.915</Col>
+            <Col id="w41">3.931</Col>
+            <Col id="w42">4.987</Col>
+            <Col id="w43">2.48</Col>
+            <Col id="w44">6.139</Col>
+            <Col id="w45">8.476</Col>
+            <Col id="w46">7.331</Col>
+            <Col id="w47">0.164</Col>
+            <Col id="w48">7.928</Col>
+            <Col id="w49">7.639</Col>
+            <Col id="w50">3.954</Col>
+            <Col id="w51">8.456</Col>
+            <Col id="w52">0.851</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">A100E</Col>
+            <Col id="prodGrp">E8107CAE</Col>
+            <Col id="w01">8.734</Col>
+            <Col id="w02">4.383</Col>
+            <Col id="w03">4.127</Col>
+            <Col id="w04">3.731</Col>
+            <Col id="w05">1.94</Col>
+            <Col id="w06">6.421</Col>
+            <Col id="w07">5.87</Col>
+            <Col id="w08">8.892</Col>
+            <Col id="w09">3.179</Col>
+            <Col id="w10">5.315</Col>
+            <Col id="w11">5.571</Col>
+            <Col id="w12">2.058</Col>
+            <Col id="w13">5.125</Col>
+            <Col id="w14">0.543</Col>
+            <Col id="w15">0.375</Col>
+            <Col id="w16">7.933</Col>
+            <Col id="w17">4.438</Col>
+            <Col id="w18">8.316</Col>
+            <Col id="w19">7.788</Col>
+            <Col id="w20">3.689</Col>
+            <Col id="w21">9.725</Col>
+            <Col id="w22">9.472</Col>
+            <Col id="w23">1.983</Col>
+            <Col id="w24">2.034</Col>
+            <Col id="w25">3.257</Col>
+            <Col id="w26">9.589</Col>
+            <Col id="w27">5.652</Col>
+            <Col id="w28">7.756</Col>
+            <Col id="w29">3.491</Col>
+            <Col id="w30">3.874</Col>
+            <Col id="w31">4.894</Col>
+            <Col id="w32">3.431</Col>
+            <Col id="w33">9.907</Col>
+            <Col id="w34">8.968</Col>
+            <Col id="w35">1.825</Col>
+            <Col id="w36">1.901</Col>
+            <Col id="w37">6.547</Col>
+            <Col id="w38">6.231</Col>
+            <Col id="w39">0.211</Col>
+            <Col id="w40">2.967</Col>
+            <Col id="w41">3.683</Col>
+            <Col id="w42">0.715</Col>
+            <Col id="w43">2.864</Col>
+            <Col id="w44">7.235</Col>
+            <Col id="w45">1.496</Col>
+            <Col id="w46">6.243</Col>
+            <Col id="w47">6.984</Col>
+            <Col id="w48">0.061</Col>
+            <Col id="w49">2.181</Col>
+            <Col id="w50">6.172</Col>
+            <Col id="w51">2.053</Col>
+            <Col id="w52">9.233</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">A100E</Col>
+            <Col id="prodGrp">EEF719BD</Col>
+            <Col id="w01">2.927</Col>
+            <Col id="w02">0.867</Col>
+            <Col id="w03">7.625</Col>
+            <Col id="w04">8.391</Col>
+            <Col id="w05">8.719</Col>
+            <Col id="w06">2.955</Col>
+            <Col id="w07">9.117</Col>
+            <Col id="w08">3.53</Col>
+            <Col id="w09">4.478</Col>
+            <Col id="w10">1.484</Col>
+            <Col id="w11">7</Col>
+            <Col id="w12">5.13</Col>
+            <Col id="w13">6.315</Col>
+            <Col id="w14">0.352</Col>
+            <Col id="w15">9.363</Col>
+            <Col id="w16">6.344</Col>
+            <Col id="w17">4.276</Col>
+            <Col id="w18">5.404</Col>
+            <Col id="w19">4.524</Col>
+            <Col id="w20">3.998</Col>
+            <Col id="w21">5.686</Col>
+            <Col id="w22">4.934</Col>
+            <Col id="w23">6.322</Col>
+            <Col id="w24">2.617</Col>
+            <Col id="w25">9.548</Col>
+            <Col id="w26">7.314</Col>
+            <Col id="w27">4.659</Col>
+            <Col id="w28">0.145</Col>
+            <Col id="w29">7.291</Col>
+            <Col id="w30">2.36</Col>
+            <Col id="w31">9.897</Col>
+            <Col id="w32">3.37</Col>
+            <Col id="w33">2.399</Col>
+            <Col id="w34">8.559</Col>
+            <Col id="w35">3.141</Col>
+            <Col id="w36">2.191</Col>
+            <Col id="w37">7.333</Col>
+            <Col id="w38">1.022</Col>
+            <Col id="w39">4.613</Col>
+            <Col id="w40">2.779</Col>
+            <Col id="w41">4.459</Col>
+            <Col id="w42">2.333</Col>
+            <Col id="w43">7.176</Col>
+            <Col id="w44">5.582</Col>
+            <Col id="w45">9.408</Col>
+            <Col id="w46">4.407</Col>
+            <Col id="w47">7.07</Col>
+            <Col id="w48">8.719</Col>
+            <Col id="w49">2.272</Col>
+            <Col id="w50">8.414</Col>
+            <Col id="w51">2.885</Col>
+            <Col id="w52">2.472</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">A100E</Col>
+            <Col id="prodGrp">24C560D0</Col>
+            <Col id="w01">1.031</Col>
+            <Col id="w02">6.419</Col>
+            <Col id="w03">1.405</Col>
+            <Col id="w04">9.278</Col>
+            <Col id="w05">5.758</Col>
+            <Col id="w06">1.211</Col>
+            <Col id="w07">6.599</Col>
+            <Col id="w08">6.988</Col>
+            <Col id="w09">8.735</Col>
+            <Col id="w10">0.406</Col>
+            <Col id="w11">4.169</Col>
+            <Col id="w12">7.244</Col>
+            <Col id="w13">5.068</Col>
+            <Col id="w14">8.301</Col>
+            <Col id="w15">0.451</Col>
+            <Col id="w16">6.083</Col>
+            <Col id="w17">5.544</Col>
+            <Col id="w18">6.364</Col>
+            <Col id="w19">8.542</Col>
+            <Col id="w20">8.495</Col>
+            <Col id="w21">6.186</Col>
+            <Col id="w22">6.151</Col>
+            <Col id="w23">6.207</Col>
+            <Col id="w24">1.415</Col>
+            <Col id="w25">8.698</Col>
+            <Col id="w26">2.074</Col>
+            <Col id="w27">1.116</Col>
+            <Col id="w28">1.539</Col>
+            <Col id="w29">5.744</Col>
+            <Col id="w30">2.481</Col>
+            <Col id="w31">6.597</Col>
+            <Col id="w32">7.039</Col>
+            <Col id="w33">1.464</Col>
+            <Col id="w34">8.185</Col>
+            <Col id="w35">5.995</Col>
+            <Col id="w36">5.6</Col>
+            <Col id="w37">8.553</Col>
+            <Col id="w38">7.135</Col>
+            <Col id="w39">0.505</Col>
+            <Col id="w40">1.968</Col>
+            <Col id="w41">4.355</Col>
+            <Col id="w42">6.315</Col>
+            <Col id="w43">6.835</Col>
+            <Col id="w44">5.753</Col>
+            <Col id="w45">8.063</Col>
+            <Col id="w46">8.21</Col>
+            <Col id="w47">7.403</Col>
+            <Col id="w48">8.375</Col>
+            <Col id="w49">0.17</Col>
+            <Col id="w50">1.071</Col>
+            <Col id="w51">8.124</Col>
+            <Col id="w52">7.538</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">C254D</Col>
+            <Col id="prodGrp">06F66952</Col>
+            <Col id="w01">6.894</Col>
+            <Col id="w02">8.95</Col>
+            <Col id="w03">2.81</Col>
+            <Col id="w04">6.144</Col>
+            <Col id="w05">4.25</Col>
+            <Col id="w06">1.472</Col>
+            <Col id="w07">6.943</Col>
+            <Col id="w08">0.971</Col>
+            <Col id="w09">1.721</Col>
+            <Col id="w10">6.899</Col>
+            <Col id="w11">9.047</Col>
+            <Col id="w12">7.018</Col>
+            <Col id="w13">2.149</Col>
+            <Col id="w14">4.521</Col>
+            <Col id="w15">5.634</Col>
+            <Col id="w16">3.066</Col>
+            <Col id="w17">7.779</Col>
+            <Col id="w18">2.265</Col>
+            <Col id="w19">0.702</Col>
+            <Col id="w20">2.633</Col>
+            <Col id="w21">6.634</Col>
+            <Col id="w22">9.316</Col>
+            <Col id="w23">7.504</Col>
+            <Col id="w24">3.536</Col>
+            <Col id="w25">1.057</Col>
+            <Col id="w26">2.144</Col>
+            <Col id="w27">2.459</Col>
+            <Col id="w28">5.882</Col>
+            <Col id="w29">8.41</Col>
+            <Col id="w30">4.018</Col>
+            <Col id="w31">1.99</Col>
+            <Col id="w32">4.282</Col>
+            <Col id="w33">1.734</Col>
+            <Col id="w34">0.84</Col>
+            <Col id="w35">2.693</Col>
+            <Col id="w36">1.333</Col>
+            <Col id="w37">1.575</Col>
+            <Col id="w38">0.33</Col>
+            <Col id="w39">7.917</Col>
+            <Col id="w40">4.078</Col>
+            <Col id="w41">8.606</Col>
+            <Col id="w42">1.249</Col>
+            <Col id="w43">4.198</Col>
+            <Col id="w44">6.919</Col>
+            <Col id="w45">4.441</Col>
+            <Col id="w46">4.63</Col>
+            <Col id="w47">6.491</Col>
+            <Col id="w48">4.23</Col>
+            <Col id="w49">0.607</Col>
+            <Col id="w50">9.492</Col>
+            <Col id="w51">3.479</Col>
+            <Col id="w52">7.303</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">C254D</Col>
+            <Col id="prodGrp">E8107CAE</Col>
+            <Col id="w01">1.969</Col>
+            <Col id="w02">0.373</Col>
+            <Col id="w03">0.651</Col>
+            <Col id="w04">0.295</Col>
+            <Col id="w05">9.293</Col>
+            <Col id="w06">0.165</Col>
+            <Col id="w07">5.187</Col>
+            <Col id="w08">2.383</Col>
+            <Col id="w09">6.109</Col>
+            <Col id="w10">9.252</Col>
+            <Col id="w11">4.903</Col>
+            <Col id="w12">6.624</Col>
+            <Col id="w13">9.326</Col>
+            <Col id="w14">5.764</Col>
+            <Col id="w15">7.433</Col>
+            <Col id="w16">4.581</Col>
+            <Col id="w17">8.339</Col>
+            <Col id="w18">0.935</Col>
+            <Col id="w19">3.051</Col>
+            <Col id="w20">1.866</Col>
+            <Col id="w21">3.14</Col>
+            <Col id="w22">1.959</Col>
+            <Col id="w23">8.478</Col>
+            <Col id="w24">2.905</Col>
+            <Col id="w25">9.588</Col>
+            <Col id="w26">7.962</Col>
+            <Col id="w27">9.261</Col>
+            <Col id="w28">1.154</Col>
+            <Col id="w29">8.735</Col>
+            <Col id="w30">6.736</Col>
+            <Col id="w31">7.333</Col>
+            <Col id="w32">2.81</Col>
+            <Col id="w33">4.443</Col>
+            <Col id="w34">0.969</Col>
+            <Col id="w35">7.334</Col>
+            <Col id="w36">5.344</Col>
+            <Col id="w37">7.967</Col>
+            <Col id="w38">8.628</Col>
+            <Col id="w39">5.901</Col>
+            <Col id="w40">6.33</Col>
+            <Col id="w41">7.299</Col>
+            <Col id="w42">1.015</Col>
+            <Col id="w43">1.733</Col>
+            <Col id="w44">9.598</Col>
+            <Col id="w45">7.628</Col>
+            <Col id="w46">2.005</Col>
+            <Col id="w47">2.71</Col>
+            <Col id="w48">8.186</Col>
+            <Col id="w49">7.268</Col>
+            <Col id="w50">8.112</Col>
+            <Col id="w51">9.287</Col>
+            <Col id="w52">1.398</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">E54AD</Col>
+            <Col id="prodGrp">E7DEF656</Col>
+            <Col id="w01">8.36</Col>
+            <Col id="w02">9.063</Col>
+            <Col id="w03">5.446</Col>
+            <Col id="w04">9.807</Col>
+            <Col id="w05">2.424</Col>
+            <Col id="w06">0.394</Col>
+            <Col id="w07">5.177</Col>
+            <Col id="w08">2.41</Col>
+            <Col id="w09">2.38</Col>
+            <Col id="w10">0.282</Col>
+            <Col id="w11">2.138</Col>
+            <Col id="w12">3.616</Col>
+            <Col id="w13">4.877</Col>
+            <Col id="w14">0.343</Col>
+            <Col id="w15">8.564</Col>
+            <Col id="w16">1.258</Col>
+            <Col id="w17">3.531</Col>
+            <Col id="w18">4.49</Col>
+            <Col id="w19">0.284</Col>
+            <Col id="w20">4.472</Col>
+            <Col id="w21">3.681</Col>
+            <Col id="w22">3.959</Col>
+            <Col id="w23">4.149</Col>
+            <Col id="w24">3.648</Col>
+            <Col id="w25">9.774</Col>
+            <Col id="w26">7.406</Col>
+            <Col id="w27">4.576</Col>
+            <Col id="w28">2.207</Col>
+            <Col id="w29">7.041</Col>
+            <Col id="w30">0.07</Col>
+            <Col id="w31">7.583</Col>
+            <Col id="w32">9.966</Col>
+            <Col id="w33">9.733</Col>
+            <Col id="w34">6.241</Col>
+            <Col id="w35">0.196</Col>
+            <Col id="w36">1.663</Col>
+            <Col id="w37">0.348</Col>
+            <Col id="w38">2.057</Col>
+            <Col id="w39">5.132</Col>
+            <Col id="w40">1.398</Col>
+            <Col id="w41">1.04</Col>
+            <Col id="w42">5.417</Col>
+            <Col id="w43">7.569</Col>
+            <Col id="w44">7.215</Col>
+            <Col id="w45">9.264</Col>
+            <Col id="w46">5.39</Col>
+            <Col id="w47">6.464</Col>
+            <Col id="w48">2.171</Col>
+            <Col id="w49">7.689</Col>
+            <Col id="w50">9.695</Col>
+            <Col id="w51">2.414</Col>
+            <Col id="w52">8.009</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">E54AD</Col>
+            <Col id="prodGrp">91CC13BA</Col>
+            <Col id="w01">1.319</Col>
+            <Col id="w02">6.281</Col>
+            <Col id="w03">3.898</Col>
+            <Col id="w04">5.097</Col>
+            <Col id="w05">0.914</Col>
+            <Col id="w06">3.379</Col>
+            <Col id="w07">9.514</Col>
+            <Col id="w08">6.783</Col>
+            <Col id="w09">5.679</Col>
+            <Col id="w10">6.846</Col>
+            <Col id="w11">7.629</Col>
+            <Col id="w12">1.22</Col>
+            <Col id="w13">8.316</Col>
+            <Col id="w14">3.635</Col>
+            <Col id="w15">6.971</Col>
+            <Col id="w16">8.426</Col>
+            <Col id="w17">1.423</Col>
+            <Col id="w18">9.94</Col>
+            <Col id="w19">9.008</Col>
+            <Col id="w20">0.489</Col>
+            <Col id="w21">1.072</Col>
+            <Col id="w22">9.351</Col>
+            <Col id="w23">5.903</Col>
+            <Col id="w24">7.009</Col>
+            <Col id="w25">7.132</Col>
+            <Col id="w26">3.147</Col>
+            <Col id="w27">3.437</Col>
+            <Col id="w28">5.956</Col>
+            <Col id="w29">9.245</Col>
+            <Col id="w30">2.891</Col>
+            <Col id="w31">9.767</Col>
+            <Col id="w32">5.372</Col>
+            <Col id="w33">9.514</Col>
+            <Col id="w34">6.475</Col>
+            <Col id="w35">3.017</Col>
+            <Col id="w36">3.237</Col>
+            <Col id="w37">9.419</Col>
+            <Col id="w38">6.075</Col>
+            <Col id="w39">5.814</Col>
+            <Col id="w40">9.263</Col>
+            <Col id="w41">5.134</Col>
+            <Col id="w42">6.911</Col>
+            <Col id="w43">6.902</Col>
+            <Col id="w44">3.06</Col>
+            <Col id="w45">0.088</Col>
+            <Col id="w46">7.227</Col>
+            <Col id="w47">9.44</Col>
+            <Col id="w48">5.453</Col>
+            <Col id="w49">1.846</Col>
+            <Col id="w50">9.786</Col>
+            <Col id="w51">3.092</Col>
+            <Col id="w52">4.646</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">E54AD</Col>
+            <Col id="prodGrp">DC6FBE97</Col>
+            <Col id="w01">1.853</Col>
+            <Col id="w02">4.547</Col>
+            <Col id="w03">9.116</Col>
+            <Col id="w04">1.455</Col>
+            <Col id="w05">8.676</Col>
+            <Col id="w06">1.923</Col>
+            <Col id="w07">4.409</Col>
+            <Col id="w08">6.58</Col>
+            <Col id="w09">7.732</Col>
+            <Col id="w10">3.809</Col>
+            <Col id="w11">2.874</Col>
+            <Col id="w12">4.207</Col>
+            <Col id="w13">9.697</Col>
+            <Col id="w14">4.01</Col>
+            <Col id="w15">2.273</Col>
+            <Col id="w16">8.402</Col>
+            <Col id="w17">0.332</Col>
+            <Col id="w18">7.782</Col>
+            <Col id="w19">9.439</Col>
+            <Col id="w20">8.723</Col>
+            <Col id="w21">0.824</Col>
+            <Col id="w22">8.942</Col>
+            <Col id="w23">1.599</Col>
+            <Col id="w24">5.976</Col>
+            <Col id="w25">9.135</Col>
+            <Col id="w26">8.866</Col>
+            <Col id="w27">4.204</Col>
+            <Col id="w28">9.472</Col>
+            <Col id="w29">8.062</Col>
+            <Col id="w30">2.077</Col>
+            <Col id="w31">7.429</Col>
+            <Col id="w32">4.902</Col>
+            <Col id="w33">7.356</Col>
+            <Col id="w34">5.245</Col>
+            <Col id="w35">3.228</Col>
+            <Col id="w36">6.604</Col>
+            <Col id="w37">3.305</Col>
+            <Col id="w38">0.691</Col>
+            <Col id="w39">5.602</Col>
+            <Col id="w40">7.505</Col>
+            <Col id="w41">3.792</Col>
+            <Col id="w42">6.114</Col>
+            <Col id="w43">4.194</Col>
+            <Col id="w44">1.706</Col>
+            <Col id="w45">6.98</Col>
+            <Col id="w46">9.424</Col>
+            <Col id="w47">5.43</Col>
+            <Col id="w48">8.262</Col>
+            <Col id="w49">0.098</Col>
+            <Col id="w50">6.151</Col>
+            <Col id="w51">2.298</Col>
+            <Col id="w52">6.115</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">G205E</Col>
+            <Col id="prodGrp">07D34EA3</Col>
+            <Col id="w01">6.743</Col>
+            <Col id="w02">4.141</Col>
+            <Col id="w03">4.118</Col>
+            <Col id="w04">1.34</Col>
+            <Col id="w05">3.875</Col>
+            <Col id="w06">5.785</Col>
+            <Col id="w07">5.305</Col>
+            <Col id="w08">2.334</Col>
+            <Col id="w09">6.151</Col>
+            <Col id="w10">5.502</Col>
+            <Col id="w11">5.12</Col>
+            <Col id="w12">0.833</Col>
+            <Col id="w13">3.539</Col>
+            <Col id="w14">4.407</Col>
+            <Col id="w15">4.354</Col>
+            <Col id="w16">2.309</Col>
+            <Col id="w17">4.201</Col>
+            <Col id="w18">7.14</Col>
+            <Col id="w19">4.724</Col>
+            <Col id="w20">9.883</Col>
+            <Col id="w21">0.837</Col>
+            <Col id="w22">5.868</Col>
+            <Col id="w23">2.844</Col>
+            <Col id="w24">6.418</Col>
+            <Col id="w25">6.578</Col>
+            <Col id="w26">4.701</Col>
+            <Col id="w27">5.696</Col>
+            <Col id="w28">6.448</Col>
+            <Col id="w29">6.476</Col>
+            <Col id="w30">4.038</Col>
+            <Col id="w31">3.386</Col>
+            <Col id="w32">5.62</Col>
+            <Col id="w33">3.331</Col>
+            <Col id="w34">6.643</Col>
+            <Col id="w35">9.68</Col>
+            <Col id="w36">0.958</Col>
+            <Col id="w37">5.89</Col>
+            <Col id="w38">6.105</Col>
+            <Col id="w39">4.895</Col>
+            <Col id="w40">7.268</Col>
+            <Col id="w41">1.013</Col>
+            <Col id="w42">9.656</Col>
+            <Col id="w43">4.392</Col>
+            <Col id="w44">0.584</Col>
+            <Col id="w45">1.064</Col>
+            <Col id="w46">3.975</Col>
+            <Col id="w47">0.109</Col>
+            <Col id="w48">4.961</Col>
+            <Col id="w49">9.185</Col>
+            <Col id="w50">7.772</Col>
+            <Col id="w51">2.981</Col>
+            <Col id="w52">4.416</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">G205E</Col>
+            <Col id="prodGrp">06F66952</Col>
+            <Col id="w01">2.686</Col>
+            <Col id="w02">5.362</Col>
+            <Col id="w03">8.193</Col>
+            <Col id="w04">0.17</Col>
+            <Col id="w05">3.408</Col>
+            <Col id="w06">6.32</Col>
+            <Col id="w07">8.593</Col>
+            <Col id="w08">3.011</Col>
+            <Col id="w09">6.434</Col>
+            <Col id="w10">1.058</Col>
+            <Col id="w11">4.536</Col>
+            <Col id="w12">1.739</Col>
+            <Col id="w13">6.996</Col>
+            <Col id="w14">8.822</Col>
+            <Col id="w15">5.688</Col>
+            <Col id="w16">3.1</Col>
+            <Col id="w17">7.197</Col>
+            <Col id="w18">3.542</Col>
+            <Col id="w19">8.172</Col>
+            <Col id="w20">4.577</Col>
+            <Col id="w21">7.492</Col>
+            <Col id="w22">5.559</Col>
+            <Col id="w23">0.693</Col>
+            <Col id="w24">6.632</Col>
+            <Col id="w25">8.854</Col>
+            <Col id="w26">3.013</Col>
+            <Col id="w27">8.134</Col>
+            <Col id="w28">2.817</Col>
+            <Col id="w29">3.291</Col>
+            <Col id="w30">3.048</Col>
+            <Col id="w31">7.979</Col>
+            <Col id="w32">3.571</Col>
+            <Col id="w33">3.383</Col>
+            <Col id="w34">5.833</Col>
+            <Col id="w35">8.602</Col>
+            <Col id="w36">4.205</Col>
+            <Col id="w37">5.927</Col>
+            <Col id="w38">4.618</Col>
+            <Col id="w39">9.924</Col>
+            <Col id="w40">3.85</Col>
+            <Col id="w41">3.303</Col>
+            <Col id="w42">3.154</Col>
+            <Col id="w43">8.097</Col>
+            <Col id="w44">5.953</Col>
+            <Col id="w45">3.466</Col>
+            <Col id="w46">4.711</Col>
+            <Col id="w47">9.434</Col>
+            <Col id="w48">6.536</Col>
+            <Col id="w49">4.671</Col>
+            <Col id="w50">8.767</Col>
+            <Col id="w51">4.552</Col>
+            <Col id="w52">9.127</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">G205E</Col>
+            <Col id="prodGrp">E8107CAE</Col>
+            <Col id="w01">2.966</Col>
+            <Col id="w02">8.54</Col>
+            <Col id="w03">6.187</Col>
+            <Col id="w04">4.966</Col>
+            <Col id="w05">3.748</Col>
+            <Col id="w06">4.157</Col>
+            <Col id="w07">0.26</Col>
+            <Col id="w08">3.164</Col>
+            <Col id="w09">9.359</Col>
+            <Col id="w10">5.245</Col>
+            <Col id="w11">9.542</Col>
+            <Col id="w12">9.279</Col>
+            <Col id="w13">2.182</Col>
+            <Col id="w14">4.158</Col>
+            <Col id="w15">8.001</Col>
+            <Col id="w16">1.016</Col>
+            <Col id="w17">7.863</Col>
+            <Col id="w18">1.379</Col>
+            <Col id="w19">1.956</Col>
+            <Col id="w20">8.067</Col>
+            <Col id="w21">8.119</Col>
+            <Col id="w22">8.369</Col>
+            <Col id="w23">8.464</Col>
+            <Col id="w24">3.469</Col>
+            <Col id="w25">2.139</Col>
+            <Col id="w26">1.816</Col>
+            <Col id="w27">5.393</Col>
+            <Col id="w28">2.967</Col>
+            <Col id="w29">0.12</Col>
+            <Col id="w30">7.592</Col>
+            <Col id="w31">1.413</Col>
+            <Col id="w32">8.744</Col>
+            <Col id="w33">5.95</Col>
+            <Col id="w34">2.363</Col>
+            <Col id="w35">7.697</Col>
+            <Col id="w36">8.286</Col>
+            <Col id="w37">6.437</Col>
+            <Col id="w38">1.735</Col>
+            <Col id="w39">3.621</Col>
+            <Col id="w40">8.324</Col>
+            <Col id="w41">0.637</Col>
+            <Col id="w42">9.683</Col>
+            <Col id="w43">6.111</Col>
+            <Col id="w44">7.821</Col>
+            <Col id="w45">7.617</Col>
+            <Col id="w46">6.152</Col>
+            <Col id="w47">0.381</Col>
+            <Col id="w48">4.67</Col>
+            <Col id="w49">4.234</Col>
+            <Col id="w50">4.701</Col>
+            <Col id="w51">2.5</Col>
+            <Col id="w52">7.668</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">G205E</Col>
+            <Col id="prodGrp">EEF719BD</Col>
+            <Col id="w01">5.094</Col>
+            <Col id="w02">0.94</Col>
+            <Col id="w03">6.704</Col>
+            <Col id="w04">8.526</Col>
+            <Col id="w05">5.087</Col>
+            <Col id="w06">0.884</Col>
+            <Col id="w07">1.375</Col>
+            <Col id="w08">8.912</Col>
+            <Col id="w09">4.696</Col>
+            <Col id="w10">6.653</Col>
+            <Col id="w11">0.952</Col>
+            <Col id="w12">7.758</Col>
+            <Col id="w13">4.285</Col>
+            <Col id="w14">5.221</Col>
+            <Col id="w15">7.314</Col>
+            <Col id="w16">8.384</Col>
+            <Col id="w17">0.664</Col>
+            <Col id="w18">9.929</Col>
+            <Col id="w19">2.808</Col>
+            <Col id="w20">8.329</Col>
+            <Col id="w21">9.903</Col>
+            <Col id="w22">3.209</Col>
+            <Col id="w23">0.968</Col>
+            <Col id="w24">0.911</Col>
+            <Col id="w25">8.212</Col>
+            <Col id="w26">9.349</Col>
+            <Col id="w27">7.544</Col>
+            <Col id="w28">6.099</Col>
+            <Col id="w29">6.15</Col>
+            <Col id="w30">9.506</Col>
+            <Col id="w31">0.842</Col>
+            <Col id="w32">9.38</Col>
+            <Col id="w33">2.62</Col>
+            <Col id="w34">6.515</Col>
+            <Col id="w35">1.692</Col>
+            <Col id="w36">9.507</Col>
+            <Col id="w37">0.821</Col>
+            <Col id="w38">5.266</Col>
+            <Col id="w39">2.252</Col>
+            <Col id="w40">1.51</Col>
+            <Col id="w41">5.877</Col>
+            <Col id="w42">4.884</Col>
+            <Col id="w43">2.998</Col>
+            <Col id="w44">1.762</Col>
+            <Col id="w45">9.489</Col>
+            <Col id="w46">0.151</Col>
+            <Col id="w47">5.707</Col>
+            <Col id="w48">7.522</Col>
+            <Col id="w49">5.037</Col>
+            <Col id="w50">1.234</Col>
+            <Col id="w51">7.55</Col>
+            <Col id="w52">0.103</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">V</Col>
+            <Col id="fctNm">G205E</Col>
+            <Col id="prodGrp">67099835</Col>
+            <Col id="w01">3.49</Col>
+            <Col id="w02">0.046</Col>
+            <Col id="w03">0.731</Col>
+            <Col id="w04">5.491</Col>
+            <Col id="w05">2.822</Col>
+            <Col id="w06">8.547</Col>
+            <Col id="w07">0.504</Col>
+            <Col id="w08">2.587</Col>
+            <Col id="w09">3.452</Col>
+            <Col id="w10">9.392</Col>
+            <Col id="w11">1.014</Col>
+            <Col id="w12">3.445</Col>
+            <Col id="w13">8.714</Col>
+            <Col id="w14">7.554</Col>
+            <Col id="w15">0.478</Col>
+            <Col id="w16">3.485</Col>
+            <Col id="w17">0.262</Col>
+            <Col id="w18">3.648</Col>
+            <Col id="w19">2.869</Col>
+            <Col id="w20">5.556</Col>
+            <Col id="w21">5.147</Col>
+            <Col id="w22">1.64</Col>
+            <Col id="w23">4.112</Col>
+            <Col id="w24">7.163</Col>
+            <Col id="w25">3.634</Col>
+            <Col id="w26">8.125</Col>
+            <Col id="w27">3.131</Col>
+            <Col id="w28">0.421</Col>
+            <Col id="w29">6.5</Col>
+            <Col id="w30">6.416</Col>
+            <Col id="w31">6.478</Col>
+            <Col id="w32">6.698</Col>
+            <Col id="w33">6.882</Col>
+            <Col id="w34">0.145</Col>
+            <Col id="w35">6.691</Col>
+            <Col id="w36">9.635</Col>
+            <Col id="w37">4.969</Col>
+            <Col id="w38">2.441</Col>
+            <Col id="w39">0.561</Col>
+            <Col id="w40">5.02</Col>
+            <Col id="w41">5.745</Col>
+            <Col id="w42">0.471</Col>
+            <Col id="w43">7.472</Col>
+            <Col id="w44">9.039</Col>
+            <Col id="w45">1.929</Col>
+            <Col id="w46">4.783</Col>
+            <Col id="w47">9.476</Col>
+            <Col id="w48">9.242</Col>
+            <Col id="w49">8.942</Col>
+            <Col id="w50">7.723</Col>
+            <Col id="w51">7.168</Col>
+            <Col id="w52">0.297</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">A100E</Col>
+            <Col id="prodGrp">ECEB86C0</Col>
+            <Col id="w01">5.968</Col>
+            <Col id="w02">2.576</Col>
+            <Col id="w03">8.284</Col>
+            <Col id="w04">6.942</Col>
+            <Col id="w05">6.577</Col>
+            <Col id="w06">3.782</Col>
+            <Col id="w07">4.207</Col>
+            <Col id="w08">5.591</Col>
+            <Col id="w09">9.805</Col>
+            <Col id="w10">4.756</Col>
+            <Col id="w11">5.237</Col>
+            <Col id="w12">4.804</Col>
+            <Col id="w13">0.91</Col>
+            <Col id="w14">3.015</Col>
+            <Col id="w15">6.265</Col>
+            <Col id="w16">6.714</Col>
+            <Col id="w17">9.733</Col>
+            <Col id="w18">7.434</Col>
+            <Col id="w19">9.952</Col>
+            <Col id="w20">2.816</Col>
+            <Col id="w21">2.566</Col>
+            <Col id="w22">5.124</Col>
+            <Col id="w23">9.37</Col>
+            <Col id="w24">8.393</Col>
+            <Col id="w25">0.314</Col>
+            <Col id="w26">1.15</Col>
+            <Col id="w27">6.172</Col>
+            <Col id="w28">3.624</Col>
+            <Col id="w29">8.64</Col>
+            <Col id="w30">7.196</Col>
+            <Col id="w31">6.043</Col>
+            <Col id="w32">0.596</Col>
+            <Col id="w33">3.722</Col>
+            <Col id="w34">6.049</Col>
+            <Col id="w35">5.133</Col>
+            <Col id="w36">8.402</Col>
+            <Col id="w37">7.469</Col>
+            <Col id="w38">0.76</Col>
+            <Col id="w39">7.38</Col>
+            <Col id="w40">2.806</Col>
+            <Col id="w41">1.188</Col>
+            <Col id="w42">2.859</Col>
+            <Col id="w43">6.02</Col>
+            <Col id="w44">3.18</Col>
+            <Col id="w45">9.881</Col>
+            <Col id="w46">1.226</Col>
+            <Col id="w47">3.018</Col>
+            <Col id="w48">6.835</Col>
+            <Col id="w49">5.419</Col>
+            <Col id="w50">2.824</Col>
+            <Col id="w51">9.327</Col>
+            <Col id="w52">9.297</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">A100E</Col>
+            <Col id="prodGrp">E8107CAE</Col>
+            <Col id="w01">8.103</Col>
+            <Col id="w02">2.25</Col>
+            <Col id="w03">0.337</Col>
+            <Col id="w04">6.81</Col>
+            <Col id="w05">7.657</Col>
+            <Col id="w06">3.413</Col>
+            <Col id="w07">6.513</Col>
+            <Col id="w08">6.227</Col>
+            <Col id="w09">9.261</Col>
+            <Col id="w10">4.223</Col>
+            <Col id="w11">9.138</Col>
+            <Col id="w12">6.976</Col>
+            <Col id="w13">4.515</Col>
+            <Col id="w14">9.973</Col>
+            <Col id="w15">4.006</Col>
+            <Col id="w16">9.456</Col>
+            <Col id="w17">1.965</Col>
+            <Col id="w18">5.127</Col>
+            <Col id="w19">8.877</Col>
+            <Col id="w20">9.164</Col>
+            <Col id="w21">7.244</Col>
+            <Col id="w22">6.851</Col>
+            <Col id="w23">9.668</Col>
+            <Col id="w24">8.489</Col>
+            <Col id="w25">3.593</Col>
+            <Col id="w26">8.938</Col>
+            <Col id="w27">3.687</Col>
+            <Col id="w28">6.736</Col>
+            <Col id="w29">0.327</Col>
+            <Col id="w30">3.795</Col>
+            <Col id="w31">3.039</Col>
+            <Col id="w32">1.671</Col>
+            <Col id="w33">4.883</Col>
+            <Col id="w34">4.783</Col>
+            <Col id="w35">6.929</Col>
+            <Col id="w36">1.179</Col>
+            <Col id="w37">5.411</Col>
+            <Col id="w38">8.415</Col>
+            <Col id="w39">5.373</Col>
+            <Col id="w40">3.882</Col>
+            <Col id="w41">6.099</Col>
+            <Col id="w42">4.26</Col>
+            <Col id="w43">0.92</Col>
+            <Col id="w44">8.476</Col>
+            <Col id="w45">3.102</Col>
+            <Col id="w46">7.017</Col>
+            <Col id="w47">9.32</Col>
+            <Col id="w48">3.519</Col>
+            <Col id="w49">6.912</Col>
+            <Col id="w50">3.034</Col>
+            <Col id="w51">3.002</Col>
+            <Col id="w52">4.536</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">A100E</Col>
+            <Col id="prodGrp">24C560D0</Col>
+            <Col id="w01">5.353</Col>
+            <Col id="w02">9.559</Col>
+            <Col id="w03">0.142</Col>
+            <Col id="w04">7.35</Col>
+            <Col id="w05">1.617</Col>
+            <Col id="w06">2.326</Col>
+            <Col id="w07">4.207</Col>
+            <Col id="w08">3.093</Col>
+            <Col id="w09">7.952</Col>
+            <Col id="w10">9.567</Col>
+            <Col id="w11">2.981</Col>
+            <Col id="w12">7.748</Col>
+            <Col id="w13">1.623</Col>
+            <Col id="w14">5.686</Col>
+            <Col id="w15">1.81</Col>
+            <Col id="w16">4.529</Col>
+            <Col id="w17">3.465</Col>
+            <Col id="w18">4.024</Col>
+            <Col id="w19">3.83</Col>
+            <Col id="w20">1.933</Col>
+            <Col id="w21">8.717</Col>
+            <Col id="w22">5.346</Col>
+            <Col id="w23">4.324</Col>
+            <Col id="w24">6.956</Col>
+            <Col id="w25">9.297</Col>
+            <Col id="w26">6.447</Col>
+            <Col id="w27">1.603</Col>
+            <Col id="w28">1.95</Col>
+            <Col id="w29">8.995</Col>
+            <Col id="w30">9.835</Col>
+            <Col id="w31">9.02</Col>
+            <Col id="w32">9.424</Col>
+            <Col id="w33">8.274</Col>
+            <Col id="w34">7.041</Col>
+            <Col id="w35">4.022</Col>
+            <Col id="w36">9.2</Col>
+            <Col id="w37">1.775</Col>
+            <Col id="w38">2.272</Col>
+            <Col id="w39">1.473</Col>
+            <Col id="w40">0.157</Col>
+            <Col id="w41">7.175</Col>
+            <Col id="w42">7.061</Col>
+            <Col id="w43">0.924</Col>
+            <Col id="w44">3.913</Col>
+            <Col id="w45">5.645</Col>
+            <Col id="w46">6.477</Col>
+            <Col id="w47">0.325</Col>
+            <Col id="w48">6.853</Col>
+            <Col id="w49">8.009</Col>
+            <Col id="w50">6.024</Col>
+            <Col id="w51">1.719</Col>
+            <Col id="w52">7.157</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">B24D5</Col>
+            <Col id="prodGrp">BE9A5A36</Col>
+            <Col id="w01">3.442</Col>
+            <Col id="w02">8.658</Col>
+            <Col id="w03">5.318</Col>
+            <Col id="w04">5.505</Col>
+            <Col id="w05">7.868</Col>
+            <Col id="w06">9.209</Col>
+            <Col id="w07">5.115</Col>
+            <Col id="w08">2.316</Col>
+            <Col id="w09">9.198</Col>
+            <Col id="w10">7.303</Col>
+            <Col id="w11">8.318</Col>
+            <Col id="w12">8.368</Col>
+            <Col id="w13">5.429</Col>
+            <Col id="w14">7.635</Col>
+            <Col id="w15">3.15</Col>
+            <Col id="w16">2.746</Col>
+            <Col id="w17">1.791</Col>
+            <Col id="w18">9.056</Col>
+            <Col id="w19">7.959</Col>
+            <Col id="w20">3.299</Col>
+            <Col id="w21">8.165</Col>
+            <Col id="w22">0.468</Col>
+            <Col id="w23">9.877</Col>
+            <Col id="w24">5.758</Col>
+            <Col id="w25">2.179</Col>
+            <Col id="w26">9.083</Col>
+            <Col id="w27">8.48</Col>
+            <Col id="w28">6.264</Col>
+            <Col id="w29">9.069</Col>
+            <Col id="w30">5.508</Col>
+            <Col id="w31">3.178</Col>
+            <Col id="w32">2.764</Col>
+            <Col id="w33">4.394</Col>
+            <Col id="w34">1.261</Col>
+            <Col id="w35">2.594</Col>
+            <Col id="w36">4.922</Col>
+            <Col id="w37">9.772</Col>
+            <Col id="w38">1.281</Col>
+            <Col id="w39">7.162</Col>
+            <Col id="w40">8.294</Col>
+            <Col id="w41">4.799</Col>
+            <Col id="w42">2.707</Col>
+            <Col id="w43">4.729</Col>
+            <Col id="w44">8.565</Col>
+            <Col id="w45">5.565</Col>
+            <Col id="w46">2.956</Col>
+            <Col id="w47">3.699</Col>
+            <Col id="w48">6.587</Col>
+            <Col id="w49">6.862</Col>
+            <Col id="w50">9.724</Col>
+            <Col id="w51">4.54</Col>
+            <Col id="w52">2.22</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">F2D25</Col>
+            <Col id="prodGrp">E3902310</Col>
+            <Col id="w01">9.258</Col>
+            <Col id="w02">3.648</Col>
+            <Col id="w03">1.835</Col>
+            <Col id="w04">8.259</Col>
+            <Col id="w05">6.066</Col>
+            <Col id="w06">3.69</Col>
+            <Col id="w07">5.501</Col>
+            <Col id="w08">7.461</Col>
+            <Col id="w09">8.245</Col>
+            <Col id="w10">3.797</Col>
+            <Col id="w11">3.699</Col>
+            <Col id="w12">0.832</Col>
+            <Col id="w13">2.737</Col>
+            <Col id="w14">3.704</Col>
+            <Col id="w15">2.485</Col>
+            <Col id="w16">9.829</Col>
+            <Col id="w17">7.367</Col>
+            <Col id="w18">7.773</Col>
+            <Col id="w19">8.823</Col>
+            <Col id="w20">7.547</Col>
+            <Col id="w21">7.559</Col>
+            <Col id="w22">5.188</Col>
+            <Col id="w23">3.639</Col>
+            <Col id="w24">6.833</Col>
+            <Col id="w25">3.956</Col>
+            <Col id="w26">6.918</Col>
+            <Col id="w27">9.312</Col>
+            <Col id="w28">1.73</Col>
+            <Col id="w29">7.714</Col>
+            <Col id="w30">4.401</Col>
+            <Col id="w31">3.485</Col>
+            <Col id="w32">5.457</Col>
+            <Col id="w33">9.918</Col>
+            <Col id="w34">0.535</Col>
+            <Col id="w35">2.662</Col>
+            <Col id="w36">5.051</Col>
+            <Col id="w37">2.474</Col>
+            <Col id="w38">9.39</Col>
+            <Col id="w39">3.719</Col>
+            <Col id="w40">5.188</Col>
+            <Col id="w41">4.365</Col>
+            <Col id="w42">3.46</Col>
+            <Col id="w43">5.02</Col>
+            <Col id="w44">0.16</Col>
+            <Col id="w45">4.915</Col>
+            <Col id="w46">3.99</Col>
+            <Col id="w47">8.955</Col>
+            <Col id="w48">8.709</Col>
+            <Col id="w49">6.022</Col>
+            <Col id="w50">9.641</Col>
+            <Col id="w51">8.728</Col>
+            <Col id="w52">6.04</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">F2D25</Col>
+            <Col id="prodGrp">06F66952</Col>
+            <Col id="w01">5.383</Col>
+            <Col id="w02">8.745</Col>
+            <Col id="w03">0.291</Col>
+            <Col id="w04">4.095</Col>
+            <Col id="w05">8.702</Col>
+            <Col id="w06">2.976</Col>
+            <Col id="w07">7.126</Col>
+            <Col id="w08">7.121</Col>
+            <Col id="w09">3.382</Col>
+            <Col id="w10">6.454</Col>
+            <Col id="w11">6.735</Col>
+            <Col id="w12">2.669</Col>
+            <Col id="w13">8.235</Col>
+            <Col id="w14">5.307</Col>
+            <Col id="w15">5.62</Col>
+            <Col id="w16">4.176</Col>
+            <Col id="w17">9.914</Col>
+            <Col id="w18">7.586</Col>
+            <Col id="w19">8.497</Col>
+            <Col id="w20">5.154</Col>
+            <Col id="w21">8.748</Col>
+            <Col id="w22">5.345</Col>
+            <Col id="w23">7.368</Col>
+            <Col id="w24">9.69</Col>
+            <Col id="w25">7.21</Col>
+            <Col id="w26">8.584</Col>
+            <Col id="w27">5.557</Col>
+            <Col id="w28">7.814</Col>
+            <Col id="w29">7.598</Col>
+            <Col id="w30">8.898</Col>
+            <Col id="w31">4.054</Col>
+            <Col id="w32">6.169</Col>
+            <Col id="w33">2.01</Col>
+            <Col id="w34">0.879</Col>
+            <Col id="w35">1.938</Col>
+            <Col id="w36">9.902</Col>
+            <Col id="w37">8.406</Col>
+            <Col id="w38">7.317</Col>
+            <Col id="w39">2.847</Col>
+            <Col id="w40">8.654</Col>
+            <Col id="w41">7.051</Col>
+            <Col id="w42">0.434</Col>
+            <Col id="w43">5.404</Col>
+            <Col id="w44">6.383</Col>
+            <Col id="w45">3.835</Col>
+            <Col id="w46">8.503</Col>
+            <Col id="w47">5.349</Col>
+            <Col id="w48">3.999</Col>
+            <Col id="w49">7.206</Col>
+            <Col id="w50">6.398</Col>
+            <Col id="w51">8.712</Col>
+            <Col id="w52">2.604</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">F2D25</Col>
+            <Col id="prodGrp">FBA804A7</Col>
+            <Col id="w01">0.973</Col>
+            <Col id="w02">5.468</Col>
+            <Col id="w03">0.311</Col>
+            <Col id="w04">0.411</Col>
+            <Col id="w05">6.863</Col>
+            <Col id="w06">4.603</Col>
+            <Col id="w07">8.623</Col>
+            <Col id="w08">3.436</Col>
+            <Col id="w09">9.968</Col>
+            <Col id="w10">1.283</Col>
+            <Col id="w11">4.318</Col>
+            <Col id="w12">7.227</Col>
+            <Col id="w13">1.66</Col>
+            <Col id="w14">6.72</Col>
+            <Col id="w15">8.88</Col>
+            <Col id="w16">2.808</Col>
+            <Col id="w17">3.973</Col>
+            <Col id="w18">3.162</Col>
+            <Col id="w19">1.697</Col>
+            <Col id="w20">9.184</Col>
+            <Col id="w21">9.64</Col>
+            <Col id="w22">8.005</Col>
+            <Col id="w23">0.539</Col>
+            <Col id="w24">1.554</Col>
+            <Col id="w25">0.998</Col>
+            <Col id="w26">6.934</Col>
+            <Col id="w27">9.205</Col>
+            <Col id="w28">6.65</Col>
+            <Col id="w29">3.742</Col>
+            <Col id="w30">1.968</Col>
+            <Col id="w31">9.337</Col>
+            <Col id="w32">1.733</Col>
+            <Col id="w33">5.135</Col>
+            <Col id="w34">1.908</Col>
+            <Col id="w35">7.71</Col>
+            <Col id="w36">9.388</Col>
+            <Col id="w37">7.935</Col>
+            <Col id="w38">1.97</Col>
+            <Col id="w39">7.368</Col>
+            <Col id="w40">0.23</Col>
+            <Col id="w41">9.435</Col>
+            <Col id="w42">3.942</Col>
+            <Col id="w43">7.625</Col>
+            <Col id="w44">0.107</Col>
+            <Col id="w45">8.2</Col>
+            <Col id="w46">2.446</Col>
+            <Col id="w47">0.692</Col>
+            <Col id="w48">1.628</Col>
+            <Col id="w49">7.492</Col>
+            <Col id="w50">0.144</Col>
+            <Col id="w51">3.796</Col>
+            <Col id="w52">4.639</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">F2D25</Col>
+            <Col id="prodGrp">E8107CAE</Col>
+            <Col id="w01">5.41</Col>
+            <Col id="w02">3.671</Col>
+            <Col id="w03">5.496</Col>
+            <Col id="w04">9.78</Col>
+            <Col id="w05">1.181</Col>
+            <Col id="w06">7.758</Col>
+            <Col id="w07">6.84</Col>
+            <Col id="w08">2.292</Col>
+            <Col id="w09">1.278</Col>
+            <Col id="w10">0.345</Col>
+            <Col id="w11">2.183</Col>
+            <Col id="w12">2.175</Col>
+            <Col id="w13">3.159</Col>
+            <Col id="w14">1.256</Col>
+            <Col id="w15">4.446</Col>
+            <Col id="w16">8.967</Col>
+            <Col id="w17">6.255</Col>
+            <Col id="w18">9.26</Col>
+            <Col id="w19">2.901</Col>
+            <Col id="w20">5.688</Col>
+            <Col id="w21">5.544</Col>
+            <Col id="w22">9.161</Col>
+            <Col id="w23">5.277</Col>
+            <Col id="w24">3.908</Col>
+            <Col id="w25">1.891</Col>
+            <Col id="w26">4.627</Col>
+            <Col id="w27">4.433</Col>
+            <Col id="w28">4.132</Col>
+            <Col id="w29">6.191</Col>
+            <Col id="w30">0.15</Col>
+            <Col id="w31">5.82</Col>
+            <Col id="w32">0.95</Col>
+            <Col id="w33">9.379</Col>
+            <Col id="w34">3.063</Col>
+            <Col id="w35">5.972</Col>
+            <Col id="w36">1.099</Col>
+            <Col id="w37">1.694</Col>
+            <Col id="w38">2.72</Col>
+            <Col id="w39">9.755</Col>
+            <Col id="w40">6.216</Col>
+            <Col id="w41">6.495</Col>
+            <Col id="w42">6.454</Col>
+            <Col id="w43">0.429</Col>
+            <Col id="w44">2.007</Col>
+            <Col id="w45">4.293</Col>
+            <Col id="w46">7.768</Col>
+            <Col id="w47">8.629</Col>
+            <Col id="w48">7.922</Col>
+            <Col id="w49">7.987</Col>
+            <Col id="w50">7.171</Col>
+            <Col id="w51">3.511</Col>
+            <Col id="w52">2.568</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">F2D25</Col>
+            <Col id="prodGrp">BE9A5A36</Col>
+            <Col id="w01">1.161</Col>
+            <Col id="w02">8.328</Col>
+            <Col id="w03">9.643</Col>
+            <Col id="w04">6.983</Col>
+            <Col id="w05">3.701</Col>
+            <Col id="w06">0.16</Col>
+            <Col id="w07">4.334</Col>
+            <Col id="w08">5.811</Col>
+            <Col id="w09">0.844</Col>
+            <Col id="w10">9.624</Col>
+            <Col id="w11">5.916</Col>
+            <Col id="w12">1.302</Col>
+            <Col id="w13">8.379</Col>
+            <Col id="w14">5.905</Col>
+            <Col id="w15">5.469</Col>
+            <Col id="w16">0.76</Col>
+            <Col id="w17">7.788</Col>
+            <Col id="w18">6.736</Col>
+            <Col id="w19">7.821</Col>
+            <Col id="w20">0.694</Col>
+            <Col id="w21">6.114</Col>
+            <Col id="w22">0.933</Col>
+            <Col id="w23">2.271</Col>
+            <Col id="w24">3.627</Col>
+            <Col id="w25">7.232</Col>
+            <Col id="w26">4.773</Col>
+            <Col id="w27">2.957</Col>
+            <Col id="w28">1.674</Col>
+            <Col id="w29">4.641</Col>
+            <Col id="w30">4.902</Col>
+            <Col id="w31">2.193</Col>
+            <Col id="w32">7.873</Col>
+            <Col id="w33">7.314</Col>
+            <Col id="w34">5.345</Col>
+            <Col id="w35">0.642</Col>
+            <Col id="w36">6.875</Col>
+            <Col id="w37">8.697</Col>
+            <Col id="w38">3.405</Col>
+            <Col id="w39">9.594</Col>
+            <Col id="w40">9.529</Col>
+            <Col id="w41">3.699</Col>
+            <Col id="w42">9.728</Col>
+            <Col id="w43">1.518</Col>
+            <Col id="w44">3.121</Col>
+            <Col id="w45">4.373</Col>
+            <Col id="w46">0.898</Col>
+            <Col id="w47">6.322</Col>
+            <Col id="w48">2.597</Col>
+            <Col id="w49">9.309</Col>
+            <Col id="w50">7.114</Col>
+            <Col id="w51">0.616</Col>
+            <Col id="w52">7.402</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">F2D25</Col>
+            <Col id="prodGrp">91CC13BA</Col>
+            <Col id="w01">9.072</Col>
+            <Col id="w02">5.422</Col>
+            <Col id="w03">0.714</Col>
+            <Col id="w04">2.701</Col>
+            <Col id="w05">1.612</Col>
+            <Col id="w06">2.247</Col>
+            <Col id="w07">7.482</Col>
+            <Col id="w08">1.982</Col>
+            <Col id="w09">2.084</Col>
+            <Col id="w10">9.407</Col>
+            <Col id="w11">1.711</Col>
+            <Col id="w12">1.153</Col>
+            <Col id="w13">6.172</Col>
+            <Col id="w14">9.456</Col>
+            <Col id="w15">2.627</Col>
+            <Col id="w16">9.127</Col>
+            <Col id="w17">0.436</Col>
+            <Col id="w18">0.623</Col>
+            <Col id="w19">6.727</Col>
+            <Col id="w20">0.434</Col>
+            <Col id="w21">8.855</Col>
+            <Col id="w22">7.149</Col>
+            <Col id="w23">0.327</Col>
+            <Col id="w24">2.176</Col>
+            <Col id="w25">6.055</Col>
+            <Col id="w26">0.088</Col>
+            <Col id="w27">0.929</Col>
+            <Col id="w28">1.7</Col>
+            <Col id="w29">3.937</Col>
+            <Col id="w30">3.947</Col>
+            <Col id="w31">6.212</Col>
+            <Col id="w32">6.885</Col>
+            <Col id="w33">8.153</Col>
+            <Col id="w34">8.707</Col>
+            <Col id="w35">2.841</Col>
+            <Col id="w36">3.549</Col>
+            <Col id="w37">4.26</Col>
+            <Col id="w38">4.715</Col>
+            <Col id="w39">7.607</Col>
+            <Col id="w40">7.256</Col>
+            <Col id="w41">4.764</Col>
+            <Col id="w42">5.623</Col>
+            <Col id="w43">6.635</Col>
+            <Col id="w44">8.106</Col>
+            <Col id="w45">0.58</Col>
+            <Col id="w46">6.223</Col>
+            <Col id="w47">2.344</Col>
+            <Col id="w48">6.838</Col>
+            <Col id="w49">6.915</Col>
+            <Col id="w50">9.038</Col>
+            <Col id="w51">7.726</Col>
+            <Col id="w52">2.084</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">F2D25</Col>
+            <Col id="prodGrp">EEF719BD</Col>
+            <Col id="w01">4.34</Col>
+            <Col id="w02">5.368</Col>
+            <Col id="w03">2.497</Col>
+            <Col id="w04">9.514</Col>
+            <Col id="w05">4.321</Col>
+            <Col id="w06">2.635</Col>
+            <Col id="w07">1.026</Col>
+            <Col id="w08">8.622</Col>
+            <Col id="w09">8.471</Col>
+            <Col id="w10">8.042</Col>
+            <Col id="w11">3.257</Col>
+            <Col id="w12">5.668</Col>
+            <Col id="w13">6.214</Col>
+            <Col id="w14">1.226</Col>
+            <Col id="w15">6.133</Col>
+            <Col id="w16">0.869</Col>
+            <Col id="w17">6.172</Col>
+            <Col id="w18">5.166</Col>
+            <Col id="w19">6.061</Col>
+            <Col id="w20">8.919</Col>
+            <Col id="w21">2.954</Col>
+            <Col id="w22">6.783</Col>
+            <Col id="w23">3.632</Col>
+            <Col id="w24">0.741</Col>
+            <Col id="w25">5.468</Col>
+            <Col id="w26">1.537</Col>
+            <Col id="w27">5.782</Col>
+            <Col id="w28">7.585</Col>
+            <Col id="w29">9.493</Col>
+            <Col id="w30">1.418</Col>
+            <Col id="w31">7.372</Col>
+            <Col id="w32">1.423</Col>
+            <Col id="w33">4.41</Col>
+            <Col id="w34">8.474</Col>
+            <Col id="w35">7.434</Col>
+            <Col id="w36">7.701</Col>
+            <Col id="w37">8.494</Col>
+            <Col id="w38">0.954</Col>
+            <Col id="w39">5.515</Col>
+            <Col id="w40">2.059</Col>
+            <Col id="w41">3.572</Col>
+            <Col id="w42">0.345</Col>
+            <Col id="w43">0.429</Col>
+            <Col id="w44">3.112</Col>
+            <Col id="w45">7.818</Col>
+            <Col id="w46">7.295</Col>
+            <Col id="w47">1.344</Col>
+            <Col id="w48">5.098</Col>
+            <Col id="w49">0.43</Col>
+            <Col id="w50">6.723</Col>
+            <Col id="w51">5.138</Col>
+            <Col id="w52">9.25</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">I569N</Col>
+            <Col id="prodGrp">06F66952</Col>
+            <Col id="w01">2.74</Col>
+            <Col id="w02">6.316</Col>
+            <Col id="w03">1.204</Col>
+            <Col id="w04">4.397</Col>
+            <Col id="w05">5.476</Col>
+            <Col id="w06">9.299</Col>
+            <Col id="w07">3.738</Col>
+            <Col id="w08">6.34</Col>
+            <Col id="w09">4.935</Col>
+            <Col id="w10">8.66</Col>
+            <Col id="w11">5.236</Col>
+            <Col id="w12">1.84</Col>
+            <Col id="w13">2.648</Col>
+            <Col id="w14">0.93</Col>
+            <Col id="w15">9.09</Col>
+            <Col id="w16">6.609</Col>
+            <Col id="w17">6.022</Col>
+            <Col id="w18">5.864</Col>
+            <Col id="w19">7.495</Col>
+            <Col id="w20">7.045</Col>
+            <Col id="w21">6.815</Col>
+            <Col id="w22">4.03</Col>
+            <Col id="w23">5.184</Col>
+            <Col id="w24">3.662</Col>
+            <Col id="w25">2.166</Col>
+            <Col id="w26">5.634</Col>
+            <Col id="w27">6.367</Col>
+            <Col id="w28">7.177</Col>
+            <Col id="w29">8.507</Col>
+            <Col id="w30">9.429</Col>
+            <Col id="w31">4.704</Col>
+            <Col id="w32">6.946</Col>
+            <Col id="w33">8.036</Col>
+            <Col id="w34">0.404</Col>
+            <Col id="w35">3.527</Col>
+            <Col id="w36">8.229</Col>
+            <Col id="w37">2.582</Col>
+            <Col id="w38">2.965</Col>
+            <Col id="w39">9.114</Col>
+            <Col id="w40">8.49</Col>
+            <Col id="w41">8.212</Col>
+            <Col id="w42">5.596</Col>
+            <Col id="w43">5.564</Col>
+            <Col id="w44">0.303</Col>
+            <Col id="w45">6.047</Col>
+            <Col id="w46">4.578</Col>
+            <Col id="w47">0.219</Col>
+            <Col id="w48">1.315</Col>
+            <Col id="w49">2.238</Col>
+            <Col id="w50">8.919</Col>
+            <Col id="w51">4.717</Col>
+            <Col id="w52">7.735</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">I569N</Col>
+            <Col id="prodGrp">BE9A5A36</Col>
+            <Col id="w01">5.063</Col>
+            <Col id="w02">3.297</Col>
+            <Col id="w03">0.643</Col>
+            <Col id="w04">1.865</Col>
+            <Col id="w05">3.778</Col>
+            <Col id="w06">0.522</Col>
+            <Col id="w07">4.932</Col>
+            <Col id="w08">3.78</Col>
+            <Col id="w09">3.045</Col>
+            <Col id="w10">5.629</Col>
+            <Col id="w11">4.057</Col>
+            <Col id="w12">9.355</Col>
+            <Col id="w13">0.543</Col>
+            <Col id="w14">0.714</Col>
+            <Col id="w15">4.54</Col>
+            <Col id="w16">0.815</Col>
+            <Col id="w17">3.4</Col>
+            <Col id="w18">3.879</Col>
+            <Col id="w19">2.701</Col>
+            <Col id="w20">9.727</Col>
+            <Col id="w21">3.034</Col>
+            <Col id="w22">7.05</Col>
+            <Col id="w23">4.696</Col>
+            <Col id="w24">7.998</Col>
+            <Col id="w25">4.666</Col>
+            <Col id="w26">3.691</Col>
+            <Col id="w27">4.691</Col>
+            <Col id="w28">1.009</Col>
+            <Col id="w29">9.702</Col>
+            <Col id="w30">8.549</Col>
+            <Col id="w31">0.76</Col>
+            <Col id="w32">3.174</Col>
+            <Col id="w33">2.14</Col>
+            <Col id="w34">9.813</Col>
+            <Col id="w35">8.284</Col>
+            <Col id="w36">4.142</Col>
+            <Col id="w37">7.031</Col>
+            <Col id="w38">5.16</Col>
+            <Col id="w39">8.57</Col>
+            <Col id="w40">8.018</Col>
+            <Col id="w41">4.383</Col>
+            <Col id="w42">6.808</Col>
+            <Col id="w43">2.359</Col>
+            <Col id="w44">4.052</Col>
+            <Col id="w45">7.785</Col>
+            <Col id="w46">6.548</Col>
+            <Col id="w47">8.23</Col>
+            <Col id="w48">9.905</Col>
+            <Col id="w49">2.251</Col>
+            <Col id="w50">0.845</Col>
+            <Col id="w51">2.338</Col>
+            <Col id="w52">9.455</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">I569N</Col>
+            <Col id="prodGrp">ECEB86C0</Col>
+            <Col id="w01">6.236</Col>
+            <Col id="w02">1.492</Col>
+            <Col id="w03">5.957</Col>
+            <Col id="w04">2.383</Col>
+            <Col id="w05">8.137</Col>
+            <Col id="w06">0.698</Col>
+            <Col id="w07">9.061</Col>
+            <Col id="w08">8.595</Col>
+            <Col id="w09">2.855</Col>
+            <Col id="w10">0.675</Col>
+            <Col id="w11">1.238</Col>
+            <Col id="w12">8.257</Col>
+            <Col id="w13">1.174</Col>
+            <Col id="w14">4.891</Col>
+            <Col id="w15">1.657</Col>
+            <Col id="w16">0.37</Col>
+            <Col id="w17">7.922</Col>
+            <Col id="w18">5.053</Col>
+            <Col id="w19">8.356</Col>
+            <Col id="w20">6.871</Col>
+            <Col id="w21">4.423</Col>
+            <Col id="w22">6.708</Col>
+            <Col id="w23">4.562</Col>
+            <Col id="w24">0.159</Col>
+            <Col id="w25">2.931</Col>
+            <Col id="w26">4.067</Col>
+            <Col id="w27">9.144</Col>
+            <Col id="w28">7.38</Col>
+            <Col id="w29">8.689</Col>
+            <Col id="w30">9.015</Col>
+            <Col id="w31">4.663</Col>
+            <Col id="w32">6.421</Col>
+            <Col id="w33">9.76</Col>
+            <Col id="w34">4.301</Col>
+            <Col id="w35">6.058</Col>
+            <Col id="w36">1.482</Col>
+            <Col id="w37">4.441</Col>
+            <Col id="w38">5.439</Col>
+            <Col id="w39">8.921</Col>
+            <Col id="w40">9.076</Col>
+            <Col id="w41">2.427</Col>
+            <Col id="w42">5.525</Col>
+            <Col id="w43">3.261</Col>
+            <Col id="w44">7.366</Col>
+            <Col id="w45">3.763</Col>
+            <Col id="w46">0.329</Col>
+            <Col id="w47">1.087</Col>
+            <Col id="w48">5.085</Col>
+            <Col id="w49">2.937</Col>
+            <Col id="w50">1.755</Col>
+            <Col id="w51">5.296</Col>
+            <Col id="w52">5.09</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">J423S</Col>
+            <Col id="prodGrp">67099835</Col>
+            <Col id="w01">3.722</Col>
+            <Col id="w02">4.93</Col>
+            <Col id="w03">0.813</Col>
+            <Col id="w04">9.69</Col>
+            <Col id="w05">2.629</Col>
+            <Col id="w06">9.584</Col>
+            <Col id="w07">4.946</Col>
+            <Col id="w08">9.811</Col>
+            <Col id="w09">6.757</Col>
+            <Col id="w10">9.988</Col>
+            <Col id="w11">6.474</Col>
+            <Col id="w12">5.687</Col>
+            <Col id="w13">3.752</Col>
+            <Col id="w14">2.419</Col>
+            <Col id="w15">4.568</Col>
+            <Col id="w16">8.098</Col>
+            <Col id="w17">1.527</Col>
+            <Col id="w18">2.944</Col>
+            <Col id="w19">4.441</Col>
+            <Col id="w20">8.238</Col>
+            <Col id="w21">1.338</Col>
+            <Col id="w22">2.541</Col>
+            <Col id="w23">0.311</Col>
+            <Col id="w24">3.938</Col>
+            <Col id="w25">1.748</Col>
+            <Col id="w26">2.475</Col>
+            <Col id="w27">4.179</Col>
+            <Col id="w28">4.31</Col>
+            <Col id="w29">5.827</Col>
+            <Col id="w30">8.089</Col>
+            <Col id="w31">4.711</Col>
+            <Col id="w32">1.348</Col>
+            <Col id="w33">8.66</Col>
+            <Col id="w34">7.268</Col>
+            <Col id="w35">5.284</Col>
+            <Col id="w36">5.496</Col>
+            <Col id="w37">9.246</Col>
+            <Col id="w38">3.375</Col>
+            <Col id="w39">6.501</Col>
+            <Col id="w40">8.058</Col>
+            <Col id="w41">2.719</Col>
+            <Col id="w42">7.32</Col>
+            <Col id="w43">8.944</Col>
+            <Col id="w44">4.318</Col>
+            <Col id="w45">6.172</Col>
+            <Col id="w46">3.235</Col>
+            <Col id="w47">6.972</Col>
+            <Col id="w48">0.179</Col>
+            <Col id="w49">1.577</Col>
+            <Col id="w50">7.625</Col>
+            <Col id="w51">7.956</Col>
+            <Col id="w52">3.587</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">J423S</Col>
+            <Col id="prodGrp">CD39F91F</Col>
+            <Col id="w01">8.356</Col>
+            <Col id="w02">4.561</Col>
+            <Col id="w03">9.192</Col>
+            <Col id="w04">1.352</Col>
+            <Col id="w05">8.926</Col>
+            <Col id="w06">5.165</Col>
+            <Col id="w07">7.269</Col>
+            <Col id="w08">9.922</Col>
+            <Col id="w09">7.908</Col>
+            <Col id="w10">0.403</Col>
+            <Col id="w11">8.476</Col>
+            <Col id="w12">2.665</Col>
+            <Col id="w13">1.446</Col>
+            <Col id="w14">8.83</Col>
+            <Col id="w15">5.876</Col>
+            <Col id="w16">2.109</Col>
+            <Col id="w17">4.451</Col>
+            <Col id="w18">5.225</Col>
+            <Col id="w19">1.726</Col>
+            <Col id="w20">7.573</Col>
+            <Col id="w21">4.233</Col>
+            <Col id="w22">4.182</Col>
+            <Col id="w23">2.901</Col>
+            <Col id="w24">0.514</Col>
+            <Col id="w25">7.679</Col>
+            <Col id="w26">0.552</Col>
+            <Col id="w27">9.459</Col>
+            <Col id="w28">0.463</Col>
+            <Col id="w29">7.276</Col>
+            <Col id="w30">1.284</Col>
+            <Col id="w31">5.286</Col>
+            <Col id="w32">0.517</Col>
+            <Col id="w33">1.204</Col>
+            <Col id="w34">1.397</Col>
+            <Col id="w35">8.365</Col>
+            <Col id="w36">5.82</Col>
+            <Col id="w37">0.374</Col>
+            <Col id="w38">3.683</Col>
+            <Col id="w39">5.925</Col>
+            <Col id="w40">6.291</Col>
+            <Col id="w41">7.09</Col>
+            <Col id="w42">9.861</Col>
+            <Col id="w43">8.205</Col>
+            <Col id="w44">0.585</Col>
+            <Col id="w45">6.913</Col>
+            <Col id="w46">6.945</Col>
+            <Col id="w47">2.489</Col>
+            <Col id="w48">9.884</Col>
+            <Col id="w49">2.93</Col>
+            <Col id="w50">6.047</Col>
+            <Col id="w51">2.2</Col>
+            <Col id="w52">6.199</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">VD</Col>
+            <Col id="fctNm">J423S</Col>
+            <Col id="prodGrp">BE9A5A36</Col>
+            <Col id="w01">2.332</Col>
+            <Col id="w02">5.709</Col>
+            <Col id="w03">6.287</Col>
+            <Col id="w04">3.866</Col>
+            <Col id="w05">5.061</Col>
+            <Col id="w06">9.527</Col>
+            <Col id="w07">5.691</Col>
+            <Col id="w08">9.44</Col>
+            <Col id="w09">8.212</Col>
+            <Col id="w10">6.091</Col>
+            <Col id="w11">3.691</Col>
+            <Col id="w12">7.715</Col>
+            <Col id="w13">4.361</Col>
+            <Col id="w14">5.567</Col>
+            <Col id="w15">1.827</Col>
+            <Col id="w16">6.228</Col>
+            <Col id="w17">6.73</Col>
+            <Col id="w18">2.807</Col>
+            <Col id="w19">9.289</Col>
+            <Col id="w20">5.376</Col>
+            <Col id="w21">6.155</Col>
+            <Col id="w22">4.051</Col>
+            <Col id="w23">4.055</Col>
+            <Col id="w24">1.733</Col>
+            <Col id="w25">4.174</Col>
+            <Col id="w26">7.469</Col>
+            <Col id="w27">0.002</Col>
+            <Col id="w28">4.749</Col>
+            <Col id="w29">2.163</Col>
+            <Col id="w30">5.113</Col>
+            <Col id="w31">2.272</Col>
+            <Col id="w32">1.063</Col>
+            <Col id="w33">9.936</Col>
+            <Col id="w34">4.446</Col>
+            <Col id="w35">0.725</Col>
+            <Col id="w36">3.024</Col>
+            <Col id="w37">8.792</Col>
+            <Col id="w38">3.519</Col>
+            <Col id="w39">4.511</Col>
+            <Col id="w40">7.012</Col>
+            <Col id="w41">3.703</Col>
+            <Col id="w42">7.512</Col>
+            <Col id="w43">7.618</Col>
+            <Col id="w44">5.643</Col>
+            <Col id="w45">5.05</Col>
+            <Col id="w46">2.161</Col>
+            <Col id="w47">7.185</Col>
+            <Col id="w48">3.835</Col>
+            <Col id="w49">2.594</Col>
+            <Col id="w50">1.869</Col>
+            <Col id="w51">0.5</Col>
+            <Col id="w52">7.574</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">IM</Col>
+            <Col id="fctNm">E54AD</Col>
+            <Col id="prodGrp">DC6FBE97</Col>
+            <Col id="w01">1.281</Col>
+            <Col id="w02">5.185</Col>
+            <Col id="w03">7.207</Col>
+            <Col id="w04">3.623</Col>
+            <Col id="w05">4.095</Col>
+            <Col id="w06">2.09</Col>
+            <Col id="w07">8.232</Col>
+            <Col id="w08">7.889</Col>
+            <Col id="w09">0.377</Col>
+            <Col id="w10">4.094</Col>
+            <Col id="w11">5.633</Col>
+            <Col id="w12">9.055</Col>
+            <Col id="w13">4.314</Col>
+            <Col id="w14">6.93</Col>
+            <Col id="w15">5.124</Col>
+            <Col id="w16">5.649</Col>
+            <Col id="w17">9.335</Col>
+            <Col id="w18">9.568</Col>
+            <Col id="w19">6.236</Col>
+            <Col id="w20">2.374</Col>
+            <Col id="w21">0.855</Col>
+            <Col id="w22">3.147</Col>
+            <Col id="w23">6.625</Col>
+            <Col id="w24">2.639</Col>
+            <Col id="w25">2.982</Col>
+            <Col id="w26">9.666</Col>
+            <Col id="w27">9.205</Col>
+            <Col id="w28">6.167</Col>
+            <Col id="w29">3.226</Col>
+            <Col id="w30">0.943</Col>
+            <Col id="w31">7.385</Col>
+            <Col id="w32">6.838</Col>
+            <Col id="w33">1.272</Col>
+            <Col id="w34">9.081</Col>
+            <Col id="w35">3.396</Col>
+            <Col id="w36">4.893</Col>
+            <Col id="w37">8.497</Col>
+            <Col id="w38">8.699</Col>
+            <Col id="w39">8.996</Col>
+            <Col id="w40">2.262</Col>
+            <Col id="w41">5.556</Col>
+            <Col id="w42">3.201</Col>
+            <Col id="w43">7.893</Col>
+            <Col id="w44">2.936</Col>
+            <Col id="w45">3.29</Col>
+            <Col id="w46">0.912</Col>
+            <Col id="w47">7.257</Col>
+            <Col id="w48">3.307</Col>
+            <Col id="w49">9.767</Col>
+            <Col id="w50">7.564</Col>
+            <Col id="w51">7.747</Col>
+            <Col id="w52">9.785</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">IM</Col>
+            <Col id="fctNm">E54AD</Col>
+            <Col id="prodGrp">91CC13BA</Col>
+            <Col id="w01">0.329</Col>
+            <Col id="w02">0.169</Col>
+            <Col id="w03">2.527</Col>
+            <Col id="w04">8.567</Col>
+            <Col id="w05">8.716</Col>
+            <Col id="w06">7.185</Col>
+            <Col id="w07">3.939</Col>
+            <Col id="w08">8.679</Col>
+            <Col id="w09">0.243</Col>
+            <Col id="w10">8.224</Col>
+            <Col id="w11">0.37</Col>
+            <Col id="w12">1.309</Col>
+            <Col id="w13">8.994</Col>
+            <Col id="w14">7.037</Col>
+            <Col id="w15">5.795</Col>
+            <Col id="w16">4.405</Col>
+            <Col id="w17">5.256</Col>
+            <Col id="w18">0.504</Col>
+            <Col id="w19">6.013</Col>
+            <Col id="w20">9.045</Col>
+            <Col id="w21">9.958</Col>
+            <Col id="w22">5.366</Col>
+            <Col id="w23">2.631</Col>
+            <Col id="w24">1.808</Col>
+            <Col id="w25">7.594</Col>
+            <Col id="w26">3.892</Col>
+            <Col id="w27">8.705</Col>
+            <Col id="w28">6.89</Col>
+            <Col id="w29">0.351</Col>
+            <Col id="w30">0.38</Col>
+            <Col id="w31">4.577</Col>
+            <Col id="w32">1.215</Col>
+            <Col id="w33">4.987</Col>
+            <Col id="w34">4.841</Col>
+            <Col id="w35">5.026</Col>
+            <Col id="w36">7.255</Col>
+            <Col id="w37">3.48</Col>
+            <Col id="w38">8.411</Col>
+            <Col id="w39">8.083</Col>
+            <Col id="w40">1.399</Col>
+            <Col id="w41">9.99</Col>
+            <Col id="w42">2.757</Col>
+            <Col id="w43">4.8</Col>
+            <Col id="w44">2.768</Col>
+            <Col id="w45">4.681</Col>
+            <Col id="w46">6.983</Col>
+            <Col id="w47">9.008</Col>
+            <Col id="w48">7.676</Col>
+            <Col id="w49">2.568</Col>
+            <Col id="w50">3.454</Col>
+            <Col id="w51">2.852</Col>
+            <Col id="w52">6.894</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">IM</Col>
+            <Col id="fctNm">E54AD</Col>
+            <Col id="prodGrp">67099835</Col>
+            <Col id="w01">8.536</Col>
+            <Col id="w02">7.928</Col>
+            <Col id="w03">8.793</Col>
+            <Col id="w04">9.603</Col>
+            <Col id="w05">4.319</Col>
+            <Col id="w06">8.133</Col>
+            <Col id="w07">9.733</Col>
+            <Col id="w08">4.105</Col>
+            <Col id="w09">1.647</Col>
+            <Col id="w10">1.628</Col>
+            <Col id="w11">8.181</Col>
+            <Col id="w12">3.74</Col>
+            <Col id="w13">1.423</Col>
+            <Col id="w14">2.446</Col>
+            <Col id="w15">7.282</Col>
+            <Col id="w16">2.224</Col>
+            <Col id="w17">8.463</Col>
+            <Col id="w18">0.548</Col>
+            <Col id="w19">1.183</Col>
+            <Col id="w20">8.781</Col>
+            <Col id="w21">1.53</Col>
+            <Col id="w22">8.186</Col>
+            <Col id="w23">2.534</Col>
+            <Col id="w24">9.833</Col>
+            <Col id="w25">4.172</Col>
+            <Col id="w26">2.357</Col>
+            <Col id="w27">5.211</Col>
+            <Col id="w28">6.37</Col>
+            <Col id="w29">5.518</Col>
+            <Col id="w30">1.182</Col>
+            <Col id="w31">3.896</Col>
+            <Col id="w32">3.321</Col>
+            <Col id="w33">3.204</Col>
+            <Col id="w34">7.111</Col>
+            <Col id="w35">6.464</Col>
+            <Col id="w36">3.025</Col>
+            <Col id="w37">1.24</Col>
+            <Col id="w38">8.874</Col>
+            <Col id="w39">5.614</Col>
+            <Col id="w40">5.494</Col>
+            <Col id="w41">9.848</Col>
+            <Col id="w42">1.807</Col>
+            <Col id="w43">4.818</Col>
+            <Col id="w44">2.518</Col>
+            <Col id="w45">1.228</Col>
+            <Col id="w46">1.191</Col>
+            <Col id="w47">4.714</Col>
+            <Col id="w48">5.331</Col>
+            <Col id="w49">4.131</Col>
+            <Col id="w50">7.453</Col>
+            <Col id="w51">2.252</Col>
+            <Col id="w52">8.679</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">IM</Col>
+            <Col id="fctNm">F2D25</Col>
+            <Col id="prodGrp">BE9A5A36</Col>
+            <Col id="w01">0.034</Col>
+            <Col id="w02">9.392</Col>
+            <Col id="w03">9.933</Col>
+            <Col id="w04">0.186</Col>
+            <Col id="w05">6.136</Col>
+            <Col id="w06">4.424</Col>
+            <Col id="w07">1.774</Col>
+            <Col id="w08">3.666</Col>
+            <Col id="w09">7.452</Col>
+            <Col id="w10">3.369</Col>
+            <Col id="w11">8.373</Col>
+            <Col id="w12">5.712</Col>
+            <Col id="w13">9.841</Col>
+            <Col id="w14">7.569</Col>
+            <Col id="w15">2.681</Col>
+            <Col id="w16">7.6</Col>
+            <Col id="w17">7.272</Col>
+            <Col id="w18">5.095</Col>
+            <Col id="w19">3.171</Col>
+            <Col id="w20">8.305</Col>
+            <Col id="w21">1.559</Col>
+            <Col id="w22">1.406</Col>
+            <Col id="w23">7.691</Col>
+            <Col id="w24">1.139</Col>
+            <Col id="w25">8.058</Col>
+            <Col id="w26">0.086</Col>
+            <Col id="w27">9.328</Col>
+            <Col id="w28">2.149</Col>
+            <Col id="w29">8.115</Col>
+            <Col id="w30">0.978</Col>
+            <Col id="w31">6.576</Col>
+            <Col id="w32">9.001</Col>
+            <Col id="w33">6.433</Col>
+            <Col id="w34">9.511</Col>
+            <Col id="w35">7.193</Col>
+            <Col id="w36">9.868</Col>
+            <Col id="w37">0.856</Col>
+            <Col id="w38">8.917</Col>
+            <Col id="w39">1.516</Col>
+            <Col id="w40">4.047</Col>
+            <Col id="w41">7.095</Col>
+            <Col id="w42">3.855</Col>
+            <Col id="w43">2.536</Col>
+            <Col id="w44">9.617</Col>
+            <Col id="w45">3.435</Col>
+            <Col id="w46">4.924</Col>
+            <Col id="w47">5.012</Col>
+            <Col id="w48">4.407</Col>
+            <Col id="w49">7.265</Col>
+            <Col id="w50">7.936</Col>
+            <Col id="w51">1.459</Col>
+            <Col id="w52">8.176</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">IM</Col>
+            <Col id="fctNm">F2D25</Col>
+            <Col id="prodGrp">0F6B70E8</Col>
+            <Col id="w01">1.209</Col>
+            <Col id="w02">9.989</Col>
+            <Col id="w03">8.475</Col>
+            <Col id="w04">4.266</Col>
+            <Col id="w05">1.2</Col>
+            <Col id="w06">1.892</Col>
+            <Col id="w07">7.897</Col>
+            <Col id="w08">6.918</Col>
+            <Col id="w09">9.209</Col>
+            <Col id="w10">7.041</Col>
+            <Col id="w11">1.814</Col>
+            <Col id="w12">4.892</Col>
+            <Col id="w13">0.44</Col>
+            <Col id="w14">0.635</Col>
+            <Col id="w15">1.423</Col>
+            <Col id="w16">4.29</Col>
+            <Col id="w17">8.86</Col>
+            <Col id="w18">9.909</Col>
+            <Col id="w19">8.247</Col>
+            <Col id="w20">7.754</Col>
+            <Col id="w21">3.568</Col>
+            <Col id="w22">9.658</Col>
+            <Col id="w23">6.643</Col>
+            <Col id="w24">7.479</Col>
+            <Col id="w25">7.031</Col>
+            <Col id="w26">0.936</Col>
+            <Col id="w27">0.892</Col>
+            <Col id="w28">4.386</Col>
+            <Col id="w29">9.007</Col>
+            <Col id="w30">0.543</Col>
+            <Col id="w31">9.895</Col>
+            <Col id="w32">3.194</Col>
+            <Col id="w33">6.404</Col>
+            <Col id="w34">3.738</Col>
+            <Col id="w35">2.256</Col>
+            <Col id="w36">2.112</Col>
+            <Col id="w37">6.378</Col>
+            <Col id="w38">1.527</Col>
+            <Col id="w39">3.579</Col>
+            <Col id="w40">9.993</Col>
+            <Col id="w41">9.983</Col>
+            <Col id="w42">1.207</Col>
+            <Col id="w43">4.513</Col>
+            <Col id="w44">6.79</Col>
+            <Col id="w45">7.983</Col>
+            <Col id="w46">9.349</Col>
+            <Col id="w47">5.201</Col>
+            <Col id="w48">6.499</Col>
+            <Col id="w49">6.323</Col>
+            <Col id="w50">6.481</Col>
+            <Col id="w51">0.343</Col>
+            <Col id="w52">5.314</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">IM</Col>
+            <Col id="fctNm">F2D25</Col>
+            <Col id="prodGrp">07D34EA3</Col>
+            <Col id="w01">9.207</Col>
+            <Col id="w02">2.641</Col>
+            <Col id="w03">8.483</Col>
+            <Col id="w04">2.971</Col>
+            <Col id="w05">8.219</Col>
+            <Col id="w06">3.08</Col>
+            <Col id="w07">0.669</Col>
+            <Col id="w08">8.28</Col>
+            <Col id="w09">8.749</Col>
+            <Col id="w10">4.599</Col>
+            <Col id="w11">6.79</Col>
+            <Col id="w12">4.575</Col>
+            <Col id="w13">3.737</Col>
+            <Col id="w14">9.775</Col>
+            <Col id="w15">3.003</Col>
+            <Col id="w16">5.084</Col>
+            <Col id="w17">6.79</Col>
+            <Col id="w18">3.185</Col>
+            <Col id="w19">6.843</Col>
+            <Col id="w20">5.106</Col>
+            <Col id="w21">8.182</Col>
+            <Col id="w22">8.074</Col>
+            <Col id="w23">1.152</Col>
+            <Col id="w24">6.522</Col>
+            <Col id="w25">9.936</Col>
+            <Col id="w26">6.329</Col>
+            <Col id="w27">9.583</Col>
+            <Col id="w28">8.501</Col>
+            <Col id="w29">5.103</Col>
+            <Col id="w30">4.611</Col>
+            <Col id="w31">6.319</Col>
+            <Col id="w32">0.003</Col>
+            <Col id="w33">9.54</Col>
+            <Col id="w34">7.554</Col>
+            <Col id="w35">5.601</Col>
+            <Col id="w36">4.674</Col>
+            <Col id="w37">6.364</Col>
+            <Col id="w38">4.792</Col>
+            <Col id="w39">1.969</Col>
+            <Col id="w40">6.632</Col>
+            <Col id="w41">1.972</Col>
+            <Col id="w42">7.226</Col>
+            <Col id="w43">6.989</Col>
+            <Col id="w44">5.48</Col>
+            <Col id="w45">3.981</Col>
+            <Col id="w46">5.86</Col>
+            <Col id="w47">8.597</Col>
+            <Col id="w48">7.484</Col>
+            <Col id="w49">5.485</Col>
+            <Col id="w50">2.687</Col>
+            <Col id="w51">7.602</Col>
+            <Col id="w52">1.56</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">IM</Col>
+            <Col id="fctNm">F2D25</Col>
+            <Col id="prodGrp">ECEB86C0</Col>
+            <Col id="w01">4.113</Col>
+            <Col id="w02">3.891</Col>
+            <Col id="w03">6.183</Col>
+            <Col id="w04">4.336</Col>
+            <Col id="w05">4.95</Col>
+            <Col id="w06">0.546</Col>
+            <Col id="w07">8.208</Col>
+            <Col id="w08">8.519</Col>
+            <Col id="w09">6.356</Col>
+            <Col id="w10">2.035</Col>
+            <Col id="w11">5.932</Col>
+            <Col id="w12">8.417</Col>
+            <Col id="w13">3.665</Col>
+            <Col id="w14">0.194</Col>
+            <Col id="w15">7.105</Col>
+            <Col id="w16">8.999</Col>
+            <Col id="w17">5.654</Col>
+            <Col id="w18">5.865</Col>
+            <Col id="w19">2.596</Col>
+            <Col id="w20">0.913</Col>
+            <Col id="w21">9.85</Col>
+            <Col id="w22">3.194</Col>
+            <Col id="w23">7.666</Col>
+            <Col id="w24">7.45</Col>
+            <Col id="w25">8.201</Col>
+            <Col id="w26">4.716</Col>
+            <Col id="w27">7.015</Col>
+            <Col id="w28">2.895</Col>
+            <Col id="w29">9.702</Col>
+            <Col id="w30">5.27</Col>
+            <Col id="w31">0.138</Col>
+            <Col id="w32">8.997</Col>
+            <Col id="w33">4.551</Col>
+            <Col id="w34">4.377</Col>
+            <Col id="w35">3.891</Col>
+            <Col id="w36">8.683</Col>
+            <Col id="w37">2.175</Col>
+            <Col id="w38">4.885</Col>
+            <Col id="w39">8.915</Col>
+            <Col id="w40">4.282</Col>
+            <Col id="w41">9.151</Col>
+            <Col id="w42">1.621</Col>
+            <Col id="w43">7.619</Col>
+            <Col id="w44">6.356</Col>
+            <Col id="w45">8.546</Col>
+            <Col id="w46">7.594</Col>
+            <Col id="w47">7.15</Col>
+            <Col id="w48">8.442</Col>
+            <Col id="w49">2.033</Col>
+            <Col id="w50">1.09</Col>
+            <Col id="w51">5.989</Col>
+            <Col id="w52">1.734</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">IM</Col>
+            <Col id="fctNm">F2D25</Col>
+            <Col id="prodGrp">A1CC2737</Col>
+            <Col id="w01">2.549</Col>
+            <Col id="w02">6.269</Col>
+            <Col id="w03">7.446</Col>
+            <Col id="w04">3.303</Col>
+            <Col id="w05">2.164</Col>
+            <Col id="w06">1.339</Col>
+            <Col id="w07">1.294</Col>
+            <Col id="w08">0.85</Col>
+            <Col id="w09">7.359</Col>
+            <Col id="w10">6.255</Col>
+            <Col id="w11">1.678</Col>
+            <Col id="w12">7.198</Col>
+            <Col id="w13">4.501</Col>
+            <Col id="w14">5.98</Col>
+            <Col id="w15">9.801</Col>
+            <Col id="w16">7.097</Col>
+            <Col id="w17">0.09</Col>
+            <Col id="w18">3.446</Col>
+            <Col id="w19">7.817</Col>
+            <Col id="w20">3.94</Col>
+            <Col id="w21">5.089</Col>
+            <Col id="w22">8.175</Col>
+            <Col id="w23">0.924</Col>
+            <Col id="w24">1.184</Col>
+            <Col id="w25">8.169</Col>
+            <Col id="w26">1.362</Col>
+            <Col id="w27">0.566</Col>
+            <Col id="w28">6.529</Col>
+            <Col id="w29">9.247</Col>
+            <Col id="w30">3.231</Col>
+            <Col id="w31">4.331</Col>
+            <Col id="w32">7.406</Col>
+            <Col id="w33">4.793</Col>
+            <Col id="w34">7.11</Col>
+            <Col id="w35">5.45</Col>
+            <Col id="w36">2.512</Col>
+            <Col id="w37">0.699</Col>
+            <Col id="w38">5.111</Col>
+            <Col id="w39">5.732</Col>
+            <Col id="w40">6.382</Col>
+            <Col id="w41">7.192</Col>
+            <Col id="w42">8.591</Col>
+            <Col id="w43">8.14</Col>
+            <Col id="w44">1.274</Col>
+            <Col id="w45">3.733</Col>
+            <Col id="w46">0.149</Col>
+            <Col id="w47">3.609</Col>
+            <Col id="w48">1.927</Col>
+            <Col id="w49">3.347</Col>
+            <Col id="w50">2.106</Col>
+            <Col id="w51">3.091</Col>
+            <Col id="w52">4.317</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">IM</Col>
+            <Col id="fctNm">S295J</Col>
+            <Col id="prodGrp">61A40A9D</Col>
+            <Col id="w01">9.455</Col>
+            <Col id="w02">2.159</Col>
+            <Col id="w03">3.63</Col>
+            <Col id="w04">6.762</Col>
+            <Col id="w05">8.565</Col>
+            <Col id="w06">5.006</Col>
+            <Col id="w07">7.025</Col>
+            <Col id="w08">8.655</Col>
+            <Col id="w09">8.258</Col>
+            <Col id="w10">5.039</Col>
+            <Col id="w11">1.12</Col>
+            <Col id="w12">4.74</Col>
+            <Col id="w13">9.58</Col>
+            <Col id="w14">8.355</Col>
+            <Col id="w15">1.768</Col>
+            <Col id="w16">6.577</Col>
+            <Col id="w17">6.964</Col>
+            <Col id="w18">8.992</Col>
+            <Col id="w19">9.697</Col>
+            <Col id="w20">3.622</Col>
+            <Col id="w21">1.349</Col>
+            <Col id="w22">4.1</Col>
+            <Col id="w23">3.904</Col>
+            <Col id="w24">9.121</Col>
+            <Col id="w25">2.667</Col>
+            <Col id="w26">0.001</Col>
+            <Col id="w27">9.091</Col>
+            <Col id="w28">8.305</Col>
+            <Col id="w29">3.236</Col>
+            <Col id="w30">2.017</Col>
+            <Col id="w31">8.845</Col>
+            <Col id="w32">7.625</Col>
+            <Col id="w33">2.788</Col>
+            <Col id="w34">6.393</Col>
+            <Col id="w35">6.2</Col>
+            <Col id="w36">7.669</Col>
+            <Col id="w37">3.298</Col>
+            <Col id="w38">4.932</Col>
+            <Col id="w39">6.701</Col>
+            <Col id="w40">4.46</Col>
+            <Col id="w41">3.435</Col>
+            <Col id="w42">8.591</Col>
+            <Col id="w43">0.571</Col>
+            <Col id="w44">0.218</Col>
+            <Col id="w45">4.548</Col>
+            <Col id="w46">5.568</Col>
+            <Col id="w47">0.326</Col>
+            <Col id="w48">1.064</Col>
+            <Col id="w49">6.943</Col>
+            <Col id="w50">9.802</Col>
+            <Col id="w51">1.826</Col>
+            <Col id="w52">4.676</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">IM</Col>
+            <Col id="fctNm">S295J</Col>
+            <Col id="prodGrp">E3902310</Col>
+            <Col id="w01">6.182</Col>
+            <Col id="w02">2.331</Col>
+            <Col id="w03">0.016</Col>
+            <Col id="w04">3.191</Col>
+            <Col id="w05">6.457</Col>
+            <Col id="w06">4.279</Col>
+            <Col id="w07">5.594</Col>
+            <Col id="w08">2.102</Col>
+            <Col id="w09">0.995</Col>
+            <Col id="w10">5.252</Col>
+            <Col id="w11">3.93</Col>
+            <Col id="w12">6.143</Col>
+            <Col id="w13">9.249</Col>
+            <Col id="w14">7.929</Col>
+            <Col id="w15">4.89</Col>
+            <Col id="w16">4.64</Col>
+            <Col id="w17">5.99</Col>
+            <Col id="w18">6.028</Col>
+            <Col id="w19">8.76</Col>
+            <Col id="w20">2.608</Col>
+            <Col id="w21">7.61</Col>
+            <Col id="w22">1.258</Col>
+            <Col id="w23">5.935</Col>
+            <Col id="w24">4.131</Col>
+            <Col id="w25">1.023</Col>
+            <Col id="w26">3.674</Col>
+            <Col id="w27">5.937</Col>
+            <Col id="w28">3.13</Col>
+            <Col id="w29">0.18</Col>
+            <Col id="w30">9.482</Col>
+            <Col id="w31">7.135</Col>
+            <Col id="w32">0.137</Col>
+            <Col id="w33">7.75</Col>
+            <Col id="w34">7.659</Col>
+            <Col id="w35">6.378</Col>
+            <Col id="w36">3.007</Col>
+            <Col id="w37">8.351</Col>
+            <Col id="w38">8.684</Col>
+            <Col id="w39">5.128</Col>
+            <Col id="w40">1.254</Col>
+            <Col id="w41">3.89</Col>
+            <Col id="w42">3.104</Col>
+            <Col id="w43">5.291</Col>
+            <Col id="w44">7.874</Col>
+            <Col id="w45">9.523</Col>
+            <Col id="w46">9.853</Col>
+            <Col id="w47">6.41</Col>
+            <Col id="w48">6.664</Col>
+            <Col id="w49">2.778</Col>
+            <Col id="w50">7.884</Col>
+            <Col id="w51">8.008</Col>
+            <Col id="w52">8.828</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">IM</Col>
+            <Col id="fctNm">W23KF</Col>
+            <Col id="prodGrp">E8107CAE</Col>
+            <Col id="w01">1.186</Col>
+            <Col id="w02">8.509</Col>
+            <Col id="w03">9.179</Col>
+            <Col id="w04">6.378</Col>
+            <Col id="w05">6.807</Col>
+            <Col id="w06">8.079</Col>
+            <Col id="w07">8.664</Col>
+            <Col id="w08">1.331</Col>
+            <Col id="w09">7.782</Col>
+            <Col id="w10">6.783</Col>
+            <Col id="w11">6.909</Col>
+            <Col id="w12">0.299</Col>
+            <Col id="w13">0.527</Col>
+            <Col id="w14">4.921</Col>
+            <Col id="w15">3.953</Col>
+            <Col id="w16">0.382</Col>
+            <Col id="w17">6.86</Col>
+            <Col id="w18">8.636</Col>
+            <Col id="w19">9.998</Col>
+            <Col id="w20">0.95</Col>
+            <Col id="w21">0.607</Col>
+            <Col id="w22">2.313</Col>
+            <Col id="w23">5.933</Col>
+            <Col id="w24">8.203</Col>
+            <Col id="w25">2.467</Col>
+            <Col id="w26">6.437</Col>
+            <Col id="w27">6.436</Col>
+            <Col id="w28">0.579</Col>
+            <Col id="w29">3.535</Col>
+            <Col id="w30">6.384</Col>
+            <Col id="w31">5.381</Col>
+            <Col id="w32">8.289</Col>
+            <Col id="w33">9.314</Col>
+            <Col id="w34">2.826</Col>
+            <Col id="w35">0.385</Col>
+            <Col id="w36">8.918</Col>
+            <Col id="w37">7.739</Col>
+            <Col id="w38">3.523</Col>
+            <Col id="w39">3.556</Col>
+            <Col id="w40">7.834</Col>
+            <Col id="w41">6.824</Col>
+            <Col id="w42">2.435</Col>
+            <Col id="w43">4.186</Col>
+            <Col id="w44">0.965</Col>
+            <Col id="w45">1.536</Col>
+            <Col id="w46">9.931</Col>
+            <Col id="w47">2.066</Col>
+            <Col id="w48">4.976</Col>
+            <Col id="w49">8.024</Col>
+            <Col id="w50">5.128</Col>
+            <Col id="w51">0.044</Col>
+            <Col id="w52">9.101</Col>
+          </Row>
+          <Row>
+            <Col id="gbmNm">IM</Col>
+            <Col id="fctNm">W23KF</Col>
+            <Col id="prodGrp">EEF719BD</Col>
+            <Col id="w01">5.327</Col>
+            <Col id="w02">2.97</Col>
+            <Col id="w03">3.966</Col>
+            <Col id="w04">7.429</Col>
+            <Col id="w05">9.417</Col>
+            <Col id="w06">3.65</Col>
+            <Col id="w07">7.946</Col>
+            <Col id="w08">5.898</Col>
+            <Col id="w09">1.877</Col>
+            <Col id="w10">2.15</Col>
+            <Col id="w11">3.581</Col>
+            <Col id="w12">8.926</Col>
+            <Col id="w13">4.906</Col>
+            <Col id="w14">5.503</Col>
+            <Col id="w15">1.716</Col>
+            <Col id="w16">4.909</Col>
+            <Col id="w17">7.836</Col>
+            <Col id="w18">4.721</Col>
+            <Col id="w19">5.74</Col>
+            <Col id="w20">1.039</Col>
+            <Col id="w21">7.588</Col>
+            <Col id="w22">9.251</Col>
+            <Col id="w23">0.177</Col>
+            <Col id="w24">0.74</Col>
+            <Col id="w25">9.288</Col>
+            <Col id="w26">9.99</Col>
+            <Col id="w27">6.38</Col>
+            <Col id="w28">5.112</Col>
+            <Col id="w29">0.942</Col>
+            <Col id="w30">2.485</Col>
+            <Col id="w31">3.339</Col>
+            <Col id="w32">5.206</Col>
+            <Col id="w33">1.083</Col>
+            <Col id="w34">7.698</Col>
+            <Col id="w35">8.647</Col>
+            <Col id="w36">9.292</Col>
+            <Col id="w37">4.834</Col>
+            <Col id="w38">7.566</Col>
+            <Col id="w39">3.098</Col>
+            <Col id="w40">6.013</Col>
+            <Col id="w41">1.891</Col>
+            <Col id="w42">2.142</Col>
+            <Col id="w43">0.99</Col>
+            <Col id="w44">9.529</Col>
+            <Col id="w45">6.689</Col>
+            <Col id="w46">7.306</Col>
+            <Col id="w47">2.217</Col>
+            <Col id="w48">5.638</Col>
+            <Col id="w49">0.909</Col>
+            <Col id="w50">1.835</Col>
+            <Col id="w51">2.104</Col>
+            <Col id="w52">8.108</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="dsWeekData">
+        <ColumnInfo>
+          <Column id="month" type="STRING" size="256"/>
+          <Column id="week" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="month">January</Col>
+            <Col id="week">01</Col>
+          </Row>
+          <Row>
+            <Col id="month">January</Col>
+            <Col id="week">02</Col>
+          </Row>
+          <Row>
+            <Col id="month">January</Col>
+            <Col id="week">03</Col>
+          </Row>
+          <Row>
+            <Col id="month">January</Col>
+            <Col id="week">04</Col>
+          </Row>
+          <Row>
+            <Col id="month">February</Col>
+            <Col id="week">05</Col>
+          </Row>
+          <Row>
+            <Col id="month">February</Col>
+            <Col id="week">06</Col>
+          </Row>
+          <Row>
+            <Col id="month">February</Col>
+            <Col id="week">07</Col>
+          </Row>
+          <Row>
+            <Col id="month">February</Col>
+            <Col id="week">08</Col>
+          </Row>
+          <Row>
+            <Col id="month">March</Col>
+            <Col id="week">09</Col>
+          </Row>
+          <Row>
+            <Col id="month">March</Col>
+            <Col id="week">10</Col>
+          </Row>
+          <Row>
+            <Col id="month">March</Col>
+            <Col id="week">11</Col>
+          </Row>
+          <Row>
+            <Col id="month">March</Col>
+            <Col id="week">12</Col>
+          </Row>
+          <Row>
+            <Col id="month">March</Col>
+            <Col id="week">13</Col>
+          </Row>
+          <Row>
+            <Col id="month">April</Col>
+            <Col id="week">14</Col>
+          </Row>
+          <Row>
+            <Col id="month">April</Col>
+            <Col id="week">15</Col>
+          </Row>
+          <Row>
+            <Col id="month">April</Col>
+            <Col id="week">16</Col>
+          </Row>
+          <Row>
+            <Col id="month">April</Col>
+            <Col id="week">17</Col>
+          </Row>
+          <Row>
+            <Col id="month">May</Col>
+            <Col id="week">18</Col>
+          </Row>
+          <Row>
+            <Col id="month">May</Col>
+            <Col id="week">19</Col>
+          </Row>
+          <Row>
+            <Col id="month">May</Col>
+            <Col id="week">20</Col>
+          </Row>
+          <Row>
+            <Col id="month">May</Col>
+            <Col id="week">21</Col>
+          </Row>
+          <Row>
+            <Col id="month">June</Col>
+            <Col id="week">22</Col>
+          </Row>
+          <Row>
+            <Col id="month">June</Col>
+            <Col id="week">23</Col>
+          </Row>
+          <Row>
+            <Col id="month">June</Col>
+            <Col id="week">24</Col>
+          </Row>
+          <Row>
+            <Col id="month">June</Col>
+            <Col id="week">25</Col>
+          </Row>
+          <Row>
+            <Col id="month">June</Col>
+            <Col id="week">26</Col>
+          </Row>
+          <Row>
+            <Col id="month">July</Col>
+            <Col id="week">27</Col>
+          </Row>
+          <Row>
+            <Col id="month">July</Col>
+            <Col id="week">28</Col>
+          </Row>
+          <Row>
+            <Col id="month">July</Col>
+            <Col id="week">29</Col>
+          </Row>
+          <Row>
+            <Col id="month">July</Col>
+            <Col id="week">30</Col>
+          </Row>
+          <Row>
+            <Col id="month">August</Col>
+            <Col id="week">31</Col>
+          </Row>
+          <Row>
+            <Col id="month">August</Col>
+            <Col id="week">32</Col>
+          </Row>
+          <Row>
+            <Col id="month">August</Col>
+            <Col id="week">33</Col>
+          </Row>
+          <Row>
+            <Col id="month">August</Col>
+            <Col id="week">34</Col>
+          </Row>
+          <Row>
+            <Col id="month">August</Col>
+            <Col id="week">35</Col>
+          </Row>
+          <Row>
+            <Col id="month">September</Col>
+            <Col id="week">36</Col>
+          </Row>
+          <Row>
+            <Col id="month">September</Col>
+            <Col id="week">37</Col>
+          </Row>
+          <Row>
+            <Col id="month">September</Col>
+            <Col id="week">38</Col>
+          </Row>
+          <Row>
+            <Col id="month">September</Col>
+            <Col id="week">39</Col>
+          </Row>
+          <Row>
+            <Col id="month">September</Col>
+            <Col id="week">40</Col>
+          </Row>
+          <Row>
+            <Col id="month">October</Col>
+            <Col id="week">41</Col>
+          </Row>
+          <Row>
+            <Col id="month">October</Col>
+            <Col id="week">42</Col>
+          </Row>
+          <Row>
+            <Col id="month">October</Col>
+            <Col id="week">43</Col>
+          </Row>
+          <Row>
+            <Col id="month">October</Col>
+            <Col id="week">44</Col>
+          </Row>
+          <Row>
+            <Col id="month">November</Col>
+            <Col id="week">45</Col>
+          </Row>
+          <Row>
+            <Col id="month">November</Col>
+            <Col id="week">46</Col>
+          </Row>
+          <Row>
+            <Col id="month">November</Col>
+            <Col id="week">47</Col>
+          </Row>
+          <Row>
+            <Col id="month">November</Col>
+            <Col id="week">48</Col>
+          </Row>
+          <Row>
+            <Col id="month">December</Col>
+            <Col id="week">49</Col>
+          </Row>
+          <Row>
+            <Col id="month">December</Col>
+            <Col id="week">50</Col>
+          </Row>
+          <Row>
+            <Col id="month">December</Col>
+            <Col id="week">51</Col>
+          </Row>
+          <Row>
+            <Col id="month">December</Col>
+            <Col id="week">52</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="months">
+        <ColumnInfo>
+          <Column id="months" type="STRING" size="256"/>
+          <Column id="code" type="INT" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="months">2018-01</Col>
+            <Col id="code">01</Col>
+          </Row>
+          <Row>
+            <Col id="months">2018-02</Col>
+            <Col id="code">02</Col>
+          </Row>
+          <Row>
+            <Col id="months">2018-03</Col>
+            <Col id="code">03</Col>
+          </Row>
+          <Row>
+            <Col id="months">2018-04</Col>
+            <Col id="code">04</Col>
+          </Row>
+          <Row>
+            <Col id="months">2018-05</Col>
+            <Col id="code">05</Col>
+          </Row>
+          <Row>
+            <Col id="months">2018-06</Col>
+            <Col id="code">06</Col>
+          </Row>
+          <Row>
+            <Col id="months">2018-07</Col>
+            <Col id="code">07</Col>
+          </Row>
+          <Row>
+            <Col id="months">2018-08</Col>
+            <Col id="code">08</Col>
+          </Row>
+          <Row>
+            <Col id="months">2018-09</Col>
+            <Col id="code">09</Col>
+          </Row>
+          <Row>
+            <Col id="months">2018-10</Col>
+            <Col id="code">10</Col>
+          </Row>
+          <Row>
+            <Col id="months">2018-11</Col>
+            <Col id="code">11</Col>
+          </Row>
+          <Row>
+            <Col id="months">2018-12</Col>
+            <Col id="code">12</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[//2018-01부터 초기화
+this.Combo00.set_value(01)
+this.Combo01.set_value(03)
+
+//Grid의 칼럼사이즈를 0으로 설정
+//this.Grid00.setFormatColProperty(14,"size",0);
+this.Grid00.setRealColSize( "body", 4, 0, true );
+this.Grid00.setRealColSize( "body", 9, 0, true );
+var nBodyCnt = this.Grid00.getCellCount('body');
+for(var i=15; i<nBodyCnt; i++){
+ this.Grid00.setRealColSize( "body",i, 0, true );
+}
+
+// var formatStr this.Grid00.set_formatid("default");
+//  trace(this.Grid00.formats);
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//3개월 조회 버튼
+this.search3mthBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{ 
+//obj.setSelectStatus(true)
+	obj.set_enable(false)
+	
+	this.search6mthBtn.set_enable(true)
+	var month = this.Combo00.value
+	this.Combo01.set_value(month + 02)
+	if (month>=9) {
+		this.Combo01.set_value(12)
+	}	
+
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//6개월 조회 버튼
+this.search6mthBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{	obj.set_enable(false)
+	this.search3mthBtn.set_enable(true)
+	var month = this.Combo00.value
+    this.Combo01.set_value(month + 05)
+	if (month>=6) {
+		this.Combo01.set_value(12)
+	}
+};
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//월간/주간 조회
+var flag = true;
+this.wayofselectBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{ 	
+	if (flag == true) {
+		this.wayofselectBtn.set_text("조회방식 : 월간")
+		this.Grid00.setFormatRowProperty(1,"size",0);
+		this.Grid00.setFormatRowProperty(3,"size",0);
+		
+		
+//		var nStartCol = this.Grid00.getBindCellIndex( "body", "w01" )
+//		var nEndCol = this.Grid00.getBindCellIndex( "body", "w04");
+// 		this.Grid00.mergeContentsCell("summary",0,nStartCol,0,nEndCol,1,true);
+// 		
+this.Grid00.set_autofittype("none");//그리드의 autofittype을 미설정
+		this.Grid00.setFormatRowProperty(1,"size",0);
+		this.Grid00.setFormatRowProperty(3,"size",0);
+
+//  		this.Grid00.deleteContentsRow( "head", 1 );
+//  		this.Grid00.deleteContentsRow( "body", 1 );
+
+		
+		this.Grid00.mergeContentsCell("summary",0,4,0,8,2,true);
+		this.Grid00.mergeContentsCell("summary",1,4,1,8,2,true);
+		this.Grid00.mergeContentsCell("summary",0,9,0,13,3,true);
+		this.Grid00.mergeContentsCell("summary",1,9,1,13,3,true);
+		this.Grid00.mergeContentsCell("summary",0,14,0,18,4,true);
+		this.Grid00.mergeContentsCell("summary",1,14,1,18,4,true);
+		
+		this.Grid00.set_autofittype("col");//그리드의 autofittype을 칼럼으로 설정
+		
+		flag = false;
+		trace(flag +"월간")
+		
+		
+	} else {
+		this.wayofselectBtn.set_text("조회방식 : 주간")
+		this.Grid00.setFormatRowProperty(1,"size",23);
+		this.Grid00.setFormatRowProperty(3,"size",23);
+		
+	
+		//this.Grid00.set_autofittype("none");//그리드의 autofittype을 미설정
+// 		this.Grid00.splitContentsCell("summary",0,4,0,8,true);
+// 		this.Grid00.splitContentsCell("summary",1,4,1,8,true);
+// 		this.Grid00.splitContentsCell("summary",0,9,0,13,true);
+// 		this.Grid00.splitContentsCell("summary",1,9,1,13,true);
+// 		this.Grid00.splitContentsCell("summary",0,14,0,18,true);
+// 		this.Grid00.splitContentsCell("summary",1,14,1,18,true);
+		
+		this.Grid00.set_autofittype("col");//그리드의 autofittype을 칼럼으로 설정
+		flag = true;
+		trace(flag +"주간")
+		
+		this.Grid00.set_formatid( "default" );
+	}	
+};
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//this.Dataset00.filter("amount > 1000 && model_cd = 'A-1'");
+
+//		var nRow = this.Grid00.appendContentsCol(-1); //그리드 인덱스 -1에 컬럼추가
+//		this.Grid00.deleteContentsCol(nRow);//위에서 추가한 그리드 삭제(그리드 새로고침)
+		
+
+// this.Grid00.appendContentsCol("left")
+// this.Grid00.mergeContentsCell("head",0,3,1,3,3,true);
+// 
+// this.Grid00.setRealColSize( "head", 3, 80, true );
+//this.Grid00.setCellProperty( "head", 3, "text", "Total");
+// 	 var month = (currDate.getMonth()+1).toString().padLeft(2, "0");
+// 	 trace(month)
+// 	 var month = this.Edit00.value
+// 	 this.Edit00.set_value(" ")
+// 	 this.Edit00.set_value( month.substr(0,7) + "~" + month.substr(0,4) + "-" + (parseInt(month.substr(5,2))+3) );
+
+// 	var celltext = this.Grid00.getCellValue()
+// 		trace(celltext)
+// 	if(celltext<3){
+// 		this.Grid00.setCellProperty("body",0, "background", "ff0000")
+// 	}
+//숨기기 함수 호출
+//  this.gfn_hideCol(obj.targetGrid, obj.targetCol);
+//숨기기 취소
+//  this.gfn_showCol(obj.targetGrid);
+
+var cntNum= 0;
+this.Button00_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.monthsArr = [];
+	this.monthsArr.push("0", "January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+
+	var startMonth = this.Combo00.value;
+	var endMonth = this.Combo01.value;
+	trace("시작월: "+startMonth+"//"+" 종료월: "+endMonth)
+
+	var startMonthIndex = this.dsWeekData.findRow("month", this.monthsArr[startMonth]);
+	var endMonthIndex =  this.dsWeekData.findRow("month", this.monthsArr[endMonth+1]);
+		if(endMonthIndex==-1){
+			endMonthIndex=this.dsWeekData.findRow("month", this.monthsArr[endMonth]);
+		}
+	var startWeek =this.dsWeekData.getColumn(startMonthIndex,1);
+	var endWeek =this.dsWeekData.getColumn(endMonthIndex,1)-1;
+		if (endWeek==48){endWeek+=4;}
+	var totalWeek= endWeek-startWeek
+	trace("시작 주 : "+startWeek+"//"+"종료 주 : "+endWeek + "총 주수 : " +totalWeek)
+		
+	var bSixMonth = this.search3mthBtn.enable;
+	var nConstantColCnt = 4;
+	var nCurrDynamicColCnt = bSixMonth ? 6 * 5 : 3 * 5;
+	var nDynamicColSize = bSixMonth ? 80 : 0;
+	var nHeadCnt = this.Grid00.getCellCount("head");
+
+	//입력월 부터 종료월 까지 헤드 출력 
+	//i는 개월수, 끝나는 개월수 전까지 반복
+	//t는 칼럼 인덱스
+	var t=1;
+	for(var i=startMonth; i<endMonth+1; i++){
+		var txt= this.fnPadding(i)+"";
+		this.Grid00.setCellProperty("head", 3+t, "text", "2018-"+txt);
+		t++;
+	}
+ 
+	//헤드 주 칼럼 
+	t=1;
+	for(var i=startWeek; i<=endWeek; i++){
+	var txt= this.fnPadding(i)+"";
+		//같은달이 아닐때 건너뜀
+			if(this.dsWeekData.getColumn(parseInt(i)-1, "month") == this.dsWeekData.getColumn(parseInt(i)+3, "month")){//5주인 달<<
+			this.Grid00.setCellProperty("head", 10+t, "text", "2018-W"+txt);	
+			}
+			if(this.dsWeekData.getColumn(parseInt(i)-1, "month") != this.dsWeekData.getColumn(parseInt(i)-2, "month")) {
+
+			this.Grid00.setCellProperty("head", 10+t, "text", "2018-W"+txt);	
+			}else{
+			
+			this.Grid00.setCellProperty("head", 9+t, "text", "2018-W"+txt);	
+			}
+		
+		
+		t++;
+	}
+
+	//합계
+	var nBodyCnt = this.Grid00.getCellCount('body');
+	t=1;
+	var sumStr="";
+	for(var i=startWeek; i<endWeek; i++){
+		   sumStr = "expr:"
+	       sumStr += "w" + this.fnPadding(parseInt(i));
+		   sumStr += "+w" + this.fnPadding(parseInt(i)+1);
+		   sumStr += "+w" + this.fnPadding(parseInt(i)+2);
+		   sumStr += "+w" + this.fnPadding(parseInt(i)+3);
+		  
+			if(this.dsWeekData.getColumn(parseInt(i)-1, "month") == this.dsWeekData.getColumn(parseInt(i)+3, "month")){//5주인 달<<
+				sumStr += "+w" + this.fnPadding(parseInt(i)+4);
+			}
+
+		//달이 바뀔때 한번씩만 합계 표시
+		if(this.dsWeekData.getColumn(parseInt(i)-1, "month") != this.dsWeekData.getColumn(parseInt(i)-2, "month"))  {
+			trace("sumStr : "+sumStr)
+			this.Grid00.setCellProperty("body", 3+parseInt(t), "text", sumStr);
+			t++;
+		}
+	}
+
+	//각 셀바인딩
+	for(var i=0; i<nBodyCnt-9; i++){
+			//this.Grid00.setCellProperty("body", 9+i, "text", "bind:w0"+i);
+			var txt= this.fnPadding(i)+"";
+			//5주차일때 
+			if(this.dsWeekData.getColumn(parseInt(i)-1, "month") == this.dsWeekData.getColumn(parseInt(i)+3, "month")){//5주인 달<<
+				this.Grid00.setCellProperty("body", 10+i, "text", "expr:dataset.getColumn(currow, 'w"+txt+"') <1 ? '-' : dataset.getColumn(currow,'w"+txt+"')");
+			}
+			//같은달이 아닐때 건너뜀
+			if(this.dsWeekData.getColumn(parseInt(i)-1, "month") != this.dsWeekData.getColumn(parseInt(i)-2, "month"))  {
+				this.Grid00.setCellProperty("body", 10+i, "text", "expr:dataset.getColumn(currow, 'w"+txt+"') <1 ? '-' : dataset.getColumn(currow,'w"+txt+"')");
+			}else{
+				this.Grid00.setCellProperty("body", 9+i, "text", "expr:dataset.getColumn(currow, 'w"+txt+"') <1 ? '-' : dataset.getColumn(currow,'w"+txt+"')");
+			}
+	}
+
+	//각 셀 사이즈 3개월 6개월일때 지정
+	for(var i=0; i<nBodyCnt; i++){
+		this.Grid00.setRealColSize( "body",i, 0, true );
+	}
+    for(var i=0; i<totalWeek; i++){
+			this.Grid00.setRealColSize("body", i, 80, true );
+	} 
+
+};
+
+// Week >> 두자리수
+this.fnPadding = function(num)
+{
+   var rtnVal = "0" + num;
+   return rtnVal.substr(rtnVal.length-2, 2);
+}
+
+
+
+
+//if(this.dsWeekData.getColumn(startWeek + i - 1, "month") == this.dsWeekData.getColumn(startWeek + i, "month")){}]]></Script>
+  </Form>
+</FDL>

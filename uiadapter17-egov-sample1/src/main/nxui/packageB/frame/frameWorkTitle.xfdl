@@ -1,0 +1,220 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.0">
+  <Form id="frameWorkTitle" left="0" top="0" width="1040" height="32" scrolltype="none" onload="form_onload" titletext="frameWorkTitle">
+    <Layouts>
+      <Layout>
+        <Static id="staTitle" taborder="0" cssclass="sta_WF_Title" left="60" top="2" width="500" height="28" text="메뉴타이틀"/>
+        <Button id="btnMyMenu" taborder="1" left="25" top="2" width="28" height="28" text="☆" onclick="btnMyMenu_onclick"/>
+        <Button id="btnSel" taborder="2" text="조회" top="3" width="64" height="25" right="369" visible="false" onclick="fnBtnClick"/>
+        <Button id="btnAdd" taborder="3" text="입력" top="3" width="64" height="25" right="304" visible="false" onclick="fnBtnClick"/>
+        <Button id="btnSav" taborder="4" text="저장" top="3" width="70" height="25" right="162" visible="false" onclick="fnBtnClick"/>
+        <Button id="btnDel" taborder="5" text="삭제" top="3" width="70" height="25" right="233" visible="false" onclick="fnBtnClick"/>
+        <Button id="btnExl" taborder="6" text="엑셀" top="3" width="70" height="25" right="91" visible="false" onclick="fnBtnClick"/>
+        <Button id="btnPrt" taborder="7" text="출력" top="3" width="70" height="25" right="20" visible="false" onclick="fnBtnClick"/>
+        <Button id="btnMenuOpen" taborder="8" left="2" top="2" width="21" height="28" tooltiptext="left menu open/close" onclick="btnMenuOpen_onclick"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/**
+*  컨설팅 표준화 작업
+*  @MenuPath       	frame > frameWorkTitle
+*  @FileName 		frameWorkTitle.xfdl
+*  @Creator 			soojeong
+*  @CreateDate 	2017.03.09
+*  @Desction         스크립트 표준 및 주석 표준 정의
+************** 소스 수정 이력 ***************************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2017.03.09     	soojeong 	           최초 생성
+*  2017.10.23     	soojeong  	           주석 정비 및 메뉴검색, 즐겨찾기 기능 추가
+*******************************************************************************
+*/
+
+/************************************************************************************************
+* include 선언부  													               *
+ ************************************************************************************************/
+include "lib::cmmInclude.xjs";
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+ ************************************************************************************************/
+this.objApp;
+this.fv_menuId;
+this.fv_objArray = new Array();
+	this.fv_objArray[0] = "btnSel";  //조회
+	this.fv_objArray[1] = "btnAdd";  //등록
+	this.fv_objArray[2] = "btnSav";  //저장
+	this.fv_objArray[3] = "btnDel";  //삭제
+	this.fv_objArray[4] = "btnExl"; //엑셀
+	this.fv_objArray[5] = "btnPrt";  //인쇄
+
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+/**
+ * @description 화면 온로드
+*/
+this.form_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+	this.objApp = nexacro.getApplication() ;
+
+	this.fv_menuId = this.getOwnerFrame().arguments["menuId"];
+	this.fnSetMyMenuBtn();
+};
+
+/************************************************************************************************
+* TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+
+/************************************************************************************************
+ * CALLBACK 콜백 처리부분
+ ************************************************************************************************/
+
+ /************************************************************************************************
+ * 사용자 FUNCTION 영역
+ ************************************************************************************************/
+ /**
+ * @description 마이메뉴버튼 텍스트바꾸기<br>
+	즐겨찾기되어있는 화면 -> ★ <br>
+	즐겨찾기가안되있는화면 -> ☆
+*/
+this.fnSetMyMenuBtn = function ()
+{
+	var objDs = this.objApp.gdsMyMenu;
+	var nRow = objDs.findRow("menuId", this.fv_menuId);
+
+	if( nRow < 0 ){
+		this.btnMyMenu.set_text("☆");
+	}else{
+		this.btnMyMenu.set_text("★");
+	}
+};
+
+/**
+ * @description  폼권한에 따른 공통버튼 visible처리(6자리)
+*/
+this.fnSetAuthBtn = function(sAuth)
+{
+	var nRigth = 20; //right기준값
+	var nGap = 2;    //버튼사이 폭
+	for (var i = 0; i < 6; i++)
+	{
+		if(sAuth.substr(i,1) == "Y"){
+
+			var sObj = this[this.fv_objArray[i]];
+			sObj.set_visible(true);
+
+			//=================글자크기에 맞게 버튼 폭을 변경하려면 주석 해제==========
+			//var arr = nexacro.getTextSize(sObj.text, sObj);
+			//sObj.set_width(arr.nx + 30);
+			//===============================================================================
+		}else{
+			var sObj = this[this.fv_objArray[i]];
+			sObj.set_visible(false);
+		}
+	}
+
+	for(var i = 5; i > -1; i--) {
+		var sObj = this[this.fv_objArray[i]];
+		if (sObj.visible){
+			sObj.move(null, 3, sObj.getOffsetWidth(), sObj.getOffsetHeight(), nRigth);
+			nRigth = nRigth + nexacro.toNumber(nGap) + nexacro.toNumber(sObj.getOffsetWidth());
+		}
+	}
+};
+
+
+/************************************************************************************************
+ * 각 COMPONENT 별 EVENT 영역
+ ************************************************************************************************/
+/**
+ * @description  즐겨찾기버튼 클릭 이벤트
+*/
+this.btnMyMenu_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var bIsMymenu=false;
+	var sBtnText = this.btnMyMenu.text;
+	if( sBtnText == "★") bIsMymenu = true;
+
+	var objDs = this.objApp.gdsMyMenu;
+	var objMenuDs = this.objApp.gdsMenu;
+
+	objDs.set_enableevent(false);
+	this.objApp.gvLeftFrame.form.divLeft.form.grdMyMenu.set_enableredraw(false);
+
+	if( bIsMymenu ) {
+		//즐겨찾기해제
+		var nRow = objDs.findRow("menuId",this.fv_menuId);
+		if( nRow > -1 ) objDs.deleteRow(nRow);
+	}else{
+		//즐겨찾기추가
+		var nRow = objMenuDs.findRow("menuId", this.fv_menuId);
+		var nNewRow =  objDs.addRow();
+		objDs.copyRow(nNewRow, objMenuDs, nRow);
+	}
+	//TODO. MyMenu Transaction
+
+	objDs.set_enableevent(true);
+	this.objApp.gvLeftFrame.form.divLeft.form.grdMyMenu.set_enableredraw(true);
+	nexacro.setPrivateProfile("gdsMyMenu", objDs.saveXML());
+	this.fnSetMyMenuBtn();
+};
+
+/**
+ * @description  공통버튼클릭이벤트
+*/
+this.fnBtnClick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	//this.parent.divWork.fn_comBtnClick(obj, e);
+	var sName = String(obj.name).substr(3,3);
+
+    switch(sName) {
+    case "Sel":
+	    this.parent.parent.divWork.form.fnSearch();
+    	break;
+    case "Add":
+    	 this.parent.parent.divWork.form.fnAdd();
+    	break;
+    case "Sav":
+    	 this.parent.parent.divWork.form.fnSave();
+    	break;
+    case "Del":
+    	 this.parent.parent.divWork.form.fnDel();
+    	break;
+    case "Exl":
+    	 this.parent.parent.divWork.form.fnExcel();
+    	break;
+    case "Prt":
+    	 this.parent.parent.divWork.form.fnPrint();
+    	break;
+    default:
+    }
+
+}
+
+/**
+ * @description  레프트메뉴 열고닫기 이벤트
+*/
+this.btnMenuOpen_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	this.fnLeftMenuAction();
+};
+
+/**
+ * @description Left 접고/펼치기 (frameWorkTitle에서 호출)
+*/
+this.fnLeftMenuAction = function()
+{
+	var objApp = nexacro.getApplication();
+	if(objApp.gvHFrame.separatesize == "0,*")
+	{
+		objApp.gvHFrame.set_separatesize("240,*");		
+	}
+	else
+	{
+		objApp.gvHFrame.set_separatesize("0,*");		
+	}
+};
+]]></Script>
+    <Objects/>
+  </Form>
+</FDL>

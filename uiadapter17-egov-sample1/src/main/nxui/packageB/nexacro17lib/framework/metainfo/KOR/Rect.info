@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Rect">
+    <ObjectInfo inheritance="" classname="nexacro.Rect" shorttypename="Rect" csstypename="Rect" csscontrolname="" group="" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="사각형 모양의 영역 좌표를 처리하기 위해 제공되는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="height" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rect 오브젝트의 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="left" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rect 오브젝트의 좌측 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="top" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rect 오브젝트의 상단 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="width" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rect 오브젝트의 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="width" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rect 오브젝트의 모든 속성값을 0 으로 초기화하는 메소드입니다.">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clone" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rect 오브젝트의 속성값을 복사하여 새로운 Rect 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="Rect.clone()">
+          <Return type="Object" description="현재 Rect 오브젝트의 값을 복사한 새로운 Rect 오브젝트를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 Rect 오브젝트의 속성값을 현재 Rect 오브젝트의 속성값으로 복사하는 메소드입니다.">
+        <Syntax text="Rect.copy( objRect )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objRect" type="Object" in="false" out="false" option="false" variable="false" description="현재 Rect 오브젝트의 속성에 복사될 값을 Rect 오브젝트 형태로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="equals" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 속성값 일치여부를 반환하는 메소드입니다.">
+        <Syntax text="Rect.equals( objRect )">
+          <Return type="Boolean" description="현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 속성값이 모두 일치하면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 속성값이 하나라도 다르면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="objRect" type="Object" in="false" out="false" option="false" variable="false" description="현재 Rect 오브젝트의 속성값과 비교할 값을 Rect 오브젝트 형태로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getBottom" group="Position" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rect 오브젝트의 하단 좌표값을 반환하는 메소드입니다.">
+        <Syntax text="Rect.getBottom()">
+          <Return type="Number" description="Rect 오브젝트의 하단 좌표값을 pixel 단위의 정수로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rect 오브젝트의 우측 좌표값을 반환하는 메소드입니다.">
+        <Syntax text="Rect.getRight()">
+          <Return type="Number" description="Rect 오브젝트의 우측 좌표값을 pixel 단위의 정수로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isSameSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 넓이와 높이가 일치하는지 반환하는 메소드입니다.">
+        <Syntax text="Rect.isSameSize( objRect )">
+          <Return type="Boolean" description="현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 넓이와 높이가 일치하면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;현재 Rect 오브젝트와 인수로 전달된 Rect 오브젝트의 넓이 또는 높이가 다르면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="objRect" type="Object" in="false" out="false" option="false" variable="false" description="현재 Rect 오브젝트의 넓이, 높이와 비교할 Rect 오브젝트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

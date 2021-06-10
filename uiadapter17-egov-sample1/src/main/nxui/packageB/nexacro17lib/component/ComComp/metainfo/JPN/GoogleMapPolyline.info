@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GoogleMapPolyline">
+    <ObjectInfo inheritance="" classname="nexacro.GoogleMapPolyline" shorttypename="GoogleMapPolyline" csstypename="GoogleMapPolyline" csscontrolname="" group="Object" subgroup="" csspseudo="false" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapコンポーネントにロードされた地図上の特定のラインを表示する場合に使用するオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="linecolor" group="" subgroup="" refreshinfo="" edittype="Color" defaultvalue="black" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="NamedColor" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapPolylineのlocationdataプロパティに設定された位置を繋ぐ線の色を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="linecolor" />
+      <Property name="linewidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="表示されるポリラインのスタイル情報" csspropertyname="" csselementname="" normalpropertyname="linewidth" />
+      <Property name="locationdata" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="ポリラインを表示マップ上のポイントの情報(2つ以上設定可能)" csspropertyname="" csselementname="" normalpropertyname="locationdata" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapPolylineを地図上に表示するかどうかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="visible" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

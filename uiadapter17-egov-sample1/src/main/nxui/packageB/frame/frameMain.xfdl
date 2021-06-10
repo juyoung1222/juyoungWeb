@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.0">
+  <Form id="frameMain" width="1280" height="720" titletext="frameMain">
+    <Layouts>
+      <Layout height="720" mobileorientation="landscape" width="1280">
+        <Static id="sta00" taborder="0" text="메인화면입니다!!" left="0" top="252" height="178" textAlign="center" font="24px/normal &quot;Gulim&quot;" right="0"/>
+      </Layout>
+    </Layouts>
+  </Form>
+</FDL>

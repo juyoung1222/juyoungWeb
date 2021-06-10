@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.LiteDBConnection">
+    <ObjectInfo inheritance="" classname="nexacro.LiteDBConnection" shorttypename="LiteDBConnection" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 지원되는 데이터베이스의 연결 정보를 보여줍니다." />
+    <PropertyInfo>
+      <Property name="async" group="" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="LiteDBConnection 에 요청된 작업이 동작되는 방식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="async" />
+      <Property name="busytimeout" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 에 연결된 데이터베이스에서 응답을 받기 위한 최대 대기시간을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="busytimeout" />
+      <Property name="datasource" group="" subgroup="" refreshinfo="" edittype="FileName" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 에 연결할 데이터베이스의 위치정보를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="datasource" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection의 고유 식별자를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="openflag" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 에 데이터베이스를 연결하는 옵션을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="openflag" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 의 부모 오브젝트를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="preconnect" group="" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 생성 시 데이터베이스를 연결할지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="preconnect" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="LiteDBConnection.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="begin" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 에 연결된 데이터베이스에 트랜잭션을 설정하는 메소드입니다.">
+        <Syntax text="LiteDBConnection.begin()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="LiteDBConnection.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 에 연결된 데이터베이스를 닫는 메소드입니다.">
+        <Syntax text="LiteDBConnection.close()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="commit" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 에 연결된 데이터베이스에 트랜잭션 Commit 을 수행하는 메소드입니다.">
+        <Syntax text="LiteDBConnection.commit()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="LiteDBConnection.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="LiteDBConnection 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="LiteDBConnection.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isConnected" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 에 데이터베이스가 연결되어 있는지 확인하는 메소드입니다.">
+        <Syntax text="LiteDBConnection.isConnected()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 에 데이터베이스를 연결하는 메소드입니다.">
+        <Syntax text="LiteDBConnection.open( [strDataSource [,constOpenFlag]] )">
+          <Return type="Boolean" description="메소드 실행에 성공하면 &quot;true&quot;를 반환합니다.&#xA;&#xA;파라미터값을 잘 못 설정하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="constOpenFlag" type="Constant" in="false" out="false" option="false" variable="false" description="데이터베이스와 연결하는 옵션을 설정합니다.&#xA;&#xA;&quot;LiteDBConnection.openReadWrite&quot; 또는 &quot;0&quot; 설정 시 데이터베이스를 읽기/쓰기가 가능하도록 연결합니다.&#xA;&quot;LiteDBConnection.openReadWriteCreate &quot; 또는 &quot;1&quot; 설정 시 데이터베이스를 읽기/쓰기/파일생성이 가능하도록 연결합니다.&#xA;&#xA;값 생략 시 openflag 속성값이 적용됩니다." />
+            <Argument name="strDataSource" type="String" in="false" out="false" option="false" variable="false" description="연결할 데이터베이스의 위치정보를 문자열로 설정합니다.&#xA;&#xA;절대경로 또는 Alias 를 사용하여 설정합니다.&#xA;값 생략 시 datasource 속성값이 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="LiteDBConnection.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rollback" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 에 연결된 데이터베이스에 트랜잭션 RollBack 을 수행하는 메소드입니다.">
+        <Syntax text="LiteDBConnection.rollback()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="LiteDBConnection.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 에 요청된 작업이 실패했을 때 발생하는 이벤트입니다.">
+        <Syntax text="LiteDBConnection.onerror(obj:nexacro.LiteDBConnection,e:nexacro.LiteDBErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LiteDBErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="LiteDBConnection 에 요청된 작업이 성공했을 때 발생하는 이벤트입니다.">
+        <Syntax text="LiteDBConnection.onsuccess(obj:nexacro.LiteDBConnection,e:nexacro.LiteDBEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LiteDBEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

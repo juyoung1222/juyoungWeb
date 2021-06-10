@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.UserEvent">
+    <ObjectInfo inheritance="" classname="nexacro.UserEvent" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="사용자 정의 이벤트를 정의하고 다루기 위한 기능을 포함하고 있는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="length" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="추가된 Handler 함수의 개수를 반환하는 Property 입니다." csspropertyname="" csselementname="" normalpropertyname="length" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="UserEvent 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Event에 Handler 함수를 추가합니다.">
+        <Syntax text="UserEvent.addHandler(objFunction)">
+          <Return type="Integer" description="성공하면 추가된 Index를 반환하고 실패하면 -1을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="Event Handler 함수" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Event에 설정된 모든 Handler 함수를 제거합니다.">
+        <Syntax text="UserEvent.clear()">
+          <Return type="Integer" description="제거된 Handler 함수 개수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copyHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="다른 Event 개체로부터 Handler 함수를 복사합니다.">
+        <Syntax text="UserEvent.copyHandler(objSource)">
+          <Return type="Integer" description="복사된 Handler 함수 개수를 반환합니다." />
+          <Arguments>
+            <Argument name="objSource" type="Object" in="false" out="false" option="false" variable="false" description="Handler 함수를 복사할 Event 개체" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Event에서 지정한 함수를 찾아 index를 반환합니다.">
+        <Syntax text="UserEvent.findHandler(objFunction)">
+          <Return type="Integer" description="지정한 함수의 Index" />
+          <Arguments>
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="찾을 함수 개체" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="fireEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Event를 발생시키고 설정된 Handler 함수를 호출합니다.">
+        <Syntax text="UserEvent.fireEvent(objSource, objEvent)">
+          <Return type="Variant" description="Handler 함수의 return variant가 반환됩니다." />
+          <Arguments>
+            <Argument name="objEvent" type="Object" in="false" out="false" option="false" variable="false" description="Event 정보를 포함하는 Event Object" />
+            <Argument name="objSource" type="Object" in="false" out="false" option="false" variable="false" description="Event가 발생한 Object" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Event에서 지정한 index 위치의 Handler 함수를 반환합니다.">
+        <Syntax text="UserEvent.getHandler(nIndex)">
+          <Return type="Object" description="Function Object. 만약 지정한 index 위치가 유효하지 않으면 null을 반환합니다." />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="Handler 함수의 위치 (Zero-based index)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="지정한 index 위치에 Handler 함수를 삽입합니다.">
+        <Syntax text="UserEvent.insertHandler(nIndex, objFunction)">
+          <Return type="Integer" description="성공하면 삽입된 Index를 반환하고 실패하면 -1을 반환합니다." />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="삽입할 위치 (Zero-based index)" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="삽입할 함수 개체" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="지정한 index 또는 Handler 함수를 제거합니다.">
+        <Syntax text="UserEvent.removeHandler(objFunction)&#xD;&#xA;UserEvent.removeHandler(nIndex)">
+          <Return type="Integer" description="제거된 Handler 함수의 개수를 반환합니다. (성공하면 1, 실패하면 0)" />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="제거할 Event Handler 함수의 &#xD;&#xA;위치 (Zero-based index)" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="제거할 Event Handler 함수 개체" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Event의 Handler 함수를 변경합니다.">
+        <Syntax text="UserEvent.setHandler(objFunction)&#xD;&#xA;UserEvent.setHandler(nIndex, objFunction)">
+          <Return type="Integer" description="성공하면 변경된 Index를 반환하고 실패하면 -1을 반환합니다." />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="변경할 Event Handler 함수의 위치 (Zero-based index)" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="Event Handler 함수" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

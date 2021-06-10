@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Radio">
+    <ObjectInfo inheritance="nexacro.Component" classname="nexacro.Radio" shorttypename="Radio" csstypename="Radio" csscontrolname="RadioControl" group="Component" subgroup="Component ( default )" csspseudo="true" container="false" composite="false" tabstop="true" cssstyle="true" contents="false" formats="false" contentseditor="auto" defaultwidth="280" defaultheight="50" registration="allow" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="onitemchanged" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="A Radio is a button-type component whose shape is a circle. It allows you to choose only one out of multiple options.&#xA;&#xA;If you choose one option with a mouse or keyboard, the rest of the options will be printed unselected.&#xA;Text for a radio item can be displayed on the either left or right side of the icon." />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the action printed as an accessibility feature when a selection box moves to a Radio." csspropertyname="" csselementname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="all" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DescLevel" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to print accessibility features of the children when a selection box moves to a Radio." csspropertyname="" csselementname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the description printed as an accessibility feature when a selection box moves to a Radio." csspropertyname="" csselementname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Chrome,Windows nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to determine whether to print the values of accessibility-related properties when a selection box moves to a Radio." csspropertyname="" csselementname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the label printed as an accessibility feature when a selection box moves to a Radio." csspropertyname="" csselementname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set accessibility features." csspropertyname="" csselementname="" normalpropertyname="accessibilityrole" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the background of a Radio." csspropertyname="background" csselementname="" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the shape of the corners of a Radio." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the value of the point that indicates the position of a Radio's bottom side." csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the shadow effect of a Radio." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+      <Property name="codecolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It sets an ID of the column which indicates the value among columns of the innerdataset." csspropertyname="" csselementname="" normalpropertyname="codecolumn" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the color of the text displayed in a Radio." csspropertyname="color" csselementname="" normalpropertyname="color" />
+      <Property name="columncount" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It sets the number of radio buttons to be listed horizontally." csspropertyname="" csselementname="" normalpropertyname="columncount" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the style of a Radio by using a class defined in the relevant XCSS file." csspropertyname="" csselementname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the type of a mouse pointer that appears when the mouse cursor is located in a Radio." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+      <Property name="datacolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It sets ID of the column which indicates the text on the screen among columns of the innerdataset." csspropertyname="" csselementname="" normalpropertyname="datacolumn" />
+      <Property name="direction" group="Appearance" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="horizontal" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Direction" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to set the direction of displaying items in a Radio component." csspropertyname="" csselementname="" normalpropertyname="direction" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to enable a Radio." csspropertyname="" csselementname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to trigger events in a Radio." csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="&quot;&quot;" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="expr" />
+      <Property name="fittocontents" group="Position" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="FitToContents" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to adjust the size of a Radio automatically for its internal content." csspropertyname="" csselementname="" normalpropertyname="fittocontents" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property sets a font used for a Radio." csspropertyname="font" csselementname="" normalpropertyname="font" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the height of a Radio." csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set a hotkey for conducting the default action of a Radio." csspropertyname="" csselementname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the identification of a Radio." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="index" group="Action" subgroup="" refreshinfo="selectitem" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Property to indicate order number of Item which is currently selected out of Items of Radio." csspropertyname="" csselementname="" normalpropertyname="index" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the ID of an InitValue to be applied to an Radio." csspropertyname="" csselementname="" normalpropertyname="initvalueid" />
+      <Property name="innerdataset" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerDatasetID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the ID of a dataset that defines the item list of a Radio." csspropertyname="" csselementname="" normalpropertyname="innerdataset" />
+      <Property name="itemaccessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Chrome,Windows nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to determine whether to print the accessibility of child items when a selection box moves to a Radio." csspropertyname="" csselementname="" normalpropertyname="itemaccessibilityenable" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the value of the point that indicates the position of a Radio's left side." csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the spacing between characters (kerning) displayed in a Radio." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the maximum height of a Radio for the component to be displayed on the screen." csspropertyname="" csselementname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the maximum width of a Radio for the component to be displayed on the screen." csspropertyname="" csselementname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the minimum height of a Radio for the component to be displayed on the screen." csspropertyname="" csselementname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the minimum width of a Radio for the component to be displayed on the screen." csspropertyname="" csselementname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the name of a Radio." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the border of a Radio." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the image of the edges that are displayed inside the border of a Radio." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the padding, an inner margin, of a Radio." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the effects applied to the text displayed in a Radio." csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the opacity of a Radio." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This read-only property holds the parent object of a Radio." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="" description="This property is used to designate a step page where a Radio will be displayed if the parent object applies the step feature." csspropertyname="" csselementname="" normalpropertyname="positionstep" />
+      <Property name="readonly" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="It is Property to designate if Editable Component is editable." csspropertyname="" csselementname="" normalpropertyname="readonly" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the value of the point that indicates the position of a Radio's right side." csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="rowcount" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It sets the number of radio buttons to be listed vertically." csspropertyname="" csselementname="" normalpropertyname="rowcount" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the tab order number of a Radio. Tab order means the order of moving focus among components when the focus is moved by entering the Tab key." csspropertyname="" csselementname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="It is Property to designate whether to receive focus by Tab key." csspropertyname="" csselementname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="selectitem" edittype="String" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This read-only property holds the data of a selected item in a Radio component." csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the text of a tooltip that apeears when a mouse pointer hovers over a Radio." csspropertyname="" csselementname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the position where a tooltip appears in a Radio." csspropertyname="" csselementname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the value of the point that indicates the position of a Radio's top side." csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="value" group="Action" subgroup="" refreshinfo="selectitem" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property holds the code value of an item selected in a Radio component." csspropertyname="" csselementname="" normalpropertyname="value" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to make a Radio visible or not." csspropertyname="" csselementname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the width of a Radio." csspropertyname="" csselementname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the spacing between words displayed in a Radio." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the background of a Radio." csspropertyname="background" csselementname="" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the shape of the corners of a Radio." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the shadow effect of a Radio." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the color of the text displayed in a Radio." csspropertyname="color" csselementname="" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="" description="This property is used to set the type of a mouse pointer that appears when the mouse cursor is located in a Radio." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property sets a font used for a Radio." csspropertyname="font" csselementname="" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the spacing between characters (kerning) displayed in a Radio." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the border of a Radio." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the image of the edges that are displayed inside the border of a Radio." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the padding, an inner margin, of a Radio." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" defaultvalue="left" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="" description="This property is used to set the effects applied to the text displayed in a Radio." csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" defaultvalue="middle" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the opacity of a Radio." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the spacing between words displayed in a Radio." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="readonly" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="radioitem" classname="nexacro._RadioItemControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to add a handler to a certain event of a Radio.">
+        <Syntax text="Radio.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to find a function and add it to a certain event of a Radio as a handler.">
+        <Syntax text="Radio.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It is method to change the order to draw Component to the first position of same level Components.">
+        <Syntax text="Radio.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It is method to change the order to draw Component to the next front position of same level Components.">
+        <Syntax text="Radio.bringToPrev()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="Radio.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to delete a Radio that is dynamically created through a script.">
+        <Syntax text="Radio.destroy()">
+          <Return type="Boolean" description="It will return &quot;true&quot; if a Radio is successfully removed.&#xA;If not, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method finds a handler in a certain event of a Radio and returns the index of the handler.">
+        <Syntax text="Radio.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It gets the number of items.">
+        <Syntax text="Radio.getCount()">
+          <Return type="Number" description="The number of items" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the string that is actually displayed in a Radio.">
+        <Syntax text="Radio.getDisplayText()">
+          <Return type="String" description="It returns the string that is actually displayed in a Radio.&#xA;&#xA;It will return the string that is actually displayed on the screen if the value of the text property is displayed after being changed by the expr property" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns a specific handler from a certain event of a Radio by specifying the index number of the handler.">
+        <Syntax text="Radio.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It returns a component which has focus.">
+        <Syntax text="Radio.getFocus()">
+          <Return type="Object" description="It returns a component if the component which has focus exists in a designated form.&#xD;&#xA;If not, it returns 'null'." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getInnerDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the Dataset object that is specified as the value of the innerdataset property of a Radio.">
+        <Syntax text="Radio.getInnerDataset()">
+          <Return type="Object" description="It returns the Dataset object that is specified as the value of the innerdataset property." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the bottom position of a Radio in pixel, based on the value of the parent component's top property.">
+        <Syntax text="Radio.getOffsetBottom();">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Radio's bottom side. The value is returned in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the height of a Radio in pixel.">
+        <Syntax text="Radio.getOffsetHeight();">
+          <Return type="Number" description="It returns the height of a Radio in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the left position of a Radio in pixel, based on the value of the parent component's left property.">
+        <Syntax text="Radio.getOffsetLeft();">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Radio's left side. The value is returned in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the right position of a Radio in pixel, based on the value of the parent component's left property.">
+        <Syntax text="Radio.getOffsetRight();">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Radio's right side. The value is returned in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the top position of a Radio in pixel, based on the value of the parent component's top property.">
+        <Syntax text="Radio.getOffsetTop();">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Radio's top side. The value is returned in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the width of a Radio in pixel.">
+        <Syntax text="Radio.getOffsetWidth();">
+          <Return type="Number" description="It returns the width of a Radio in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the value of a Radio's bottom property in pixel.">
+        <Syntax text="Radio.getPixelBottom();">
+          <Return type="Number" description="It returns the value of a Radio's bottom property in pixel.&#xA;If the value of the bottom property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the height of a Radio in pixel.">
+        <Syntax text="Radio.getPixelHeight();">
+          <Return type="Number" description="It returns the height of a Radio in pixel.&#xA;If the value of the height property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the value of a Radio's left property in pixel.">
+        <Syntax text="Radio.getPixelLeft();">
+          <Return type="Number" description="It returns the value of a Radio's left property in pixel.&#xA;If the value of the left property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the value of a Radio's right property in pixel.">
+        <Syntax text="Radio.getPixelRight();">
+          <Return type="Number" description="It returns the value of a Radio's right property in pixel.&#xA;If the value of the right property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the value of a Radio's top property in pixel.">
+        <Syntax text="Radio.getPixelTop();">
+          <Return type="Number" description="It returns the value of a Radio's top property in pixel.&#xA;If the value of the top property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the width of a Radio in pixel.">
+        <Syntax text="Radio.getPixelWidth();">
+          <Return type="Number" description="It returns the width of a Radio in pixel.&#xA;If the value of the width property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to initialize a Radio after creating it in a script dynamically.">
+        <Syntax text="Radio.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="It sets the ID of a Radio in the form of a string." />
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the bottom property of a Radio in pixel or percent (%).&#xA;&#xA;This parameter will be ignored if both the vTop and vHeight parameters are all specified.&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be determined based on the top property of the base component.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the height property of the base component." />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the height property of a Radio in pixel or percent (%).&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be specified in pixel while the base component will be ignored.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the height property of the base component." />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the left property of a Radio in pixel or percent (%).&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be determined based on the right property of the base component.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the width property of the base component." />
+            <Argument name="vMaxHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies a Radio's maximum height that can be displayed in the Form.&#xA;&#xA;If this value is smaller than vMinHeight, it will be replaced by the value of vMinHeight." />
+            <Argument name="vMaxWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies a Radio's maximum width that can be displayed in the Form.&#xA;&#xA;If this value is smaller than vMinWidth, it will be replaced by the value of vMinWidth." />
+            <Argument name="vMinHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies a Radio's minimum height that can be displayed in the Form." />
+            <Argument name="vMinWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies a Radio's minimum width that can be displayed in the Form." />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the right property of a Radio in pixel or percent (%).&#xA;&#xA;This parameter will be ignored if both the vLeft and vWidth parameters are all specified.&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be determined based on the left property of the base component.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the width property of the base component." />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the top property of a Radio in pixel or percent (%).&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be determined based on the bottom property of the base component.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the height property of the base component." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the width property of a Radio in pixel or percent (%).&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be specified in pixel while the base component will be ignored.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the width property of the base component." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It moves a component into a specific location in specific size.">
+        <Syntax text="Radio.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="bottom coordinate to locate a component." />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="height of a component" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="left coordinate to locate a component." />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="right coordinate to locate a component." />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="top coordinate to locate a component." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="width of a component" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It changes the order to draw a component to the next back position based on a component given as an argument.">
+        <Syntax text="Radio.moveToNext( objComp )&#xA;Radio.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="It is a target component object." />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="It is a character string value of the target component ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It changes the order to draw a component to the prior front position based on a component given as an argument.">
+        <Syntax text="Radio.moveToPrev( objComp )&#xA;Radio.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="It is a target component object." />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="It is a character string value of the target component ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to remove a handler in a certain event of a Radio.">
+        <Syntax text="Radio.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to find a handler in a certain event of a Radio and remove it.">
+        <Syntax text="Radio.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid&#xA;If this method fails to find the handler in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It is Method to change size of Radio.">
+        <Syntax text="Radio.resize( vWidth, vHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="It is length to change." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="It is length to change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It is method to change the order to draw Component to the last position of same level Components.">
+        <Syntax text="Radio.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It is method to change the order to draw Component to the next back position of same level Components.">
+        <Syntax text="Radio.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to change the first handler in a certain event of a Radio.">
+        <Syntax text="Radio.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method finds a function and uses it to replace the first handler in a certain event of a Radio.">
+        <Syntax text="Radio.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to give focus to a Radio.">
+        <Syntax text="Radio.setFocus( [bMoveScroll [, bInnerFocus]] )">
+          <Return type="Object" description="It returns a component which had focus right before.&#xA;&#xA;If there is no component which had focus previously, or if the method fails, it returns 'null'." />
+          <Arguments>
+            <Argument name="bInnerFocus" type="Boolean" in="false" out="false" option="false" variable="false" description="If a Radio is a container component, this parameter determines whether to move focus to a child component.&#xA;&#xA;For &quot;true&quot;, focus will be given to the first child component that can receive focus.&#xA;For &quot;false&quot;, focus will be given to the Radio.&#xA;&#xA;The default value is &quot;true&quot; if a Radio is a container component." />
+            <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="If scrolling is enabled in the parent component, it will determine whether to scroll based on the Radio.&#xA;&#xA;For &quot;true&quot;, the parent component will scroll so that the Radio will show.&#xA;For &quot;false&quot;, the parent component will not scroll regardless of the Radio's position.&#xA;&#xA;The default value is &quot;true&quot;." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setInnerDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method sets the innerdataset property of a Radio by specifying its argument as the value of the property.">
+        <Syntax text="Radio.setInnerDataset( objDataset )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="It is a DataSet object that will be specified as the value of the innerdataset property." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to specify the bottom position of a Radio in pixel, based on the value of the parent component's top property.">
+        <Syntax text="Radio.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the distance between a Radio's bottom side and its parent component's top side. The distance is expressed in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to specify the height of a Radio in pixel.">
+        <Syntax text="Radio.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the height of a Radio in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to specify the left position of a Radio in pixel, based on the value of the parent component's left property.">
+        <Syntax text="Radio.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the distance between a Radio's left side and its parent component's left side. The distance is expressed in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to specify the right position of a Radio in pixel, based on the value of the parent component's left property.">
+        <Syntax text="Radio.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the distance between a Radio's right side and its parent component's left side. The distance is expressed in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to specify the top position of a Radio in pixel, based on the value of the parent component's top property.">
+        <Syntax text="Radio.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the distance between a Radio's top side and its parent component's top side. The distance is expressed in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to specify the width of a Radio in pixel.">
+        <Syntax text="Radio.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Object" in="false" out="false" option="false" variable="false" description="It specifies the width of a Radio in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to display an Radio on the screen. The Radio mentioned here refers to the one that is dynamically created through a script.">
+        <Syntax text="Radio.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="updateToDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It is Method to immediately apply the value to Dataset when the value of Radio is bound to Dataset.">
+        <Syntax text="Radio.updateToDataset()">
+          <Return type="Boolean" description="It shall return whether updateToDataset() is successful." />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="canitemchange" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Event to occur before changed values of Radio are applied.">
+        <Syntax text="Radio.canitemchange(obj:nexacro.Radio,e:nexacro.ItemChangeEventInfo);">
+          <Return type="Boolean" description="true : it reflects changed contents. (default)&#xA;false : It cancles change contents and recovers previous value before modofication." />
+          <Arguments>
+            <Argument name="e" type="ItemChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="Radio.onclick(obj:nexacro.Radio,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="false" requirement="" description="This event occurs when you right-click a Radio or touch a Radio for a certain duration.">
+        <Syntax text="Radio.oncontextmenu(obj:nexacro.Radio,e:nexacro.ContextMenuEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ContextMenuEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="Radio.ondblclick(obj:nexacro.Radio,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you conduct a dragging action by pressing the left button of a mouse&#xA;within a Radio.">
+        <Syntax text="Radio.ondrag(obj:nexacro.Radio,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, dragging will be conducted while the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, dragging will be canceled while the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when dragged Component enters into Component area.">
+        <Syntax text="Radio.ondragenter(obj:nexacro.Radio,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, Event shall not occur in upper Component.&#xA;Default : false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when dragged Component goes out of Component area.">
+        <Syntax text="Radio.ondragleave(obj:nexacro.Radio,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, Event shall not occur in upper Component.&#xA;default : false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a dragged mouse moves in Component area.">
+        <Syntax text="Radio.ondragmove(obj:nexacro.Radio,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you release a mouse button within the area of a Radio after you have pressed the button to drag an object.">
+        <Syntax text="Radio.ondrop(obj:nexacro.Radio,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninnerdatachanged" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when there has been a change in the data of a dataset that is bound to the innerdataset property of a Radio.">
+        <Syntax text="Radio.oninnerdatachanged(obj:nexacro.Radio,e:nexacro.InnerdataChangedEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InnerdataChangedEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="Radio.oninput(obj:nexacro.Radio,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onitemchanged" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs when a selected value is changed.">
+        <Syntax text="Radio.onitemchanged(obj:nexacro.Radio,e:nexacro.ItemChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ItemChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onitemclick" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs when the component is pressed and released by your mouse.">
+        <Syntax text="Radio.onitemclick(obj:nexacro.Radio,e:nexacro.ItemClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ItemClickEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you press a key with a Radio focused.">
+        <Syntax text="Radio.onkeydown(obj:nexacro.Radio,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you release a key with a Radio focused.">
+        <Syntax text="Radio.onkeyup(obj:nexacro.Radio,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Radio in which Focus is located loses Focus.">
+        <Syntax text="Radio.onkillfocus(obj:nexacro.Radio,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you press the left button of a mouse within the area of a Radio.">
+        <Syntax text="Radio.onlbuttondown(obj:nexacro.Radio,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you release the left button of a mouse within the area of a Radio.">
+        <Syntax text="Radio.onlbuttonup(obj:nexacro.Radio,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="true" requirement="" description="It is Event to occur when the other Buttons are pressed except for Left Button/Right Button of a mouse.">
+        <Syntax text="Radio.onmousedown(obj:nexacro.Radio,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmousedown Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a cursor of a mouse enters into Radio area.">
+        <Syntax text="Radio.onmouseenter(obj:nexacro.Radio,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmouseenter Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a cursor of a mouse goes out of Radio area.">
+        <Syntax text="Radio.onmouseleave(obj:nexacro.Radio,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmousleave Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a cursor of a mouse moves in Radio area.">
+        <Syntax text="Radio.onmousemove(obj:nexacro.Radio,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmousemove Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="true" requirement="" description="It is Event to occur when the other Buttons are pressed and released except for Left Button/Right Button of a mouse.">
+        <Syntax text="Radio.onmouseup(obj:nexacro.Radio,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmouseup Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs when you scroll your mouse wheel.">
+        <Syntax text="Radio.onmousewheel(obj:nexacro.Radio,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="If true is returned, mouse scroll wheel and  bubbling stop. &#xD;&#xA;If false is returned, the onmousewheel event occurs in the generated component and is bubbled. If the generated component doesn't need the onmousewheel event, the event will be taken by an upper level component." />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Radio moves.">
+        <Syntax text="Radio.onmove(obj:nexacro.Radio,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Mouse Right Button Down occurs in Radio.">
+        <Syntax text="Radio.onrbuttondown(obj:nexacro.Radio,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onrbuttondown Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you release the right button of a mouse within the area of a Radio.">
+        <Syntax text="Radio.onrbuttonup(obj:nexacro.Radio,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Focus is set to Radio.">
+        <Syntax text="Radio.onsetfocus(obj:nexacro.Radio,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Radio size is changed.">
+        <Syntax text="Radio.onsize(obj:nexacro.Radio,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you touch and release the screen within the area of a Radio.">
+        <Syntax text="Radio.ontouchend(obj:nexacro.Radio,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when a touch point is moved along the touch surface within a Radio.">
+        <Syntax text="Radio.ontouchmove(obj:nexacro.Radio,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when a touch point is placed on the touch surface within a Radio.">
+        <Syntax text="Radio.ontouchstart(obj:nexacro.Radio,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

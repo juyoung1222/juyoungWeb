@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GoogleMapMarker">
+    <ObjectInfo inheritance="" classname="nexacro.GoogleMapMarker" shorttypename="GoogleMapMarker" csstypename="GoogleMapMarker" csscontrolname="" group="Object" subgroup="" csspseudo="false" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapコンポーネントにロードされた地図の特定の位置にマーク（アイコン）を表示するときに使用するオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="draggable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="マーカーのスタイル情報です。" csspropertyname="" csselementname="" normalpropertyname="draggable" />
+      <Property name="imageurl" group="Appearance" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="地図にGoogleMapMarkerに表示される画像のパスを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="imageurl" />
+      <Property name="latitude" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapMarkerが表示される位置の緯度値を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="latitude" />
+      <Property name="longitude" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapMarkerが表示される位置の経度の値を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="longitude" />
+      <Property name="text" group="Appearance" subgroup="" refreshinfo="" edittype="MultilineString" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="アイテムに表示されるロールオーバーテキスト" csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapMakerを地図上に表示するかどうかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="visible" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

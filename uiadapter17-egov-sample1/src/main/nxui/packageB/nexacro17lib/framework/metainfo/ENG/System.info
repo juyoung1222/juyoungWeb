@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.System">
+    <ObjectInfo inheritance="" classname="nexacro.System" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This object provides information about the OS, hardware and input devices." />
+    <PropertyInfo>
+      <Property name="computername" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to return NetBIOS name of a current local computer." csspropertyname="" csselementname="" normalpropertyname="computername" />
+      <Property name="cpuarchitecture" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to return a manufacturer name of a processor in a text string value." csspropertyname="" csselementname="" normalpropertyname="cpuarchitecture" />
+      <Property name="cpucount" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to return number of processors." csspropertyname="" csselementname="" normalpropertyname="cpucount" />
+      <Property name="cputype" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to return kind information of processors in text strings." csspropertyname="" csselementname="" normalpropertyname="cputype" />
+      <Property name="locale" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This property holds the locale code value set by the computer that is running an application." csspropertyname="" csselementname="" normalpropertyname="locale" />
+      <Property name="loginuser" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to return a user's name who is currently logged in." csspropertyname="" csselementname="" normalpropertyname="loginuser" />
+      <Property name="mobileorientation" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This read-only property holds the current screen orientation of the mobile device that runs the application." csspropertyname="" csselementname="" normalpropertyname="mobileorientation" />
+      <Property name="mobileproducttype" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="To obtain model names of mobile devices.&#xA;(Device manufacturing code, format varies according to manufacturer) &#xA;Ex) “SHW-M110S”, “iPhone3,1”" csspropertyname="" csselementname="" normalpropertyname="mobileproducttype" />
+      <Property name="monitorcount" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to return total number of monitors in case of single or plural display monitors." csspropertyname="" csselementname="" normalpropertyname="monitorcount" />
+      <Property name="navigatorfullname" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="It is Property to indicate X coordinate of a cursor of current mouse." csspropertyname="" csselementname="" normalpropertyname="navigatorfullname" />
+      <Property name="navigatorname" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Information about the environment in which the application is running is returned." csspropertyname="" csselementname="" normalpropertyname="navigatorname" />
+      <Property name="navigatorversion" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It returns a browser where an application runs." csspropertyname="" csselementname="" normalpropertyname="navigatorversion" />
+      <Property name="notificationtoken" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This read-only property holds the value of a device token for receiving push notifications in the mobile device that runs your application." csspropertyname="" csselementname="" normalpropertyname="notificationtoken" />
+      <Property name="osversion" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="To write OS name and OS Version." csspropertyname="" csselementname="" normalpropertyname="osversion" />
+      <Property name="taskbarsize" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="To obtain pixel length of the upper TaskBar (indicator bar in case of Android) in Mobile Device." csspropertyname="" csselementname="" normalpropertyname="taskbarsize" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="attachChildFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera" description="This method makes it possible to use an xfdl file developed with Nexacro Studio in a user's HTML document.&#xA;- It loads a generated xfdl file in a user's DOM.">
+        <Syntax text="system.attachChildFrame(window, document, strKey, stradlurl, strDivId, strxfdlurl)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="document" type="Object" in="false" out="false" option="false" variable="false" description="document object" />
+            <Argument name="stradlurl" type="String" in="false" out="false" option="false" variable="false" description="xadl file name (nexacro.xadl, nexacro.xadl.quickview)" />
+            <Argument name="strDivId" type="String" in="false" out="false" option="false" variable="false" description="ID of a user's Div component to which an xfdl file is loaded" />
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="A key used when registering a global variable in an application" />
+            <Argument name="strxfdlurl" type="String" in="false" out="false" option="false" variable="false" description="xfdl file name" />
+            <Argument name="window" type="Object" in="false" out="false" option="false" variable="false" description="window  object" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It deletes all contents included in the system clipboard.">
+        <Syntax text="system.clearClipboard()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clientToScreenX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is API to replace coordinate on the basis of Component which a user wants with coordinate on the basis of screen.">
+        <Syntax text="system.clientToScreenX(objComp, nPosX)">
+          <Return type="Number" description="X coordinate value of transformed Screen." />
+          <Arguments>
+            <Argument name="nPosX" type="Number" in="false" out="false" option="false" variable="false" description="X coordinate on the basis of Component to transfer to X coordinate on the basis of Screen" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="Basic Component of Client coordinate." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clientToScreenY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is API to replace coordinate on the basis of Component which a user wants with coordinate on the basis of screen.">
+        <Syntax text="system.clientToScreenY(objComp, nPosY)">
+          <Return type="Number" description="Y coordinate value of transformed Screen." />
+          <Arguments>
+            <Argument name="nPosY" type="Number" in="false" out="false" option="false" variable="false" description="Y coordinate on the basis of Component to transfer to Y coordinate on the basis of Screen" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="Basic Component of Client coordinate." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="convertRealPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It transforms a route which has Alias into an actual absolute route.">
+        <Syntax text="system.convertRealPath(strAlias)">
+          <Return type="String" description="Text string to have absolute route address." />
+          <Arguments>
+            <Argument name="strAlias" type="String" in="false" out="false" option="false" variable="false" description="It is a route character string to be changed." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser" description="It executes a web browser by using an input URL.">
+        <Syntax text="system.execBrowser(strUrl)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="It is a URL path text string." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execNexacro" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This method is used to execute Nexacro Browser by by specifying an execution path and arguments.">
+        <Syntax text="system.execNexacro(strCommand)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCommand" type="String" in="false" out="false" option="false" variable="false" description="You can specify an option by combining an option reserved word and option value.&#xA;If you want to specify an empty value as an option value, you must surround the value with quotation marks.&#xA;&#xA;-K: this specifies a string that represents the key of an application.&#xA;-S: this specifies a path to a bootstrap.&#xA;-C: this specifies the directory of components.&#xA;-THR: this specifies the number of threads executed in the communications inside the engine or in other manages.&#xA;          Threads amount to three at least and ten at most. The default number is three.&#xA;-SP: this specifies a path to a splash image.&#xA;-LF: this specifies the coordinates of the left position of an application.&#xA;-TP : this specifies the coordinates of the top position of an application.&#xA;-WD: this specifies the width of an application in pixel.&#xA;-HT: this specifies the height of an application in pixel.&#xA;-LG: this specifies a path to a loading image.&#xA;-TW: this specifies the maximum waiting time for the threads of the managers inside the engine.&#xA;-OO: this specifies a Boolean value to determine whether to permit the execution of only one application if there are more than one application that have the same key.&#xA;-V: this specifies global variables with the format &quot;variable name:type=value variable name:type=value&quot;.&#xA;       Variables are separated by whitespaces.&#xA;       If you specify &quot;Type&quot; as &quot;ev&quot;, the variable will be added to the Variables field in Environment.&#xA;       If you specify &quot;Type&quot; as &quot;ec&quot;, the variable will be added to the Cookies field in Environment.&#xA;       If you do not specify &quot;Type&quot; or specifies it as &quot;av&quot;, the variable will be added to the Variables field in the application.&#xA;-SIE: this specifies a Boolean value to determine whether to close an application with an error message opened if the error occurs while executing the application.&#xA;-CT: this specifies the maximum waiting time for checking whether a network is connected.&#xA;         The check-up is conducted before the launch of the application&#xA;         if a network is not detected in the waiting time, the application will be closed.&#xA;-SCR: this specifies screen IDs used for the Layout Manager." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execShell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to help execute a program in the Windows shell.">
+        <Syntax text="system.execShell(strShellCommand)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strShellCommand" type="String" in="false" out="false" option="false" variable="false" description="Windows shell command to execute" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It gets system clipboard data in a designated format.">
+        <Syntax text="system.getClipboard(strFormat)">
+          <Return type="Variant" description="System clipboard data in a designated format" />
+          <Arguments>
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="Clipboard data format" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCursorX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to obtain the x-coordinate of the position where a mouse cursor is located.">
+        <Syntax text="system.getCursorX()">
+          <Return type="Number" description="This method returns the x-coordinate of the position where a mouse cursor is located." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCursorY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to obtain the y-coordinate of the position where a mouse cursor is located.">
+        <Syntax text="system.getCursorY()">
+          <Return type="Number" description="This method returns the y-coordinate of the position where a mouse cursor is located." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMonitorIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is a method to return number of the monitor which is closest to a mouse pointer value in case of plural display monitors.">
+        <Syntax text="system.getMonitorIndex(nCursorX, nCursorY)">
+          <Return type="Number" description="It is number value of monitor." />
+          <Arguments>
+            <Argument name="nCursorX" type="Number" in="false" out="false" option="false" variable="false" description="It is a X coordinate of mouse pointer." />
+            <Argument name="nCursorY" type="Number" in="false" out="false" option="false" variable="false" description="It is a Y coordinate of mouse pointer." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method returns the height of the screen where the application is running.">
+        <Syntax text="system.getScreenHeight()">
+          <Return type="Number" description="It returns the height of the screen where the application is running." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getScreenRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Method to bring screen coordinate of a designated monitor as Rect value.">
+        <Syntax text="system.getScreenRect(nMonitorIndex)">
+          <Return type="Object" description="It shall return Rect Object. It has left top right bottom value." />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="It is index number of monitor." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenResolution" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Method to return resolution of a specific single monitor in case of plural display monitors.">
+        <Syntax text="system.getScreenResolution(nMonitorIndex)">
+          <Return type="String" description="It returns resolution value of monitor." />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="It is index number of monitor." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method returns the width of the screen where the application is running.">
+        <Syntax text="system.getScreenWidth()">
+          <Return type="Number" description="It returns the width of the screen where the application is running." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isPrimaryMonitor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Method to judge if a specific monitor is a main monitor in case of plural display monitors.">
+        <Syntax text="system.isPrimaryMonitor(nMonitorIndex)">
+          <Return type="Boolean" description="If main monitor, it shall return true and if not, it shall return false." />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="It is index value of monitor." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="print" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser" description="This method is used to print a designated component through a printer.">
+        <Syntax text="system.print( objComponent, [bHideDialog, [,strVAlign[,strHAlign[, bFitOnePage]]]] )&#xA;system.print( strComponentID, [bHideDialog, [,strVAlign[,strHAlign[, bFitOnePage]]]] )">
+          <Return type="Boolean" description="If printing is successful, it will return true and if unsuccessful, it will return false." />
+          <Arguments>
+            <Argument name="bFitOnePage" type="Boolean" in="false" out="false" option="false" variable="false" description="Whether to squeeze all the contents into one page&#xA;[Default Value = false]" />
+            <Argument name="bHideDialog" type="Boolean" in="false" out="false" option="false" variable="false" description="Whether to print without setting window for printer.&#xA;[Default Value = true]" />
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strComponentID" type="String" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strHAlign" type="String" in="false" out="false" option="false" variable="false" description="It designates a position in horizontal direction of a paper to output images  &#xA;&quot;left&quot;   : Image is output in the left&#xA;&quot;center&quot;   : Image is output at the center&#xA;&quot;right&quot;   : Image is output in the right&#xA;[Default Value = &quot;center&quot;]" />
+            <Argument name="strVAlign" type="String" in="false" out="false" option="false" variable="false" description="It designates a position in vertical direction of a paper to output images&#xA;&quot;top&quot;   : Image is output in the upper part&#xA;&quot;middle&quot;&quot;   : Image is output in the middle part&#xA;&quot;bottom&quot;   : Image is output in the bottom&#xA;[Default Value = &quot;middle&quot;]" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveToImageFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser" description="It is Method to export XComponent to image file.">
+        <Syntax text="system.saveToImageFile(objComponent, strFileName, strImageType[,strOptions])">
+          <Return type="Boolean" description="If successful, it shall return true and if failed it shall return false." />
+          <Arguments>
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="File name to export" />
+            <Argument name="strImageType" type="String" in="false" out="false" option="false" variable="false" description="image format to export&#xA;( Default : &quot;BMP&quot; ) &#xA;&quot;BMP&quot;,&quot;JPG&quot;,&quot;TIF&quot;,&quot;GIF&quot;,&quot;PNG&quot;" />
+            <Argument name="strOptions" type="String" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="screenToClientX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is an API to replace coordinate on the basis of screen with coordinate on the basis of Component which a user wants.">
+        <Syntax text="system.screenToClientX(objComp, nPosX)">
+          <Return type="Number" description="X coordinate of transformed Component ." />
+          <Arguments>
+            <Argument name="nPosX" type="Number" in="false" out="false" option="false" variable="false" description="X coordinate on the basis of a designated component" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="Basic Component of Client coordinate." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="screenToClientY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is an API to replace coordinate on the basis of screen with coordinate on the basis of Component which a user wants.">
+        <Syntax text="system.screenToClientY(objComp, nPosY)">
+          <Return type="Number" description="Y coordinate of transformed Component ." />
+          <Arguments>
+            <Argument name="nPosY" type="Number" in="false" out="false" option="false" variable="false" description="Y coordinate on the basis of a designated component" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="Basic Component of Client coordinate." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It saves data in a designated format in the system clipboard.">
+        <Syntax text="system.setClipboard(strFormat, varData)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="Clipboard data format" />
+            <Argument name="varData" type="String" in="false" out="false" option="false" variable="false" description="Data value" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showModalSync" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="A Sync action of showModal">
+        <Syntax text="system.showModalSync( objChildframe, objParentFrame, [{objArgumentList} [, objOpener]] );&#xA;system.showModalSync( objChildframe, strID, objParentFrame, [{objArgumentList} [, objOpener]] );">
+          <Return type="Boolean" description="It returns success or failure of the call when closing a modal window." />
+          <Arguments>
+            <Argument name="objArgumentList" type="Object" in="false" out="false" option="false" variable="false" description="List of variables to be added to a modal window as a childFrame (syntax is &quot;variable name:variable value, variable name:variable value)" />
+            <Argument name="objChildframe" type="Object" in="false" out="false" option="false" variable="false" description="childframe dynamically generated by a user" />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="Form Object to become a opener (default : Form Object where an event occurs for the first time)" />
+            <Argument name="objParentFrame" type="Object" in="false" out="false" option="false" variable="false" description="FrameObject to become a parent" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showModalWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to open a separate modal window.">
+        <Syntax text="system.showModalWindow( objChildframe, objParentFrame[, {objArguments}[, objOpener]] );&#xA;system.showModalWindow( objChildframe, strID, objParentFrame[, {objArguments}[, objOpener]] );">
+          <Return type="String" description="The arguments of a form's Close method will be delivered as return values." />
+          <Arguments>
+            <Argument name="objArguments" type="Object" in="true" out="false" option="false" variable="false" description="List of the variables to be added to the child frame (the format is “variable name:variable value, variable name:variable value)" />
+            <Argument name="objChildframe" type="Object" in="true" out="false" option="false" variable="false" description="ChildFrame object that is dynamically created by a user" />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="Form object to become an opener" />
+            <Argument name="objParentFrame" type="Object" in="true" out="false" option="false" variable="false" description="Frame object to become a parent" />
+            <Argument name="strID" type="String" in="true" out="false" option="false" variable="false" description="ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

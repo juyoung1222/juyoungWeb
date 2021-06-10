@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.CameraEventInfo">
+    <ObjectInfo inheritance="" classname="nexacro.CameraEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기의 카메라 앱과 연동하여 이미지 얻기에 성공했을 때 발생하는 이벤트에 전달되는 EventInfo 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="이벤트의 ID를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="eventid" />
+      <Property name="imagedata" group="Misc." subgroup="" refreshinfo="" edittype="Object" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="카메라 앱으로 촬영 후 전달된 이미지 오브젝트를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="imagedata" />
+      <Property name="imageheight" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="카메라 앱을 통해 얻은 이미지의 높이값을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="imageheight" />
+      <Property name="imagewidth" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="카메라 앱을 통해 얻은 이미지의 너비값을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="imagewidth" />
+      <Property name="reason" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="이벤트가 발생한 원인에 대한 정보를 정수로 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="reason" />
+      <Property name="url" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="카메라 앱을 통해 얻은 이미지의 위치정보를 URL 형식으로 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="url" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.System">
+    <ObjectInfo inheritance="" classname="nexacro.System" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="운영체제, 하드웨어, 입력장치 등의 정보를 제공하는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="computername" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 컴퓨터의 NetBIOS 이름을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="computername" />
+      <Property name="cpuarchitecture" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 컴퓨터의 CPU 제조사 이름을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="cpuarchitecture" />
+      <Property name="cpucount" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 컴퓨터의 CPU 갯수를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="cpucount" />
+      <Property name="cputype" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 컴퓨터의 CPU 종류 정보를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="cputype" />
+      <Property name="locale" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 컴퓨터의 locale 코드값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="locale" />
+      <Property name="loginuser" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 컴퓨터에 로그인된 사용자의 ID 를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="loginuser" />
+      <Property name="mobileorientation" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 모바일 기기의 현재 방향정보를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="mobileorientation" />
+      <Property name="mobileproducttype" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 모바일 기기의 기종명을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="mobileproducttype" />
+      <Property name="monitorcount" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 컴퓨터의 모니터 갯수를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="monitorcount" />
+      <Property name="navigatorfullname" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="어플리케이션이 실행된 Windows nexacro Browser 의 엔진종류를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="navigatorfullname" />
+      <Property name="navigatorname" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 브라우저 정보를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="navigatorname" />
+      <Property name="navigatorversion" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 브라우저의 버전을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="navigatorversion" />
+      <Property name="notificationtoken" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 모바일 기기에서 Push 알림을 받기 위한 Device Token 값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="notificationtoken" />
+      <Property name="osversion" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 환경의 운영체제 명칭과 버전을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="osversion" />
+      <Property name="taskbarsize" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 모바일 기기의 TaskBar(Android 는 IndicatorBar)의 크기를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="taskbarsize" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="attachChildFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera" description="웹브라우저에서 nexacro Studio 로 Generate 된 &quot;xfdl&quot; 파일을 사용자 DOM 에 로드하는 메소드입니다.">
+        <Syntax text="system.attachChildFrame(window, document, strKey, stradlurl, strDivId, strxfdlurl)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="document" type="Object" in="false" out="false" option="false" variable="false" description="document 객체를 설정합니다." />
+            <Argument name="stradlurl" type="String" in="false" out="false" option="false" variable="false" description="Generate 된 &quot;xadl&quot; 파일의 이름을 문자열로 설정합니다." />
+            <Argument name="strDivId" type="String" in="false" out="false" option="false" variable="false" description="Generate 된 &quot;xfdl&quot; 파일이 로드될 사용자 Division 의 ID 를 설정합니다." />
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="Application 의 AppVariables 에 등록할때 사용할 Key 값을 문자열로 설정합니다." />
+            <Argument name="strxfdlurl" type="String" in="false" out="false" option="false" variable="false" description="Genrate 된 &quot;xfdl&quot; 파일의 이름을 설정합니다." />
+            <Argument name="window" type="Object" in="false" out="false" option="false" variable="false" description="window 객체를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="시스템의 클립보드에 저장된 내용을 삭제하는 메소드입니다.">
+        <Syntax text="system.clearClipboard()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clientToScreenX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="컴포넌트의 클라이언트 기준의 x 좌표값을 스크린 기준의 x 좌표값으로 반환하는 메소드입니다.">
+        <Syntax text="system.clientToScreenX(objComp, nPosX)">
+          <Return type="Number" description="스크린 기준의 x 좌표값을 반환합니다." />
+          <Arguments>
+            <Argument name="nPosX" type="Number" in="false" out="false" option="false" variable="false" description="변환할 컴포넌트 기준의 x 좌표값을 설정합니다." />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="변환할 x 좌표값의 기준이 되는 컴포넌트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clientToScreenY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="컴포넌트의 클라이언트 기준의 y 좌표값을 스크린 기준의 y 좌표값으로 반환하는 메소드입니다.">
+        <Syntax text="system.clientToScreenY(objComp, nPosY)">
+          <Return type="Number" description="스크린 기준의 y 좌표값을 반환합니다." />
+          <Arguments>
+            <Argument name="nPosY" type="Number" in="false" out="false" option="false" variable="false" description="변환할 컴포넌트 기준의 y 좌표값을 설정합니다." />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="변환할 y 좌표값의 기준이 되는 컴포넌트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="convertRealPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Alias 가 포함된 경로를 실제 절대경로로 변환하는 메소드입니다.">
+        <Syntax text="system.convertRealPath(strAlias)">
+          <Return type="String" description="실제 절대경로를 반환합니다." />
+          <Arguments>
+            <Argument name="strAlias" type="String" in="false" out="false" option="false" variable="false" description="절대경로로 변환하려는 Alias 가 포함된 경로를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser" description="전달된 URL 로 웹브라우저를 실행하는 메소드입니다.">
+        <Syntax text="system.execBrowser(strUrl)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="웹페이지 URL 경로를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execNexacro" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="전달된 실행경로와 인수값으로 nexacro 브라우저를 실행하는 메소드입니다.">
+        <Syntax text="system.execNexacro(strCommand)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCommand" type="String" in="false" out="false" option="false" variable="false" description="옵션예약어와 옵션값을 쌍으로 하여 실행옵션을 설정합니다.&#xA;옵션값에 빈칸이 포함된 경우는 따옴표(&quot;) 로 묶어야 합니다.&#xA;&#xA;-K : 어플리케이션을 구별하기 위한 키값을 문자열로 설정합니다.&#xA;-S : 부트스트랩 경로를 설정합니다.&#xA;-C : 컴포넌트가 설치된 경로를 설정합니다.&#xA;-THR : 엔진 내부 통신 및 기타 Manager 의 쓰레드 수를 숫자로 설정합니다.&#xA;          쓰레드의 갯수는 최소 3개, 최대 10개이며 기본값은 3 입니다.&#xA;-SP : Splash Image 의 경로를 설정합니다.&#xA;- LF : 어플리케이션의 Left 위치 좌표값을 설정합니다.&#xA;-TP : 어플리케이션의 Top 위치 좌표값을 설정합니다.&#xA;-WD : 어플리케이션의 너비를 픽셀단위 숫자로 설정합니다.&#xA;-HT : 어플리케이션의 높이를 픽셀단위 숫자로 설정합니다.&#xA;-LG : Loading Image 의 경로를 설정합니다.&#xA;-TW : 엔진 내부 Manager 의 쓰레드가 대기할 최대시간을 설정합니다.&#xA;-OO : 동일한 키의 어플리케이션의 실행을 한개만 허용할 지 Boolean 으로 설정합니다.&#xA;-V : 어플리케이션이 실행될 때 추가될 Global 변수를 &quot;변수명:타입=값 변수명:타입=값&quot; 형식으로 설정합니다.&#xA;       각 변수는 콤마(&quot;,&quot;)문자로 구분하여 설정합니다.&#xA;       &quot;타입&quot;에 &quot;ev&quot;를 설정 시 Environment 의 Variables 영역에 변수가 추가됩니다.&#xA;       &quot;타입&quot;에 &quot;ec&quot;를 설정 시 Environment 의 Cookies 영역에 변수가 추가됩니다.&#xA;       &quot;타입&quot;을 설정하지 않거나 &quot;av&quot;를 설정 시 Application 의 Variables 영역에 변수가 추가됩니다.&#xA;-SIE : 어플리케이션 실행 시 에러가 발생하면 에러 메시지를 표시하고 종료할 지 Boolean 으로 설정합니다.&#xA;-CT : 초기 네트워크가 연결되어 있는지 체크하는 최대 대기시간을 설정합니다.&#xA;         네트워크가 연결되어 있는지 여부를 어플리케이션이 구동되기 전에 체크합니다.&#xA;         대기시간동안 네트워크가 연결여부가 확인되지 않으면 어플리케이션이 종료됩니다.&#xA;-SCR : LayoutManager 에서 사용하기 위한 ScreenID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execShell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="윈도우의 Shell 을 통해 프로그램을 실행하는 메소드입니다.">
+        <Syntax text="system.execShell(strShellCommand)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strShellCommand" type="String" in="false" out="false" option="false" variable="false" description="실행할 윈도우 Shell 명령어를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="시스템의 클립보드에 저장된 내용을 지정된 형식으로 반환하는 메소드입니다.">
+        <Syntax text="system.getClipboard(strFormat)">
+          <Return type="Variant" description="시스템 클립보드의 내용을 지정된 형식으로 반환합니다." />
+          <Arguments>
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="시스템 클립보드의 데이터를 가져올 때 적용할 형식을 문자열로 설정합니다.&#xA;&#xA;&quot;CF_TEXT&quot; 설정 시 데이터를 텍스트 형식으로 반환합니다.&#xA;&quot;CF_UNICODETEXT&quot; 설정 시 데이터를 유니코드 텍스트 형식으로 반환합니다.&#xA;&quot;CF_CSV&quot; 설정 시 데이터를 CSV 형식으로 반환합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCursorX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="마우스 커서가 위치한 곳의 x 좌표값을 반환하는 메소드입니다.">
+        <Syntax text="system.getCursorX()">
+          <Return type="Number" description="마우스 커서가 위치한 곳의 x 좌표값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCursorY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="마우스 커서가 위치한 곳의 y 좌표값을 반환하는 메소드입니다.">
+        <Syntax text="system.getCursorY()">
+          <Return type="Number" description="마우스 커서가 위치한 곳의 y 좌표값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMonitorIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="다중 모니터 일 때 전달된 좌표값에 가장 가까운 모니터의 번호를 반환하는 메소드입니다.">
+        <Syntax text="system.getMonitorIndex(nCursorX, nCursorY)">
+          <Return type="Number" description="좌표에 해당하는 모니터 번호를 반환합니다." />
+          <Arguments>
+            <Argument name="nCursorX" type="Number" in="false" out="false" option="false" variable="false" description="스크린의 x 좌표 값을 설정합니다." />
+            <Argument name="nCursorY" type="Number" in="false" out="false" option="false" variable="false" description="스크린의 y 좌표 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 스크린의 높이를 반환하는 메소드입니다.">
+        <Syntax text="system.getScreenHeight()">
+          <Return type="Number" description="스크린의 높이를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getScreenRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="지정한 모니터의 스크린정보를 Rect 오브젝트로 반환하는 메소드입니다.">
+        <Syntax text="system.getScreenRect(nMonitorIndex)">
+          <Return type="Object" description="인수로 전달된 모니터의 스크린정보를 갖는 Rect 오브젝트를 반환합니다.&#xA;&#xA;Rect 오브젝트는 &quot;left&quot;, &quot;top&quot;, &quot;right&quot;, &quot;bottom&quot;, &quot;width&quot;, &quot;height&quot; 속성을 갖습니다." />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="스크린정보를 가져올 모니터의 번호를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenResolution" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="지정한 모니터의 해상도를 반환하는 메소드입니다.">
+        <Syntax text="system.getScreenResolution(nMonitorIndex)">
+          <Return type="String" description="지정된 모니터의 해상도값을 문자열로 반환합니다.&#xA;&#xA;잘못된 모니터 번호를 입력 시 &quot;0&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="해상도를 가져올 모니터의 번호를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션이 실행된 스크린의 너비를 반환하는 메소드입니다.">
+        <Syntax text="system.getScreenWidth()">
+          <Return type="Number" description="스크린의 너비를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isPrimaryMonitor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="다중 모니터 일 때, 지정한 모니터가 주 모니터인지 반환하는 메소드입니다.">
+        <Syntax text="system.isPrimaryMonitor(nMonitorIndex)">
+          <Return type="Boolean" description="지정한 모니터가 주 모니터이면 &quot;true&quot; 를 반환합니다.&#xA;지정한 모니터가 주 모니터가 아니면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="주 모니터 여부를 판단할 모니터의 번호를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="print" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser" description="지정한 컴포넌트의 이미지를 프린터로 출력하는 메소드입니다.">
+        <Syntax text="system.print( objComponent, [bHideDialog, [,strVAlign[,strHAlign[, bFitOnePage]]]] )&#xA;system.print( strComponentID, [bHideDialog, [,strVAlign[,strHAlign[, bFitOnePage]]]] )">
+          <Return type="Boolean" description="출력에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;출력에 실패하면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="bFitOnePage" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 이미지가 한페이지를 초과하는 경우 축소하여 한페이지로 출력합니다.&#xA;&#xA;&quot;false&quot; 설정 시 이미지 크기에 맞게 여러페이지로 출력합니다.&#xA;&quot;false&quot; 설정 시 strVAlign 은 &quot;top&quot; 으로 적용되고, strHAlign 은 &quot;left&quot; 로 적용됩니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="bHideDialog" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 프린터 설정창으로 표시하지 않고 출력합니다.&#xA;&quot;false&quot; 설정 시 프린터로 출력 전에 프린터 설정창을 표시합니다.&#xA;&#xA;값 생략 시 &quot;true&quot; 로 적용됩니다." />
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="이미지를 프린터로 출력할 컴포넌트의 오브젝트를 설정합니다." />
+            <Argument name="strComponentID" type="String" in="false" out="false" option="false" variable="false" description="이미지를 프린터로 출력할 컴포넌트의 ID 를 문자열로 설정합니다." />
+            <Argument name="strHAlign" type="String" in="false" out="false" option="false" variable="false" description="이미지가 용지에 출력될 수평위치를 설정합니다.&#xA;&#xA;&quot;left&quot; 설정 시 이미지가 용지의 좌측에 출력됩니다.&#xA;&quot;center&quot; 설정 시 이미지가 용지의 중앙에 출력됩니다.&#xA;&quot;right&quot; 설정 시 이미지가 용지의 우측에 출력됩니다.&#xA;&#xA;값 생략 시 &quot;center&quot; 로 적용됩니다." />
+            <Argument name="strVAlign" type="String" in="false" out="false" option="false" variable="false" description="이미지가 용지에 출력될 수직위치를 설정합니다.&#xA;&#xA;&quot;top&quot; 설정 시 이미지가 용지의 상단에 출력됩니다.&#xA;&quot;middle&quot; 설정 시 이미지가 용지의 중앙에 출력됩니다.&#xA;&quot;bottom&quot; 설정 시 이미지가 용지의 하단에 출력됩니다.&#xA;&#xA;값 생략 시 &quot;middle&quot; 로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveToImageFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser" description="지정한 컴포넌트의 이미지를 파일로 출력하는 메소드입니다.">
+        <Syntax text="system.saveToImageFile(objComponent, strFileName, strImageType[,strOptions])">
+          <Return type="Boolean" description="출력에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;출력에 실패하면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="이미지를 파일로 출력할 컴포넌트의 오브젝트를 설정합니다." />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="출력할 파일의 이름을 설정합니다." />
+            <Argument name="strImageType" type="String" in="false" out="false" option="false" variable="false" description="출력할 파일의 이미지 형식을 설정합니다.&#xA;&quot;BMP&quot;, &quot;BMP_MONO&quot;, &quot;JPG&quot;, &quot;TIF&quot;, &quot;TIF_24&quot;, &quot;TIF_MONO&quot;, &quot;GIF&quot;, &quot;PNG&quot; 를 설정할 수 있습니다." />
+            <Argument name="strOptions" type="String" in="false" out="false" option="false" variable="false" description="파일로 출력할 이미지의 압축률, 압축방식, DPI해상도를 설정합니다.&#xA;&#xA;압축률은 이미지 형식이 &quot;JPG&quot;일 때만 지원하며 &quot;Compress:압축비율&quot; 형식으로 설정합니다.&#xA;압축비율은 &quot;0~100&quot; 범위의 정수값으로 설정합니다.&#xA;&#xA;압축방식은 이미지 형식이 &quot;TIF&quot;일 때만 지원하며 &quot;Compress:압축종류&quot; 형식으로 설정합니다.&#xA;압축종류는 &quot;NONE&quot;, &quot;LZW&quot;, &quot;CCITT3&quot;, &quot;CCITT4&quot; 중 하나를 설정합니다.&#xA;&#xA;DPI해상도는 가로는 &quot;ResolutionX:해상도&quot; 형식으로, 세로는 &quot;ResolutionY:해상도&quot; 형식으로 설정합니다.&#xA;해상도는 정수값으로 설정합니다.&#xA;&#xA;각 옵션은 &quot;Compress:95;ResolutionX:300&quot;와 같이 &quot;;&quot; 문자로 구분하여 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="screenToClientX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="스크린 기준의 x 좌표값을 컴포넌트의 클라이언트 기준 x 좌표값으로 반환하는 메소드입니다.">
+        <Syntax text="system.screenToClientX(objComp, nPosX)">
+          <Return type="Number" description="컴포넌트의 클라이언트 기준 x 좌표값을 반환합니다." />
+          <Arguments>
+            <Argument name="nPosX" type="Number" in="false" out="false" option="false" variable="false" description="변환할 스크린 기준의 x 좌표값을 설정합니다." />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="변환될 x 좌표값의 기준이 되는 컴포넌트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="screenToClientY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="스크린 기준의 y 좌표값을 컴포넌트의 클라이언트 기준 x 좌표값으로 반환하는 메소드입니다.">
+        <Syntax text="system.screenToClientY(objComp, nPosY)">
+          <Return type="Number" description="컴포넌트의 클라이언트 기준 y 좌표값을 반환합니다." />
+          <Arguments>
+            <Argument name="nPosY" type="Number" in="false" out="false" option="false" variable="false" description="변환할 스크린 기준의 y 좌표값을 설정합니다." />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="변환될 y 좌표값의 기준이 되는 컴포넌트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="시스템의 클립보드에 지정된 형식으로 데이터를 저장하는 메소드입니다.">
+        <Syntax text="system.setClipboard(strFormat, varData)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="시스템 클립보드에 데이터를 저장할 때 적용할 형식을 문자열로 설정합니다.&#xA;&#xA;&quot;CF_TEXT&quot; 설정 시 데이터를 텍스트 형식으로 저장합니다.&#xA;&quot;CF_UNICODETEXT&quot; 설정 시 데이터를 유니코드 텍스트 형식으로 저장합니다.&#xA;&quot;CF_CSV&quot; 설정 시 데이터를 CSV 형식으로 저장합니다." />
+            <Argument name="varData" type="String" in="false" out="false" option="false" variable="false" description="저장할 데이터를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showModalSync" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="동적으로 생성한 ChildFrame 을 Sync 로 동작하는 Modal 창으로 표시하는 메소드입니다.">
+        <Syntax text="system.showModalSync( objChildframe, objParentFrame, [{objArgumentList} [, objOpener]] );&#xA;system.showModalSync( objChildframe, strID, objParentFrame, [{objArgumentList} [, objOpener]] );">
+          <Return type="Boolean" description="표시된 Modal 창이 닫힐 때 성공/실패 여부를 반환합니다." />
+          <Arguments>
+            <Argument name="objArgumentList" type="Object" in="false" out="false" option="false" variable="false" description="Modal 로 표시된 ChildFrame에 추가될 변수리스트를 &quot;{변수명:변수값 , 변수명:변수값}&quot; 형식으로 설정합니다." />
+            <Argument name="objChildframe" type="Object" in="false" out="false" option="false" variable="false" description="Modal 창으로 표시할 ChildFrame 오브젝트를 설정합니다." />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="opener 로 설정될 Form 의 오브젝트를 설정합니다.&#xA;&#xA;값 생략 시 처음 이벤트가 발생한 Form 의 오브젝트가 설정됩니다." />
+            <Argument name="objParentFrame" type="Object" in="false" out="false" option="false" variable="false" description="부모가 될 Frame 의 Object를 설정합니다." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="ChildFrame 의 ID를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showModalWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="동적으로 생성한 ChildFrame을 별도의 Modal 창으로 표시하는 메소드입니다.">
+        <Syntax text="system.showModalWindow( objChildframe, objParentFrame[, {objArguments}[, objOpener]] );&#xA;system.showModalWindow( objChildframe, strID, objParentFrame[, {objArguments}[, objOpener]] );">
+          <Return type="String" description="별도로 표시된 Modal 창에서 Form.close() 메소드의 파라미터로 전달된 값을 반환합니다." />
+          <Arguments>
+            <Argument name="objArguments" type="Object" in="true" out="false" option="false" variable="false" description="Modal 로 표시된 ChildFrame에 추가될 변수리스트를 &quot;{변수명:변수값 , 변수명:변수값}&quot; 형식으로 설정합니다." />
+            <Argument name="objChildframe" type="Object" in="true" out="false" option="false" variable="false" description="Modal 창으로 표시할 ChildFrame 오브젝트를 설정합니다." />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="opener 로 설정될 Form 의 오브젝트를 설정합니다.&#xA;&#xA;값 생략 시 처음 이벤트가 발생한 Form 의 오브젝트가 설정됩니다." />
+            <Argument name="objParentFrame" type="Object" in="true" out="false" option="false" variable="false" description="부모가 될 Frame 의 Object를 설정합니다." />
+            <Argument name="strID" type="String" in="true" out="false" option="false" variable="false" description="ChildFrame 의 ID를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

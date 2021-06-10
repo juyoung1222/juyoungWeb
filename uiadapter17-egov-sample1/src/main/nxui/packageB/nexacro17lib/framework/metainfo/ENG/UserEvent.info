@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.UserEvent">
+    <ObjectInfo inheritance="" classname="nexacro.UserEvent" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Object which contains function to define and treat events which are defined a user." />
+    <PropertyInfo>
+      <Property name="length" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to return number of added Handler functions." csspropertyname="" csselementname="" normalpropertyname="length" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This property is used to specify the name of a UserEvent." csspropertyname="" csselementname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="To add Handler function to Event.">
+        <Syntax text="UserEvent.addHandler(objFunction)">
+          <Return type="Integer" description="If successful, added index shall be returned and if not, -1 shall be returned." />
+          <Arguments>
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="Event Handler function" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="To delete all Handler functions to set in Event.">
+        <Syntax text="UserEvent.clear()">
+          <Return type="Integer" description="It returns number of deleted Handler functions." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copyHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="To copy Handler function from other Event object.">
+        <Syntax text="UserEvent.copyHandler(objSource)">
+          <Return type="Integer" description="It returns number of copied Handler functions." />
+          <Arguments>
+            <Argument name="objSource" type="Object" in="false" out="false" option="false" variable="false" description="Event object to copy Handler function" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="To find designated function in Event and then return index.">
+        <Syntax text="UserEvent.findHandler(objFunction)">
+          <Return type="Integer" description="It is Index of designated function." />
+          <Arguments>
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="Function object to find" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="fireEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="To generate Event and call designated Handler function.">
+        <Syntax text="UserEvent.fireEvent(objSource, objEvent)">
+          <Return type="Variant" description="return variant of Handler function shall be returned." />
+          <Arguments>
+            <Argument name="objEvent" type="Object" in="false" out="false" option="false" variable="false" description="Event Object to include Event information" />
+            <Argument name="objSource" type="Object" in="false" out="false" option="false" variable="false" description="Object in which a event occurs" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="To return Handler function of a position of designated index.">
+        <Syntax text="UserEvent.getHandler(nIndex)">
+          <Return type="Object" description="Function Object. If designated index position is invalid, it shall return null." />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="Location of Handler function (Zero-based index)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="To insert Handler function to a position of designated index.">
+        <Syntax text="UserEvent.insertHandler(nIndex, objFunction)">
+          <Return type="Integer" description="If successful, inserted index shall be returned and if not, -1 shall be returned." />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="Location to insert (Zero-Based Index)" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="Function object to insert" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="To delete designated index or Handler function.">
+        <Syntax text="UserEvent.removeHandler(objFunction)&#xD;&#xA;UserEvent.removeHandler(nIndex)">
+          <Return type="Integer" description="It returns number of deleted Handler functions (if successful, it is 1 and if not, it is 0)" />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="Location of Event Handler function to delete&#xA;(Zero-Based Index)" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="Object of event handler function to delete" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="To change Handler function of Event.">
+        <Syntax text="UserEvent.setHandler(objFunction)&#xD;&#xA;UserEvent.setHandler(nIndex, objFunction)">
+          <Return type="Integer" description="If successful, changed index shall be returned and if not, -1 shall be returned." />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="Location of Event Handler function to change (Zero-based index)" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="Event Handler function" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

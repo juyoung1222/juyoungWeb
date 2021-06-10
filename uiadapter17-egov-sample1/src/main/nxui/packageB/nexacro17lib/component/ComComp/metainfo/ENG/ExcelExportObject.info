@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExcelExportObject">
+    <ObjectInfo inheritance="" classname="nexacro.ExcelExportObject" shorttypename="ExcelExportObject" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This object is used to export the contents of a Grid in the form of an Excel or Hancell file." />
+    <PropertyInfo>
+      <Property name="commcompress" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It defines whether to use compression in ExcelExportObject communication." csspropertyname="" csselementname="" normalpropertyname="commcompress" />
+      <Property name="commdataformat" group="Hidden" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property determines the data type used to deliver data to the server for exporting a Grid." csspropertyname="" csselementname="" normalpropertyname="commdataformat" />
+      <Property name="exporteventtype" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportEventType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It designates how to display the onprogress event and the export status." csspropertyname="" csselementname="" normalpropertyname="exporteventtype" />
+      <Property name="exportfilename" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It designates a file to be exported" csspropertyname="" csselementname="" normalpropertyname="exportfilename" />
+      <Property name="exportmessagealert" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It defines a character string to be displayed as an error message before export" csspropertyname="" csselementname="" normalpropertyname="exportmessagealert" />
+      <Property name="exportmessagecomplete" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It defines a character string to be displayed when export is completed." csspropertyname="" csselementname="" normalpropertyname="exportmessagecomplete" />
+      <Property name="exportmessageprocess" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It defines a character string to be displayed in the process of Export." csspropertyname="" csselementname="" normalpropertyname="exportmessageprocess" />
+      <Property name="exportmessageready" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It defines a character string to be displayed before export." csspropertyname="" csselementname="" normalpropertyname="exportmessageready" />
+      <Property name="exporttype" group="Misc." subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify an object to be exported by the ExcelExportObject." csspropertyname="" csselementname="" normalpropertyname="exporttype" />
+      <Property name="exportuitype" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportUIType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It defines how to display the status when executing Export." csspropertyname="" csselementname="" normalpropertyname="exportuitype" />
+      <Property name="exporturl" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the URL from which an ExcelExportObject will export files." csspropertyname="" csselementname="" normalpropertyname="exporturl" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the name of a ExcelExportObject." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="templatefilename" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="" csspropertyname="" csselementname="" normalpropertyname="templatefilename" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to add a handler to a certain event of a ExcelExportObject.">
+        <Syntax text="ExcelExportObject.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to find a function and add it to a certain event of a ExcelExportObject as a handler.">
+        <Syntax text="ExcelExportObject.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to add an export item to an ExcelExportObject.">
+        <Syntax text="ExcelExportObject.addExportItem( constExportItemType, objExportItem )&#xA;ExcelExportObject.addExportItem( constExportItemType, varExportSource, strRange [,strExportHead [,strExportSelect [,strExportMerge [,strExportValue [,strExportImage [,strExceptStyle [,strExportSize]]]]]]])">
+          <Return type="Number" description="The index number of the item added to an ExcelExportObject.&#xA;&#xA;This method returns -1 for an unsuccessful addition." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="It specifies a constant representing a component to export.&#xA;&#xA;Only a Grid is available currently, and its constant is &quot;nexacro.ExportItemTypes.GRID&quot;." />
+            <Argument name="objExportItem" type="Object" in="false" out="false" option="false" variable="false" description="It specifies an export item object that holds the data on the contents to export." />
+            <Argument name="strExceptStyle" type="String" in="false" out="false" option="false" variable="false" description="It specifies the CSS-related properties that will be excluded when the Grid is exported.&#xA;&#xA; - &quot;none&quot; : No CSS-related property will be excluded.&#xA; - &quot;align&quot; : Align-related properties ( -nexa-text-align and -nexa-vertical-align) will be excluded&#xA; - &quot;background&quot; : the color-related values of the background property will be excluded.&#xA; - &quot;color&quot; : the color property will be excluded.&#xA; - &quot;font&quot; : the font property will be excluded.&#xA; - &quot;border&quot; : the -nexa-border property will be exclueded.&#xA;&#xA;You can specifies multiple values by using commas (,) as dividers." />
+            <Argument name="strExportHead" type="String" in="false" out="false" option="false" variable="false" description="It determines whether to include the head and summary bands.&#xA; &#xA; - &quot;allband&quot;     : both the head and summary band will be exported.&#xA; - &quot;nohead&quot;     : the head band will not be exported while the summary band will.&#xA; - &quot;nosumm&quot;   : the summary band will not be exported while the head band will.&#xA; - &quot;nohead,nosumm&quot; : neither the head nor the summary band will be exported.&#xA;&#xA;As for the default value, &quot;allband&quot; or &quot;nohead,nosumm&quot; will be applied with the strExportSelect parameter set to &quot;allrecord&quot; or &quot;selectrecord&quot; respectively." />
+            <Argument name="strExportImage" type="String" in="false" out="false" option="false" variable="false" description="It determine how to export images.&#xA;&#xA; - &quot;none&quot; :  No image will be exported.&#xA; - &quot;url&quot;     : The URLs of images will be exported.&#xA; - &quot;image&quot;  : Images will be exported as they are only when the URLs of the images are on the Internet, thus beginning with &quot;http://&quot;.&#xA;&#xA;The default value is &quot;none&quot;." />
+            <Argument name="strExportMerge" type="String" in="false" out="false" option="false" variable="false" description="It determines how to deal with a suppressed cell.&#xA;&#xA;- &quot;suppress&quot; : only one cell will be output according to the result of Grid suppression. &#xA;                    the rest of the involved cells will be printed empty.&#xA;  &#xA;- &quot;nosuppress&quot;  : values of all involved cells will be exported by ignoring the result of Grid suppression." />
+            <Argument name="strExportSelect" type="String" in="false" out="false" option="false" variable="false" description="It determines which rows will be included.&#xA;&#xA; - &quot;allrecord&quot;   : all rows will be exported regardless of the selected area.&#xA; - &quot;selectrecord&quot;  : only selected rows will be exported.&#xA;&#xA;The default value is &quot;allrecord&quot;." />
+            <Argument name="strExportSize" type="String" in="false" out="false" option="false" variable="false" description="It determines whether to apply the widths and heights of the Grid's cells to the exported file.&#xA;&#xA; - &quot;width&quot; : Only the widths will be applied.&#xA; - &quot;height&quot; : Only the heights will be applied.&#xA; - &quot;both&quot; : Both the widths and heights are applied.&#xA;&#xA;The default value is &quot;width&quot;." />
+            <Argument name="strExportValue" type="String" in="false" out="false" option="false" variable="false" description="It determines how to export contents.&#xA;&#xA;&quot;allstyle&quot; : this option does not export the properties applied as a result of selecting the area.&#xA;&quot;selectstyle&quot;: this option exports the properties applied as a result of selecting the area. &#xA;&#xA;The exportable properties are value, format, calendardateformat, font, color, background (color), -nexa-text-aign, -nexa-vertical-align and -nexa-border.&#xA;If a gradient is applied through the background property, the middle point color of the gradient (50% of the position value) will be applied.&#xA;&#xA;The default value is &quot;allstyle&quot;." />
+            <Argument name="strRange" type="String" in="false" out="false" option="false" variable="false" description="It specifies the area of contents to export. The format is &quot;sheet name!range of cells&quot; or &quot;range of cells&quot;." />
+            <Argument name="varExportSource" type="Object" in="false" out="false" option="false" variable="false" description="It specifies a component as an object to export.&#xA;&#xA;Only a Grid is available currently, and you should use a format like &quot;this.Grid00&quot; ." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to delete all the items added to an ExcelExportObject.">
+        <Syntax text="ExcelExportObject.clear()">
+          <Return type="Number" description="It returns the number of the deleted items." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="ExcelExportObject.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearExportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser" description="It deletes a list corresponding to a designated ExportItemType.">
+        <Syntax text="ExcelExportObject.clearExportItems(constExportItemType)">
+          <Return type="Number" description="It returns the number of deleted ExportItems." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="ExportItemType which you want to delete" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="count" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It gets the number of all ExportItems.">
+        <Syntax text="ExcelExportObject.count()">
+          <Return type="Number" description="It returns the number of all items." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="countExportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It seeks the number of items of the list relevant to designated ExportItemType.">
+        <Syntax text="ExcelExportObject.countExportItems(constExportItemType)">
+          <Return type="Number" description="It returns the number of ExportItems of a designated ExportItemType." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="ExportItemType which you want to get" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="delExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It deletes a certain ExportItem from a list relevant to a designated ExportItem Type.">
+        <Syntax text="ExcelExportObject.delExportItem(constExportItemType,nItemIndex)">
+          <Return type="Boolean" description="It returns success or failure of deletion.&#xD;&#xA;In case a constItemType is not available or an index doesn't have a nItemIndex, false is returned." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="ExportItemType which you want to delete" />
+            <Argument name="nItemIndex" type="Number" in="false" out="false" option="false" variable="false" description="ExportItem Index which you want to delete" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to delete a ExcelExportObject that is dynamically created through a script.">
+        <Syntax text="ExcelExportObject.destroy()">
+          <Return type="Boolean" description="It will return &quot;true&quot; if a ExcelExportObject is successfully removed.&#xA;If not, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="exportData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It exports all exportItems.">
+        <Syntax text="ExcelExportObject.exportData([strParam, dsParam, bOrgValue]);">
+          <Return type="Number" description="It returns the number of ExporItems to be finally exported.&#xA;&#xA;When the ExportUrl is not set or a necessary property has a wrong value, it returns -1. When there is no relevant ExportItem, it returns 0." />
+          <Arguments>
+            <Argument name="bOrgValue" type="Boolean" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="dsParam" type="Object" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strParam" type="String" in="false" out="false" option="false" variable="false" description="This parameter is delivered during the communication with the server and used for user-extended feature (eg. DB key value)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="exportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It exports all ExportItems of entire designated ExportItemTypes.">
+        <Syntax text="ExcelExportObject.exportItems(constExportItemType)">
+          <Return type="Number" description="It returns the number of ExportItem to be finally exported.&#xD;&#xA;&#xD;&#xA;If ExportUrl is not set, or an input argument is an error, it returns &quot;-1&quot;.  If there is no corresponding ExportItem, it returns &quot;0&quot;." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="ExportItemType which you want to export" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method finds a handler in a certain event of a ExcelExportObject and returns the index of the handler.">
+        <Syntax text="ExcelExportObject.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns a specific handler from a certain event of a ExcelExportObject by specifying the index number of the handler.">
+        <Syntax text="ExcelExportObject.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It gets a certain ExportItem from a list relevant to a selected ExportItemType.">
+        <Syntax text="ExcelExportObject.getExportItem(constExportItemType,nItemIndex)">
+          <Return type="Object" description="It returns a ExportItem object correspondent to a designated index.&#xD;&#xA;If it is not possible to find the object, it returns &quot;null&quot;." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="ExportItemType which you want to get" />
+            <Argument name="nItemIndex" type="Number" in="false" out="false" option="false" variable="false" description="ExportItem Index which you want to get" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to remove a handler in a certain event of a ExcelExportObject.">
+        <Syntax text="ExcelExportObject.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to find a handler in a certain event of a ExcelExportObject and remove it.">
+        <Syntax text="ExcelExportObject.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid&#xA;If this method fails to find the handler in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to change the first handler in a certain event of a ExcelExportObject.">
+        <Syntax text="ExcelExportObject.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method finds a function and uses it to replace the first handler in a certain event of a ExcelExportObject.">
+        <Syntax text="ExcelExportObject.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It places a designated ExportItem into a certain place of the list relevant to a designated ExportItem Type.">
+        <Syntax text="ExcelExportObject.setExportItem( constExportItemType,nItemIndex,objExportItem )">
+          <Return type="Boolean" description="It returns whether it succeeds or not.&#xD;&#xA;If the constItemType is not available or the nItemIndex is non-existing index, it returns 'false'." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="An ExportItem type which you want to set" />
+            <Argument name="nItemIndex" type="Number" in="false" out="false" option="false" variable="false" description="An ExportItem Index which you want to set" />
+            <Argument name="objExportItem" type="Object" in="false" out="false" option="false" variable="false" description="An ExportItem which you want to set" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This event occurs when there is an error during export process.">
+        <Syntax text="ExcelExportObject.onerror(obj:nexacro.ExcelExportObject,e:nexacro.ExcelExportErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelExportErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onprogress" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This event occurs at each stage of export process.">
+        <Syntax text="ExcelExportObject.onprogress(obj:nexacro.ExcelExportObject,e:nexacro.ExcelExportProgressEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelExportProgressEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This event occurs when export process is completed.">
+        <Syntax text="ExcelExportObject.onsuccess(obj:nexacro.ExcelExportObject,e:nexacro.ExcelExportEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelExportEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

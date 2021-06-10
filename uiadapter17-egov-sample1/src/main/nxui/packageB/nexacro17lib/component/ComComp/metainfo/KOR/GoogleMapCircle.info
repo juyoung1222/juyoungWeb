@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GoogleMapCircle">
+    <ObjectInfo inheritance="" classname="nexacro.GoogleMapCircle" shorttypename="GoogleMapCircle" csstypename="GoogleMapCircle" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMap 컴포넌트에 로드된 지도의 특정위치에 원을 표시 할 때 사용하는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="latitude" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapCircle 이 표시될 위치의 위도값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="latitude" />
+      <Property name="longitude" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapCircle 이 표시될 위치의 경도값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="longitude" />
+      <Property name="fromreferenceobject" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="이벤트 발생의 원인이 되는 컴포넌트 또는 서브컨트롤을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="fromreferenceobject" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapCircle 을 지도에 표시할 지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="visible" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

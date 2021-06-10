@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExcelImportObject">
+    <ObjectInfo inheritance="" classname="nexacro.ExcelImportObject" shorttypename="ExcelImportObject" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="Excelファイルの内容をDataSetにインポートするオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="importfilemode" group="Hidden" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="local" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ImportFileMode" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ImportSourceとして使用するFileの存在状態の処理方法を指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="importfilemode" />
+      <Property name="importtype" group="Misc." subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObjectがインポートするTargetオブジェクトを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="importtype" />
+      <Property name="importurl" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportオブジェクトがインポートするServer URLを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="importurl" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObjectの名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObjectの特定イベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="ExcelImportObject.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="関数を検索してExcelImportObjectの特定のイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="ExcelImportObject.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されない場合は、上位の領域に検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数の名前を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="ExcelImportObject.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="スクリプトで動的に生成したExcelImportObjectを削除するメソッドです。">
+        <Syntax text="ExcelImportObject.destroy()">
+          <Return type="Boolean" description="ExcelImportObjectが正常に削除されると、「true」を返します。&#xA;ExcelImportObjectが正常に削除されないと、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObjectの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="ExcelImportObject.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントで検索しようとするハンドラ関数のインデックスを返します。&#xA;検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObjectの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="ExcelImportObject.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;インデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="importData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="インポートを実行するメソッドです。">
+        <Syntax text="ExcelImportObject.importData( strSource,strRange,strOutDatasets [,strArgument] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strArgument" type="String" in="false" out="false" option="false" variable="false" description="import transactionのための引数値。  a=bの形で入力し、スペースで区切ります。 パスワードが設定されたエクセルファイルのときは、&quot;filepassword=エクセルファイルのパスワード」を入力することで正常動作します。" />
+            <Argument name="strOutDatasets" type="String" in="false" out="false" option="false" variable="false" description="import transactionの処理結果を取得するDatasetのIDです。 &#xA;Datasetを1つ以上取得することができます。 &#xA;各IDのペアは、空白で区切られており、a=bの形で、実際の名前と入力名をマッチングします。" />
+            <Argument name="strRange" type="String" in="false" out="false" option="false" variable="false" description="import Rangeを指定します。 &#xA;Excelの場合、該当&quot;Sheet!Cell:Cell&quot;に指定します。&#xA;&#xA;複数のimportを同時実行する場合&#xA;[Command=&quot;strCommand&quot;; Output=dsName; Head=Sheet!Cell:Cell; Body=Sheet!Cell:Cell]&#xA;....&#xA;....&#xA;[Command=&quot;strCommand&quot;; Output=dsName; Head=Sheet!Cell:Cell; Body=Sheet!Cell:Cell]&#xA;&#xA;&lt;default&gt;&#xA;Command：getsheetlist = シートリストの照会、getsheetdata = シートデータの照会、省略時のシートデータの照会 &#xA;Output：結果を渡されるデータセットの名前、省略時output1、output2...で​​自動生成 &#xA;Head：ヘッドカラム領域、省略時のカラム名はColumn0、Column1...で​​自動生成 &#xA;Body：ボディカラム領域、省略時のすべてのレコードを返す" />
+            <Argument name="strSource" type="String" in="false" out="false" option="false" variable="false" description="import Sourceを指定します。 &#xA;Excelの場合は、該当Excelファイルのサーバー位置を指定します。importfilemode=&quot;local&quot;を指定すると、importSourceは無視され、該当ファイルを選択するファイルダイアログが表示され、選択します。&quot;&quot;値を入力するときにもファイルダイアログが表示され、選択します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObjectの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="ExcelImportObject.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObjectの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="ExcelImportObject.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObjectの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="ExcelImportObject.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObjectの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="ExcelImportObject.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="インポート中にエラーが発生したときに発生するイベントです。">
+        <Syntax text="ExcelImportObject.onerror(obj:nexacro.ExcelImportObject,e:nexacro.ExcelImportErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelImportErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="インポートが完了したときに発生するイベントです。">
+        <Syntax text="ExcelImportObject.onsuccess(obj:nexacro.ExcelImportObject,e:nexacro.ExcelImportEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelImportEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

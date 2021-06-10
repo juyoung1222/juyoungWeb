@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro._Picture">
+    <ObjectInfo inheritance="" classname="nexacro._Picture" shorttypename="" csstypename="Picture" csscontrolname="" group="Object_old" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Picture Object. It contains image information.&#xA;(It supports image format of BMP, GIF, JPEG, PNG, TIFF, ICON)" />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="getImage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is method to bring Image Object, which is one of DrawingObjects, from Picture PropertyObject.">
+        <Syntax text="Picture.getImage()">
+          <Return type="Object" description="DrawingObjects::Image Object" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setImage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Method to set Image Object, one of DrawingObjects.">
+        <Syntax text="Picture.setImage(objImage)">
+          <Return type="Boolean" description="If setting is successful, it shall return true and if failed it shall return false." />
+          <Arguments>
+            <Argument name="objImage" type="Object" in="false" out="false" option="false" variable="false" description="DrawingObject::Image Object" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

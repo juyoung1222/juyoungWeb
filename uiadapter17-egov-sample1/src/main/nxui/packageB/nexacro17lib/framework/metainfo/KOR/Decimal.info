@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Decimal">
+    <ObjectInfo inheritance="" classname="nexacro.Decimal" shorttypename="Decimal" csstypename="" csscontrolname="" group="Object_old" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="decimal 자료형을 처리하기 위해 제공하는 오브젝트입니다." />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="abs" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값을 절대값으로 변경하는 메소드입니다.">
+        <Syntax text="Decimal.abs()">
+          <Return type="Decimal" description="변경된 절대값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="addDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값에 Decimal 형 값을 더하는 메소드입니다.">
+        <Syntax text="Decimal.addDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트에 더할 Decimal 오브젝트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값에 숫자값을 더하는 메소드입니다.">
+        <Syntax text="Decimal.addDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트에 더할 숫자값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="ceil" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값을 소수점 기준으로 올림한 값으로 변경하는 메소드입니다.">
+        <Syntax text="Decimal.ceil()">
+          <Return type="Decimal" description="소수점을 기준으로 올림한 값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="divDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값을 Decimal 형 값으로 나누는 메소드입니다.">
+        <Syntax text="Decimal.divDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트를 나눌 Decimal 오브젝트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="divDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값을 숫자값으로 나누는 메소드입니다.">
+        <Syntax text="Decimal.divDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트를 나눌 숫자값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="floor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값을 소수점 기준으로 내림한 값으로 변경하는 메소드입니다.">
+        <Syntax text="Decimal.floor()">
+          <Return type="Decimal" description="소수점을 기준으로 내림한 값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isEqual" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값과 인수로 전달된 Decimal 오브젝트의 값이 일치하는 지 비교하는 메소드입니다.">
+        <Syntax text="Decimal.isEqual( objDecimal )">
+          <Return type="Boolean" description="두 오브젝트의 값이 일치하면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;두 오브젝트의 값이 다르면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="값을 비교할 Decimal 오브젝트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isInfinity" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값이 Infinity 값인지 확인하는 메소드입니다.">
+        <Syntax text="Decimal.isInfinity()">
+          <Return type="Boolean" description="Decimal 오브젝트의 값이 Infinity 값이면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;Decimal 오브젝트의 값이 Infinity 값이 아니면 &quot;false&quot; 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNaN" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값이 NaN 값인지 확인하는 메소드입니다.">
+        <Syntax text="Decimal.isNaN()">
+          <Return type="Boolean" description="Decimal 오브젝트의 값이 NaN 값이면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;Decimal 오브젝트의 값이 NaN 값이 아니면 &quot;false&quot; 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNaNOrInf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값이 Infinity 또는 NaN 값인지 확인하는 메소드입니다.">
+        <Syntax text="Decimal.isNaNOrInf()">
+          <Return type="Boolean" description="Decimal 오브젝트의 값이 Infinity 또는 NaN 값이면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;Decimal 오브젝트의 값이 Infinity, NaN 값이 모두 아니면 &quot;false&quot; 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNegative" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값이 음수값인지 확인하는 메소드입니다.">
+        <Syntax text="Decimal.isNegative()">
+          <Return type="Boolean" description="Decimal 오브젝트의 값이 음수값이면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;Decimal 오브젝트의 값이 음수값이 아니면 &quot;false&quot; 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isZero" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트의 값의 Zero 여부를 반환하는 메소드입니다.">
+        <Syntax text="Decimal.isZero()">
+          <Return type="Boolean" description="Decimal 오브젝트의 값이 0 값이면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;Decimal 오브젝트의 값이 0 값이 아니면 &quot;false&quot; 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="modDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값을 Decimal 형 값으로 나눈 나머지값으로 변경하는 메소드입니다.">
+        <Syntax text="Decimal.modDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트를 나눌 Decimal 오브젝트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="modDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값을 숫자값으로 나눈 나머지값으로 변경하는 메소드입니다.">
+        <Syntax text="Decimal.modDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트를 나눌 숫자값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mulDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값에 Decimal 형 값을 곱하는 메소드입니다.">
+        <Syntax text="Decimal.mulDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트에 곱할 Decimal 오브젝트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mulDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값에 숫자값을 곱하는 메소드입니다.">
+        <Syntax text="Decimal.mulDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트에 곱할 숫자값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="round" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값을 소수점 기준으로 반올림한 값으로 변경하는 메소드입니다.">
+        <Syntax text="Decimal.round()">
+          <Return type="Decimal" description="소수점을 기준으로 반올림한 값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 인수로 전달된 Decimal 오브젝트의 값을 저장하는 메소드입니다.">
+        <Syntax text="Decimal.setDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트에 저장할 다른 Decimal 오브젝트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 인수로 전달된 숫자값을 저장하는 메소드입니다.">
+        <Syntax text="Decimal.setDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트에 저장할 숫자값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 숫자로 된 문자열을 저장하는 메소드입니다.">
+        <Syntax text="Decimal.setString( strValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strValue" type="String" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트에 저장할 숫자로 된 문자열을 설정합니다.&#xA;&#xA;숫자가 아닌 문자가 포함되어 있을 경우 정상적으로 저장되지 않습니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값에서 Decimal 형 값을 빼는 메소드입니다.">
+        <Syntax text="Decimal.subDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트에서 값을 빼려는 Decimal 오브젝트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값에서 숫자값을 빼는 메소드입니다.">
+        <Syntax text="Decimal.subDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="Decimal 오브젝트에서 값을 빼려는 숫자값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값을 문자열로 반환하는 메소드입니다.">
+        <Syntax text="Decimal.toString()">
+          <Return type="String" description="Decimal 오브젝트에 저장된 값을 문자열로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="trunc" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal 오브젝트에 저장된 값을 소수점 기준으로 버림한 값으로 변경하는 메소드입니다.">
+        <Syntax text="Decimal.trunc()">
+          <Return type="Decimal" description="소수점을 기준으로 버림한 값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

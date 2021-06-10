@@ -1,0 +1,357 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.0">
+  <Form id="frameTop" width="1024" height="44" titletext="frameTop" onload="form_onload" scrolltype="none" scrollbartype="none" onsize="form_onsize">
+    <Layouts>
+      <Layout height="44" width="1024">
+        <Static id="staLogo" taborder="0" text="Nexacro17" left="-12" top="0" width="165" bottom="0" textAlign="center" font="16pt &quot;맑은 고딕&quot;" color="slategray" onclick="staLogo_onclick"/>
+        <Static id="staName" taborder="2" text="운영자" left="" top="8" width="43" height="24" right="191" bottom="" font="bold 10pt &quot;맑은 고딕&quot;"/>
+        <Static id="Static02" taborder="1" text="님 환영합니다." left="" top="8" width="91" height="24" right="93" bottom=""/>
+        <Button id="btnLogOut" taborder="3" text="로그아웃" left="" top="12" width="60" height="19" right="15" bottom="" onclick="btnLogOut_onclick"/>
+        <Div id="divTopBtn" taborder="4" left="240" right="326" onclick="div_Tab_onclick" top="0" bottom="0">
+          <Layouts>
+            <Layout/>
+          </Layouts>
+        </Div>
+        <Button id="btnPre" taborder="5" top="11" height="20" visible="true" onclick="btnPre_onclick" text="&lt;" right="278" width="20"/>
+        <Button id="btnNex" taborder="6" top="11" height="20" visible="true" onclick="btnNex_onclick" text="&gt;" right="257" width="20"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="dsMenu"/>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[/**
+*  컨설팅 표준화 작업
+*  @MenuPath 
+*  @FileName         frameBottom.xfdl 
+*  @Creator             soojeong
+*  @CreateDate     2017.01.23
+*  @LastModifier  
+*  @LastModifyDate  
+*  @Version         1.0
+*  @Outline         
+*  @Desction   
+************** 소스 수정 이력 *************************************************
+*    date                  Modifier            Description
+*******************************************************************************
+*  2017.01.23         soojeong                최초 생성 
+*******************************************************************************
+*/
+
+
+/************************************************************************************************
+ * FORM 변수 선언 영역
+ ************************************************************************************************/
+this.objApp;
+/***********************************************************************************************
+* FORM EVENT 영역(onload)
+/***********************************************************************************************/
+this.form_onload = function(obj:nexacro.Form,e:nexacro.LoadEventInfo)
+{
+     this.objApp = nexacro.getApplication();
+    this.divTopBtn.form.set_scrollbartype("none");
+};
+/************************************************************************************************
+* TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+
+/************************************************************************************************
+ * CALLBACK 콜백 처리부분
+ ************************************************************************************************/
+ 
+ /************************************************************************************************
+ * 사용자 FUNCTION 영역
+ ************************************************************************************************/
+ /**
+ * 로그인 사용자 세팅 
+ * @return 
+ * @example
+ *
+ * @memberOf 
+ */
+this.fnSetName = function()
+{    
+    this.staName.set_text(nexacro.getEnvironmentVariable("gvUserNm"));        
+}
+
+/**
+ * @description 메세지 콜백
+*/
+this.fnMsgCallback = function (strId, strVal)
+{
+    //trace("strId >> " + strId + "   strVal >> " + strVal);
+    if(strId == "confirm.logout"){
+        //trace("strVal : " + strVal);
+        if(strVal)
+        {
+            this.objApp.exit();
+        }
+    }
+};
+
+/**
+ * menu tab 버튼 첫번째 index 가져오는 함수
+ * @public
+ * @return 
+ * @example
+ * @memberOf 
+ */
+this.fnGetFirstTabIndex = function ()
+{
+    for(var i=0; i < this.dsMenu.rowcount;i++)
+    {
+        var tabID   = this.dsMenu.getColumn(i, this.objApp.gvMenuColumns.menuId);
+        var tabObj  = this.fnFindObj("btnTop" + tabID);
+        if(0 <= tabObj.left) {
+            return i;
+        }
+    }
+    return -1;
+}
+
+/**
+ * menu tab 버튼 첫번째 이동 함수
+ * @public
+ * @return 
+ * @example
+ * @memberOf 
+ */
+this.fnMoveFirst = function (nMoveIdx)
+{
+    var nIndex;
+    var tabID;
+    var tabObj;
+    var btnObj;
+    var tabFirstObj;
+
+    nIndex = this.fnGetFirstTabIndex();
+    if (nIndex < 0) 
+    {
+        return;
+    }
+
+    if (nMoveIdx < 0) 
+    {
+        return;
+    }
+    if (nMoveIdx >= this.dsMenu.rowcount) 
+    {
+        return;
+    }
+
+    tabID = this.dsMenu.getColumn(nIndex, this.objApp.gvMenuColumns.menuId);
+    var tabFirstObj = this.fnFindObj("btnTop" + tabID);
+
+    tabID = this.dsMenu.getColumn(nMoveIdx, this.objApp.gvMenuColumns.menuId);
+    tabObj = this.fnFindObj("btnTop" + tabID);
+
+    var nShiftPos = tabObj.getOffsetLeft() - tabFirstObj.getOffsetLeft();
+
+    for (var i = 0; i < this.dsMenu.rowcount; i++) 
+    {
+        tabID = this.dsMenu.getColumn(i, this.objApp.gvMenuColumns.menuId);
+        tabObj = this.fnFindObj("btnTop" + tabID);
+        tabObj.move(tabObj.getOffsetLeft() - nShiftPos, tabObj.getOffsetTop());
+    }
+}
+
+/**
+ * menu tab 체크 
+ * @public
+ * @param 
+ * @return 
+ * @example
+ * @memberOf 
+ */
+this.fnRedrawTab = function ()
+{
+    var tabObj;
+    var exBtnObj;
+
+    this.fnCheckShowBtnAll();
+    this.fnSetTabSpinBtnShow();
+}
+
+/**
+ * menu tab 모든 버튼 체크 
+ * @public
+ * @param 
+ * @return 
+ * @example
+ * @memberOf 
+ */
+this.fnCheckShowBtnAll = function ()
+{
+    if (this.dsMenu.rowcount == 0) return;
+
+    var tabFirstObj = this.fnFindObj("btnTop" + this.dsMenu.getColumn(0, this.objApp.gvMenuColumns.menuId));
+    var tabLastObj = this.fnFindObj("btnTop" + this.dsMenu.getColumn(this.dsMenu.rowcount - 1, this.objApp.gvMenuColumns.menuId));
+    var nLeft = tabFirstObj.getOffsetLeft();
+    var nRight = tabLastObj.getOffsetRight();
+
+    if (this.divTopBtn.getOffsetWidth() >= (nRight - nLeft)) 
+    {
+        this.fnMoveFirst(0);
+        return;
+    }
+}
+
+/**
+ * mdi spin 버튼 visible 처리
+ * @public
+ * @return 
+ * @example
+ * @memberOf 
+ */
+this.fnSetTabSpinBtnShow = function ()
+{
+    var tabObj;
+    
+    if(this.dsMenu.rowcount == 0) 
+    {        
+        this.btnPre.set_enable(false);
+        this.btnNex.set_enable(false);
+        return;
+    }
+
+    tabObj = this.fnFindObj("btnTop" + this.dsMenu.getColumn(this.dsMenu.rowcount - 1, this.objApp.gvMenuColumns.menuId));
+
+    if(this.divTopBtn.getOffsetWidth() < tabObj.getOffsetRight()) 
+    {
+        this.btnNex.set_enable(true);
+    }
+    else 
+    {
+        this.btnNex.set_enable(false);
+    }
+
+    tabObj = this.fnFindObj("btnTop" + this.dsMenu.getColumn(0, this.objApp.gvMenuColumns.menuId));
+
+    if(tabObj.getOffsetLeft() < 0) 
+    {
+        this.btnPre.set_enable(true);
+    }
+    else 
+    {
+        this.btnPre.set_enable(false);
+    }
+}
+
+/************************************************************************************************
+ * 각 COMPONENT 별 EVENT 영역
+ ************************************************************************************************/
+this.Menu00_onmenuclick = function(obj:nexacro.Menu,e:nexacro.MenuClickEventInfo)
+{
+    this.objApp.gvLeftFrame.form.getMenu(e.id);
+};
+
+this.staLogo_onclick = function(obj:nexacro.Static,e:nexacro.ClickEventInfo)
+{
+    var objApp = nexacro.getApplication() ;    
+
+    objApp.gvVFrameSet1.set_separatesize("32,0,*");
+};
+
+this.btnLogOut_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    if(system.navigatorname == "nexacro")
+    {        
+        var sMsgId = "confirm.logout";                                    //메세지ID
+        var arrArg = "";                                                //메세지취환될값 배열[생략가능]
+        var sPopId = sMsgId;                                            //메세지팝업ID[생략가능]    *해당화면에서 메시지 중복사용시 구분되는값을 넣어줘야함
+        var sMsgCallback = "fnMsgCallback";                                //메세지콜백[생략가능]         * confirm성 메시지를 사용 시 반드시 필요
+        
+        // 변경된 내역을 저장 하시겠습니까?
+        this.gfnAlert(sMsgId, arrArg, sPopId, sMsgCallback);    
+    }
+    else
+    {
+        window.top.location.reload(true);
+    }    
+};
+
+this.fnLoad = function ()
+{
+    this.objApp.gdsMenu.filter(this.objApp.gvMenuColumns.menuLevel + "==0");
+    this.dsMenu.copyData(this.objApp.gdsMenu, true);
+    this.objApp.gdsMenu.filter("");
+    this.fnSetTopMenu();
+};
+
+this.fnSetTopMenu = function ()
+{
+    var btnObj;
+
+    for (var i = 0; i < this.dsMenu.getRowCount(); i++) 
+    {
+        var strID = this.dsMenu.getColumn(i, this.objApp.gvMenuColumns.menuId);
+        var strName = this.dsMenu.getColumn(i, this.objApp.gvMenuColumns.menuNm);
+        this.fnCreateTopMenu(strID, strName, i);
+    }
+    this.fnRedrawTab();
+};
+
+// Top menu creation
+this.fnCreateTopMenu = function (strID, strName, index)
+{
+    // Creating page button
+    var objBtn = new Button();
+    objBtn.init("btnTop" + strID, ((index * 133)), 0, (index * 133) + 133 - (index * 133), 40);
+    this.divTopBtn.addChild(objBtn.name, objBtn);
+    objBtn.set_text(strName);
+    objBtn.menuid = strID;
+    //objBtn.set_cssclass("TF_menu");
+
+    objBtn.setEventHandler("onclick", this.Button_onclick, this);
+    objBtn.set_visible(true);
+    objBtn.show();
+};
+
+this.Button_onclick = function (obj:Button, e:ClickEventInfo)
+{
+    this.objApp.gvLeftFrame.form.fnChangeMenu(obj.menuid);
+    this.fnSetActiveBtn(obj.menuid);
+};  
+  
+this.fnSetActiveBtn = function (menuId)
+{
+    var MenuObj;
+
+    for (var i = 0; i < this.dsMenu.getRowCount(); i++) 
+    {
+        MenuObj = this.fnFindObj("btnTop" + this.dsMenu.getColumn(i, this.objApp.gvMenuColumns.menuId));
+        if (menuId == this.dsMenu.getColumn(i, this.objApp.gvMenuColumns.menuId)) 
+        {
+            //MenuObj.set_cssclass("btn_menu_select");
+        }
+        else 
+        {
+            //MenuObj.set_cssclass("btn_menu");
+        }
+    }
+};
+
+this.fnFindObj = function (strId)
+{
+    return this.divTopBtn.form.components[strId];
+};
+
+this.btnPre_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    this.fnMoveFirst(this.fnGetFirstTabIndex() - 1);
+    this.fnRedrawTab();
+};
+
+this.btnNex_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+    this.fnMoveFirst(this.fnGetFirstTabIndex() + 1);
+    this.fnRedrawTab();
+};
+
+this.form_onsize = function(obj:nexacro.Form,e:nexacro.SizeEventInfo)
+{
+    this.fnRedrawTab();
+};
+
+]]></Script>
+  </Form>
+</FDL>

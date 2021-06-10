@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.TrayPopupMenu">
+    <ObjectInfo inheritance="" classname="nexacro.TrayPopupMenu" shorttypename="TrayPopupMenu" csstypename="" csscontrolname="" group="Component" subgroup="Component ( default )" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows nexacro Browser" description="This object represents a pop-up menu of a Tray.&#xA;This object uses a pop-up menu provided as a system API." />
+    <PropertyInfo>
+      <Property name="captioncolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to specify a column of a dataset that is designated as an innerdataset.The column contains the texts of pop-up menu items." csspropertyname="" csselementname="" normalpropertyname="captioncolumn" />
+      <Property name="checkboxcolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to specify a Dataset column that determines whether to display an image of a checked checkbox." csspropertyname="" csselementname="" normalpropertyname="checkboxcolumn" />
+      <Property name="enablecolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to designate a column to be used to determine the activation of an item among the columns of a inner-dataset." csspropertyname="" csselementname="" normalpropertyname="enablecolumn" />
+      <Property name="hotkeycolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to designate a dataset column for the hotkeys for menu items. The dataset is bound to the innerdataset property." csspropertyname="" csselementname="" normalpropertyname="hotkeycolumn" />
+      <Property name="iconcolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to specify a Dataset column that contains the icons of pop-up menu items." csspropertyname="" csselementname="" normalpropertyname="iconcolumn" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This property is used to set the identification of a TrayPopupMenu." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="idcolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to specify a column of a dataset that is designated as an innerdataset. The column contains the IDs of pop-up menu items." csspropertyname="" csselementname="" normalpropertyname="idcolumn" />
+      <Property name="innerdataset" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerDatasetID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to specify the ID of a dataset that defines tray pop-up menu items." csspropertyname="" csselementname="" normalpropertyname="innerdataset" />
+      <Property name="levelcolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to specify a column of a dataset that is designated as an innerdataset. The column contains the levels of pop-up menu items." csspropertyname="" csselementname="" normalpropertyname="levelcolumn" />
+      <Property name="userdatacolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to designate a column of a inner-dataset as user data." csspropertyname="" csselementname="" normalpropertyname="userdatacolumn" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="trackPopup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This is a method to show a tray popup menu at the location of a mouse cursor.">
+        <Syntax text="TrayPopupMenu.trackPopup()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="oninnerdatachanged" group="Event" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This event occurs when there has been a change in the data of a dataset that is bound to the innerdataset property of a TrayPopupMenu.">
+        <Syntax text="TrayPopupMenu.oninnerdatachanged(obj:nexacro.TrayPopupMenu,e:nexacro.InnerdataChangedEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InnerdataChangedEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmenuclick" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="It occurs when a menu item is clicked.">
+        <Syntax text="TrayPopupMenu.onmenuclick(obj:nexacro.TrayPopupMenu,e:nexacro.MenuClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MenuClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

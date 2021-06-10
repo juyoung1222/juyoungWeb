@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.BindItem">
+    <ObjectInfo inheritance="" classname="nexacro.BindItem" shorttypename="BindItem" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="컴포넌트의 특정 속성과 데이터셋의 데이터를 바인딩하기 위해 사용하는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="columnid" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="바인딩할 Dataset의 Column ID를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="columnid" />
+      <Property name="compid" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="바인딩할 컴포넌트 ID를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="compid" />
+      <Property name="datasetid" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="바인딩할 Dataset ID를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="datasetid" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="BindItem 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="BindItem 의 부모 오브젝트를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="propid" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="바인딩할 컴포넌트의 속성을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="propid" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="bind" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="스크립트에서 동적으로 생성된 BindItem을 실행시키는 메소드입니다.">
+        <Syntax text="BindItem.bind()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="스크립트에서 동적으로 생성한 BindItem 을(를) 삭제하는 메소드입니다.">
+        <Syntax text="BindItem.destroy()">
+          <Return type="Boolean" description="BindItem 이(가) 정상적으로 삭제되면 &quot;true&quot;를 반환합니다.&#xA;BindItem 이(가) 정상적으로 삭제되지 않으면 &quot;false&quot;를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="스크립트에서 동적으로 생성된 BindItem을 초기화시키는 메소드입니다.">
+        <Syntax text="BindItem.init(strName[,strCompID,strPropertyID,strDatasetID,strColumnID])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strColumnID" type="String" in="false" out="false" option="false" variable="false" description="바인딩할 Dataset Column ID" />
+            <Argument name="strCompID" type="String" in="false" out="false" option="false" variable="false" description="바인딩할 컴포넌트의 ID" />
+            <Argument name="strDatasetID" type="String" in="false" out="false" option="false" variable="false" description="바인딩할 Dataset ID" />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="BindItem을 구별할 수 있는 이름" />
+            <Argument name="strPropertyID" type="String" in="false" out="false" option="false" variable="false" description="바인딩할 컴포넌트의 PropertyID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

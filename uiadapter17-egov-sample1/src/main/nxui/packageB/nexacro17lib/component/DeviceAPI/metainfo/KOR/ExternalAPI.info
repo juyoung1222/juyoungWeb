@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExternalAPI">
+    <ObjectInfo inheritance="" classname="nexacro.ExternalAPI" shorttypename="ExternalAPI" csstypename="ExternalAPI" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="외부 기기 (혹은 외부 모듈 또는 앱)을 연동하여 실행합니다." />
+    <PropertyInfo>
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="ExternalAPI의 고유 식별자를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="ExternalAPI 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="함수를 검색하여 ExternalAPI 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="ExternalAPI.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="ExternalAPI.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execExtAPI" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 특정 외부모듈 API 를 실행하는 메소드입니다.">
+        <Syntax text="ExternalAPI.execExtAPI(strRecvID, strApplicationID, strAPI[, strParams])">
+          <Return type="Boolean" description="메소드 실행에 성공하면 &quot;true&quot;를 반환합니다.&#xA;&#xA;파라미터값을 잘 못 설정하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="strAPI" type="String" in="false" out="false" option="false" variable="false" description="실행할 외부모듈 API 의 이름을 문자열로 설정합니다." />
+            <Argument name="strApplicationID" type="String" in="false" out="false" option="false" variable="false" description="실행할 외부모듈 API 가 정의된 앱의 ID 를 문자열로 설정합니다." />
+            <Argument name="strParams" type="String" in="false" out="false" option="false" variable="false" description="실행할 외부모듈 API 에 전달할 파라미터를 문자열로 설정합니다.&#xA;&#xA;파라미터가 여러개일 경우 각 파라미터는 공백으로 구분합니다.&#xA;파라미터값에 공백이 포함된 경우는 &quot;'&quot; (홑따옴표) 를 사용하여 구분합니다." />
+            <Argument name="strRecvID" type="String" in="false" out="false" option="false" variable="false" description="외부모듈 API 실행을 구분하는 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="ExternalAPI 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="ExternalAPI.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="ExternalAPI 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="ExternalAPI.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isAccessible" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 특정 앱에 접근이 가능한지 확인하는 메소드입니다.">
+        <Syntax text="ExternalAPI.isAccessible (strApplicationID)">
+          <Return type="Boolean" description="메소드 실행에 성공하면 &quot;true&quot;를 반환합니다.&#xA;&#xA;파라미터값을 잘 못 설정하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="strApplicationID" type="String" in="false" out="false" option="false" variable="false" description="접근 가능여부를 확인하려는 앱의 ID 를 문자열로 설정합니다.&#xA;&#xA;Android 의 경우 domain 형태로 지정합니다. (&quot;com.tobesoft.nexacroplatform.testmodule&quot;)&#xA;iOS 의 경우 URL Scheme 형태로 지정합니다. (&quot;TobesoftTestApp://&quot;)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="ExternalAPI 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="ExternalAPI.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="ExternalAPI 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="ExternalAPI.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="ExternalAPI 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="ExternalAPI.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="ExternalAPI 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="ExternalAPI.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 지정된 외부 모듈에 대한 접근이 실패한 경우에 발생하는 이벤트입니다.">
+        <Syntax text="ExternalAPI.onerror(obj:nexacro.ExternalAPI,e:nexacro.ExternalAPIErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExternalAPIErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrecvdata" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 지정된 외부 모듈에서 데이터(문자열)를 전달받았을 때 발생하는 이벤트입니다.">
+        <Syntax text="ExternalAPI.onrecvdata(obj:nexacro.ExternalAPI,e:nexacro.ExternalAPIEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExternalAPIEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 지정된 외부모듈이 접근 가능한 경우 발생하는 이벤트입니다.">
+        <Syntax text="ExternalAPI.onsuccess(obj:nexacro.ExternalAPI,e:nexacro.ExternalAPIEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExternalAPIEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

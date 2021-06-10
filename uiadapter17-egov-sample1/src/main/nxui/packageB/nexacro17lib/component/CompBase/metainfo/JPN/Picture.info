@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro._Picture">
+    <ObjectInfo inheritance="" classname="nexacro._Picture" shorttypename="" csstypename="Picture" csscontrolname="" group="Object_old" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="イメージ情報を含むPictureオブジェクトです。&#xA;(BMP、GIF、JPEG、PNG、TIFF、ICONのイメージフォーマットをサポートします。)" />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="getImage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="DrawingObjectsの一つであるImageオブジェクトをPicture PropertyObjectから持ってくるメソッドです。">
+        <Syntax text="Picture.getImage()">
+          <Return type="Object" description="DrawingObjects::ImageObject" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setImage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Drawingオブジェクトの一つであるImageオブジェクトを設定するメソッドです。">
+        <Syntax text="Picture.setImage(objImage)">
+          <Return type="Boolean" description="設定に成功するとtrue、失敗するとfalseを返します。" />
+          <Arguments>
+            <Argument name="objImage" type="Object" in="false" out="false" option="false" variable="false" description="DrawingObject::Image Object" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

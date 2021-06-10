@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.FileDialog">
+    <ObjectInfo inheritance="" classname="nexacro.FileDialog" shorttypename="FileDialog" csstypename="FileDialog" csscontrolname="" group="Object" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is a file selection dialogue component to help a user to select a path where the user can open or save files." />
+    <PropertyInfo>
+      <Property name="defaultextension" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is a property to determine whether to automatically attach a default extension in case a user inputs a file name without an extension in selecting a file in a FileDialog component." csspropertyname="" csselementname="" normalpropertyname="defaultextension" />
+      <Property name="filter" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to designate format of files to indicate in FileDialog. It designate explanation and actual filter as one filter by using '|' as divider and ???" csspropertyname="" csselementname="" normalpropertyname="filter" />
+      <Property name="filterindex" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to set and bring index of filter which a user selects through FileDialog.  &#xA;Filterindex always outputs &quot;0&quot; if there is no setting value in filter Property." csspropertyname="" csselementname="" normalpropertyname="filterindex" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This property is used to set the identification of a FileDialog." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This property is used to specify the name of a FileDialog." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This read-only property holds the parent object of a FileDialog." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="SELFOLDER" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="SELFOLDER" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to add a handler to a certain event of a FileDialog.">
+        <Syntax text="FileDialog.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to find a function and add it to a certain event of a FileDialog as a handler.">
+        <Syntax text="FileDialog.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="FileDialog.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method finds a handler in a certain event of a FileDialog and returns the index of the handler.">
+        <Syntax text="FileDialog.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method returns a specific handler from a certain event of a FileDialog by specifying the index number of the handler.">
+        <Syntax text="FileDialog.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Method to call basic FileDialog of system.">
+        <Syntax text="FileDialog.open(strTitle,constOpenMode,strInitialPath,strFileName)">
+          <Return type="Boolean" description="It returns selected VirtualFile Object. &#xA;If enumOpenMode is FileDialog.MULTILOAD, it shall return in Object List format. &#xA;If enumOpenMode is FileDialog.SELFOLDER,  it shall return route text string of selected folder." />
+          <Arguments>
+            <Argument name="constOpenMode" type="Constant" in="false" out="false" option="false" variable="false" description="It indicates kinds of FileDialog.&#xA;FileDialog.LOAD : It is brought to read one file. &#xA;FileDialog.SAVE : It is brought to write one file.&#xA;FileDialog.MULTILOAD : It is brought to read files more than one.&#xA;FileDialog.SELFOLDER : to select folder." />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="Initial file name is designated by this value when opening FileDialog.  &#xA;If enumOpenMode is FileDialog.SELFOLDER, this parameter shall be disregarded." />
+            <Argument name="strInitialPath" type="String" in="false" out="false" option="false" variable="false" description="Initial directory is designated by this value when opening FileDialog. Please refer to remark for usage." />
+            <Argument name="strTitle" type="String" in="false" out="false" option="false" variable="false" description="It indicates text strings to show in Title of FileDialog." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to remove a handler in a certain event of a FileDialog.">
+        <Syntax text="FileDialog.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to find a handler in a certain event of a FileDialog and remove it.">
+        <Syntax text="FileDialog.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid&#xA;If this method fails to find the handler in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to change the first handler in a certain event of a FileDialog.">
+        <Syntax text="FileDialog.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method finds a function and uses it to replace the first handler in a certain event of a FileDialog.">
+        <Syntax text="FileDialog.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onclose" group="Event" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Event to occur when closing file selection box.">
+        <Syntax text="FileDialog.onclose(obj:nexacro.FileDialog,e:nexacro.FileDialogEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="FileDialogEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

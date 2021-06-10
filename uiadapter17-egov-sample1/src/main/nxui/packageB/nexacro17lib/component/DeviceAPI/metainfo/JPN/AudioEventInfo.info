@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.AudioEventInfo">
+    <ObjectInfo inheritance="" classname="nexacro.AudioEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="オーディオファイルを正常処理したときに発生するイベントに渡されるEventInfoオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="currentpos" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="処理中のオーディオファイルの現在再生位置(ms単位時間)を表示するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="currentpos" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="イベントのIDを持つ読み取り専用のプロパティです。" csspropertyname="" csselementname="" normalpropertyname="eventid" />
+      <Property name="reason" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="イベントの発生原因を表示するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="reason" />
+      <Property name="url" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="処理中のオーディオファイルのソールURLを表示するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="url" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

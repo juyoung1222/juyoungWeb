@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TypeDefinition version="2.3">
+  <Modules>
+    <Module url="CompBase.json"/>
+    <Module url="ComComp.json"/>
+    <Module url="Grid.json"/>
+    <Module url="DeviceAPI.json"/>
+    <Module url="extPrototype.json"/>
+  </Modules>
+  <Components>
+    <Component type="JavaScript" id="Button" classname="nexacro.Button" prefixid="btn"/>
+    <Component type="JavaScript" id="Combo" classname="nexacro.Combo" prefixid="cbo"/>
+    <Component type="JavaScript" id="Edit" classname="nexacro.Edit" prefixid="edt"/>
+    <Component type="JavaScript" id="MaskEdit" classname="nexacro.MaskEdit" prefixid="msk"/>
+    <Component type="JavaScript" id="TextArea" classname="nexacro.TextArea" prefixid="txt"/>
+    <Component type="JavaScript" id="Static" classname="nexacro.Static" prefixid="sta"/>
+    <Component type="JavaScript" id="Div" classname="nexacro.Div" prefixid="div"/>
+    <Component type="JavaScript" id="PopupDiv" classname="nexacro.PopupDiv" prefixid="pdiv"/>
+    <Component type="JavaScript" id="Radio" classname="nexacro.Radio" prefixid="rdo"/>
+    <Component type="JavaScript" id="CheckBox" classname="nexacro.CheckBox" prefixid="chk"/>
+    <Component type="JavaScript" id="ListBox" classname="nexacro.ListBox" prefixid="lst"/>
+    <Component type="JavaScript" id="Grid" classname="nexacro.Grid" prefixid="grd"/>
+    <Component type="JavaScript" id="Spin" classname="nexacro.Spin" prefixid="spn"/>
+    <Component type="JavaScript" id="Menu" classname="nexacro.Menu" prefixid="mnu"/>
+    <Component type="JavaScript" id="PopupMenu" classname="nexacro.PopupMenu" prefixid="pmnu"/>
+    <Component type="JavaScript" id="Tab" classname="nexacro.Tab" prefixid="tab"/>
+    <Component type="JavaScript" id="GroupBox" classname="nexacro.GroupBox" prefixid="grb"/>
+    <Component type="JavaScript" id="Calendar" classname="nexacro.Calendar" prefixid="cal"/>
+    <Component type="JavaScript" id="ImageViewer" classname="nexacro.ImageViewer" prefixid="img"/>
+    <Component type="JavaScript" id="ProgressBar" classname="nexacro.ProgressBar" prefixid="pgb"/>
+    <Component type="JavaScript" id="Plugin" classname="nexacro.Plugin" prefixid="plg"/>
+    <Component type="JavaScript" id="Dataset" classname="nexacro.NormalDataset" prefixid="ds"/>
+    <Component type="JavaScript" id="WebBrowser" classname="nexacro.WebBrowser" prefixid="web"/>
+    <Component type="JavaScript" id="FileDownload" classname="nexacro.FileDownload" prefixid="fdl"/>
+    <Component type="JavaScript" id="FileUpload" classname="nexacro.FileUpload" prefixid="ful"/>
+    <Component type="JavaScript" id="Sketch" classname="nexacro.Sketch" prefixid="skc"/>
+    <Component type="JavaScript" id="LiteDBConnection" classname="nexacro.LiteDBConnection"/>
+    <Component type="JavaScript" id="LiteDBStatement" classname="nexacro.LiteDBStatement"/>
+  </Components>
+  <Services>
+    <Service prefixid="theme" type="resource" url="./_resource_/_theme_/" version="0" communicationversion="0" include_subdir="true" cachelevel="session"/>
+    <Service prefixid="initvalue" type="resource" url="./_resource_/_initvalue_/" version="0" communicationversion="0" include_subdir="false" cachelevel="session"/>
+    <Service prefixid="imagerc" type="resource" url="./_resource_/_images_/" include_subdir="true" cachelevel="session"/>
+    <Service prefixid="font" type="resource" url="./_resource_/_font_/" version="0" communicationversion="0" include_subdir="false" cachelevel="session"/>
+    <Service prefixid="extPrototype" type="js" cachelevel="session" url="./nexacro17lib/component/extPrototype/" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="lib" type="js" cachelevel="session" url="./lib/" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="frame" type="form" url="./frame/" cachelevel="session" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="svcurl" type="JSP" cachelevel="session" url="http://localhost:8084/uiadapter17-egov-sample1/" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="pattern" type="form" cachelevel="session" url="./pattern/" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="xcssrc" type="resource" url="./_resource_/_xcss_/" include_subdir="false" cachelevel="session"/>
+    <Service prefixid="cmm" type="form" cachelevel="session" url="./cmm/" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="nexaForm" type="form" url="./nexaForm/" cachelevel="0" version="0" communicationversion="0" include_subdir="false"/>
+    <Service prefixid="sample" type="form" url="./sample/" cachelevel="0" version="0" communicationversion="0" include_subdir="false"/>
+  </Services>
+  <Protocols/>
+  <Update/>
+</TypeDefinition>

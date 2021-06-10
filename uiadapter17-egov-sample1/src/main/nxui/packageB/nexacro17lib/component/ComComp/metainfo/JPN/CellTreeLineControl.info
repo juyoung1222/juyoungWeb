@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.CellTreeLineControl">
+    <ObjectInfo inheritance="" classname="nexacro.CellTreeLineControl" shorttypename="CellTreeLineControl" csstypename="CellTreeLineControl" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="CellがTree型のときに使用されるCellTreeLineControlです。" />
+    <PropertyInfo>
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellTreeLineControlの境界線を設定するプロパティです。" csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="CellTreeLineControlの境界線を設定するプロパティです。" csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

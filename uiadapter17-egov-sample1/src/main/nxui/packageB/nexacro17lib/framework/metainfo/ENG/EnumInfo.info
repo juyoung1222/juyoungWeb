@@ -1,0 +1,2272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <EnumInfo id="AccessAuthType" composit="" delimiter="" description="">
+    <Enum name="all" description="" />
+    <Enum name="private" description="" />
+  </EnumInfo>
+  <EnumInfo id="AccessibilityDescReadType" composit="true" delimiter="," description="">
+    <Enum name="label" description="" />
+    <Enum name="action" description="" />
+    <Enum name="description" description="" />
+  </EnumInfo>
+  <EnumInfo id="AccessibilityType" composit="" delimiter="" description="">
+    <Enum name="standard" description="" />
+    <Enum name="sensereader" description="" />
+    <Enum name="jaws" description="" />
+  </EnumInfo>
+  <EnumInfo id="AccessibilityWholeReadType" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="load" description="" />
+    <Enum name="change" description="" />
+    <Enum name="load,change" description="" />
+  </EnumInfo>
+  <EnumInfo id="Alignmode" composit="" delimiter="" description="">
+    <Enum name="bottom" description="" />
+    <Enum name="center" description="" />
+    <Enum name="left" description="" />
+    <Enum name="leftbottom" description="" />
+    <Enum name="leftbottomright" description="" />
+    <Enum name="leftright" description="" />
+    <Enum name="lefttop" description="" />
+    <Enum name="lefttopright" description="" />
+    <Enum name="right" description="" />
+    <Enum name="rightbottom" description="" />
+    <Enum name="top" description="" />
+    <Enum name="topright" description="" />
+  </EnumInfo>
+  <EnumInfo id="AniDirection" composit="" delimiter="" description="">
+    <Enum name="normal" description="" />
+    <Enum name="reverse" description="" />
+    <Enum name="alternate" description="" />
+  </EnumInfo>
+  <EnumInfo id="AniEasing" composit="" delimiter="" description="">
+    <Enum name="linear" description="" />
+    <Enum name="easeinsine" description="" />
+    <Enum name="easeoutsine" description="" />
+    <Enum name="easeinoutsine" description="" />
+    <Enum name="easeinquad" description="" />
+    <Enum name="easeoutquad" description="" />
+    <Enum name="easeinoutquad" description="" />
+    <Enum name="easeincubic" description="" />
+    <Enum name="easeoutcubic" description="" />
+    <Enum name="easeinoutcubic" description="" />
+    <Enum name="easeinquart" description="" />
+    <Enum name="easeoutquart" description="" />
+    <Enum name="easeinoutquart" description="" />
+    <Enum name="easeinquint" description="" />
+    <Enum name="easeoutquint" description="" />
+    <Enum name="easeinoutquint" description="" />
+    <Enum name="easeinexpo" description="" />
+    <Enum name="easeoutexpo" description="" />
+    <Enum name="easeinoutexpo" description="" />
+    <Enum name="easeincirc" description="" />
+    <Enum name="easeoutcirc" description="" />
+    <Enum name="easeinoutcirc" description="" />
+    <Enum name="easeinback" description="" />
+    <Enum name="easeoutback" description="" />
+    <Enum name="easeinoutback" description="" />
+    <Enum name="easeinelastic" description="" />
+    <Enum name="easeoutelastic" description="" />
+    <Enum name="easeinoutelastic" description="" />
+    <Enum name="easeinbounce" description="" />
+    <Enum name="easeoutbounce" description="" />
+    <Enum name="easeinoutbounce" description="" />
+    <Enum name="custom" description="" />
+  </EnumInfo>
+  <EnumInfo id="ApplicationRtlDirection" composit="true" delimiter="" description="">
+    <Enum name="ltr" description="" />
+    <Enum name="rtl" description="" />
+  </EnumInfo>
+  <EnumInfo id="ApplyStyleType" composit="" delimiter="" description="">
+    <Enum name="apply" description="" />
+    <Enum name="cascade" description="" />
+    <Enum name="cascade,keep" description="" />
+    <Enum name="keep" description="" />
+  </EnumInfo>
+  <EnumInfo id="AttachType" composit="" delimiter="" description="">
+    <Enum name="fixed" description="" />
+    <Enum name="scroll" description="" />
+  </EnumInfo>
+  <EnumInfo id="AudioFormat" composit="" delimiter="" description="">
+    <Enum name="AMR_NB" description="" />
+    <Enum name="AMR_WB" description="" />
+    <Enum name="MP3" description="" />
+    <Enum name="OGG" description="" />
+    <Enum name="WAV" description="" />
+  </EnumInfo>
+  <EnumInfo id="Availabletype" composit="" delimiter="" description="">
+    <Enum name="3G" description="" />
+    <Enum name="NONE" description="" />
+    <Enum name="WIFI" description="" />
+  </EnumInfo>
+  <EnumInfo id="AxisId" composit="" delimiter="" description="">
+    <Enum name="xaxis" description="" />
+    <Enum name="y2axis" description="" />
+    <Enum name="yaxis" description="" />
+  </EnumInfo>
+  <EnumInfo id="BackgroundRepeatStyle" composit="" delimiter="" description="repeat-x | repeat-y | repeat | no-repeat">
+    <Enum name="no-repeat" description="" />
+    <Enum name="repeat" description="" />
+    <Enum name="repeat-x" description="" />
+    <Enum name="repeat-y" description="" />
+  </EnumInfo>
+  <EnumInfo id="BindType" composit="" delimiter="" description="">
+    <Enum name="move" description="" />
+    <Enum name="resize" description="" />
+  </EnumInfo>
+  <EnumInfo id="BindUpdateType" composit="" delimiter="" description="">
+    <Enum name="afterkillfocus" description="" />
+    <Enum name="valuechange" description="" />
+  </EnumInfo>
+  <EnumInfo id="BKPosHAlign" composit="" delimiter="" description="">
+    <Enum name="center" description="" />
+    <Enum name="left" description="" />
+    <Enum name="right" description="" />
+  </EnumInfo>
+  <EnumInfo id="BKPosVAlign" composit="" delimiter="" description="">
+    <Enum name="bottom" description="" />
+    <Enum name="middle" description="" />
+    <Enum name="top" description="" />
+  </EnumInfo>
+  <EnumInfo id="BorderType" composit="" delimiter="" description="">
+    <Enum name="dashed" description="" />
+    <Enum name="dotted" description="" />
+    <Enum name="double" description="" />
+    <Enum name="groove" description="" />
+    <Enum name="inset" description="" />
+    <Enum name="none" description="" />
+    <Enum name="outset" description="" />
+    <Enum name="ridge" description="" />
+    <Enum name="solid" description="" />
+  </EnumInfo>
+  <EnumInfo id="BorderType2" composit="" delimiter="" description="">
+    <Enum name="normal" description="" />
+    <Enum name="round" description="" />
+  </EnumInfo>
+  <EnumInfo id="Brush_StyleType" composit="" delimiter="" description="">
+    <Enum name="gradient" description="" />
+    <Enum name="hatch" description="" />
+    <Enum name="none" description="" />
+    <Enum name="solid" description="" />
+    <Enum name="texture" description="" />
+  </EnumInfo>
+  <EnumInfo id="CacheLevel" composit="" delimiter="" description="">
+    <Enum name="dynamic" description="" />
+    <Enum name="none" description="" />
+    <Enum name="session" description="" />
+    <Enum name="static" description="" />
+  </EnumInfo>
+  <EnumInfo id="CalendarPopupType" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="normal" description="" />
+    <Enum name="center" description="" />
+    <Enum name="system" description="" />
+  </EnumInfo>
+  <EnumInfo id="CalendarType" composit="" delimiter="" description="">
+    <Enum name="monthonly" description="" />
+    <Enum name="normal" description="" />
+    <Enum name="spin" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChannelType" composit="" delimiter="" description="">
+    <Enum name="dual" description="" />
+    <Enum name="single" description="" />
+  </EnumInfo>
+  <EnumInfo id="Chart_Align" composit="" delimiter="" description="">
+    <Enum name="topleft" description="" />
+    <Enum name="topcenter" description="" />
+    <Enum name="topright" description="" />
+    <Enum name="bottomleft" description="" />
+    <Enum name="bottomcenter" description="" />
+    <Enum name="bottomright" description="" />
+    <Enum name="lefttop" description="" />
+    <Enum name="leftcenter" description="" />
+    <Enum name="leftbottom" description="" />
+    <Enum name="righttop" description="" />
+    <Enum name="rightcenter" description="" />
+    <Enum name="rightbottom" description="" />
+  </EnumInfo>
+  <EnumInfo id="Chart_BarGradationType" composit="" delimiter="" description="">
+    <Enum name="bargroup" description="" />
+    <Enum name="baritem" description="" />
+    <Enum name="barseries" description="" />
+  </EnumInfo>
+  <EnumInfo id="Chart_LineExtendOrigin" composit="" delimiter="" description="">
+    <Enum name="both" description="" />
+    <Enum name="end" description="" />
+    <Enum name="none" description="" />
+    <Enum name="start" description="" />
+  </EnumInfo>
+  <EnumInfo id="Chart_RotateAxis" composit="" delimiter="" description="">
+    <Enum name="exchage" description="" />
+    <Enum name="horzmirror" description="" />
+    <Enum name="none" description="" />
+    <Enum name="vertmirror" description="" />
+  </EnumInfo>
+  <EnumInfo id="Chart_ScrollVisible" composit="" delimiter="" description="">
+    <Enum name="axis" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="Chart_SeriesExtendAxis" composit="" delimiter="" description="">
+    <Enum name="both" description="" />
+    <Enum name="end" description="" />
+    <Enum name="none" description="" />
+    <Enum name="start" description="" />
+  </EnumInfo>
+  <EnumInfo id="Chart_stacktype" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="normal" description="" />
+    <Enum name="percent" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartAxis_DateTickUnit" composit="" delimiter="" description="">
+    <Enum name="year" description="" />
+    <Enum name="month" description="" />
+    <Enum name="day" description="" />
+    <Enum name="hour" description="" />
+    <Enum name="minute" description="" />
+    <Enum name="second" description="" />
+    <Enum name="quarter" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartAxis_titletextalign" composit="" delimiter="" description="">
+    <Enum name="low" description="" />
+    <Enum name="middle" description="" />
+    <Enum name="high" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartAxis_type" composit="" delimiter="" description="">
+    <Enum name="normal" description="" />
+    <Enum name="number" description="" />
+    <Enum name="text" description="" />
+    <Enum name="currency" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartBasicSeries_ItemTextPostion" composit="" delimiter="" description="">
+    <Enum name="left top" description="" />
+    <Enum name="center top" description="" />
+    <Enum name="right top" description="" />
+    <Enum name="left middle" description="" />
+    <Enum name="center middle" description="" />
+    <Enum name="right middle" description="" />
+    <Enum name="left bottom" description="" />
+    <Enum name="center bottom" description="" />
+    <Enum name="right bottom" description="" />
+    <Enum name="inside middle" description="" />
+    <Enum name="insde start" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartBubbleSeries_ItemTextPosition" composit="" delimiter="" description="">
+    <Enum name="left top" description="" />
+    <Enum name="center top" description="" />
+    <Enum name="right top" description="" />
+    <Enum name="left middle" description="" />
+    <Enum name="center middle" description="" />
+    <Enum name="right middle" description="" />
+    <Enum name="left bottom" description="" />
+    <Enum name="center bottom" description="" />
+    <Enum name="right bottom" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartCategory_AxisType" composit="" delimiter="" description="">
+    <Enum name="normal" description="" />
+    <Enum name="datetime" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartCrossHair_Type" composit="" delimiter="" description="">
+    <Enum name="xy" description="" />
+    <Enum name="x" description="" />
+    <Enum name="y" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartLegend_markertype" composit="" delimiter="" description="">
+    <Enum name="square" description="" />
+    <Enum name="circle" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartSeries_DataTextGuideType" composit="" delimiter="" description="">
+    <Enum name="bend" description="" />
+    <Enum name="bend,bottom" description="" />
+    <Enum name="straight" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartSeries_DataTextLocation" composit="" delimiter="" description="">
+    <Enum name="item" description="" />
+    <Enum name="origin" description="" />
+    <Enum name="point" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartSeries_linetype" composit="" delimiter="" description="">
+    <Enum name="segment" description="" />
+    <Enum name="step" description="" />
+    <Enum name="curve" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartSeries_pointshape" composit="" delimiter="" description="">
+    <Enum name="circle" description="" />
+    <Enum name="triangle" description="" />
+    <Enum name="square" description="" />
+    <Enum name="diamond" description="" />
+    <Enum name="cross" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartSeries_PointStrokeCap" composit="" delimiter="" description="">
+    <Enum name="flat" description="" />
+    <Enum name="round" description="" />
+    <Enum name="square" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartSeries_PointStrokeJoin" composit="" delimiter="" description="">
+    <Enum name="bevel" description="" />
+    <Enum name="miter" description="" />
+    <Enum name="round" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartSeries_selecttype" composit="" delimiter="" description="">
+    <Enum name="unselect" description="" />
+    <Enum name="select" description="" />
+    <Enum name="bind" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartSeries_StrokeCap" composit="" delimiter="" description="">
+    <Enum name="flat" description="" />
+    <Enum name="round" description="" />
+    <Enum name="square" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartSeries_XAxis" composit="" delimiter="" description="">
+    <Enum name="x2axis" description="" />
+    <Enum name="xaxis" description="" />
+  </EnumInfo>
+  <EnumInfo id="ChartSeries_YAxis" composit="" delimiter="" description="">
+    <Enum name="y2axis" description="" />
+    <Enum name="yaxis" description="" />
+  </EnumInfo>
+  <EnumInfo id="ClipModeType" composit="" delimiter="" description="">
+    <Enum name="excludespace" description="" />
+    <Enum name="includespace" description="" />
+  </EnumInfo>
+  <EnumInfo id="CollapseType" composit="" delimiter="" description="">
+    <Enum name="collapse" description="" />
+    <Enum name="separate" description="" />
+  </EnumInfo>
+  <EnumInfo id="ColType" composit="" delimiter="" description="">
+    <Enum name="BIGDECIMAL" description="" />
+    <Enum name="BLOB" description="" />
+    <Enum name="DATE" description="" />
+    <Enum name="DATETIME" description="" />
+    <Enum name="DECIMAL" description="" />
+    <Enum name="FLOAT" description="" />
+    <Enum name="INT" description="" />
+    <Enum name="STRING" description="" />
+    <Enum name="TIME" description="" />
+    <Enum name="VARIANT" description="" />
+  </EnumInfo>
+  <EnumInfo id="ComboType" composit="" delimiter="" description="">
+    <Enum name="dropdown" description="" />
+    <Enum name="search" description="" />
+    <Enum name="filter" description="" />
+    <Enum name="filterlike" description="" />
+  </EnumInfo>
+  <EnumInfo id="CommDataFormat" composit="" delimiter="" description="">
+    <Enum name="ssv" description="" />
+    <Enum name="xml" description="" />
+  </EnumInfo>
+  <EnumInfo id="ContEditHAlign" composit="" delimiter="" description="">
+    <Enum name="center" description="" />
+    <Enum name="justify" description="" />
+    <Enum name="left" description="" />
+    <Enum name="right" description="" />
+  </EnumInfo>
+  <EnumInfo id="ContEditVAlign" composit="" delimiter="" description="">
+    <Enum name="bottom" description="" />
+    <Enum name="center" description="" />
+    <Enum name="middle" description="" />
+    <Enum name="top" description="" />
+  </EnumInfo>
+  <EnumInfo id="ContHAlign" composit="" delimiter="" description="">
+    <Enum name="center" description="" />
+    <Enum name="left" description="" />
+    <Enum name="right" description="" />
+  </EnumInfo>
+  <EnumInfo id="ContVAlign" composit="" delimiter="" description="">
+    <Enum name="bottom" description="" />
+    <Enum name="center" description="" />
+    <Enum name="middle" description="" />
+    <Enum name="top" description="" />
+  </EnumInfo>
+  <EnumInfo id="CookieSyncType" composit="" delimiter="" description="">
+    <Enum name="always" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="CryptoType" composit="" delimiter="" description="">
+    <Enum name="seed" description="" />
+  </EnumInfo>
+  <EnumInfo id="CtrlTabOrder" composit="" delimiter="" description="">
+    <Enum name="active" description="" />
+    <Enum name="index" description="" />
+  </EnumInfo>
+  <EnumInfo id="CtrlTabType" composit="" delimiter="" description="">
+    <Enum name="order" description="" />
+    <Enum name="swap" description="" />
+  </EnumInfo>
+  <EnumInfo id="CursorType" composit="" delimiter="" description="none | auto | default | pointer | crosshair | pointer | &amp;#10;text | wait | progress | help | copy |  move | not-allowed | &amp;#10;e-resize |  w-resize | n-resize | s-resize | &amp;#10;ne-resize | nw-resize | se-resize | sw-resize">
+    <Enum name="auto" description="" />
+    <Enum name="copy" description="" />
+    <Enum name="crosshair" description="" />
+    <Enum name="default" description="" />
+    <Enum name="e-resize" description="" />
+    <Enum name="help" description="" />
+    <Enum name="move" description="" />
+    <Enum name="ne-resize" description="" />
+    <Enum name="none" description="" />
+    <Enum name="not-allowed" description="" />
+    <Enum name="n-resize" description="" />
+    <Enum name="nw-resize" description="" />
+    <Enum name="pointer" description="" />
+    <Enum name="progress" description="" />
+    <Enum name="se-resize" description="" />
+    <Enum name="s-resize" description="" />
+    <Enum name="sw-resize" description="" />
+    <Enum name="text" description="" />
+    <Enum name="wait" description="" />
+    <Enum name="w-resize" description="" />
+  </EnumInfo>
+  <EnumInfo id="DatasetColumnProp" composit="" delimiter="" description="nexa16용">
+    <Enum name="AVG" description="" />
+    <Enum name="COUNT" description="" />
+    <Enum name="KEY" description="" />
+    <Enum name="MAX" description="" />
+    <Enum name="MIN" description="" />
+    <Enum name="NONE" description="" />
+    <Enum name="SUM" description="" />
+    <Enum name="TEXT" description="" />
+  </EnumInfo>
+  <EnumInfo id="DatasetColumnType" composit="" delimiter="" description="nexa16용/STRING/INT/FLOAT/BIGDECIMAL/DATE/TIME/DATETIME/BLOB">
+    <Enum name="STRING" description="" />
+    <Enum name="INT" description="" />
+    <Enum name="FLOAT" description="" />
+    <Enum name="BIGDECIMAL" description="" />
+    <Enum name="DATE" description="" />
+    <Enum name="TIME" description="" />
+    <Enum name="DATETIME" description="" />
+    <Enum name="BLOB" description="" />
+  </EnumInfo>
+  <EnumInfo id="DblClkType" composit="" delimiter="" description="">
+    <Enum name="default" description="" />
+    <Enum name="lbutton" description="" />
+    <Enum name="none" description="" />
+    <Enum name="rbutton" description="" />
+  </EnumInfo>
+  <EnumInfo id="DescLevel" composit="" delimiter="" description="">
+    <Enum name="all" description="" />
+    <Enum name="self" description="" />
+    <Enum name="child" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="DeviceButton" composit="" delimiter="" description="">
+    <Enum name="CANCEL" description="" />
+    <Enum name="HOME" description="" />
+    <Enum name="MENU" description="" />
+  </EnumInfo>
+  <EnumInfo id="Direction" composit="" delimiter="" description="">
+    <Enum name="horizontal" description="" />
+    <Enum name="vertical" description="" />
+  </EnumInfo>
+  <EnumInfo id="DirectionType" composit="" delimiter="" description="">
+    <Enum name="bottom" description="" />
+    <Enum name="left" description="" />
+    <Enum name="right" description="" />
+    <Enum name="top" description="" />
+  </EnumInfo>
+  <EnumInfo id="DisplaySignedType" composit="" delimiter="" description="">
+    <Enum name="image" description="" />
+    <Enum name="text" description="" />
+  </EnumInfo>
+  <EnumInfo id="DoneButtonType" composit="" delimiter="" description="">
+    <Enum name="close" description="" />
+    <Enum name="none" description="" />
+    <Enum name="ok" description="" />
+  </EnumInfo>
+  <EnumInfo id="DragMoveType" composit="" delimiter="" description="">
+    <Enum name="all" description="" />
+    <Enum name="none" description="" />
+    <Enum name="normal" description="" />
+  </EnumInfo>
+  <EnumInfo id="DragScrollType" composit="" delimiter="" description="">
+    <Enum name="all" description="" />
+    <Enum name="both" description="" />
+    <Enum name="horz" description="" />
+    <Enum name="none" description="" />
+    <Enum name="vert" description="" />
+  </EnumInfo>
+  <EnumInfo id="EditType" composit="" delimiter="" description="">
+    <Enum name="image" description="" />
+    <Enum name="normal" description="" />
+  </EnumInfo>
+  <EnumInfo id="EncodingType" composit="" delimiter="" description="">
+    <Enum name="JPEG" description="" />
+    <Enum name="PNG" description="" />
+  </EnumInfo>
+  <EnumInfo id="EndingMode" composit="" delimiter="" description="">
+    <Enum name="current" description="" />
+    <Enum name="form" description="" />
+    <Enum name="to" description="" />
+  </EnumInfo>
+  <EnumInfo id="ErrorLevel" composit="" delimiter="" description="">
+    <Enum name="all" description="" />
+    <Enum name="runtime" description="" />
+  </EnumInfo>
+  <EnumInfo id="Event" composit="" delimiter="" description="">
+    <Enum name="fscommand" description="" />
+    <Enum name="onprogress" description="" />
+    <Enum name="onreadystatechange" description="" />
+  </EnumInfo>
+  <EnumInfo id="EventMedia" composit="" delimiter="" description="">
+    <Enum name="oncurrenttimechanged" description="" />
+    <Enum name="onerror" description="" />
+    <Enum name="onplaystatuschanged" description="" />
+  </EnumInfo>
+  <EnumInfo id="EventMediaOgn" composit="" delimiter="" description="">
+    <Enum name="error" description="" />
+    <Enum name="playstatechange" description="" />
+    <Enum name="positionchange" description="" />
+  </EnumInfo>
+  <EnumInfo id="EventMsieAxOrg" composit="" delimiter="" description="">
+    <Enum name="documentcomplete" description="" />
+    <Enum name="navigateerror" description="" />
+    <Enum name="titlechange" description="" />
+  </EnumInfo>
+  <EnumInfo id="EventUIMode" composit="" delimiter="" description="">
+    <Enum name="invisible" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="EventWeb" composit="" delimiter="" description="">
+    <Enum name="onerror" description="" />
+    <Enum name="onloadcompleted" description="" />
+    <Enum name="ontitlechange" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExceptStyleType" composit="true" delimiter="," description="">
+    <Enum name="none" description="" />
+    <Enum name="align" description="" />
+    <Enum name="background" description="" />
+    <Enum name="color" description="" />
+    <Enum name="font" description="" />
+    <Enum name="border" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExportActiveMode" composit="" delimiter="" description="">
+    <Enum name="active" description="" />
+    <Enum name="noactive" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExportAsyncMode" composit="" delimiter="" description="">
+    <Enum name="async" description="" />
+    <Enum name="sync" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExportEventType" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="item" description="" />
+    <Enum name="totalrecord" description="" />
+    <Enum name="itemrecord" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExportHeadType" composit="" delimiter="" description="">
+    <Enum name="allband" description="" />
+    <Enum name="default" description="" />
+    <Enum name="nohead" description="" />
+    <Enum name="noheadpivot" description="" />
+    <Enum name="noheadsumm" description="" />
+    <Enum name="nosumm" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExportImageType" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="url" description="" />
+    <Enum name="image" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExportMergeType" composit="" delimiter="" description="">
+    <Enum name="suppress" description="" />
+    <Enum name="nosuppress" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExportOpenMode" composit="" delimiter="" description="">
+    <Enum name="existopen" description="" />
+    <Enum name="noopen" description="" />
+    <Enum name="overwrite" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExportSaveMode" composit="" delimiter="" description="">
+    <Enum name="nosave" description="" />
+    <Enum name="save" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExportSelectType" composit="" delimiter="" description="">
+    <Enum name="allrecord" description="" />
+    <Enum name="selectrecord" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExportSize" composit="" delimiter="" description="">
+    <Enum name="both" description="" />
+    <Enum name="height" description="" />
+    <Enum name="width" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExportUIType" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="statusbar" description="" />
+    <Enum name="exportprogress" description="" />
+  </EnumInfo>
+  <EnumInfo id="ExportValueType" composit="" delimiter="" description="">
+    <Enum name="allstyle" description="" />
+    <Enum name="selectstyle" description="" />
+  </EnumInfo>
+  <EnumInfo id="FieldType" composit="" delimiter="" description="">
+    <Enum name="" description="" />
+    <Enum name="blob" description="" />
+    <Enum name="float" description="" />
+    <Enum name="integer" description="" />
+    <Enum name="text" description="" />
+  </EnumInfo>
+  <EnumInfo id="FileOpenType" composit="" delimiter="" description="">
+    <Enum name="read" description="" />
+    <Enum name="readonly" description="" />
+    <Enum name="write" description="" />
+  </EnumInfo>
+  <EnumInfo id="FillStyle" composit="" delimiter="" description="">
+    <Enum name="gradation" description="" />
+    <Enum name="hatch" description="" />
+    <Enum name="image" description="" />
+    <Enum name="none" description="" />
+    <Enum name="solid" description="" />
+  </EnumInfo>
+  <EnumInfo id="FitToContents" composit="" delimiter="" description="none | width | height | both">
+    <Enum name="none" description="" />
+    <Enum name="width" description="" />
+    <Enum name="height" description="" />
+    <Enum name="both" description="" />
+  </EnumInfo>
+  <EnumInfo id="FlipType" composit="" delimiter="" description="">
+    <Enum name="horizontal" description="" />
+    <Enum name="none" description="" />
+    <Enum name="vertical" description="" />
+    <Enum name="vertical,horizontal" description="" />
+  </EnumInfo>
+  <EnumInfo id="FontAbsoluteSize" composit="" delimiter="" description="xx-small | x-small | small | medium | large | x-large | xx-large">
+    <Enum name="large" description="" />
+    <Enum name="medium" description="" />
+    <Enum name="small" description="" />
+    <Enum name="x-large" description="" />
+    <Enum name="x-small" description="" />
+    <Enum name="xx-large" description="" />
+    <Enum name="xx-small" description="" />
+  </EnumInfo>
+  <EnumInfo id="FontGenericFamily" composit="true" delimiter="," description="‘serif’, ‘sans-serif’, ‘cursive’, ‘fantasy’, ‘monospace’">
+    <Enum name="serif" description="" />
+    <Enum name="sans-serif" description="" />
+    <Enum name="cursive" description="" />
+    <Enum name="fantasy" description="" />
+    <Enum name="monospace" description="" />
+  </EnumInfo>
+  <EnumInfo id="FontRelativeSize" composit="" delimiter="" description="larger | smaller">
+    <Enum name="larger" description="" />
+    <Enum name="smaller" description="" />
+  </EnumInfo>
+  <EnumInfo id="FontRenderType" composit="" delimiter="" description="">
+    <Enum name="antialias" description="" />
+    <Enum name="mono" description="" />
+  </EnumInfo>
+  <EnumInfo id="FontStyle" composit="" delimiter="" description="normal | italic | oblique">
+    <Enum name="normal" description="" />
+    <Enum name="italic" description="" />
+  </EnumInfo>
+  <EnumInfo id="FontWeight" composit="" delimiter="" description="normal | bold">
+    <Enum name="normal" description="" />
+    <Enum name="bold" description="" />
+    <Enum name="100" description="" />
+    <Enum name="200" description="" />
+    <Enum name="300" description="" />
+    <Enum name="400" description="" />
+    <Enum name="500" description="" />
+    <Enum name="600" description="" />
+    <Enum name="700" description="" />
+    <Enum name="800" description="" />
+    <Enum name="900" description="" />
+  </EnumInfo>
+  <EnumInfo id="FrameMoveType" composit="" delimiter="" description="">
+    <Enum name="border" description="" />
+    <Enum name="default" description="" />
+  </EnumInfo>
+  <EnumInfo id="FrameSetType" composit="" delimiter="" description="">
+    <Enum name="horizontal" description="" />
+    <Enum name="vertical" description="" />
+  </EnumInfo>
+  <EnumInfo id="GeoSourceType" composit="" delimiter="" description="">
+    <Enum name="GPS" description="" />
+    <Enum name="WPS" description="" />
+  </EnumInfo>
+  <EnumInfo id="GetType" composit="" delimiter="" description="">
+    <Enum name="url" description="" />
+    <Enum name="imagedata" description="" />
+  </EnumInfo>
+  <EnumInfo id="GradationType" composit="" delimiter="" description="">
+    <Enum name="lenear" description="" />
+    <Enum name="liner" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="Gradient_StyleType" composit="" delimiter="" description="">
+    <Enum name="conical" description="" />
+    <Enum name="linear" description="" />
+    <Enum name="none" description="" />
+    <Enum name="radial" description="" />
+  </EnumInfo>
+  <EnumInfo id="Grid_FastVScrollType" composit="" delimiter="" description="">
+    <Enum name="default" description="" />
+    <Enum name="topdisplay" description="" />
+    <Enum name="centerdisplay" description="" />
+    <Enum name="topbottomdisplay" description="" />
+    <Enum name="topcenterbottomdisplay" description="" />
+    <Enum name="trackbarfollow" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridAreaSelectType" composit="" delimiter="" description="">
+    <Enum name="limitband" description="" />
+    <Enum name="overband" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridAutoEnterType" composit="" delimiter="" description="">
+    <Enum name="key" description="" />
+    <Enum name="none" description="" />
+    <Enum name="select" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridAutoFitBandType" composit="" delimiter="" description="">
+    <Enum name="allband" description="" />
+    <Enum name="body" description="" />
+    <Enum name="nohead" description="" />
+    <Enum name="noheadleft" description="" />
+    <Enum name="noleft" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridAutoFitType" composit="" delimiter="" description="">
+    <Enum name="col" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridAutoSizeBandType" composit="" delimiter="" description="">
+    <Enum name="body" description="" />
+    <Enum name="head" description="" />
+    <Enum name="summary" description="" />
+    <Enum name="allband" description="" />
+    <Enum name="nohead" description="" />
+    <Enum name="noleft" description="" />
+    <Enum name="nohead,noleft" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridAutoSizeMergeType" composit="" delimiter="" description="">
+    <Enum name="bothmerge" description="" />
+    <Enum name="colmerge" description="" />
+    <Enum name="nomerge" description="" />
+    <Enum name="rowmerge" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridAutoSizingType" composit="" delimiter="" description="">
+    <Enum name="both" description="" />
+    <Enum name="col" description="" />
+    <Enum name="none" description="" />
+    <Enum name="row" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridAutoUpdateType" composit="" delimiter="" description="">
+    <Enum name="comboselect" description="" />
+    <Enum name="dateselect" description="" />
+    <Enum name="itemselect" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridBandType" composit="" delimiter="" description="">
+    <Enum name="body" description="" />
+    <Enum name="head" description="" />
+    <Enum name="left" description="" />
+    <Enum name="right" description="" />
+    <Enum name="summ" description="" />
+    <Enum name="summary" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridBandTypeCol" composit="" delimiter="" description="">
+    <Enum name="body" description="" />
+    <Enum name="left" description="" />
+    <Enum name="right" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridBandTypeRow" composit="" delimiter="" description="">
+    <Enum name="body" description="" />
+    <Enum name="head" description="" />
+    <Enum name="summ" description="" />
+    <Enum name="summary" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridBoolean" composit="" delimiter="" description="">
+    <Enum name="false" description="" />
+    <Enum name="true" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridBorderType" composit="" delimiter="" description="">
+    <Enum name="default" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridCellAutoSize" composit="" delimiter="" description="">
+    <Enum name="default" description="" />
+    <Enum name="limitmax" description="" />
+    <Enum name="limitmin" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridCellClickBound" composit="" delimiter="" description="">
+    <Enum name="cell" description="" />
+    <Enum name="control" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridCellExprCond" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="all" description="" />
+    <Enum name="celltext" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridCellSizeBandType" composit="" delimiter="" description="">
+    <Enum name="allband" description="" />
+    <Enum name="body" description="" />
+    <Enum name="nohead" description="" />
+    <Enum name="noheadleft" description="" />
+    <Enum name="noleft" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridCellSizingType" composit="" delimiter="" description="">
+    <Enum name="both" description="" />
+    <Enum name="col" description="" />
+    <Enum name="none" description="" />
+    <Enum name="row" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridCellType" composit="" delimiter="" description="">
+    <Enum name="body" description="" />
+    <Enum name="head" description="" />
+    <Enum name="none" description="" />
+    <Enum name="summary" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridClickItem" composit="" delimiter="" description="">
+    <Enum name="border" description="" />
+    <Enum name="control" description="" />
+    <Enum name="image" description="" />
+    <Enum name="text" description="" />
+    <Enum name="treebutton" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridComboNullType" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="nulltext" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridComboType" composit="" delimiter="" description="">
+    <Enum name="dropdown" description="" />
+    <Enum name="search" description="" />
+    <Enum name="filter" description="" />
+    <Enum name="filterlike" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridCtrlDisplay" composit="" delimiter="" description="">
+    <Enum name="display" description="" />
+    <Enum name="edit" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridCtrlLogicalView" composit="" delimiter="" description="">
+    <Enum name="normal" description="" />
+    <Enum name="readonly" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridCursorType" composit="" delimiter="" description="">
+    <Enum name="auto" description="" />
+    <Enum name="crosshair" description="" />
+    <Enum name="default" description="" />
+    <Enum name="e-resize" description="" />
+    <Enum name="hand" description="" />
+    <Enum name="help" description="" />
+    <Enum name="move" description="" />
+    <Enum name="ne-resize" description="" />
+    <Enum name="no" description="" />
+    <Enum name="none" description="" />
+    <Enum name="n-resize" description="" />
+    <Enum name="nw-resize" description="" />
+    <Enum name="pointer" description="" />
+    <Enum name="se-resize" description="" />
+    <Enum name="s-resize" description="" />
+    <Enum name="sw-resize" description="" />
+    <Enum name="text" description="" />
+    <Enum name="wait" description="" />
+    <Enum name="w-resize" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridDateNullType" composit="" delimiter="" description="">
+    <Enum name="default" description="" />
+    <Enum name="none" description="" />
+    <Enum name="nullmask" description="" />
+    <Enum name="nulltext" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridDateType" composit="" delimiter="" description="">
+    <Enum name="monthonly" description="" />
+    <Enum name="normal" description="" />
+    <Enum name="spin" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridDispType" composit="" delimiter="" description="">
+    <Enum name="normal" description="" />
+    <Enum name="none" description="" />
+    <Enum name="buttoncontrol" description="" />
+    <Enum name="calendarcontrol" description="" />
+    <Enum name="checkboxcontrol" description="" />
+    <Enum name="combocontrol" description="" />
+    <Enum name="combotext" description="" />
+    <Enum name="currency" description="" />
+    <Enum name="date" description="" />
+    <Enum name="decoratetext" description="" />
+    <Enum name="editcontrol" description="" />
+    <Enum name="imagecontrol" description="" />
+    <Enum name="mask" description="" />
+    <Enum name="maskeditcontrol" description="" />
+    <Enum name="number" description="" />
+    <Enum name="progressbarcontrol" description="" />
+    <Enum name="text" description="" />
+    <Enum name="textareacontrol" description="" />
+    <Enum name="treeitemcontrol" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridEditFilter" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="alpha" description="" />
+    <Enum name="alpha,digit" description="" />
+    <Enum name="alpha,number" description="" />
+    <Enum name="alpha,number,nosign" description="" />
+    <Enum name="char" description="" />
+    <Enum name="digit" description="" />
+    <Enum name="digit,char" description="" />
+    <Enum name="integer" description="" />
+    <Enum name="lower" description="" />
+    <Enum name="lower,char" description="" />
+    <Enum name="lower,digit" description="" />
+    <Enum name="lower,digit,char" description="" />
+    <Enum name="lower,number" description="" />
+    <Enum name="lower,number,char" description="" />
+    <Enum name="lower,number,nosign" description="" />
+    <Enum name="number" description="" />
+    <Enum name="number,char" description="" />
+    <Enum name="upper" description="" />
+    <Enum name="upper,char" description="" />
+    <Enum name="upper,digit" description="" />
+    <Enum name="upper,digit,char" description="" />
+    <Enum name="upper,number" description="" />
+    <Enum name="upper,number,char" description="" />
+    <Enum name="upper,number,nosign" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridEditType" composit="" delimiter="" description="">
+    <Enum name="normal" description="" />
+    <Enum name="none" description="" />
+    <Enum name="button" description="" />
+    <Enum name="checkbox" description="" />
+    <Enum name="combo" description="" />
+    <Enum name="date" description="" />
+    <Enum name="mask" description="" />
+    <Enum name="readonly" description="" />
+    <Enum name="text" description="" />
+    <Enum name="textarea" description="" />
+    <Enum name="tree" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridEndLineHide" composit="" delimiter="" description="">
+    <Enum name="both" description="" />
+    <Enum name="col" description="" />
+    <Enum name="none" description="" />
+    <Enum name="row" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridExpandShow" composit="" delimiter="" description="">
+    <Enum name="hide" description="" />
+    <Enum name="show" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridExSizeType" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="row" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridFillAreaType" composit="" delimiter="" description="">
+    <Enum name="allrow" description="" />
+    <Enum name="controlrow" description="" />
+    <Enum name="datarow" description="" />
+    <Enum name="linerow" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridFixType" composit="" delimiter="" description="">
+    <Enum name="fixed" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridLineType" composit="" delimiter="" description="">
+    <Enum name="exhorz" description="" />
+    <Enum name="exvert" description="" />
+    <Enum name="nocross" description="" />
+    <Enum name="onlyhorz" description="" />
+    <Enum name="onlyvert" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridMergeView" composit="" delimiter="" description="">
+    <Enum name="fullview" description="" />
+    <Enum name="scrollview" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridMoveCellType" composit="" delimiter="" description="">
+    <Enum name="col" description="" />
+    <Enum name="none" description="" />
+    <Enum name="col,band" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridScrollPixel" composit="" delimiter="" description="">
+    <Enum name="all" description="" />
+    <Enum name="default" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridSelectBandType" composit="" delimiter="" description="">
+    <Enum name="allband" description="" />
+    <Enum name="body" description="" />
+    <Enum name="default" description="" />
+    <Enum name="nohead" description="" />
+    <Enum name="noleft" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridSelectChangeType" composit="" delimiter="" description="">
+    <Enum name="down" description="" />
+    <Enum name="up" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridSelectType" composit="" delimiter="" description="">
+    <Enum name="row" description="" />
+    <Enum name="multirow" description="" />
+    <Enum name="cell" description="" />
+    <Enum name="area" description="" />
+    <Enum name="multiarea" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridSummaryType" composit="" delimiter="" description="">
+    <Enum name="default" description="" />
+    <Enum name="top" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridSuppAlignType" composit="" delimiter="" description="">
+    <Enum name="first" description="" />
+    <Enum name="first,over" description="" />
+    <Enum name="last" description="" />
+    <Enum name="last,over" description="" />
+    <Enum name="middle" description="" />
+    <Enum name="middle,over" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridSuppLevel" composit="" delimiter="" description="">
+    <Enum name="allcompare" description="" />
+    <Enum name="allskip" description="" />
+    <Enum name="sameskip" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridSuppView" composit="" delimiter="" description="">
+    <Enum name="fullview" description="" />
+    <Enum name="scrollview" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridTooltipType" composit="" delimiter="" description="">
+    <Enum name="bottom" description="" />
+    <Enum name="center" description="" />
+    <Enum name="fit" description="" />
+    <Enum name="horz" description="" />
+    <Enum name="inplace" description="" />
+    <Enum name="left" description="" />
+    <Enum name="mouse" description="" />
+    <Enum name="none" description="" />
+    <Enum name="right" description="" />
+    <Enum name="top" description="" />
+    <Enum name="vert" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridTreeInitStatus" composit="" delimiter="" description="">
+    <Enum name="collapse,all" description="" />
+    <Enum name="collapse,null" description="" />
+    <Enum name="expand,all" description="" />
+    <Enum name="expand,null" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridTreeLineDirect" composit="" delimiter="" description="">
+    <Enum name="left" description="" />
+    <Enum name="top" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridTreeUseButton" composit="" delimiter="" description="">
+    <Enum name="no" description="" />
+    <Enum name="noclick" description="" />
+    <Enum name="use" description="" />
+  </EnumInfo>
+  <EnumInfo id="GridTreeUseFlag" composit="" delimiter="" description="">
+    <Enum name="keepsize" description="" />
+    <Enum name="no" description="" />
+    <Enum name="use" description="" />
+  </EnumInfo>
+  <EnumInfo id="HatchStyle" composit="" delimiter="" description="">
+    <Enum name="cross" description="" />
+    <Enum name="heavydense" description="" />
+    <Enum name="horizontal" description="" />
+    <Enum name="leftrightdiagonal" description="" />
+    <Enum name="lightdense" description="" />
+    <Enum name="none" description="" />
+    <Enum name="rightleftdiagonal" description="" />
+    <Enum name="vertical" description="" />
+    <Enum name="xcross" description="" />
+  </EnumInfo>
+  <EnumInfo id="HorizontalAlign" composit="" delimiter="" description="left | right | center">
+    <Enum name="left" description="" />
+    <Enum name="center" description="" />
+    <Enum name="right" description="" />
+  </EnumInfo>
+  <EnumInfo id="HorizontalPosition" composit="" delimiter="" description="left | center | right">
+    <Enum name="left" description="" />
+    <Enum name="center" description="" />
+    <Enum name="right" description="" />
+  </EnumInfo>
+  <EnumInfo id="HotKeyKey" composit="" delimiter="" description="">
+    <Enum name="false" description="" />
+    <Enum name="true" description="" />
+    <Enum name="2" description="" />
+    <Enum name="3" description="" />
+    <Enum name="4" description="" />
+    <Enum name="5" description="" />
+    <Enum name="6" description="" />
+    <Enum name="7" description="" />
+    <Enum name="8" description="" />
+    <Enum name="9" description="" />
+    <Enum name="A" description="" />
+    <Enum name="ADD" description="" />
+    <Enum name="B" description="" />
+    <Enum name="BACK" description="" />
+    <Enum name="C" description="" />
+    <Enum name="CAPITAL" description="" />
+    <Enum name="D" description="" />
+    <Enum name="DECIMAL" description="" />
+    <Enum name="DELETE" description="" />
+    <Enum name="DIVIDE" description="" />
+    <Enum name="DOWN" description="" />
+    <Enum name="E" description="" />
+    <Enum name="END" description="" />
+    <Enum name="ESCAPE" description="" />
+    <Enum name="F" description="" />
+    <Enum name="F1" description="" />
+    <Enum name="F10" description="" />
+    <Enum name="F11" description="" />
+    <Enum name="F12" description="" />
+    <Enum name="F2" description="" />
+    <Enum name="F3" description="" />
+    <Enum name="F4" description="" />
+    <Enum name="F5" description="" />
+    <Enum name="F6" description="" />
+    <Enum name="F7" description="" />
+    <Enum name="F8" description="" />
+    <Enum name="F9" description="" />
+    <Enum name="G" description="" />
+    <Enum name="H" description="" />
+    <Enum name="HOME" description="" />
+    <Enum name="I" description="" />
+    <Enum name="INSERT" description="" />
+    <Enum name="J" description="" />
+    <Enum name="K" description="" />
+    <Enum name="L" description="" />
+    <Enum name="LEFT" description="" />
+    <Enum name="M" description="" />
+    <Enum name="MULTIPLY" description="" />
+    <Enum name="N" description="" />
+    <Enum name="NEXT" description="" />
+    <Enum name="NUMLOCK" description="" />
+    <Enum name="NUMPAD0" description="" />
+    <Enum name="NUMPAD1" description="" />
+    <Enum name="NUMPAD2" description="" />
+    <Enum name="NUMPAD3" description="" />
+    <Enum name="NUMPAD4" description="" />
+    <Enum name="NUMPAD5" description="" />
+    <Enum name="NUMPAD6" description="" />
+    <Enum name="NUMPAD7" description="" />
+    <Enum name="NUMPAD8" description="" />
+    <Enum name="NUMPAD9" description="" />
+    <Enum name="O" description="" />
+    <Enum name="P" description="" />
+    <Enum name="PAUSE" description="" />
+    <Enum name="PRIOR" description="" />
+    <Enum name="Q" description="" />
+    <Enum name="R" description="" />
+    <Enum name="RETURN" description="" />
+    <Enum name="RIGHT" description="" />
+    <Enum name="S" description="" />
+    <Enum name="SCROLL" description="" />
+    <Enum name="SEPARATOR" description="" />
+    <Enum name="SPACE" description="" />
+    <Enum name="SUBTRACT" description="" />
+    <Enum name="T" description="" />
+    <Enum name="TAB" description="" />
+    <Enum name="U" description="" />
+    <Enum name="UP" description="" />
+    <Enum name="V" description="" />
+    <Enum name="W" description="" />
+    <Enum name="X" description="" />
+    <Enum name="Y" description="" />
+    <Enum name="Z" description="" />
+  </EnumInfo>
+  <EnumInfo id="HotKeyModifier" composit="" delimiter="" description="">
+    <Enum name="ALT" description="" />
+    <Enum name="CONTROL" description="" />
+    <Enum name="CTRL" description="" />
+    <Enum name="SHIFT" description="" />
+  </EnumInfo>
+  <EnumInfo id="Icon" composit="" delimiter="" description="">
+    <Enum name="question" description="" />
+    <Enum name="information" description="" />
+    <Enum name="error" description="" />
+    <Enum name="warning" description="" />
+    <Enum name="winlogo" description="" />
+    <Enum name="application" description="" />
+  </EnumInfo>
+  <EnumInfo id="IconPosition" composit="" delimiter="" description="left | top | right | bottom">
+    <Enum name="left" description="" />
+    <Enum name="top" description="" />
+    <Enum name="right" description="" />
+    <Enum name="bottom" description="" />
+  </EnumInfo>
+  <EnumInfo id="ImageFormat" composit="" delimiter="" description="">
+    <Enum name="BMP" description="" />
+    <Enum name="BMP,Mono" description="" />
+    <Enum name="GIF" description="" />
+    <Enum name="JPG" description="" />
+    <Enum name="PNG" description="" />
+    <Enum name="TIF" description="" />
+  </EnumInfo>
+  <EnumInfo id="ImageTextHAlign" composit="" delimiter="" description="">
+    <Enum name="left" description="" />
+    <Enum name="center" description="" />
+    <Enum name="right" description="" />
+    <Enum name="lefttext" description="" />
+    <Enum name="righttext" description="" />
+  </EnumInfo>
+  <EnumInfo id="ImageTextVAlign" composit="" delimiter="" description="">
+    <Enum name="top" description="" />
+    <Enum name="middle" description="" />
+    <Enum name="bottom" description="" />
+    <Enum name="toptext" description="" />
+    <Enum name="bottomtext" description="" />
+  </EnumInfo>
+  <EnumInfo id="ImeModeType" composit="" delimiter="" description="">
+    <Enum name="alpha" description="" />
+    <Enum name="alpha,full" description="" />
+    <Enum name="direct" description="" />
+    <Enum name="hangul" description="" />
+    <Enum name="hangul,full" description="" />
+    <Enum name="hiragana" description="" />
+    <Enum name="katakana" description="" />
+    <Enum name="katakana,full" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="ImePasteMode" composit="" delimiter="" description="">
+    <Enum name="deny" description="" />
+    <Enum name="front,complete" description="" />
+    <Enum name="front,keep" description="" />
+    <Enum name="rear,complete" description="" />
+    <Enum name="rear,keep" description="" />
+  </EnumInfo>
+  <EnumInfo id="InputFilterType" composit="true" delimiter="," description="">
+    <Enum name="alpha" description="" />
+    <Enum name="comma" description="" />
+    <Enum name="digit" description="" />
+    <Enum name="dot" description="" />
+    <Enum name="none" description="" />
+    <Enum name="sign" description="" />
+    <Enum name="space" description="" />
+    <Enum name="symbol" description="" />
+  </EnumInfo>
+  <EnumInfo id="InputModeType" composit="" delimiter="" description="">
+    <Enum name="lower" description="" />
+    <Enum name="normal" description="" />
+    <Enum name="upper" description="" />
+  </EnumInfo>
+  <EnumInfo id="InputType" composit="true" delimiter="," description="">
+    <Enum name="alpha" description="" />
+    <Enum name="comma" description="" />
+    <Enum name="digit" description="" />
+    <Enum name="dot" description="" />
+    <Enum name="english" description="" />
+    <Enum name="full" description="" />
+    <Enum name="half" description="" />
+    <Enum name="normal" description="" />
+    <Enum name="number" description="" />
+    <Enum name="sign" description="" />
+    <Enum name="space" description="" />
+    <Enum name="symbol" description="" />
+    <Enum name="numberandenglish" description="" />
+  </EnumInfo>
+  <EnumInfo id="LayoutSelectType" composit="" delimiter="" description="">
+    <Enum name="inner,height" description="" />
+    <Enum name="inner,width" description="" />
+    <Enum name="outer,height" description="" />
+    <Enum name="outer,width" description="" />
+  </EnumInfo>
+  <EnumInfo id="LengthUnit" composit="" delimiter="" description="">
+    <Enum name="ascii" description="" />
+    <Enum name="utf16" description="" />
+    <Enum name="utf8" description="" />
+  </EnumInfo>
+  <EnumInfo id="LetterSpacing" composit="" delimiter="" description="normal">
+    <Enum name="normal" description="" />
+  </EnumInfo>
+  <EnumInfo id="LimitByMask" composit="" delimiter="" description="">
+    <Enum name="both" description="" />
+    <Enum name="decimal" description="" />
+    <Enum name="integer" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="LineargradientAngle" composit="" delimiter="" description="to left | to right | to top | to bottom | to left top | to left bottom | to right top | to right bottom">
+    <Enum name="to bottom" description="" />
+    <Enum name="to left" description="" />
+    <Enum name="to left bottom" description="" />
+    <Enum name="to left top" description="" />
+    <Enum name="to right" description="" />
+    <Enum name="to right bottom" description="" />
+    <Enum name="to right top" description="" />
+    <Enum name="to top" description="" />
+  </EnumInfo>
+  <EnumInfo id="LineCap" composit="" delimiter="" description="">
+    <Enum name="flat" description="" />
+    <Enum name="round" description="" />
+    <Enum name="square" description="" />
+  </EnumInfo>
+  <EnumInfo id="LineHeight" composit="" delimiter="" description="normal">
+    <Enum name="normal" description="" />
+  </EnumInfo>
+  <EnumInfo id="LineJoin" composit="" delimiter="" description="">
+    <Enum name="bevel" description="" />
+    <Enum name="miter" description="" />
+    <Enum name="round" description="" />
+  </EnumInfo>
+  <EnumInfo id="LineStyle" composit="" delimiter="" description="none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset">
+    <Enum name="dashed" description="" />
+    <Enum name="dotted" description="" />
+    <Enum name="double" description="" />
+    <Enum name="groove" description="" />
+    <Enum name="hidden" description="" />
+    <Enum name="inset" description="" />
+    <Enum name="none" description="" />
+    <Enum name="outset" description="" />
+    <Enum name="ridge" description="" />
+    <Enum name="solid" description="" />
+  </EnumInfo>
+  <EnumInfo id="LineTyp" composit="" delimiter="" description="">
+    <Enum name="ascent" description="" />
+    <Enum name="descent" description="" />
+    <Enum name="horizontal" description="" />
+    <Enum name="vertical" description="" />
+  </EnumInfo>
+  <EnumInfo id="LineWidth" composit="" delimiter="" description="thin | medium | thick">
+    <Enum name="medium" description="" />
+    <Enum name="thick" description="" />
+    <Enum name="thin" description="" />
+  </EnumInfo>
+  <EnumInfo id="ListView_BandExpandType" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="expand" description="" />
+    <Enum name="accordion" description="" />
+    <Enum name="popup" description="" />
+  </EnumInfo>
+  <EnumInfo id="ListView_BandInitStatus" composit="" delimiter="" description="expand | collapse">
+    <Enum name="expand" description="" />
+    <Enum name="collapse" description="" />
+  </EnumInfo>
+  <EnumInfo id="ListView_DispType" composit="" delimiter="" description="">
+    <Enum name="normal" description="" />
+    <Enum name="none" description="" />
+    <Enum name="buttoncontrol" description="" />
+    <Enum name="calendarcontrol" description="" />
+    <Enum name="checkboxcontrol" description="" />
+    <Enum name="combocontrol" description="" />
+    <Enum name="combotext" description="" />
+    <Enum name="currency" description="" />
+    <Enum name="date" description="" />
+    <Enum name="decoratetext" description="" />
+    <Enum name="editcontrol" description="" />
+    <Enum name="imagecontrol" description="" />
+    <Enum name="mask" description="" />
+    <Enum name="maskeditcontrol" description="" />
+    <Enum name="number" description="" />
+    <Enum name="progressbarcontrol" description="" />
+    <Enum name="text" description="" />
+    <Enum name="textareacontrol" description="" />
+  </EnumInfo>
+  <EnumInfo id="ListView_EditType" composit="" delimiter="" description="">
+    <Enum name="normal" description="" />
+    <Enum name="none" description="" />
+    <Enum name="button" description="" />
+    <Enum name="checkbox" description="" />
+    <Enum name="combo" description="" />
+    <Enum name="date" description="" />
+    <Enum name="mask" description="" />
+    <Enum name="readonly" description="" />
+    <Enum name="text" description="" />
+    <Enum name="textarea" description="" />
+  </EnumInfo>
+  <EnumInfo id="ListView_SelectType" composit="" delimiter="" description="datarow | cell">
+    <Enum name="datarow" description="" />
+    <Enum name="cell" description="" />
+  </EnumInfo>
+  <EnumInfo id="LoadMode" composit="" delimiter="" description="">
+    <Enum name="keep" description="" />
+    <Enum name="reset" description="" />
+  </EnumInfo>
+  <EnumInfo id="LocaleCode" composit="" delimiter="" description="">
+    <Enum name="af_ZA" description="" />
+    <Enum name="ar_AE" description="" />
+    <Enum name="ar_BH" description="" />
+    <Enum name="ar_DZ" description="" />
+    <Enum name="ar_EG" description="" />
+    <Enum name="ar_IQ" description="" />
+    <Enum name="ar_JO" description="" />
+    <Enum name="ar_KW" description="" />
+    <Enum name="ar_LB" description="" />
+    <Enum name="ar_LY" description="" />
+    <Enum name="ar_MA" description="" />
+    <Enum name="ar_OM" description="" />
+    <Enum name="ar_QA" description="" />
+    <Enum name="ar_SA" description="" />
+    <Enum name="ar_SY" description="" />
+    <Enum name="ar_TN" description="" />
+    <Enum name="ar_YE" description="" />
+    <Enum name="as_IN" description="" />
+    <Enum name="be_BY" description="" />
+    <Enum name="bg_BG" description="" />
+    <Enum name="ca_ES" description="" />
+    <Enum name="cs_CZ" description="" />
+    <Enum name="da_DK" description="" />
+    <Enum name="de_AT" description="" />
+    <Enum name="de_CH" description="" />
+    <Enum name="de_DE" description="" />
+    <Enum name="de_LU" description="" />
+    <Enum name="el_GR" description="" />
+    <Enum name="en_AU" description="" />
+    <Enum name="en_CA" description="" />
+    <Enum name="en_GB" description="" />
+    <Enum name="en_IE" description="" />
+    <Enum name="en_IN" description="" />
+    <Enum name="en_NZ" description="" />
+    <Enum name="en_PH" description="" />
+    <Enum name="en_US" description="" />
+    <Enum name="en_ZA" description="" />
+    <Enum name="en_ZW" description="" />
+    <Enum name="es_AR" description="" />
+    <Enum name="es_BO" description="" />
+    <Enum name="es_CL" description="" />
+    <Enum name="es_CO" description="" />
+    <Enum name="es_CR" description="" />
+    <Enum name="es_DO" description="" />
+    <Enum name="es_EC" description="" />
+    <Enum name="es_ES" description="" />
+    <Enum name="es_GT" description="" />
+    <Enum name="es_HN" description="" />
+    <Enum name="es_MX" description="" />
+    <Enum name="es_NI" description="" />
+    <Enum name="es_PA" description="" />
+    <Enum name="es_PE" description="" />
+    <Enum name="es_PR" description="" />
+    <Enum name="es_PY" description="" />
+    <Enum name="es_SV" description="" />
+    <Enum name="es_UY" description="" />
+    <Enum name="et_EE" description="" />
+    <Enum name="eu_ES" description="" />
+    <Enum name="fi_FI" description="" />
+    <Enum name="fo_FO" description="" />
+    <Enum name="fr_BE" description="" />
+    <Enum name="fr_CA" description="" />
+    <Enum name="fr_CA" description="" />
+    <Enum name="fr_CH" description="" />
+    <Enum name="fr_CH" description="" />
+    <Enum name="fr_FR" description="" />
+    <Enum name="fr_FR" description="" />
+    <Enum name="fr_LU" description="" />
+    <Enum name="fr_LU" description="" />
+    <Enum name="gl_ES" description="" />
+    <Enum name="gl_ES" description="" />
+    <Enum name="gu_IN" description="" />
+    <Enum name="gu_IN" description="" />
+    <Enum name="he_IL" description="" />
+    <Enum name="he_IL" description="" />
+    <Enum name="hi_IN" description="" />
+    <Enum name="hi_IN" description="" />
+    <Enum name="hr_HR" description="" />
+    <Enum name="hr_HR" description="" />
+    <Enum name="hu_HU" description="" />
+    <Enum name="hu_HU" description="" />
+    <Enum name="hy_AM" description="" />
+    <Enum name="hy_AM" description="" />
+    <Enum name="id_ID" description="" />
+    <Enum name="id_ID" description="" />
+    <Enum name="is_IS" description="" />
+    <Enum name="is_IS" description="" />
+    <Enum name="it_CH" description="" />
+    <Enum name="it_IT" description="" />
+    <Enum name="it_IT" description="" />
+    <Enum name="ja_JP" description="" />
+    <Enum name="ka_GE" description="" />
+    <Enum name="kk_KZ" description="" />
+    <Enum name="kn_IN" description="" />
+    <Enum name="ko_KR" description="" />
+    <Enum name="ky_KG" description="" />
+    <Enum name="lt_LT" description="" />
+    <Enum name="lv_LV" description="" />
+    <Enum name="mk_MK" description="" />
+    <Enum name="ml_IN" description="" />
+    <Enum name="mr_IN" description="" />
+    <Enum name="mt_MT" description="" />
+    <Enum name="nb_NO" description="" />
+    <Enum name="ne_NP" description="" />
+    <Enum name="nl_BE" description="" />
+    <Enum name="nl_NL" description="" />
+    <Enum name="nn_NO" description="" />
+    <Enum name="or_IN" description="" />
+    <Enum name="pa_IN" description="" />
+    <Enum name="pl_PL" description="" />
+    <Enum name="pt_BR" description="" />
+    <Enum name="pt_PT" description="" />
+    <Enum name="ro_RO" description="" />
+    <Enum name="ru_RU" description="" />
+    <Enum name="sk_SK" description="" />
+    <Enum name="sl_SI" description="" />
+    <Enum name="sv_FI" description="" />
+    <Enum name="sv_SE" description="" />
+    <Enum name="ta_IN" description="" />
+    <Enum name="te_IN" description="" />
+    <Enum name="th_TH" description="" />
+    <Enum name="tr_TR" description="" />
+    <Enum name="tt_RU" description="" />
+    <Enum name="uk_UA" description="" />
+    <Enum name="vi_VN" description="" />
+    <Enum name="zh_CN" description="" />
+    <Enum name="zh_HK" description="" />
+    <Enum name="zh_SG" description="" />
+    <Enum name="zh_TW" description="" />
+  </EnumInfo>
+  <EnumInfo id="LocaleCodeforComposit" composit="false" delimiter="" description="LocaleCode 와 동일">
+    <Enum name="af_ZA" description="" />
+    <Enum name="ar_AE" description="" />
+    <Enum name="ar_BH" description="" />
+    <Enum name="ar_DZ" description="" />
+    <Enum name="ar_EG" description="" />
+    <Enum name="ar_IQ" description="" />
+    <Enum name="ar_JO" description="" />
+    <Enum name="ar_KW" description="" />
+    <Enum name="ar_LB" description="" />
+    <Enum name="ar_LY" description="" />
+    <Enum name="ar_MA" description="" />
+    <Enum name="ar_OM" description="" />
+    <Enum name="ar_QA" description="" />
+    <Enum name="ar_SA" description="" />
+    <Enum name="ar_SY" description="" />
+    <Enum name="ar_TN" description="" />
+    <Enum name="ar_YE" description="" />
+    <Enum name="as_IN" description="" />
+    <Enum name="be_BY" description="" />
+    <Enum name="bg_BG" description="" />
+    <Enum name="ca_ES" description="" />
+    <Enum name="cs_CZ" description="" />
+    <Enum name="da_DK" description="" />
+    <Enum name="de_AT" description="" />
+    <Enum name="de_CH" description="" />
+    <Enum name="de_DE" description="" />
+    <Enum name="de_LU" description="" />
+    <Enum name="el_GR" description="" />
+    <Enum name="en_AU" description="" />
+    <Enum name="en_CA" description="" />
+    <Enum name="en_GB" description="" />
+    <Enum name="en_IE" description="" />
+    <Enum name="en_IN" description="" />
+    <Enum name="en_NZ" description="" />
+    <Enum name="en_PH" description="" />
+    <Enum name="en_US" description="" />
+    <Enum name="en_ZA" description="" />
+    <Enum name="en_ZW" description="" />
+    <Enum name="es_AR" description="" />
+    <Enum name="es_BO" description="" />
+    <Enum name="es_CL" description="" />
+    <Enum name="es_CO" description="" />
+    <Enum name="es_CR" description="" />
+    <Enum name="es_DO" description="" />
+    <Enum name="es_EC" description="" />
+    <Enum name="es_ES" description="" />
+    <Enum name="es_GT" description="" />
+    <Enum name="es_HN" description="" />
+    <Enum name="es_MX" description="" />
+    <Enum name="es_NI" description="" />
+    <Enum name="es_PA" description="" />
+    <Enum name="es_PE" description="" />
+    <Enum name="es_PR" description="" />
+    <Enum name="es_PY" description="" />
+    <Enum name="es_SV" description="" />
+    <Enum name="es_UY" description="" />
+    <Enum name="et_EE" description="" />
+    <Enum name="eu_ES" description="" />
+    <Enum name="fi_FI" description="" />
+    <Enum name="fo_FO" description="" />
+    <Enum name="fr_BE" description="" />
+    <Enum name="fr_CA" description="" />
+    <Enum name="fr_CA" description="" />
+    <Enum name="fr_CH" description="" />
+    <Enum name="fr_CH" description="" />
+    <Enum name="fr_FR" description="" />
+    <Enum name="fr_FR" description="" />
+    <Enum name="fr_LU" description="" />
+    <Enum name="fr_LU" description="" />
+    <Enum name="gl_ES" description="" />
+    <Enum name="gl_ES" description="" />
+    <Enum name="gu_IN" description="" />
+    <Enum name="gu_IN" description="" />
+    <Enum name="he_IL" description="" />
+    <Enum name="he_IL" description="" />
+    <Enum name="hi_IN" description="" />
+    <Enum name="hi_IN" description="" />
+    <Enum name="hr_HR" description="" />
+    <Enum name="hr_HR" description="" />
+    <Enum name="hu_HU" description="" />
+    <Enum name="hu_HU" description="" />
+    <Enum name="hy_AM" description="" />
+    <Enum name="hy_AM" description="" />
+    <Enum name="id_ID" description="" />
+    <Enum name="id_ID" description="" />
+    <Enum name="is_IS" description="" />
+    <Enum name="is_IS" description="" />
+    <Enum name="it_CH" description="" />
+    <Enum name="it_IT" description="" />
+    <Enum name="it_IT" description="" />
+    <Enum name="ja_JP" description="" />
+    <Enum name="ka_GE" description="" />
+    <Enum name="kk_KZ" description="" />
+    <Enum name="kn_IN" description="" />
+    <Enum name="ko_KR" description="" />
+    <Enum name="ky_KG" description="" />
+    <Enum name="lt_LT" description="" />
+    <Enum name="lv_LV" description="" />
+    <Enum name="mk_MK" description="" />
+    <Enum name="ml_IN" description="" />
+    <Enum name="mr_IN" description="" />
+    <Enum name="mt_MT" description="" />
+    <Enum name="nb_NO" description="" />
+    <Enum name="ne_NP" description="" />
+    <Enum name="nl_BE" description="" />
+    <Enum name="nl_NL" description="" />
+    <Enum name="nn_NO" description="" />
+    <Enum name="or_IN" description="" />
+    <Enum name="pa_IN" description="" />
+    <Enum name="pl_PL" description="" />
+    <Enum name="pt_BR" description="" />
+    <Enum name="pt_PT" description="" />
+    <Enum name="ro_RO" description="" />
+    <Enum name="ru_RU" description="" />
+    <Enum name="sk_SK" description="" />
+    <Enum name="sl_SI" description="" />
+    <Enum name="sv_FI" description="" />
+    <Enum name="sv_SE" description="" />
+    <Enum name="ta_IN" description="" />
+    <Enum name="te_IN" description="" />
+    <Enum name="th_TH" description="" />
+    <Enum name="tr_TR" description="" />
+    <Enum name="tt_RU" description="" />
+    <Enum name="uk_UA" description="" />
+    <Enum name="vi_VN" description="" />
+    <Enum name="zh_CN" description="" />
+    <Enum name="zh_HK" description="" />
+    <Enum name="zh_SG" description="" />
+    <Enum name="zh_TW" description="" />
+  </EnumInfo>
+  <EnumInfo id="LogLevel" composit="" delimiter="" description="">
+    <Enum name="fatal" description="" />
+    <Enum name="error" description="" />
+    <Enum name="warn" description="" />
+    <Enum name="info" description="" />
+    <Enum name="debug" description="" />
+  </EnumInfo>
+  <EnumInfo id="MaskEditType" composit="" delimiter="" description="">
+    <Enum name="number" description="" />
+    <Enum name="string" description="" />
+  </EnumInfo>
+  <EnumInfo id="MinimizedChildFramePos" composit="" delimiter="" description="">
+    <Enum name="bottom" description="" />
+    <Enum name="left" description="" />
+    <Enum name="right" description="" />
+    <Enum name="top" description="" />
+  </EnumInfo>
+  <EnumInfo id="ModalLockMode" composit="" delimiter="" description="">
+    <Enum name="all" description="" />
+    <Enum name="default" description="" />
+  </EnumInfo>
+  <EnumInfo id="MouseOverType" composit="" delimiter="" description="">
+    <Enum name="default" description="" />
+    <Enum name="cell" description="" />
+    <Enum name="row" description="" />
+  </EnumInfo>
+  <EnumInfo id="MouseWheelType" composit="" delimiter="" description="">
+    <Enum name="default" description="" />
+    <Enum name="focus" description="" />
+    <Enum name="mouseover" description="" />
+  </EnumInfo>
+  <EnumInfo id="NamedColor" composit="" delimiter="" description="">
+    <Enum name="aliceblue" description="" />
+    <Enum name="antiquewhite" description="" />
+    <Enum name="aqua" description="" />
+    <Enum name="aquamarine" description="" />
+    <Enum name="azure" description="" />
+    <Enum name="beige" description="" />
+    <Enum name="bisque" description="" />
+    <Enum name="black" description="" />
+    <Enum name="blanchedalmond" description="" />
+    <Enum name="blue" description="" />
+    <Enum name="blueviolet" description="" />
+    <Enum name="brown" description="" />
+    <Enum name="burlywood" description="" />
+    <Enum name="cadetblue" description="" />
+    <Enum name="chartreuse" description="" />
+    <Enum name="chocolate" description="" />
+    <Enum name="coral" description="" />
+    <Enum name="cornflowerblue" description="" />
+    <Enum name="cornsilk" description="" />
+    <Enum name="crimson" description="" />
+    <Enum name="cyan" description="" />
+    <Enum name="darkblue" description="" />
+    <Enum name="darkcyan" description="" />
+    <Enum name="darkgoldenrod" description="" />
+    <Enum name="darkgray" description="" />
+    <Enum name="darkgreen" description="" />
+    <Enum name="darkkhaki" description="" />
+    <Enum name="darkmagenta" description="" />
+    <Enum name="darkolivegreen" description="" />
+    <Enum name="darkorange" description="" />
+    <Enum name="darkorchid" description="" />
+    <Enum name="darkred" description="" />
+    <Enum name="darksalmon" description="" />
+    <Enum name="darkseagreen" description="" />
+    <Enum name="darkslateblue" description="" />
+    <Enum name="darkslategray" description="" />
+    <Enum name="darkturquoise" description="" />
+    <Enum name="darkviolet" description="" />
+    <Enum name="deeppink" description="" />
+    <Enum name="deepskyblue" description="" />
+    <Enum name="dimgray" description="" />
+    <Enum name="dodgerblue" description="" />
+    <Enum name="firebrick" description="" />
+    <Enum name="floralwhite" description="" />
+    <Enum name="forestgreen" description="" />
+    <Enum name="fuchsia" description="" />
+    <Enum name="gainsboro" description="" />
+    <Enum name="ghostwhite" description="" />
+    <Enum name="gold" description="" />
+    <Enum name="goldenrod" description="" />
+    <Enum name="gray" description="" />
+    <Enum name="green" description="" />
+    <Enum name="greenyellow" description="" />
+    <Enum name="honeydew" description="" />
+    <Enum name="hotpink" description="" />
+    <Enum name="indianred" description="" />
+    <Enum name="indigo" description="" />
+    <Enum name="ivory" description="" />
+    <Enum name="khaki" description="" />
+    <Enum name="lavender" description="" />
+    <Enum name="lavenderblush" description="" />
+    <Enum name="lawngreen" description="" />
+    <Enum name="lemonchiffon" description="" />
+    <Enum name="lightblue" description="" />
+    <Enum name="lightcoral" description="" />
+    <Enum name="lightcyan" description="" />
+    <Enum name="lightgoldenrodyellow" description="" />
+    <Enum name="lightgray" description="" />
+    <Enum name="lightgreen" description="" />
+    <Enum name="lightpink" description="" />
+    <Enum name="lightsalmon" description="" />
+    <Enum name="lightseagreen" description="" />
+    <Enum name="lightskyblue" description="" />
+    <Enum name="lightslategray" description="" />
+    <Enum name="lightsteelblue" description="" />
+    <Enum name="lightyellow" description="" />
+    <Enum name="lime" description="" />
+    <Enum name="limegreen" description="" />
+    <Enum name="linen" description="" />
+    <Enum name="magenta" description="" />
+    <Enum name="maroon" description="" />
+    <Enum name="mediumaquamarine" description="" />
+    <Enum name="mediumblue" description="" />
+    <Enum name="mediumorchid" description="" />
+    <Enum name="mediumpurple" description="" />
+    <Enum name="mediumseagreen" description="" />
+    <Enum name="mediumslateblue" description="" />
+    <Enum name="mediumspringgreen" description="" />
+    <Enum name="mediumturquoise" description="" />
+    <Enum name="mediumvioletred" description="" />
+    <Enum name="midnightblue" description="" />
+    <Enum name="mintcream" description="" />
+    <Enum name="mistyrose" description="" />
+    <Enum name="moccasin" description="" />
+    <Enum name="navajowhite" description="" />
+    <Enum name="navy" description="" />
+    <Enum name="oldlace" description="" />
+    <Enum name="olive" description="" />
+    <Enum name="olivedrab" description="" />
+    <Enum name="orange" description="" />
+    <Enum name="orangered" description="" />
+    <Enum name="orchid" description="" />
+    <Enum name="palegoldenrod" description="" />
+    <Enum name="palegreen" description="" />
+    <Enum name="paleturquoise" description="" />
+    <Enum name="palevioletred" description="" />
+    <Enum name="papayawhip" description="" />
+    <Enum name="peachpuff" description="" />
+    <Enum name="peru" description="" />
+    <Enum name="pink" description="" />
+    <Enum name="plum" description="" />
+    <Enum name="powderblue" description="" />
+    <Enum name="purple" description="" />
+    <Enum name="red" description="" />
+    <Enum name="rosybrown" description="" />
+    <Enum name="royalblue" description="" />
+    <Enum name="saddlebrown" description="" />
+    <Enum name="salmon" description="" />
+    <Enum name="sandybrown" description="" />
+    <Enum name="seagreen" description="" />
+    <Enum name="seashell" description="" />
+    <Enum name="sienna" description="" />
+    <Enum name="silver" description="" />
+    <Enum name="skyblue" description="" />
+    <Enum name="slateblue" description="" />
+    <Enum name="slategray" description="" />
+    <Enum name="snow" description="" />
+    <Enum name="springgreen" description="" />
+    <Enum name="steelblue" description="" />
+    <Enum name="tan" description="" />
+    <Enum name="teal" description="" />
+    <Enum name="thistle" description="" />
+    <Enum name="tomato" description="" />
+    <Enum name="transparent" description="" />
+    <Enum name="turquoise" description="" />
+    <Enum name="violet" description="" />
+    <Enum name="wheat" description="" />
+    <Enum name="white" description="" />
+    <Enum name="whitesmoke" description="" />
+    <Enum name="yellow" description="" />
+    <Enum name="yellowgreen" description="" />
+  </EnumInfo>
+  <EnumInfo id="OpenFlagType" composit="" delimiter="" description="">
+    <Enum name="openReadWrite" description="" />
+    <Enum name="openReadWrite" description="" />
+    <Enum name="openReadWriteCreate" description="" />
+    <Enum name="openReadWriteCreate" description="" />
+  </EnumInfo>
+  <EnumInfo id="OpenStatus" composit="" delimiter="" description="">
+    <Enum name="maximize" description="" />
+    <Enum name="minimize" description="" />
+    <Enum name="normal" description="" />
+  </EnumInfo>
+  <EnumInfo id="Orientation" composit="" delimiter="" description="">
+    <Enum name="landscape" description="" />
+    <Enum name="portrait" description="" />
+    <Enum name="resize" description="" />
+  </EnumInfo>
+  <EnumInfo id="PanelAnchor" composit="" delimiter="" description="">
+    <Enum name="bottom" description="" />
+    <Enum name="left" description="" />
+    <Enum name="none" description="" />
+    <Enum name="right" description="" />
+    <Enum name="top" description="" />
+  </EnumInfo>
+  <EnumInfo id="PanelLayout" composit="" delimiter="" description="">
+    <Enum name="absolute" description="" />
+    <Enum name="horizontal" description="" />
+    <Enum name="vertical" description="" />
+  </EnumInfo>
+  <EnumInfo id="PathSegmentType" composit="" delimiter="" description="">
+    <Enum name="a" description="" />
+    <Enum name="A" description="" />
+    <Enum name="c" description="" />
+    <Enum name="C" description="" />
+    <Enum name="h" description="" />
+    <Enum name="H" description="" />
+    <Enum name="l" description="" />
+    <Enum name="L" description="" />
+    <Enum name="m" description="" />
+    <Enum name="M" description="" />
+    <Enum name="q" description="" />
+    <Enum name="Q" description="" />
+    <Enum name="s" description="" />
+    <Enum name="S" description="" />
+    <Enum name="v" description="" />
+    <Enum name="V" description="" />
+    <Enum name="z" description="" />
+    <Enum name="Z" description="" />
+  </EnumInfo>
+  <EnumInfo id="Pen_StyleType" composit="" delimiter="" description="">
+    <Enum name="dash" description="" />
+    <Enum name="dashdot" description="" />
+    <Enum name="dashdotdot" description="" />
+    <Enum name="solid" description="" />
+  </EnumInfo>
+  <EnumInfo id="PopupType" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="normal" description="" />
+    <Enum name="center" description="" />
+  </EnumInfo>
+  <EnumInfo id="PositionType" composit="" delimiter="" description="">
+    <Enum name="absolute" description="" />
+  </EnumInfo>
+  <EnumInfo id="PositionUsingType" composit="" delimiter="" description="">
+    <Enum name="position" description="" />
+    <Enum name="position2" description="" />
+  </EnumInfo>
+  <EnumInfo id="Positon" composit="" delimiter="" description="">
+    <Enum name="leftortop" description="" />
+    <Enum name="rightorbottom" description="" />
+  </EnumInfo>
+  <EnumInfo id="ProgressBarDirection" composit="" delimiter="" description="">
+    <Enum name="backward" description="" />
+    <Enum name="forward" description="" />
+  </EnumInfo>
+  <EnumInfo id="ProgressBarType" composit="" delimiter="" description="">
+    <Enum name="image" description="" />
+    <Enum name="normal" description="" />
+  </EnumInfo>
+  <EnumInfo id="Prop" composit="" delimiter="" description="">
+    <Enum name="AVG" description="" />
+    <Enum name="COUNT" description="" />
+    <Enum name="KEY" description="" />
+    <Enum name="MAX" description="" />
+    <Enum name="MIN" description="" />
+    <Enum name="NONE" description="" />
+    <Enum name="SUM" description="" />
+    <Enum name="TEXT" description="" />
+  </EnumInfo>
+  <EnumInfo id="QtpWindowSize" composit="" delimiter="" description="">
+    <Enum name="close" description="" />
+    <Enum name="maximize" description="" />
+    <Enum name="minimize" description="" />
+    <Enum name="restore" description="" />
+  </EnumInfo>
+  <EnumInfo id="Quality" composit="" delimiter="" description="">
+    <Enum name="autohith" description="" />
+    <Enum name="autolow" description="" />
+    <Enum name="high" description="" />
+    <Enum name="low" description="" />
+  </EnumInfo>
+  <EnumInfo id="RadialGradientShape" composit="" delimiter="" description="circle | ellipse">
+    <Enum name="circle" description="" />
+    <Enum name="ellipse" description="" />
+  </EnumInfo>
+  <EnumInfo id="RadialGradientSize" composit="" delimiter="" description="closest-side | farthest-side | closest-corner | farthest-corner">
+    <Enum name="closest-corner" description="" />
+    <Enum name="closest-side" description="" />
+    <Enum name="farthest-corner" description="" />
+    <Enum name="farthest-side" description="" />
+  </EnumInfo>
+  <EnumInfo id="RepeatType" composit="" delimiter="" description="">
+    <Enum name="no-repeat" description="" />
+    <Enum name="quad" description="" />
+    <Enum name="repeat" description="" />
+    <Enum name="repeat-x" description="" />
+    <Enum name="repeat-y" description="" />
+    <Enum name="stretch" description="" />
+  </EnumInfo>
+  <EnumInfo id="Role" composit="" delimiter="" description="">
+    <Enum name="none" description="" />
+    <Enum name="alert" description="" />
+    <Enum name="application" description="" />
+    <Enum name="button" description="" />
+    <Enum name="calendar" description="" />
+    <Enum name="chart" description="" />
+    <Enum name="checkbox" description="" />
+    <Enum name="columnheader" description="" />
+    <Enum name="combobox" description="" />
+    <Enum name="datepicker" description="" />
+    <Enum name="edit" description="" />
+    <Enum name="fileupload" description="" />
+    <Enum name="form" description="" />
+    <Enum name="frame" description="" />
+    <Enum name="grid" description="" />
+    <Enum name="gridcell" description="" />
+    <Enum name="groupbox" description="" />
+    <Enum name="heading" description="" />
+    <Enum name="image" description="" />
+    <Enum name="link" description="" />
+    <Enum name="listbox" description="" />
+    <Enum name="menu" description="" />
+    <Enum name="menubar" description="" />
+    <Enum name="progressbar" description="" />
+    <Enum name="radio" description="" />
+    <Enum name="rowheader" description="" />
+    <Enum name="scrollbar" description="" />
+    <Enum name="spin" description="" />
+    <Enum name="static" description="" />
+    <Enum name="statusbar" description="" />
+    <Enum name="tab" description="" />
+    <Enum name="tabpage" description="" />
+    <Enum name="textarea" description="" />
+    <Enum name="titlebar" description="" />
+    <Enum name="toolbar" description="" />
+    <Enum name="tooltip" description="" />
+    <Enum name="treegrid" description="" />
+    <Enum name="treeitem" description="" />
+    <Enum name="webbrowser" description="" />
+  </EnumInfo>
+  <EnumInfo id="RtlDirection" composit="" delimiter="" description="">
+    <Enum name="inherit" description="" />
+    <Enum name="ltr" description="" />
+    <Enum name="rtl" description="" />
+  </EnumInfo>
+  <EnumInfo id="RulerBaseType" composit="" delimiter="" description="">
+    <Enum name="distance" description="" />
+    <Enum name="point" description="" />
+  </EnumInfo>
+  <EnumInfo id="RulerSortType" composit="" delimiter="" description="">
+    <Enum name="ascend" description="" />
+    <Enum name="descend" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="Scalemode" composit="" delimiter="" description="">
+    <Enum name="exactfit" description="" />
+    <Enum name="noborder" description="" />
+    <Enum name="noscale" description="" />
+    <Enum name="showall" description="" />
+  </EnumInfo>
+  <EnumInfo id="ScreenOrientation" composit="" delimiter="" description="">
+    <Enum name="portrait" description="" />
+    <Enum name="landscape" description="" />
+  </EnumInfo>
+  <EnumInfo id="ScreenType" composit="false" delimiter="" description="">
+    <Enum name="desktop" description="" />
+    <Enum name="mobile_small" description="" />
+    <Enum name="mobile_medium" description="" />
+    <Enum name="mobile_large" description="" />
+  </EnumInfo>
+  <EnumInfo id="ScriptType" composit="" delimiter="" description="">
+    <Enum name="xscript4.0" description="" />
+  </EnumInfo>
+  <EnumInfo id="ScrollBarType" composit="" delimiter="" description="scrollbartype 추가됨">
+    <Enum name="default" description="터치환경에서 인디케이터를 아닌 경우 스크롤바를 출력" />
+    <Enum name="auto" description="스크롤바 자동출력" />
+    <Enum name="autoindicator" description="스크롤 처리 시점에만 스크롤인디케이터바 오버랩 출력" />
+    <Enum name="fixed" description="스크롤바 항상출력" />
+    <Enum name="indicator" description="스크롤인디케이터바 출력" />
+    <Enum name="none" description="출력하지않음" />
+  </EnumInfo>
+  <EnumInfo id="ScrollDirection" composit="" delimiter="" description="">
+    <Enum name="horizontal" description="" />
+    <Enum name="horz" description="" />
+    <Enum name="vert" description="" />
+    <Enum name="vertical" description="" />
+  </EnumInfo>
+  <EnumInfo id="ScrollType" composit="" delimiter="" description="">
+    <Enum name="both" description="" />
+    <Enum name="none" description="" />
+    <Enum name="vertical" description="" />
+    <Enum name="horizontal" description="" />
+  </EnumInfo>
+  <EnumInfo id="SecureLevel" composit="" delimiter="" description="">
+    <Enum name="all" description="" />
+    <Enum name="private" description="" />
+  </EnumInfo>
+  <EnumInfo id="SelectChangeType" composit="" delimiter="" description="">
+    <Enum name="down" description="" />
+    <Enum name="up" description="" />
+  </EnumInfo>
+  <EnumInfo id="SelectScrollMode" composit="" delimiter="" description="">
+    <Enum name="default" description="" />
+    <Enum name="scroll" description="" />
+    <Enum name="select" description="" />
+  </EnumInfo>
+  <EnumInfo id="ServiceType" composit="" delimiter="" description="">
+    <Enum name="ASP" description="" />
+    <Enum name="BS" description="" />
+    <Enum name="file" description="" />
+    <Enum name="form" description="" />
+    <Enum name="js" description="" />
+    <Enum name="JSP" description="" />
+    <Enum name="none" description="" />
+    <Enum name="SAP" description="" />
+  </EnumInfo>
+  <EnumInfo id="ShadowType" composit="" delimiter="" description="">
+    <Enum name="outer" description="" />
+  </EnumInfo>
+  <EnumInfo id="ShapeType" composit="" delimiter="" description="">
+    <Enum name="custom" description="" />
+    <Enum name="ellipse" description="" />
+    <Enum name="line" description="" />
+    <Enum name="pie" description="" />
+    <Enum name="rectangle" description="" />
+    <Enum name="roundrectangle" description="" />
+    <Enum name="triangle" description="" />
+  </EnumInfo>
+  <EnumInfo id="SmsType" composit="" delimiter="" description="">
+    <Enum name="receive" description="" />
+    <Enum name="send" description="" />
+    <Enum name="unknown" description="" />
+  </EnumInfo>
+  <EnumInfo id="SpinButtonAlign" composit="" delimiter="" description="">
+    <Enum name="left" description="" />
+    <Enum name="right" description="" />
+  </EnumInfo>
+  <EnumInfo id="SpinType" composit="" delimiter="" description="">
+    <Enum name="noneditable" description="" />
+    <Enum name="normal" description="" />
+    <Enum name="spinonly" description="" />
+  </EnumInfo>
+  <EnumInfo id="StepShowType" composit="" delimiter="" description="">
+    <Enum name="action" description="" />
+    <Enum name="always" description="" />
+  </EnumInfo>
+  <EnumInfo id="Stretch" composit="" delimiter="" description="">
+    <Enum name="fit" description="" />
+    <Enum name="fixaspectratio" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="StrokeCap" composit="" delimiter="" description="">
+    <Enum name="flat" description="" />
+    <Enum name="round" description="" />
+    <Enum name="square" description="" />
+  </EnumInfo>
+  <EnumInfo id="StrokeJoin" composit="" delimiter="" description="">
+    <Enum name="miter" description="" />
+    <Enum name="round" description="" />
+    <Enum name="bevel" description="" />
+  </EnumInfo>
+  <EnumInfo id="StrokeType" composit="" delimiter="" description="">
+    <Enum name="custom" description="" />
+    <Enum name="dashdot" description="" />
+    <Enum name="dashdotdot" description="" />
+    <Enum name="dashed" description="" />
+    <Enum name="dotted" description="" />
+    <Enum name="none" description="" />
+    <Enum name="solid" description="" />
+  </EnumInfo>
+  <EnumInfo id="SuppressAlign" composit="" delimiter="" description="">
+    <Enum name="first" description="" />
+    <Enum name="middle" description="" />
+    <Enum name="last" description="" />
+  </EnumInfo>
+  <EnumInfo id="SysMobileOrientation" composit="" delimiter="" description="">
+    <Enum name="LandscapeLeft" description="" />
+    <Enum name="LandscapeRight" description="" />
+    <Enum name="Portrait" description="" />
+    <Enum name="ReversePortrait" description="" />
+  </EnumInfo>
+  <EnumInfo id="SystemColor" composit="" delimiter="" description="">
+    <Enum name="3DDKSHADOW" description="" />
+    <Enum name="3DLIGHT" description="" />
+    <Enum name="ACTIVEBORDER" description="" />
+    <Enum name="ACTIVECAPTION" description="" />
+    <Enum name="APPWORKSPACE" description="" />
+    <Enum name="BACKGROUND" description="" />
+    <Enum name="BTNFACE" description="" />
+    <Enum name="BTNHIGHLIGHT" description="" />
+    <Enum name="BTNSHADOW" description="" />
+    <Enum name="BTNTEXT" description="" />
+    <Enum name="CAPTIONTEXT" description="" />
+    <Enum name="GRAYTEXT" description="" />
+    <Enum name="HIGHLIGHT" description="" />
+    <Enum name="HIGHLIGHTTEXT" description="" />
+    <Enum name="INACTIVEBORDER" description="" />
+    <Enum name="INACTIVECAPTION" description="" />
+    <Enum name="INACTIVECAPTIONTEXT" description="" />
+    <Enum name="INFOBK" description="" />
+    <Enum name="INFOTEXT" description="" />
+    <Enum name="MENU" description="" />
+    <Enum name="MENUTEXT" description="" />
+    <Enum name="SCROLLBAR" description="" />
+    <Enum name="WINDOW" description="" />
+    <Enum name="WINDOWFRAME" description="" />
+    <Enum name="WINDOWTEXT" description="" />
+  </EnumInfo>
+  <EnumInfo id="SystemOs" composit="false" delimiter="" description="">
+    <Enum name="windows" description="" />
+    <Enum name="macOS" description="" />
+    <Enum name="android" description="" />
+    <Enum name="ios" description="" />
+  </EnumInfo>
+  <EnumInfo id="Tabkeycirculation" composit="" delimiter="" description="">
+    <Enum name="form,cycle" description="Form내에서 순환됩니다. (default)" />
+    <Enum name="form,nocycle" description="Form내에서 순환되지 않습니다." />
+  </EnumInfo>
+  <EnumInfo id="TabPosition" composit="" delimiter="" description="">
+    <Enum name="bottom" description="" />
+    <Enum name="left" description="" />
+    <Enum name="right" description="" />
+    <Enum name="top" description="" />
+  </EnumInfo>
+  <EnumInfo id="TextDecorationLine" composit="true" delimiter=" " description="[ none || underline || overline || line-through || blink ]">
+    <Enum name="none" description="" />
+    <Enum name="underline" description="" />
+    <Enum name="overline" description="" />
+    <Enum name="line-through" description="" />
+  </EnumInfo>
+  <EnumInfo id="TextDecorationStyle" composit="" delimiter="" description="solid | double | dotted | dashed | wavy">
+    <Enum name="dashed" description="" />
+    <Enum name="dotted" description="" />
+    <Enum name="double" description="" />
+    <Enum name="solid" description="" />
+    <Enum name="wavy" description="" />
+  </EnumInfo>
+  <EnumInfo id="TitleAlign" composit="" delimiter="" description="">
+    <Enum name="topleft" description="" />
+    <Enum name="topcenter" description="" />
+    <Enum name="topright" description="" />
+    <Enum name="lefttop" description="" />
+    <Enum name="leftcenter" description="" />
+    <Enum name="leftbottom" description="" />
+    <Enum name="righttop" description="" />
+    <Enum name="rightcenter" description="" />
+    <Enum name="rightbottom" description="" />
+    <Enum name="bottomleft" description="" />
+    <Enum name="bottomcenter" description="" />
+    <Enum name="bottomright" description="" />
+  </EnumInfo>
+  <EnumInfo id="TitleView" composit="" delimiter="" description="">
+    <Enum name="horizontal" description="" />
+    <Enum name="line" description="" />
+    <Enum name="vertical" description="" />
+  </EnumInfo>
+  <EnumInfo id="TooltipType" composit="" delimiter="" description="">
+    <Enum name="default" description="" />
+    <Enum name="hover" description="" />
+    <Enum name="inplace" description="" />
+  </EnumInfo>
+  <EnumInfo id="TraceMode" composit="" delimiter="" description="">
+    <Enum name="append" description="" />
+    <Enum name="new" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="TransEffectType" composit="" delimiter="" description="">
+    <Enum name="cube3d" description="" />
+    <Enum name="fade" description="" />
+    <Enum name="flip3d" description="" />
+    <Enum name="slide" description="" />
+    <Enum name="wipe" description="" />
+  </EnumInfo>
+  <EnumInfo id="TriangleType" composit="" delimiter="" description="">
+    <Enum name="bottom" description="" />
+    <Enum name="left" description="" />
+    <Enum name="right" description="" />
+    <Enum name="top" description="" />
+  </EnumInfo>
+  <EnumInfo id="TrimType" composit="" delimiter="" description="">
+    <Enum name="both" description="" />
+    <Enum name="left" description="" />
+    <Enum name="none" description="" />
+    <Enum name="right" description="" />
+  </EnumInfo>
+  <EnumInfo id="Type" composit="" delimiter="" description="">
+    <Enum name="horizontal" description="" />
+    <Enum name="vertical" description="" />
+  </EnumInfo>
+  <EnumInfo id="TypeOption" composit="" delimiter="" description="">
+    <Enum name="autoselectall" description="" />
+    <Enum name="comparenocase" description="" />
+    <Enum name="deletenotfound" description="" />
+    <Enum name="noautocomplete" description="" />
+    <Enum name="none" description="" />
+    <Enum name="substringsearch" description="" />
+  </EnumInfo>
+  <EnumInfo id="UndoType" composit="" delimiter="" description="">
+    <Enum name="char" description="" />
+    <Enum name="word" description="" />
+  </EnumInfo>
+  <EnumInfo id="UpdateBindingValue" composit="" delimiter="" description="">
+    <Enum name="default" description="" />
+    <Enum name="nosetvalue" description="" />
+  </EnumInfo>
+  <EnumInfo id="UseContextMenuValueType" composit="" delimiter="" description="">
+    <Enum name="all" description="" />
+    <Enum name="edit" description="" />
+    <Enum name="form" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="UseImeType" composit="" delimiter="" description="">
+    <Enum name="global" description="" />
+    <Enum name="local" description="" />
+    <Enum name="local,keep" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="UserColor" composit="" delimiter="" description="">
+    <Enum name="user1" description="" />
+    <Enum name="user2" description="" />
+  </EnumInfo>
+  <EnumInfo id="VerticalAlign" composit="" delimiter="" description="top | middle | bottom">
+    <Enum name="top" description="" />
+    <Enum name="middle" description="" />
+    <Enum name="bottom" description="" />
+  </EnumInfo>
+  <EnumInfo id="VerticalPosition" composit="" delimiter="" description="top | center | bottom">
+    <Enum name="top" description="" />
+    <Enum name="center" description="" />
+    <Enum name="bottom" description="" />
+  </EnumInfo>
+  <EnumInfo id="VideoControlBar" composit="" delimiter="" description="none | full">
+    <Enum name="none" description="" />
+    <Enum name="full" description="" />
+  </EnumInfo>
+  <EnumInfo id="WidgetOpenStatus" composit="" delimiter="" description="">
+    <Enum name="minimize" description="" />
+    <Enum name="normal" description="" />
+  </EnumInfo>
+  <EnumInfo id="WindowedBitmapAnimation" composit="" delimiter="" description="">
+    <Enum name="all" description="" />
+    <Enum name="form" description="" />
+    <Enum name="none" description="" />
+  </EnumInfo>
+  <EnumInfo id="WinLevel" composit="" delimiter="" description="">
+    <Enum name="bottom" description="" />
+    <Enum name="notopmost" description="" />
+    <Enum name="top" description="" />
+    <Enum name="topmost" description="" />
+  </EnumInfo>
+  <EnumInfo id="WordSpacing" composit="" delimiter="" description="normal">
+    <Enum name="normal" description="" />
+  </EnumInfo>
+  <EnumInfo id="WordWrapType" composit="" delimiter="" description="none | char | english">
+    <Enum name="none" description="" />
+    <Enum name="char" description="" />
+    <Enum name="english" description="" />
+  </EnumInfo>
+</MetaInfo>

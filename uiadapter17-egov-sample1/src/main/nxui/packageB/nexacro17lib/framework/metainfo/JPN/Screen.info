@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Screen">
+    <ObjectInfo inheritance="" classname="nexacro.Screen" shorttypename="Screen" csstypename="" csscontrolname="" group="Object" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションで使用するスクリーン情報を管理するオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="id" group="Layout Information" subgroup="" refreshinfo="" edittype="ID" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="スクリーン名を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="specifiedlocale" group="Layout Information" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LocaleCode" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションが実行される際、Screen選択の基準となるロケール（Locale）を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="specifiedlocale" />
+      <Property name="specifiedos" group="Layout Information" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="SystemOs" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションが実行される際にScreen選択の基準となるOSを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="specifiedos" />
+      <Property name="type" group="Layout Information" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScreenType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="スクリーンの選択基準となるデバイスの種類を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="type" />
+      <Property name="userzoom" group="Layout Information" subgroup="" refreshinfo="" edittype="Boolean" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android Default Web Browser,iOS Default Web Browser" description="モバイルWebブラウザ環境で選択されたScreenのtypeプロパティ値が「desktop」である場合、ピンチズーム機能の使用有無を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="userzoom" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

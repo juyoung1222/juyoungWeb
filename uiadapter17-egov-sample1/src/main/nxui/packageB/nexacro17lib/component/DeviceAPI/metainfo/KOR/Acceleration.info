@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Acceleration">
+    <ObjectInfo inheritance="" classname="nexacro.Acceleration" shorttypename="Acceleration" csstypename="Acceleration" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기의 가속도 정보를 제공합니다." />
+    <PropertyInfo>
+      <Property name="accuracy" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 수신한 가속도 정보의 정확도를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accuracy" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="Acceleration의 고유 식별자를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="Acceleration 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="Acceleration 의 부모 오브젝트를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="timestamp" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 가속도 정보를 수신한 시간을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="timestamp" />
+      <Property name="xpos" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 수신한 가속도 정보 중 x 축의 값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="xpos" />
+      <Property name="ypos" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 수신한 가속도 정보 중 y 축의 값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="ypos" />
+      <Property name="zpos" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 수신한 가속도 정보 중 z 축의 값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="zpos" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Acceleration 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="Acceleration.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="함수를 검색하여 Acceleration 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="Acceleration.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="Acceleration.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Acceleration 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Acceleration.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCurrentAcceleration" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기의 가속도 정보를 반환하는 메소드입니다.">
+        <Syntax text="Acceleration.getCurrentAcceleration( [nAccuracy] )">
+          <Return type="Boolean" description="가속도 정보 수신에 성공하면 &quot;true&quot;를 반환하고, onrecvsucces 이벤트가 발생합니다.&#xA;&#xA;가속도 정보 수신에 실패하면 &quot;false&quot;를 반환하고, onrecverror 이벤트가 발생합니다.&#xA;nAccuracy 값이 &quot;0~3&quot;값이 아니면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="nAccuracy" type="Number" in="false" out="false" option="false" variable="false" description="가속도 정보의 정확도를 &quot;0~3&quot;범위의 숫자로 설정합니다.&#xA;값이 작을수록 반환되는 값의 정확도가 높아집니다.&#xA;&#xA;값 생략 시 &quot;0&quot;으로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Acceleration 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="Acceleration.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Acceleration 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="Acceleration.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Acceleration 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="Acceleration.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Acceleration 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="Acceleration.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Acceleration 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="Acceleration.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="watchStart" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기의 가속도 정보를 일정 간격으로 수신하도록 설정하는 메소드입니다.">
+        <Syntax text="Acceleration.watchStart( nAccuracy, nIntervalTime )">
+          <Return type="Boolean" description="메소드 실행에 성공하면 &quot;true&quot;를 반환합니다.&#xA;&#xA;메소드 실행에 실패하거나 파라미터값을 잘 못 설정하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="nAccuracy" type="Number" in="false" out="false" option="false" variable="false" description="가속도 정보 정확도를 &quot;0~3&quot;범위의 숫자로 설정합니다.&#xA;값이 작을수록 반환되는 값의 정확도가 높아집니다." />
+            <Argument name="nIntervalTime" type="Number" in="false" out="false" option="false" variable="false" description="가속도 정보를 수신할 주기를 밀리초(milliseconds) 단위의 숫자로 설정합니다.&#xA;&#xA;주기는 200ms ~ 86,400,000ms 사이의 값을 설정할 수 있습니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="watchStop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="watchStart() 메소드로 설정한 주기적인 가속도 정보 수신을 종료하는 메소드입니다.">
+        <Syntax text="Acceleration.watchStop()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onrecverror" group="" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 가속도 정보 수신이 실패했을 때 발생하는 이벤트입니다.">
+        <Syntax text="Acceleration.onrecverror(obj:nexacro.Acceleration,e:nexacro.AccelerationErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AccelerationErrorEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrecvsuccess" group="" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 가속도 정보 수신이 성공했을 때 발생하는 이벤트입니다.">
+        <Syntax text="Acceleration.onrecvsuccess(obj:nexacro.Acceleration,e:nexacro.AccelerationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AccelerationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

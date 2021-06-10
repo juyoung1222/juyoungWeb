@@ -1,0 +1,1215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Dataset">
+    <ObjectInfo inheritance="" classname="nexacro.NormalDataset" shorttypename="Dataset" csstypename="Dataset" csscontrolname="" group="Object" subgroup="Dataset" csspseudo="false" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="dataset" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="onload" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="데이타를 테이블 형태로 저장하는 오브젝트입니다.&#xA;엔진과 밀접하게 연관되어 있으며, 내부에서 사용하는 데이타는 Dataset형태를 사용합니다.&#xA;컴포넌트와 바인딩한 Dataset을 이용해 데이타의 변경사항을 공유합니다. &#xA;통신시에도 데이타를 주고 받는 형식으로 사용합니다. &#xA;&#xA;Dataset의 Column이나 레코드를 추가, 삭제, 수정하는 메소드, 레코드 그룹, 정렬, 필터 기능, 통계 메소드(Sum, Max, Min, Avg, Count)를 지원합니다. 또한 다른 Dataset을 합치거나 추가하거나 복사하는 기능을 지원합니다.&#xA;&#xA;filterstr에 expression을 지정하면, Dataset의 레코드가 필터링됩니다.&#xA;keystring 속성을 통해 데이터를 그룹으로 묶거나 정렬할 수 있습니다." />
+    <PropertyInfo>
+      <Property name="arguments" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 url 속성에 설정된 Business Service 에 전달할 인수를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="arguments" />
+      <Property name="colcount" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 정의된 Column 의 갯수를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="colcount" />
+      <Property name="colinfos" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 정의된 Column 정보를 Collection 형태로 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="colinfos" />
+      <Property name="constcount" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 정의된 Const Column (상수 컬럼)의 갯수를 갖는 읽기전용 속성업니다." csspropertyname="" csselementname="" normalpropertyname="constcount" />
+      <Property name="enableevent" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 이벤트를 발생시킬지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="filterstr" group="Misc." subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 로드된 데이터를 필터링할 조건식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="filterstr" />
+      <Property name="keystring" group="Misc." subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 로드된 데이터를 그룹핑할 기준이 되는 조건식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="keystring" />
+      <Property name="loadfiltermode" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="keep" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LoadMode" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 데이터를 로드하거나 트랜잭션을 수행할 때 filterstr 속성값의 적용방법을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="loadfiltermode" />
+      <Property name="loadkeymode" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="keep" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LoadMode" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 데이터를 로드하거나 트랜잭션을 수행할 때 keystring 속성값의 적용방법을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="loadkeymode" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Dataset 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="preload" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 url 속성을 설정한 경우 DataSet 에 데이터를 로드하는 시점을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="preload" />
+      <Property name="progressload" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="서버로부터 데이터를 Chunked 방식으로 여러번에 걸쳐서 받을 경우에 대한 처리방법을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="progressload" />
+      <Property name="reversesubsum" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 이 keystring 속성에 의해 그룹핑 되었을 때 그룹소계가 표시될 위치를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="reversesubsum" />
+      <Property name="rowcount" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 로드된 데이터의 갯수를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="rowcount" />
+      <Property name="rowposition" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 현재 선택된 데이터의 Row 인덱스를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="rowposition" />
+      <Property name="serverdatasetid" group="Misc." subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 url 속성에 설정된 Business Service 를 통해 전달된 DataSet 중 실제 사용될 DataSet 의 ID를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="serverdatasetid" />
+      <Property name="updatecontrol" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 데이터가 Insert/Update/Delete 되었을 경우 각 RowType 을 자동으로 변경할 지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="updatecontrol" />
+      <Property name="url" group="Misc." subgroup="" refreshinfo="" edittype="URL" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 Business Service 를 연결하는 경우 해당 서비스의 경로(URL)을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="url" />
+      <Property name="useclientlayout" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="트랜잭션을 수행하여 수신된 DataSet 의 Column Layout 을 적용할 지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="useclientlayout" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 Column 을 추가하는 메소드입니다.">
+        <Syntax text="Dataset.addColumn( strColID, strColType [,nColSize] )">
+          <Return type="Number" description="DataSet 에 추가된 Column 의 인덱스를 반환합니다.&#xA;만약, Column 의 추가에 실패하면 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="nColSize" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에 추가할 Column 의 데이터 길이를 설정합니다.&#xA;&#xA;값을 생략하면 &quot;256&quot; 으로 적용됩니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에 추가할 Column 의 ID 를 문자열로 설정합니다." />
+            <Argument name="strColType" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에 추가할 Column 의 타입을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addColumnInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 ColumnInfo 객체를 사용하여 Column 을 추가하는 메소드입니다.">
+        <Syntax text="Dataset.addColumnInfo( strID, objColInfo )">
+          <Return type="Number" description="DataSet 에 추가된 Column 의 인덱스를 반환합니다.&#xA;만약, Column 의 추가에 실패하면 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="objColInfo" type="Object" in="false" out="false" option="false" variable="false" description="DataSet 에 추가할 ColumnInfo 객체를 설정합니다." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에 추가할 Column 의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addConstColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 Const Column(상수 컬럼)을 추가하는 메소드입니다.">
+        <Syntax text="Dataset.addConstColumn( strColID, varVal )">
+          <Return type="Number" description="DataSet 에 추가된 Const Column 의 인덱스를 반환합니다.&#xA;만약, Const Column 의 추가에 실패하면 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에 추가할 Const Column 의 ID 를 문자열로 설정합니다." />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="DataSet 에 추가할 Const Column 의 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Dataset 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="Dataset.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="함수를 검색하여 Dataset 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="Dataset.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 마지막 Row 에 새로운 데이터(Row)를 추가하는 메소드입니다.">
+        <Syntax text="Dataset.addRow()">
+          <Return type="Number" description="DataSet 에 추가된 Row 의 인덱스를 반환합니다.&#xA;만약, Row 의 추가에 실패하면 &quot;-1&quot; 을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="append" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 서비스경로(URL)에서 데이터를 로드하여 현재 DataSet 의 마지막 Row 뒤에 추가하는 메소드입니다.">
+        <Syntax text="Dataset.append([strUrl])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="데이터를 로드하기 위한 서비스경로(URL)을 설정합니다.&#xA;허용되는 형식은 DataSet 의 url 속성을 참고하시기 바랍니다.&#xA;&#xA;값을 설정하지 않을 경우 DataSet 의 url 속성값이 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="appendData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="현재 DataSet 의 마지막 Row 다음에 지정한 DataSet 의 데이터(Row)를 추가하는 메소드입니다.">
+        <Syntax text="Dataset.appendData( objDataset [,bCheckCol [,bUpdateConstCol]] )">
+          <Return type="Number" description="새로 추가된 데이터를 포함하여 현재 DataSet 의 전체 Row 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="bCheckCol" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 동일한 Column 에 데이터가 추가됩니다.&#xA;&quot;false&quot; 설정 시 Column 순서에 맞게 데이터가 추가됩니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="bUpdateConstCol" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 동일한 ID 의 Const Column 에 상수값을 수정합니다.&#xA;&quot;false&quot; 설정 시 동일한 ID 의 Const Column 에 상수값을 수정하지 않습니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="추가될 데이터(Row)를 갖고 있는 DataSet 을 오브젝트로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="applyChange" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 모든 Row의 타입을  &quot;ROWTYPE_NORMAL&quot;(normal)로 바꾸는 메소드입니다.">
+        <Syntax text="Dataset.applyChange()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="assign" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="현재 DataSet 에 지정한 DataSet 의 Row, Column 정보와 모든 데이터를 부여하는 메소드입니다.">
+        <Syntax text="Dataset.assign( objDataset )">
+          <Return type="Number" description="현재 DataSet 에 부여된 Row 의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="Row, Column 정보와 모든 데이터를 가져올 DataSet 을 오브젝트로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 Row, Column 정보와 데이터를 모두 삭제하는 메소드입니다.">
+        <Syntax text="Dataset.clear()">
+          <Return type="Number" description="삭제된 데이터(Row) 의 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 Column 정보 이외에 모든 데이터(Row) 를 삭제하는 메소드입니다.">
+        <Syntax text="Dataset.clearData()">
+          <Return type="Number" description="삭제된 데이터(Row) 의 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="Dataset.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="copyData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="현재 DataSet 에 지정한 DataSet 의 데이터(Row)를 복사하는 메소드입니다.">
+        <Syntax text="Dataset.copyData( objDataset [, bFilteredOnly] )">
+          <Return type="Number" description="복사된 데이터(Row) 의 갯수를 반환합니다.&#xA;복사된 데이터(Row) 가 없다면 &quot;null&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="bFilteredOnly" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 objDataset 이 필터링 되어 있다면 필터링 된 데이터만 복사합니다.&#xA;&quot;false&quot; 설정 시 objDataset 의 필터링 여부와 관계없이 모든 데이터를 복사합니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="복사할 데이터(Row)를 갖고 있는 DataSet 을 오브젝트로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="copyRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="현재 DataSet 의 특정 데이터(Row)를 지정한 DataSet 의 데이터(Row)로 갱신하는 메소드입니다.">
+        <Syntax text="Dataset.copyRow( nToRow, objDataset, nFromRow [,strColInfo] )">
+          <Return type="Boolean" description="메소드 수행에 성공하면 &quot;true&quot;를 반환합니다.&#xA;메소드 수행에 실패하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="nFromRow" type="Number" in="false" out="false" option="false" variable="false" description="objDataset 에서 복사해 올 Row 의 인덱스를 설저합니다." />
+            <Argument name="nToRow" type="Number" in="false" out="false" option="false" variable="false" description="새로운 데이터로 갱신될 현재 DataSet 의 Row 인덱스를 설정합니다." />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="복사해 올 데이터를 가진 DataSet 을 오브젝트로 설정합니다." />
+            <Argument name="strColInfo" type="String" in="false" out="false" option="false" variable="false" description="데이터를 갱신할 때 &quot;ToColumnID=FromColumnID,ToColumnID1=FromColumnID1&quot; 형식으로 Column 을 매칭시키는 조건을 설정합니다.&#xA;&#xA;값 생략 시 동일한 Column ID를 가진 데이터만 갱신됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="createDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 설정한 조건을 만족하는 Row 로 이루어진 DataSet 을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.createDataset( strDatasetID, arrColList [ , strWhereExpr [ , nStartIdx [ , nEndIdx ] ] ] )">
+          <Return type="Object" description="설정한 조건을 만족하는 Row 로 이루어진 DataSet 을 반환합니다.&#xA;&#xA;DataSet 을 생성할 수 없는 경우에는 null 을 반환합니다." />
+          <Arguments>
+            <Argument name="arrColList" type="Array" in="false" out="false" option="false" variable="false" description="새로 생성될 DataSet 의 Column 구조와 데이터 생성방법을 배열형태로 설정합니다.&#xA;&#xA;배열의 각 인자에 아래와 같은 형식으로 정의할 수 있습니다.&#xA;&quot;ColID&quot; : 새로운 DataSet 에 &quot;ColID&quot; 로 Column 을 생성하고, 원본 DataSet 의 &quot;ColID&quot; 값을 설정합니다.&#xA;             원본 DataSet 에 &quot;ColID&quot; 이름을 갖는 Column 이 없다면, 데이터가 null 값으로 설정됩니다.&#xA;&quot;NewColID : OldColID&quot; : 새로운 DataSet 에 &quot;NewColID&quot; 로 Column 을 생성하고 , 원본 DataSet 의 &quot;OldColID&quot; 값을 설정합니다.&#xA;                                  원본 DataSet 에 &quot;OldColID&quot; 이름을 갖는 Column 이 없다면, 데이터가 null 값으로 설정됩니다.&#xA;&quot;NewColID : strExpr&quot; : 새로운 DataSet 에 &quot;NewColID&quot; 로 Column 을 생성하고 , &quot;strExpr&quot; 로 정의된 표현식의 결과값을 설정합니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="원본 DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="원본 DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strDatasetID" type="String" in="false" out="false" option="false" variable="false" description="새로 생성될 DataSet 의 ID 를 설정합니다." />
+            <Argument name="strWhereExpr" type="String" in="false" out="false" option="false" variable="false" description="새로 생성될 DataSet 에 복사될 Row 를 선택하는 조건을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="createDatasetNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 설정한 조건을 만족하는 Row 로 이루어진 DataSet 을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.createDatasetNF( strDatasetID, arrColList [ , strWhereExpr [ , nStartIdx [ , nEndIdx ] ] ] )">
+          <Return type="Object" description="설정한 조건을 만족하는 Row 로 이루어진 DataSet 을 반환합니다.&#xA;&#xA;DataSet 을 생성할 수 없는 경우에는 null 을 반환합니다." />
+          <Arguments>
+            <Argument name="arrColList" type="Array" in="false" out="false" option="false" variable="false" description="새로 생성될 DataSet 의 Column 구조와 데이터 생성방법을 배열형태로 설정합니다.&#xA;&#xA;배열의 각 인자에 아래와 같은 형식으로 정의할 수 있습니다.&#xA;&quot;ColID&quot; : 새로운 DataSet 에 &quot;ColID&quot; 로 Column 을 생성하고, 원본 DataSet 의 &quot;ColID&quot; 값을 설정합니다.&#xA;             원본 DataSet 에 &quot;ColID&quot; 이름을 갖는 Column 이 없다면, 데이터가 null 값으로 설정됩니다.&#xA;&quot;NewColID : OldColID&quot; : 새로운 DataSet 에 &quot;NewColID&quot; 로 Column 을 생성하고 , 원본 DataSet 의 &quot;OldColID&quot; 값을 설정합니다.&#xA;                                  원본 DataSet 에 &quot;OldColID&quot; 이름을 갖는 Column 이 없다면, 데이터가 null 값으로 설정됩니다.&#xA;&quot;NewColID : strExpr&quot; : 새로운 DataSet 에 &quot;NewColID&quot; 로 Column 을 생성하고 , &quot;strExpr&quot; 로 정의된 표현식의 결과값을 설정합니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="원본 DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="원본 DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strDatasetID" type="String" in="false" out="false" option="false" variable="false" description="새로 생성될 DataSet 의 ID 를 설정합니다." />
+            <Argument name="strWhereExpr" type="String" in="false" out="false" option="false" variable="false" description="새로 생성될 DataSet 에 복사될 Row 를 선택하는 조건을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteAll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 모든 데이터(Row)를 삭제하는 메소드입니다.">
+        <Syntax text="Dataset.deleteAll()">
+          <Return type="Number" description="삭제된 데이터(Row) 의 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="deleteColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 지정한 Column 또는 Const Column 을 삭제하는 메소드입니다.">
+        <Syntax text="Dataset.deleteColumn(nCol)&#xD;&#xA;Dataset.deleteColumn(strColID)">
+          <Return type="Boolean" description="Column 삭제에 성공하면 &quot;true&quot;를 반환합니다.&#xA;Column 삭제에 실패하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="nCol" type="Number" in="false" out="false" option="false" variable="false" description="삭제할 Column 의 인덱스를 설정합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="삭제할 Column 의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteMultiRows" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="배열로 된 Row 목록을 입력 받아 해당 Row 들을 삭제하는 메소드입니다.">
+        <Syntax text="Dataset.deleteMultiRows( arrRowlist );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="arrRowlist" type="Array" in="false" out="false" option="false" variable="false" description="Row 인덱스값을 배열 형태로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 지정한 데이터(Row)를 삭제하는 메소드입니다.">
+        <Syntax text="Dataset.deleteRow(nRow)">
+          <Return type="Boolean" description="데이터(Row) 삭제에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;데이터(Row) 삭제에 실패하면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="삭제할 데이터의 Row 인덱스 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="exchangeRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 지정된 두 Row 의 위치(RowPosition)를 서로 바꾸는 메소드입니다.">
+        <Syntax text="Dataset.exchangeRow(nRow1,nRow2)">
+          <Return type="Boolean" description="위치 교환에 성공하면 &quot;true&quot;를 반환합니다.&#xA;위치 교환에 실패하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="nRow1" type="Number" in="false" out="false" option="false" variable="false" description="위치를 교환할 첫번째 데이터의 Row 인덱스를 설정합니다." />
+            <Argument name="nRow2" type="Number" in="false" out="false" option="false" variable="false" description="위치를 교환할 두번째 데이터의 Row 인덱스를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="extractRows" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 조건표현식을 만족하는 Row 의 인덱스 배열을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.extractRows( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Array" description="주어진 조건표현식을 만족하는 Row 의 인덱스 배열을 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="extractRowsNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 조건표현식을 만족하는 Row 의 인덱스 배열을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.extractRowsNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Array" description="주어진 조건표현식을 만족하는 Row 의 인덱스 배열을 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="filter" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 로드된 데이터를 조건에 만족하는 데이터(Row) 만 보이게 필터링하는 메소드입니다.">
+        <Syntax text="Dataset.filter([strFilterExpr])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strFilterExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 의 데이터를 필터링 할 조건을 문자열로 설정합니다.&#xA;&#xA;빈 문자열(&quot;&quot;) 설정 시 필터링 조건이 해제됩니다.&#xA;값 생략 시 filterstr 속성값에 설정된 조건식을 사용합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="filterRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 특정 Row 를 보이지 않게 필터링하는 메소드입니다.">
+        <Syntax text="Dataset.filterRow(nRow)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="필터링할 Row 의 인덱스를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Dataset 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findMaxLengthRow" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Column 의 데이터 길이가 가장 긴 Row 의 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.findMaxLengthRow( strColID [ ,nStartIdx [ , nEndIdx] ] )">
+          <Return type="Number" description="특정 Column 값 중 데이터 길이가 가장 긴 Row 의 인덱스를 반환합니다." />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색 대상이 되는 Column 의 ID 또는 인덱스를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findMaxLengthRowNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Column 의 데이터 길이가 가장 긴 Row 의 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.findMaxLengthRowNF( strColID [ ,nStartIdx [ , nEndIdx] ] )">
+          <Return type="Number" description="특정 Column 값 중 데이터 길이가 가장 긴 Row 의 인덱스를 반환합니다." />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색 대상이 되는 Column 의 ID 또는 인덱스를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Column 값이 전달된 값과 일치하는 첫번째 Row 의 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.findRow( strColID, strVal [ ,nStartIdx [ ,nEndIdx ] ] )">
+          <Return type="Number" description="전달된 값과 일치하는 데이터를 갖는 첫번째 Row 의 인덱스를 반환합니다.&#xA;&#xA;만약 일치하는 데이터가 없을 경우에는 &quot;-1&quot; 을 반환합니다.&#xA;검색대상이 되는 Column 이 Const Column 인 경우 nStartIdx 값을 반환합니다." />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색 대상이 되는 Column 의 ID 또는 인덱스를 설정합니다." />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="strColID 에 해당하는 Column 에서 검색할 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowAs" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Column 값이 전달된 값으로 시작되는 첫번째 Row 의 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.findRowAs( strColID, strVal, [ ,nStartIdx [ ,nEndIdx ] ] )">
+          <Return type="Number" description="전달된 값으로 시작되는 Column 값을 갖는 첫번째 Row 의 인덱스를 반환합니다.&#xA;&#xA;만약 일치하는 데이터가 없을 경우에는 &quot;-1&quot; 을 반환합니다.&#xA;검색대상이 되는 Column 이 Const Column 인 경우 nStartIdx 값을 반환합니다." />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색 대상이 되는 Column 의 ID 또는 인덱스를 설정합니다." />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="strColID 에 해당하는 Column 에서 검색할 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowAsNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Column 값이 전달된 값으로 시작되는 첫번째 Row 의 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.findRowAsNF( strColID, strVal, [ ,nStartIdx [ ,nEndIdx ] ] )">
+          <Return type="Number" description="전달된 값으로 시작되는 Column 값을 갖는 첫번째 Row 의 인덱스를 반환합니다.&#xA;&#xA;만약 일치하는 데이터가 없을 경우에는 &quot;-1&quot; 을 반환합니다.&#xA;검색대상이 되는 Column 이 Const Column 인 경우 nStartIdx 값을 반환합니다." />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색 대상이 되는 Column 의 ID 또는 인덱스를 설정합니다." />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="strColID 에 해당하는 Column 에서 검색할 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowExpr" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 조건표현식을 만족하는 첫번째 Row 의 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.findRowExpr( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs] ] ])">
+          <Return type="Number" description="주어진 조건표현식을 만족하는 첫번째 Row 의 인덱스를 반환합니다.&#xA;&#xA;주어진 조건표현식을 만족하는 Row 가 없을 경우에는 &quot;-1&quot; 을 반환합니다.&#xA;주어진 조건표현식이 Const Column 을 대상으로 한 경우 nStartIdx 값을 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowExprNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 조건표현식을 만족하는 첫번째 Row 의 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.findRowExprNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs] ] ])">
+          <Return type="Number" description="주어진 조건표현식을 만족하는 첫번째 Row 의 인덱스를 반환합니다.&#xA;&#xA;주어진 조건표현식을 만족하는 Row 가 없을 경우에는 &quot;-1&quot; 을 반환합니다.&#xA;주어진 조건표현식이 Const Column 을 대상으로 한 경우 nStartIdx 값을 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findRowNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Column 값이 전달된 값과 일치하는 첫번째 Row 의 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.findRowNF( strColID, strVal [ ,nStartIdx [ ,nEndIdx ] ] )">
+          <Return type="Number" description="전달된 값과 일치하는 데이터를 갖는 첫번째 Row 의 인덱스를 반환합니다.&#xA;&#xA;만약 일치하는 데이터가 없을 경우에는 &quot;-1&quot; 을 반환합니다.&#xA;검색대상이 되는 Column 이 Const Column 인 경우 nStartIdx 값을 반환합니다." />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색 대상이 되는 Column 의 ID 또는 인덱스를 설정합니다." />
+            <Argument name="strVal" type="String" in="false" out="false" option="false" variable="false" description="strColID 에 해당하는 Column 에서 검색할 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getAvg" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 지정한 영역의 Column 값 또는 계산값의 평균값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getAvg( strExpr [ ,nStartIdx [ ,nEndIdx [ ,bExcludeNull [ ,arrArgs ] ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값의 평균값을 반환합니다.&#xA;&#xA;평균값을 구할 수 없는 경우에는 &quot;NaN&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="bExcludeNull" type="Boolean" in="false" out="false" option="false" variable="false" description="Column 값 또는 계산값이 null 일 때 평균값 계산에서 제외할 지 여부를 설정합니다.&#xA;평균값 계산에 포함되면 분모에 해당하는 전체갯수값이 증가합니다.&#xA;&#xA;&quot;true&quot; 설정 시 평균값 계산에서 제외합니다.&#xA;&quot;false&quot; 설정 시 평균값 계산에 포함합니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 계산을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 계산합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 계산합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 계산을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 계산합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 평균을 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getAvgNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 지정한 영역의 Column 값 또는 계산값의 평균값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getAvgNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,bExcludeNull [ ,arrArgs ] ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값의 평균값을 반환합니다.&#xA;&#xA;평균값을 구할 수 없는 경우에는 &quot;NaN&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="bExcludeNull" type="Boolean" in="false" out="false" option="false" variable="false" description="Column 값 또는 계산값이 null 일 때 평균값 계산에서 제외할 지 여부를 설정합니다.&#xA;평균값 계산에 포함되면 분모에 해당하는 전체갯수값이 증가합니다.&#xA;&#xA;&quot;true&quot; 설정 시 평균값 계산에서 제외합니다.&#xA;&quot;false&quot; 설정 시 평균값 계산에 포함합니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 계산을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 계산을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 평균을 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseAvg" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 조건을 만족하는 Row 의 특정 Column 값 또는 계산값의 평균값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getCaseMax( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,bExcludeNull [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값의 평균값을 반환합니다.&#xA;&#xA;평균값을 구할 수 없는 경우에는 &quot;NaN&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrCmpArgs[0] 값으로, &quot;$2&quot; 는 arrCmpArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrValArgs[0] 값으로, &quot;$2&quot; 는 arrValArgs[2] 값으로 치환됩니다." />
+            <Argument name="bExcludeNull" type="Boolean" in="false" out="false" option="false" variable="false" description="Column 값 또는 계산값이 null 일 때 평균값 계산에서 제외할 지 여부를 설정합니다.&#xA;평균값 계산에 포함되면 분모에 해당하는 전체갯수값이 증가합니다.&#xA;&#xA;&quot;true&quot; 설정 시 평균값 계산에서 제외합니다.&#xA;&quot;false&quot; 설정 시 평균값 계산에 포함합니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 대상 Row 를 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrCmpArgs 에 정의된 값으로 치환됩니다." />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 평균을 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrValArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseAvgNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 조건을 만족하는 Row 의 특정 Column 값 또는 계산값의 평균값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getCaseMaxNF( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,bExcludeNull [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값의 평균값을 반환합니다.&#xA;&#xA;평균값을 구할 수 없는 경우에는 &quot;NaN&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrCmpArgs[0] 값으로, &quot;$2&quot; 는 arrCmpArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrValArgs[0] 값으로, &quot;$2&quot; 는 arrValArgs[2] 값으로 치환됩니다." />
+            <Argument name="bExcludeNull" type="Boolean" in="false" out="false" option="false" variable="false" description="Column 값 또는 계산값이 null 일 때 평균값 계산에서 제외할 지 여부를 설정합니다.&#xA;평균값 계산에 포함되면 분모에 해당하는 전체갯수값이 증가합니다.&#xA;&#xA;&quot;true&quot; 설정 시 평균값 계산에서 제외합니다.&#xA;&quot;false&quot; 설정 시 평균값 계산에 포함합니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 대상 Row 를 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrCmpArgs 에 정의된 값으로 치환됩니다." />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 평균을 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrValArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 조건표현식을 만족하는 Row 의 전체 갯수를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getCaseCount( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs] ] ] )">
+          <Return type="Number" description="주어진 조건표현식을 만족하는 Row 의 전체 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseCountNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 조건표현식을 만족하는 Row 의 전체 갯수를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getCaseCountNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs] ] ] )">
+          <Return type="Number" description="주어진 조건표현식을 만족하는 Row 의 전체 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseMax" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 조건을 만족하는 Row 의 특정 Column 값 또는 계산값 중 최대값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getCaseMax( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값 중 최대값을 반환합니다.&#xA;&#xA;최대값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrCmpArgs[0] 값으로, &quot;$2&quot; 는 arrCmpArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrValArgs[0] 값으로, &quot;$2&quot; 는 arrValArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrCmpArgs 에 정의된 값으로 치환됩니다." />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 최대값을 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrValArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseMaxNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 조건을 만족하는 Row 의 특정 Column 값 또는 계산값 중 최대값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getCaseMaxNF( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값 중 최대값을 반환합니다.&#xA;&#xA;최대값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrCmpArgs[0] 값으로, &quot;$2&quot; 는 arrCmpArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrValArgs[0] 값으로, &quot;$2&quot; 는 arrValArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrCmpArgs 에 정의된 값으로 치환됩니다." />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 최대값을 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrValArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseMin" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 조건을 만족하는 Row 의 특정 Column 값 또는 계산값 중 최소값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getCaseMin( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값 중 최소값을 반환합니다.&#xA;&#xA;최소값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrCmpArgs[0] 값으로, &quot;$2&quot; 는 arrCmpArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrValArgs[0] 값으로, &quot;$2&quot; 는 arrValArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrCmpArgs 에 정의된 값으로 치환됩니다." />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 최소값을 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrValArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseMinNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 조건을 만족하는 Row 의 특정 Column 값 또는 계산값 중 최소값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getCaseMinNF( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값 중 최소값을 반환합니다.&#xA;&#xA;최소값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrCmpArgs[0] 값으로, &quot;$2&quot; 는 arrCmpArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrValArgs[0] 값으로, &quot;$2&quot; 는 arrValArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrCmpArgs 에 정의된 값으로 치환됩니다." />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 최소값을 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrValArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseSum" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 조건을 만족하는 Row 의 특정 Column 값 또는 계산값의 합계값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getCaseSum( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값의 합계값을 반환합니다.&#xA;&#xA;합계값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrCmpArgs[0] 값으로, &quot;$2&quot; 는 arrCmpArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrValArgs[0] 값으로, &quot;$2&quot; 는 arrValArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrCmpArgs 에 정의된 값으로 치환됩니다." />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 합계를 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrValArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaseSumNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 조건을 만족하는 Row 의 특정 Column 값 또는 계산값의 합계값를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getCaseSumNF( strCmpExpr, strValExpr [ ,nStartIdx [ ,nEndIdx [ ,arrCmpArgs [ ,arrValArgs ] ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값의 합계값을 반환합니다.&#xA;&#xA;합계값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrCmpArgs" type="Array" in="false" out="false" option="false" variable="false" description="strCmpExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrCmpArgs[0] 값으로, &quot;$2&quot; 는 arrCmpArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrValArgs" type="Array" in="false" out="false" option="false" variable="false" description="strValExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrValArgs[0] 값으로, &quot;$2&quot; 는 arrValArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strCmpExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색할 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrCmpArgs 에 정의된 값으로 치환됩니다." />
+            <Argument name="strValExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 합계를 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrValArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 Const Column 을 포함한 전체 Column 의 갯수를 구하는 메소드입니다.">
+        <Syntax text="Dataset.getColCount()">
+          <Return type="Number" description="DataSet 에 정의된 전체 Column 의 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getColID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 전달된 인덱스에 해당하는 Column 의 ID 를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getColID( nColIdx )">
+          <Return type="String" description="전달된 인덱스에 해당하는 Column 의 ID 를 반환합니다.&#xA;&#xA;해당하는 Column 이 없을 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="ID 를 구하려는 Column 의 인덱스를 설정합니다.&#xA;&#xA;Const Column 에 해당하는 인덱스를 설정할 수 있습니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 전달된 ID 에 해당하는 Column 의 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getColIndex( strColID )">
+          <Return type="Number" description="전달된 ID 에 해당하는 Column 의 인덱스를 반환합니다.&#xA;&#xA;해당하는 Column 이 없을 경우에는 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="인덱스를 구하려는 일반 Column 또는 Const Column 의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 지정한 Row 와 Column 의 현재값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getColumn( nRow, nColIdx )&#xA;Dataset.getColumn( nRow, strColID )">
+          <Return type="Variant" description="지정한 Row 와 Column 의 현재값을 반환합니다.&#xA;&#xA;지정한 Row 와 Column 이 존재하지 않으면 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 값을 구하려는 Column 의 인덱스를 설정합니다." />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 값을 구하려는 Row 의 인덱스를 설정합니다.&#xA;&#xA;첫번째 Row 의 인덱스값은 &quot;0&quot; 입니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 값을 구하려는 Column 의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColumnInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 지정한 Column 의 ColumnInfo 객체를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getColumnInfo(nColIdx)&#xD;&#xA;Dataset.getColumnInfo(strColName)">
+          <Return type="Object" description="지정한 인덱스에 해당하는 Column 의 ColumnInfo 객체를 반환합니다.&#xA;만약, 지정한 인덱스에 해당하는 Column 이 없을 경우에는 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="대상 Column 의 인덱스를 설정합니다." />
+            <Argument name="strColName" type="String" in="false" out="false" option="false" variable="false" description="대상 Column 의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getColumnNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 지정한 Row 와 Column 의 현재값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getColumnNF( nRow, nColIdx )&#xA;Dataset.getColumnNF( nRow, strColID )">
+          <Return type="Variant" description="지정한 Row 와 Column 의 현재값을 반환합니다.&#xA;&#xA;지정한 Row 와 Column 이 존재하지 않으면 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 값을 구하려는 Column 의 인덱스를 설정합니다." />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 값을 구하려는 Row 의 인덱스를 설정합니다.&#xA;&#xA;첫번째 Row 의 인덱스값은 &quot;0&quot; 입니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 값을 구하려는 Column 의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getConstColID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 전달된 인덱스에 해당하는 Const Column 의 ID 를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getConstColID( nColIdx )">
+          <Return type="String" description="전달된 인덱스에 해당하는 Const Column 의 ID 를 반환합니다.&#xA;&#xA;해당하는 Const Column 이 없을 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="ID 를 구하려는 Const Column 의 인덱스를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getConstColIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 전달된 ID 에 해당하는 Const Column 의 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getConstColIndex( strColID )">
+          <Return type="Number" description="전달된 ID 에 해당하는 Const Column 의 인덱스를 반환합니다.&#xA;&#xA;해당하는 Const Column 이 없을 경우에는 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="인덱스를 구하려는 Const Column 의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getConstColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 지정한 Const Column 의 값을 구하는 메소드입니다.">
+        <Syntax text="Dataset.getConstColumn(nColIdx)&#xD;&#xA;Dataset.getConstColumn(strColID)">
+          <Return type="Variant" description="지정한 Const Column 의 값을 반환합니다.&#xA;만약, 지정한 Const Column 이 존재하지 않으면 &quot;undefined&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 값을 구하려는 Const Column 의 인덱스를 설정합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 값을 구하려는 Const Column 의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getConstCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 정의된 Const Column 의 갯수를 구하는 메소드입니다.">
+        <Syntax text="Dataset.getConstCount()">
+          <Return type="Number" description="DataSet 에 정의된 Const Column 의 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Column 에 데이터가 있는 Row 의 갯수를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getCount( [ strColID [ ,nStartIdx [ ,nEndIdx ] ] ] )">
+          <Return type="Number" description="특정 Column 의 값이 null 이 아닌 Row 의 갯수를 반환합니다.&#xA;&#xA;Column 의 ID 나 인덱스를 설정하지 않으면 Row 의 전체 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 계산합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="데이터의 유무를 확인하려는 Column 의 ID 또는 인덱스를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCountNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Column 에 데이터가 있는 Row 의 갯수를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getCountNF( [ strColID [ ,nStartIdx [ ,nEndIdx ] ] ] )">
+          <Return type="Number" description="특정 Column 의 값이 null 이 아닌 Row 의 갯수를 반환합니다.&#xA;&#xA;Column 의 ID 나 인덱스를 설정하지 않으면 Row 의 전체 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 계산합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="데이터의 유무를 확인하려는 Column 의 ID 또는 인덱스를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDeletedColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 삭제된 Row 중에서 지정된 Row 의 Column 값을 구하는 메소드입니다.">
+        <Syntax text="Dataset.getDeletedColumn(nRow,nColIdx)&#xD;&#xA;Dataset.getDeletedColumn(nRow,strColID)">
+          <Return type="Variant" description="삭제된 Row 중에서 지정된 Row, Column 에 해당하는 값을 반환합니다.&#xA;해당하는 Row 나 Column 이 존재하지 않는 경우에는 &quot;undefined&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="삭제된 Row 중에서 값을 구하려는 Column 의 인덱스를 설정합니다." />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="삭제된 Row 중에서 값을 구하려는 Row 의 인덱스를 설정합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="삭제된 행중에서 값을 구하려는 열의 ID입니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDeletedRowCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 삭제된 Row 의 갯수를 구하는 메소드입니다.">
+        <Syntax text="Dataset.getDeletedRowCount()">
+          <Return type="Number" description="DataSet 에서 삭제된 Row 의 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDeletedRowset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 삭제된 전체 Row 를 배열로 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getDeletedRowset()">
+          <Return type="Array" description="삭제된 전체 Row 의 내용을 배열 오브젝트로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Dataset 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getGroupRangeCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 이 그룹화되어 있을 때 그룹정보를 포함하고 있는 Row 가 참조한 Row 의 갯수를 구하는 메소드입니다.">
+        <Syntax text="Dataset.getGroupRangeCount(nRow)">
+          <Return type="Number" description="그룹소계 Row 의 참조 대상이 된 Row 의 갯수를 반환합니다.&#xA;만약, 지정한 Row 가 존재하지 않으면 &quot;0&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="대상 Row 의 인덱스를 설정합니다.&#xA;&#xA;첫번째 Row 의 인덱스값은 &quot;0&quot; 입니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getGroupRangeStart" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 이 그룹화되어 있을 때 그룹정보를 포함하고 있는 Row 가 참조한 Row 의 시작 인덱스를 구하는 메소드입니다.">
+        <Syntax text="Dataset.getGroupRangeStart(nRow)">
+          <Return type="Number" description="그룹소계 Row 의 참조 대상이 된 Row 의 시작 인덱스를 반환합니다.&#xA;지정한 Row 가 그룹 정보를 포함하고 있는 Row 가 아닐 경우에는 Row 의 인덱스를 반환합니다.&#xA;만약, 지정한 Row 가 존재하지 않으면 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="대상 Row 의 인덱스를 설정합니다.&#xA;&#xA;첫번째 Row 의 인덱스값은 &quot;0&quot; 입니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getMax" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 지정한 영역의 Column 값 또는 계산값 중 최대값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getMax( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값 중 최대값을 반환합니다.&#xA;&#xA;최대값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 최대값을 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrValArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getMaxNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 지정한 영역의 Column 값 또는 계산값 중 최대값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getMaxNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값 중 최대값을 반환합니다.&#xA;&#xA;최대값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 최대값을 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrValArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getMin" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 지정한 영역의 Column 값 또는 계산값 중 최소값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getMin( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값 중 최소값을 반환합니다.&#xA;&#xA;최소값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 최소값을 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrValArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getMinNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 지정한 영역의 Column 값 또는 계산값 중 최소값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getMinNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값 중 최소값을 반환합니다.&#xA;&#xA;최소값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEndIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 검색합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 검색합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 검색을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 검색합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 최소값을 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrValArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getOrgColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 지정한 Row 와 Column 의 초기값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getOrgColumn( nRow ,nColIdx )&#xA;Dataset.getOrgColumn( nRow ,strColID )">
+          <Return type="Variant" description="지정한 Row 와 Column 의 초기값을 반환합니다.&#xA;&#xA;지정한 Row 와 Column 이 존재하지 않으면 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="Orgin 버퍼에서 값을 구하려는 Column 의 인덱스를 설정합니다." />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="Orgin 버퍼에서 값을 구하려는 Row 의 인덱스를 설정합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="Orgin 버퍼에서 값을 구하려는 Column 의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getOrgColumnNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 지정한 Row 와 Column 의 초기값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getOrgColumnNF( nRow ,nColIdx )&#xA;Dataset.getOrgColumnNF( nRow ,strColID )">
+          <Return type="Variant" description="지정한 Row 와 Column 의 초기값을 반환합니다.&#xA;&#xA;지정한 Row 와 Column 이 존재하지 않으면 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="Orgin 버퍼에서 값을 구하려는 Column 의 인덱스를 설정합니다." />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="Orgin 버퍼에서 값을 구하려는 Row 의 인덱스를 설정합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="Orgin 버퍼에서 값을 구하려는 Column 의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 Row 의 전체 갯수를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowCount()">
+          <Return type="Number" description="DataSet 에서 Row 의 전체 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRowCountNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 Row 의 전체 갯수를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowCountNF()">
+          <Return type="Number" description="DataSet 에서 Row 의 전체 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRowLevel" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 이 그룹화되어 있을 경우에 지정한 Row 의 레벨을 구하는 메소드입니다.">
+        <Syntax text="Dataset.getRowLevel(nRow)">
+          <Return type="Number" description="DataSet 에서 지정한 Row 의 레벨값을 반환합니다.&#xA;만약 지정한 Row 가 없으면 &quot;0&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="대상 Row 의 인덱스를 설정합니다.&#xA;&#xA;첫번째 Row 의 인덱스값은 &quot;0&quot; 입니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsAvg" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Row 의 Column 값 또는 계산값의 평균값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowsAvg( arrRows, strColExpr [ ,bExcludeNull [ ,arrArgs ] ] )">
+          <Return type="Number" description="특정 Row 의 Column 값 또는 계산값의 평균값을 반환합니다.&#xA;&#xA;평균값을 구할 수 없는 경우에는 &quot;POSITIVE_INFINITY&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="평균값을 구할 Row 의 Index 를 숫자형 배열형태로 설정합니다." />
+            <Argument name="bExcludeNull" type="Boolean" in="false" out="false" option="false" variable="false" description="Column 값 또는 계산값이 null 일 때 평균값 계산에서 제외할 지 여부를 설정합니다.&#xA;평균값 계산에 포함되면 분모에 해당하는 전체갯수값이 증가합니다.&#xA;&#xA;&quot;true&quot; 설정 시 평균값 계산에서 제외합니다.&#xA;&quot;false&quot; 설정 시 평균값 계산에 포함합니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRows 에 해당하는 Row 에서 평균을 구할 Column 의 ID, Index 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsAvgNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Row 의 Column 값 또는 계산값의 평균값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowsAvgNF( arrRows, strColExpr [ ,bExcludeNull [ ,arrArgs ] ] )">
+          <Return type="Number" description="특정 Row 의 Column 값 또는 계산값의 평균값을 반환합니다.&#xA;&#xA;평균값을 구할 수 없는 경우에는 &quot;POSITIVE_INFINITY&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="평균값을 구할 Row 의 Index 를 숫자형 배열형태로 설정합니다." />
+            <Argument name="bExcludeNull" type="Boolean" in="false" out="false" option="false" variable="false" description="Column 값 또는 계산값이 null 일 때 평균값 계산에서 제외할 지 여부를 설정합니다.&#xA;평균값 계산에 포함되면 분모에 해당하는 전체갯수값이 증가합니다.&#xA;&#xA;&quot;true&quot; 설정 시 평균값 계산에서 제외합니다.&#xA;&quot;false&quot; 설정 시 평균값 계산에 포함합니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRows 에 해당하는 Row 에서 평균을 구할 Column 의 ID, Index 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsCount" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Row 중 Column 에 데이터가 있는 Row 의 갯수를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowsCount( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="전달된 Row 에서 특정 Column 의 값이 null 이 아닌 Row 의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="특정 Column 의 데이터 유무를 확인할 Row 의 Index 를 숫자형 배열형태로 설정합니다." />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRows 에 해당하는 Row 에서 데이터 유무를 확인할 Column 의 ID, Index 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsCountNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Row 중 Column 에 데이터가 있는 Row 의 갯수를 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowsCountNF( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="전달된 Row 에서 특정 Column 의 값이 null 이 아닌 Row 의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="특정 Column 의 데이터 유무를 확인할 Row 의 Index 를 숫자형 배열형태로 설정합니다." />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRows 에 해당하는 Row 에서 데이터 유무를 확인할 Column 의 ID, Index 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsMax" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Row 의 Column 값 또는 계산값 중 최대값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowsMax( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="전달된 Row 에서 Column 값 또는 계산값 중 최대값을 반환합니다.&#xA;&#xA;최대값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="최대값을 구할 Row 의 Index 를 숫자형 배열형태로 설정합니다." />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRows 에 해당하는 Row 에서 최대값을 구할 Column 의 ID, Index 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsMaxNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Row 의 Column 값 또는 계산값 중 최대값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowsMaxNF( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="전달된 Row 에서 Column 값 또는 계산값 중 최대값을 반환합니다.&#xA;&#xA;최대값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="최대값을 구할 Row 의 Index 를 숫자형 배열형태로 설정합니다." />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRows 에 해당하는 Row 에서 최대값을 구할 Column 의 ID, Index 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsMin" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Row 의 Column 값 또는 계산값 중 최소값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowsMin( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="전달된 Row 에서 Column 값 또는 계산값 중 최소값을 반환합니다.&#xA;&#xA;최소값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="최소값을 구할 Row 의 Index 를 숫자형 배열형태로 설정합니다." />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRows 에 해당하는 Row 에서 최소값을 구할 Column 의 ID, Index 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsMinNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Row 의 Column 값 또는 계산값 중 최소값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowsMinNF( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="전달된 Row 에서 Column 값 또는 계산값 중 최소값을 반환합니다.&#xA;&#xA;최소값을 구할 수 없는 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="최소값을 구할 Row 의 Index 를 숫자형 배열형태로 설정합니다." />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRows 에 해당하는 Row 에서 최소값을 구할 Column 의 ID, Index 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsSum" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Row 의 Column 값 또는 계산값의 합계값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowsSum( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="전달된 Row 에서 Column 값 또는 계산값의 합계값을 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="합계값을 구할 Row 의 Index 를 숫자형 배열형태로 설정합니다." />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRows 에 해당하는 Row 에서 합계값을 구할 Column 의 ID, Index 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowsSumNF" group="Hidden" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Row 의 Column 값 또는 계산값의 합계값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowsSumNF( arrRows, strColExpr [ ,arrArgs ] )">
+          <Return type="Number" description="전달된 Row 에서 Column 값 또는 계산값의 합계값을 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="arrRows" type="Array" in="false" out="false" option="false" variable="false" description="합계값을 구할 Row 의 Index 를 숫자형 배열형태로 설정합니다." />
+            <Argument name="strColExpr" type="String" in="false" out="false" option="false" variable="false" description="arrRows 에 해당하는 Row 에서 합계값을 구할 Column 의 ID, Index 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 지정된 Row 의 타입을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowType( nRow )">
+          <Return type="Number" description="DataSet 에서 지정된 Row 의 타입을 반환합니다.&#xA;&#xA;지정한 Row 가 존재하지 않으면 &quot;ROWTYPE_EMPTY&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="대상 Row 의 인덱스를 설정합니다.&#xA;&#xA;첫번째 Row 의 인덱스값은 &quot;0&quot; 입니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getRowTypeNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 지정된 Row 의 타입을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getRowTypeNF( nRow )">
+          <Return type="Number" description="DataSet 에서 지정된 Row 의 타입을 반환합니다.&#xA;&#xA;지정한 Row 가 존재하지 않으면 &quot;ROWTYPE_EMPTY&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="대상 Row 의 인덱스를 설정합니다.&#xA;&#xA;첫번째 Row 의 인덱스값은 &quot;0&quot; 입니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getSum" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 지정한 영역의 Column 값 또는 계산값의 합계값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getSum( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값의 합계값을 반환합니다.&#xA;&#xA;합계값을 구할 수 없는 경우에는 &quot;0&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEnd" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 계산을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 계산합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 계산합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 계산을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 계산합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 합계를 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getSumNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 지정한 영역의 Column 값 또는 계산값의 합계값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.getSumNF( strExpr [ ,nStartIdx [ ,nEndIdx [ ,arrArgs ] ] ] )">
+          <Return type="Number" description="특정 Column 값 또는 계산값의 합계값을 반환합니다.&#xA;&#xA;합계값을 구할 수 없는 경우에는 &quot;0&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strExpr 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="nEnd" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 계산을 종료할 Row 의 인덱스에 1을 더한 값을 설정합니다.&#xA;즉, 설정한 인덱스값보다 1 작은 인덱스의 Row 까지 계산합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;-1&quot; 로 적용되어 마지막 Row 까지 계산합니다." />
+            <Argument name="nStartIdx" type="Number" in="false" out="false" option="false" variable="false" description="DataSet 에서 계산을 시작할 Row 의 인덱스를 설정합니다.&#xA;&#xA;음수값을 설정하거나 값을 생략하면 &quot;0&quot; 으로 적용되어 첫번째 Row 부터 계산합니다." />
+            <Argument name="strExpr" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 합계를 구할 Column 의 ID 또는 계산식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 지정된 Row 의 위치에 새로운 Row 를 삽입하는 메소드입니다.">
+        <Syntax text="Dataset.insertRow(nRow)">
+          <Return type="Number" description="DataSet 에 삽입된 Row 의 인덱스를 반환합니다.&#xA;만약, Row 의 삽입에 실패하면 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="삽입할 위치의 Row 인덱스를 설정합니다.&#xA;&#xA;첫번째 Row 의 인덱스값은 &quot;0&quot; 입니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="load" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 url 속성에 설정된 Business Service 에서 데이터를 로드하는 메소드입니다.">
+        <Syntax text="Dataset.load([bAsync [, bBinary]])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bAsync" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 비동기(Async)로 데이터를 로드합니다.&#xA;&quot;false&quot; 설정 시 동기(Sync)로 데이터를 로드합니다.&#xA;&#xA;값 생략 시 &quot;true&quot;로 적용됩니다." />
+            <Argument name="bBinary" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 Binary 형태로 데이터를 로드합니다.&#xA;&quot;false&quot; 설정 시 일반적인 형태로 데이터를 로드합니다.&#xA;&#xA;값 생략 시 &quot;false&quot;로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadBIN" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="DataSet 에 Binary 형식으로 만들어진 데이터를 로드하는 메소드입니다.">
+        <Syntax text="Dataset.loadBin(varBinData)">
+          <Return type="Number" description="DataSet 에 로드된 데이터의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="varBinData" type="Object" in="false" out="false" option="false" variable="false" description="Binary 형식으로 만들어진 데이터를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadCSV" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 CSV 형식으로 만들어진 데이터를 로드하는 메소드입니다.">
+        <Syntax text="Dataset.loadCSV(varCsvData[,bClear])">
+          <Return type="Number" description="DataSet 에 로드된 데이터의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="bClear" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 DataSet 에 로드 되어 있던 기존 데이터를 삭제합니다.&#xA;&quot;false&quot; 설정 시 DataSet 에 로드 되어 있던 기존 데이터를 삭제하지 않습니다.&#xA;&#xA;값 생략 시 &quot;true&quot;로 적용됩니다." />
+            <Argument name="varCsvData" type="Object" in="false" out="false" option="false" variable="false" description="CSV 형식으로 만들어진 데이터를 설정합니다.&#xA;&#xA;&quot;Dataset:Dataset_id&quot; 형식으로 시작하며, Column 정보를 헤더로 가지는 CSV 데이터를 설정해야 합니다.&#xA;&quot;Dataset_id&quot; 와 &quot;Column Infos&quot; 는 CR/LF 또는 LF 로 구분합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadSSV" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 SSV 형식으로 만들어진 데이터를 로드하는 메소드입니다.">
+        <Syntax text="Dataset.loadSSV ( varSsvData [,bClear] )">
+          <Return type="Number" description="DataSet 에 로드된 데이터의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="bClear" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 DataSet 에 로드 되어 있던 기존 데이터를 삭제합니다.&#xA;&quot;false&quot; 설정 시 DataSet 에 로드 되어 있던 기존 데이터를 삭제하지 않습니다.&#xA;&#xA;값 생략 시 &quot;true&quot;로 적용됩니다." />
+            <Argument name="varSsvData" type="String" in="false" out="false" option="false" variable="false" description="SSV 형식으로 만들어진 데이터를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadXML" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 XML 형식으로 만들어진 데이터를 로드하는 메소드입니다.">
+        <Syntax text="Dataset.loadXML(strXmlData[,bClear]])">
+          <Return type="Number" description="DataSet 에 로드된 데이터의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="bClear" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 DataSet 에 로드 되어 있던 기존 데이터를 삭제합니다.&#xA;&quot;false&quot; 설정 시 DataSet 에 로드 되어 있던 기존 데이터를 삭제하지 않습니다.&#xA;&#xA;값 생략 시 &quot;true&quot;로 적용됩니다." />
+            <Argument name="strXmlData" type="String" in="false" out="false" option="false" variable="false" description="XML 형식으로 만들어진 데이터를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Column 값이 전달값과 일치하는 첫번째 Row 의 지정된 Column 값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.lookup( strColID, varCmpVal, strOutputColID [ ,arrArgs ] )">
+          <Return type="Variant" description="주어진 조건에 만족하는 첫번째 Row 의 지정된 Column 값을 반환합니다.&#xA;&#xA;값을 구할 수 없을 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColID 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 varCmpVal 값과 비교할 Column 의 ID 또는 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+            <Argument name="strOutputColID" type="String" in="false" out="false" option="false" variable="false" description="strColID 값과 varCmpVal 값이 일치하는 Row 에서 값을 가져올 Column 의 ID 를 설정합니다." />
+            <Argument name="varCmpVal" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 strColID 에 해당하는 Column 값과 비교할 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookupAs" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Column 값이 전달값으로 시작하는 첫번째 Row 의 지정된 Column 값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.lookupAs( strColID, varCmpVal, strOutputColID [ ,arrArgs ] )">
+          <Return type="Variant" description="주어진 조건에 만족하는 첫번째 Row 의 지정된 Column 값을 반환합니다.&#xA;&#xA;값을 구할 수 없을 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColID 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 varCmpVal 값과 비교할 Column 의 ID 또는 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+            <Argument name="strOutputColID" type="String" in="false" out="false" option="false" variable="false" description="strColID 값이 varCmpVal 값으로 시작하는 Row 에서 값을 가져올 Column 의 ID 를 설정합니다." />
+            <Argument name="varCmpVal" type="Variant" in="false" out="false" option="false" variable="false" description="DataSet 에서 strColID 에 해당하는 Column 값과 비교할 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookupAsNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Column 값이 전달값으로 시작하는 첫번째 Row 의 지정된 Column 값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.lookupAsNF( strColID, varCmpVal, strOutputColID [ ,arrArgs ] )">
+          <Return type="Variant" description="주어진 조건에 만족하는 첫번째 Row 의 지정된 Column 값을 반환합니다.&#xA;&#xA;값을 구할 수 없을 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColID 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 varCmpVal 값과 비교할 Column 의 ID 또는 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+            <Argument name="strOutputColID" type="String" in="false" out="false" option="false" variable="false" description="strColID 값이 varCmpVal 값으로 시작하는 Row 에서 값을 가져올 Column 의 ID 를 설정합니다." />
+            <Argument name="varCmpVal" type="Variant" in="false" out="false" option="false" variable="false" description="DataSet 에서 strColID 에 해당하는 Column 값과 비교할 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookupNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Column 값이 전달값과 일치하는 첫번째 Row 의 지정된 Column 값을 반환하는 메소드입니다.">
+        <Syntax text="Dataset.lookupNF( strColID, varCmpVal, strOutputColID [ ,arrArgs ] )">
+          <Return type="Variant" description="주어진 조건에 만족하는 첫번째 Row 의 지정된 Column 값을 반환합니다.&#xA;&#xA;값을 구할 수 없을 경우에는 &quot;undefined&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="arrArgs" type="Array" in="false" out="false" option="false" variable="false" description="strColID 에 정의된 치환문에 치환 될 값을 배열형태로 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식에서 숫자값이 배열의 인자값으로 사용됩니다.&#xA;즉, &quot;$0&quot; 은 arrArgs[0] 값으로, &quot;$2&quot; 는 arrArgs[2] 값으로 치환됩니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 varCmpVal 값과 비교할 Column 의 ID 또는 조건표현식을 설정합니다.&#xA;&#xA;&quot;$ + 숫자&quot; 형식으로 치환문을 사용할 수 있습니다.&#xA;치환문은 arrArgs 에 정의된 값으로 치환됩니다." />
+            <Argument name="strOutputColID" type="String" in="false" out="false" option="false" variable="false" description="strColID 값과 varCmpVal 값이 일치하는 Row 에서 값을 가져올 Column 의 ID 를 설정합니다." />
+            <Argument name="varCmpVal" type="String" in="false" out="false" option="false" variable="false" description="DataSet 에서 strColID 에 해당하는 Column 값과 비교할 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mergeData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="현재 DataSet 에 지정한 DataSet 을 통합하는 메소드입니다.">
+        <Syntax text="Dataset.mergeData(objDataset)">
+          <Return type="Number" description="메소드 수행 후 DataSet 의 Row 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="현재 DataSet 에 통합할 DataSet 을 오브젝트로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveRow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 지정한 Row 를 특정 위치로 이동하는 메소드입니다.">
+        <Syntax text="Dataset.moveRow(nOldRow,nNewRow)">
+          <Return type="Number" description="Row 이동에 성공하면 새로운 위치의 Row 인덱스를 반환합니다.&#xA;Row 이동에 실패하면 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="nNewRow" type="Number" in="false" out="false" option="false" variable="false" description="Row 가 이동할 위치의 Row 인덱스를 설정합니다.&#xA;&#xA;첫번째 Row 의 인덱스값은 &quot;0&quot; 입니다." />
+            <Argument name="nOldRow" type="Number" in="false" out="false" option="false" variable="false" description="위치를 이동하려고 하는 Row 의 현재 인덱스를 설정합니다.&#xA;&#xA;첫번째 Row 의 인덱스값은 &quot;0&quot; 입니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Dataset 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="Dataset.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Dataset 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="Dataset.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="reset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 데이터를 마지막 저장 상태로 복구하는 메소드입니다.">
+        <Syntax text="Dataset.reset()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="saveBIN" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="DataSet 의 데이터를 Binary 형식으로 반환하는 메소드입니다.">
+        <Syntax text="Dataset.saveBIN([strID[,strSaveType]])">
+          <Return type="String" description="DataSet 의 데이터를 Binary 형식으로 변환한 문자열을 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="Binary 형식의 파일 내부에 정의될 DataSet ID 를 설정합니다.&#xA;실제 DataSet ID 와 저장 시 사용할 ID 를 다르게 사용할 때 설정합니다.&#xA;&#xA;값 생략 시 현재 DataSet 의 ID가 적용됩니다." />
+            <Argument name="strSaveType" type="String" in="false" out="false" option="false" variable="false" description="Binary 형식으로 변환할 대상이 되는 데이터를 선정하는 기준을 설정합니다.&#xA;&#xA;&quot;n&quot;,&quot;N&quot;,&quot;normal&quot;,&quot;Normal&quot; 설정 시 Delete 된 데이터를 제외하고 변환합니다.&#xA;&quot;u&quot;,&quot;U&quot;,&quot;update&quot;,&quot;Update&quot; 설정 시 Update 된 데이터만 변환합니다.&#xA;&quot;a&quot;,&quot;A&quot;,&quot;all&quot;,&quot;All&quot; 설정 시 Insert/Update/Delete 된 모든 데이터를 변환합니다.&#xA;&#xA;값 생략 시 &quot;Normal&quot;로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveCSV" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 데이터를 CSV 형식으로 반환하는 메소드입니다.">
+        <Syntax text="Dataset.saveCSV([strID])">
+          <Return type="String" description="DataSet 의 데이터를 CSV 형식으로 변환한 문자열을 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="CSV 형식의 파일 내부에 정의될 DataSet ID 를 설정합니다.&#xA;실제 DataSet ID 와 저장 시 사용할 ID 를 다르게 사용할 때 설정합니다.&#xA;&#xA;값 생략 시 현재 DataSet 의 ID가 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveSSV" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 데이터를 SSV 형식으로 반환하는 메소드입니다.">
+        <Syntax text="Dataset.saveSSV([strID [,strSaveType]])">
+          <Return type="String" description="DataSet 의 데이터를 SSV 형식으로 변환한 문자열을 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="SSV 형식의 파일 내부에 정의될 DataSet ID 를 설정합니다.&#xA;실제 DataSet ID 와 저장 시 사용할 ID 를 다르게 사용할 때 설정합니다.&#xA;&#xA;값 생략 시 현재 DataSet 의 ID가 적용됩니다." />
+            <Argument name="strSaveType" type="String" in="false" out="false" option="false" variable="false" description="SSV 형식으로 변환할 대상이 되는 데이터를 선정하는 기준을 설정합니다.&#xA;&#xA;&quot;n&quot;,&quot;N&quot;,&quot;normal&quot;,&quot;Normal&quot; 설정 시 Delete 된 데이터를 제외하고 변환합니다.&#xA;&quot;u&quot;,&quot;U&quot;,&quot;update&quot;,&quot;Update&quot; 설정 시 Update 된 데이터만 변환합니다.&#xA;&quot;a&quot;,&quot;A&quot;,&quot;all&quot;,&quot;All&quot; 설정 시 Insert/Update/Delete 된 모든 데이터를 변환합니다.&#xA;&quot;v&quot;,&quot;V&quot;,&quot;view&quot;,&quot;View&quot; 설정 시 &quot;Normal&quot; 조건의 데이터를 Grid 에 표시된 순서대로 변환합니다.&#xA;&#xA;값 생략 시 &quot;Normal&quot;로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveXML" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 데이터를 XML 형식으로 반환하는 메소드입니다.">
+        <Syntax text="Dataset.saveXML([strID[,strSaveType]])">
+          <Return type="String" description="DataSet 의 데이터를 XML 형식으로 변환한 문자열을 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="XML 형식의 파일 내부에 정의될 DataSet ID 를 설정합니다.&#xA;실제 DataSet ID 와 저장 시 사용할 ID 를 다르게 사용할 때 설정합니다.&#xA;&#xA;값 생략 시 현재 DataSet 의 ID가 적용됩니다." />
+            <Argument name="strSaveType" type="String" in="false" out="false" option="false" variable="false" description="XML 형식으로 변환할 대상이 되는 데이터를 선정하는 기준을 설정합니다.&#xA;&#xA;&quot;n&quot;,&quot;N&quot;,&quot;normal&quot;,&quot;Normal&quot; 설정 시 Delete 된 데이터를 제외하고 변환합니다.&#xA;&quot;u&quot;,&quot;U&quot;,&quot;update&quot;,&quot;Update&quot; 설정 시 Update 된 데이터만 변환합니다.&#xA;&quot;a&quot;,&quot;A&quot;,&quot;all&quot;,&quot;All&quot; 설정 시 Insert/Update/Delete 된 모든 데이터를 변환합니다.&#xA;&quot;v&quot;,&quot;V&quot;,&quot;view&quot;,&quot;View&quot; 설정 시 &quot;Normal&quot; 조건의 데이터를 Grid 에 표시된 순서대로 변환합니다.&#xA;&#xA;값 생략 시 &quot;Normal&quot;로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Row 의 Column 값을 변경하는 메소드입니다.">
+        <Syntax text="Dataset.setColumn( nRow, nColIdx, varVal )&#xA;Dataset.setColumn( nRow, strColID, varVal )">
+          <Return type="Boolean" description="값 변경에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;값 변경에 실패하면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="값을 변경하려는 Column 의 인덱스를 설정합니다." />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="값을 변경하려는 Row 의 인덱스를 설정합니다.&#xA;&#xA;첫번째 Row 의 인덱스값은 &quot;0&quot; 입니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="값을 변경하려는 Column 의 ID 를 설정합니다." />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="변경하려는 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setColumnNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Row 의 Column 값을 변경하는 메소드입니다.">
+        <Syntax text="Dataset.setColumnNF( nRow, nColIdx, varVal )&#xA;Dataset.setColumnNF( nRow, strColID, varVal )">
+          <Return type="Boolean" description="값 변경에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;값 변경에 실패하면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="값을 변경하려는 Column 의 인덱스를 설정합니다." />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="값을 변경하려는 Row 의 인덱스를 설정합니다.&#xA;&#xA;첫번째 Row 의 인덱스값은 &quot;0&quot; 입니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="값을 변경하려는 Column 의 ID 를 설정합니다." />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="변경하려는 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setConstColumn" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 정의된 Const Column 의 상수값을 변경하는 메소드입니다.">
+        <Syntax text="Dataset.setConstColumn(nColIdx,varVal)&#xD;&#xA;Dataset.setConstColumn(strColID,varVal)">
+          <Return type="Boolean" description="상수값 변경에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;상수값 변경에 실패하면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nColIdx" type="Number" in="false" out="false" option="false" variable="false" description="값을 변경할 Const Column 의 인덱스를 설정합니다." />
+            <Argument name="strColID" type="String" in="false" out="false" option="false" variable="false" description="값을 변경할 Const Column 의 ID 를 설정합니다." />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="변경할 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Dataset 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="Dataset.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Dataset 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="Dataset.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setRowType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 제외한 범위에서 특정 Row 의 타입값을 변경하는 메소드입니다.">
+        <Syntax text="Dataset.setRowType( nRow, nRowType )&#xA;Dataset.setRowType( nRow, strRowType )">
+          <Return type="Boolean" description="타입 변환에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;타입 변환에 실패하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="타입을 변경할 Row 의 인덱스를 설정합니다." />
+            <Argument name="nRowType" type="Number" in="false" out="false" option="false" variable="false" description="변경할 Row 타입값을 숫자로 설정합니다." />
+            <Argument name="strRowType" type="String" in="false" out="false" option="false" variable="false" description="변경할 Row 타입값을 문자로 설정합니다.&#xA;&#xA;&quot;i&quot;, &quot;I&quot; 설정 시 &quot;Dataset.ROWTYPE_INSERT&quot; 로 적용됩니다.&#xA;&quot;u&quot;, &quot;U&quot; 설정 시 &quot;Dataset.ROWTYPE_UPDATE&quot; 로 적용됩니다.&#xA;&quot;d&quot;, &quot;D&quot; 설정 시 &quot;Dataset.ROWTYPE_DELETE&quot; 로 적용됩니다.&#xA;&#xA;이외의 값 설정 시 &quot;Dataset.ROWTYPE_NORMAL&quot; 로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setRowTypeNF" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="필터링 되어 보이지 않는 Row 를 포함한 범위에서 특정 Row 의 타입값을 변경하는 메소드입니다.">
+        <Syntax text="Dataset.setRowTypeNF( nRow, nRowType )&#xA;Dataset.setRowTypeNF( nRow, strRowType )">
+          <Return type="Boolean" description="타입 변환에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;타입 변환에 실패하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="타입을 변경할 Row 의 인덱스를 설정합니다." />
+            <Argument name="nRowType" type="Number" in="false" out="false" option="false" variable="false" description="변경할 Row 타입값을 숫자로 설정합니다." />
+            <Argument name="strRowType" type="String" in="false" out="false" option="false" variable="false" description="변경할 Row 타입값을 문자로 설정합니다.&#xA;&#xA;&quot;i&quot;, &quot;I&quot; 설정 시 &quot;Dataset.ROWTYPE_INSERT&quot; 로 적용됩니다.&#xA;&quot;u&quot;, &quot;U&quot; 설정 시 &quot;Dataset.ROWTYPE_UPDATE&quot; 로 적용됩니다.&#xA;&quot;d&quot;, &quot;D&quot; 설정 시 &quot;Dataset.ROWTYPE_DELETE&quot; 로 적용됩니다.&#xA;&#xA;이외의 값 설정 시 &quot;Dataset.ROWTYPE_NORMAL&quot; 로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="updateColID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Const Column 을 포함하여 DataSet 에 정의된 Column 의 ID 를 변경하는 메소드입니다.">
+        <Syntax text="Dataset.updateColID(nCol, strNewColID)&#xD;&#xA;Dataset.updateColID(strOldColID, strNewColID)">
+          <Return type="Number" description="ID 가 변경된 Column 의 인덱스를 반환합니다.&#xA;만일 지정한 Column 이 존재하지 않거나 ID 가 동일한 Column 이 있을 경우 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="nCol" type="Number" in="false" out="false" option="false" variable="false" description="ID 를 변경할 Column 의 인덱스를 설정합니다.&#xA;&#xA;첫번째 Column 의 인덱스값은 &quot;0&quot; 입니다." />
+            <Argument name="strNewColID" type="String" in="false" out="false" option="false" variable="false" description="변경할 Column 의 새 ID 를 문자열로 설정합니다." />
+            <Argument name="strOldColID" type="String" in="false" out="false" option="false" variable="false" description="ID 를 변경할 Column 의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="updateConstColID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에서 지정한 Const Column 의 ID를 변경하는 메소드입니다.">
+        <Syntax text="Dataset.updateConstColID(nCol, strNewColID)&#xD;&#xA;Dataset.updateConstColID(strOldColID, strNewColID)">
+          <Return type="Number" description="ID 가 변경된 Const Column 의 인덱스를 반환합니다.&#xA;만일 지정한 Const Column 이 존재하지 않거나 ID 가 동일한 Const Column 이 있을 경우 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="nCol" type="Number" in="false" out="false" option="false" variable="false" description="ID 를 변경할 Const Column 의 인덱스를 설정합니다.&#xA;&#xA;첫번째 Column 의 인덱스값은 &quot;0&quot; 입니다." />
+            <Argument name="strNewColID" type="String" in="false" out="false" option="false" variable="false" description="변경할 Const Column 의 새 ID 를 문자열로 설정합니다." />
+            <Argument name="strOldColID" type="String" in="false" out="false" option="false" variable="false" description="ID 를 변경할 Const Column 의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="updateSortGroup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 로드된 데이터를 그룹핑 또는 정렬 하는 메소드입니다.">
+        <Syntax text="Dataset.updateSortGroup([strKeyString])">
+          <Return type="Boolean" description="그룹핑 또는 정렬에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;그룹핑 또는 정렬에 실패하면 &quot;false&quot; 를 반환합니다.&#xA;&#xA;두개 이상의 파라미터를 지정한 경우 &quot;false&quot; 를 반환합니다.&#xA;keystring 속성값이 설정되지 않은 상태에서 파라미터를 생략하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="strKeyString" type="String" in="false" out="false" option="false" variable="false" description="그룹핑 또는 정렬의 기준이 되는 조건식을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="cancolumnchange" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 Column 값이 변경될 때 발생하는 이벤트입니다.">
+        <Syntax text="Dataset.cancolumnchange(obj:nexacro.NormalDataset,e:nexacro.DSColChangeEventInfo);">
+          <Return type="Boolean" description="이벤트에서 리턴값으로 &quot;true&quot; 를 반환하면 Column 값이 변경되고, oncolumnchanged 이벤트가 발생합니다.&#xA;이벤트에서 리턴값으로 &quot;false&quot; 를 반환하면 Column 값이 변경되지 않고, oncolumnchanged 이벤트가 발생하지 않습니다.&#xA;&#xA;이벤트에서 리턴값을 생략하면 &quot;true&quot; 로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DSColChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="canrowposchange" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Row 의 선택이 변경되어 DataSet 의 rowposition 속성값이 변경될 때 발생하는 이벤트입니다.">
+        <Syntax text="Dataset.canrowposchange(obj:nexacro.NormalDataset,e:nexacro.DSRowPosChangeEventInfo);">
+          <Return type="Boolean" description="이벤트에서 리턴값으로 &quot;true&quot; 를 반환하면 rowposition 속성값이 변경되고, onrowposchanged 이벤트가 발생합니다.&#xA;이벤트에서 리턴값으로 &quot;false&quot; 를 반환하면 rowposition 속성값이 변경되지 않고, onrowposchanged 이벤트가 발생하지 않습니다.&#xA;&#xA;이벤트에서 리턴값을 생략하면 &quot;true&quot; 로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DSRowPosChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncolumnchanged" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 Column 값이 변경된 후 발생하는 이벤트입니다.">
+        <Syntax text="Dataset.oncolumnchanged(obj:nexacro.NormalDataset,e:nexacro.DSColChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSColChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 데이터 로딩이 완료된 후 발생하는 이벤트입니다.">
+        <Syntax text="Dataset.onload(obj:nexacro.NormalDataset,e:nexacro.DSLoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSLoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrowposchanged" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Row 의 선택이 변경되어 DataSet 의 rowposition 속성값이 변경된 후 발생하는 이벤트입니다.">
+        <Syntax text="Dataset.onrowposchanged(obj:nexacro.NormalDataset,e:nexacro.DSRowPosChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSRowPosChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrowsetchanged" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 에 데이터가 Insert, Delete 되거나 Row 의 위치, 상태 등이 변경된 후 발생하는 이벤트입니다.">
+        <Syntax text="Dataset.onrowsetchanged(obj:nexacro.NormalDataset,e:nexacro.DSRowsetChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSRowsetChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onvaluechanged" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DataSet 의 데이터가 Insert, Delete, Update 되거나 Row 의 위치, 상태 등이 변경될 때 마지막에 발생하는 이벤트입니다.">
+        <Syntax text="Dataset.onvaluechanged(obj:nexacro.NormalDataset,e:nexacro.DSColChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DSColChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

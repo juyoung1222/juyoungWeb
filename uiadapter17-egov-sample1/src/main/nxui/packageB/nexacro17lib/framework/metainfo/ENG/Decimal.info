@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Decimal">
+    <ObjectInfo inheritance="" classname="nexacro.Decimal" shorttypename="Decimal" csstypename="" csscontrolname="" group="Object_old" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This object is used to handle decimal type data." />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="abs" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This methods converts the value saved in a Decimal object to an absolute value.">
+        <Syntax text="Decimal.abs()">
+          <Return type="Decimal" description="It returns the result of converting the value saved in a Decimal object into an absolute value." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="addDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the result of adding a specified decimal type value to the value of a Decimal object.">
+        <Syntax text="Decimal.addDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="It is a Decimal object that will be added to the primary Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method adds a number to the value of a Decimal object.">
+        <Syntax text="Decimal.addDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="It is a number that will be added to a Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="ceil" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method rounds the value saved in a Decimal object upward to its nearest integer.">
+        <Syntax text="Decimal.ceil()">
+          <Return type="Decimal" description="It returns the result of rounding a value upward to its nearest integer." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="divDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the result of dividing the value of a Decimal object by a specified decimal type value.">
+        <Syntax text="Decimal.divDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="It is a Decimal object that serves as a divisor of the primary Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="divDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the result of dividing the value of a Decimal object by a specified number.">
+        <Syntax text="Decimal.divDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="It is a number that serves as a divisor of a Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="floor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method rounds the value saved in a Decimal object downward to its nearest integer.">
+        <Syntax text="Decimal.floor()">
+          <Return type="Decimal" description="It returns the result of rounding a value downward to its nearest integer." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isEqual" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method compares the value of a Decimal object delivered as an argument with the value of the primary decimal object. Then, it identifies whether those two values are the same.">
+        <Syntax text="Decimal.isEqual( objDecimal )">
+          <Return type="Boolean" description="It will return &quot;true&quot; if the two values are the same.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="It is a Decimal object whose value will be compared with that of the primary Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isInfinity" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to identify whether a Decimal object has Infinity as its value.">
+        <Syntax text="Decimal.isInfinity()">
+          <Return type="Boolean" description="It will return &quot;true&quot; if a Decimal object has Infinity as its value.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNaN" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to identify whether a Decimal object has NaN as its value.">
+        <Syntax text="Decimal.isNaN()">
+          <Return type="Boolean" description="It will return &quot;true&quot; if a Decimal object has NaN as its value.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNaNOrInf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to identify whether a Decimal object has Infinity or NaN as its value.">
+        <Syntax text="Decimal.isNaNOrInf()">
+          <Return type="Boolean" description="It will return &quot;true&quot; if a Decimal object has Infinity or NaN as its value.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNegative" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to identify whether a Decimal object has a negative value.">
+        <Syntax text="Decimal.isNegative()">
+          <Return type="Boolean" description="It will return &quot;true&quot; if a Decimal object has a negative value.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isZero" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns whether a Decimal object has zero as its value.">
+        <Syntax text="Decimal.isZero()">
+          <Return type="Boolean" description="It will return &quot;true&quot; if a Decimal object has zero as its value.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="modDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method calculates the remaining value after dividing the value of a Decimal object by a specified decimal type value.">
+        <Syntax text="Decimal.modDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="It is a Decimal object that serves as a divisor of the primary Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="modDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the remaining value after dividing the value of a Decimal object by a specified number.">
+        <Syntax text="Decimal.modDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="It is a number that serves as a divisor of a Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mulDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the result of multiplying the value of a Decimal object by a specified decimal type value.">
+        <Syntax text="Decimal.mulDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="It is a Decimal object that serves as a factor for the primary Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mulDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the result of multiplying the value of a Decimal object by a specified number.">
+        <Syntax text="Decimal.mulDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="It is a number that serves as a factor for a Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="round" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method rounds the value saved in a Decimal object to the nearest integer.">
+        <Syntax text="Decimal.round()">
+          <Return type="Decimal" description="It returns the result of rounding a value to the nearest integer." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method specifies a decimal type argument to set the value of a Decimal object.">
+        <Syntax text="Decimal.setDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="It is another Decimal object that will be saved to the primary Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method specifies a number type argument that will be saved in a Decimal object.">
+        <Syntax text="Decimal.setDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="It is a number that will be saved to a Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method specifies a number in the form of a string that will be saved to a Decimal object.">
+        <Syntax text="Decimal.setString( strValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strValue" type="String" in="false" out="false" option="false" variable="false" description="It is a number in the form of a string that will be saved to a Decimal object. &#xA;&#xA;If a character other than a number is included in the string, saving of the string will be failed." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the result of subtracting a specified decimal type value from the value of a Decimal object.">
+        <Syntax text="Decimal.subDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="It is a Decimal object that serves as a subtrahend for the primary Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the result of subtracting a specified number from the value of a Decimal object.">
+        <Syntax text="Decimal.subDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="It is a number that serves as a subtrahend for a Decimal object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the value stored in a Decimal object. The value is returned in the form of a string.">
+        <Syntax text="Decimal.toString()">
+          <Return type="String" description="This method returns the value stored in a Decimal object. The value is returned in the form of a string." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="trunc" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the integer part of the value saved in a Decimal object.">
+        <Syntax text="Decimal.trunc()">
+          <Return type="Decimal" description="It returns the integer part of a value." />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

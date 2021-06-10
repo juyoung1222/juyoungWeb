@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ENV version="2.1">
+  <Environment themeid="theme::default" key="nexacro117MDI" httpretry="0" filesecurelevel="all" networksecurelevel="all" onerror="Environment_onerror">
+    <ScreenDefinition>
+      <Screen id="Screen_D" type="desktop" key="nexacro17"/>
+    </ScreenDefinition>
+    <Variables>
+      <Variable id="gvRunMode" initval="0"/>
+      <Variable id="gvUserId"/>
+      <Variable id="gvUserNm"/>
+      <Variable id="gvTraceMode" initval="true"/>
+    </Variables>
+    <Cookies/>
+    <httpheader/>
+  </Environment>
+  <Script type="xscript5.1"><![CDATA[/**
+ * @description 통신오류 알림
+*/
+this.Environment_onerror = function(obj:nexacro.Environment,e:nexacro.ErrorEventInfo)
+{
+	//trace("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Environment_onerror!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+	//trace("e.statuscode : " + e.statuscode);
+	//trace("e.errormsg : " + e.errormsg);
+	
+	// 스크립트 에러
+	if (e.statuscode == 0) {
+		//alert(e.statuscode + "\n"+e.errormsg);
+	} 
+	else if (e.statuscode == 404) {
+		alert(e.statuscode+"\n"+"Page Not Found"+"\n"+e.errormsg);
+	} 
+	else if (e.statuscode == 408) {
+		alert(e.statuscode+"\n"+"Request Timeout" + "\n"+e.errormsg);
+	} 
+	else if (e.statuscode == 500) {
+		alert(e.statuscode+"\n"+"Internal Server Error" + "\n"+e.errormsg);
+	} 
+	else if (e.statuscode == 503) {
+		alert(e.statuscode+"\n"+"The service is unavailable" + "\n"+e.errormsg);
+	} 
+	else if (e.statuscode == 12029) {
+		alert(e.statuscode+"\n"+"A connection with the server could not be established" + "\n"+e.errormsg);
+	} 
+	// 미등록 오류 발생
+	else {
+		alert(e.statuscode + "\n" + e.errormsg);
+	}
+};
+]]></Script>
+</ENV>

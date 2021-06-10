@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Rect">
+    <ObjectInfo inheritance="" classname="nexacro.Rect" shorttypename="Rect" csstypename="Rect" csscontrolname="" group="" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="正方形の領域の座標を処理するために提供するオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="height" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rectオブジェクトのheight設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="left" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rectオブジェクトのleft座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="top" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rectオブジェクトのtop座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="width" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rectオブジェクトのwidth設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="width" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rectオブジェクトのすべてのプロパティ値を0に初期化するメソッドです。">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clone" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rectオブジェクトのプロパティ値をコピーして、新しいRectオブジェクトを返すメソッドです。">
+        <Syntax text="Rect.clone()">
+          <Return type="Object" description="現在のRectオブジェクト値をコピーした、新しいRectオブジェクトを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="引数として渡されたRectオブジェクトのプロパティ値を、現在のRectオブジェクトのプロパティ値にコピーするメソッドです。">
+        <Syntax text="Rect.copy( objRect )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objRect" type="Object" in="false" out="false" option="false" variable="false" description="現在のRectオブジェクトのプロパティにコピーされる値をRectオブジェクトに設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="equals" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="現在Rectオブジェクトと引数として渡されたRectオブジェクトのプロパティ値との一致結果を返すメソッドです。">
+        <Syntax text="Rect.equals( objRect )">
+          <Return type="Boolean" description="現在のRectオブジェクトと引数として渡されたRectオブジェクトのプロパティ値が一致すると、「true」を返します。&#xA;&#xA;現在のRectオブジェクトと引数として渡されたRectオブジェクトのプロパティ値が1つでも異なる場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="objRect" type="Object" in="false" out="false" option="false" variable="false" description="現在のRectオブジェクトのプロパティ値と比較する値をRectオブジェクト形式に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getBottom" group="Position" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rectオブジェクトのbottom座標を設定するプロパティです。">
+        <Syntax text="Rect.getBottom()">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Rectオブジェクト のright座標を設定するプロパティです。">
+        <Syntax text="Rect.getRight()">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isSameSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="現在Rectオブジェクトと引数として渡されたRectオブジェクトの幅と高さの一致可否を返すメソッドです。">
+        <Syntax text="Rect.isSameSize( objRect )">
+          <Return type="Boolean" description="現在Rectオブジェクトと引数として渡されたRectオブジェクトの幅と高さが一致すると、「true」を返します。&#xA;&#xA;現在Rectオブジェクトと引数として渡されたRectオブジェクトの幅または高さが異なる場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="objRect" type="Object" in="false" out="false" option="false" variable="false" description="現在Rectオブジェクトの幅、高さと比較するRectオブジェクトを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

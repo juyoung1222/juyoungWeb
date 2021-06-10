@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Application">
+    <ObjectInfo inheritance="" classname="nexacro.Application" shorttypename="Application" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="nexacro platformで作られるアプリケーションの基本的な情報と、初期生成時に与えられる環境情報を扱う基本となるオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="all" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションのmainframe、global variables、global オブジェクトなどにアクセスするプロパティです。" csspropertyname="" csselementname="" normalpropertyname="all" />
+      <Property name="licenseurl" group="" subgroup="" refreshinfo="" edittype="FileName" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser" description="ライセンス情報を持っているファイルパスを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="licenseurl" />
+      <Property name="mainframe" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションのMainFrameにアクセスするプロパティです。" csspropertyname="" csselementname="" normalpropertyname="mainframe" />
+      <Property name="name" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application名を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="onlyone" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="KeyとXADL値が同一のInstanceを一つだけ表示するかを設定するプロパティです。 &#xD;&#xA;　" csspropertyname="" csselementname="" normalpropertyname="onlyone" />
+      <Property name="screenid" group="Information" subgroup="" refreshinfo="" edittype="ScreenID" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Applicationが実行されるスクリーンのIDを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="screenid" />
+      <Property name="trays" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="アプリケーション内のトレイにアクセスできるプロパティです。" csspropertyname="" csselementname="" normalpropertyname="trays" />
+      <Property name="version" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションのバージョンを設定するプロパティです。 &#xD;&#xA;　" csspropertyname="" csselementname="" normalpropertyname="version" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="イベントハンドラ関数を追加するメソッドです。">
+        <Syntax text="Application.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="成功すると追加されたインデックスの値を返し、失敗すると-1を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベントハンドラ関数" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="target scope" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="イベントID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="指定したイベントIDで検索された結果イベントハンドラを追加するメソッドです。">
+        <Syntax text="Application.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="成功すると追加されたインデックスの値を返し、失敗すると-1を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="target scope" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="イベントID" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="イベントハンドラ関数" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addTray" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="動的に生成したトレイをアプリケーションに追加するためのメソッドです。 &#xD;&#xA;　">
+        <Syntax text="Application.addTray(strTrayID, objTray)">
+          <Return type="Number" description="追加されたインデックス&#xD;&#xA;正常に追加されていない場合は-1を返します。&#xD;&#xA;　　　" />
+          <Arguments>
+            <Argument name="objTray" type="Object" in="false" out="false" option="false" variable="false" description="アプリケーションに追加するTrayオブジェクト" />
+            <Argument name="strTrayID" type="String" in="false" out="false" option="false" variable="false" description="アプリケーションに追加するTrayID　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="グローバル領域に変数を追加するメソッドです。">
+        <Syntax text="Application.addVariable( strID, varValue )">
+          <Return type="Number" description="追加に成功すると1、失敗すると0を返します。&#xD;&#xA;そして、既に変数が存在している場合、-1を返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="追加される変数名　" />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="変数に追加される値　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="警告ダイアログを表示するメソッドです。">
+        <Syntax text="Application.alert( strText )">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="表示する内容の文字列です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="cancelTransaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="進行中のトランザクションを停止させるメソッドです。">
+        <Syntax text="cancelTransaction( [strSvcID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="transactionを区別するためのID値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="設定されたイベントハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="Application.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントから削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="イベントID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="選択ダイアログを表示するメソッドです。">
+        <Syntax text="Application.confirm( strText [,strCaption [,strType]] )">
+          <Return type="Boolean" description="確認ボタンをクリックするとtrueを返し、キャンセルボタンをクリックするとfalseを返します。" />
+          <Arguments>
+            <Argument name="strCaption" type="String" in="false" out="false" option="false" variable="false" description="タイトルバーに表示する内容の文字列です。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="表示する内容の文字列です。" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="Icon Typeを指定する文字列&#xA;&#xA;default：Iconを表示しない。&#xA;error：Xアイコンが表示される。&#xA;question：？アイコンが表示される。&#xA;warning：危険表示 iアイコンが表示される。&#xA;information：情報表示 iアイコンが表示される。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="enableOnlyOne" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="OnlyOne機能をRuntimeに活性化させます。&#xD;&#xA;同じアプリケーションが既に実行中なら新しいアプリケーションを表示せずに実行中のアプリケーションを活性化させる OnlyOne機能を活性化させるメソッドです。">
+        <Syntax text="[application.]enableOnlyOne()">
+          <Return type="Boolean" description="成功するとtrueを返します。既にOnlyOne状態で実行中であったり、失敗した場合はfalseを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="exit" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="nexacro platformを終了するメソッドです。&#xA;　">
+        <Syntax text="Application.exit()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="指定したイベントハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="Application.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="指定した関数のインデックス" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するイベントハンドラ関数オブジェクト" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="target scope" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="イベントID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getActiveForm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="活性化されたフォームの個体を取得するメソッドです。">
+        <Syntax text="Application.getActiveForm()">
+          <Return type="Object" description="活性化されたフォームオブジェクトです。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getActiveFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="活性化されたフレームを得るメソッドです。">
+        <Syntax text="Application.getActiveFrame()">
+          <Return type="Object" description="活性化されたFrameオブジェクト" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Applicationの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="Application.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="指定されたインデックスのハンドラ関数オブジェクトを返します。&#xA;&#xA;指定されたインデックスにハンドラ関数が存在しない場合、 &quot;null&quot;を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;&#xA;インデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getTrustDomainList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Trust Domainの一覧を取得するためのメソッドです。">
+        <Syntax text="[application.]getTrustDomainList()">
+          <Return type="Object" description="Arrayオブジェクトです。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTrustPathList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Trust Pathのリストを取得するためのメソッドです。&#xD;&#xA;　">
+        <Syntax text="[application.]getTrustPathList()">
+          <Return type="Object" description="Arrayオブジェクトです。　" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isExistVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Globalに変数があるかを確認するメソッドです。">
+        <Syntax text="Application.isExistVariable( strID );">
+          <Return type="Boolean" description="変数が存在するとtrue、存在しないとfalseを返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="変数が存在しているかどうかを確認する変数名" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application全体を対象に検索した結果オブジェクトを返すプロパティです。 　">
+        <Syntax text="Application.lookup( strObjectID )">
+          <Return type="Object" description="検索結果オブジェクト" />
+          <Arguments>
+            <Argument name="strObjectID" type="String" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="指定したインデックスまたはイベントハンドラ関数を削除するメソッドです。">
+        <Syntax text="Application.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="削除されたイベントハンドラ関数の数を返します。(成功：1、失敗：0)" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するイベントハンドラ関数オブジェクト" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="target scope" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="イベントID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="指定したイベントIDで検出された結果イベントハンドラを削除するメソッドです。">
+        <Syntax text="Application.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="削除されたイベントハンドラ関数の数を返します。(成功：1、失敗：0)" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="target scope" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="イベントID" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="イベントハンドラ関数" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeTray" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="動的に生成したTrayを削除します。">
+        <Syntax text="application.removeTray([strID]);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strId" type="String" in="false" out="false" option="false" variable="false" description="TrayObjectの ID stringです。値を入れないと全体Trayが削除されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Global領域の変数を削除するメソッドです。">
+        <Syntax text="Application.removeVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="削除する変数名" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="イベントハンドラ関数を変更するメソッドです。">
+        <Syntax text="Application.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="成功した場合変更されたインデックスを返し、失敗した場合は-1を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベントハンドラ関数" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="target scope" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="イベントID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="指定したイベントIDで検出された結果イベントハンドラを指定するメソッドです。">
+        <Syntax text="Application.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="成功した場合変更されたインデックスを返し、失敗した場合は-1を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="target scope" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="イベントID" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="イベントハンドラ関数" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Global領域に変数を追加するメソッドです。">
+        <Syntax text="Application.setVariable( strID, varValue )">
+          <Return type="Number" description="追加に成功すると1、失敗すると0を返します。&#xD;&#xA;そして既に変数が存在すると-1を返します。　" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="追加される変数名　" />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="変数に追加される値　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trace" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="追跡ログを残すメソッドです。">
+        <Syntax text="Application.trace( strLog )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strLog" type="String" in="false" out="false" option="false" variable="false" description="ログの文字列" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="transaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="データセットの値を更新するためのサービスを呼び出して、トランザクションが完了すると、コールバック関数を実行するメソッドです。">
+        <Syntax text="Application.transaction(strSvcID,strURL,strInDatasets,strOutDatasets,strArgument,strCallbackFunc[,bAsync[,nDataType[,bCompress]]])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bAsync" type="Boolean" in="false" out="false" option="false" variable="false" description="非同期かどうかを指定します。&#xD;&#xA;デフォルト値：true" />
+            <Argument name="bCompress" type="Boolean" in="false" out="false" option="false" variable="false" description="通信時にPostDataを圧縮するかどうかを指定します。&#xD;&#xA;デフォルト値：false" />
+            <Argument name="nDataType" type="Number" in="false" out="false" option="false" variable="false" description="転送する形態を指定します。&#xD;&#xA;デフォルト値 : 0 (XMLタイプ)&#xD;&#xA;0(XMLタイプ)、1(Binaryタイプ)、2(SSVタイプ)" />
+            <Argument name="strArgument" type="String" in="false" out="false" option="false" variable="false" description="トランザクションのための引数。&#xD;&#xA;a=bの形式で入力し、空白文字で区切ります。" />
+            <Argument name="strCallbackFunc" type="String" in="false" out="false" option="false" variable="false" description="トランザクションの結果を返す関数名です。" />
+            <Argument name="strInDatasets" type="String" in="false" out="false" option="false" variable="false" description="トランザクションをリクエストするときにデータ送信用として渡すDatasetのID。&#xD;&#xA;Datasetを複数送ることができます。&#xD;&#xA;各IDは、空白文字で区切り、a=bの形で実際の名と入力名をマッチします。" />
+            <Argument name="strOutDatasets" type="String" in="false" out="false" option="false" variable="false" description="トランザクションをリクエストするときにデータ送信用として渡すDatasetのID。&#xD;&#xA;Datasetを複数送ることができます。&#xD;&#xA;各IDは、空白文字で区切り、a=bの形で実際の名と入力名をマッチします。" />
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="トランザクションを区別するためのIDの値です。" />
+            <Argument name="strURL" type="String" in="false" out="false" option="false" variable="false" description="トランザクションをリクエストするURLです。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onafteruserconfirm" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,Android nexacro Browser" description="UserConfirmが閉じられた後に発生したイベントです。">
+        <Syntax text="Application.onafteruserconfirm(obj:nexacro.Application,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeexit" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションの終了前に発生するイベントです。">
+        <Syntax text="Application.onbeforeexit(obj:nexacro.Application,e:nexacro.ExitEventInfo);">
+          <Return type="String" description="アプリケーションを終了するかどうかを確認するメッセージを指定します。&#xA;空値を指定するとき(null、undefinded、0 size string)未入力時と同じように確認メッセージを未処理します。" />
+          <Arguments>
+            <Argument name="e" type="ExitEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeuserconfirm" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,Android nexacro Browser" description="UserConfirmが表示される前に発生するイベントです。">
+        <Syntax text="Application.onbeforeuserconfirm(obj:nexacro.Application,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onduplicateexecution" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="重複実行不可に設定されたアプリケーションを重複して実行時に発生するイベントです。">
+        <Syntax text="Application.onduplicateexecution(obj:nexacro.Application,e:nexacro.DuplicateExecutionEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DuplicateExecutionEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Applicationで実行したTransactionでエラーが生じたときに発生するイベントです。">
+        <Syntax text="Application.onerror(obj:nexacro.Application,e:nexacro.ErrorEventInfo);">
+          <Return type="Boolean" description="イベントで返り値として「true」を返した場合、&#xA;  &gt; Environmentのonerrorでイベントを伝播しません。&#xA;  &gt;実行中のTransactionを停止せずに維持します。&#xA;&#xA;イベント返り値として「false」を返した場合、&#xA;  &gt; Environmentのonerrorでイベントを伝播します。&#xA;  &gt; 実行中のTransactionの停止可否は、Environmentのonerrorで返り値として決定されます。&#xA;  &gt; Environmentにonerrorイベントが定義されていない場合、実行中のTransactionは停止します。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="ErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onexit" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションの終了時に発生するイベントです。">
+        <Syntax text="Application.onexit(obj:nexacro.Application,e:nexacro.ExitEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="ExitEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Applicationに登録されたすべてのオブジェクトとデータがロードされた後に発生するイベントです。">
+        <Syntax text="Application.onload(obj:nexacro.Application,e:nexacro.LoadEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onloadforms" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ChildFrameに接続されたすべてのFormがロード完了された後に発生するイベントです。">
+        <Syntax text="Application.onloadforms(obj:nexacro.Application,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onloadingappvariables" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="GlobalVariablesなどのオブジェクトが生成した後に発生するイベントです。">
+        <Syntax text="Application.onloadingappvariables(obj:nexacro.Application,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onnotification" group="" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイルノーティフィケーション(Notification)が発生したときに実行されるイベントです。">
+        <Syntax text="Application.onnotification(obj:nexacro.Application,e:nexacro.NotificationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="NotificationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.SocketEventInfo">
+    <ObjectInfo inheritance="" classname="nexacro.SocketEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows nexacro Browser" description="This is an EventInfo object delivered to the events that are related to the success of a task requested by a TCPClientSocket component." />
+    <PropertyInfo>
+      <Property name="bytesremain" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This read-only property holds the length of data that is left over after data is transmitted through the write() method. The data length is specified in byte." csspropertyname="" csselementname="" normalpropertyname="bytesremain" />
+      <Property name="bytessent" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This read-only property holds the length of data that is transmitted through the write() method. The data length is specified in byte." csspropertyname="" csselementname="" normalpropertyname="bytessent" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This read-only property holds the ID of an event." csspropertyname="" csselementname="" normalpropertyname="eventid" />
+      <Property name="reason" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This read-only property holds a code indicating the cause of an event." csspropertyname="" csselementname="" normalpropertyname="reason" />
+      <Property name="reasonmsg" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This read-only property holds the name of an event of Nexacro Platform 14. The event name indicates the cause of an event that occurs in Nexacro Platform 17." csspropertyname="" csselementname="" normalpropertyname="reasonmsg" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

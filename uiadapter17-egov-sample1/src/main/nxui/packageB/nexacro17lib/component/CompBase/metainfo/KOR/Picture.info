@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro._Picture">
+    <ObjectInfo inheritance="" classname="nexacro._Picture" shorttypename="" csstypename="Picture" csscontrolname="" group="Object_old" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Picture Object 입니다. 이미지 정보를 담고 있습니다.&#xD;&#xA;(BMP, GIF, JPEG, PNG, TIFF, ICON 의 이미지 포멧를 지원합니다.)" />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="getImage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="DrawingObjects 중에 하나인 Image Object 를 Picture PropertyObject 에서 가져오는 Method 입니다.">
+        <Syntax text="Picture.getImage()">
+          <Return type="Object" description="DrawingObjects::Image Object" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setImage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="DrawingObjects 중에 하나인 Image Object 를 설정하는 Method 입니다.">
+        <Syntax text="Picture.setImage(objImage)">
+          <Return type="Boolean" description="설정에 성공하면 true, 실패하면 false 를 반환합니다." />
+          <Arguments>
+            <Argument name="objImage" type="Object" in="false" out="false" option="false" variable="false" description="DrawingObject::Image Object" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

@@ -1,0 +1,846 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="test" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" mobileorientation="landscape" width="1280">
+        <Grid id="grd01" taborder="0" left="10" top="30" height="230" autofittype="col" right="10" binddataset="Dataset00">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="214"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+                <Row size="24"/>
+                <Row size="24"/>
+                <Row size="24" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="수익/비용"/>
+                <Cell col="1" text="관"/>
+                <Cell col="2" text="항"/>
+                <Cell col="3" text="목"/>
+                <Cell col="4" text="과"/>
+                <Cell col="5" text="내용"/>
+                <Cell col="6" text="금액"/>
+                <Cell col="7" text="거래일자"/>
+                <Cell col="8" text="작성자"/>
+                <Cell col="9" text="등록일"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:profit_cost"/>
+                <Cell col="1" text="bind:big_group"/>
+                <Cell col="2" text="bind:middle_group"/>
+                <Cell col="3" text="bind:small_group"/>
+                <Cell col="4" text="bind:detail_group"/>
+                <Cell col="5" text="bind:comments"/>
+                <Cell col="6" text="bind:transaction_money"/>
+                <Cell col="7" text="bind:transaction_date"/>
+                <Cell col="8" text="bind:writer"/>
+                <Cell col="9" text="bind:reg_date" suppress="0"/>
+                <Cell row="1" suppress="2"/>
+                <Cell row="1" col="1" suppress="2"/>
+                <Cell row="1" col="2" suppress="2"/>
+                <Cell row="1" col="3" suppress="2"/>
+                <Cell row="1" col="4" suppress="2"/>
+                <Cell row="1" col="5"/>
+                <Cell row="1" col="6"/>
+                <Cell row="1" col="7"/>
+                <Cell row="1" col="8"/>
+                <Cell row="1" col="9" suppress="3"/>
+                <Cell row="2"/>
+                <Cell row="2" col="1"/>
+                <Cell row="2" col="2"/>
+                <Cell row="2" col="3"/>
+                <Cell row="2" col="4"/>
+                <Cell row="2" col="5"/>
+                <Cell row="2" col="6"/>
+                <Cell row="2" col="7"/>
+                <Cell row="2" col="8"/>
+                <Cell row="2" col="9"/>
+              </Band>
+              <Band id="summary">
+                <Cell/>
+                <Cell col="1"/>
+                <Cell col="2"/>
+                <Cell col="3"/>
+                <Cell col="4"/>
+                <Cell col="5"/>
+                <Cell col="6" expr="dataset.getSum(&quot;transaction_money&quot;)"/>
+                <Cell col="7"/>
+                <Cell col="8"/>
+                <Cell col="9"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="addBtn" taborder="1" text="추가" left="1090" top="10" width="60" height="20" onclick="addBtn_onclick"/>
+        <Button id="btn01" taborder="2" text="삭제" left="1150" top="10" width="60" height="20" onclick="btn01_onclick"/>
+        <Button id="btn02" taborder="3" text="저장" top="10" height="20" right="10" width="60" onclick="btn02_onclick"/>
+        <Div id="div00" taborder="4" text="div00" left="10" top="269" width="1263" height="22" border="0px none">
+          <Layouts>
+            <Layout>
+              <Combo id="cbo00" taborder="0" text="cbo00" left="0" top="0" width="109" height="20" index="-1" onitemchanged="div00_cbo00_onitemchanged" value="" codecolumn="codecolumn" datacolumn="datacolumn" innerdataset="ds00"/>
+              <Combo id="cbo01" taborder="1" text="cbo00" left="109" top="0" width="109" height="20" onitemchanged="div00_cbo01_onitemchanged" innerdataset="ds01" codecolumn="codecolumn" datacolumn="datacolumn"/>
+              <Combo id="cbo02" taborder="2" text="cbo00" left="218" top="0" width="109" height="20" onitemchanged="div00_cbo02_onitemchanged" innerdataset="ds02" codecolumn="codecolumn" datacolumn="datacolumn"/>
+              <Combo id="cbo03" taborder="3" text="cbo00" left="327" top="0" width="109" height="20" onitemchanged="div00_cbo03_onitemchanged" innerdataset="ds03" codecolumn="codecolumn" datacolumn="datacolumn"/>
+              <Combo id="cbo04" taborder="4" text="cbo00" left="436" top="0" width="109" height="20" onitemchanged="div00_cbo04_onitemchanged" innerdataset="ds04" codecolumn="codecolumn" datacolumn="datacolumn"/>
+              <Edit id="edt00" taborder="5" left="545" top="0" width="280" height="20"/>
+              <MaskEdit id="msk00" taborder="6" left="825" top="0" width="109" height="20" format=""/>
+              <Calendar id="cal00" taborder="7" left="934" top="0" width="109" height="20"/>
+              <Edit id="edt01" taborder="8" left="1043" top="0" width="109" height="20" readonly="true"/>
+              <Calendar id="cal01" taborder="9" left="1152" top="0" width="109" height="20" readonly="true"/>
+            </Layout>
+          </Layouts>
+        </Div>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="Dataset00">
+        <ColumnInfo>
+          <Column id="profit_cost" type="STRING" size="256"/>
+          <Column id="big_group" type="STRING" size="256"/>
+          <Column id="middle_group" type="STRING" size="256"/>
+          <Column id="small_group" type="STRING" size="256"/>
+          <Column id="detail_group" type="STRING" size="256"/>
+          <Column id="comments" type="STRING" size="256"/>
+          <Column id="transaction_money" type="INT" size="256"/>
+          <Column id="transaction_date" type="DATE" size="256"/>
+          <Column id="writer" type="STRING" size="256"/>
+          <Column id="reg_date" type="DATE" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="profit_cost">수익</Col>
+            <Col id="big_group">a</Col>
+            <Col id="middle_group">b</Col>
+            <Col id="small_group">c</Col>
+            <Col id="detail_group">d</Col>
+            <Col id="comments">e</Col>
+            <Col id="transaction_money">1</Col>
+            <Col id="transaction_date">21-01-11</Col>
+            <Col id="writer">f</Col>
+            <Col id="reg_date">21-01-11</Col>
+          </Row>
+          <Row/>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds00">
+        <ColumnInfo>
+          <Column id="codecolumn" type="STRING" size="256"/>
+          <Column id="datacolumn" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="codecolumn">00</Col>
+            <Col id="datacolumn">수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">01</Col>
+            <Col id="datacolumn">비용</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds01">
+        <ColumnInfo>
+          <Column id="codecolumn" type="STRING" size="256"/>
+          <Column id="datacolumn" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="codecolumn">01</Col>
+            <Col id="datacolumn">매출수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">02</Col>
+            <Col id="datacolumn">매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">03</Col>
+            <Col id="datacolumn">외상매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">04</Col>
+            <Col id="datacolumn">선수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">05</Col>
+            <Col id="datacolumn">영업외 수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">06</Col>
+            <Col id="datacolumn">자본금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">07</Col>
+            <Col id="datacolumn">이자수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">08</Col>
+            <Col id="datacolumn">차입금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">09</Col>
+            <Col id="datacolumn">대여금상환금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">10</Col>
+            <Col id="datacolumn">미수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">11</Col>
+            <Col id="datacolumn">예수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">12</Col>
+            <Col id="datacolumn">가수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">13</Col>
+            <Col id="datacolumn">가지급금반환금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">14</Col>
+            <Col id="datacolumn">외화환산이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">15</Col>
+            <Col id="datacolumn">유형자산처분이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">16</Col>
+            <Col id="datacolumn">법인세환급금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">17</Col>
+            <Col id="datacolumn">부가가치세환급금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">18</Col>
+            <Col id="datacolumn">정부보조및지원금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">19</Col>
+            <Col id="datacolumn">특별이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">20</Col>
+            <Col id="datacolumn">자산수증이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">21</Col>
+            <Col id="datacolumn">채무면제이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">22</Col>
+            <Col id="datacolumn">보험차익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">23</Col>
+            <Col id="datacolumn">매출원가</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">24</Col>
+            <Col id="datacolumn">사업인건비</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">25</Col>
+            <Col id="datacolumn">계약직</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">26</Col>
+            <Col id="datacolumn">특급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">27</Col>
+            <Col id="datacolumn">고급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">28</Col>
+            <Col id="datacolumn">중급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">29</Col>
+            <Col id="datacolumn">초급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">30</Col>
+            <Col id="datacolumn">특별인부</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds02">
+        <ColumnInfo>
+          <Column id="codecolumn" type="STRING" size="256"/>
+          <Column id="datacolumn" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="codecolumn">01</Col>
+            <Col id="datacolumn">매출수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">02</Col>
+            <Col id="datacolumn">매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">03</Col>
+            <Col id="datacolumn">외상매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">04</Col>
+            <Col id="datacolumn">선수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">05</Col>
+            <Col id="datacolumn">영업외 수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">06</Col>
+            <Col id="datacolumn">자본금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">07</Col>
+            <Col id="datacolumn">이자수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">08</Col>
+            <Col id="datacolumn">차입금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">09</Col>
+            <Col id="datacolumn">대여금상환금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">10</Col>
+            <Col id="datacolumn">미수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">11</Col>
+            <Col id="datacolumn">예수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">12</Col>
+            <Col id="datacolumn">가수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">13</Col>
+            <Col id="datacolumn">가지급금반환금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">14</Col>
+            <Col id="datacolumn">외화환산이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">15</Col>
+            <Col id="datacolumn">유형자산처분이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">16</Col>
+            <Col id="datacolumn">법인세환급금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">17</Col>
+            <Col id="datacolumn">부가가치세환급금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">18</Col>
+            <Col id="datacolumn">정부보조및지원금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">19</Col>
+            <Col id="datacolumn">특별이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">20</Col>
+            <Col id="datacolumn">자산수증이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">21</Col>
+            <Col id="datacolumn">채무면제이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">22</Col>
+            <Col id="datacolumn">보험차익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">23</Col>
+            <Col id="datacolumn">매출원가</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">24</Col>
+            <Col id="datacolumn">사업인건비</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">25</Col>
+            <Col id="datacolumn">계약직</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">26</Col>
+            <Col id="datacolumn">특급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">27</Col>
+            <Col id="datacolumn">고급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">28</Col>
+            <Col id="datacolumn">중급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">29</Col>
+            <Col id="datacolumn">초급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">30</Col>
+            <Col id="datacolumn">특별인부</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds03">
+        <ColumnInfo>
+          <Column id="codecolumn" type="STRING" size="256"/>
+          <Column id="datacolumn" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="codecolumn">01</Col>
+            <Col id="datacolumn">매출수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">02</Col>
+            <Col id="datacolumn">매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">03</Col>
+            <Col id="datacolumn">외상매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">04</Col>
+            <Col id="datacolumn">선수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">05</Col>
+            <Col id="datacolumn">영업외 수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">06</Col>
+            <Col id="datacolumn">자본금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">07</Col>
+            <Col id="datacolumn">이자수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">08</Col>
+            <Col id="datacolumn">차입금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">09</Col>
+            <Col id="datacolumn">대여금상환금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">10</Col>
+            <Col id="datacolumn">미수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">11</Col>
+            <Col id="datacolumn">예수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">12</Col>
+            <Col id="datacolumn">가수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">13</Col>
+            <Col id="datacolumn">가지급금반환금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">14</Col>
+            <Col id="datacolumn">외화환산이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">15</Col>
+            <Col id="datacolumn">유형자산처분이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">16</Col>
+            <Col id="datacolumn">법인세환급금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">17</Col>
+            <Col id="datacolumn">부가가치세환급금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">18</Col>
+            <Col id="datacolumn">정부보조및지원금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">19</Col>
+            <Col id="datacolumn">특별이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">20</Col>
+            <Col id="datacolumn">자산수증이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">21</Col>
+            <Col id="datacolumn">채무면제이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">22</Col>
+            <Col id="datacolumn">보험차익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">23</Col>
+            <Col id="datacolumn">매출원가</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">24</Col>
+            <Col id="datacolumn">사업인건비</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">25</Col>
+            <Col id="datacolumn">계약직</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">26</Col>
+            <Col id="datacolumn">특급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">27</Col>
+            <Col id="datacolumn">고급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">28</Col>
+            <Col id="datacolumn">중급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">29</Col>
+            <Col id="datacolumn">초급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">30</Col>
+            <Col id="datacolumn">특별인부</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds04">
+        <ColumnInfo>
+          <Column id="codecolumn" type="STRING" size="256"/>
+          <Column id="datacolumn" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="codecolumn">01</Col>
+            <Col id="datacolumn">매출수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">02</Col>
+            <Col id="datacolumn">매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">03</Col>
+            <Col id="datacolumn">외상매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">04</Col>
+            <Col id="datacolumn">선수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">05</Col>
+            <Col id="datacolumn">영업외 수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">06</Col>
+            <Col id="datacolumn">자본금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">07</Col>
+            <Col id="datacolumn">이자수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">08</Col>
+            <Col id="datacolumn">차입금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">09</Col>
+            <Col id="datacolumn">대여금상환금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">10</Col>
+            <Col id="datacolumn">미수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">11</Col>
+            <Col id="datacolumn">예수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">12</Col>
+            <Col id="datacolumn">가수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">13</Col>
+            <Col id="datacolumn">가지급금반환금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">14</Col>
+            <Col id="datacolumn">외화환산이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">15</Col>
+            <Col id="datacolumn">유형자산처분이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">16</Col>
+            <Col id="datacolumn">법인세환급금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">17</Col>
+            <Col id="datacolumn">부가가치세환급금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">18</Col>
+            <Col id="datacolumn">정부보조및지원금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">19</Col>
+            <Col id="datacolumn">특별이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">20</Col>
+            <Col id="datacolumn">자산수증이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">21</Col>
+            <Col id="datacolumn">채무면제이익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">22</Col>
+            <Col id="datacolumn">보험차익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">23</Col>
+            <Col id="datacolumn">매출원가</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">24</Col>
+            <Col id="datacolumn">사업인건비</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">25</Col>
+            <Col id="datacolumn">계약직</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">26</Col>
+            <Col id="datacolumn">특급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">27</Col>
+            <Col id="datacolumn">고급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">28</Col>
+            <Col id="datacolumn">중급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">29</Col>
+            <Col id="datacolumn">초급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">30</Col>
+            <Col id="datacolumn">특별인부</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds05"/>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[
+/************************************************************************************************
+ * CALLBACK 콜백 처리부분(Transaction, Popup)
+ ************************************************************************************************/
+nexacro.getCookieVariable("JSESSIONID");
+/************************************************************************************************
+* TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+
+/************************************************************************************************
+ * 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+this.div00_cbo00_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	var strSelectType = e.postindex;
+	this.grd01.set_selecttype(strSelectType);
+	//상위콤보 데이터를 기준으로 하위콤보 필터링
+	this.ds00.filter("Code.substr(0,1) =='" + e.postvalue + "'");
+	//첫번째 index에 해당하는 combo데이터 선택
+	this.div00.form.cbo00.set_index(-1);
+	
+	//this.ds00.filter("codecolumn == '00'");
+
+	//this.ds00.filter("codecolumn == '01'");
+	
+// 	if(this.ds00.filter("codecolumn == '00'")){
+// 		this.ds01.filter("codecolumn < 23");
+// 	}else if(this.ds00.filter("codecolumn == '01'")){
+// 		this.ds01.filter("codecolumn > 24");
+// 	}else{
+// 		this.div00.form.cbo00.set_index(0);
+// 	}
+	
+	
+	
+};
+
+this.div00_cbo01_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	//var strSelectType = e.postindex;
+	//this.grd01.set_selecttype(strSelectType);
+	//상위콤보 데이터를 기준으로 하위콤보 필터링
+	this.ds00.filter("Code.substr(0,1) =='" + e.postvalue + "'");
+	//첫번째 index에 해당하는 combo데이터 선택
+	//this.div00.form.cbo01.set_index(-1);
+	
+	if(this.ds00.filter("codecolumn == '00'")){
+		this.ds01.filter("codecolumn < 24");
+	}else if(this.ds00.filter("codecolumn == '01'")){
+		this.ds01.filter("codecolumn > 24");
+	}else{
+		this.div00.form.cbo01.set_index(-1);
+	}
+ 	this.ds01.set_enableevent(false);//이벤트를 발생시킬지 여부를 설정하는 속성
+	
+ 	this.ds01.set_updatecontrol(false);//RowType을 자동으로 변경할 것인지 여부를 설정하는 속성
+	
+	this.ds01.setRowType(this.ds01.rowposition,Dataset.ROWTYPE_NORMAL);
+ 	
+	this.ds01.set_enableevent(true);
+ 	
+	this.ds01.set_updatecontrol(true);
+	
+// 	e.preindex; // 변경전 combo index
+// 	e.prevalue;//변경전 combo value;
+// 	e.pretext;//변경전 combo text
+// 	
+// 	e.postindex;//변경후 combo index
+// 	e.postvalue;//변경후 combo value
+// 	e.posttext;//변경후 combo text
+
+};
+
+this.div00_cbo02_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+ {
+// 	//var strSelectType = e.postindex;
+// 	//this.grd01.set_selecttype(strSelectType);
+// 	//상위콤보 데이터를 기준으로 하위콤보 필터링
+ 	this.ds00.filter("Code.substr(0,1) =='" + e.postvalue + "'");
+ 	//첫번째 index에 해당하는 combo데이터 선택
+	//this.div00.form.cbo02.set_index(-1);
+	
+	if(this.ds00.filter("codecolumn == '00'")){
+ 		this.ds02.filter("codecolumn < 24");
+ 	}else if(this.ds00.filter("codecolumn == '01'")){
+ 		this.ds02.filter("codecolumn > 24");
+ 	}else{
+ 		this.div00.form.cbo02.set_index(-1);
+ 	}
+ };
+// 
+ this.div00_cbo03_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+ {
+// 	//var strSelectType = e.postindex;
+// 	//this.grd01.set_selecttype(strSelectType);
+ 	//상위콤보 데이터를 기준으로 하위콤보 필터링
+ 	this.ds00.filter("Code.substr(0,1) =='" + e.postvalue + "'");
+	//첫번째 index에 해당하는 combo데이터 선택
+	//this.div00.form.cbo03.set_index(-1);
+ 	
+	if(this.ds00.filter("codecolumn == '00'")){
+		this.ds03.filter("codecolumn < 24");
+ 	}else if(this.ds00.filter("codecolumn == '01'")){
+ 		this.ds03.filter("codecolumn > 24");
+ 	}else{
+ 		this.div00.form.cbo03.set_index(-1);
+ 	}
+ };
+// 
+ this.div00_cbo04_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+ {
+ 	//상위콤보 데이터를 기준으로 하위콤보 필터링
+ 	this.ds00.filter("Code.substr(0,1) =='" + e.postvalue + "'");
+	//첫번째 index에 해당하는 combo데이터 선택
+	//this.div00.form.cbo04.set_index(-1);
+	
+ 	if(this.ds00.filter("codecolumn == '00'")){
+		this.ds04.filter("codecolumn < 24");
+ 	}else if(this.ds00.filter("codecolumn == '01'")){
+ 		this.ds04.filter("codecolumn > 24");
+ 	}else{
+ 		this.div00.form.cbo04.set_index(-1);
+ 	}
+ };
+
+this.addBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var rRow = this.Dataset00.addRow();
+	var currDate = new Date();
+	this.Dataset00.setColumn(rRow, "writer", "test1"); // 작성자 나오게 하는방법
+	this.Dataset00.setColumn(rRow, "reg_date", currDate); // 현재시간 나오게 하는 방법
+	trace("rRow ==>" + rRow + " : " + this.Dataset00.saveXML());
+};
+
+this.btn01_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var rRow = this.Dataset00.deleteRow(this.Dataset00.rowposition);
+	trace("rRow ==>" + rRow + " : " + this.Dataset00.deleteRow());
+};
+
+this.btn02_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+//      var formatString = this.grd01.getCurFormatString();
+//      nexacro.setPrivateProfile("DataSet00", formatString);
+//      nexacro.setPrivateProfile("ds00", this.Dataset00.saveXML());
+//      nexacro.setPrivateProfile("ds01", this.Dataset00.saveXML());
+//      nexacro.setPrivateProfile("ds02", this.Dataset00.saveXML());
+//      nexacro.setPrivateProfile("ds03", this.Dataset00.saveXML());
+//      nexacro.setPrivateProfile("ds04", this.Dataset00.saveXML());
+//    	 alert("저장완료");
+	
+	var id="save";
+	var url = "svcurl::saveAccount.do";
+	var reqDs = "";
+	var resDs = "ds05=dsAccount";
+	var args = "";
+	var callback = "received";
+	
+	this.transaction(id,url,reqDs,resDs,args,callback);
+};
+this.received = function(id, nErrorCode, strErrorMag){
+	if(id == "save"){
+		this.alert("success");
+		}else if(nErrorCode<0){
+			this.alert("fail");
+			return;
+		}
+	
+}
+]]></Script>
+    <Bind>
+      <BindItem id="item0" compid="btn02" propid="text" datasetid="ds05" columnid="dsAccount"/>
+    </Bind>
+  </Form>
+</FDL>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <UnitInfo id="Size" usetranslate="false" description="">
+    <Unit symbol="px" minlimit="0.0" maxlimit="65536.0" transrate="" description="pixel" />
+  </UnitInfo>
+  <UnitInfo id="PixelPercent" usetranslate="false" description="px 과 % 를 동시사용">
+    <Unit symbol="px" minlimit="0.0" maxlimit="65536.0" transrate="" description="" />
+    <Unit symbol="%" minlimit="0.0" maxlimit="100.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="PositionStep" usetranslate="false" description="">
+    <Unit symbol="" minlimit="-1.0" maxlimit="65536.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="Opacity" usetranslate="false" description="">
+    <Unit symbol="" minlimit="0.0" maxlimit="1.0" transrate="" description="value = &lt;alphavalue&gt; ( Syntactically a &lt;number&gt; ) From 0.0 (fully transparent) to 1.0 (fully opaque)" />
+  </UnitInfo>
+  <UnitInfo id="Point" usetranslate="false" description="">
+    <Unit symbol="px" minlimit="-65536.0" maxlimit="65536.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="PositionType" usetranslate="false" description="">
+    <Unit symbol="px" minlimit="0.0" maxlimit="65536.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="TransformRotate" usetranslate="false" description="">
+    <Unit symbol="deg" minlimit="-65536.0" maxlimit="65536.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="TransformScale" usetranslate="false" description="">
+    <Unit symbol="mag" minlimit="0.0" maxlimit="65536.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="TransformSkew" usetranslate="false" description="">
+    <Unit symbol="deg" minlimit="-80.0" maxlimit="80.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="TransformOffset" usetranslate="false" description="">
+    <Unit symbol="px" minlimit="-65536.0" maxlimit="65536.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="FontSize_Point" usetranslate="false" description="">
+    <Unit symbol="pt" minlimit="0.0" maxlimit="65536.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="Shadow" usetranslate="false" description="">
+    <Unit symbol="undefined" minlimit="0.0" maxlimit="128.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="ShadowOffset" usetranslate="false" description="">
+    <Unit symbol="px" minlimit="-65536.0" maxlimit="65536.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="Percent" usetranslate="false" description="">
+    <Unit symbol="%" minlimit="0.0" maxlimit="100.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="CharSize" usetranslate="false" description="">
+    <Unit symbol="" minlimit="0.0" maxlimit="100.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="samplerate" usetranslate="false" description="">
+    <Unit symbol="undefined" minlimit="8000.0" maxlimit="96000.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="Quality" usetranslate="false" description="">
+    <Unit symbol="undefined" minlimit="0.0" maxlimit="100.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="Viemode" usetranslate="false" description="">
+    <Unit symbol="undefined" minlimit="0.0" maxlimit="3.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="Zoomlevel" usetranslate="false" description="">
+    <Unit symbol="undefined" minlimit="0.0" maxlimit="19.0" transrate="" description="" />
+  </UnitInfo>
+  <UnitInfo id="Pixel" usetranslate="false" description="">
+    <Unit symbol="px" minlimit="false" maxlimit="65536" transrate="" description="pixel" />
+  </UnitInfo>
+  <UnitInfo id="LinearGradientAngle" usetranslate="false" description="">
+    <Unit symbol="deg" minlimit="-360" maxlimit="360" transrate="" description="Angle" />
+  </UnitInfo>
+  <UnitInfo id="FontSize2" usetranslate="false" description="nexacro17 ( pt, px )">
+    <Unit symbol="pt" minlimit="false" maxlimit="65536" transrate="" description="point" />
+    <Unit symbol="px" minlimit="false" maxlimit="65536" transrate="" description="pixel" />
+  </UnitInfo>
+</MetaInfo>

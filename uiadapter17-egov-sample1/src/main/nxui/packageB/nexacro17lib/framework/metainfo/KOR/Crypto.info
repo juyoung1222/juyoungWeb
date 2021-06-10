@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Crypto">
+    <ObjectInfo inheritance="" classname="nexacro.Crypto" shorttypename="" csstypename="" csscontrolname="" group="" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="암호화/복호화 처리를 지원하는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Crypto 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="type" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="암호화 알고리즘을 나타내는 Property 입니다." csspropertyname="" csselementname="" normalpropertyname="type" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="decrypt" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="암호화된 Buffer를 복호화하는 Method 입니다.">
+        <Syntax text="Crypto.decrypt(objBuffer, objKey)">
+          <Return type="Object" description="복호처리된 Buffer Object가 리턴됩니다." />
+          <Arguments>
+            <Argument name="objBuffer" type="Object" in="false" out="false" option="false" variable="false" description="복호화 Buffer Object 입니다." />
+            <Argument name="objKey" type="Object" in="false" out="false" option="false" variable="false" description="getKey Method를 통해 생성한 Key Object 입니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="encrypt" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Buffer를 암호화하는 Method 입니다.">
+        <Syntax text="Crypto.encrypt(objBuffer, objKey)">
+          <Return type="Object" description="암호처리된 Buffer Object가 리턴됩니다." />
+          <Arguments>
+            <Argument name="objBuffer" type="Object" in="false" out="false" option="false" variable="false" description="암호화할 Buffer Object 입니다." />
+            <Argument name="objKey" type="Object" in="false" out="false" option="false" variable="false" description="getKey Method를 통해 생성한 Key Object 입니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getKey" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="암호화 키를 생성하는 Method 입니다.">
+        <Syntax text="Crypto.getKey(strUserKey)">
+          <Return type="Object" description="사용자 키 값과 조합을 통해 생성된 Key Object를 리턴합니다." />
+          <Arguments>
+            <Argument name="strUserKey" type="String" in="false" out="false" option="false" variable="false" description="사용자 키 값 입니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="암호화 방식을 초기화하는 Method 입니다.">
+        <Syntax text="Crypto.init(strType, nBit)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBit" type="Integer" in="false" out="false" option="false" variable="false" description="암호화 레벨, bit 단위이며 bit는 생략하고 숫자만 입력해야 합니다.&#xD;&#xA;&#xD;&#xA;ex) 128 , 256 , 1024" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="암호화 알고리즘&#xD;&#xA;&#xD;&#xA;&quot;seed&quot; : SEED 알고리즘" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

@@ -1,0 +1,804 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ListBox">
+    <ObjectInfo inheritance="nexacro.Component" classname="nexacro.ListBox" shorttypename="ListBox" csstypename="ListBox" csscontrolname="ListBoxControl" group="Component" subgroup="Component ( default )" csspseudo="true" container="false" composite="false" tabstop="true" cssstyle="true" contents="false" formats="false" contentseditor="auto" defaultwidth="170" defaultheight="100" registration="allow" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="onitemchanged" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox는 여러개의 후보값중에서 1개 또는 여러개의 값을 선택하기위해 사용되는 컴포넌트입니다.&#xA;&#xA;ListBox는 여러개의 선택된 값을 출력하기위해서 사용되기도 합니다.&#xA;ListBox의 Data는 Inner Bind된 Dataset을 통해 사용됩니다.&#xA;&#xA;[ Key 동작 ]&#xA;스크롤이동                      Ctrl + 방향키&#xA;MultiSelect(Start~End)     Shift 키로 시작 상하방향키로 범위를 선택&#xA;MultiSelect(개별)             Ctrl + Space" />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에 선택상자 이동 시 접근성으로 출력되는 Action 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="all" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DescLevel" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에 선택상자 이동 시 하위 컴포넌트의 접근성 출력여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에 선택상자 이동 시 접근성으로 출력되는 Description 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에 선택상자 이동 시 접근성 관련 속성값 출력여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에 선택상자 이동 시 접근성으로 출력되는 Label 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에 선택상자 이동 시 접근성으로 출력되는 Role 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilityrole" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 의 배경 영역을 설정하는 속성입니다." csspropertyname="background" csselementname="" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="ListBox 의 모서리 모양을 설정하는 속성입니다." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 을(를) 표시하기 위한 하단 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에 그림자 효과를 설정하는 속성입니다." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+      <Property name="codecolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 의 아이템 리스트에서 코드값으로 사용될 Column을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="codecolumn" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에 표시되는 텍스트의 색상을 설정하는 속성입니다." csspropertyname="color" csselementname="" normalpropertyname="color" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 의 Style을 XCSS 파일에 정의된 class로 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 영역내에서 표시될 마우스 포인터의 종류를 설정하는 속성입니다." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+      <Property name="datacolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 의 아이템 리스트에서 데이터값으로 사용될 Column을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="datacolumn" />
+      <Property name="dragscrolltype" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="all" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DragScrollType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에서 터치 후 드래그에 의해 스크롤이 발생 할 경우 스크롤 방향을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="dragscrolltype" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 의 사용가능 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에서 이벤트를 발생시킬지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에서 사용하는 폰트를 설정하는 속성입니다." csspropertyname="font" csselementname="" normalpropertyname="font" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 을(를) 표시하기 위한 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 의 기본 액션을 수행하기 위한 단축키를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="hotkey" />
+      <Property name="hscrollbar" group="Appearance" subgroup="" refreshinfo="" edittype="Object" defaultvalue="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 의 서브컨트롤인 수평 스크롤바의 오브젝트를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="hscrollbar" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox의 고유 식별자를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="index" group="Action" subgroup="" refreshinfo="selectitem" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 의 아이템 중 선택된 아이템의 인덱스를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="index" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에 적용될 InitValue 의 ID 를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="initvalueid" />
+      <Property name="innerdataset" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerDatasetID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 의 아이템 리스트를 구성할 DataSet 의 ID를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="innerdataset" />
+      <Property name="itemheight" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Point" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 의 아이템 리스트에서 각 행의 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="itemheight" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 을(를) 표시하기 위한 좌측 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="ListBox 에 표시되는 문자의 간격(자간)을 설정하는 속성입니다." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="ListBox 이(가) 화면에 표시되는 최대 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="ListBox 이(가) 화면에 표시되는 최대 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="ListBox 이(가) 화면에 표시되는 최소 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="ListBox 이(가) 화면에 표시되는 최소 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="minwidth" />
+      <Property name="multiselect" group="Appearance" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에서 여러 개의 아이템을 선택할 수 있게 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="multiselect" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 의 테두리를 설정하는 속성입니다." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 의 테두리(Border) 안쪽에 표시될 edge 이미지를 설정하는 속성입니다." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 영역의 안쪽 여백을 설정하는 속성입니다." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 표시되는 텍스트 또는 컨텐츠의 가로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="MultiEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 표시되는 텍스트에 적용할 효과를 설정하는 속성입니다." csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox에 표시되는 텍스트 또는 컨텐츠의 세로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 표시되는 텍스트가 출력영역보다 길 경우 자동으로 줄바꿈 되도록 설정하는 속성입니다." csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 영역의 투명도를 설정하는 속성입니다." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 의 부모 오브젝트를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="" description="부모 오브젝트가 화면분할기능을 사용할 때 ListBox 이(가) 표시될 화면의 인덱스를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="positionstep" />
+      <Property name="readonly" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 의 편집 가능여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="readonly" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 를 표시하기 위한 우측 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="scrollbarbarminsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 표시되는 스크롤바의 트랙바(TrackBar) 최소 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="scrollbarbarminsize" />
+      <Property name="scrollbarbaroutsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 의 스크롤바에서 트랙바(TrackBar)가 사라지는 기준 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="scrollbarbaroutsize" />
+      <Property name="scrollbardecbuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 표시되는 스크롤바의 감소 버튼(DecButton) 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="scrollbardecbuttonsize" />
+      <Property name="scrollbarincbuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 표시되는 스크롤바의 증가 버튼(IncButton) 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="scrollbarincbuttonsize" />
+      <Property name="scrollbarsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 표시되는 스크롤바의 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="scrollbarsize" />
+      <Property name="scrollbartrackbarsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 표시되는 스크롤바의 트랙바(TrackBar) 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="scrollbartrackbarsize" />
+      <Property name="scrollbartype" group="Action" subgroup="" refreshinfo="" edittype="Enum2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollBarType" enuminfo2="ScrollBarType" unitinfo="" delimiter="" requirement="" description="ListBox 에 스크롤바가 표시되는 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="scrollbartype" />
+      <Property name="scrollindicatorsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="" description="ListBox 에 표시되는 스크롤 인디케이터바의 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="scrollindicatorsize" />
+      <Property name="scrolltype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="both" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에서 사용되는 스크롤의 종류를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="scrolltype" />
+      <Property name="selectscrollmode" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="SelectScrollMode" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 영역 내에서 마우스 왼쪽버튼으로 드래그 했을 때 수행되는 동작을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="selectscrollmode" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="탭키 입력으로 컴포넌트간 포커스를 이동할 때 ListBox 의 순서를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="탭키 입력으로 컴포넌트간 포커스를 이동할 때 ListBox 이(가) 포커스를 받을 지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="selectitem" edittype="String" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에서 선택된 아이템의 데이터값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에 마우스 포인터를 올려 놓았을 때 표시되는 풍선도움말을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 에서 풍선도움말이 표시될 위치를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 을(를) 표시하기 위한 상단 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="value" group="Action" subgroup="" refreshinfo="selectitem" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에서 선택된 아이템의 코드값을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="value" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 이(가) 화면에 표시될지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="visible" />
+      <Property name="vscrollbar" group="Misc." subgroup="" refreshinfo="" edittype="Object" defaultvalue="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 의 서브컨트롤인 수직 스크롤바의 오브젝트를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="vscrollbar" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ListBox 을(를) 표시하기 위한 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="ListBox 에 표시되는 텍스트의 단어 사이 간격을 설정하는 속성입니다." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="ListBox 의 배경 영역을 설정하는 속성입니다." csspropertyname="background" csselementname="" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="ListBox 의 모서리 모양을 설정하는 속성입니다." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="ListBox 에 그림자 효과를 설정하는 속성입니다." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="ListBox 에 표시되는 텍스트의 색상을 설정하는 속성입니다." csspropertyname="color" csselementname="" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="" description="ListBox 영역내에서 표시될 마우스 포인터의 종류를 설정하는 속성입니다." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="ListBox 에서 사용하는 폰트를 설정하는 속성입니다." csspropertyname="font" csselementname="" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="ListBox 에 표시되는 문자의 간격(자간)을 설정하는 속성입니다." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="ListBox 의 테두리를 설정하는 속성입니다." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="ListBox 의 테두리(Border) 안쪽에 표시될 edge 이미지를 설정하는 속성입니다." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="ListBox 영역의 안쪽 여백을 설정하는 속성입니다." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" defaultvalue="left" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 표시되는 텍스트 또는 컨텐츠의 가로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="MultiEnum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 표시되는 텍스트에 적용할 효과를 설정하는 속성입니다." csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" defaultvalue="middle" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox에 표시되는 텍스트 또는 컨텐츠의 세로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 표시되는 텍스트가 출력영역보다 길 경우 자동으로 줄바꿈 되도록 설정하는 속성입니다." csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="ListBox 영역의 투명도를 설정하는 속성입니다." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="ListBox 에 표시되는 텍스트의 단어 사이 간격을 설정하는 속성입니다." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="readonly" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="listboxitem" classname="nexacro._ListBoxItemControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="vscrollbar" classname="nexacro.ScrollBarControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="hscrollbar" classname="nexacro.ScrollBarControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="ListBox.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="함수를 검색하여 ListBox 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="ListBox.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모가 동일한 컴포넌트 중 ListBox 이(가) 화면의 제일 앞에 표시되게 합니다.">
+        <Syntax text="ListBox.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모가 동일한 컴포넌트 중 ListBox 이(가) 화면에 한단계 앞에 표시되게 합니다.">
+        <Syntax text="ListBox.bringToPrev()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="ListBox.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="ListBox 에서 선택된 아이템의 선택상태를 모두 해제하는 메소드입니다.">
+        <Syntax text="ListBox.clearSelect()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="스크립트에서 동적으로 생성한 ListBox 을(를) 삭제하는 메소드입니다.">
+        <Syntax text="ListBox.destroy()">
+          <Return type="Boolean" description="ListBox 이(가) 정상적으로 삭제되면 &quot;true&quot;를 반환합니다.&#xA;ListBox 이(가) 정상적으로 삭제되지 않으면 &quot;false&quot;를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="ListBox.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 표시되는 전체 아이템의 갯수를 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getCount()">
+          <Return type="Number" description="ListBox에 표시되는 전체 아이템의 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 에 실제 표시되는 문자열 값을 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getDisplayText()">
+          <Return type="String" description="ListBox 에 실제 화면에 표시되는 텍스트를 반환합니다.&#xA;&#xA;expr 속성값에 의해 text 속성값이 화면에 변경되어 표시되면 실제 화면에 표시된 값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getFocus()">
+          <Return type="Object" description="포커스를 가진 자식 컴포넌트가 있으면 해당 컴포넌트를 반환합니다.&#xA;포커스를 가진 자식 컴포넌트가 없으면 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getHScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 에 표시된 수평스크롤바의 트랙바 위치값을 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getHScrollPos()">
+          <Return type="Number" description="수평스크롤바의 현재 트랙바 위치값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getInnerDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 의 innerdataset 속성에 설정되어 있는 DataSet 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getInnerDataset()">
+          <Return type="Object" description="innerdataset 속성에 설정되어 있는 DataSet 오브젝트를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 top을 기준으로 ListBox 의 bottom 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getOffsetBottom();">
+          <Return type="Number" description="ListBox 의 bottom 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getOffsetHeight();">
+          <Return type="Number" description="ListBox 의 높이를 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 left를 기준으로 ListBox 의 left 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getOffsetLeft();">
+          <Return type="Number" description="ListBox 의 left 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 left를 기준으로 ListBox 의 right 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getOffsetRight();">
+          <Return type="Number" description="ListBox 의 right 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 top을 기준으로 ListBox 의 top 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getOffsetTop();">
+          <Return type="Number" description="ListBox 의 top 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getOffsetWidth();">
+          <Return type="Number" description="ListBox 의 너비를 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 bottom 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getPixelBottom();">
+          <Return type="Number" description="ListBox 의 bottom 속성값을 픽셀단위로 반환합니다.&#xA;bottom 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getPixelHeight();">
+          <Return type="Number" description="ListBox 의 height 속성값을 픽셀단위로 반환합니다.&#xA;height 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 left 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getPixelLeft();">
+          <Return type="Number" description="ListBox 의 left 속성값을 픽셀단위로 반환합니다.&#xA;left 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 right 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getPixelRight();">
+          <Return type="Number" description="ListBox 의 right 속성값을 픽셀단위로 반환합니다.&#xA;right 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 top 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getPixelTop();">
+          <Return type="Number" description="ListBox 의 top 속성값을 픽셀단위로 반환합니다.&#xA;top 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getPixelWidth();">
+          <Return type="Number" description="ListBox 의 width 속성값을 픽셀단위로 반환합니다.&#xA;width 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에서 인수로 전달된 인덱스의 아이템이 선택상태인지 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getSelect( nIndex )">
+          <Return type="Boolean" description="아이템이 선택된 상태이면 &quot;true&quot;를 반환합니다.&#xA;아이템이 선택된 상태가 아니면 &quot;false&quot;를 반환합니다.&#xA;&#xA;잘못된 nIndex 값이 전달되면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="선택상태를 확인하려는 아이템의 인덱스를 숫자로 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getSelectedCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 의 아이템 중 선택상태인 아이템의 갯수를 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getSelectedCount()">
+          <Return type="Number" description="multiselect 속성값이 &quot;false&quot; 이면 &quot;0&quot; 또는 &quot;1&quot; 이 반환됩니다.&#xA;multiselect 속성값이 &quot;true&quot; 이면 선택상태인 아이템의 전체 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getSelectedItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 의 아이템 중 선택상태인 아이템의 인덱스를 배열로 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getSelectedItems()">
+          <Return type="Array" description="선택상태인 아이템의 인덱스를 배열로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getVScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 에 표시된 수직스크롤바의 트랙바 위치값을 반환하는 메소드입니다.">
+        <Syntax text="ListBox.getVScrollPos()">
+          <Return type="Number" description="수직스크롤바의 현재 트랙바 위치값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="스크립트로 ListBox 을(를) 동적 생성한 후에 초기화하는 메소드입니다.">
+        <Syntax text="ListBox.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="ListBox 의 ID를 문자열로 설정합니다." />
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 bottom 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;vTop, vHeight 값을 모두 설정했을 경우 vBottom 값은 무시됩니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 top 속성값을 기준으로 ListBox 의 bottom 이 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 ListBox 의 bottom 이 결정됩니다." />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 height 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트값은 무시되고 pixel 값으로 ListBox 의 height 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 ListBox 의 height 가 결정됩니다." />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 left 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 right 속성값을 기준으로 ListBox 의 left 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 ListBox 의 left 가 결정됩니다." />
+            <Argument name="vMaxHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 이(가) 화면에 표시되는 최대 높이값을 pixel 단위의 숫자로 설정합니다.&#xA;&#xA;vMinHeight 보다 작은 값을 설정하면 vMinHeight 값으로 설정됩니다." />
+            <Argument name="vMaxWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 이(가) 화면에 표시되는 최대 너비값을 pixel 단위의 숫자로 설정합니다.&#xA;&#xA;vMinWidth 보다 작은 값을 설정하면 vMinWidth 값으로 설정됩니다." />
+            <Argument name="vMinHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 이(가) 화면에 표시되는 최소 높이값을 pixel 단위의 숫자로 설정합니다." />
+            <Argument name="vMinWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 이(가) 화면에 표시되는 최소 너비값을 pixel 단위의 숫자로 설정합니다." />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 right 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;vLeft, vWidth 값을 모두 설정했을 경우 vRight 값은 무시됩니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 left 속성값을 기준으로 ListBox 의 right 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 ListBox 의 right 가 결정됩니다." />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 top 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 bottom 속성값을 기준으로 ListBox 의 top 이 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 ListBox 의 top 이 결정됩니다." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 width 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트값은 무시되고 pixel 값으로 ListBox 의 width 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 ListBox 의 width 가 결정됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 위치와 크기를 변경하는 메소드입니다.">
+        <Syntax text="ListBox.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 bottom 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;vTop, vHeight 값을 모두 설정했을 경우 vBottom 값은 무시됩니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 top 속성값을 기준으로 ListBox 의 bottom 이 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 ListBox 의 bottom 이 결정됩니다." />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 height 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트값은 무시되고 pixel 값으로 ListBox 의 height 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 ListBox 의 height 가 결정됩니다." />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 left 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 right 속성값을 기준으로 ListBox 의 left 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 ListBox 의 left 가 결정됩니다." />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 right 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;vLeft, vWidth 값을 모두 설정했을 경우 vRight 값은 무시됩니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 left 속성값을 기준으로 ListBox 의 right 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 ListBox 의 right 가 결정됩니다." />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 top 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 bottom 속성값을 기준으로 ListBox 의 top 이 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 ListBox 의 top 이 결정됩니다." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 width 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트값은 무시되고 pixel 값으로 ListBox 의 width 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 ListBox 의 width 가 결정됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모가 동일한 컴포넌트 중 인수로 전달된 컴포넌트보다 ListBox 이(가) 화면에 한단계 뒤에 표시되게 합니다.">
+        <Syntax text="ListBox.moveToNext( objComp )&#xA;ListBox.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="기준이 되는 컴포넌트를 오브젝트로 설정합니다." />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="기준이 되는 컴포넌트의 ID를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모가 동일한 컴포넌트 중 인수로 전달된 컴포넌트보다 ListBox 이(가) 화면에 한단계 앞에 표시되게 합니다.">
+        <Syntax text="ListBox.moveToPrev( objComp )&#xA;ListBox.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="기준이 되는 컴포넌트를 오브젝트로 설정합니다." />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="기준이 되는 컴포넌트의 ID를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="ListBox.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="ListBox.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 크기를 변경하는 메소드입니다.">
+        <Syntax text="ListBox.resize( vWidth, vHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 높이를 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;&#xA;&#xA;ListBox 의 height 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;음수값을 설정할 수 없습니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트값은 무시되고 pixel 값으로 ListBox 의 height 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 ListBox 의 height 가 결정됩니다." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="ListBox 의 width 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;음수값을 설정할 수 없습니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트값은 무시되고 pixel 값으로 ListBox 의 width 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 ListBox 의 width 가 결정됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scrollBy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 에 표시된 스크롤을 현재 위치에서 인수로 전달된 값만큼 이동시키는 메소드입니다.">
+        <Syntax text="ListBox.scrollBy( nHoffsetpos, nVoffsetpos )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHoffsetpos" type="Number" in="false" out="false" option="false" variable="false" description="수평스크롤바의 스크롤을 현재위치에서 이동시킬 값을 숫자로 설정합니다.&#xA;&#xA;음수로 설정 시 스크롤의 위치가 감소합니다.&#xA;양수로 설정 시 스크롤의 위치가 증가합니다.&#xA;&#xA;값을 적용했을 때 수평스크롤바의 min 속성값보다 작을 경우 min 값으로 적용됩니다.&#xA;값을 적용했을 때 수평스크롤바의 max 속성값보다 클 경우 max 값으로 적용됩니다." />
+            <Argument name="nVoffsetpos" type="Number" in="false" out="false" option="false" variable="false" description="수직스크롤바의 스크롤을 현재위치에서 이동시킬 값을 숫자로 설정합니다.&#xA;&#xA;음수로 설정 시 스크롤의 위치가 감소합니다.&#xA;양수로 설정 시 스크롤의 위치가 증가합니다.&#xA;&#xA;값을 적용했을 때 수직스크롤바의 min 속성값보다 작을 경우 min 값으로 적용됩니다.&#xA;값을 적용했을 때 수직스크롤바의 max 속성값보다 클 경우 max 값으로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scrollTo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 에 표시된 스크롤을 특정 위치로 이동시키는 메소드입니다.">
+        <Syntax text="ListBox.scrollTo( nHpos, nVpos )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHpos" type="Number" in="false" out="false" option="false" variable="false" description="수평스크롤바의 스크롤이 위치할 값을 숫자로 설정합니다.&#xA;&#xA;설정값이 수평스크롤바의 min 속성값보다 작을 경우 min 값으로 적용됩니다.&#xA;설정값이 수평스크롤바의 max 속성값보다 클 경우 max 값으로 적용됩니다." />
+            <Argument name="nVpos" type="Number" in="false" out="false" option="false" variable="false" description="수직스크롤바의 스크롤이 위치할 값을 숫자로 설정합니다.&#xA;&#xA;설정값이 수직스크롤바의 min 속성값보다 작을 경우 min 값으로 적용됩니다.&#xA;설정값이 수직스크롤바의 max 속성값보다 클 경우 max 값으로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모가 동일한 컴포넌트 중 ListBox 이(가) 화면의 제일 뒤에 표시되게 합니다.">
+        <Syntax text="ListBox.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모가 동일한 컴포넌트 중 ListBox 이(가) 화면에 한단계 뒤에 표시되게 합니다.">
+        <Syntax text="ListBox.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="ListBox.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="ListBox.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 에 포커스를 주는 메소드입니다.">
+        <Syntax text="ListBox.setFocus( [bMoveScroll [, bInnerFocus]] )">
+          <Return type="Object" description="ListBox 이(가) 포커스되기 전에 포커스를 가졌던 컴포넌트를 반환합니다.&#xA;&#xA;포커스를 가진 컴포넌트가 없었거나 메소드 수행이 실패하는 경우에는 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="bInnerFocus" type="Boolean" in="false" out="false" option="false" variable="false" description="ListBox 이(가) 컨테이너 컴포넌트 일 때 자식 컴포넌트에게 포커스를 이동할지 설정합니다.&#xA;&#xA;&quot;true&quot; 설정 시 자식 컴포넌트 중 포커스를 받을 수 있는 첫번째 컴포넌트가 포커스 됩니다.&#xA;&quot;false&quot; 설정 시 ListBox 에 포커스 됩니다.&#xA;&#xA;ListBox 이(가) 컨테이너 컴포넌트 일 때 값을 설정하지 않으면 &quot;true&quot; 로 동작합니다." />
+            <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="부모 컴포넌트에 스크롤이 있을 경우 ListBox 기준으로 스크롤을 이동할지 설정합니다.&#xA;&#xA;&quot;true&quot; 설정 시 ListBox 이(가) 화면에 표시되도록 스크롤을 이동시킵니다.&#xA;&quot;false&quot; 설정 시 ListBox 의 위치에 관계없이 스크롤을 이동시키지 않습니다.&#xA;&#xA;값을 설정하지 않으면 &quot;true&quot; 로 동작합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setInnerDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 의 innerdataset 속성에 인수로 전달된 DataSet 오브젝트를 설정하는 메소드입니다.">
+        <Syntax text="ListBox.setInnerDataset( objDataset )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="innerdataset 속성에 설정할 DataSet 을 오브젝트로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 top을 기준으로 ListBox 의 bottom 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="ListBox.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 top에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 height 속성값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="ListBox.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="ListBox 의 높이를 픽셀단위로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 left 를 기준으로 ListBox 의 left 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="ListBox.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 left 에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 left 를 기준으로 ListBox 의 right 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="ListBox.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 left 에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 top을 기준으로 ListBox 의 top 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="ListBox.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 top에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 width 속성값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="ListBox.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Object" in="false" out="false" option="false" variable="false" description="ListBox 의 너비를 픽셀단위로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setSelect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에서 특정 아이템의 선택상태를 설정하는 메소드입니다.">
+        <Syntax text="ListBox.setSelect( nIndex, bSelect )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bSelect" type="Boolean" in="false" out="false" option="false" variable="false" description="아이템의 선택상태를 Boolean 값으로 설정합니다.&#xA;&#xA;&quot;true&quot; 설정 시 아이템이 선택상태로 설정됩니다.&#xA;&quot;false&quot; 설정 시 아이템의 선택상태가 해제 됩니다." />
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="선택상태를 설정할 아이템의 인덱스를 숫자로 설정합니다.&#xA;&#xA;&quot;-1&quot; 설정 시 전체 아이템의 선택상태를 해제합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="스크립트로 동적 생성한 ListBox 을(를) 화면에 표시하는 메소드입니다.">
+        <Syntax text="ListBox.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="updateToDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ListBox 의 value 속성값을 바인딩 되어 있는 DataSet 에 즉시 반영시키는 메소드입니다.">
+        <Syntax text="ListBox.updateToDataset()">
+          <Return type="Boolean" description="반영에 성공하면 &quot;true&quot;를 반환합니다.&#xA;&#xA;반영에 실패하면 &quot;false&quot;를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="canitemchange" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에서 아이템을 변경할 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.canitemchange(obj:nexacro.ListBox,e:nexacro.ItemChangeEventInfo);">
+          <Return type="Boolean" description="이벤트에서 리턴값을 &quot;true&quot;로 반환하면 아이템 선택이 변경됩니다.&#xA;이벤트에서 리턴값을 &quot;false&quot;로 반환하면 아이템 선택이 변경되지 않습니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;true&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="ItemChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 영역 내에서 마우스 왼쪽버튼을 클릭했을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onclick(obj:nexacro.ListBox,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="false" requirement="" description="ListBox 영역에서 오른쪽 마우스 버튼을 클릭하거나 터치를 일정시간 유지할 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.oncontextmenu(obj:nexacro.ListBox,e:nexacro.ContextMenuEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ContextMenuEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="ListBox.ondblclick(obj:nexacro.ListBox,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내에서 마우스 왼쪽버튼으로 드래그를 수행했을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.ondrag(obj:nexacro.ListBox,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 드래그 상태가 되고 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 드래그 상태가 취소되고 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내로 드래그 상태의 마우스 포인터가 들어왔을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.ondragenter(obj:nexacro.ListBox,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 밖으로 드래그 상태의 마우스 포인터가 나갈 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.ondragleave(obj:nexacro.ListBox,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내에서 드래그 상태의 마우스 포인터가 움직일 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.ondragmove(obj:nexacro.ListBox,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내에서 드래그 상태의 마우스 버튼을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.ondrop(obj:nexacro.ListBox,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onhscroll" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 의 수평 스크롤바를 스크롤 했을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onhscroll(obj:nexacro.ListBox,e:nexacro.ScrollEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ScrollEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninnerdatachanged" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 의 innerdataset 속성에 바인딩된 DataSet 에서 데이터 변경이 된 후 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.oninnerdatachanged(obj:nexacro.ListBox,e:nexacro.InnerdataChangedEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InnerdataChangedEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에 키보드로 값이 입력될 때 발생하는 이벤트 입니다.">
+        <Syntax text="ListBox.oninput(obj:nexacro.ListBox,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onitemchanged" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ListBox 에서 아이템 선택이 변경된 후 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onitemchanged(obj:nexacro.ListBox,e:nexacro.ItemChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ItemChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onitemclick" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="아이템 리스트에서 아이템을 클릭했을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onitemclick(obj:nexacro.ListBox,e:nexacro.ItemClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ItemClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onitemdblclick" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="아이템 리스트에서 아이템을 더블 클릭했을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onitemdblclick(obj:nexacro.ListBox,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 에 포커스가 있는 상태에서 키보드의 키가 눌렸을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onkeydown(obj:nexacro.ListBox,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 에 포커스가 있는 상태에서 눌렸던 키보드가 떼어질 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onkeyup(obj:nexacro.ListBox,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 에서 포커스가 나갈  때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onkillfocus(obj:nexacro.ListBox,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내에서 마우스 왼쪽버튼을 눌렀을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onlbuttondown(obj:nexacro.ListBox,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내에서 눌렸던 마우스 왼쪽버튼을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onlbuttonup(obj:nexacro.ListBox,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="true" requirement="" description="ListBox 영역 내에서 마우스의 왼쪽/오른쪽 버튼을 제외한 나머지 버튼이 눌렸을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onmousedown(obj:nexacro.ListBox,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내로 마우스 포인터가 들어왔을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onmouseenter(obj:nexacro.ListBox,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 밖으로 마우스 포인터가 나갈 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onmouseleave(obj:nexacro.ListBox,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내에서 마우스 포인터가 움직일 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onmousemove(obj:nexacro.ListBox,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="true" requirement="" description="마우스의 왼쪽/오른쪽 버튼을 제외한 나머지 버튼이 떼어질 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onmouseup(obj:nexacro.ListBox,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="" description="ListBox 영역 내에서 마우스의 휠버튼을 회전했을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onmousewheel(obj:nexacro.ListBox,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="이벤트에서 리턴값으로 &quot;true&quot;를 반환하면 휠버튼 회전값이 무시되고, 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트에서 리턴값으로 &quot;false&quot;를 반환하면 휠버튼 회전값이 처리되고, 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트에서 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="" description="ListBox의 위치가 이동했을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onmove(obj:nexacro.ListBox,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내에서 마우스 오른쪽버튼을 눌렀을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onrbuttondown(obj:nexacro.ListBox,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내에서 마우스 오른쪽버튼을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onrbuttonup(obj:nexacro.ListBox,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 에 포커스가 들어올 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onsetfocus(obj:nexacro.ListBox,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="" description="ListBox의 크기가 변경됐을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onsize(obj:nexacro.ListBox,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내에서 터치를 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.ontouchend(obj:nexacro.ListBox,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내에서 터치 상태를 유지하며 움직일 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.ontouchmove(obj:nexacro.ListBox,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 영역 내에서 터치가 시작될 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.ontouchstart(obj:nexacro.ListBox,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onvscroll" group="Event" deprecated="false" unused="false" requirement="" description="ListBox 의 수직 스크롤바를 스크롤 했을 때 발생하는 이벤트입니다.">
+        <Syntax text="ListBox.onvscroll(obj:nexacro.ListBox,e:nexacro.ScrollEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ScrollEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.SocketEventInfo">
+    <ObjectInfo inheritance="" classname="nexacro.SocketEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows nexacro Browser" description="TCPClientSocket 컴포넌트에서 요청된 작업이 성공했을 때 발생하는 이벤트에 전달되는 EventInfo 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="bytesremain" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="write() 메소드에 의해 송신되고 남은 데이터의 길이를 바이트 단위로 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="bytesremain" />
+      <Property name="bytessent" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="write() 메소드에 의해 송신된 데이터의 길이를 바이트 단위로 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="bytessent" />
+      <Property name="eventid" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="이벤트의 ID를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="eventid" />
+      <Property name="reason" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="이벤트가 발생한 원인에 대한 정보를 정수로 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="reason" />
+      <Property name="reasonmsg" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="이벤트가 발생한 원인을 nexacro14 이벤트명으로 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="reasonmsg" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

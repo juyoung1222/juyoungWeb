@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.AudioPlayer">
+    <ObjectInfo inheritance="" classname="nexacro.AudioPlayer" shorttypename="AudioPlayer" csstypename="AudioPlayer" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器のオーディオファイルを再生します。" />
+    <PropertyInfo>
+      <Property name="currentpos" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で再生中のオーディオファイルの現在再生位置(単位：ms)の時間値を持っているプロパティです。" csspropertyname="" csselementname="" normalpropertyname="currentpos" />
+      <Property name="duration" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、オーディオファイルの総再生時間を持っているプロパティです。(時間単位 : ms)" csspropertyname="" csselementname="" normalpropertyname="duration" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="AudioPlayerの一意識別子を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="AudioPlayerの名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="pan" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、スピーカのバランスを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="pan" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="AudioPlayerの親オブジェクトを持つプロパティです。" csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="repeatcount" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器でオーディオファイルの再生時、繰り返し回数を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="repeatcount" />
+      <Property name="startpos" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で区間リピート時、区間の開始地点を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="startpos" />
+      <Property name="stoppos" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で区間リピート時、区間の終点を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="stoppos" />
+      <Property name="url" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、再生するオーディオファイルのソースのパスまたはURL" csspropertyname="" csselementname="" normalpropertyname="url" />
+      <Property name="volume" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、オーディオファイルの再生時のボリュームの調整のためのプロパティです。" csspropertyname="" csselementname="" normalpropertyname="volume" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="AudioPlayerの特定イベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="AudioPlayer.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="関数を検索してAudioPlayerの特定のイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="AudioPlayer.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されない場合は、上位の領域に検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数の名前を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="AudioPlayer.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="AudioPlayerの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="AudioPlayer.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントで検索しようとするハンドラ関数のインデックスを返します。&#xA;検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="AudioPlayerの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="AudioPlayer.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;インデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="load" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で再生するオーディオファイルをURLからロードするメソッドです。">
+        <Syntax text="AudioPlayer.load(strUrl)">
+          <Return type="Boolean" description="strUrlが省略された場合には false、ない場合は trueを返します。" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="ロードするオーディオファイルのパス&#xA;モバイル機器のパスにあるセすする場合は Aliasを使用します。&#xA;- %USERAPP% : アプリケーションで割り当てられた空間、他のアプリケーションのアクセス不可&#xA;- %SD_CARD% : モバイル機器の SDメモリーカード、他のアプリケーションのアクセス可能" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="movePos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、オーディオファイルの現在再生位置を特定部分に移動するメソッドです。">
+        <Syntax text="AudioPlayer.movePos(nPos)">
+          <Return type="Boolean" description="nPosの値が存在し、オーディオファイルの長さの範囲を超えない数字の場合にはtrueを、それ以外の値を入れないか、文字やオーディオファイルの長さの範囲を超える数字などのような場合にはfalseを返します。" />
+          <Arguments>
+            <Argument name="nPos" type="Number" in="false" out="false" option="false" variable="false" description="移動する位置値(単位 : ms), 0 ~ duration(音源のエンドポイント)の間の値　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="pause" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器でオーディオファイルの再生を一時中止するメソッドです。">
+        <Syntax text="AudioPlayer.pause()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="play" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、ロードされたオーディオファイルを再生するメソッドです。">
+        <Syntax text="AudioPlayer.play( [nIntervalTime] )">
+          <Return type="Boolean" description="nIntervalTimeが使用範囲内の数字が入力される場合にはtrueを、それ以外の文字や使用範囲外の数値が入力される場合などにはfalseを返します。" />
+          <Arguments>
+            <Argument name="nIntervalTime" type="Object" in="false" out="false" option="false" variable="false" description="onplayingイベントの発生間隔(ms)、省略または200ms未満の場合、使用しません。&#xD;&#xA;使用可能範囲(200ms~86400000ms)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="AudioPlayerの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="AudioPlayer.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="AudioPlayerの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="AudioPlayer.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resume" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で一時停止状態のオーディオファイルを再生状態にするメソッドです。">
+        <Syntax text="AudioPlayer.resume()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="AudioPlayerの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="AudioPlayer.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="AudioPlayerの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="AudioPlayer.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="stop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、オーディオファイルの再生を中止するメソッドです。">
+        <Syntax text="AudioPlayer.stop()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、オーディオファイルの処理に失敗したときに発生するイベントです。">
+        <Syntax text="AudioPlayer.onerror(obj:nexacro.AudioPlayer,e:nexacro.AudioErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AudioErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、オーディオファイルがロードされた時に発生するイベントです。">
+        <Syntax text="AudioPlayer.onload(obj:nexacro.AudioPlayer,e:nexacro.AudioEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="AudioEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmovepos" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、オーディオファイルの再生位置が移動されたときに発生するイベントです。">
+        <Syntax text="AudioPlayer.onmovepos(obj:nexacro.AudioPlayer,e:nexacro.AudioEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AudioEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onplay" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、オーディオファイルの再生が開始されたときに発生するイベントです。">
+        <Syntax text="AudioPlayer.onplay(obj:nexacro.AudioPlayer,e:nexacro.AudioEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AudioEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onplaying" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、オーディオファイルが再生中の時に発生するイベントです。">
+        <Syntax text="AudioPlayer.onplaying(obj:nexacro.AudioPlayer,e:nexacro.AudioEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AudioEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onstop" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、オーディオファイルの再生が停止したときに発生するイベントです。">
+        <Syntax text="AudioPlayer.onstop(obj:nexacro.AudioPlayer,e:nexacro.AudioEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AudioEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

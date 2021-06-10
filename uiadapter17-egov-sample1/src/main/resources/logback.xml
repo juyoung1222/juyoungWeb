@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+    <!-- encoders are assigned the type
+         ch.qos.logback.classic.encoder.PatternLayoutEncoder by default -->
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level [%logger] - %msg%n</pattern>
+        </encoder>
+    </appender>
+  
+    <!-- log SQL with timing information, post execution -->
+    <Logger name="jdbc.sqltiming" level="INFO" additivity="false">
+        <appender-ref ref="console" />
+    </Logger>
+    
+    <Logger name="resultsettable" level="INFO" additivity="false">
+        <appender-ref ref="console" />
+    </Logger>
+    
+    <Logger name="java.sql" level="ERROR" additivity="false">
+        <appender-ref ref="console" />
+    </Logger>
+    
+    <Logger name="jdbc.resultset" level="ERROR" additivity="false">
+        <appender-ref ref="console" />
+    </Logger>
+    
+    <Logger name="jdbc.audit" level="ERROR" additivity="false">
+        <appender-ref ref="console" />
+    </Logger>
+    
+    <Logger name="jdbc.sqlonly" level="ERROR" additivity="false">
+        <appender-ref ref="console" />
+    </Logger>
+    
+    <Logger name="com.nexacro.sample" level="DEBUG" additivity="false">
+        <appender-ref ref="console" />
+    </Logger>
+    
+    <Logger name="egovframework.example.sample" level="DEBUG" additivity="false">
+        <appender-ref ref="console" />
+    </Logger>
+    
+    <root level="INFO">         
+        <appender-ref ref="console" />
+    </root> 
+</configuration>

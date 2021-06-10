@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.TouchEventInfo">
+    <ObjectInfo inheritance="" classname="nexacro.TouchEventInfo" shorttypename="" csstypename="" csscontrolname="" group="Object_old" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="터치입력에 의해 발생하는 이벤트에 전달되는 EventInfo 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="changedtouchinputinfos" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="터치입력이 있는 상태에서 추가로 터치입력이 발생한 경우 추가로 입력된 터치정보를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="changedtouchinputinfos" />
+      <Property name="fromobject" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생의 원인이 되는 컴포넌트를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="fromobject" />
+      <Property name="fromreferenceobject" group="Eventinfo" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="이벤트 발생의 원인이 되는 컴포넌트 또는 서브컨트롤을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="fromreferenceobject" />
+      <Property name="touchinputinfos" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="터치정보가 저장된 TouchInputInfo 오브젝트를 배열형태로 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="touchinputinfos" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="preventDefault" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="현재 이벤트의 Default Action 을 취소하는 메소드입니다.">
+        <Syntax text="TouchEventInfo.preventDefault()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="stopPropagation" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="현재 이벤트를 상위컴포넌트로 전파하지 않게 중지시키는 메소드입니다.">
+        <Syntax text="TouchEventInfo.stopPropagation()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

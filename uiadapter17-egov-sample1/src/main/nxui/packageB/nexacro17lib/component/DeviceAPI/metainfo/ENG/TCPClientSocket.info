@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.TCPClientSocket">
+    <ObjectInfo inheritance="" classname="nexacro.TCPClientSocket" shorttypename="TCPClientSocket" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows nexacro Browser" description="This is a client component that enables data transactions with a server by using the TCP." />
+    <PropertyInfo>
+      <Property name="address" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This read-only property holds the address of a connected server." csspropertyname="" csselementname="" normalpropertyname="address" />
+      <Property name="errorcode" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This read-only property holds an error code that indicates the type of the failure of a task requested by a TCPClientSocket component." csspropertyname="" csselementname="" normalpropertyname="errorcode" />
+      <Property name="errormsg" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This read-only property holds an error message about the failure of a task requested by a TCPClientSocket component." csspropertyname="" csselementname="" normalpropertyname="errormsg" />
+      <Property name="isopen" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="false" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This read-only property holds a value indicating whether a socket is connected to a server." csspropertyname="" csselementname="" normalpropertyname="isopen" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This property is used to specify the name of a TCPClientSocket." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="port" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This read-only property holds the port of a connected server." csspropertyname="" csselementname="" normalpropertyname="port" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to add a handler to a certain event of a TCPClientSocket.">
+        <Syntax text="TCPClientSocket.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="It is an object that represents a handler function to add." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to find a function and add it to a certain event of a TCPClientSocket as a handler.">
+        <Syntax text="TCPClientSocket.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the handler function&#xA;&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to delete all the event handlers registered in a certain event of a TCPClientSocket.">
+        <Syntax text="TCPClientSocket.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to request a server to disconnect from a socket">
+        <Syntax text="TCPClientSocket.close()">
+          <Return type="Boolean" description="If a disconnection is successful, this method will return &quot;true&quot;.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method finds a handler in a certain event of a TCPClientSocket and returns the index of the handler.">
+        <Syntax text="TCPClientSocket.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="It is an object that represents the handler function to find." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method returns a specific handler from a certain event of a TCPClientSocket by specifying the index number of the handler.">
+        <Syntax text="TCPClientSocket.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;&#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to request a server to connect with a socket by using TCP.">
+        <Syntax text="TCPClientSocket.open( strAddress, nPort )">
+          <Return type="Boolean" description="If a connection is successful, this method will return &quot;true&quot;.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="nPort" type="Number" in="false" out="false" option="false" variable="false" description="It is the port number of a server to connect." />
+            <Argument name="strAddress" type="String" in="false" out="false" option="false" variable="false" description="It is a string presenting the domain name of a server to connect. The string also can be an IP address in the IPv4 format." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="read" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to receive data from a connected server.">
+        <Syntax text="TCPClientSocket.read( nSize [, nTimeout] )">
+          <Return type="Array" description="This method returns an array that contains a value indicating whether the method has succeeded in receiving data. The array also includes received data.&#xA;&#xA;As the first element, a Boolean value indicates whether the method has succeeded in receiving data.&#xA;Received data is included as the second element." />
+          <Arguments>
+            <Argument name="nSize" type="Number" in="false" out="false" option="false" variable="false" description="It is the number of bytes, presenting the maximum size of incoming data.&#xA;&#xA;A specified value will be applied as the maximum size of incoming data while actually-received data can be smaller than the value.&#xA;&#xA;If you specify 0, this method will only check whether there is incoming data.&#xA;If you specify a negative number, the calling of this method will be treated as a failure." />
+            <Argument name="nTimeout" type="Number" in="false" out="false" option="false" variable="false" description="It is the number of seconds, representing the timeout for data reception.&#xA;&#xA;If you specify 0 or smaller, the timeout will be infinite.&#xA;&#xA;The default value is 0." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="readLine" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to receive data from a connected server by line.">
+        <Syntax text="TCPClientSocket.readLine( nSize [, nTimeout] )">
+          <Return type="Array" description="This method returns an array that contains a value indicating whether the method has succeeded in receiving data. The array also includes received data.&#xA;&#xA;As the first element, a Boolean value indicates whether the method has succeeded in receiving data.&#xA;Received data is included as the second element." />
+          <Arguments>
+            <Argument name="nSize" type="Number" in="false" out="false" option="false" variable="false" description="It is the number of bytes, presenting the maximum size of incoming data.&#xA;&#xA;A specified value will be applied as the maximum size of incoming data while actually-received data can be smaller than the value.&#xA;This method can receive data even if the data is bigger than the specified value and does not have a line feed character.&#xA;&#xA;If you specify 0, this method will only check whether there is incoming data." />
+            <Argument name="nTimeout" type="Number" in="false" out="false" option="false" variable="false" description="It is the number of seconds, representing the timeout for data reception.&#xA;&#xA;Be careful when you set the timeout because the timeout will be applied again when received data that does not contain a line feed character.&#xA;&#xA;If you specify 0 or smaller, the timeout will be infinite.&#xA;The default value is 0." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to remove a handler in a certain event of a TCPClientSocket.">
+        <Syntax text="TCPClientSocket.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="It is an object that represents a handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to find a handler in a certain event of a TCPClientSocket and remove it.">
+        <Syntax text="TCPClientSocket.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid&#xA;&#xA;If this method fails to find the handler in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to change the first handler in a certain event of a TCPClientSocket.">
+        <Syntax text="TCPClientSocket.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="It is an object that represents a handler function that will replace the existing handler." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method finds a function and uses it to replace the first handler in a certain event of a TCPClientSocket.">
+        <Syntax text="TCPClientSocket.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="write" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to send data to a connected server.">
+        <Syntax text="TCPClientSocket.write( strData [, strCharset] )">
+          <Return type="Boolean" description="This method will return &quot;true&quot; if it begins to send data to a connected server.&#xA;&#xA;Otherwise, it will return &quot;false&quot;." />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="It is a character set of the data that will be sent to a connected server.&#xA;&#xA;If you do not specify this parameter, the character set designated by the system will be applied.&#xA;&#xA;It is recommended to use this parameter only when you need to change the character set." />
+            <Argument name="strData" type="String" in="false" out="false" option="false" variable="false" description="It is data that will be sent to a connected server." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="ondataarrived" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This event occurs when a connected server has data that you can receive.">
+        <Syntax text="TCPClientSocket.ondataarrived(obj:nexacro.TCPClientSocket,e:nexacro.SocketReceiveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SocketReceiveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This event occurs when a task requested by a TCPClientSocket fails.">
+        <Syntax text="TCPClientSocket.onerror(obj:nexacro.TCPClientSocket,e:nexacro.SocketErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SocketErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This event occurs when a task requested by a TCPClientSocket succeeds.">
+        <Syntax text="TCPClientSocket.onsuccess(obj:nexacro.TCPClientSocket,e:nexacro.SocketEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SocketEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

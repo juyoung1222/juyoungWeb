@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.VirtualFile">
+    <ObjectInfo inheritance="" classname="nexacro.VirtualFile" shorttypename="VirtualFile" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This is a virtual file object used to read or write files in a local system." />
+    <PropertyInfo>
+      <Property name="async" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to determine how a VirtualFile object performs a requested task." csspropertyname="" csselementname="" normalpropertyname="async" />
+      <Property name="filename" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It shows a file's name." csspropertyname="" csselementname="" normalpropertyname="filename" />
+      <Property name="fullpath" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property holds the information on the full path of a file opened in a VirtualFile." csspropertyname="" csselementname="" normalpropertyname="fullpath" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This property is used to set the identification of a VirtualFile." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This property is used to specify the name of a VirtualFile." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This read-only property holds the parent object of a VirtualFile." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="path" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It contains all path information of opened files on a mobile device." csspropertyname="" csselementname="" normalpropertyname="path" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to add a handler to a certain event of a VirtualFile.">
+        <Syntax text="VirtualFile.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="VirtualFile.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It closes a designated file on a mobile device.">
+        <Syntax text="VirtualFile.close()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This is a static method that belongs to the VirtualFile object, used to copy a designated file.">
+        <Syntax text="VirtualFile.copy( strSrc, strDest );">
+          <Return type="Boolean" description="If there is a flaw, such as the absence of parameters or input of invalid characters, the method will return &quot;false&quot;.&#xA;&#xA;If there is no problem, it will return &quot;true&quot;." />
+          <Arguments>
+            <Argument name="strDest" type="String" in="false" out="false" option="false" variable="false" description="It specifies the name of a copy file with the file's path.&#xA;&#xA;For specifying a path, you can use either an absolute path or an alias." />
+            <Argument name="strSrc" type="String" in="false" out="false" option="false" variable="false" description="It specifies the name of an original file with the file's path.&#xA;&#xA;For specifying a path, you can use either an absolute path or an alias." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="createDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is a static method to generate a directory.">
+        <Syntax text="VirtualFile.createDirectory( strPath, [bAllCreate] )">
+          <Return type="Boolean" description="Whether the method has been successfully called is returned" />
+          <Arguments>
+            <Argument name="bAllCreate" type="Boolean" in="false" out="false" option="false" variable="false" description="bAllCreate : Whether to create all the directories that are absent in middle of a path (default:false)" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="It designates the name of a directory's path. a. An absolute path can be designated like &quot;C:\\tobe_dir\\xplatform_test&quot;. b. If it is designated like &quot;my_tobeDir&quot;, it creates a directory in My Documents." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is a static method to delete a directory.">
+        <Syntax text="VirtualFile.deleteDirectory( strPath, [bAllChild] )">
+          <Return type="Boolean" description="Whether the method has been successfully called is returned" />
+          <Arguments>
+            <Argument name="bAllChild" type="Boolean" in="false" out="false" option="false" variable="false" description="Whether to delete all the subordinate files and directories (default: false)" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="It designates the name of a directory's path. a. An absolute path can be designated like &quot;C:\\Tobe_dir\\xplatform91&quot;. b. If it is designated like &quot;my_tobeDir&quot;, it deletes the relevant directory in My Documents." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method finds a handler in a certain event of a VirtualFile and returns the index of the handler.">
+        <Syntax text="VirtualFile.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns a specific handler from a certain event of a VirtualFile object by specifying the index number of the handler.">
+        <Syntax text="VirtualFile.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is a method to bring file lists from a selected route on a mobile device.">
+        <Syntax text="VirtualFile.getFileList( strPath, strSearchExpr[, constOption] )">
+          <Return type="Boolean" description="It returns false when strPath and strSearchExpr is discarded or invalid text is used on strPath or invalid value is used in constOption. Otherwise, it returns true for all normal situations." />
+          <Arguments>
+            <Argument name="constOption" type="Constant" in="false" out="false" option="false" variable="false" description="Search option. Multiple selection possible. Divided by the letter &quot;|&quot; ( Default : VirtualFile.findAll )&#xD;&#xA;Multiple selection not allowed (except VirtualFile.findCaseless)&#xD;&#xA;&#xD;&#xA;VirtualFile.findAll  0x0001 &#xD;&#xA;Search for all files and sub directories.&#xD;&#xA;&#xD;&#xA;VirtualFile.findFileOnly  0x0002 &#xD;&#xA;Search only for files.&#xD;&#xA;&#xD;&#xA;VirtualFile.findDirectoryOnly 0x0003 &#xD;&#xA;Search only for sub directories.&#xD;&#xA;&#xD;&#xA;VirtualFile.findCaseless  0x0010 &#xD;&#xA;Not case sensitive" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="Target path &#xD;&#xA;- %USERAPP% =  space assigned from application, no access from other applications&#xD;&#xA;(available for iOS, Android)&#xD;&#xA;- %SD_CARD% = SD memory card of mobile device, access from other applications is possible. &#xD;&#xA;(not available for iOS)" />
+            <Argument name="strSearchExpr" type="String" in="false" out="false" option="false" variable="false" description="Search criteria. A regular formula is used." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It returns the size of a file specified in the filename property.">
+        <Syntax text="VirtualFile.getFileSize()">
+          <Return type="Boolean" description="It returns false when a file size cannot be obtained. It returns true when a file size can be obtained successfully." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isExist" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It checks the existence of a designated file or folder.">
+        <Syntax text="VirtualFile.isExist(strPath)">
+          <Return type="Boolean" description="It returns false when strPath is omitted or an invalid letter is used in strPath. Otherwise, it returns true." />
+          <Arguments>
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="Target file or path to be inspected &#xD;&#xA;- %USERAPP% =  space assigned on an application, no access from other applications&#xA;- %SD_CARD% = SD memory card of a mobile device, access from other applications is possible." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to open a file in desired conditions on a mobile device.">
+        <Syntax text="VirtualFile.open( strFileName ,constOptions )">
+          <Return type="Boolean" description="It returns false when an invalid option value is used. Otherwise, it returns true. It returns false when an absolute path is used." />
+          <Arguments>
+            <Argument name="constOptions" type="Object" in="false" out="false" option="false" variable="false" description="Duplicate assignment is possible, distinguished by the letter “|”&#xD;&#xA;&#xD;&#xA;VirtualFile.openRead&#x9;0x0001&#x9;&#xD;&#xA;Used to open a read-only file. &#xD;&#xA;Can't open a file if there is no file.&#xD;&#xA;&#xD;&#xA;VirtualFile.openWrite&#x9;0x0002&#x9;&#xD;&#xA;Create a write-only file.&#xD;&#xA;The file will be created no matter a file exists or not.&#xD;&#xA;&#xD;&#xA;VirtualFile.openAppend&#x9;0x0010&#x9;&#xD;&#xA;Used to open an addition-only file.&#xD;&#xA;The file will be created whether or not a file exists. If a file opens, the file pointer will be moved to the last position (read/write available).&#xA;&#xD;&#xA;VirtualFile.openCreate&#x9;0x1000&#x9;&#xD;&#xA;Used to create a file if there is no file and open it. If there is a file, the existing file will open.&#xA;&#xD;&#xA;VirtualFile.openText&#x9;0x0100&#x9;&#xD;&#xA;Used to open a text file.&#xD;&#xA;&#xD;&#xA;VirtualFile.openBinary&#x9;0x0200&#x9;&#xD;&#xA;Used to open a binary file." />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="Name of a target file, a path included. &#xD;&#xA;- %USERAPP% =  space assigned on an application, no access from other application&#xD;&#xA;- %SD_CARD% = SD memory card of a mobile device, access available from other applications&#xD;&#xA;- It can be omitted when a VirtualFile returned from FileDialog is used." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="read" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to read the contents of a file opened in a VirtualFile.">
+        <Syntax text="VirtualFile.read([nLength [, strCharset]])">
+          <Return type="Boolean" description="This method will return &quot;false&quot; if its parameters contain a character that is not permitted. &#xA;Otherwise, it will return &quot;true&quot;." />
+          <Arguments>
+            <Argument name="nLength" type="Number" in="false" out="false" option="false" variable="false" description="The length of contents to read from the file, specified in byte.&#xA;&#xA;If omitted, the entire fill will be read." />
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="It specifies a character set applied to contents to read&#xA;&#xA;This parameter is supported only by the Nexacro Browser running in Windows. In mobile devices, the UTF-8 character set will be applied." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="readLine" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to read the contents of a file opened in a VirtualFile up to a certain point.">
+        <Syntax text="VirtualFile.readLine([strDelimeter[, strCharset]])">
+          <Return type="Boolean" description="This method will return &quot;false&quot; if its parameters contain a character that is not permitted. &#xA;Otherwise, it will return &quot;true&quot;." />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="It specifies a character set applied to contents to read&#xA;&#xA;This parameter is supported only by the Nexacro Browser running in Windows. In mobile devices, the UTF-8 character set will be applied." />
+            <Argument name="strDelimeter" type="String" in="false" out="false" option="false" variable="false" description="It specifies a delimiter that indicates where to stop reading in a file.&#xA;&#xA;The default value is &quot;\n&quot;." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="remove" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It deletes a file on a mobile device.">
+        <Syntax text="VirtualFile.remove( strFilePath )&#xA;VirtualFile.remove( objVirtualFile )">
+          <Return type="Boolean" description="It returns false when a strFilePath or VirtualFile is not input or an invalid letter is used for a file path of strFilePath. Otherwise, it returns true." />
+          <Arguments>
+            <Argument name="objVirtualFile" type="Object" in="false" out="false" option="false" variable="false" description="VirtualFile returned from FileDialog" />
+            <Argument name="strFilePath" type="String" in="false" out="false" option="false" variable="false" description="Path of a target file to be deleted&#x9;&#xD;&#xA;- %USERAPP% =  space assigned on an application, no access from other applications&#xA;- %SD_CARD% = SD memory card of a mobile device, access from other applications is possible." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to remove a handler in a certain event of a VirtualFile.">
+        <Syntax text="VirtualFile.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rename" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This is a static method that belongs to the VirtualFile object, used to relocate or rename a designated file.">
+        <Syntax text="VirtualFile.rename( strOldname, strNewname );">
+          <Return type="Boolean" description="If there is a flaw, such as the absence of parameters or input of invalid characters, the method will return &quot;false&quot;.&#xA;&#xA;If there is no problem, it will return &quot;true&quot;." />
+          <Arguments>
+            <Argument name="strNewname" type="String" in="false" out="false" option="false" variable="false" description="It specifies a new path and name of the file.&#xA;&#xA;For specifying a path, you can use either an absolute path or an alias." />
+            <Argument name="strOldname" type="String" in="false" out="false" option="false" variable="false" description="It specifies the name and path of a file whose location or name will be changed.&#xA;&#xA;For specifying a path, you can use either an absolute path or an alias." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="renameDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is a static method to rename a directory.">
+        <Syntax text="VirtualFile.renameDirectory(strPath,strNewName)">
+          <Return type="Boolean" description="Whether the method has been successfully called is returned" />
+          <Arguments>
+            <Argument name="strNewName" type="String" in="false" out="false" option="false" variable="false" description="It designates the name of a new directory. Only a directory name will be valid, such as &quot;New Folder.&quot;" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="It designates the name of the directory in the new location. a. The absolute path is &quot;C:\\Old_Folder.&quot; b. It can designate an old folder in My Documents with the name &quot;OldFolder.&quot;" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="seek" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It moves the access location of a file when reading or writing the file.">
+        <Syntax text="VirtualFile.seek(nOffset[, constOption])">
+          <Return type="Boolean" description="It returns false when an unusable letter is input or omitted for nOffset, or an invalid value is used for constOption. Otherwise, it returns true." />
+          <Arguments>
+            <Argument name="constOption" type="Constant" in="false" out="false" option="false" variable="false" description="(Default : VirtualFile.seekCurrent )&#xD;&#xA;VirtualFile.seekBegin&#x9;0x0000&#x9;Start position of the file&#xD;&#xA;VirtualFile.seekCurrent&#x9;0x0001&#x9;Current position of the file&#xD;&#xA;VirtualFile.seekEnd&#x9;0x0002&#x9;End position of the file" />
+            <Argument name="nOffset" type="Number" in="false" out="false" option="false" variable="false" description="Move value (Byte), Int type, - (minus) value allowed" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the first handler in a certain event of a VirtualFile.">
+        <Syntax text="VirtualFile.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="write" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to save data in a file opened in a VirtualFile.">
+        <Syntax text="VirtualFile.write(varData[, strCharset])">
+          <Return type="Boolean" description="This method will return &quot;false&quot; if its parameters contain a character that is not permitted. It will also return &quot;false&quot; when the required parameter is omitted.&#xA;Otherwise, it will return &quot;true&quot;." />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="It specifies a character set applied to data to save.&#xA;&#xA;This parameter is supported only by the Nexacro Browser running in Windows. In mobile devices, the UTF-8 character set will be applied." />
+            <Argument name="varData" type="Variant" in="false" out="false" option="false" variable="false" description="It specifies a string or buffer object that represents data to save" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs when a task requested to a VirtualFile fails.">
+        <Syntax text="VirtualFile.onerror(obj:nexacro.VirtualFile,e:nexacro.VirtualFileErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VirtualFileErrorEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs when a requested task to a virtual file is successful.">
+        <Syntax text="VirtualFile.onsuccess(obj:nexacro.VirtualFile,e:nexacro.VirtualFileEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VirtualFileEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

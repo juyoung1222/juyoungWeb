@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.SmsMessage">
+    <ObjectInfo inheritance="" classname="nexacro.SmsMessage" shorttypename="" csstypename="SmsMessage" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser" description="SmsMessageListEventInfoオブジェクトのsmsmessagesプロパティに配列形式で保存されるオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="date" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="メッセージ発信/受信時刻(Dateオブジェクト)" csspropertyname="" csselementname="" normalpropertyname="date" />
+      <Property name="message" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="メッセージ内容テキスト" csspropertyname="" csselementname="" normalpropertyname="message" />
+      <Property name="phonenumber" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="相手の端末の電話番号を表示するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="phonenumber" />
+      <Property name="smsid" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="送受信された Smsメッセージの固有値、2桁の数字に構成" csspropertyname="" csselementname="" normalpropertyname="smsid" />
+      <Property name="type" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="0" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser" description="発信/受信文字の区別" csspropertyname="" csselementname="" normalpropertyname="type" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

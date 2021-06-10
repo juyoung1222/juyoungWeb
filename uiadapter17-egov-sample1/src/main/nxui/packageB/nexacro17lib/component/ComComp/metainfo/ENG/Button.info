@@ -1,0 +1,671 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Button">
+    <ObjectInfo inheritance="nexacro.IconTextControl" classname="nexacro.Button" shorttypename="Button" csstypename="Button" csscontrolname="ButtonControl" group="Component" subgroup="Component ( default )" csspseudo="true" container="false" composite="false" tabstop="true" cssstyle="true" contents="false" formats="false" contentseditor="auto" defaultwidth="120" defaultheight="50" registration="allow" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="onclick" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="A Button component allows you to use a push-button control, which you click to execute a designated script. &#xA;&#xA;A Button component is a rectangle basically. When you press a mouse button over the component, Nexacro Platform shows the image of a button pressed down. After you release the mouse button, the component also recovers its original shape.&#xA;A Button component provides the handlers of click-related events. You can write a script within the handlers to define the action conducted for clicking a button." />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the action printed as an accessibility feature when a selection box moves to a Button." csspropertyname="" csselementname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="all" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DescLevel" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to print accessibility features of the children when a selection box moves to a Button." csspropertyname="" csselementname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the description printed as an accessibility feature when a selection box moves to a Button." csspropertyname="" csselementname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to print the values of accessibility-related properties when a selection box moves to a Button." csspropertyname="" csselementname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the label printed as an accessibility feature when a selection box moves to a Button." csspropertyname="" csselementname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set accessibility features." csspropertyname="" csselementname="" normalpropertyname="accessibilityrole" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the background of a Button." csspropertyname="background" csselementname="" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the shape of the corners of a Button." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the value of the point that indicates the position of a Button's bottom side." csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the shadow effect of a Button." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the color of the text displayed in a Button." csspropertyname="color" csselementname="" normalpropertyname="color" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the style of a Button by using a class defined in the relevant XCSS file." csspropertyname="" csselementname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the type of a mouse pointer that appears when the mouse cursor is located in a Button." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+      <Property name="defaultbutton" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Property to determine whether to generate onclick Event of Button when Enter Key is pressed in Form to which Button belongs." csspropertyname="" csselementname="" normalpropertyname="defaultbutton" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to enable a Button." csspropertyname="" csselementname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to trigger events in a Button." csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="escapebutton" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Property to determine whether to generate onclick Event of Button when ESC Key is pressed in Form to which Button belongs." csspropertyname="" csselementname="" normalpropertyname="escapebutton" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="It is a property to designate text of an Button as a numeric formula." csspropertyname="" csselementname="" normalpropertyname="expr" />
+      <Property name="fittocontents" group="Position" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="FitToContents" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to adjust the size of a Button automatically for its internal content." csspropertyname="" csselementname="" normalpropertyname="fittocontents" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property sets a font used for a Button." csspropertyname="font" csselementname="" normalpropertyname="font" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the height of a Button." csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set a hotkey for conducting the default action of a Button." csspropertyname="" csselementname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the identification of a Button." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the ID of an InitValue to be applied to an Button." csspropertyname="" csselementname="" normalpropertyname="initvalueid" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the value of the point that indicates the position of a Button's left side." csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the spacing between characters (kerning) displayed in a Button." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the maximum height of a Button for the component to be displayed on the screen." csspropertyname="" csselementname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the maximum width of a Button for the component to be displayed on the screen." csspropertyname="" csselementname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the minimum height of a Button for the component to be displayed on the screen." csspropertyname="" csselementname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the minimum width of a Button for the component to be displayed on the screen." csspropertyname="" csselementname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the name of a Button." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the border of a Button." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the image of the edges that are displayed inside the border of a Button." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+      <Property name="icon" group="Style" subgroup="-nexa-icon" refreshinfo="" edittype="ImageID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the image of an icon presented along with the text as displayed in a Button." csspropertyname="-nexa-icon" csselementname="" normalpropertyname="icon" />
+      <Property name="iconPosition" group="Style" subgroup="-nexa-icon-position" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="IconPosition" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the position of the icon presented along with the text as displayed in an Button." csspropertyname="-nexa-icon-position" csselementname="" normalpropertyname="iconPosition" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the padding, an inner margin, of a Button." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the horizontal alignment of the text or contents displayed in a Button." csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the effects applied to the text displayed in a Button." csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+      <Property name="textPadding" group="Style" subgroup="-nexa-text-padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the gap between text and an icon displayed in a Button." csspropertyname="-nexa-text-padding" csselementname="" normalpropertyname="textPadding" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the vertical alignment of the text or contents displayed in a Button." csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to decide whether to break lines automatically when the length of text is longer than the output area." csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the opacity of a Button." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This read-only property holds the parent object of a Button." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="" description="This property is used to designate a step page where a Button will be displayed if the parent object applies the step feature." csspropertyname="" csselementname="" normalpropertyname="positionstep" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the value of the point that indicates the position of a Button's right side." csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the tab order number of a Button. Tab order means the order of moving focus among components when the focus is moved by entering the Tab key." csspropertyname="" csselementname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="It is Property to designate whether to receive focus by Tab key." csspropertyname="" csselementname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the text to display on a Button component." csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="textwidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to set the width of the text output area in a Button component." csspropertyname="" csselementname="" normalpropertyname="textwidth" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the text of a tooltip that apeears when a mouse pointer hovers over a Button." csspropertyname="" csselementname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the position where a tooltip appears in a Button." csspropertyname="" csselementname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the value of the point that indicates the position of a Button's top side." csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to make a Button visible or not." csspropertyname="" csselementname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the width of a Button." csspropertyname="" csselementname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the spacing between words displayed in a Button." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the background of a Button." csspropertyname="background" csselementname="" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the shape of the corners of a Button." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the shadow effect of a Button." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the color of the text displayed in a Button." csspropertyname="color" csselementname="" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="" description="This property is used to set the type of a mouse pointer that appears when the mouse cursor is located in a Button." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property sets a font used for a Button." csspropertyname="font" csselementname="" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the spacing between characters (kerning) displayed in a Button." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the border of a Button." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the image of the edges that are displayed inside the border of a Button." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+        <Property name="-nexa-icon" group="Style" subgroup="-nexa-icon" edittype="ImageID" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the image of an icon presented along with the text as displayed in a Button." csspropertyname="-nexa-icon" csselementname="" normalpropertyname="icon" />
+        <Property name="-nexa-icon-position" group="Style" subgroup="-nexa-icon-position" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="IconPosition" unitinfo="" delimiter="" requirement="" description="This property is used to set the position of the icon presented along with the text as displayed in an Button." csspropertyname="-nexa-icon-position" csselementname="" normalpropertyname="iconPosition" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the padding, an inner margin, of a Button." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="" description="This property is used to set the horizontal alignment of the text or contents displayed in a Button." csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="" description="This property is used to set the effects applied to the text displayed in a Button." csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+        <Property name="-nexa-text-padding" group="Style" subgroup="-nexa-text-padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the gap between text and an icon displayed in a Button." csspropertyname="-nexa-text-padding" csselementname="" normalpropertyname="textPadding" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="" description="This property is used to set the vertical alignment of the text or contents displayed in a Button." csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="" description="This property is used to decide whether to break lines automatically when the length of text is longer than the output area." csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the opacity of a Button." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the spacing between words displayed in a Button." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="pushed" control="true" default="false" deprecated="false" unused="false" group="userstatus" />
+      <Status name="selected" control="true" default="false" deprecated="false" unused="false" group="userstatus" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to add a handler to a certain event of a Button.">
+        <Syntax text="Button.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to find a function and add it to a certain event of a Button as a handler.">
+        <Syntax text="Button.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It is method to change the order to draw Component to the first position of same level Components.">
+        <Syntax text="Button.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It is method to change the order to draw Component to the next front position of same level Components.">
+        <Syntax text="Button.bringToPrev()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="Button.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="click" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Method to generate onclick Event of a button.">
+        <Syntax text="Button.click()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to delete a Button that is dynamically created through a script.">
+        <Syntax text="Button.destroy()">
+          <Return type="Boolean" description="It will return &quot;true&quot; if a Button is successfully removed.&#xA;If not, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method finds a handler in a certain event of a Button and returns the index of the handler.">
+        <Syntax text="Button.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the string that is actually displayed in a Button.">
+        <Syntax text="Button.getDisplayText()">
+          <Return type="String" description="It returns the string that is actually displayed in a Button.&#xA;&#xA;It will return the string that is actually displayed on the screen if the value of the text property is displayed after being changed by the expr property" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns a specific handler from a certain event of a Button by specifying the index number of the handler.">
+        <Syntax text="Button.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It returns a component which has focus.">
+        <Syntax text="Button.getFocus()">
+          <Return type="Object" description="It returns a component if the component which has focus exists in a designated form.&#xD;&#xA;If not, it returns 'null'." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the bottom position of a Button in pixel, based on the value of the parent component's top property.">
+        <Syntax text="Button.getOffsetBottom();">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Button's bottom side. The value is returned in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the height of a Button in pixel.">
+        <Syntax text="Button.getOffsetHeight();">
+          <Return type="Number" description="It returns the height of a Button in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the left position of a Button in pixel, based on the value of the parent component's left property.">
+        <Syntax text="Button.getOffsetLeft();">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Button's left side. The value is returned in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the right position of a Button in pixel, based on the value of the parent component's left property.">
+        <Syntax text="Button.getOffsetRight();">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Button's right side. The value is returned in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the top position of a Button in pixel, based on the value of the parent component's top property.">
+        <Syntax text="Button.getOffsetTop();">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Button's top side. The value is returned in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the width of a Button in pixel.">
+        <Syntax text="Button.getOffsetWidth();">
+          <Return type="Number" description="It returns the width of a Button in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the value of a Button's bottom property in pixel.">
+        <Syntax text="Button.getPixelBottom();">
+          <Return type="Number" description="It returns the value of a Button's bottom property in pixel.&#xA;If the value of the bottom property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the height of a Button in pixel.">
+        <Syntax text="Button.getPixelHeight();">
+          <Return type="Number" description="It returns the height of a Button in pixel.&#xA;If the value of the height property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the value of a Button's left property in pixel.">
+        <Syntax text="Button.getPixelLeft();">
+          <Return type="Number" description="It returns the value of a Button's left property in pixel.&#xA;If the value of the left property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the value of a Button's right property in pixel.">
+        <Syntax text="Button.getPixelRight();">
+          <Return type="Number" description="It returns the value of a Button's right property in pixel.&#xA;If the value of the right property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the value of a Button's top property in pixel.">
+        <Syntax text="Button.getPixelTop();">
+          <Return type="Number" description="It returns the value of a Button's top property in pixel.&#xA;If the value of the top property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the width of a Button in pixel.">
+        <Syntax text="Button.getPixelWidth();">
+          <Return type="Number" description="It returns the width of a Button in pixel.&#xA;If the value of the width property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getSelectStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Method to bring select status of button.">
+        <Syntax text="Button.getSelectStatus()">
+          <Return type="Boolean" description="It is true or false value of select status." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to initialize a Button after creating it in a script dynamically.">
+        <Syntax text="Button.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="It sets the ID of a Button in the form of a string." />
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the bottom property of a Button in pixel or percent (%).&#xA;&#xA;This parameter will be ignored if both the vTop and vHeight parameters are all specified.&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be determined based on the top property of the base component.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the height property of the base component." />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the height property of a Button in pixel or percent (%).&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be specified in pixel while the base component will be ignored.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the height property of the base component." />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the left property of a Button in pixel or percent (%).&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be determined based on the right property of the base component.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the width property of the base component." />
+            <Argument name="vMaxHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies a Button's maximum height that can be displayed in the Form.&#xA;&#xA;If this value is smaller than vMinHeight, it will be replaced by the value of vMinHeight." />
+            <Argument name="vMaxWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies a Button's maximum width that can be displayed in the Form.&#xA;&#xA;If this value is smaller than vMinWidth, it will be replaced by the value of vMinWidth." />
+            <Argument name="vMinHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies a Button's minimum height that can be displayed in the Form." />
+            <Argument name="vMinWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies a Button's minimum width that can be displayed in the Form." />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the right property of a Button in pixel or percent (%).&#xA;&#xA;This parameter will be ignored if both the vLeft and vWidth parameters are all specified.&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be determined based on the left property of the base component.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the width property of the base component." />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the top property of a Button in pixel or percent (%).&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be determined based on the bottom property of the base component.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the height property of the base component." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the width property of a Button in pixel or percent (%).&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be specified in pixel while the base component will be ignored.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the width property of the base component." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It moves a component into a specific location in specific size.">
+        <Syntax text="Button.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="bottom coordinate to locate a component." />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="height of a component" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="left coordinate to locate a component." />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="right coordinate to locate a component." />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="top coordinate to locate a component." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="width of a component" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It changes the order to draw a component to the next back position based on a component given as an argument.">
+        <Syntax text="Button.moveToNext( objComp )&#xA;Button.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="It is a target component object." />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="It is a character string value of the target component ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It changes the order to draw a component to the prior front position based on a component given as an argument.">
+        <Syntax text="Button.moveToPrev( objComp )&#xA;Button.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="It is a target component object." />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="It is a character string value of the target component ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to remove a handler in a certain event of a Button.">
+        <Syntax text="Button.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to find a handler in a certain event of a Button and remove it.">
+        <Syntax text="Button.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid&#xA;If this method fails to find the handler in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It is Method to change size of Button.">
+        <Syntax text="Button.resize( vWidth, vHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="It is length to change." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="It is length to change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It is method to change the order to draw Component to the last position of same level Components.">
+        <Syntax text="Button.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It is method to change the order to draw Component to the next back position of same level Components.">
+        <Syntax text="Button.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to change the first handler in a certain event of a Button.">
+        <Syntax text="Button.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method finds a function and uses it to replace the first handler in a certain event of a Button.">
+        <Syntax text="Button.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to give focus to a Button.">
+        <Syntax text="Button.setFocus( [bMoveScroll [, bInnerFocus]] )">
+          <Return type="Object" description="It returns a component which had focus right before.&#xA;&#xA;If there is no component which had focus previously, or if the method fails, it returns 'null'." />
+          <Arguments>
+            <Argument name="bInnerFocus" type="Boolean" in="false" out="false" option="false" variable="false" description="If a Button is a container component, this parameter determines whether to move focus to a child component.&#xA;&#xA;For &quot;true&quot;, focus will be given to the first child component that can receive focus.&#xA;For &quot;false&quot;, focus will be given to the Button.&#xA;&#xA;The default value is &quot;true&quot; if a Button is a container component." />
+            <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="If scrolling is enabled in the parent component, it will determine whether to scroll based on the Button.&#xA;&#xA;For &quot;true&quot;, the parent component will scroll so that the Button will show.&#xA;For &quot;false&quot;, the parent component will not scroll regardless of the Button's position.&#xA;&#xA;The default value is &quot;true&quot;." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to specify the bottom position of a Button in pixel, based on the value of the parent component's top property.">
+        <Syntax text="Button.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the distance between a Button's bottom side and its parent component's top side. The distance is expressed in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to specify the height of a Button in pixel.">
+        <Syntax text="Button.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the height of a Button in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to specify the left position of a Button in pixel, based on the value of the parent component's left property.">
+        <Syntax text="Button.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the distance between a Button's left side and its parent component's left side. The distance is expressed in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to specify the right position of a Button in pixel, based on the value of the parent component's left property.">
+        <Syntax text="Button.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the distance between a Button's right side and its parent component's left side. The distance is expressed in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to specify the top position of a Button in pixel, based on the value of the parent component's top property.">
+        <Syntax text="Button.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the distance between a Button's top side and its parent component's top side. The distance is expressed in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to specify the width of a Button in pixel.">
+        <Syntax text="Button.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Object" in="false" out="false" option="false" variable="false" description="It specifies the width of a Button in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setSelectStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Method to set Pseudo status of a button as SELECTED.">
+        <Syntax text="Button.setSelectStatus( bSelect )">
+          <Return type="Boolean" description="It returns select status value before setting." />
+          <Arguments>
+            <Argument name="bSelect" type="Boolean" in="false" out="false" option="false" variable="false" description="It designates select status of a button with true or false value." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to display an Button on the screen. The Button mentioned here refers to the one that is dynamically created through a script.">
+        <Syntax text="Button.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toggleSelectStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It reverses the SELECTED Pseudo status of a button.">
+        <Syntax text="Button.toggleSelectStatus()">
+          <Return type="Boolean" description="It returns a select status value before toggle." />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when the left button of a mouse is clicked within an Button.">
+        <Syntax text="Button.onclick(obj:nexacro.Button,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="false" requirement="" description="This event occurs when you right-click a Button or touch a Button for a certain duration.">
+        <Syntax text="Button.oncontextmenu(obj:nexacro.Button,e:nexacro.ContextMenuEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ContextMenuEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when the left button of a mouse is clicked twice within an Button.">
+        <Syntax text="Button.ondblclick(obj:nexacro.Button,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you conduct a dragging action by pressing the left button of a mouse&#xA;within a Button.">
+        <Syntax text="Button.ondrag(obj:nexacro.Button,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, dragging will be conducted while the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, dragging will be canceled while the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when dragged Component enters into Component area.">
+        <Syntax text="Button.ondragenter(obj:nexacro.Button,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, Event shall not occur in upper Component.&#xA;Default : false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when dragged Component goes out of Component area.">
+        <Syntax text="Button.ondragleave(obj:nexacro.Button,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, Event shall not occur in upper Component.&#xA;default : false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a dragged mouse moves in Component area.">
+        <Syntax text="Button.ondragmove(obj:nexacro.Button,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you release a mouse button within the area of a Button after you have pressed the button to drag an object.">
+        <Syntax text="Button.ondrop(obj:nexacro.Button,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="Button.oninput(obj:nexacro.Button,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you press a key with a Button focused.">
+        <Syntax text="Button.onkeydown(obj:nexacro.Button,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you release a key with a Button focused.">
+        <Syntax text="Button.onkeyup(obj:nexacro.Button,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Button in which Focus is located loses Focus.">
+        <Syntax text="Button.onkillfocus(obj:nexacro.Button,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you press the left button of a mouse within the area of a Button.">
+        <Syntax text="Button.onlbuttondown(obj:nexacro.Button,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you release the left button of a mouse within the area of a Button.">
+        <Syntax text="Button.onlbuttonup(obj:nexacro.Button,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="true" requirement="" description="It is Event to occur when the other Buttons are pressed except for Left Button/Right Button of a mouse.">
+        <Syntax text="Button.onmousedown(obj:nexacro.Button,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmousedown Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a cursor of a mouse enters into Button area.">
+        <Syntax text="Button.onmouseenter(obj:nexacro.Button,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmouseenter Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a cursor of a mouse goes out of Button area.">
+        <Syntax text="Button.onmouseleave(obj:nexacro.Button,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmousleave Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a cursor of a mouse moves in Button area.">
+        <Syntax text="Button.onmousemove(obj:nexacro.Button,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmousemove Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="true" requirement="" description="It is Event to occur when the other Buttons are pressed and released except for Left Button/Right Button of a mouse.">
+        <Syntax text="Button.onmouseup(obj:nexacro.Button,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmouseup Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs when you scroll your mouse wheel.">
+        <Syntax text="Button.onmousewheel(obj:nexacro.Button,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="If true is returned, mouse scroll wheel and  bubbling stop. &#xD;&#xA;If false is returned, the onmousewheel event occurs in the generated component and is bubbled. If the generated component doesn't need the onmousewheel event, the event will be taken by an upper level component." />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Button moves.">
+        <Syntax text="Button.onmove(obj:nexacro.Button,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Mouse Right Button Down occurs in Button.">
+        <Syntax text="Button.onrbuttondown(obj:nexacro.Button,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onrbuttondown Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you release the right button of a mouse within the area of a Button.">
+        <Syntax text="Button.onrbuttonup(obj:nexacro.Button,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Focus is set to Button.">
+        <Syntax text="Button.onsetfocus(obj:nexacro.Button,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Button size is changed.">
+        <Syntax text="Button.onsize(obj:nexacro.Button,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you touch and release the screen within the area of a Button.">
+        <Syntax text="Button.ontouchend(obj:nexacro.Button,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when a touch point is moved along the touch surface within a Button.">
+        <Syntax text="Button.ontouchmove(obj:nexacro.Button,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when a touch point is placed on the touch surface within a Button.">
+        <Syntax text="Button.ontouchstart(obj:nexacro.Button,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

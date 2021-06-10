@@ -1,0 +1,672 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.TabpageControl">
+    <ObjectInfo inheritance="nexacro.Div" classname="nexacro.Tabpage" shorttypename="Tabpage" csstypename="" csscontrolname="TabpageControl" group="Component" subgroup="ContainerComponent" csspseudo="true" container="true" composite="false" tabstop="true" cssstyle="true" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="container" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Tabコンポーネントを構成するTabpageControlオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="アクセシビリティを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="all" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DescLevel" enuminfo2="" unitinfo="" delimiter="" requirement="" description="アクセシビリティを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="アクセシビリティを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Chrome,Windows nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに選択ボックスを移動する際のアクセシビリティ関連のプロパティ値の出力可否を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="アクセシビリティを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="" description="アクセシビリティを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="accessibilityrole" />
+      <Property name="async" group="Appearance" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="urlを変更するとき、非同期で処理するか、同期で処理するかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="async" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの背景領域を設定するプロパティです。" csspropertyname="background" csselementname="" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの角の形を設定するプロパティです。" csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TabpageControlに影効果を設定するプロパティです。" csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示される文字列色を設定するプロパティです。" csspropertyname="color" csselementname="" normalpropertyname="color" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlのStyleをXCSSファイルに定義されたclassに設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControl領域内で表示されるマウスポインタの種類を設定するプロパティです。" csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの使用可否を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlでイベントを発生させるかどうかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControで使用するフォントを設定するプロパティです。" csspropertyname="font" csselementname="" normalpropertyname="font" />
+      <Property name="form" group="Control" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlですべてのオブジェクトが登録されたFormを持つ読み取り専用のプロパティです。" csspropertyname="" csselementname="" normalpropertyname="form" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlにフォーカスを移動させるショートカットを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TabpageControlの一意識別子を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TabpageControlに適用されるInitValueのIDを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="initvalueid" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示される文字の間隔（カーニング）を設定するプロパティです。" csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TabpageControlの名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの境界線を設定するプロパティです。" csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TabpageControl領域の内側の余白を設定するプロパティです。" csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示される文字列またはコンテンツの横方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="MultiEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示されるテキストに適用する効果を設定するプロパティです。" csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示される文字列またはコンテンツの縦方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示される文字列が出力領域よりも長い場合、自動改行されるように設定するプロパティです。" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControl領域の透明度を設定するプロパティです。" csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TabpageControlの親オブジェクトを持つプロパティです。" csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="positionstep" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="タブキー入力でコンポーネント間にフォーカスを移動するときにTabpageControlの順序を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="タブキー入力でコンポーネント間フォーカスを移動するとき、TabpageControlがフォーカスを受け取るか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Tab Componentの現在のTabpageに該当するTab Buttonに表示するテキストを表すプロパティです。　" csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser" description="TabpageControlにマウスポインタを置いたときに表示されるバルーンヘルプを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="TabpageControlでバルーンヘルプが表示される位置を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="url" group="Appearance" subgroup="" refreshinfo="" edittype="URL" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="コンポーネントに表示するForm url値を指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="url" />
+      <Property name="urlchangeeffect" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="urlchangeeffect" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TabpageControlが画面に表示されるか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示されるテキストの単語の間の間隔を設定するプロパティです。" csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの背景領域を設定するプロパティです。" csspropertyname="background" csselementname="" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの角の形を設定するプロパティです。" csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TabpageControlに影効果を設定するプロパティです。" csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示される文字列色を設定するプロパティです。" csspropertyname="color" csselementname="" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControl領域内で表示されるマウスポインタの種類を設定するプロパティです。" csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControで使用するフォントを設定するプロパティです。" csspropertyname="font" csselementname="" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示される文字の間隔（カーニング）を設定するプロパティです。" csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの境界線を設定するプロパティです。" csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TabpageControl領域の内側の余白を設定するプロパティです。" csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" defaultvalue="left" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示される文字列またはコンテンツの横方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="MultiEnum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示されるテキストに適用する効果を設定するプロパティです。" csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" defaultvalue="middle" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示される文字列またはコンテンツの縦方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示される文字列が出力領域よりも長い場合、自動改行されるように設定するプロパティです。" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControl領域の透明度を設定するプロパティです。" csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlに表示されるテキストの単語の間の間隔を設定するプロパティです。" csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したコンポーネントをTabpageControlの子コンポーネントに追加するメソッドです。">
+        <Syntax text="TabpageControl.addChild( strChildID, objComp )">
+          <Return type="Number" description="追加された子コンポーネントのインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="子として追加されるコンポーネントのオブジェクトを設定します。" />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="子として追加されるコンポーネントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの特定イベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="TabpageControl.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="関数を検索してTabPageの特定のイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="TabPage.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されない場合は、上位の領域に検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数の名前を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、TabpageControlが画面の最前面に表示されるようにします。">
+        <Syntax text="TabpageControl.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、TabpageControlが画面の一段階前に表示されるようにします。">
+        <Syntax text="TabpageControl.bringToPrev()">
+          <Return type="" description="　" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="TabpageControl.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="スクリプトで動的に生成したTabpageControlを削除するメソッドです。">
+        <Syntax text="TabpageControl.destroy()">
+          <Return type="Boolean" description="TabpageControlが正常に削除されると、「true」を返します。&#xA;TabpageControlが正常に削除されないと、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="TabpageControl.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントで検索しようとするハンドラ関数のインデックスを返します。&#xA;検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TabpageControlに実際に表示される文字列の値を返すメソッドです。">
+        <Syntax text="TabpageControl.getDisplayText()">
+          <Return type="String" description="TabpageControlに実際の画面に表示される文字列を返します。&#xA;&#xA;exprプロパティ値によりtextプロパティ値が画面に変更されて表示されると、実際の画面に表示される値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TabpageControlの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="TabpageControl.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;インデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlの子コンポーネントの中で、現在フォーカスを持っているコンポーネントを返すメソッドです。">
+        <Syntax text="TabpageControl.getFocus()">
+          <Return type="Object" description="フォーカスを持つ子コンポーネントがある場合、該当コンポーネントを返します。&#xA;フォーカスを持つ子コンポーネントがない場合、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントのtopを基準にTabpageControlのbottom値をピクセル単位で返すメソッドです。">
+        <Syntax text="TabpageControl.getOffsetBottom();">
+          <Return type="Number" description="TabpageControlのbottom座標値をピクセル(pixel)単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlのheightプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TabpageControl.getOffsetHeight();">
+          <Return type="Number" description="TabpageControlの高さをピクセル単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントのleftを基準にTabpageControlのleft値をピクセル単位で返すメソッドです。">
+        <Syntax text="TabpageControl.getOffsetLeft();">
+          <Return type="Number" description="TabpageControlのleft座標値をピクセル(pixel)単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントのleftを基準にTabpageControlのright値をピクセル単位で返すメソッドです。">
+        <Syntax text="TabpageControl.getOffsetRight();">
+          <Return type="Number" description="TabpageControlのright座標値をピクセル(pixel)単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントのtopを基準にTabpageControlのtop値をピクセル単位で返すメソッドです。">
+        <Syntax text="TabpageControl.getOffsetTop();">
+          <Return type="Number" description="TabpageControlのtop座標値をピクセル(pixel)単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlのwidthプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TabpageControl.getOffsetWidth();">
+          <Return type="Number" description="TabpageControlの幅をピクセル単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlのbottomプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TabpageControl.getPixelBottom();">
+          <Return type="Number" description="TabpageControlのbottomプロパティ値をピクセル単位で返します。&#xA;bottomプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlのheightプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TabpageControl.getPixelHeight();">
+          <Return type="Number" description="TabpageControlのheightプロパティ値をピクセル単位で返します。&#xA;heightプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlのleftプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TabpageControl.getPixelLeft();">
+          <Return type="Number" description="TabpageControlのwidthプロパティ値をピクセル単位で返します。&#xA;leftプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlのrightプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TabpageControl.getPixelRight();">
+          <Return type="Number" description="TabpageControlのrightプロパティ値をピクセル単位で返します。&#xA;rightプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlのtopプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TabpageControl.getPixelTop();">
+          <Return type="Number" description="TabpageControlのtopプロパティ値をピクセル単位で返します。&#xA;topプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlのwidthプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TabpageControl.getPixelWidth();">
+          <Return type="Number" description="TabpageControlのwidthプロパティ値をピクセル単位で返します。&#xA;widthプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したコンポーネントをTabpageControlの子コンポーネントに特定の順序に追加するメソッドです。">
+        <Syntax text="TabpageControl.insertChild( nIdx, strChildID, objComp )">
+          <Return type="Number" description="追加された子コンポーネントのインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントに追加される順序を設定します。&#xA;「-1」に設定した場合、子コンポーネントの中で最後に追加されます。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="子として追加されるコンポーネントのオブジェクトを設定します。" />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="子として追加されるコンポーネントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isValidObject" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlの位置とサイズを変更するメソッドです。">
+        <Syntax text="TabpageControl.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="親コンポーネントの右下端を基準にTabpageControlのbottomプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。&#xA;nLeft、nWidth値をすべて設定した場合、nBottom値は無視されます。" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="TabpageControlのheightプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="親コンポーネントの左上を基準に、TabpageControlのleftプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="親コンポーネントの右下端を基準にTabpageControlのrightプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。&#xA;nLeft、nWidth値をすべて設定した場合、nRight値は無視されます。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="親コンポーネントの左上を基準に、TabpageControlのleftプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="TabpageControlのwidthプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、引数として渡されたTabpageControlが画面に一段階後ろに表示されるようにします。">
+        <Syntax text="TabpageControl.moveToNext( objComp )&#xA;TabpageControl.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントをオブジェクトに設定します。" />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、引数として渡されたコンポーネントより、TabpageControlが画面の一段階前に表示されるようにします。">
+        <Syntax text="TabpageControl.moveToPrev( objComp )&#xA;TabpageControl.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントをオブジェクトに設定します。" />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TabpageControlに動的に追加されたコンポーネントを削除するメソッドです。">
+        <Syntax text="TabpageControl.removeChild( strChildID )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="削除する子コンポーネントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="TabpageControl.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="TabpageControl.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlのサイズを変更するメソッドです。">
+        <Syntax text="TabpageControl.resize( vWidth, vHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="TabpageControlのheightプロパティ値を設定します。&#xA;Pixel単位または割合(「％」)に設定することができます。&#xA;負数を設定することはできません。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="TabpageControlのwidthプロパティ値を設定します。&#xA;Pixel単位または割合(「％」)に設定することができます。&#xA;負数を設定することはできません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、TabpageControlが画面の最背面に表示されるようにします。">
+        <Syntax text="TabpageControl.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、TabpageControlが画面に一段階後ろに表示されるようにします。">
+        <Syntax text="TabpageControl.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="TabpageControl.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="TabpageControl.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TabpageControlにフォーカスを与えるメソッドです。">
+        <Syntax text="TabpageControl.setFocus( [bMoveScroll [, bInnerFocus]] )">
+          <Return type="Object" description="TabpageControlがフォーカスされる前にフォーカスを持っていたコンポーネントを返します。&#xA;&#xA;フォーカスを持つコンポーネントがなかったか、メソッド実行に失敗した場合には、「null」を返します。" />
+          <Arguments>
+            <Argument name="bInnerFocus" type="Boolean" in="false" out="false" option="false" variable="false" description="TabpageControlがコンテナコンポーネントの場合、子コンポーネントにフォーカスを移動するかを設定します。&#xA;&#xA;「true」に設定時、子コンポーネントのフォーカスを受け取られる最初のコンポーネントがフォーカスになります。&#xA;「false」に設定時、TabpageControlにフォーカスされます。&#xA;&#xA;TabpageControlがコンテナコンポーネントの場合、値を設定しないと、「true」で動作します。" />
+            <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="親コンポーネントにスクロールがある場合、TabpageControlを基準にスクロールを移動するかを設定します。&#xA;&#xA;「true」に設定時、TabpageControlが画面に表示されるようにスクロールを移動させます。&#xA;「false」に設定時、TabpageControlの位置に関係なく、スクロールを移動させません。&#xA;&#xA;値を設定しない場合は、「true」で動作します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントのtopを基準にTabpageControlのbottom値をピクセル単位で設定するメソッドです。">
+        <Syntax text="TabpageControl.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのtopから離れた距離をピクセル単位の数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlのheightプロパティ値をピクセル単位で設定するメソッドです。">
+        <Syntax text="TabpageControl.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="TabpageControlの高さをピクセル単位で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントleftを基準にTabpageControlのleft値をピクセル単位で設定するメソッドです。">
+        <Syntax text="TabpageControl.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのleftから離れた距離をピクセル単位の数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントleftを基準にTabpageControlのright値をピクセル単位で設定するメソッドです。">
+        <Syntax text="TabpageControl.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのleftから離れた距離をピクセル単位の数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントのtopを基準にTabpageControlのtop値をピクセル単位で設定するメソッドです。">
+        <Syntax text="TabpageControl.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのtopから離れた距離をピクセル単位の数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TabpageControlのwidthプロパティ値をピクセル単位で設定するメソッドです。">
+        <Syntax text="TabpageControl.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Object" in="false" out="false" option="false" variable="false" description="TabpageControlの幅をピクセル単位で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="スクリプトで動的に生成したTabpageControlを画面に表示するメソッドです。">
+        <Syntax text="TabpageControl.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="true" requirement="" description="TabpageControl領域内でマウスの左ボタンをクリックしたときに発生するイベントです。">
+        <Syntax text="TabpageControl.onclick(obj:nexacro.Tabpage,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="false" requirement="" description="TabpageControl領域でマウスの右ボタンをクリックするか、タッチを一定時間維持した場合に発生するイベントです。">
+        <Syntax text="TabpageControl.oncontextmenu(obj:nexacro.Tabpage,e:nexacro.ContextMenuEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ContextMenuEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="TabpageControl.ondblclick(obj:nexacro.Tabpage,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内でマウス左ボタンでドラッグしたときに発生するイベントです。">
+        <Syntax text="TabpageControl.ondrag(obj:nexacro.Tabpage,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、ドラッグ状態になり、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、ドラッグ状態が解除され、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="false" requirement="" description="ドラッグ状態のマウスポインタがTabpageControl領域内に移動したときに発生するイベントです。">
+        <Syntax text="TabpageControl.ondragenter(obj:nexacro.Tabpage,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="false" requirement="" description="ドラッグ状態のマウスポインタがTabpageControl領域外に移動したときに発生するイベントです。">
+        <Syntax text="TabpageControl.ondragleave(obj:nexacro.Tabpage,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内でドラッグ状態のマウスポインタが移動したときに発生するイベントです。">
+        <Syntax text="TabpageControl.ondragmove(obj:nexacro.Tabpage,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内でドラッグ状態のマウスボタンを離したときに発生するイベントです。">
+        <Syntax text="TabpageControl.ondrop(obj:nexacro.Tabpage,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、ドラッグ状態になり、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、ドラッグ状態が解除され、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onhscroll" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControlの水平スクロールバーをスクロールしたときに発生するイベントです。">
+        <Syntax text="TabpageControl.onhscroll(obj:nexacro.Tabpage,e:nexacro.ScrollEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="ScrollEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TabpageControlにキーボードで値が入力されたときに発生するイベントです。">
+        <Syntax text="TabpageControl.oninput(obj:nexacro.Tabpage,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControlにフォーカスがある状態でキーボードのキーが押されたときに発生するイベントです。&#xA;　">
+        <Syntax text="TabpageControl.onkeydown(obj:nexacro.Tabpage,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、イベントが上位のコンポーネントへ伝播されません。&#xA;イベントの返り値として&quot;false&quot;を返す場合、イベントが上位のコンポーネントへ伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControlにフォーカスがある状態で、押下されたキーボードが離したときに発生するイベントです。">
+        <Syntax text="TabpageControl.onkeyup(obj:nexacro.Tabpage,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControlからフォーカスが出るときに発生するイベントです。">
+        <Syntax text="TabpageControl.onkillfocus(obj:nexacro.Tabpage,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内でマウス左ボタンを押下したときに発生するイベントです。">
+        <Syntax text="TabpageControl.onlbuttondown(obj:nexacro.Tabpage,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内で押下されたマウス左ボタンを離したときに発生するイベントです。">
+        <Syntax text="TabpageControl.onlbuttonup(obj:nexacro.Tabpage,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内でマウスボタン（左/右ボタンを除く）が押下されたときに発生するイベントです。">
+        <Syntax text="TabpageControl.onmousedown(obj:nexacro.Tabpage,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内にマウスポインターが入ってきたときに発生するイベントです。　">
+        <Syntax text="TabpageControl.onmouseenter(obj:nexacro.Tabpage,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域外にマウスポインターが移動したときに発生するイベントです。">
+        <Syntax text="TabpageControl.onmouseleave(obj:nexacro.Tabpage,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内で、マウスポインターが移動するときに発生するイベントです。">
+        <Syntax text="TabpageControl.onmousemove(obj:nexacro.Tabpage,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、イベントが上位コンポーネントへ伝播されません。&#xA;イベントの返り値として「false」を返すと、イベントが上位コンポーネントへ伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内で押下されたマウスボタン（左/右ボタンを除く）を離したときに発生するイベントです。">
+        <Syntax text="TabpageControl.onmouseup(obj:nexacro.Tabpage,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内でマウスホイールボタンを回転したときに発生するイベントです。">
+        <Syntax text="TabpageControl.onmousewheel(obj:nexacro.Tabpage,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、ホイールボタンの回転値が無視され、イベントが上位コンポーネントに伝播されません。&#xA;イベントの返り値として「false」を返すと、ホイールボタンの回転値が処理され、イベントが上位コンポーネントに伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControlの位置を移動したときに発生するイベントです。">
+        <Syntax text="TabpageControl.onmove(obj:nexacro.Tabpage,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControlでマウス右ボタンを押下したときに発生するイベントです。">
+        <Syntax text="TabpageControl.onrbuttondown(obj:nexacro.Tabpage,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内でマウス右ボタンを離したときに発生するイベントです。">
+        <Syntax text="TabpageControl.onrbuttonup(obj:nexacro.Tabpage,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControlにフォーカスが入ったときに発生するイベントです。">
+        <Syntax text="TabpageControl.onsetfocus(obj:nexacro.Tabpage,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControlのサイズが変更されたときに発生するイベントです。">
+        <Syntax text="TabpageControl.onsize(obj:nexacro.Tabpage,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内でタッチを離したときに発生するイベントです。">
+        <Syntax text="TabpageControl.ontouchend(obj:nexacro.Tabpage,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内でタッチ状態を維持しながら移動するときに発生するイベントです。">
+        <Syntax text="TabpageControl.ontouchmove(obj:nexacro.Tabpage,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControl領域内でタッチが始まるときに発生するイベントです。">
+        <Syntax text="TabpageControl.ontouchstart(obj:nexacro.Tabpage,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onvscroll" group="Event" deprecated="false" unused="false" requirement="" description="TabpageControlの垂直スクロールバーをスクロールしたときに発生するイベントです。">
+        <Syntax text="TabpageControl.onvscroll(obj:nexacro.Tabpage,e:nexacro.ScrollEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="ScrollEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

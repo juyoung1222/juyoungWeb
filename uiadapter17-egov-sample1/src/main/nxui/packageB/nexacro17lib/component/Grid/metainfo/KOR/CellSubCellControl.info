@@ -1,0 +1,716 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.CellSubCellControl">
+    <ObjectInfo inheritance="nexacro.GridCellControl" classname="nexacro.CellSubCellControl" shorttypename="" csstypename="" csscontrolname="CellSubCellControl" group="Component" subgroup="Control" csspseudo="true" container="false" composite="false" tabstop="false" cssstyle="true" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="cell" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCellControl 은 여러개의 Cell 이 합쳐져서 구성되는 컨트롤입니다." />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 에 선택상자 이동 시 접근성으로 출력되는 Action 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="all" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DescLevel" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 에 선택상자 이동 시 하위 컴포넌트의 접근성 출력여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 에 선택상자 이동 시 접근성으로 출력되는 Description 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 에 선택상자 이동 시 접근성 관련 속성값 출력여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Chrome,Windows nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 선택상자 이동 시 접근성으로 출력되는 Label 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 에 선택상자 이동 시 접근성으로 출력되는 Role 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilityrole" />
+      <Property name="autosizecol" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridCellAutoSize" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Column 의 너비가 자동조절 되는 방식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="autosizecol" />
+      <Property name="autosizerow" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridCellAutoSize" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Row 의 높이가 자동조절 되는 방식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="autosizerow" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 배경 영역을 설정하는 속성입니다." csspropertyname="background" csselementname="" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 모서리 모양을 설정하는 속성입니다." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 에 그림자 효과를 설정하는 속성입니다." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+      <Property name="calendarautoselect" group="CellCalendar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;date&quot; 일 경우 편집영역이 활성화 되면 텍스트를 전체선택 할지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendarautoselect" />
+      <Property name="calendarbuttonsize" group="CellCalendar" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Calendar 형식일 때 표시되는 드롭다운 버튼의 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendarbuttonsize" />
+      <Property name="calendardateformat" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" defaultvalue="yyyy-MM-dd ddd" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 displaytype 속성값이 &quot;date&quot; 또는 &quot;calendarcontrol&quot; 일 경우 표시되는 날짜의 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendardateformat" />
+      <Property name="calendardaysize" group="CellCalendar" subgroup="" refreshinfo="" edittype="Number2" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Calendar 형식일 때 팝업으로 표시되는 달력의 각 날짜영역크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendardaysize" />
+      <Property name="calendardisplaynulltext" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 calendardisplaynulltype 속성값이 &quot;nulltext&quot; 일 경우 Cell 에 표시할 텍스트를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendardisplaynulltext" />
+      <Property name="calendardisplaynulltype" group="CellCalendar" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridDateNullType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 displaytype 속성값이 &quot;date&quot; 또는 &quot;calendarcontrol&quot; 이고 바인드 된 값이 &quot;null&quot; 인 경우 SubCell 에 표시되는 값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendardisplaynulltype" />
+      <Property name="calendareditformat" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" defaultvalue="yyyy-MM-dd" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;date&quot; 일 경우 입력받는 날짜의 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendareditformat" />
+      <Property name="calendarheadformat" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Calendar 형식일 때 팝업달력의 상단에 표시되는 년/월의 순서를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendarheadformat" />
+      <Property name="calendarheadheight" group="CellCalendar" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Calendar 형식일 때 팝업달력에서 년/월이 표시되는 Head 영역의 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendarheadheight" />
+      <Property name="calendarpopupsize" group="CellCalendar" subgroup="" refreshinfo="" edittype="Number2" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Calendar 형식일 때 팝업으로 표시되는 달력의 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendarpopupsize" />
+      <Property name="calendarpopuptype" group="CellCalendar" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CalendarPopupType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Calendar 형식일 때 팝업달력이 표시되는 방식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendarpopuptype" />
+      <Property name="calendarshowmonthspin" group="CellCalendar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Calendar 형식일 때 팝업달력의 상단에 월 변경버튼을 표시할 지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendarshowmonthspin" />
+      <Property name="calendarshowyearspin" group="CellCalendar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Calendar 형식일 때 팝업달력의 상단에 연도 변경버튼을 표시할 지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendarshowyearspin" />
+      <Property name="calendartype" group="CellCalendar" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridDateType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Calendar 형식일 때 Calendar가 화면에 표시되는 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendartype" />
+      <Property name="calendarusetrailingday" group="CellCalendar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Calendar 형식일 때 팝업달력의 시작/끝 여백에 전/후 달의 날짜를 표시할지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendarusetrailingday" />
+      <Property name="calendarweekformat" group="CellCalendar" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Calendar 형식일 때 팝업달력에 요일이 표시되는 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendarweekformat" />
+      <Property name="checkboxsize" group="CellCheckBox" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 CheckBox 형식일 때 CheckBox 의 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="checkboxsize" />
+      <Property name="col" group="Position" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 정의된 Column 인덱스 값이 저장된 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="col" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 텍스트의 색상을 설정하는 속성입니다." csspropertyname="color" csselementname="" normalpropertyname="color" />
+      <Property name="colspan" group="Position" subgroup="" refreshinfo="" edittype="Number" defaultvalue="1" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 병합된 Column 의 갯수가 저장된 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="colspan" />
+      <Property name="comboautoselect" group="CellCombo" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 편집영역이 활성화 되면 텍스트를 전체선택 할지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="comboautoselect" />
+      <Property name="combobuttonsize" group="CellCombo" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 표시되는 드롭다운 버튼의 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="combobuttonsize" />
+      <Property name="combocodecol" group="CellCombo" subgroup="" refreshinfo="" edittype="InnerColumnID" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 Cell 의 아이템 리스트에서 코드값으로 사용될 Column 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="combocodecol" />
+      <Property name="combodatacol" group="CellCombo" subgroup="" refreshinfo="" edittype="InnerColumnID" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 Cell 의 아이템 리스트에서 데이터값으로 사용될 Column 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="combodatacol" />
+      <Property name="combodataset" group="CellCombo" subgroup="" refreshinfo="" edittype="InnerDatasetID" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 SubCell 의 아이템 리스트를 구성할 DataSet 의 ID를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="combodataset" />
+      <Property name="combodisplaynulltext" group="CellCombo" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 바인드 된 값과 일치하는 아이템이 없을 경우 표시할 텍스트를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="combodisplaynulltext" />
+      <Property name="combodisplaynulltype" group="CellCombo" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridComboNullType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 바인드 된 값과 일치하는 아이템이 없을 경우 표시되는 값의 종류를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="combodisplaynulltype" />
+      <Property name="combodisplayrowcount" group="CellCombo" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 아이템 리스트에 한번에 표시될 아이템의 갯수를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="combodisplayrowcount" />
+      <Property name="comboimemode" group="CellCombo" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ImeModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="SubCell 이 Combo 형식일 때 편집창에서 사용될 기본 입력 언어를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="comboimemode" />
+      <Property name="comboitemheight" group="CellCombo" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 아이템 리스트의 각 행높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="comboitemheight" />
+      <Property name="combopopupsize" group="CellCombo" subgroup="" refreshinfo="" edittype="Number2" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 팝업으로 표시되는 아이템 리스트의 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="combopopupsize" />
+      <Property name="combopopuptype" group="CellCombo" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="PopupType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 아이템 리스트가 표시되는 방식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="combopopuptype" />
+      <Property name="comboscrollbarsize" group="CellCombo" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 아이템 리스트에 표시되는 스크롤바의 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="comboscrollbarsize" />
+      <Property name="combotype" group="CellCombo" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ComboType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 Combo 형식일 때 동작되는 방법을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="combotype" />
+      <Property name="controlautosizingtype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="both" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="FitToContents" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 컨트롤 형식일 때 SubCell 크기에 맞게 컨트롤 크기를 자동 조절할 지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="controlautosizingtype" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 Style을 XCSS 파일에 정의된 class로 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 영역내에서 표시될 마우스 포인터의 종류를 설정하는 속성입니다." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+      <Property name="displaytype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridDispType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 편집상태가 아닐 때 바인드 된 데이터가 화면에 표시되는 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="displaytype" />
+      <Property name="editautoselect" group="CellEdit" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;text&quot; 일 경우 편집영역이 활성화 될 때 텍스트를 전체선택 할지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="editautoselect" />
+      <Property name="editimemode" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ImeModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="SubCell 의 edittype 속성값이 &quot;text&quot; 일 경우 Cell 의 편집창에서 사용될 기본 입력 언어를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="editimemode" />
+      <Property name="editinputfilter" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputFilterType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;text&quot; 일 경우 SubCell 편집 시 입력을 제한 시킬 문자를 타입별로 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="editinputfilter" />
+      <Property name="editinputmode" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;text&quot; 일 경우 SubCell 에 입력되는 영문자를 대문자 또는 소문자로 변환할지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="editinputmode" />
+      <Property name="editinputtype" group="CellEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;text&quot; 일 경우 SubCell 에 입력을 허용할 문자를 타입별로 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="editinputtype" />
+      <Property name="editmaxlength" group="CellEdit" subgroup="" refreshinfo="" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;text&quot; 일 경우 SubCell 에 입력할 수 있는 문자열의 최대길이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="editmaxlength" />
+      <Property name="edittype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridEditType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 포커스를 받아 표시되는 편집창의 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="edittype" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 의 사용가능 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 에서 이벤트를 발생시킬지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="expandchar" group="CellExpand" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 확장버튼에 표시될 텍스트를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="expandchar" />
+      <Property name="expandimage" group="CellExpand" subgroup="" refreshinfo="" edittype="ImageID" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 확장버튼에 텍스트와 함께 표시할 이미지의 위치 경로를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="expandimage" />
+      <Property name="expandshow" group="CellExpand" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="hide" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="GridExpandShow" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 오른쪽에 확장버튼을 표시할지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="expandshow" />
+      <Property name="expandsize" group="CellExpand" subgroup="" refreshinfo="" edittype="Number" defaultvalue="16" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 오른쪽에 표시되는 확장버튼의 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="expandsize" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 text 속성값에 적용할 수식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에서 사용하는 폰트를 설정하는 속성입니다." csspropertyname="font" csselementname="" normalpropertyname="font" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 의 기본 액션을 수행하기 위한 단축키를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl의 고유 식별자를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="imagestretch" group="CellImage" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Stretch" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 크기에 맞게 이미지가 확대/축소되는 방식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="imagestretch" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 에 적용될 InitValue 의 ID 를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="initvalueid" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 문자의 간격(자간)을 설정하는 속성입니다." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+      <Property name="locale" group="Misc." subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LocaleCode" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 적용될 국가 및 언어(locale)를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="locale" />
+      <Property name="maskeditautoselect" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;mask&quot; 일 경우 편집영역이 활성화 될 때 텍스트를 전체선택 할지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="maskeditautoselect" />
+      <Property name="maskeditclipmode" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ClipModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 maskeditformat 속성에 설정된 형식 중 입력하지 않은 마스크에 대한 처리 방법을 결정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="maskeditclipmode" />
+      <Property name="maskeditformat" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;mask&quot; 일 때 입력 받을 문자의 형식을 지정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="maskeditformat" />
+      <Property name="maskeditlimitbymask" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="decimal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LimitByMask" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;mask&quot; 이고 maskedittype 속성값이 &quot;number&quot; 일 때, maskeditformat 속성의 마스크 값이 적용되는 부분을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="maskeditlimitbymask" />
+      <Property name="maskeditmaskchar" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="String" defaultvalue="_" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 maskeditformat 속성에 정의된 마스크 문자에 대응하는 문자를 지정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="maskeditmaskchar" />
+      <Property name="maskedittrimtype" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TrimType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 maskeditformat 속성에 설정된 형식 중 좌우 공백에 대한 처리 방법을 결정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="maskedittrimtype" />
+      <Property name="maskedittype" group="CellMaskEdit" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="MaskEditType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;mask&quot; 일 때 Cell 에 입력되는 값의 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="maskedittype" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 테두리를 설정하는 속성입니다." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 테두리(Border) 안쪽에 표시될 edge 이미지를 설정하는 속성입니다." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 영역의 안쪽 여백을 설정하는 속성입니다." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 텍스트 또는 컨텐츠의 가로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 텍스트에 적용할 효과를 설정하는 속성입니다." csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 텍스트 또는 컨텐츠의 세로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 텍스트가 출력영역보다 길 경우 자동으로 줄바꿈 되도록 설정하는 속성입니다." csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 영역의 투명도를 설정하는 속성입니다." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 의 부모 오브젝트를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="positionstep" />
+      <Property name="progressbarblockgap" group="CellProgressBar" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 displaytype 속성값이 &quot;progressbarcontrol&quot; 일 경우 ProgressBar 의 진행 상태를 표시하는 블럭의 간격을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="progressbarblockgap" />
+      <Property name="progressbarblocksize" group="CellProgressBar" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 displaytype 속성값이 &quot;progressbarcontrol&quot; 일 경우  ProgressBar 의 진행 상태를 표시하는 블럭의 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="progressbarblocksize" />
+      <Property name="progressbardirection" group="CellProgressBar" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="forward" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ProgressBarDirection" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 displaytype 속성값이 &quot;progressbarcontrol&quot; 일 경우 ProgressBar 의 진행 방향을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="progressbardirection" />
+      <Property name="progressbarsmooth" group="CellProgressBar" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 displaytype 속성값이 &quot;progressbarcontrol&quot; 일 경우 ProgressBar 가 표시되는 형태를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="progressbarsmooth" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="row" group="Position" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 밴드내에서 위치하는 Row 인덱스 값이 저장된 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="row" />
+      <Property name="rowspan" group="Position" subgroup="" refreshinfo="" edittype="Number" defaultvalue="1" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 병합된 Sub Row 의 갯수가 저장된 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="rowspan" />
+      <Property name="subcell" group="Position" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="병합(Merge) 된 SubCell 일 때 실제 병합된 SubCell 의 갯수가 저장된 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="subcell" />
+      <Property name="suppress" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 Suppress 기능을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="suppress" />
+      <Property name="suppressalign" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="first" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="SuppressAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 Suppress 기능이 설정되어 있을때 합쳐서 표시되는 텍스트의 위치를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="suppressalign" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="&quot;&quot;" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="탭키 입력으로 컴포넌트간 포커스를 이동할 때 CellSubCellControl 이(가) 포커스를 받을 지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시될 텍스트를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="textareaautoselect" group="CellTextArea" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;textarea&quot; 일 경우 편집영역이 활성화 될 때 텍스트를 전체선택 할지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="textareaautoselect" />
+      <Property name="textareaimemode" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ImeModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="SubCell 의 edittype 속성값이 &quot;textarea&quot; 일 경우 SubCell 의 편집창에서 사용될 기본 입력 언어를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="textareaimemode" />
+      <Property name="textareainputfilter" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputFilterType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;textarea&quot; 일 경우 SubCell 편집 시 입력을 제한 시킬 문자를 타입별로 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="textareainputfilter" />
+      <Property name="textareainputmode" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputModeType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;textarea&quot; 일 경우 SubCell 에 입력되는 영문자를 대문자 또는 소문자로 변환할지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="textareainputmode" />
+      <Property name="textareainputtype" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="InputType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;textarea&quot; 일 경우 SubCell 에 입력을 허용할 문자를 타입별로 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="textareainputtype" />
+      <Property name="textareamaxlength" group="CellTextArea" subgroup="" refreshinfo="" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;textarea&quot; 일 경우 SubCell 에 입력할 수 있는 문자열의 최대길이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="textareamaxlength" />
+      <Property name="textareascrollbarsize" group="CellTextArea" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 TextArea 형식일 때 표시되는 스크롤바의 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="textareascrollbarsize" />
+      <Property name="textareascrollbartype" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollBarType" enuminfo2="ScrollBarType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;textarea&quot; 일 경우 편집창에 스크롤바가 표시되는 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="textareascrollbartype" />
+      <Property name="textareascrolltype" group="CellTextArea" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="both" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 edittype 속성값이 &quot;textarea&quot; 일 경우 편집창에서 사용되는 스크롤의 종류를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="textareascrolltype" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser" description="SubCell 영역에 마우스 포인터를 올려 놓았을 때 표시되는 풍선도움말을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="SubCell 에서 풍선도움말이 표시될 위치를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="treecheck" group="CellTreeItem" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 트리 형식일 때 체크박스의 값으로 사용될 Column을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="treecheck" />
+      <Property name="treelevel" group="CellTreeItem" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 트리 형식일 때 트리의 레벨값으로 사용될 Column을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="treelevel" />
+      <Property name="treestartlevel" group="CellTreeItem" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 트리 형식일 때 트리 레벨의 시작값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="treestartlevel" />
+      <Property name="treestate" group="CellTreeItem" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="true" bind="true" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 이 트리 형식일 때 트리의 상태값으로 사용될 Column을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="treestate" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 이(가) 화면에 표시될지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 텍스트의 단어 사이 간격을 설정하는 속성입니다." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 배경 영역을 설정하는 속성입니다." csspropertyname="background" csselementname="" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 모서리 모양을 설정하는 속성입니다." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="CellSubCellControl 에 그림자 효과를 설정하는 속성입니다." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 텍스트의 색상을 설정하는 속성입니다." csspropertyname="color" csselementname="" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 영역내에서 표시될 마우스 포인터의 종류를 설정하는 속성입니다." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에서 사용하는 폰트를 설정하는 속성입니다." csspropertyname="font" csselementname="" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 문자의 간격(자간)을 설정하는 속성입니다." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-background-odd" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 Row 인덱스가 홀수일 때 SubCell 의 배경 영역을 설정하는 속성입니다." csspropertyname="-nexa-background-odd" csselementname="" normalpropertyname="" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 테두리를 설정하는 속성입니다." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+        <Property name="-nexa-color-odd" group="" subgroup="-nexa-color-odd" edittype="" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 Row 인덱스가 홀수일 때 SubCell 에 표시되는 텍스트의 색상을 설정하는 속성입니다." csspropertyname="-nexa-color-odd" csselementname="" normalpropertyname="" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 의 테두리(Border) 안쪽에 표시될 edge 이미지를 설정하는 속성입니다." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 영역의 안쪽 여백을 설정하는 속성입니다." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 텍스트 또는 컨텐츠의 가로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 텍스트에 적용할 효과를 설정하는 속성입니다." csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 텍스트 또는 컨텐츠의 세로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 텍스트가 출력영역보다 길 경우 자동으로 줄바꿈 되도록 설정하는 속성입니다." csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 영역의 투명도를 설정하는 속성입니다." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="SubCell 에 표시되는 텍스트의 단어 사이 간격을 설정하는 속성입니다." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="selected" control="true" default="false" deprecated="false" unused="false" group="userstatus" />
+      <Status name="blinked" control="true" default="true" deprecated="false" unused="false" group="userstatus" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+      <Status name="readonly" control="true" default="false" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="cellbutton" classname="nexacro.Button" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellcalendar" classname="nexacro.Calendar" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellcheckbox" classname="nexacro.CheckBox" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellcombo" classname="nexacro.Combo" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="celledit" classname="nexacro.Edit" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellmaskedit" classname="nexacro.MaskEdit" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellprogressbar" classname="nexacro.ProgressBar" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="celltextarea" classname="nexacro.TextArea" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="celltreeitem" classname="nexacro._CellTreeItemControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="subcell" classname="nexacro.CellSubCellControl" unusedstatus="" deprecated="true" unused="true" group="" subgroup="" />
+      <Control name="cellimage" classname="nexacro._ImageAreaControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="cellexpandbutton" classname="nexacro.Button" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="celltreeline" classname="nexacro.CellTreeLineControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Integer" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 특정 이벤트에 검색된 함수를 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Integer" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="CellSubCellControl.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모가 동일한 컴포넌트 중 CellSubCellControl 이(가) 화면에 한단계 앞에 표시되게 합니다.">
+        <Syntax text="CellSubCellControl.bringToPrev()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="clearEventHandler( strEventID )">
+          <Return type="Integer" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="스크립트에서 동적으로 생성한 CellSubCellControl 을(를) 삭제하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.destroy()">
+          <Return type="Boolean" description="CellSubCellControl 이(가) 정상적으로 삭제되면 &quot;true&quot;를 반환합니다.&#xA;CellSubCellControl 이(가) 정상적으로 삭제되지 않으면 &quot;false&quot;를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Integer" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 에 실제 표시되는 문자열 값을 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getDisplayText()">
+          <Return type="String" description="CellSubCellControl 에 실제 화면에 표시되는 텍스트를 반환합니다.&#xA;&#xA;expr 속성값에 의해 text 속성값이 화면에 변경되어 표시되면 실제 화면에 표시된 값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Integer" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getFocus()">
+          <Return type="Object" description="포커스를 가진 자식 컴포넌트가 있으면 해당 컴포넌트를 반환합니다.&#xA;포커스를 가진 자식 컴포넌트가 없으면 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모 컴포넌트의 top을 기준으로 CellSubCellControl 의 bottom 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getOffsetBottom();">
+          <Return type="Number" description="CellSubCellControl 의 bottom 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getOffsetHeight();">
+          <Return type="Number" description="CellSubCellControl 의 높이를 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모 컴포넌트의 left를 기준으로 CellSubCellControl 의 left 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getOffsetLeft();">
+          <Return type="Number" description="CellSubCellControl 의 left 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모 컴포넌트의 left를 기준으로 CellSubCellControl 의 right 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getOffsetRight();">
+          <Return type="Number" description="CellSubCellControl 의 right 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모 컴포넌트의 top을 기준으로 CellSubCellControl 의 top 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getOffsetTop();">
+          <Return type="Number" description="CellSubCellControl 의 top 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getOffsetWidth();">
+          <Return type="Number" description="CellSubCellControl 의 너비를 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 bottom 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getPixelBottom();">
+          <Return type="Number" description="CellSubCellControl 의 bottom 속성값을 픽셀단위로 반환합니다.&#xA;bottom 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getPixelHeight();">
+          <Return type="Number" description="CellSubCellControl 의 height 속성값을 픽셀단위로 반환합니다.&#xA;height 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 left 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getPixelLeft();">
+          <Return type="Number" description="CellSubCellControl 의 left 속성값을 픽셀단위로 반환합니다.&#xA;left 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 right 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getPixelRight();">
+          <Return type="Number" description="CellSubCellControl 의 right 속성값을 픽셀단위로 반환합니다.&#xA;right 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 top 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getPixelTop();">
+          <Return type="Number" description="CellSubCellControl 의 top 속성값을 픽셀단위로 반환합니다.&#xA;top 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.getPixelWidth();">
+          <Return type="Number" description="CellSubCellControl 의 width 속성값을 픽셀단위로 반환합니다.&#xA;width 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 위치와 크기를 변경하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.move( nLeft, nTop [, nWidth, nHeight [, nRight, nBottom]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Integer" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 우하단을 기준으로 CellSubCellControl 의 bottom 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다.&#xA;nTop, nHeight 값을 모두 설정했을 경우 nRight 값은 무시됩니다" />
+            <Argument name="nHeight" type="Integer" in="false" out="false" option="false" variable="false" description="CellSubCellControl 의 height 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다." />
+            <Argument name="nLeft" type="Integer" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 좌상단을 기준으로 CellSubCellControl 의 left 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다." />
+            <Argument name="nRight" type="Integer" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 우하단을 기준으로 CellSubCellControl 의 right 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다.&#xA;nLeft, nWidth 값을 모두 설정했을 경우 nRight 값은 무시됩니다." />
+            <Argument name="nTop" type="Integer" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 좌상단을 기준으로 CellSubCellControl 의 top 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다." />
+            <Argument name="nWidth" type="Integer" in="false" out="false" option="false" variable="false" description="CellSubCellControl 의 width 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모가 동일한 컴포넌트 중 인수로 전달된 컴포넌트보다 CellSubCellControl 이(가) 화면에 한단계 뒤에 표시되게 합니다.">
+        <Syntax text="CellSubCellControl.moveToNext( objComp )&#xA;CellSubCellControl.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="기준이 되는 컴포넌트를 오브젝트로 설정합니다." />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="기준이 되는 컴포넌트의 ID를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모가 동일한 컴포넌트 중 인수로 전달된 컴포넌트보다 CellSubCellControl 이(가) 화면에 한단계 앞에 표시되게 합니다.">
+        <Syntax text="CellSubCellControl.moveToPrev( objComp )&#xA;CellSubCellControl.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="기준이 되는 컴포넌트를 오브젝트로 설정합니다." />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="기준이 되는 컴포넌트의 ID를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Integer" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Integer" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 크기를 변경하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.resize( nWidth, nHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Integer" in="false" out="false" option="false" variable="false" description="CellSubCellControl 의 height 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다.&#xA;음수를 설정할 수 없습니다." />
+            <Argument name="nWidth" type="Integer" in="false" out="false" option="false" variable="false" description="CellSubCellControl 의 width 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다.&#xA;음수를 설정할 수 없습니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모가 동일한 컴포넌트 중 CellSubCellControl 이(가) 화면의 제일 뒤에 표시되게 합니다.">
+        <Syntax text="CellSubCellControl.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모가 동일한 컴포넌트 중 CellSubCellControl 이(가) 화면에 한단계 뒤에 표시되게 합니다.">
+        <Syntax text="CellSubCellControl.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Integer" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Integer" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 에 포커스를 주는 메소드입니다.">
+        <Syntax text="CellSubCellControl.setFocus( [bMoveScroll] )">
+          <Return type="Object" description="CellSubCellControl 이(가) 포커스되기 전에 포커스를 가졌던 컴포넌트를 반환합니다.&#xA;포커스를 가진 컴포넌트가 없었거나 메소드 수행이 실패하는 경우에는 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="부모 컴포넌트에 스크롤이 있을 경우 CellSubCellControl 기준으로 스크롤을 이동할지 설정합니다.&#xA;&quot;true&quot; 설정 시 CellSubCellControl 이(가) 화면에 표시되도록 스크롤을 이동시킵니다.&#xA;&quot;false&quot; 설정 시 CellSubCellControl 의 위치에 관계없이 스크롤을 이동시키지 않습니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모 컴포넌트의 top을 기준으로 CellSubCellControl 의 bottom 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 top에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 height 속성값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="CellSubCellControl 의 높이를 픽셀단위로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모 컴포넌트의 left 를 기준으로 CellSubCellControl 의 left 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 left 에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모 컴포넌트의 left 를 기준으로 CellSubCellControl 의 right 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 left 에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="부모 컴포넌트의 top을 기준으로 CellSubCellControl 의 top 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 top에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="CellSubCellControl 의 width 속성값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Object" in="false" out="false" option="false" variable="false" description="CellSubCellControl 의 너비를 픽셀단위로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="스크립트에서 동적으로 생성된 CellSubCellControl 을(를) 화면에 표시하는 메소드입니다.">
+        <Syntax text="CellSubCellControl.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 마우스 왼쪽버튼을 클릭했을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onclick(obj:nexacro.CellSubCellControl,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="CellSubCellControl.oncontextmenu(obj:nexacro.CellSubCellControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 마우스 왼쪽버튼을 더블클릭 했을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.ondblclick(obj:nexacro.CellSubCellControl,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 마우스 왼쪽버튼으로 드래그를 수행했을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.ondrag(obj:nexacro.CellSubCellControl,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 드래그 상태가 되고 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 드래그 상태가 취소되고 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내로 드래그 상태의 마우스 포인터가 들어왔을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.ondragenter(obj:nexacro.CellSubCellControl,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 밖으로 드래그 상태의 마우스 포인터가 나갈 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.ondragleave(obj:nexacro.CellSubCellControl,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 드래그 상태의 마우스 포인터가 움직일 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.ondragmove(obj:nexacro.CellSubCellControl,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 드래그 상태의 마우스 버튼을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.ondrop(obj:nexacro.CellSubCellControl,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 에 키보드로 값이 입력될 때 발생하는 이벤트 입니다.">
+        <Syntax text="CellSubCellControl.oninput(obj:nexacro.CellSubCellControl,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 에 포커스가 있는 상태에서 키보드의 키가 눌렸을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onkeydown(obj:nexacro.CellSubCellControl,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 에 포커스가 있는 상태에서 눌렸던 키보드가 떼어질 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onkeyup(obj:nexacro.CellSubCellControl,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 에서 포커스가 나갈  때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onkillfocus(obj:nexacro.CellSubCellControl,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 마우스 왼쪽버튼을 눌렀을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onlbuttondown(obj:nexacro.CellSubCellControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 눌렸던 마우스 왼쪽버튼을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onlbuttonup(obj:nexacro.CellSubCellControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 마우스의 왼쪽/오른쪽 버튼을 제외한 나머지 버튼이 눌렸을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onmousedown(obj:nexacro.CellSubCellControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내로 마우스 포인터가 들어왔을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onmouseenter(obj:nexacro.CellSubCellControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 밖으로 마우스 포인터가 나갈 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onmouseleave(obj:nexacro.CellSubCellControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 마우스 포인터가 움직일 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onmousemove(obj:nexacro.CellSubCellControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 눌렸던 마우스의 버튼(왼쪽/오른쪽 버튼 제외)을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onmouseup(obj:nexacro.CellSubCellControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 마우스의 휠버튼을 회전했을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onmousewheel(obj:nexacro.CellSubCellControl,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 휠버튼 회전값이 무시되고, 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 휠버튼 회전값이 처리되고, 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl의 위치가 이동했을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onmove(obj:nexacro.CellSubCellControl,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 마우스 오른쪽버튼을 눌렀을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onrbuttondown(obj:nexacro.CellSubCellControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 마우스 오른쪽버튼을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onrbuttonup(obj:nexacro.CellSubCellControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 에 포커스가 들어올 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onsetfocus(obj:nexacro.CellSubCellControl,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl의 크기가 변경됐을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.onsize(obj:nexacro.CellSubCellControl,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 터치를 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.ontouchend(obj:nexacro.CellSubCellControl,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 터치 상태를 유지하며 움직일 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.ontouchmove(obj:nexacro.CellSubCellControl,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="true" requirement="" description="CellSubCellControl 영역 내에서 터치가 시작될 때 발생하는 이벤트입니다.">
+        <Syntax text="CellSubCellControl.ontouchstart(obj:nexacro.CellSubCellControl,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

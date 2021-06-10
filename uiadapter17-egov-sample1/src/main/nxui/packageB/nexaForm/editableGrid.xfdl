@@ -1,0 +1,403 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="test" width="1280" height="720" titletext="New Form">
+    <Layouts>
+      <Layout height="720" mobileorientation="landscape" width="1280">
+        <Grid id="grd01" taborder="0" left="10" top="30" height="316" autofittype="col" autoenter="select" right="10" binddataset="Dataset00" oncellclick="Grid00_oncellclick" onkeyup="edit_input_onkeyup">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="214"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+                <Row size="24" band="summ"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="수익/비용"/>
+                <Cell col="1" text="관"/>
+                <Cell col="2" text="항"/>
+                <Cell col="3" text="목"/>
+                <Cell col="4" text="과"/>
+                <Cell col="5" text="내용"/>
+                <Cell col="6" text="금액"/>
+                <Cell col="7" text="거래일자"/>
+                <Cell col="8" text="작성자"/>
+                <Cell col="9" text="등록일"/>
+              </Band>
+              <Band id="body">
+                <Cell text="bind:profit_cost" displaytype="combocontrol" edittype="combo" combocodecol="codecolumn" combodatacol="datacolumn" combodataset="ds00"/>
+                <Cell col="1" text="bind:big_group" displaytype="combocontrol" edittype="combo" combocodecol="codecolumn" combodatacol="datacolumn" combodataset="ds01"/>
+                <Cell col="2" text="bind:middle_group" displaytype="combocontrol" edittype="combo" combocodecol="codecolumn" combodatacol="datacolumn" combodataset="ds02"/>
+                <Cell col="3" text="bind:small_group" displaytype="combocontrol" edittype="combo" combocodecol="codecolumn" combodatacol="datacolumn" combodataset="ds03"/>
+                <Cell col="4" text="bind:detail_group" displaytype="combocontrol" edittype="combo" combocodecol="codecolumn" combodatacol="datacolumn" combodataset="ds04"/>
+                <Cell col="5" text="bind:comments" displaytype="textareacontrol" edittype="textarea" wordWrap="char"/>
+                <Cell col="6" text="bind:transaction_money"/>
+                <Cell col="7" text="bind:transaction_date"/>
+                <Cell col="8" text="bind:writer"/>
+                <Cell col="9" text="bind:reg_date"/>
+              </Band>
+              <Band id="summary">
+                <Cell/>
+                <Cell col="1"/>
+                <Cell col="2"/>
+                <Cell col="3"/>
+                <Cell col="4"/>
+                <Cell col="5"/>
+                <Cell col="6" expr="dataset.getSum(&quot;transaction_money&quot;)"/>
+                <Cell col="7"/>
+                <Cell col="8"/>
+                <Cell col="9"/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Button id="addBtn" taborder="1" text="추가" left="1090" top="10" width="60" height="20" onclick="addBtn_onclick"/>
+        <Button id="btn01" taborder="2" text="삭제" left="1150" top="10" width="60" height="20" onclick="btn01_onclick"/>
+        <Button id="btn02" taborder="3" text="저장" top="10" height="20" right="10" width="60" onclick="btn02_onclick"/>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="Dataset00">
+        <ColumnInfo>
+          <Column id="profit_cost" type="STRING" size="256"/>
+          <Column id="big_group" type="STRING" size="256"/>
+          <Column id="middle_group" type="STRING" size="256"/>
+          <Column id="small_group" type="STRING" size="256"/>
+          <Column id="detail_group" type="STRING" size="256"/>
+          <Column id="comments" type="STRING" size="256"/>
+          <Column id="transaction_money" type="INT" size="256"/>
+          <Column id="transaction_date" type="DATE" size="256"/>
+          <Column id="writer" type="STRING" size="256"/>
+          <Column id="reg_date" type="DATE" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="profit_cost"/>
+            <Col id="big_group"/>
+            <Col id="middle_group"/>
+            <Col id="small_group"/>
+            <Col id="detail_group"/>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds00">
+        <ColumnInfo>
+          <Column id="codecolumn" type="STRING" size="256"/>
+          <Column id="datacolumn" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="codecolumn">00</Col>
+            <Col id="datacolumn">수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">01</Col>
+            <Col id="datacolumn">비용</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds01">
+        <ColumnInfo>
+          <Column id="codecolumn" type="STRING" size="256"/>
+          <Column id="datacolumn" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="codecolumn">00</Col>
+            <Col id="datacolumn">매출수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">01</Col>
+            <Col id="datacolumn">매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">02</Col>
+            <Col id="datacolumn">외상매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">03</Col>
+            <Col id="datacolumn">선수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">04</Col>
+            <Col id="datacolumn">영업외 수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">05</Col>
+            <Col id="datacolumn">자본금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">06</Col>
+            <Col id="datacolumn">이자수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">07</Col>
+            <Col id="datacolumn">매출원가</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">08</Col>
+            <Col id="datacolumn">사업인건비</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">09</Col>
+            <Col id="datacolumn">계약직</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">10</Col>
+            <Col id="datacolumn">특급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">11</Col>
+            <Col id="datacolumn">고급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">12</Col>
+            <Col id="datacolumn">중급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">13</Col>
+            <Col id="datacolumn">초급기술자</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds02">
+        <ColumnInfo>
+          <Column id="codecolumn" type="STRING" size="256"/>
+          <Column id="datacolumn" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="codecolumn">00</Col>
+            <Col id="datacolumn">매출수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">01</Col>
+            <Col id="datacolumn">매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">02</Col>
+            <Col id="datacolumn">외상매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">03</Col>
+            <Col id="datacolumn">선수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">04</Col>
+            <Col id="datacolumn">영업외 수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">05</Col>
+            <Col id="datacolumn">자본금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">06</Col>
+            <Col id="datacolumn">이자수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">07</Col>
+            <Col id="datacolumn">매출원가</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">08</Col>
+            <Col id="datacolumn">사업인건비</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">09</Col>
+            <Col id="datacolumn">계약직</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">10</Col>
+            <Col id="datacolumn">특급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">11</Col>
+            <Col id="datacolumn">고급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">12</Col>
+            <Col id="datacolumn">중급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">13</Col>
+            <Col id="datacolumn">초급기술자</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds03">
+        <ColumnInfo>
+          <Column id="codecolumn" type="STRING" size="256"/>
+          <Column id="datacolumn" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="codecolumn">00</Col>
+            <Col id="datacolumn">매출수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">01</Col>
+            <Col id="datacolumn">매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">02</Col>
+            <Col id="datacolumn">외상매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">03</Col>
+            <Col id="datacolumn">선수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">04</Col>
+            <Col id="datacolumn">영업외 수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">05</Col>
+            <Col id="datacolumn">자본금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">06</Col>
+            <Col id="datacolumn">이자수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">07</Col>
+            <Col id="datacolumn">매출원가</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">08</Col>
+            <Col id="datacolumn">사업인건비</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">09</Col>
+            <Col id="datacolumn">계약직</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">10</Col>
+            <Col id="datacolumn">특급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">11</Col>
+            <Col id="datacolumn">고급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">12</Col>
+            <Col id="datacolumn">중급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">13</Col>
+            <Col id="datacolumn">초급기술자</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+      <Dataset id="ds04">
+        <ColumnInfo>
+          <Column id="codecolumn" type="STRING" size="256"/>
+          <Column id="datacolumn" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="codecolumn">00</Col>
+            <Col id="datacolumn">매출수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">01</Col>
+            <Col id="datacolumn">매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">02</Col>
+            <Col id="datacolumn">외상매출금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">03</Col>
+            <Col id="datacolumn">선수금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">04</Col>
+            <Col id="datacolumn">영업외 수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">05</Col>
+            <Col id="datacolumn">자본금</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">06</Col>
+            <Col id="datacolumn">이자수익</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">07</Col>
+            <Col id="datacolumn">매출원가</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">08</Col>
+            <Col id="datacolumn">사업인건비</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">09</Col>
+            <Col id="datacolumn">계약직</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">10</Col>
+            <Col id="datacolumn">특급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">11</Col>
+            <Col id="datacolumn">고급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">12</Col>
+            <Col id="datacolumn">중급기술자</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">13</Col>
+            <Col id="datacolumn">초급기술자</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[/************************************************************************************************
+ * CALLBACK 콜백 처리부분(Transaction, Popup)
+ ************************************************************************************************/
+
+/************************************************************************************************
+* TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+
+/************************************************************************************************
+ * 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+this.addBtn_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var rRow = this.Dataset00.addRow();
+	var currDate = new Date();
+	this.Dataset00.setColumn(rRow, "writer", "test1"); // 작성자 나오게 하는방법
+	this.Dataset00.setColumn(rRow, "reg_date", currDate); // 현재시간 나오게 하는 방법
+	trace("rRow ==>" + rRow + " : " + this.Dataset00.saveXML());
+};
+
+this.btn01_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	var rRow = this.Dataset00.deleteRow(this.Dataset00.rowposition);
+	trace("rRow ==>" + rRow + " : " + this.Dataset00.deleteRow());
+};
+
+this.btn02_onclick = function(obj:nexacro.Button,e:nexacro.ClickEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

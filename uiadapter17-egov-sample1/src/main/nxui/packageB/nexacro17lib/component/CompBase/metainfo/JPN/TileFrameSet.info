@@ -1,0 +1,751 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.TileFrameSet">
+    <ObjectInfo inheritance="nexacro.Component" classname="nexacro.TileFrameSet" shorttypename="TileFrameSet" csstypename="TileFrameSet" csscontrolname="" group="Frame" subgroup="" csspseudo="true" container="false" composite="false" tabstop="false" cssstyle="true" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="MainFrameの下に来るFrameとして、アプリケーションの画面配列のための基本単位画面として使用されます。&#xA;&#xA;TileFrameSetは下位にFrameSet、HFrameSet、VFrameSet、TileFrameSet、ChildFrame、TabFrameを繰り返して持つことができる。&#xA;また、水平、垂直方向に自動的に下位Frameが配列できる機能を持っています。" />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="&quot;all&quot;" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="AccessibilityDescReadType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilityrole" />
+      <Property name="all" group="Collection" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetに登録されたFrameを持つ、読み取り専用のプロパティです。" csspropertyname="" csselementname="" normalpropertyname="all" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetの背景領域を設定するプロパティです。" csspropertyname="background" csselementname="" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="TileFrameSetの角の形を設定するプロパティです。" csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="TileFrameSetを表示するための下部の座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetに影効果を設定するプロパティです。" csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetに表示されるテキストの色を設定するプロパティです。" csspropertyname="color" csselementname="" normalpropertyname="color" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのStyleをXCSSファイルに定義されたclassに設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSet領域内で表示されるマウスポインタの種類を設定するプロパティです。" csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetを使用可否を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetでイベントを発生させるか否かを決定するプロパティです。 &#xA;　&#xA;　" csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetで使用するフォントを設定するプロパティです。" csspropertyname="font" csselementname="" normalpropertyname="font" />
+      <Property name="frames" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetに登録された子フレームをCollection形で取得する読み取り専用プロパティです。" csspropertyname="" csselementname="" normalpropertyname="frames" />
+      <Property name="fullframemaximize" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのChild Frameを最大化するときに最小化されたChild Frameが配置される領域を隠すかどうかを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="fullframemaximize" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="TileFrameSetを表示するための高さを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのデフォルトアクションを実行するためのホットキーを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetの一意識別子を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetに適用されるInitValueのIDを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="initvalueid" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetを表示するための左の座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="TileFrameSetに表示される文字の間隔（字間）を設定するプロパティです。" csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minheight" />
+      <Property name="minimizedchildposition" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="bottom" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="MinimizedChildFramePos" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのChild Frameのうち、最小化されたChild Frameが配置される位置を指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="minimizedchildposition" />
+      <Property name="minimizeheight" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのChild Frameを最小化したときのサイズのうち、高さを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="minimizeheight" />
+      <Property name="minimizewidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのChild Frameを最小化したときの、横幅を指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="minimizewidth" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetの名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetの境界線を設定するプロパティです。" csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSet領域の内側の余白を設定するプロパティです。" csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetに表示されるテキストまたはコンテンツの横方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="MultiEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetに表示されるテキストに適用する効果を設定するプロパティです。" csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetに表示される文字列またはコンテンツの縦方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetに表示される文字列が出力領域よりも長い場合、自動改行されるように設定するプロパティです。" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSet領域の透明度を設定するプロパティです。" csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="コンポーネントの親オブジェクトを表示するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="positionstep" />
+      <Property name="progressbardirection" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのStatusBarに表示されるProgressBarの進行方向を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="progressbardirection" />
+      <Property name="progressbargap" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのステータスバーに表示されるプログレスバーの右側領域のサイズを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="progressbargap" />
+      <Property name="progressbarsize" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのステータスバーに表示されるプログレスバーの幅を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="progressbarsize" />
+      <Property name="progressbarsmooth" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="MainFrameのStatusBarに表示されるProgressBarの進行バーが連続した形で表示されるかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="progressbarsmooth" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetを表示するための右側の座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="separatecount" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの一つのRowやColummに表示されるFrameの個数を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="separatecount" />
+      <Property name="separatesize" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの内部のFrameの個別のサイズを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="separatesize" />
+      <Property name="separatetype" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="horizontal" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="FrameSetType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの内部フレームをどんな基準で区分して配置するかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="separatetype" />
+      <Property name="showcascadestatustext" group="Action" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのStatusBarに下位FrameとFormのstatustextプロパティ値を表示するかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="showcascadestatustext" />
+      <Property name="showcascadetitletext" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのTitleBarに下位フレームとフォームのtitletextプロパティ値をすべて表示するかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="showcascadetitletext" />
+      <Property name="showstatusbar" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetにステータスバーを表示するか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="showstatusbar" />
+      <Property name="showtitlebar" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのタイトルバーを表示するか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="showtitlebar" />
+      <Property name="showtitleicon" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのタイトルバーにアイコンを表示するか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="showtitleicon" />
+      <Property name="statusbar" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのstatusbarオブジェクトを持つプロパティです。" csspropertyname="" csselementname="" normalpropertyname="statusbar" />
+      <Property name="statusbarheight" group="Appearance" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのステータスバーの高さを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="statusbarheight" />
+      <Property name="statustext" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのステータスバーに表示する文字列を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="statustext" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="&quot;&quot;" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Tabキーの入力でコンポーネント間のフォーカス移動時に、TileFrameSetのフォーカス受け取り可否を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="tabstop" />
+      <Property name="text" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetに表示される文字列を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="titlebar" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのtitlebarオブジェクトを持つプロパティです。　" csspropertyname="" csselementname="" normalpropertyname="titlebar" />
+      <Property name="titlebarbuttongap" group="Appearance" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのタイトルバーに表示されるシステムのボタンの間隔を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="titlebarbuttongap" />
+      <Property name="titlebarbuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="" description="TileFrameSetのタイトルバーに表示されるシステムのボタンのサイズを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="titlebarbuttonsize" />
+      <Property name="titlebarheight" group="Appearance" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのタイトルバーの高さを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="titlebarheight" />
+      <Property name="titletext" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetのタイトルバーに表示する文字列を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="titletext" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ツールチップを表示する方式を指定するプロパティです。　" csspropertyname="" csselementname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetを表示するための上部の座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TileFrameSetが画面に表示されるか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="TileFrameSetを表示するための幅を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="TileFrameSetに表示されるテキストの単語の間の間隔を設定するプロパティです。" csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TileFrameSetの背景領域を設定するプロパティです。" csspropertyname="background" csselementname="" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="TileFrameSetの角の形を設定するプロパティです。" csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TileFrameSetに影効果を設定するプロパティです。" csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TileFrameSetに表示されるテキストの色を設定するプロパティです。" csspropertyname="color" csselementname="" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="" description="TileFrameSet領域内で表示されるマウスポインタの種類を設定するプロパティです。" csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TileFrameSetで使用するフォントを設定するプロパティです。" csspropertyname="font" csselementname="" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="TileFrameSetに表示される文字の間隔（字間）を設定するプロパティです。" csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TileFrameSetの境界線を設定するプロパティです。" csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TileFrameSetの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TileFrameSet領域の内側の余白を設定するプロパティです。" csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetに表示されるテキストまたはコンテンツの横方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="MultiEnum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetに表示されるテキストに適用する効果を設定するプロパティです。" csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" defaultvalue="middle" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetに表示される文字列またはコンテンツの縦方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetに表示される文字列が出力領域よりも長い場合、自動改行されるように設定するプロパティです。" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TileFrameSet領域の透明度を設定するプロパティです。" csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="TileFrameSetに表示されるテキストの単語の間の間隔を設定するプロパティです。" csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="deactivate" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="titlebar" classname="nexacro.TitleBarControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="statusbar" classname="nexacro.StatusBarControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したFrameをTileFrameSetの子フレームに追加するメソッドです。">
+        <Syntax text="TileFrameSet.addChild( strChildID, objFrame )">
+          <Return type="Number" description="追加された子フレームのインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="子として追加するフレームのオブジェクトを設定します。" />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="子として追加するフレームのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetの特定イベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="TileFrameSet.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="関数を検索してTileFrameSetの特定のイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="TileFrameSet.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されない場合は、上位の領域に検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数の名前を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetの警告ダイアログボックスを表示するメソッドです。">
+        <Syntax text="TileFrameSet.alert( strText )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="ダイアログボックスに表示する文字列を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="TileFrameSet.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetの選択ダイアログボックスを表示するメソッドです。">
+        <Syntax text="TileFrameSet.confirm( strText [,strCaption [,strType]] )">
+          <Return type="Boolean" description="表示されたダイアログボックスで、「OK」ボタンを選択すると、「true」を返します。&#xA;表示されたダイアログボックスで、「キャンセル」ボタンを選択すると、「false」を返します。" />
+          <Arguments>
+            <Argument name="strCaption" type="String" in="false" out="false" option="false" variable="false" description="ダイアログボックスのTitleBarに表示する文字列を設定します。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="ダイアログボックスに表示する文字列を設定します。" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="ダイアログボックスの左側の領域に表示されるアイコンの種類を文字列に設定します。&#xA;&#xA;「error」設定時、赤い 「X」アイコンが表示されます。&#xA;「question」設定時、疑問符（「？」）の形のアイコンが表示されます。&#xA;「warning」設定時、黄色の背景に感嘆符（「！」）の形のアイコンが表示されます。&#xA;「information」設定時、青色の背景に感嘆符（「！」）の形のアイコンが表示されます。&#xA;&#xA;値を設定しない場合は、アイコンを表示しません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したTileFrameSetを削除するメソッドです。">
+        <Syntax text="TileFrameSet.destroy()">
+          <Return type="Boolean" description="TileFrameSetが正常に削除されると、「true」を返します。&#xA;TileFrameSetが正常に削除されないと、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="TileFrameSet.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントで検索しようとするハンドラ関数のインデックスを返します。&#xA;検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getActiveFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetの子フレームの有効状態であるFrameオブジェクトを返すメソッドです。">
+        <Syntax text="TileFrameSet.getActiveFrame() ;">
+          <Return type="Object" description="TileFrameSetの子フレームの有効状態のFrameオブジェクトを返します。&#xA;TileFrameSetの子フレームの有効状態のFrameがない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TileFrameSetに実際に表示される文字列の値を返すメソッドです。">
+        <Syntax text="TileFrameSet.getDisplayText()">
+          <Return type="String" description="TileFrameSetに実際の画面に表示される文字列を返します。&#xA;&#xA;exprプロパティ値によりtextプロパティ値が画面に変更されて表示されると、実際の画面に表示される値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="TileFrameSet.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;インデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アクセシビリティインターフェイスが実行されるときに、キー入力が処理される前に先に発生されるイベントです。">
+        <Syntax text="TileFrameSet.getFocus()">
+          <Return type="Object" description="true를 리턴하면, 해당 key에 대한 onkeydown(onkeyup?)、onchar event가 발생되지 않습니다. &#xD;&#xA;&#xD;&#xA;c" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの位置情報のbottomプロパティのピクセル値を取得するメソッドです。">
+        <Syntax text="TileFrameSet.getOffsetBottom();">
+          <Return type="Number" description="ピクセル(pixel)単位の値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのheight位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="TileFrameSet.getOffsetHeight();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのleft位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="TileFrameSet.getOffsetLeft();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのright位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="TileFrameSet.getOffsetRight();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのtop位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="TileFrameSet.getOffsetTop();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのwidth位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="TileFrameSet.getOffsetWidth();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOwnerFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetが所属する親Frameを返すメソッドです。">
+        <Syntax text="TileFrameSet.getOwnerFrame()">
+          <Return type="Object" description="TileFrameSetが所属する親Frameオブジェクトを返します。&#xA;TileFrameSetが所属するFrameがない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのbottom位置情報のピクセル値を取得するメソッドです。&#xA;　">
+        <Syntax text="TileFrameSet.getPixelBottom();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのheight位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="TileFrameSet.getPixelHeight();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのleft位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="TileFrameSet.getPixelLeft();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのright位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="TileFrameSet.getPixelRight();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのtop位置情報のピクセル値を取得するメソッドです。">
+        <Syntax text="TileFrameSet.getPixelTop();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのwidth情報のピクセル値を取得するメソッドです。">
+        <Syntax text="TileFrameSet.getPixelWidth();">
+          <Return type="Number" description="ピクセル(pixel)単位値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトでTileFrameSetを動的に生成した後に初期化するメソッドです。">
+        <Syntax text="TileFrameSet.init( strName, nLeft, nTop, nWidth, nHeight [, nRight, nBottom] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="親Frameの右下端を基準にTileFrameSetのbottomプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。&#xA;nTop、nHeight値をすべて設定した場合、nBottom値は無視されます。" />
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="TileFrameSetのheightプロパティ値を設定します。Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="親Frameの左上を基準にTileFrameSetのleftプロパティ値を設定します。Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="親Frameの右下端を基準にTileFrameSetのrightプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。&#xA;nLeft、nWidth値をすべて設定した場合、nRight値は無視されます。" />
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="親Frameの左上を基準にTileFrameSetのtopプロパティ値を設定します。Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="TileFrameSetのwidthプロパティ値を設定します。Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="TileFrameSetのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したFrameをTileFrameSetの子フレームに特定の順序に追加するメソッドです。">
+        <Syntax text="TileFrameSet.insertChild( nIdx, strChildID, objComp )">
+          <Return type="Number" description="追加された子フレームのインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="親フレームに追加する順序を設定します。&#xA;「-1」に設定すると、子フレームの中で一番最後に追加されます。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="子として追加するフレームのオブジェクトを設定します。" />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="子として追加するフレームのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetの位置とサイズを変更するメソッドです。">
+        <Syntax text="TileFrameSet.move( nLeft, nTop [, nWidth, nHeight [, nRight, nBottom]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="TileFrameSetのbottomプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。vTop、vHeight値をすべて設定した場合、vBottom値は無視されます。" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="TileFrameSetのheightプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="TileFrameSetのleftプロパティの値をpixelまたは割合（「％」）単位の数値に設定します。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="TileFrameSetのrightプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。vLeft、vWidth値をすべて設定した場合、vRight値は無視されます。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="TileFrameSetのtopプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="TileFrameSetのwidthプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetに動的に追加されたFrameを削除するメソッドです。">
+        <Syntax text="TileFrameSet.removeChild( strChildID )">
+          <Return type="Object" description="Frameの削除に成功した場合、削除されたFrameのオブジェクトを返します。&#xA;Frameの削除に失敗した場合、「null」を返します。" />
+          <Arguments>
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="削除する子FrameのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="TileFrameSet.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="TileFrameSet.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのサイズを変更するメソッドです。">
+        <Syntax text="TileFrameSet.resize( nWidth, nHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Integer" in="false" out="false" option="false" variable="false" description="変更する縦サイズです。" />
+            <Argument name="nWidth" type="Integer" in="false" out="false" option="false" variable="false" description="変更される横のサイズです。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="TileFrameSet.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="TileFrameSet.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="TileFrameSetを有効にして、フォーカスを与えるメソッドです。">
+        <Syntax text="TileFrameSet.setFocus()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのparent left、topを基準にしてbottom値を設定します。">
+        <Syntax text="TileFrameSet.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="数値です。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのparent left、topを基準にしてheight値を設定します。　">
+        <Syntax text="TileFrameSet.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="数値です。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのparent left、topを基準にしてleftの値を設定します。">
+        <Syntax text="TileFrameSet.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="数値です。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetのparent left、topを基準にしてrightの値を設定します。">
+        <Syntax text="TileFrameSet.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="数値です。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの親コンポーネントleft、topの位置を基準にしてtopの値を設定するメソッドでス。">
+        <Syntax text="TileFrameSet.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="数値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの親コンポーネントleft、topに位置を基準にしてwidth値を設定するメソッドです。">
+        <Syntax text="TileFrameSet.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Object" in="false" out="false" option="false" variable="false" description="数値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したTileFrameSetを画面に表示するメソッドです">
+        <Syntax text="TileFrameSet.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onactivate" group="" deprecated="false" unused="false" requirement="" description="TileFrameSetが有効になったときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onactivate(obj:nexacro.TileFrameSet,e:nexacro.ActivateEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ActivateEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeclose" group="Event" deprecated="false" unused="false" requirement="" description="TileFrameSetが終了する前に発生するイベントです。">
+        <Syntax text="TileFrameSet.onbeforeclose(obj:nexacro.TileFrameSet,e:nexacro.CloseEventInfo);">
+          <Return type="String" description="イベントの返り値として、文字列設定の際にTileFrameSet終了のための確認ウィンドウが表示されます。&#xA;返り値に設定した文字列が終了のための確認ウィンドウに使用されます。&#xA;&#xA;イベントの返り値を省略したり、「null」、「undefined」、「empty string」に設定すると確認ウィンドウが表示されません。" />
+          <Arguments>
+            <Argument name="e" type="CloseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの領域内でマウス左ボタンをクリックしたときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onclick(obj:nexacro.TileFrameSet,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclose" group="Event" deprecated="false" unused="false" requirement="" description="Xcomponentが終了するときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onclose(obj:nexacro.TileFrameSet,e:nexacro.CloseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="CloseEventInfo" in="false" out="false" option="false" variable="false" description="イベントオブジェクト." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="TileFrameSet.oncontextmenu(obj:nexacro.TileFrameSet,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの領域内でマウスの左ボタンをダブルクリックしたときに発生するイベントです。">
+        <Syntax text="TileFrameSet.ondblclick(obj:nexacro.TileFrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondeactivate" group="" deprecated="false" unused="false" requirement="" description="TileFrameSetが有効になったときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onactivate(obj:nexacro.TileFrameSet,e:nexacro.ActivateEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ActivateEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSet領域内でマウス左ボタンを押してドラッグを行ったときに発生するイベントです。">
+        <Syntax text="TileFrameSet.ondrag(obj:nexacro.TileFrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="コンポーネント領域にドラッグされたコンポーネントが入ったときに発生するイベントです。">
+        <Syntax text="TileFrameSet.ondragenter(obj:nexacro.TileFrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントを処理するかどうかの結果。trueを返すと上位コンポーネントでイベントが発生しません。&#xA;デフォルト値 : false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="コンポーネント領域にドラッグされたコンポーネントが解除されるときに発生するイベントです。　">
+        <Syntax text="TileFrameSet.ondragleave(obj:nexacro.TileFrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントを処理するかどうかを指定、trueを返すと上位コンポーネントでイベントが発生しません。&#xA;デフォルト値 : false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの領域内でドラッグ状態のマウスポインタが移動したときに発生するイベントです。">
+        <Syntax text="TileFrameSet.ondragmove(obj:nexacro.TileFrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの領域内でドラッグ状態のマウスボタンを離したときに発生するイベントです。">
+        <Syntax text="TileFrameSet.ondrop(obj:nexacro.TileFrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetにキーボードで値が入力されたときに発生するイベントです。">
+        <Syntax text="TileFrameSet.oninput(obj:nexacro.TileFrameSet,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetにフォーカスがある状態でキーボードのキーが押されたときに発生するイベントです。&#xA;　">
+        <Syntax text="TileFrameSet.onkeydown(obj:nexacro.TileFrameSet,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として&quot;true&quot;を返す場合、上位のコンポーネントにイベントが伝播されません。&#xA;イベントの返り値として&quot;false&quot;を返す場合、上位のコンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetにフォーカスがある状態で、押下されていたキーが外されたときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onkeyup(obj:nexacro.TileFrameSet,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetでフォーカスが出るときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onkillfocus(obj:nexacro.TileFrameSet,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの領域内でマウスの左ボタンを押したときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onlbuttondown(obj:nexacro.TileFrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの領域内で押下されたマウスの左ボタンを離したときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onlbuttonup(obj:nexacro.TileFrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="マウスの左ボタン/右ボタンを除いた他のボタンが押されたときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onmousedown(obj:nexacro.TileFrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベント処理の指定、trueを返すと上位コンポーネントでイベントが発生しません。　&#xA;デフォルト値：false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSet領域の中にマウスのカーソルが入ってきたときに発生するイベントです。　">
+        <Syntax text="TileFrameSet.onmouseenter(obj:nexacro.TileFrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントを処理するかどうかを指定。True値を返す場合、上位コンポーネントのonmouseenterイベントが発生しません。&#xD;&#xA;デフォルト値：false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの領域外にマウスポインタが出るときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onmouseleave(obj:nexacro.TileFrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの領域内でマウスポインタが移動するときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onmousemove(obj:nexacro.TileFrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの領域内で押下されたマウスのボタン（左/右ボタンを除く）を離したときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onmouseup(obj:nexacro.TileFrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSet領域内でマウスホイールをスクロールしたときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onmousewheel(obj:nexacro.TileFrameSet,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、、マウスホイールの回転値が無視され、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、ホイールボタンの回転値が処理され、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="" description="TileFrameSetの位置を移動したときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onmove(obj:nexacro.TileFrameSet,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onorientationchange" group="Event" deprecated="false" unused="false" requirement="" description="モバイル機器の画面の向きが変更されたときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onorientationchange(obj:nexacro.TileFrameSet,e:nexacro.OrientationChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="OrientationChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetでマウス右ボタンが押されたときに発生するイベントです。　&#xA;　　">
+        <Syntax text="TileFrameSet.onrbuttondown(obj:nexacro.TileFrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetの領域内でマウスの右ボタンを離したときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onrbuttonup(obj:nexacro.TileFrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TileFrameSetにフォーカスが入るときに発生するイベントです。&#xA;　">
+        <Syntax text="TileFrameSet.onsetfocus(obj:nexacro.TileFrameSet,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="" description="TileFrameSetのサイズが変更されたときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onsize(obj:nexacro.TileFrameSet,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsyscommand" group="Event" deprecated="false" unused="false" requirement="" description="TileFrameSetにシステムコマンドメッセージが入ったときに発生するイベントです。">
+        <Syntax text="TileFrameSet.onsyscommand(obj:nexacro.TileFrameSet,e:nexacro.SysCommandEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位フレームにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位フレームにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「true」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="SysCommandEventInfo" in="false" out="false" option="false" variable="false" description="イベントオブジェクト" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="タッチ終了(アップ)時に発生するイベントです。">
+        <Syntax text="TileFrameSet.ontouchend(obj:nexacro.TileFrameSet,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベント処理可否、trueを返すと上位コンポーネントでイベントが発生しません。&#xD;&#xA;デフォルト : false" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="タッチ中(ムーブ)に発生するイベントです。">
+        <Syntax text="TileFrameSet.ontouchmove(obj:nexacro.TileFrameSet,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベント処理可否、trueを返すと上位コンポーネントでイベントが発生しません。&#xD;&#xA;デフォルト : false" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="タッチ開始(ダウン)時に発生するイベントです。">
+        <Syntax text="TileFrameSet.ontouchstart(obj:nexacro.TileFrameSet,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベント処理可否、trueを返すと上位コンポーネントでイベントが発生しません。&#xA;デフォルト : false" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

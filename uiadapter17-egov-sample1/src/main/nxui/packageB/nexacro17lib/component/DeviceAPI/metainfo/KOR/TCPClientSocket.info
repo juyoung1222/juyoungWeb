@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.TCPClientSocket">
+    <ObjectInfo inheritance="" classname="nexacro.TCPClientSocket" shorttypename="TCPClientSocket" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows nexacro Browser" description="TCP 통신을 사용하여 서버에 연결하여 정보를 송수신할 수 있는 클라이언트 컴포넌트입니다." />
+    <PropertyInfo>
+      <Property name="address" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="연결한 서버의 주소값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="address" />
+      <Property name="errorcode" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="TCPClientSocket 에서 요청된 작업이 실패했을 때 발생한 에러코드값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="errorcode" />
+      <Property name="errormsg" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="TCPClientSocket 에서 요청된 작업이 실패했을 때 발생한 에러메시지값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="errormsg" />
+      <Property name="isopen" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="false" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="서버와 연결된 상태값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="isopen" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="TCPClientSocket 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="port" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="연결된 서버의 Port 값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="port" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="TCPClientSocket 의 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 오브젝트 형태로 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="검색된 함수를 TCPClientSocket 의 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;&#xA;해당 영역에 핸들러 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="TCPClientSocket 의 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 모두 제거할 이벤트의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="연결된 서버에 연결해제를 요청하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.close()">
+          <Return type="Boolean" description="연결해제 요청이 정상적으로 실행되었으면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;연결해제 요청이 정상적으로 실행되지 않았으면 &quot;false&quot; 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="TCPClientSocket 의 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 오브젝트 형태로 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="TCPClientSocket 의 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 null 을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;&#xA;인덱스는 &quot;0&quot; 부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="TCP 를 이용하여 서버에 소켓연결을 요청하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.open( strAddress, nPort )">
+          <Return type="Boolean" description="연결요청이 정상적으로 실행되었으면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;연결요청이 정상적으로 실행되지 않았으면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nPort" type="Number" in="false" out="false" option="false" variable="false" description="연결할 서버의 Port 값을 숫자로 설정합니다." />
+            <Argument name="strAddress" type="String" in="false" out="false" option="false" variable="false" description="연결할 서버의 도메인명 또는 IPv4 형식의 IP 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="read" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="연결된 서버에서 데이터를 수신하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.read( nSize [, nTimeout] )">
+          <Return type="Array" description="데이터의 수신 성공여부와 수신데이터를 배열형태로 반환합니다.&#xA;&#xA;배열의 첫번째 원소에 데이터 수신여부를 Boolean 값으로 반환합니다.&#xA;배열의 두번째 원소에 수신된 데이터를 반환합니다." />
+          <Arguments>
+            <Argument name="nSize" type="Number" in="false" out="false" option="false" variable="false" description="수신될 데이터의 최대 크기를 바이트 단위의 숫자로 설정합니다.&#xA;&#xA;설정값은 수신될 데이터의 최대 크기로 적용되며 실제 수신된 데이터는 설정값보다 작을 수 있습니다.&#xA;&#xA;0 을 설정하면 수신 할 데이터가 있는지 검사만 수행합니다.&#xA;음수값을 설정하면 메소드 실행 시 실패로 처리됩니다." />
+            <Argument name="nTimeout" type="Number" in="false" out="false" option="false" variable="false" description="데이터가 수신될 때까지 대기하는 시간을 초단위의 숫자로 설정합니다.&#xA;&#xA;0 이하값을 설정하면 대기시간이 무한대로 적용됩니다.&#xA;&#xA;값을 설정하지 않으면 0 으로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="readLine" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="연결된 서버에서 줄단위로 데이터를 수신하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.readLine( nSize [, nTimeout] )">
+          <Return type="Array" description="데이터의 수신 성공여부와 수신데이터를 배열형태로 반환합니다.&#xA;&#xA;배열의 첫번째 원소에 데이터 수신여부를 Boolean 값으로 반환합니다.&#xA;배열의 두번째 원소에 수신된 데이터를 반환합니다." />
+          <Arguments>
+            <Argument name="nSize" type="Number" in="false" out="false" option="false" variable="false" description="수신될 데이터의 최대 크기를 바이트 단위의 숫자로 설정합니다.&#xA;&#xA;설정값은 수신될 데이터의 최대 크기로 적용되며 실제 수신된 데이터는 설정값보다 작을 수 있습니다.&#xA;설정값보다 수신될 데이터가 클 경우 데이터에 줄바꿈 문자가 없어도 데이터가 수신됩니다.&#xA;&#xA;0 이하값을 설정하면 메소드가 정상적으로 실행되지 않습니다." />
+            <Argument name="nTimeout" type="Number" in="false" out="false" option="false" variable="false" description="데이터가 수신될 때까지 대기하는 시간을 초단위의 숫자로 설정합니다..&#xA;&#xA;수신된 데이터에 줄바꿈 문자가 없을 경우 대기시간이 다시 적용되므로 값 설정에 주의하여야 합니다.&#xA;&#xA;0 이하값을 설정하면 대기시간이 무한대로 적용됩니다.&#xA;값을 설정하지 않으면 0 으로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="TCPClientSocket 의 이벤트에서 전달된 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot; 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 오브젝트 형태로 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="TCPClientSocket 의 이벤트에 정의된 핸들러 함수에서 검색된 함수를 제거하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot; 을 반환합니다.&#xA;&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="TCPClientSocket 의 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot; 을 반환합니다.&#xA;&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 오브젝트 형태로 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="TCPClientSocket 의 이벤트에 정의된 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="write" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="연결된 서버로 데이터를 송신하는 메소드입니다.">
+        <Syntax text="TCPClientSocket.write( strData [, strCharset] )">
+          <Return type="Boolean" description="연결된 서버로 데이터 송신을 시작하면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;연결된 서버로 데이터 송신을 시작하지 못하면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="연결된 서버로 송신 할 데이터의 문자셋을 설정합니다.&#xA;&#xA;값을 설정하지 않으면 시스템의 문자셋이 설정됩니다.&#xA;&#xA;특별히 데이터의 문자셋을 변환할 필요가 있을 때만 설정하는 것을 권장합니다." />
+            <Argument name="strData" type="String" in="false" out="false" option="false" variable="false" description="연결된 서버로 송신 할 데이터를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="ondataarrived" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="연결된 서버에 수신 가능한 데이터가 있을 경우에 발생하는 이벤트입니다.">
+        <Syntax text="TCPClientSocket.ondataarrived(obj:nexacro.TCPClientSocket,e:nexacro.SocketReceiveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SocketReceiveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="TCPClientSocket 에서 요청된 작업이 실패했을 때 발생하는 이벤트입니다.">
+        <Syntax text="TCPClientSocket.onerror(obj:nexacro.TCPClientSocket,e:nexacro.SocketErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SocketErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="TCPClientSocket 에서 요청된 작업이 성공했을 때 발생하는 이벤트입니다.">
+        <Syntax text="TCPClientSocket.onsuccess(obj:nexacro.TCPClientSocket,e:nexacro.SocketEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SocketEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

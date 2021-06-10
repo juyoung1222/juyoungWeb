@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.LiteDBStatement">
+    <ObjectInfo inheritance="" classname="nexacro.LiteDBStatement" shorttypename="LiteDBStatement" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It executes queries." />
+    <PropertyInfo>
+      <Property name="async" group="" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to determine how a LiteDBStatement object performs a requested task." csspropertyname="" csselementname="" normalpropertyname="async" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This property is used to set the identification of a LiteDBStatement." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="ldbconnection" group="" subgroup="" refreshinfo="" edittype="Object" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It sets the LiteDBConnection object used when running executeQuery or executeUpdate." csspropertyname="" csselementname="" normalpropertyname="ldbconnection" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This property is used to specify the name of a LiteDBStatement." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="parameters" group="" subgroup="" refreshinfo="" edittype="Object" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It sets the order of parameters that are used in query sentences." csspropertyname="" csselementname="" normalpropertyname="parameters" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This read-only property holds the parent object of a LiteDBStatement." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="query" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It sets query statements used when running executeQuery or executeUpdate." csspropertyname="" csselementname="" normalpropertyname="query" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to add a handler to a certain event of a LiteDBStatement.">
+        <Syntax text="LiteDBStatement.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="LiteDBStatement.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It closes a running action.">
+        <Syntax text="LiteDBStatement.close()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="executeQuery" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It executes a select query.">
+        <Syntax text="LiteDBStatement.executeQuery([strQuery])">
+          <Return type="Boolean" description="It returns false when an Insert, Update or a Delete sentence is used in strQuery or an invalid letter is used for a Query statement. Otherwise, it returns true." />
+          <Arguments>
+            <Argument name="strQuery" type="String" in="false" out="false" option="false" variable="false" description="Select query sentence to be executed" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="executeUpdate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It performs Insert, Update and Delete query sentences.">
+        <Syntax text="LiteDBStatement.executeUpdate([strQuery])">
+          <Return type="Boolean" description="It returns false when the Select query sentence is used in strQuery or a invalid query sentence is used. Otherwise, it returns true." />
+          <Arguments>
+            <Argument name="strQuery" type="String" in="false" out="false" option="false" variable="false" description="Insert, Update and Delete query sentence to be performed" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method finds a handler in a certain event of a LiteDBStatement and returns the index of the handler.">
+        <Syntax text="LiteDBStatement.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method returns a specific handler from a certain event of a LiteDBStatement by specifying the index number of the handler.">
+        <Syntax text="LiteDBStatement.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to remove a handler in a certain event of a LiteDBStatement.">
+        <Syntax text="LiteDBStatement.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to change the first handler in a certain event of a LiteDBStatement.">
+        <Syntax text="LiteDBStatement.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method finds a function and uses it to replace the first handler in a certain event of a LiteDBStatement.">
+        <Syntax text="LiteDBStatement.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="The onerror event occurs when a task request to a LiteDBStatement object fails.">
+        <Syntax text="LiteDBStatement.onerror(obj:nexacro.LiteDBStatement,e:nexacro.LiteDBErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LiteDBErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It occurs when a requested task in LiteDBStatement is successful.">
+        <Syntax text="LiteDBStatement.onsuccess(obj:nexacro.LiteDBStatement,e:nexacro.LiteDBEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LiteDBEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

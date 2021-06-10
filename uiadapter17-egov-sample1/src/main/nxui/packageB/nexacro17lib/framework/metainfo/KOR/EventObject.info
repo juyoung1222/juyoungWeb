@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.EventObject">
+    <ObjectInfo inheritance="" classname="nexacro.EventObject" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="이벤트를 처리하기 위한 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="length" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="추가된 이벤트 핸들러 함수의 개수를 반환하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="length" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="EventObject 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="이벤트 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="EventObject.addEventHandler(eventid,objFunction,target)">
+          <Return type="Integer" description="성공하면 추가된 인덱스값을 반환하고 실패하면 -1을 반환합니다." />
+          <Arguments>
+            <Argument name="eventid" type="String" in="false" out="false" option="false" variable="false" description="이벤트 ID" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 핸들러 함수" />
+            <Argument name="target" type="Object" in="false" out="false" option="false" variable="false" description="target scope" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="설정된 이벤트 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="EventObject.clearEventHandler(eventid)">
+          <Return type="Integer" description="제거된 이벤트 핸들러 함수의 개수를 반환합니다." />
+          <Arguments>
+            <Argument name="eventid" type="String" in="false" out="false" option="false" variable="false" description="이벤트 ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="copyEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="다른 Event 개체로부터 Handler 함수를 복사합니다.">
+        <Syntax text="EventObject.copyHandler(objSource)">
+          <Return type="Integer" description="복사된 Handler 함수 개수를 반환합니다." />
+          <Arguments>
+            <Argument name="objSource" type="Object" in="false" out="false" option="false" variable="false" description="Handler 함수를 복사할 Event 개체" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="지정한 이벤트 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="EventObject.findEventHandler(eventid,objFunction[,target])">
+          <Return type="Integer" description="지정한 함수의 인덱스" />
+          <Arguments>
+            <Argument name="eventid" type="String" in="false" out="false" option="false" variable="false" description="이벤트 Id" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="찾을 이벤트 핸들러 함수 오브젝트" />
+            <Argument name="target" type="Object" in="false" out="false" option="false" variable="false" description="target scope" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="fireEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="설정된 이벤트 핸들러 함수를 호출하는 메소드입니다.">
+        <Syntax text="EventObject.fireEvent(objFire, objEvent)">
+          <Return type="Variant" description="이벤트 핸들러 함수의 variant가 반환됩니다." />
+          <Arguments>
+            <Argument name="objEvent" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 정보가 포함된 EventInfo 오브젝트" />
+            <Argument name="objFire" type="Object" in="false" out="false" option="false" variable="false" description="이벤트가 발생한 오브젝트" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="EventObject 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="EventObject.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Event에서 지정한 index 위치의 Handler 함수를 반환합니다.">
+        <Syntax text="EventObject.getHandler(nIndex)">
+          <Return type="Object" description="Function Object. 만약 지정한 index 위치가 유효하지 않으면 null을 반환합니다." />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="Handler 함수의 위치 (Zero-based index)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="지정한 index 위치에 Handler 함수를 삽입합니다.">
+        <Syntax text="EventObject.insertHandler(nIndex, objFunction)">
+          <Return type="Integer" description="성공하면 삽입된 Index를 반환하고 실패하면 -1을 반환합니다." />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="삽입할 위치 (Zero-based index)" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="삽입할 함수 개체" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="지정한 인덱스 또는 이벤트 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="EventObject.removeEventHandler(eventid,objFunction,target)">
+          <Return type="Integer" description="제거된 이벤트 핸들러 함수의 개수를 반환합니다. (성공하면 1, 실패하면 0)" />
+          <Arguments>
+            <Argument name="eventid" type="String" in="false" out="false" option="false" variable="false" description="이벤트 ID" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="제거할 이벤트 핸들러 함수 개체" />
+            <Argument name="target" type="Object" in="false" out="false" option="false" variable="false" description="target scope" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="이벤트 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="EventObject.setEventHandler(eventid,objFunction,target)">
+          <Return type="Integer" description="성공하면 변경된 인덱스를 반환하고 실패하면 -1을 반환합니다." />
+          <Arguments>
+            <Argument name="eventid" type="String" in="false" out="false" option="false" variable="false" description="이벤트 ID" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 핸들러 함수" />
+            <Argument name="target" type="Object" in="false" out="false" option="false" variable="false" description="target scope" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

@@ -1,0 +1,239 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExcelExportObject">
+    <ObjectInfo inheritance="" classname="nexacro.ExcelExportObject" shorttypename="ExcelExportObject" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Grid 에 표시되는 내용을 엑셀 또는 한셀 파일로 Export 하는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="commcompress" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Export 를 위해 서버와 통신 시 PostData 를 압축할 지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="commcompress" />
+      <Property name="commdataformat" group="Hidden" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Export 를 위해 데이터를 서버에 전송 시 사용할 통신형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="commdataformat" />
+      <Property name="exporteventtype" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportEventType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Export 진행중 정보가 표시되는 방식과 onprogress 이벤트 발생 방식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="exporteventtype" />
+      <Property name="exportfilename" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Export 완료 후 생성될 파일명을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="exportfilename" />
+      <Property name="exportmessagealert" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Export 전 표시되는 경고 대화상자에 출력될 텍스트를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="exportmessagealert" />
+      <Property name="exportmessagecomplete" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="exportuitype 속성값이 &quot;exportprogress&quot; 일 때 Export 가 완료되면 진행바에 표시될 텍스트를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="exportmessagecomplete" />
+      <Property name="exportmessageprocess" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="exportuitype 속성값이 &quot;exportprogress&quot; 일 때 Export 진행중 진행바에 표시될 텍스트의 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="exportmessageprocess" />
+      <Property name="exportmessageready" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="exportuitype 속성값이 &quot;exportprogress&quot; 일 때 Export 진행 전 진행바에 표시될 텍스트를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="exportmessageready" />
+      <Property name="exporttype" group="Misc." subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ExcelExportObject 을 Export 하여 생성할 파일의 형식을 상수값으로 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="exporttype" />
+      <Property name="exportuitype" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ExportUIType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Export 시 진행상태를 표시하는 방식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="exportuitype" />
+      <Property name="exporturl" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ExcelExportObject 의 Export 를 수행할 서버의 URL을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="exporturl" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ExcelExportObject 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="templatefilename" group="Hidden" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Template로 사용할 File을 지정하는 Property 입니다." csspropertyname="" csselementname="" normalpropertyname="templatefilename" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ExcelExportObject 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="함수를 검색하여 ExcelExportObject 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Export 할 Item을 ExcelExportObject 에 추가하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.addExportItem( constExportItemType, objExportItem )&#xA;ExcelExportObject.addExportItem( constExportItemType, varExportSource, strRange [,strExportHead [,strExportSelect [,strExportMerge [,strExportValue [,strExportImage [,strExceptStyle [,strExportSize]]]]]]])">
+          <Return type="Number" description="ExcelExportObject 에 추가된 Item 의 인덱스를 반환합니다.&#xA;&#xA;추가에 실패하였을 경우 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="Export 대상이 되는 컴포넌트의 종류를 상수값으로 설정합니다.&#xA;&#xA;현재 Grid 만 Export 할 수 있으며 &quot;nexacro.ExportItemTypes.GRID&quot; 로 설정하여야 합니다." />
+            <Argument name="objExportItem" type="Object" in="false" out="false" option="false" variable="false" description="Export 정보를 설정한 ExportItem 오브젝트를 설정합니다." />
+            <Argument name="strExceptStyle" type="String" in="false" out="false" option="false" variable="false" description="Grid 에 적용된 CSS 관련 속성 중 Export 시 제외할 속성을 설정합니다.&#xA;&#xA;&quot;none&quot; 설정 시 Export 에서 제외되는 속성이 없습니다.&#xA;&quot;align&quot; 설정 시 Align 관련 -nexa-text-align, -nexa-vertical-align 속성값이 Export 에서 제외됩니다.&#xA;&quot;background&quot; 설정 시 background 의 color 관련 속성값이 Export 에서 제외됩니다.&#xA;&quot;color&quot; 설정 시 color 속성값이 Export 에서 제외됩니다.&#xA;&quot;font&quot; 설정 시 font 속성값이 Export 에서 제외됩니다.&#xA;&quot;border&quot; 설정 시 -nexa-border 속성값이 Export 에서 제외됩니다.&#xA;&#xA;각 설정값을 콤마(&quot;,&quot;)로 구분하여 중복 설정할 수 있습니다." />
+            <Argument name="strExportHead" type="String" in="false" out="false" option="false" variable="false" description="Grid 의 Head, Summary 영역에 대한 Export 방식을 설정합니다.&#xA;&#xA;&quot;allband&quot; 설정 시 Head, Summary 영역을 모두 Export 합니다.&#xA;&quot;nohead&quot; 설정 시 Head 영역은 Export 하지 않고, Summary 영역만 Export 합니다.&#xA;&quot;nosumm&quot; 설정 시 Head 영역만 Export 하고, Summary 영역은 Export 하지 않습니다.&#xA;&quot;nohead,nosumm&quot; 설정 시 Head, Summary 영역을 모두 Export 하지 않습니다.&#xA;&#xA;값 생략 시 strExportSelect 값이 &quot;allrecord&quot; 이면 &quot;allband&quot; 로 적용되고, &quot;selectrecord&quot; 이면 &quot;nohead,nosumm&quot; 으로 적용됩니다." />
+            <Argument name="strExportImage" type="String" in="false" out="false" option="false" variable="false" description="Grid 의 Cell 에 설정된 이미지의 Export 방식을 설정합니다.&#xA;&#xA;&quot;none&quot; 설정 시 설정된 이미지 정보를 무시하고 공백으로 Export 합니다.&#xA;&quot;url&quot; 설정 시 설정된 이미지의 위치정보를 URL 형식의 문자열로 Export 합니다.&#xA;&quot;image&quot; 설정 시 설정된 이미지의 위치가 &quot;http://&quot;로 시작하는 인터넷 URL 경로일 경우만 이미지를 그대로 Export 합니다.&#xA;&#xA;값 생략 시 &quot;none&quot; 으로 적용됩니다." />
+            <Argument name="strExportMerge" type="String" in="false" out="false" option="false" variable="false" description="Grid 에서 suppress 속성이 설정된 Cell 의 Export 방식을 설정합니다.&#xA;&#xA;&quot;suppress&quot; 설정 시 suppress 된 결과대로 1 개 Cell 만 값을 Export 합니다.&#xA;나머지 Row 의 해당 Cell 은 병합되지 않으며 모두 공백으로 처리됩니다.&#xA;&#xA;&quot;nosuppress&quot; 설정 시 suppress 된 결과를 무시하고 각 Row 에 모두 값을 Export 합니다." />
+            <Argument name="strExportSelect" type="String" in="false" out="false" option="false" variable="false" description="Grid 에서 선택영역에 대한 Export 방식을 설정합니다.&#xA;&#xA;&quot;allrecord&quot; 설정 시 선택영역에 관계없이 모든 Row 를 Export 합니다.&#xA;&quot;selectrecord&quot; 설정 시 선택된 Row 만 Export 합니다.&#xA;&#xA;값 생략 시 &quot;allrecord&quot; 로 적용됩니다." />
+            <Argument name="strExportSize" type="String" in="false" out="false" option="false" variable="false" description="Grid Cell 의 width, height 속성값을 엑셀에 적용할지 설정합니다.&#xA;&#xA;&quot;width&quot; 설정 시 너비를 동일하게 Export 합니다.&#xA;&quot;height&quot; 설정 시 높이를 동일하게 Export 합니다.&#xA;&quot;both&quot; 설정 시 너비와 높이를 동일하게 Export 합니다.&#xA;&#xA;값 생략 시 &quot;width&quot;로 적용됩니다." />
+            <Argument name="strExportValue" type="String" in="false" out="false" option="false" variable="false" description="엑셀 파일로 Export 시킬 경우 Export 되는 내용과 형식을 설정합니다.&#xA;&#xA;&quot;allstyle&quot; 설정 시 선택된 영역이 있을 경우 선택에 의해 변경된 속성은 Export 되지 않습니다.&#xA;&quot;selectstyle&quot; 설정 시 선택된 영역이 있을 경우 선택에 의해 변경된 속성도 Export 됩니다.&#xA;&#xA;값 설정 시 value, format, calendardateformat, font, color, background(color), -nexa-text-aign, -nexa-vertical-align, -nexa-border(style,color) 속성이 Export 됩니다.&#xA;background 속성에 Gradation 이 지정된 경우 Gradation의 중간값(50%위치값) 색상으로 Export 됩니다.&#xA;&#xA;값 생략 시 &quot;allstyle&quot; 로 적용됩니다." />
+            <Argument name="strRange" type="String" in="false" out="false" option="false" variable="false" description="&quot;시트명!셀영역&quot; 또는 &quot;셀영역&quot; 형태로 오브젝트 내용이 Export 되는 위치를 지정합니다." />
+            <Argument name="varExportSource" type="Object" in="false" out="false" option="false" variable="false" description="Export 대상이 되는 컴포넌트를 오브젝트로 설정합니다.&#xA;&#xA;현재 Grid 만 Export 할 수 있으며 &quot;this.Grid00&quot; 형태로 설정하여야 합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ExcelExportObject 에 추가된 모든 Item 을 삭제하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.clear()">
+          <Return type="Number" description="삭제된 Item 의 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearExportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 Item 만 삭제하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.clearExportItems(constExportItemType)">
+          <Return type="Number" description="삭제된 Item의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="삭제대상이 되는 Item 의 타입을 상수값으로 설정합니다.&#xA;&#xA;현재 Grid 만 Item 으로 추가 할 수 있으므로 &quot;nexacro.ExportItemTypes.GRID&quot; 로 설정하여야 합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="count" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ExcelExportObject 에 등록된 Item 의 갯수를 반환하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.count()">
+          <Return type="Number" description="모든 item의 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="countExportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 Item 갯수를 반환하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.countExportItems(constExportItemType)">
+          <Return type="Number" description="지정한 타입의 item 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="갯수를 확인하려는 Item 의 타입을 상수값으로 설정합니다.&#xA;&#xA;현재 Grid 만 Item 으로 추가 할 수 있으므로 &quot;nexacro.ExportItemTypes.GRID&quot; 로 설정하여야 합니다" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="delExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 특정 Item 을 삭제하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.delExportItem(constExportItemType,nItemIndex)">
+          <Return type="Boolean" description="Item 삭제에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;파라미터가 유효하지 않거나 Item 삭제에 실패하면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="삭제대상이 되는 Item 의 타입을 상수값으로 설정합니다.&#xA;&#xA;현재 Grid 만 Item 으로 추가 할 수 있으므로 &quot;nexacro.ExportItemTypes.GRID&quot; 로 설정하여야 합니다." />
+            <Argument name="nItemIndex" type="Number" in="false" out="false" option="false" variable="false" description="삭제하려는 Item 의 인덱스를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="스크립트에서 동적으로 생성한 ExcelExportObject 을(를) 삭제하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.destroy()">
+          <Return type="Boolean" description="ExcelExportObject 이(가) 정상적으로 삭제되면 &quot;true&quot;를 반환합니다.&#xA;ExcelExportObject 이(가) 정상적으로 삭제되지 않으면 &quot;false&quot;를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="exportData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ExcelExportObject 의 모든 Item 을 Export 하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.exportData([strParam, dsParam, bOrgValue]);">
+          <Return type="Number" description="Export 요청에 성공한 Item 의 갯수를 반환합니다.&#xA;Export 시킬 Item 이 없는 경우 &quot;0&quot; 을 반환합니다.&#xA;파라미터가 유효하지 않은 값일 경우 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="bOrgValue" type="Boolean" in="false" out="false" option="false" variable="false" description="Grid 에서 Export 할 value 속성을 설정합니다.&#xA;&#xA;&quot;true&quot; 설정 시 Cell 에 바인드된 DataSet 의 value 를 Export 합니다.&#xA;&quot;false&quot; 설정 시 Cell 에 표시되는 텍스트를 value 로 Export 합니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="dsParam" type="Object" in="false" out="false" option="false" variable="false" description="개발 환경에 따라 서버에 추가적인 기능 구현을 위해 Dataset 을 설정하는 Export 확장기능입니다. &#xA;&#xA;&quot;Param_DataSet=export_DataSet&quot; 과 같은 형태로 설정합니다." />
+            <Argument name="strParam" type="String" in="false" out="false" option="false" variable="false" description="서버 통신시에 파라미터로 전달 될 값을 설정합니다.&#xA;&#xA;사용자 확장기능에 해당하며 DB key 와 같은 값을 전달할 때 사용합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="exportItems" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 Item 만 Export 하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.exportItems(constExportItemType)">
+          <Return type="Number" description="Export 요청에 성공한 Item 의 갯수를 반환합니다.&#xA;Export 시킬 Item 이 없는 경우 &quot;0&quot; 을 반환합니다.&#xA;파라미터가 유효하지 않은 값일 경우 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="Export 하려는 Item 의 타입을 상수값으로 설정합니다.&#xA;&#xA;현재 Grid 만 Item 으로 추가 할 수 있으므로 &quot;nexacro.ExportItemTypes.GRID&quot; 로 설정하여야 합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ExcelExportObject 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ExcelExportObject 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ExcelExportObject 에서 지정한 타입의 특정 Item 을 반환하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.getExportItem(constExportItemType,nItemIndex)">
+          <Return type="Object" description="지정된 인덱스에 해당하는 Item 을 ExportItem 오브젝트로 반환합니다.&#xA;지정된 인덱스에 해당하는 Item 이 없을 경우 &quot;null&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="반환 받으려는 Item 의 타입을 상수값으로 설정합니다.&#xA;&#xA;현재 Grid 만 Item 으로 추가 할 수 있으므로 &quot;nexacro.ExportItemTypes.GRID&quot; 로 설정하여야 합니다." />
+            <Argument name="nItemIndex" type="Number" in="false" out="false" option="false" variable="false" description="반환 받으려는 Item 의 인덱스를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ExcelExportObject 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ExcelExportObject 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ExcelExportObject 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="ExcelExportObject 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setExportItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Export 할 Item을 ExcelExportObject 의 특정 위치에 추가하는 메소드입니다.">
+        <Syntax text="ExcelExportObject.setExportItem( constExportItemType,nItemIndex,objExportItem )">
+          <Return type="Boolean" description="Item 추가에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;파라미터가 유효하지 않거나 Item 추가에 실패하면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="constExportItemType" type="Constant" in="false" out="false" option="false" variable="false" description="Export 대상이 되는 컴포넌트의 종류를 상수값으로 설정합니다.&#xA;&#xA;현재 Grid 만 Export 할 수 있으므로 &quot;nexacro.ExportItemTypes.GRID&quot; 로 설정하여야 합니다" />
+            <Argument name="nItemIndex" type="Number" in="false" out="false" option="false" variable="false" description="추가하려는 Item 이 위치할 인덱스를 설정합니다." />
+            <Argument name="objExportItem" type="Object" in="false" out="false" option="false" variable="false" description="Export 정보를 설정한 ExportItem 오브젝트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Export 도중 오류가 생겼을때 발생하는 이벤트입니다.">
+        <Syntax text="ExcelExportObject.onerror(obj:nexacro.ExcelExportObject,e:nexacro.ExcelExportErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelExportErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onprogress" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Export 도중 진행상태에 따라 발생하는 이벤트입니다.">
+        <Syntax text="ExcelExportObject.onprogress(obj:nexacro.ExcelExportObject,e:nexacro.ExcelExportProgressEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelExportProgressEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="모든 Export 가 완료되었을때 발생하는 이벤트입니다.">
+        <Syntax text="ExcelExportObject.onsuccess(obj:nexacro.ExcelExportObject,e:nexacro.ExcelExportEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelExportEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

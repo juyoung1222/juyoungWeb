@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.VirtualFile">
+    <ObjectInfo inheritance="" classname="nexacro.VirtualFile" shorttypename="VirtualFile" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ローカルシステムのファイルを読み書きするために使用される仮想ファイルオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="async" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="同期/非同期で動作するかどうかを選択するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="async" />
+      <Property name="filename" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ファイル名を表示するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="filename" />
+      <Property name="fullpath" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="VirtualFileにオープンされたファイルの完全なパス情報を持つ読み取り専用のプロパティです。" csspropertyname="" csselementname="" normalpropertyname="fullpath" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="VirtualFileの一意識別子を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="VirtualFileの名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="VirtualFileの親オブジェクトを持つプロパティです。" csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="path" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="モバイル機器でオープンされたファイルのパス情報を持っているプロパティです。&#xD;&#xA;　" csspropertyname="" csselementname="" normalpropertyname="path" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="VirtualFileの特定のイベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="VirtualFile.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、そのハンドラ関数のインデックスを返します。&#xA;通常追加されていない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベント発生時に実行されるハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="特定のイベントに登録されたハンドラ関数を削除するメソッドです。">
+        <Syntax text="VirtualFile.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントから削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="モバイル機器で指定されたファイルを閉じるメソッドです。">
+        <Syntax text="VirtualFile.close()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="指定されたファイルをコピーするVirtualFileオブジェクトの静的メソッドです。">
+        <Syntax text="VirtualFile.copy( strSrc, strDest );">
+          <Return type="Boolean" description="パラメータが省略されたり許可されない文字を使用した場合には、「false」を返します。&#xA;&#xA;それ以外の通常の場合には、「true」を返します。" />
+          <Arguments>
+            <Argument name="strDest" type="String" in="false" out="false" option="false" variable="false" description="コピーして生成されるファイル名をパスと一緒に設定します。&#xA;&#xA;絶対パスまたはAliasを使用して設定します。" />
+            <Argument name="strSrc" type="String" in="false" out="false" option="false" variable="false" description="コピーする元ファイル名をパスと一緒に設定します。&#xA;&#xA;絶対パスまたはAliasを使用して設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="createDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="ディレクトリを生成する静的メソッドです。">
+        <Syntax text="VirtualFile.createDirectory( strPath, [bAllCreate] )">
+          <Return type="Boolean" description="メソッドを呼び出すかどうかを返します。" />
+          <Arguments>
+            <Argument name="bAllCreate" type="Boolean" in="false" out="false" option="false" variable="false" description="bAllCreate：path中間に存在しないdirectoryをすべて生成するかどうか(デフォルト値：false)" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="ディレクトリパス名を指定します。&#xA;a. &quot;C:\\tobe_dir\\xplatform_test&quot;のように絶対パスで与えられる場合もあります。 &#xA;b. &quot;my_tobeDir&quot;のように与えられる場合は、マイドキュメントの場所にディレクトリを作成します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="ディレクトリを削除する静的メソッドです。">
+        <Syntax text="VirtualFile.deleteDirectory( strPath, [bAllChild] )">
+          <Return type="Boolean" description="メソッドを呼び出すかどうかです。" />
+          <Arguments>
+            <Argument name="bAllChild" type="Boolean" in="false" out="false" option="false" variable="false" description="bAllChild：すべてのサブファイル/ディレクトリを削除するかどうか(デフォルト値：false)" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="ディレクトリパス名を指定します。&#xA;a. &quot;C:\\Tobe_dir\\xplatform91&quot;のように絶対パス名を指定できます。 &#xA;b. &quot; my_tobeDir&quot; のようなルートパスの「マイドキュメント」のパスに基づいて、該当ディレクトリを削除します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="VirtualFileの特定のイベントのハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="VirtualFile.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントで検索しようとするハンドラ関数のインデックスを返します。&#xA;検索しようとするハンドラ関数が存在しない場合「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="VirtualFileの特定のイベントに指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="VirtualFile.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="指定されたインデックスのハンドラ関数オブジェクトを返します。&#xA;指定されたインデックスにハンドラ関数が存在しない場合、 &quot;null&quot;を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得するハンドラ関数のインデックスを設定します。&#xA;インデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するるイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で指定されたパスのファイルリストを取得するメソッドです。">
+        <Syntax text="VirtualFile.getFileList( strPath, strSearchExpr[, constOption] )">
+          <Return type="Boolean" description="strPath、strSearchExprが省略されるか、strPathにパスとして使用できない文字が含まれた場合、またはconstOptionに無効な値が使用された場合にのみ、false値を返します。それ以外の場合はtrueを返します。" />
+          <Arguments>
+            <Argument name="constOption" type="Constant" in="false" out="false" option="false" variable="false" description="検索オプションの重複して指定可能、&quot;|&quot;文字で区切る。(Defualt：AsyncVFile.findAll)&#xD;&#xA;複数選択不可(AsyncVFile.findCaseless除く)&#xD;&#xA;&#xD;&#xA;AsyncVFile.findAll 0x0001&#xD;&#xA;すべてのファイルとサブディレクトリを対象に検索します。&#xD;&#xA;&#xD;&#xA;AsyncVFile.findFileOnly 0x0002&#xD;&#xA;ファイルのみを対象に検索します。&#xD;&#xA;&#xD;&#xA;AsyncVFile.findDirectoryOnly 0x0003&#xD;&#xA;サブティレクトリのみを対象に検索します。&#xD;&#xA;&#xD;&#xA;AsyncVFile.findCaseless 0x0010&#xD;&#xA;大文字と小文字を区分しません。" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="対象パス&#xD;&#xA;- ％USERAPP％=アプリケーションで割り当てられた空間、他のアプリケーションにアクセスできません。&#xD;&#xA;（iOS、Android使用可能。）&#xD;&#xA;&#xD;&#xA;- ％SD_CARD％=モバイル機器のSDメモリーカード、他のアプリケーションにアクセスできます。&#xD;&#xA;（iOS使用不可。）" />
+            <Argument name="strSearchExpr" type="String" in="false" out="false" option="false" variable="false" description="検索条件。正規表現を使用します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFileSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="filenameプロパティに指定されたファイルのサイズを返すメソッドです。">
+        <Syntax text="VirtualFile.getFileSize()">
+          <Return type="Boolean" description="ファイルサイズを求められない場合には false、ファイルサイズを正常に求められる場合には trueを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isExist" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="指定されたファイルまたはフォールだが存在しているかどうかを確認するメソッドです。">
+        <Syntax text="VirtualFile.isExist(strPath)">
+          <Return type="Boolean" description="strPathが省略されたり、strPathのパスとしては使用できない文字が含まれた場合にのみfalse値を、そうでなければtrueを返します。" />
+          <Arguments>
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="検査する対象ファイルまたはパス&#xD;&#xA;- %USERAPP% = アプリケーションで割り当てられた空間。他のアプリケーションにアクセス不可。&#xD;&#xA;- %SD_CARD% = モバイル機器のSDメモリカード。他のアプリケーションにアクセス可能。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="モバイル機器で指定されたファイルを条件に合わせてオープンするメソッドです。">
+        <Syntax text="VirtualFile.open( strFileName ,constOptions )">
+          <Return type="Boolean" description="有効でないOption値を使用した場合にはfalse値を返し、そうでなければtrueを返します。&#xA;絶対パスの使用時にfalseを返します。" />
+          <Arguments>
+            <Argument name="constOptions" type="Object" in="false" out="false" option="false" variable="false" description="重複して指定可能、 &quot;|&quot;文字で区切られます。&#xD;&#xA;&#xD;&#xA;VirtualFile.openRead&#x9;0x0001&#x9;&#xD;&#xA;読み取り専用であるファイルを開く際に使用。&#xD;&#xA;ファイルが存在しない場合、ファイルを開くことができません。&#xD;&#xA;&#xD;&#xA;VirtualFile.openWrite&#x9;0x0002&#x9;&#xD;&#xA;書き込み専用でファイルを生成します。&#xD;&#xA;ファイルが存在するかどうかに関係なく、ファイルを生成します。&#xD;&#xA;&#xD;&#xA;VirtualFile.openAppend&#x9;0x0010&#x9;&#xD;&#xA;追加専用に存在するファイルを開く際に使用。&#xD;&#xA;ファイルが存在しない場合は、ファイルを作成し、ファイルが開かれた場合は、ファイルポインタを最後の位置に移動します。(読み取り/書き込み可能)&#xD;&#xA;&#xD;&#xA;VirtualFile.openCreate&#x9;0x1000&#x9;&#xD;&#xA;ファイルを開くときにファイルがない場合に、ファイルを作成して開く際に使用。ファイルが存在すると、存在するファイルが開かれます。&#xD;&#xA;&#xD;&#xA;VirtualFile.openText&#x9;0x0100&#x9;&#xD;&#xA;テキストファイルを開く時に使用。&#xD;&#xA;&#xD;&#xA;VirtualFile.openBinary&#x9;0x0200&#x9;&#xD;&#xA;バイナリファイルを開く時に使用。" />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="対象ファイルの名前、パスを含む&#xD;&#xA;- %USERAPP% = アプリケーションで割り当てられた空間、他のアプリケーションのアクセス不可。&#xD;&#xA;- %SD_CARD% = モバイル機器のSDメモリーカード、他のアプリケーションのアクセス不可。&#xD;&#xA;- FileDialogで返されたVirtualFileを使用する場合は、省略可能。Aliasを利用したパスのみ使えます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="read" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="デバイス上のファイルの内容を読み取るメソッドです。">
+        <Syntax text="VirtualFile.read([nLength [, strCharset]])">
+          <Return type="Boolean" description="nLengthに数字ではない文字が入力される場合にのみfalseを返します。そうではない場合は、trueを返します。" />
+          <Arguments>
+            <Argument name="nLength" type="Number" in="false" out="false" option="false" variable="false" description="読み込むファイルの長さ(Byte)&#xD;&#xA;指定しない場合は、ファイルの全体サイズを取得します。" />
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="読み取るファイルのCharset文字列" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="readLine" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="デバイス上のファイルの内容を読み取るメソッドです。">
+        <Syntax text="VirtualFile.readLine([strDelimeter[, strCharset]])">
+          <Return type="Boolean" description="パラメータとして使用できない文字が入力された場合にはfalseを、そうでなければtrueを返します。" />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="読み取るファイルのCharset文字列" />
+            <Argument name="strDelimeter" type="String" in="false" out="false" option="false" variable="false" description="行区切りの値、指定しない場合は&quot;\ n&quot;、&quot;\ r&quot;で行を区切ります。&#xD;&#xA;結果の処理時にstrDelimeter文字は除外されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="remove" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="モバイル機器からファイルを削除するメソッドです。">
+        <Syntax text="VirtualFile.remove( strFilePath )&#xA;VirtualFile.remove( objVirtualFile )">
+          <Return type="Boolean" description="strFilePathまたはVirtualFileが入力されていない場合と、strFilePathにファイルのパスとして使用できない文字が入力された場合にのみfalseを返します。そうでなければtrueを返します。&#xD;&#xA;　" />
+          <Arguments>
+            <Argument name="objVirtualFile" type="Object" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strFilePath" type="String" in="false" out="false" option="false" variable="false" description="削除するファイルの保存先&#xD;&#xA; - ％USERAPP％=アプリケーションで割り当てられた空間、他のアプリケーションのアクセスは不可です。&#xD;&#xA; - ％SD_CARD％=モバイル機器のSDメモリーカード、他のアプリケーションのアクセスが可能です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="VirtualFileの特定のイベントのハンドラ関数を削除するメソッドです。">
+        <Syntax text="VirtualFile.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功した場合、「1」を返します。&#xA;ハンドラ関数を削除に失敗した場合、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="rename" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="指定されたファイルのパスを変更したり、ファイル名を変更するVirtualFileオブジェクトの静的メソッドです。">
+        <Syntax text="VirtualFile.rename( strOldname, strNewname );">
+          <Return type="Boolean" description="パラメータが省略されたり許可されない文字を使用した場合には、「false」を返します。&#xA;&#xA;それ以外の通常の場合には、「true」を返します。" />
+          <Arguments>
+            <Argument name="strNewname" type="String" in="false" out="false" option="false" variable="false" description="新たに移動される位置とファイル名をパスと一緒に設定します。&#xA;&#xA;絶対パスまたはAliasを使用して設定します。" />
+            <Argument name="strOldname" type="String" in="false" out="false" option="false" variable="false" description="位置移動や名前を変更するファイル名をパスと一緒に設定します。&#xA;&#xA;絶対パスまたはAliasを使用して設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="renameDirectory" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="ディレクトリ名を変更する静的メソッドです。">
+        <Syntax text="VirtualFile.renameDirectory(strPath,strNewName)">
+          <Return type="Boolean" description="メソッドを呼び出すかどうかです。" />
+          <Arguments>
+            <Argument name="strNewName" type="String" in="false" out="false" option="false" variable="false" description="変わるディレクトリ名を指定。&#xA;ディレクトリ名は、「New Folder」のように、ディレクトリ名のみ有効です。" />
+            <Argument name="strPath" type="String" in="false" out="false" option="false" variable="false" description="変更先の場所のディレクトリ名&#xA;a. 絶対パス&quot;C:\\Old_Folder&quot;   &#xA;b. &quot;OldFolder&quot;&#xA;マイドキュメントベースのOldFolder指定可能" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="seek" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="ファイルの読み取り/書き込みアクセス可能な場所を移動するメソッドです。(BOF~EOFの間の値を設定)">
+        <Syntax text="VirtualFile.seek(nOffset[, constOption])">
+          <Return type="Boolean" description="nOffsetとして使用できない文字が入力されたり、省略された場合、または無効なonstOptionの値が使用された場合にのみfalseを返します。そうでなければtrueを返します。" />
+          <Arguments>
+            <Argument name="constOption" type="Constant" in="false" out="false" option="false" variable="false" description="( Default : AsyncVFile.seekCurrent )&#xD;&#xA;AsyncVFile.seekBegin&#x9;0x0000&#x9;ファイルの開始位置&#xD;&#xA;AsyncVFile.seekCurrent&#x9;0x0001&#x9;ファイルの現在位置&#xD;&#xA;AsyncVFile.seekEnd&#x9;0x0002&#x9;ファイルの最終位置" />
+            <Argument name="nOffset" type="Number" in="false" out="false" option="false" variable="false" description="移動値 (Byte), Intタイプ, - (マイナス)値可能" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="VirtualFileの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="VirtualFile.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="代替するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="write" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="デバイスからファイルにデータを保存するメソッドです。">
+        <Syntax text="VirtualFile.write(varData[, strCharset])">
+          <Return type="Boolean" description="varDataが省略された場合にはfalse、そうでなければtrueを返します。" />
+          <Arguments>
+            <Argument name="strCharset" type="String" in="false" out="false" option="false" variable="false" description="記録するファイルのCharSet文字列" />
+            <Argument name="varData" type="Variant" in="false" out="false" option="false" variable="false" description="保存されるデータ(Buffer Object | String)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="仮想ファイルに要求された操作に失敗したとき発生されるイベントです。">
+        <Syntax text="VirtualFile.onerror(obj:nexacro.VirtualFile,e:nexacro.VirtualFileErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VirtualFileErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE10,IE11,Chrome,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="仮想ファイルに要求された作業が成功したときに発生されるイベントです。">
+        <Syntax text="VirtualFile.onsuccess(obj:nexacro.VirtualFile,e:nexacro.VirtualFileEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="VirtualFileEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

@@ -1,0 +1,39 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.0">
+  <Form id="tabPage1" width="1010" height="180" titletext="강사기본정보">
+    <Layouts>
+      <Layout height="180" mobileorientation="landscape" width="1010">
+        <Edit id="edt00" taborder="0" left="70" top="10" width="200" height="20"/>
+        <Static id="sta00" taborder="1" text="강사번호" left="10" top="10" width="60" height="20"/>
+        <Edit id="edt01" taborder="2" left="330" top="10" width="200" height="20"/>
+        <Static id="sta01" taborder="3" text="강사명" left="270" top="10" width="60" height="20"/>
+        <Edit id="edt02" taborder="4" left="70" top="50" width="720" height="20"/>
+        <Static id="sta02" taborder="5" text="주소" left="10" top="50" width="60" height="20"/>
+        <Static id="sta03" taborder="6" text="강사등급" left="270" top="30" width="60" height="20"/>
+        <Static id="sta04" taborder="7" text="전화번호" left="530" top="10" width="60" height="20"/>
+        <Static id="sta05" taborder="8" text="생년월일" left="10" top="30" width="60" height="20"/>
+        <Static id="sta06" taborder="9" text="고용일" left="530" top="30" width="60" height="20"/>
+        <Combo id="cbo00" taborder="10" text="cbo00" left="330" top="30" width="200" height="20"/>
+        <MaskEdit id="msk00" taborder="11" left="70" top="30" width="200" height="20"/>
+        <MaskEdit id="msk01" taborder="12" left="590" top="30" width="200" height="20"/>
+        <MaskEdit id="msk02" taborder="13" left="590" top="10" width="200" height="20"/>
+      </Layout>
+    </Layouts>
+    <Objects/>
+    <Script type="xscript5.1"><![CDATA[/************************************************************************************************
+ * CALLBACK 콜백 처리부분(Transaction, Popup)
+ ************************************************************************************************/
+
+/************************************************************************************************
+* TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+
+/************************************************************************************************
+ * 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/]]></Script>
+  </Form>
+</FDL>

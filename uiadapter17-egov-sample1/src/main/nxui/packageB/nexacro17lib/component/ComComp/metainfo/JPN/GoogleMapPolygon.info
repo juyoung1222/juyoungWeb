@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.GoogleMapPolygon">
+    <ObjectInfo inheritance="" classname="nexacro.GoogleMapPolygon" shorttypename="GoogleMapPolygon" csstypename="GoogleMapPolygon" csscontrolname="" group="Object" subgroup="" csspseudo="false" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapコンポーネントにロードした地図上の特定の領域を表示するときに使用するオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="fillbrushcolor" group="Appearance" subgroup="" refreshinfo="" edittype="Color" defaultvalue="black" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="NamedColor" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="表示されるポリゴンのスタイル情報" csspropertyname="" csselementname="" normalpropertyname="fillbrushcolor" />
+      <Property name="linecolor" group="" subgroup="" refreshinfo="" edittype="Color" defaultvalue="black" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="NamedColor" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapPolygonのlocationdataプロパティに設定された位置を繋ぐ線の色を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="linecolor" />
+      <Property name="linewidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapPolygonのlocationdataプロパティに設定された位置を繋ぐ線の幅を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="linewidth" />
+      <Property name="locationdata" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="ポリゴンを表示するマップ上のポイントの情報(複数設定可能)" csspropertyname="" csselementname="" normalpropertyname="locationdata" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE9,IE10,IE11,Chrome,Safari,Firefox,Android nexacro Browser,iOS nexacro Browser" description="GoogleMapPolygonを地図上に表示するかどうかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="visible" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

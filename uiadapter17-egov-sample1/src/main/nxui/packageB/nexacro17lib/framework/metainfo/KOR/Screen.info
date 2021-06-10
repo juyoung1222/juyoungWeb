@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Screen">
+    <ObjectInfo inheritance="" classname="nexacro.Screen" shorttypename="Screen" csstypename="" csscontrolname="" group="Object" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="어플리케이션에서 사용할 스크린 정보를 관리하는 오브젝트 입니다." />
+    <PropertyInfo>
+      <Property name="id" group="Layout Information" subgroup="" refreshinfo="" edittype="ID" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Screen 의 고유 식별자를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="specifiedlocale" group="Layout Information" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LocaleCode" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="어플리케이션이 실행될 때 Screen 선택의 기준이 되는 로케일(Locale)을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="specifiedlocale" />
+      <Property name="specifiedos" group="Layout Information" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="SystemOs" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="어플리케이션이 실행될 때 Screen 선택의 기준이 되는 OS 를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="specifiedos" />
+      <Property name="type" group="Layout Information" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScreenType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="어플리케이션이 실행될 때 Screen 선택의 기준이 되는 디바이스 유형을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="type" />
+      <Property name="userzoom" group="Layout Information" subgroup="" refreshinfo="" edittype="Boolean" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android Default Web Browser,iOS Default Web Browser" description="모바일 웹브라우저 환경에서 선택된 Screen 의 type 속성값이 &quot;desktop&quot; 인 경우 핀치줌 기능의 사용 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="userzoom" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo />
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

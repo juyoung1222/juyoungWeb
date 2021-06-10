@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.AudioPlayer">
+    <ObjectInfo inheritance="" classname="nexacro.AudioPlayer" shorttypename="AudioPlayer" csstypename="AudioPlayer" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This object is used to play an audio file in a mobile device." />
+    <PropertyInfo>
+      <Property name="currentpos" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="The current pos method contains the current play position(time, unit: ms) of an audio files   on a mobile device." csspropertyname="" csselementname="" normalpropertyname="currentpos" />
+      <Property name="duration" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This read-only property holds the duration of a loaded audio file, specified in milliseconds." csspropertyname="" csselementname="" normalpropertyname="duration" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to set the identification of a AudioPlayer." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to specify the name of a AudioPlayer." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="pan" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to control the balance of the speakers of a mobile device." csspropertyname="" csselementname="" normalpropertyname="pan" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This read-only property holds the parent object of a AudioPlayer." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="repeatcount" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to specify the number of repetitions of playing an audio file in a mobile device." csspropertyname="" csselementname="" normalpropertyname="repeatcount" />
+      <Property name="startpos" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="The startpos property sets a start point of a repeated section on a mobile device." csspropertyname="" csselementname="" normalpropertyname="startpos" />
+      <Property name="stoppos" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="The property &quot;stoppos&quot; sets the end point of a repeat section on a mobile device." csspropertyname="" csselementname="" normalpropertyname="stoppos" />
+      <Property name="url" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This read-only property holds the path to an audio file that is loaded onto an AudioPlayer" csspropertyname="" csselementname="" normalpropertyname="url" />
+      <Property name="volume" group="Appearance" subgroup="" refreshinfo="" edittype="Number" defaultvalue="-1" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="This property is used to set the volume when an audio file is played in a mobile device." csspropertyname="" csselementname="" normalpropertyname="volume" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to add a handler to a certain event of a AudioPlayer.">
+        <Syntax text="AudioPlayer.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to find a function and add it to a certain event of a AudioPlayer as a handler.">
+        <Syntax text="AudioPlayer.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="AudioPlayer.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method finds a handler in a certain event of a AudioPlayer and returns the index of the handler.">
+        <Syntax text="AudioPlayer.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method returns a specific handler from a certain event of a AudioPlayer by specifying the index number of the handler.">
+        <Syntax text="AudioPlayer.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="load" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="The load method is used to load audio files from the designated URL to play them in mobile devices.">
+        <Syntax text="AudioPlayer.load(strUrl)">
+          <Return type="Boolean" description="If strUrl is omitted, it will return &quot;false.&quot; Otherwise, it will return &quot;true.&quot;" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="Route of audio file to load&#xD;&#xA;Alias is used to access route of mobile facilities. &#xD;&#xA;- %USERAPP%: Space which is assigned from application. It can't access other applications. &#xD;&#xA;- %SD_CARD%: SD memory card of mobile facility. It can access other applications." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="movePos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="The movePos method moves the current play position of an audio files to a specific position on a mobile device.">
+        <Syntax text="AudioPlayer.movePos(nPos)">
+          <Return type="Boolean" description="If nPos exists and doesn't exceed the range of the length of an audio file, true is returned. otherwise_if the nPos value is omitted or unusable number or letter is input, false is returned." />
+          <Arguments>
+            <Argument name="nPos" type="Number" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="pause" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="This method is used to pause an audio file played in a mobile device.">
+        <Syntax text="AudioPlayer.pause()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="play" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="This method is used to play an audio file loaded onto a mobile device.">
+        <Syntax text="AudioPlayer.play( [nIntervalTime] )">
+          <Return type="Boolean" description="If this method is successfully executed, it will return &quot;true.&quot;&#xA;&#xA;If this method fails (eg. you set an invalid value for the parameter.), it will return &quot;false.&quot;" />
+          <Arguments>
+            <Argument name="nIntervalTime" type="Object" in="false" out="false" option="false" variable="false" description="It is the interval between onplaying events, set in millisecond.&#xA;&#xA;The valid range is between 200ms and 86,400,000ms.&#xA;If you set a number smaller than 200ms, the onplaying event will not occur." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to remove a handler in a certain event of a AudioPlayer.">
+        <Syntax text="AudioPlayer.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to find a handler in a certain event of a AudioPlayer and remove it.">
+        <Syntax text="AudioPlayer.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid&#xA;If this method fails to find the handler in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resume" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="The resume method resumes an audio file which has been in pause on a mobile device.">
+        <Syntax text="AudioPlayer.resume()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to change the first handler in a certain event of a AudioPlayer.">
+        <Syntax text="AudioPlayer.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method finds a function and uses it to replace the first handler in a certain event of a AudioPlayer.">
+        <Syntax text="AudioPlayer.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="stop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="This method is used for a mobile device to stop playing an audio file.">
+        <Syntax text="AudioPlayer.stop()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="This error occurs when a mobile device fails to process an audio file.">
+        <Syntax text="AudioPlayer.onerror(obj:nexacro.AudioPlayer,e:nexacro.AudioErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AudioErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="The onload event occurs when an audio file is loaded on a mobile device.">
+        <Syntax text="AudioPlayer.onload(obj:nexacro.AudioPlayer,e:nexacro.AudioEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AudioEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmovepos" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="The onmovepos event occurs when the play position of an audio file is changed on a mobile device.">
+        <Syntax text="AudioPlayer.onmovepos(obj:nexacro.AudioPlayer,e:nexacro.AudioEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AudioEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onplay" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="The onplay event occurs when an audio file starts to play on a mobile device.">
+        <Syntax text="AudioPlayer.onplay(obj:nexacro.AudioPlayer,e:nexacro.AudioEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AudioEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onplaying" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="The onplaying event occurs when an audio file is playing on a mobile device.">
+        <Syntax text="AudioPlayer.onplaying(obj:nexacro.AudioPlayer,e:nexacro.AudioEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AudioEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onstop" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="The onstop event occurs when an audio file stops playing on a mobile device.">
+        <Syntax text="AudioPlayer.onstop(obj:nexacro.AudioPlayer,e:nexacro.AudioEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AudioEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

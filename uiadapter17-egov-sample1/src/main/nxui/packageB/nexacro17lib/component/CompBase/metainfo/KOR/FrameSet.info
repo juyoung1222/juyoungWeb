@@ -1,0 +1,756 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.FrameSet">
+    <ObjectInfo inheritance="nexacro.Component" classname="nexacro.FrameSet" shorttypename="FrameSet" csstypename="FrameSet" csscontrolname="" group="Frame" subgroup="" csspseudo="true" container="false" composite="false" tabstop="false" cssstyle="true" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="MainFrame 하위에 오는 Frame 으로써 애플리케이션의 화면 배열을 위한 기본단위 화면으로 사용됩니다. &#xA;&#xA;FrameSet 은 하위에 FrameSet, HFrameSet, VFrameSet, TileFrameSet, ChildFrame 을 반복적으로 가질 수 있습니다. &#xA;또한, 하위 프레임을 자유롭게 배열할 수 있는 기능이 있습니다." />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="&quot;all&quot;" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="AccessibilityDescReadType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilityrole" />
+      <Property name="all" group="Collection" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 에 등록된 Frame 을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="all" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 배경 영역을 설정하는 속성입니다." csspropertyname="background" csselementname="" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="FrameSet 의 모서리 모양을 설정하는 속성입니다." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="FrameSet 을(를) 표시하기 위한 하단 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 에 그림자 효과를 설정하는 속성입니다." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 에 표시되는 텍스트의 색상을 설정하는 속성입니다." csspropertyname="color" csselementname="" normalpropertyname="color" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 Style 을 XCSS 파일에 정의된 class로 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 영역내에서 표시될 마우스 포인터의 종류를 설정하는 속성입니다." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 사용가능 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 에서 이벤트를 발생시킬지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 에서 사용하는 폰트를 설정하는 속성입니다." csspropertyname="font" csselementname="" normalpropertyname="font" />
+      <Property name="frames" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 에 등록된 자식 Frame 들을 Collection 형태로 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="frames" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="FrameSet 을(를) 표시하기 위한 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 기본 액션을 수행하기 위한 단축키를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet의 고유 식별자를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 에 적용될 InitValue 의 ID 를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="initvalueid" />
+      <Property name="layered" group="Hidden" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="layered" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 을(를) 표시하기 위한 좌측 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="FrameSet 에 표시되는 문자의 간격(자간)을 설정하는 속성입니다." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minheight" />
+      <Property name="minimizedchildposition" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="bottom" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="MinimizedChildFramePos" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에서 최소화 된 자식 Frame 이 표시되는 위치를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="minimizedchildposition" />
+      <Property name="minimizeheight" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에서 최소화 된 자식 Frame 의 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="minimizeheight" />
+      <Property name="minimizewidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에서 최소화 된 자식 Frame 의 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="minimizewidth" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 테두리를 설정하는 속성입니다." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 테두리(Border) 안쪽에 표시될 edge 이미지를 설정하는 속성입니다." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 영역의 안쪽 여백을 설정하는 속성입니다." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에 표시되는 텍스트 또는 컨텐츠의 가로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="MultiEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에 표시되는 텍스트에 적용할 효과를 설정하는 속성입니다." csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet에 표시되는 텍스트 또는 컨텐츠의 세로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에 표시되는 텍스트가 출력영역보다 길 경우 자동으로 줄바꿈 되도록 설정하는 속성입니다." csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 영역의 투명도를 설정하는 속성입니다." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 부모 오브젝트를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="positionstep" />
+      <Property name="progressbardirection" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 StatusBar 에 표시되는 ProgressBar 의 진행방향을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="progressbardirection" />
+      <Property name="progressbargap" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 StatusBar 에 표시되는 ProgressBar 의 오른쪽 공간 크기를 설정하는 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="progressbargap" />
+      <Property name="progressbarsize" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 StatusBar 에 표시되는 ProgressBar 의 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="progressbarsize" />
+      <Property name="progressbarsmooth" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="MainFrame 의 StatusBar 에 표시되는 ProgressBar 의 진행바가 연속된 형태로 표시될 지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="progressbarsmooth" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 를 표시하기 위한 우측 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="showcascadestatustext" group="Action" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 StatusBar 에 하위 Frame 과 Form 의 statustext 속성값을 모두 표시할 지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="showcascadestatustext" />
+      <Property name="showcascadetitletext" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 TitleBar 에 하위 Frame 과 Form 의 titletext 속성값을 모두 표시할 지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="showcascadetitletext" />
+      <Property name="showstatusbar" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 에 StatusBar 표시 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="showstatusbar" />
+      <Property name="showtitlebar" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 TitleBar 표시 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="showtitlebar" />
+      <Property name="showtitleicon" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 타이틀바에 아이콘 표시 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="showtitleicon" />
+      <Property name="statusbar" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 상태바 오브젝트를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="statusbar" />
+      <Property name="statusbarheight" group="Appearance" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 StatusBar 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="statusbarheight" />
+      <Property name="statustext" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 StatusBar 에 표시될 텍스트를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="statustext" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="&quot;&quot;" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="탭키 입력으로 컴포넌트간 포커스를 이동할 때 FrameSet 이(가) 포커스를 받을 지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="tabstop" />
+      <Property name="text" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 에 표시될 텍스트를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="titlebar" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 상태바 오브젝트를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="titlebar" />
+      <Property name="titlebarbuttongap" group="Appearance" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 TitleBar 에 표시되는 시스템 버튼의 간격을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="titlebarbuttongap" />
+      <Property name="titlebarbuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="" description="FrameSet 의 타이틀바에 표시되는 시스템 버튼의 크기을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="titlebarbuttonsize" />
+      <Property name="titlebarheight" group="Appearance" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 TitleBar 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="titlebarheight" />
+      <Property name="titletext" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 TitleBar 에 표시될 텍스트를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="titletext" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="XCompenet 에서 풍선도움말이 표시될 위치를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 을(를) 표시하기 위한 상단 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="FrameSet 이(가) 화면에 표시될지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="FrameSet 을(를) 표시하기 위한 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="FrameSet 에 표시되는 텍스트의 단어 사이 간격을 설정하는 속성입니다." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 배경 영역을 설정하는 속성입니다." csspropertyname="background" csselementname="" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="FrameSet 의 모서리 모양을 설정하는 속성입니다." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSet 에 그림자 효과를 설정하는 속성입니다." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSet 에 표시되는 텍스트의 색상을 설정하는 속성입니다." csspropertyname="color" csselementname="" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="" description="FrameSet 영역내에서 표시될 마우스 포인터의 종류를 설정하는 속성입니다." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSet 에서 사용하는 폰트를 설정하는 속성입니다." csspropertyname="font" csselementname="" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="FrameSet 에 표시되는 문자의 간격(자간)을 설정하는 속성입니다." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 테두리를 설정하는 속성입니다." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSet 의 테두리(Border) 안쪽에 표시될 edge 이미지를 설정하는 속성입니다." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSet 영역의 안쪽 여백을 설정하는 속성입니다." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" defaultvalue="left" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에 표시되는 텍스트 또는 컨텐츠의 가로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="MultiEnum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에 표시되는 텍스트에 적용할 효과를 설정하는 속성입니다." csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" defaultvalue="middle" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet에 표시되는 텍스트 또는 컨텐츠의 세로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에 표시되는 텍스트가 출력영역보다 길 경우 자동으로 줄바꿈 되도록 설정하는 속성입니다." csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="FrameSet 영역의 투명도를 설정하는 속성입니다." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="FrameSet 에 표시되는 텍스트의 단어 사이 간격을 설정하는 속성입니다." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="deactivate" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="titlebar" classname="nexacro.TitleBarControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="statusbar" classname="nexacro.StatusBarControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="스크립트로 동적 생성한 Frame 을 FrameSet 의 자식 Frame 으로 추가하는 메소드입니다.">
+        <Syntax text="FrameSet.addChild( strChildID, objFrame )">
+          <Return type="Number" description="추가된 자식 Frame 의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFrame" type="Object" in="false" out="false" option="false" variable="false" description="자식으로 추가될 Frame 의 오브젝트를 설정합니다." />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="자식으로 추가될 Frame 의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="FrameSet.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="함수를 검색하여 FrameSet 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="FrameSet.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 의 경고 대화상자를 표시하는 메소드입니다.">
+        <Syntax text="FrameSet.alert( strText )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="대화상자에 표시할 텍스트를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="arrange" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FraseSet 의 자식 Frame 을 정렬하는 메소드입니다.">
+        <Syntax text="FrameSet.arrange( strArrangeType )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strArrangeType" type="String" in="false" out="false" option="false" variable="false" description="자식 Frame 을 정렬하는 방법을 문자열로 설정합니다.&#xA;&#xA;&quot;cascade&quot; 설정 시 자식 Frame 의 TitleBar 를 기준으로 자식 Frame을 계단식으로 배열합니다.&#xA;&quot;vertical&quot; 설정 시 자식 Frame 을 수직(왼쪽에서 오른쪽으로)으로 배열합니다.&#xA;&quot;horizontal&quot; 설정 시 자식 Frame 을 수평(위에서 아래로)으로 배열합니다.&#xA;&quot;tilevertical&quot; 설정 시 자식 Frame을 수직 바둑판 형태로 배열하고 여백부분은 마지막 행에 표시됩니다.&#xA;&quot;tilehorizontal&quot; 설정 시 자식 Frame을 수평 바둑판 형태로 배열하고 여백부분은 마지막 열에 표시됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="FrameSet.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 의 선택 대화상자를 표시하는 메소드입니다.">
+        <Syntax text="FrameSet.confirm( strText [,strCaption [,strType]] )">
+          <Return type="Boolean" description="표시된 선택 대화상자에서 &quot;확인&quot; 버튼을 선택하면 &quot;true&quot;를 반환합니다.&#xA;표시된 선택 대화상자에서 &quot;취소&quot; 버튼을 선택하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="strCaption" type="String" in="false" out="false" option="false" variable="false" description="대화상자의 TitleBar에 표시할 텍스트를 설정합니다." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="대화상자에 표시할 텍스트를 설정합니다." />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="대화상자의 왼쪽 영역에 표시될 아이콘 종류를 문자열로 설정합니다.&#xA;&#xA;&quot;error&quot; 설정 시 빨간색 &quot;X&quot; 모양 아이콘이 표시됩니다.&#xA;&quot;question&quot; 설정 시 물음표(&quot;?&quot;) 모양 아이콘이 표시됩니다.&#xA;&quot;warning&quot; 설정 시 노랑색 바탕에 느낌표(&quot;!&quot;) 모양 아이콘이 표시됩니다.&#xA;&quot;information&quot; 설정 시 파란색 바탕에 느낌표(&quot;!&quot;) 모양 아이콘이 표시됩니다.&#xA;&#xA;값을 설정하지 않으면 아이콘을 표시하지 않습니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="스크립트에서 동적으로 생성한 FrameSet 을(를) 삭제하는 메소드입니다.">
+        <Syntax text="FrameSet.destroy()">
+          <Return type="Boolean" description="FrameSet 이(가) 정상적으로 삭제되면 &quot;true&quot;를 반환합니다.&#xA;FrameSet 이(가) 정상적으로 삭제되지 않으면 &quot;false&quot;를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getActiveFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 의 자식 Frame 중 활성화 상태인 Frame 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getActiveFrame() ;">
+          <Return type="Object" description="FrameSet 의 자식 Frame 중 활성화 상태일 Frame 오브젝트를 반환합니다.&#xA;FrameSet 의 자식 Frame 중 활성화 상태인 Frame 이 없을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="FrameSet 에 실제 표시되는 문자열 값을 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getDisplayText()">
+          <Return type="String" description="FrameSet 에 실제 화면에 표시되는 텍스트를 반환합니다.&#xA;&#xA;expr 속성값에 의해 text 속성값이 화면에 변경되어 표시되면 실제 화면에 표시된 값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getFocus()">
+          <Return type="Object" description="포커스를 가진 자식 컴포넌트가 있으면 해당 컴포넌트를 반환합니다.&#xA;포커스를 가진 자식 컴포넌트가 없으면 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="부모 컴포넌트의 top을 기준으로 FrameSet 의 bottom 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getOffsetBottom();">
+          <Return type="Number" description="FrameSet 의 bottom 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getOffsetHeight();">
+          <Return type="Number" description="FrameSet 의 높이를 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="부모 컴포넌트의 left를 기준으로 FrameSet 의 left 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getOffsetLeft();">
+          <Return type="Number" description="FrameSet 의 left 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="부모 컴포넌트의 left를 기준으로 FrameSet 의 right 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getOffsetRight();">
+          <Return type="Number" description="FrameSet 의 right 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="부모 컴포넌트의 top을 기준으로 FrameSet 의 top 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getOffsetTop();">
+          <Return type="Number" description="FrameSet 의 top 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getOffsetWidth();">
+          <Return type="Number" description="FrameSet 의 너비를 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOwnerFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 이 소속된 부모 Frame 을 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getOwnerFrame()">
+          <Return type="Object" description="FrameSet 이 소속된 부모 Frame 오브젝트를 반환합니다.&#xA;FrameSet 이 소속된 Frame 이 없을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 bottom 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getPixelBottom();">
+          <Return type="Number" description="FrameSet 의 bottom 속성값을 픽셀단위로 반환합니다.&#xA;bottom 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getPixelHeight();">
+          <Return type="Number" description="FrameSet 의 height 속성값을 픽셀단위로 반환합니다.&#xA;height 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 left 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getPixelLeft();">
+          <Return type="Number" description="FrameSet 의 left 속성값을 픽셀단위로 반환합니다.&#xA;left 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 right 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getPixelRight();">
+          <Return type="Number" description="FrameSet 의 right 속성값을 픽셀단위로 반환합니다.&#xA;right 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 top 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getPixelTop();">
+          <Return type="Number" description="FrameSet 의 top 속성값을 픽셀단위로 반환합니다.&#xA;top 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="FrameSet.getPixelWidth();">
+          <Return type="Number" description="FrameSet 의 width 속성값을 픽셀단위로 반환합니다.&#xA;width 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="스크립트로 FrameSet 을 동적 생성한 후에 초기화하는 메소드입니다.">
+        <Syntax text="FrameSet.init( strName, nLeft, nTop, nWidth, nHeight [, nRight, nBottom] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="부모 Frame 의 우하단을 기준으로 FrameSet 의 bottom 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다.&#xA;nTop, nHeight 값을 모두 설정했을 경우 nBottom 값은 무시됩니다" />
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="FrameSet 의 height 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다." />
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="부모 Frame 의 좌상단을 기준으로 FrameSet 의 left 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다." />
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="부모 Frame 의 우하단을 기준으로 FrameSet 의 right 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다.&#xA;nLeft, nWidth 값을 모두 설정했을 경우 nRight 값은 무시됩니다." />
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="부모 Frame 의 좌상단을 기준으로 FrameSet 의 top 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다." />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="FrameSet 의 width 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다." />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="FrameSet 의 ID를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="스크립트로 동적 생성한 Frame 을 FrameSet 의 자식 Frame 으로 특정 순서에 추가하는 메소드입니다.">
+        <Syntax text="FrameSet.insertChild( nIdx, strChildID, objComp )">
+          <Return type="Number" description="추가된 자식 Frame 의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="부모 Frame 에 추가 될 순서를 설정합니다.&#xA;&quot;-1&quot;로 설정할 경우 자식 Frame 중 제일 마지막에 추가됩니다." />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="자식으로 추가될 Frame 의 오브젝트를 설정합니다." />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="자식으로 추가될 Frame 의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 의 위치와 크기를 변경하는 메소드입니다.">
+        <Syntax text="FrameSet.move( nLeft, nTop [, nWidth, nHeight [, nRight, nBottom]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="FrameSet 의 bottom 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;vTop, vHeight 값을 모두 설정했을 경우 vBottom 값은 무시됩니다." />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="FrameSet 의 height 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다." />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="FrameSet 의 left 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다." />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="FrameSet 의 right 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;vLeft, vWidth 값을 모두 설정했을 경우 vRight 값은 무시됩니다." />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="FrameSet 의 top 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="FrameSet 의 width 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 에 동적으로 추가된 Frame 을 제거하는 메소드입니다.">
+        <Syntax text="FrameSet.removeChild( strChildID )">
+          <Return type="Object" description="Frame 제거에 성공하면 제거된 Frame 의 오브젝트를 반환합니다.&#xA;Frame 제거에 실패하면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="제거할 자식 Frame 의 ID를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="FrameSet.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="FrameSet.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 크기를 변경하는 메소드입니다.">
+        <Syntax text="FrameSet.resize( nWidth, nHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Integer" in="false" out="false" option="false" variable="false" description="FrameSet 의 height 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다.&#xA;음수를 설정할 수 없습니다." />
+            <Argument name="nWidth" type="Integer" in="false" out="false" option="false" variable="false" description="FrameSet 의 width 속성값을 설정합니다.&#xA;Pixel 단위 또는 비율(&quot;%&quot;)로 설정할 수 있습니다.&#xA;음수를 설정할 수 없습니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="FrameSet.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="FrameSet.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="FrameSet 을 활성화하고 포커스를 주는 메소드입니다.">
+        <Syntax text="FrameSet.setFocus()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="부모 컴포넌트의 top을 기준으로 FrameSet 의 bottom 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="FrameSet.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 top에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 height 속성값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="FrameSet.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="FrameSet 의 높이를 픽셀단위로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="부모 컴포넌트의 left 를 기준으로 FrameSet 의 left 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="FrameSet.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 left 에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="부모 컴포넌트의 left 를 기준으로 FrameSet 의 right 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="FrameSet.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 left 에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="부모 컴포넌트의 top을 기준으로 FrameSet 의 top 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="FrameSet.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 top에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 의 width 속성값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="FrameSet.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Object" in="false" out="false" option="false" variable="false" description="FrameSet 의 너비를 픽셀단위로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="스크립트로 동적 생성한 FrameSet 을 화면에 표시하는 메소드입니다">
+        <Syntax text="FrameSet.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onactivate" group="" deprecated="false" unused="false" requirement="" description="FrameSet 이 활성화 되었을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onactivate(obj:nexacro.FrameSet,e:nexacro.ActivateEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ActivateEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeclose" group="Event" deprecated="false" unused="false" requirement="" description="FrameSet 이(가) 종료되기 전에 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onbeforeclose(obj:nexacro.FrameSet,e:nexacro.CloseEventInfo);">
+          <Return type="String" description="이벤트의 리턴값으로 문자열 설정 시 FrameSet 종료를 위한 확인창이 표시됩니다.&#xA;리턴값으로 설정한 문자열이 종료를 위한 확인창에 사용됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하거나 &quot;null&quot;, &quot;undefined&quot;, &quot;empty string&quot; 으로 설정 시 확인창이 표시되지 않습니다." />
+          <Arguments>
+            <Argument name="e" type="CloseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 마우스 왼쪽버튼을 클릭했을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onclick(obj:nexacro.FrameSet,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclose" group="Event" deprecated="false" unused="false" requirement="" description="FrameSet 이(가) 종료될 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onclose(obj:nexacro.FrameSet,e:nexacro.CloseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="CloseEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="FrameSet.oncontextmenu(obj:nexacro.FrameSet,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 마우스 왼쪽버튼을 더블클릭 했을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.ondblclick(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondeactivate" group="" deprecated="false" unused="false" requirement="" description="FrameSet 이 비활성화 되었을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.ondeactivate(obj:nexacro.FrameSet,e:nexacro.ActivateEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ActivateEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 마우스 왼쪽버튼으로 드래그를 수행했을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.ondrag(obj:nexacro.FrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 드래그 상태가 되고 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 드래그 상태가 취소되고 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내로 드래그 상태의 마우스 포인터가 들어왔을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.ondragenter(obj:nexacro.FrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 밖으로 드래그 상태의 마우스 포인터가 나갈 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.ondragleave(obj:nexacro.FrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 드래그 상태의 마우스 포인터가 움직일 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.ondragmove(obj:nexacro.FrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 드래그 상태의 마우스 버튼을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.ondrop(obj:nexacro.FrameSet,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에 키보드로 값이 입력될 때 발생하는 이벤트 입니다.">
+        <Syntax text="FrameSet.oninput(obj:nexacro.FrameSet,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에 포커스가 있는 상태에서 키보드의 키가 눌렸을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onkeydown(obj:nexacro.FrameSet,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에 포커스가 있는 상태에서 눌렸던 키보드가 떼어질 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onkeyup(obj:nexacro.FrameSet,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에서 포커스가 나갈  때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onkillfocus(obj:nexacro.FrameSet,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 마우스 왼쪽버튼을 눌렀을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onlbuttondown(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 눌렸던 마우스 왼쪽버튼을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onlbuttonup(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 마우스의 왼쪽/오른쪽 버튼을 제외한 나머지 버튼이 눌렸을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onmousedown(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내로 마우스 포인터가 들어왔을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onmouseenter(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 밖으로 마우스 포인터가 나갈 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onmouseleave(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 마우스 포인터가 움직일 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onmousemove(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 눌렸던 마우스의 버튼(왼쪽/오른쪽 버튼 제외)을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onmouseup(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 마우스의 휠버튼을 회전했을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onmousewheel(obj:nexacro.FrameSet,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 휠버튼 회전값이 무시되고, 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 휠버튼 회전값이 처리되고, 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="" description="FrameSet의 위치가 이동했을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onmove(obj:nexacro.FrameSet,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onorientationchange" group="Event" deprecated="false" unused="false" requirement="" description="모바일 기기의 화면 방향이 변경되었을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onorientationchange(obj:nexacro.FrameSet,e:nexacro.OrientationChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="OrientationChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 마우스 오른쪽버튼을 눌렀을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onrbuttondown(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 마우스 오른쪽버튼을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onrbuttonup(obj:nexacro.FrameSet,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 에 포커스가 들어올 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onsetfocus(obj:nexacro.FrameSet,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="" description="FrameSet의 크기가 변경됐을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onsize(obj:nexacro.FrameSet,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsyscommand" group="Event" deprecated="false" unused="false" requirement="" description="FrameSet 에 시스템명령(command) 메시지가 들어왔을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.onsyscommand(obj:nexacro.FrameSet,e:nexacro.SysCommandEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 프레임으로 이벤트가 전파되고, 시스템명령이 수행됩니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 프레임으로 이벤트가 전파되지 않고, 시스템명령도 취소됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;true&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="SysCommandEventInfo" in="false" out="false" option="false" variable="false" description="Event Object." />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 터치를 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.ontouchend(obj:nexacro.FrameSet,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 터치 상태를 유지하며 움직일 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.ontouchmove(obj:nexacro.FrameSet,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="FrameSet 영역 내에서 터치가 시작될 때 발생하는 이벤트입니다.">
+        <Syntax text="FrameSet.ontouchstart(obj:nexacro.FrameSet,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

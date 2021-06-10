@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Phone">
+    <ObjectInfo inheritance="" classname="nexacro.Phone" shorttypename="Phone" csstypename="ExternalAPI" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="スマフォンに特化した機能を提供するオブジェクトとしてダイヤルなどの機能を提供します。" />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="makeCall" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="指定された電話番号にダイヤルアップ接続画面を呼び出すメソッドです。">
+        <Syntax text="Phone.makeCall( strPhoneNumber [, bAutoDialing] )">
+          <Return type="Boolean" description="" />
+          <Arguments>
+            <Argument name="bAutoDialing" type="Boolean" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strPhoneNumber" type="String" in="false" out="false" option="false" variable="false" description="電話をつなぐ相手の電話番号" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

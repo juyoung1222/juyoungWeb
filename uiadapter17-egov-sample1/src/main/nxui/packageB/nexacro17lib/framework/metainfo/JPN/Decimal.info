@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Decimal">
+    <ObjectInfo inheritance="" classname="nexacro.Decimal" shorttypename="Decimal" csstypename="" csscontrolname="" group="Object_old" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="decimal型を処理するために提供するオブジェクトです。" />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="abs" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal自分の値をabs()処理するメソッドです。">
+        <Syntax text="Decimal.abs()">
+          <Return type="Decimal" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="addDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値に指定されたBigDecimal値を合算するメソッドです。">
+        <Syntax text="Decimal.addDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値に指定したDouble値を合算するメソッドです。">
+        <Syntax text="Decimal.addDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="ceil" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal自分の値をceil()処理するメソッドです。">
+        <Syntax text="Decimal.ceil()">
+          <Return type="Decimal" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="divDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値に指定されたBigDecimal値を除算した値を返すメソッドです。">
+        <Syntax text="Decimal.divDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="divDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値に指定されたDouble値を除算した値を返すメソッドです。">
+        <Syntax text="Decimal.divDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="floor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal自分の値をfloor()処理するメソッドです。">
+        <Syntax text="Decimal.floor()">
+          <Return type="Decimal" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isEqual" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値が1かどうかを返すメソッドです。">
+        <Syntax text="Decimal.isEqual( objDecimal )">
+          <Return type="Boolean" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isInfinity" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値のInfinityかどうかを返すメソッドです。">
+        <Syntax text="Decimal.isInfinity()">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNaN" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値のNaNかどうかを返すメソッドです。">
+        <Syntax text="Decimal.isNaN()">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNaNOrInf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値のInfinityまたはNaNかどうかを返すメソッドです。">
+        <Syntax text="Decimal.isNaNOrInf()">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isNegative" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値が負数かどうかを返すメソッドです。">
+        <Syntax text="Decimal.isNegative()">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isZero" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクト値のZeroかどうかを返すメソッドです。">
+        <Syntax text="Decimal.isZero()">
+          <Return type="Boolean" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="modDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値に指定されたBigDecimal値を割った残りの値を返すメソッドです。">
+        <Syntax text="Decimal.modDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="modDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値に指定したDouble値を割った残りの値を返すメソッドです。">
+        <Syntax text="Decimal.modDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mulDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値に指定したBigDecimal値を乗算した値を返すメソッドです。">
+        <Syntax text="Decimal.mulDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="mulDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値に指定したDouble値を乗算した値を返すメソッドです。">
+        <Syntax text="Decimal.mulDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="round" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal自分の値をround()処理するメソッドです。">
+        <Syntax text="Decimal.round()">
+          <Return type="Decimal" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="BigDecimal値を指定するメソッドです。">
+        <Syntax text="Decimal.setDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Double値を指定するメソッドです。">
+        <Syntax text="Decimal.setDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="BigDecimal値を指定するメソッドです。">
+        <Syntax text="Decimal.setString( strValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strValue" type="String" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subDecimal" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクト値から指定されたBigDecimal値を引いた値を返すメソッドです。">
+        <Syntax text="Decimal.subDecimal( objDecimal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDecimal" type="Decimal" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subDouble" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimalオブジェクトの値で指定したDouble値を引いた値を返すメソッドです。">
+        <Syntax text="Decimal.subDouble( nValue )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nValue" type="Number" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="DecimalをStringに変換して出力するメソッドです。">
+        <Syntax text="Decimal.toString()">
+          <Return type="String" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="trunc" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Decimal自分の値をtrunc()処理するメソッドです。">
+        <Syntax text="Decimal.trunc()">
+          <Return type="Decimal" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

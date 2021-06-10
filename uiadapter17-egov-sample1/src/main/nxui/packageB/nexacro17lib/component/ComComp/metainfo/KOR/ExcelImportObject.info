@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.ExcelImportObject">
+    <ObjectInfo inheritance="" classname="nexacro.ExcelImportObject" shorttypename="ExcelImportObject" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="엑셀 또는 한셀 파일의 내용을 DataSet 에 Import 하는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="importfilemode" group="Hidden" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="local" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ImportFileMode" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="Import 할 파일의 위치와 처리방식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="importfilemode" />
+      <Property name="importtype" group="Misc." subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObject 가 Import 할 파일의 형식을 상수값으로 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="importtype" />
+      <Property name="importurl" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObject 가 Import 를 수행할 서버의 URL 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="importurl" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObject 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObject 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="ExcelImportObject.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="함수를 검색하여 ExcelImportObject 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="ExcelImportObject.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="ExcelImportObject.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="스크립트에서 동적으로 생성한 ExcelImportObject 을(를) 삭제하는 메소드입니다.">
+        <Syntax text="ExcelImportObject.destroy()">
+          <Return type="Boolean" description="ExcelImportObject 이(가) 정상적으로 삭제되면 &quot;true&quot;를 반환합니다.&#xA;ExcelImportObject 이(가) 정상적으로 삭제되지 않으면 &quot;false&quot;를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObject 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="ExcelImportObject.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObject 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="ExcelImportObject.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="importData" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="엑셀 또는 한셀파일을 DataSet으로 Import 하는 메소드입니다.">
+        <Syntax text="ExcelImportObject.importData( strSource,strRange,strOutDatasets [,strArgument] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strArgument" type="String" in="false" out="false" option="false" variable="false" description="Import 시 필요한 정보를 &quot;변수명=변수값&quot; 형태로 설정합니다.&#xA;&#xA;파라미터쌍을 1개 이상 설정할 수 있으며 공백으로 구분합니다.&#xA;비밀번호가 설정된 엑셀파일을 Import 할 경우 &quot;filepassword=엑셀파일비밀번호&quot; 를 입력해야 정상동작합니다." />
+            <Argument name="strOutDatasets" type="String" in="false" out="false" option="false" variable="false" description="Import 한 데이터를 저장할 DataSet 의 ID 를 &quot;DataSet명=변수명&quot; 의 형식으로 설정합니다.&#xA;&#xA;DataSet 을 1개 이상 설정할 수 있으며 공백으로 구분합니다.&#xA;우측의 &quot;변수명&quot; 은 strRange 에 설정한 변수명을 설정하거나 &quot;output1&quot; ... 으로 자동생성된 변수명을 설정합니다." />
+            <Argument name="strRange" type="String" in="false" out="false" option="false" variable="false" description="strSource 에 설정한 파일에서 DataSet 으로 Import 할 영역을 &quot;시트명!셀영역:셀영역&quot; 형식으로 설정합니다.&#xA;&#xA;여러 영역을 지정해야 할 경우 아래 형식으로 반복 설정합니다.&#xA;&#xA;strRange ::= '[Command=&amp;lt;strCommand&amp;gt;; Output=&amp;lt;dsName&amp;gt;; Head=&amp;lt;strArea&amp;gt;; Body=&amp;lt;strArea&amp;gt;]'&#xA;&#xA;&amp;lt;strCommand&amp;gt; ::= 'getsheetlist' | 'getsheetdata'&#xA;  &quot;getsheetlist&quot; 설정 시 strSource 에 설정한 파일에서 시트목록을 Import 합니다.&#xA;  &quot;getsheetdata&quot; 설정 시  strSource 에 설정한 파일에서 &amp;lt;strArea&amp;gt; 의 데이터를 Import 합니다.&#xA;  값을 생략 할 경우 &quot;getsheetdata&quot;로 적용됩니다.&#xA;&#xA;&amp;lt;dsName&amp;gt; &#xA;  Import 한 데이터를 갖는 변수명입니다.&#xA;  strOutDatasets 에서 오른쪽 대입변수로 사용됩니다.&#xA;  값을 생략 할 경우 &quot;output1&quot;, &quot;output2&quot; ... 로 자동설정됩니다.&#xA;&#xA;&amp;lt;strArea&amp;gt; ::= '시트명!셀영역:셀영역'&#xA;  Import 할 데이터 영역을 설정합니다.&#xA;  &quot;Head&quot; 항목에 정의된 영역은 Import 시 DataSet 의 Column 명으로 사용됩니다.&#xA;  &quot;Head&quot; 항목 생략 시 &quot;Column0&quot;, &quot;Column1&quot; ... 으로 자동설정됩니다.&#xA;  &quot;Body&quot; 항목에 정의된 영역은 DataSet 의 Row 데이터로 Import 됩니다.&#xA;  &quot;Body&quot; 항목 생략 시 모든 레코드가 Import 됩니다." />
+            <Argument name="strSource" type="String" in="false" out="false" option="false" variable="false" description="Import 할 파일의 위치를 URL 형식의 문자열로 설정합니다.&#xA;&#xA;importfilemode 속성값이 &quot;server&quot; 일 경우 &quot;http://&quot; 형식으로 파일의 위치를 설정합니다.&#xA;importfilemode 속성값이 &quot;server&quot; 일 때 상대경로를 설정 시 importurl 속성에 설정된 경로를 기준으로 처리됩니다.&#xA;importfilemode 속성값이 &quot;local&quot; 이거나 strSource 값을 설정하지 않았을 경우 FileDialog 가 표시되고 파일을 선택합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObject 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="ExcelImportObject.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObject 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="ExcelImportObject.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObject 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="ExcelImportObject.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="ExcelImportObject 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="ExcelImportObject.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="Import 도중 오류가 생겼을때 발생하는 이벤트입니다.">
+        <Syntax text="ExcelImportObject.onerror(obj:nexacro.ExcelImportObject,e:nexacro.ExcelImportErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelImportErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser" description="Import 가 완료되었을때 발생하는 이벤트입니다.">
+        <Syntax text="ExcelImportObject.onsuccess(obj:nexacro.ExcelImportObject,e:nexacro.ExcelImportEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExcelImportEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Image">
+    <ObjectInfo inheritance="" classname="nexacro.Image" shorttypename="" csstypename="Image" csscontrolname="" group="Object_old" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="이미지를 처리하기 위해 제공되는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="height" group="Misc." subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Image 오브젝트의 src 속성에 로드된 이미지의 높이값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="src" group="Misc." subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Image 오브젝트에 로드 할 이미지 파일의 위치 경로를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="src" />
+      <Property name="width" group="Misc." subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Image 오브젝트의 src 속성에 로드된 이미지의 너비값을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="width" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="getBase64String" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Image 오브젝트에 저장된 Base64 인코딩 데이터를 반환하는 메소드입니다.">
+        <Syntax text="Image.setBase64String();">
+          <Return type="String" description="Image 오브젝트에 저장된 Base64 데이터를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setBase64String" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Image 오브젝트에 Base64 로 인코딩 된 데이터를 저장하는 메소드입니다.">
+        <Syntax text="Image.setBase64String(strBase64);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strBase64" type="String" in="false" out="false" option="false" variable="false" description="Base64 로 인코딩 된 이미지 데이터를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="src 속성에 설정한 이미지 로드에 실패했을때 발생하는 이벤트입니다.">
+        <Syntax text="Image.onerror(obj:nexacro.Image,e:nexacro.ErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="src 속성에 설정한 이미지 로드에 성공했을때 발생하는 이벤트입니다.">
+        <Syntax text="Image.onload(obj:nexacro.Image,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Point">
+    <ObjectInfo inheritance="" classname="nexacro.Point" shorttypename="" csstypename="Point" csscontrolname="" group="" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="座標情報を処理するために提供するオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="x" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Pointオブジェクト のx座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="x" />
+      <Property name="y" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Pointオブジェクトのy座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="y" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="clone" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Pointオブジェクトのプロパティ値をコピーして、新しいPointオブジェクトを返すメソッドです。">
+        <Syntax text="Point.clone()">
+          <Return type="Object" description="現在のPointオブジェクトの値をコピーした、新しいPointオブジェクトを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="引数として渡された値をPointオブジェクトのx、yプロパティ値にコピーするメソッドです。">
+        <Syntax text="Point.copy( objPoint )&#xA;Point.copy( nX, nY )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="Pointオブジェクトのxプロパティ値にコピーする値を数値に設定します。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="Pointオブジェクトのyプロパティ値にコピーする値を数値に設定します。" />
+            <Argument name="objPoint" type="Object" in="false" out="false" option="false" variable="false" description="現在のPointオブジェクトのx、yプロパティ値にコピーされる値を、Pointオブジェクトに設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="equals" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="現在のPointオブジェクトのプロパティ値と引数として渡された値の一致結果を返すメソッドです。">
+        <Syntax text="Point.equals( objPoint )&#xA;Point.equals( arrVal )&#xA;Point.equals( nX, nY )">
+          <Return type="Boolean" description="Pointオブジェクトに保存されたx、yプロパティ値と引数として渡された値がすべて一致した場合、「true」を返します。&#xA;&#xA;Pointオブジェクトに保存されたx、yプロパティ値と引数として渡された値が1つでも異なる場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="arrVal" type="Array" in="false" out="false" option="false" variable="false" description="Pointオブジェクトのx、yプロパティ値と比較する値をPointオブジェクトの形式で設定します。 Pointオブジェクトのx、yプロパティ値と比較する値を配列で設定します。x、yプロパティ値をそれぞれ第一、第二の要素と比較します。" />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="Pointオブジェクトのxプロパティ値と比較する値を数値に設定します。" />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="Pointオブジェクトのyプロパティ値と比較する値を数値に設定します。" />
+            <Argument name="objPoint" type="Object" in="false" out="false" option="false" variable="false" description="Pointオブジェクトのx、yプロパティ値と比較する値をPointオブジェクトの形式で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

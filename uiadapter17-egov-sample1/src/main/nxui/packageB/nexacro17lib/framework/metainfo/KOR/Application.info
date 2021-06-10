@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Application">
+    <ObjectInfo inheritance="" classname="nexacro.Application" shorttypename="Application" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="nexacro Platform 으로 만들어진 어플리케이션의 기본 정보와 초기 생성 시 주어지는 환경정보를 다루는 기본이 되는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="all" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 에 등록된 모든 오브젝트를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="all" />
+      <Property name="licenseurl" group="" subgroup="" refreshinfo="" edittype="FileName" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser" description="라이선스 정보를 가지고 있는 파일의 경로를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="licenseurl" />
+      <Property name="mainframe" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 하위에 속한 MainFrame 을 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="mainframe" />
+      <Property name="name" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="onlyone" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Key와 XADL 값을 동일한 Instance를 하나만 띄울것인지에 대한 여부를 설정하는 Property입니다." csspropertyname="" csselementname="" normalpropertyname="onlyone" />
+      <Property name="screenid" group="Information" subgroup="" refreshinfo="" edittype="ScreenID" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 이 실행되는 스크린의 ID 를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="screenid" />
+      <Property name="trays" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="Application 에 등록된 Tray 오브젝트의 정보를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="trays" />
+      <Property name="version" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 버전을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="version" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="Application.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="함수를 검색하여 Application 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="Application.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addTray" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="동적으로 생성한 Tray 를 Application 에 추가하는 메소드입니다.">
+        <Syntax text="Application.addTray(strTrayID, objTray)">
+          <Return type="Number" description="trays 속성에 추가된 Tray 오브젝트의 인덱스를 반환합니다.&#xA;&#xA;Tray 오브젝트 추가에 실패했을 경우 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="objTray" type="Object" in="false" out="false" option="false" variable="false" description="Application 에 추가될 Tray 오브젝트를 설정합니다." />
+            <Argument name="strTrayID" type="String" in="false" out="false" option="false" variable="false" description="Application 에 추가될 Tray 오브젝트의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 AppVariables 영역에 변수를 추가하는 메소드입니다.">
+        <Syntax text="Application.addVariable( strID, varValue )">
+          <Return type="Number" description="변수 추가에 성공하면 &quot;1&quot; 을 반환합니다.&#xA;변수 추가에 실패하면 &quot;0&quot; 을 반환합니다.&#xA;동일한 변수가 존재하면 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="추가될 변수의 ID를 설정합니다." />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="추가될 변수가 갖는 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 경고 대화상자를 표시하는 메소드입니다.">
+        <Syntax text="Application.alert( strText )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="대화상자에 표시할 텍스트를 설정합니다" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="cancelTransaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="진행중인 트렌젝션을 중지 시키는 메소드입니다.">
+        <Syntax text="cancelTransaction( [strSvcID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="중지 시킬 트랜잭션의 ID 를 설정합니다.&#xA;&#xA;값 생략 시 트랜잭션 중 ESC 키를 입력했을 때와 동일하게 통신을 강제로 중지시킵니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다">
+        <Syntax text="Application.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 선택 대화상자를 표시하는 메소드입니다.">
+        <Syntax text="Application.confirm( strText [,strCaption [,strType]] )">
+          <Return type="Boolean" description="표시된 선택 대화상자에서 &quot;확인&quot; 버튼을 선택하면 &quot;true&quot;를 반환합니다.&#xA;표시된 선택 대화상자에서 &quot;취소&quot; 버튼을 선택하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="strCaption" type="String" in="false" out="false" option="false" variable="false" description="대화상자의 TitleBar 에 표시할 텍스트를 설정합니다." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="대화상자에 표시할 텍스트를 설정합니다." />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="대화상자의 왼쪽 영역에 표시될 아이콘 종류를 문자열로 설정합니다.&#xA;&#xA;&quot;error&quot; 설정 시 빨간색 &quot;X&quot; 모양 아이콘이 표시됩니다.&#xA;&quot;question&quot; 설정 시 물음표(&quot;?&quot;) 모양 아이콘이 표시됩니다.&#xA;&quot;warning&quot; 설정 시 노랑색 바탕에 느낌표(&quot;!&quot;) 모양 아이콘이 표시됩니다.&#xA;&quot;information&quot; 설정 시 파란색 바탕에 느낌표(&quot;!&quot;) 모양 아이콘이 표시됩니다.&#xA;&#xA;값을 설정하지 않으면 아이콘을 표시하지 않습니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="enableOnlyOne" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="동일한 Application이 이미 실행중이면 새 Application을 띄우지 않고 실행중인 Application을 활성화 시키는 OnlyOne 기능을 활성화시키는 메쏘드입니다.">
+        <Syntax text="[application.]enableOnlyOne()">
+          <Return type="Boolean" description="성공시 true를 Return 합니다. 이미 OnlyOne 상태로 실행중이거나, 실패할 경우 false를 Return 합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="exit" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="실행중인 nexacro platform 을 종료시키는 메소드입니다.">
+        <Syntax text="Application.exit()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Application.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getActiveForm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 에서 현재 활성화된 Form 객체를 반환하는 메소드입니다.">
+        <Syntax text="Application.getActiveForm()">
+          <Return type="Object" description="현재 포커스를 가진 컴포넌트의 부모 Form 을 반환합니다.&#xA;&#xA;Div 와 같은 컨테이너 컴포넌트에 속한 컴포넌트에 포커스가 있을 경우 Div 의 부모 Form 을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getActiveFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 에서 현재 활성화된 Frame 객체를 반환하는 메소드입니다.">
+        <Syntax text="Application.getActiveFrame()">
+          <Return type="Object" description="현재 포커스를 가진 Form 의 부모 Frame 을 반환합니다.&#xA;&#xA;Modal, Modeless 자식 Frame 을 포함하여 현재 포커스를 가진 Frame 이 반환됩니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="Application.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getTrustDomainList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Trust Domain 목록을 얻기 위한 Method 입니다.">
+        <Syntax text="[application.]getTrustDomainList()">
+          <Return type="Object" description="Array Object 입니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTrustPathList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Trust Path 목록을 얻기 위한 Method 입니다.">
+        <Syntax text="[application.]getTrustPathList()">
+          <Return type="Object" description="Array Object 입니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isExistVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 AppVariables 영역에 특정 변수의 존재여부를 반환하는 메소드입니다.">
+        <Syntax text="Application.isExistVariable( strID );">
+          <Return type="Boolean" description="변수가 AppVariables 영역에 존재하면 &quot;true&quot; 를 반환합니다.&#xA;변수가 AppVariables 영역에 존재하지 않으면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="존재여부를 확인할 변수의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 오브젝트를 Application 전체를 대상으로 검색하여 반환하는 메소드입니다.">
+        <Syntax text="Application.lookup( strObjectID )">
+          <Return type="Object" description="검색하여 찾아낸 오브젝트를 반환합니다." />
+          <Arguments>
+            <Argument name="strObjectID" type="String" in="false" out="false" option="false" variable="false" description="검색하여 찾고자 하는 오브젝트의 ID를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="Application.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="Application.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeTray" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="Application 의 trays 속성에 등록된 Tray 오브젝트를 삭제하는 메소드입니다.">
+        <Syntax text="application.removeTray([strID]);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strId" type="String" in="false" out="false" option="false" variable="false" description="Application 의 trays 속성에서 삭제될 Tray 오브젝트의 ID 를 설정합니다.&#xA;&#xA;값을 설정하지 않으면 등록된 전체 Tray 오브젝트가 삭제됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 AppVariables 영역에서 변수를 제거하는 메소드입니다.">
+        <Syntax text="Application.removeVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="제거될 변수의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="Application.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="Application.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 AppVariables 영역에 변수를 추가 또는 값을 설정하는 메소드입니다.">
+        <Syntax text="Application.setVariable( strID, varValue )">
+          <Return type="Number" description="변수 추가에 성공하면 &quot;1&quot; 을 반환합니다.&#xA;변수 추가에 실패하면 &quot;0&quot; 을 반환합니다.&#xA;동일한 변수가 존재하면 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="추가될 변수명을 설정합니다." />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="추가될 변수가 갖는 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trace" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="추적 로그를 남기는 메소드입니다.">
+        <Syntax text="Application.trace( strLog )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strLog" type="String" in="false" out="false" option="false" variable="false" description="로그로 출력할 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="transaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 영역에 정의된 Dataset 의 데이터를 갱신하기 위한 서비스를 호출하고, 트랜잭션이 완료되면 콜백함수을 수행하는 메소드입니다.">
+        <Syntax text="Application.transaction(strSvcID,strURL,strInDatasets,strOutDatasets,strArgument,strCallbackFunc[,bAsync[,nDataType[,bCompress]]])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bAsync" type="Boolean" in="false" out="false" option="false" variable="false" description="트랜잭션을 비동기(ASync)로 처리할지 설정합니다.&#xA;&#xA;&quot;true&quot; 설정 시 트랜잭션을 비동기(ASync)로 처리하여 트랜잭션의 완료와 관계없이 스크립트가 수행됩니다.&#xA;&quot;false&quot; 설정 시 트랜잭션을 동기(Sync)로 처리하여 트랜잭션이 완료될 때까지 스크립트 수행이 중단됩니다.&#xA;&#xA;값을 설정하지 않으면 &quot;true&quot; 로 적용됩니다." />
+            <Argument name="bCompress" type="Boolean" in="false" out="false" option="false" variable="false" description="트랜잭션 시 데이터를 압축시킬 지 설정합니다.&#xA;&#xA;&quot;true&quot; 설정 시 데이터를 압축하여 송수신합니다.&#xA;&quot;false&quot; 설정 시 데이터를 압축하지 않고 송수신합니다.&#xA;&#xA;값을 설정하지 않으면 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="nDataType" type="Number" in="false" out="false" option="false" variable="false" description="트랜잭션 시 전송되는 데이터의 형태를 설정합니다.&#xA;&#xA;&quot;0&quot; 설정 시 &quot;XML&quot; 형식으로 데이터를 송수신합니다.&#xA;&quot;1&quot; 설정 시 &quot;Binary&quot; 형식으로 데이터를 송수신합니다.&#xA;&quot;2&quot; 설정 시 &quot;SSV&quot; 형식으로 데이터를 송수신합니다.&#xA;&#xA;값을 설정하지 않으면 &quot;0&quot; 으로 적용됩니다." />
+            <Argument name="strArgument" type="String" in="false" out="false" option="false" variable="false" description="서버페이지에 보낼 정보를 문자열로 설정합니다.&#xA;&quot;변수ID=변수값&quot; 형식으로 설정하며, 빈칸으로 구분하여 여러개의 인수값을 보낼 수 있습니다.&#xA;&#xA;ex) &quot;argu0=test argu1=30&quot;" />
+            <Argument name="strCallbackFunc" type="String" in="false" out="false" option="false" variable="false" description="트랜젝션 결과를 받을 때 호출될 콜백함수명을 문자열로 설정합니다.&#xA;콜백함수는 Application 영역에 정의되어 있어야 합니다." />
+            <Argument name="strInDatasets" type="String" in="false" out="false" option="false" variable="false" description="데이터 처리를 위해 서버로 보낼 DataSet 의 ID를 문자열로 설정합니다.&#xA;DataSet 은 Application 의 AppVariables 영역에 정의되어 있어야 합니다.&#xA;&quot;입력ID=DataSet ID&quot; 형식으로 설정하며, 빈칸으로 구분하여 여러개의 DataSet 을 보낼 수 있습니다.&#xA;&#xA;ex) &quot;input1=DataSet00 input2=DataSet01&quot;" />
+            <Argument name="strOutDatasets" type="String" in="false" out="false" option="false" variable="false" description="서버에서 보내는 데이터를 받을 DataSet 의 ID를 문자열로 설정합니다.&#xA;DataSet 은 Application 의 AppVariables 영역에 정의되어 있어야 합니다.&#xA;&quot;DataSet ID=출력ID&quot; 형식으로 설정하며, 빈칸으로 구분하여 여러개의 DataSet 을 받을 수 있습니다.&#xA;&#xA;ex) &quot;DataSet00=output0 DataSet01=output1&quot;" />
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="트랜잭션을 구분하기 위한 ID를 문자열로 설정합니다." />
+            <Argument name="strURL" type="String" in="false" out="false" option="false" variable="false" description="트랜잭션을 요청할 서버페이지 주소를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onafteruserconfirm" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,Android nexacro Browser" description="UserConfirm 창이 닫힌 후에 발생하는 이벤트입니다.">
+        <Syntax text="Application.onafteruserconfirm(obj:nexacro.Application,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeexit" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 이 종료되기 전에 발생하는 이벤트입니다.">
+        <Syntax text="Application.onbeforeexit(obj:nexacro.Application,e:nexacro.ExitEventInfo);">
+          <Return type="String" description="이벤트의 리턴값으로 문자열 설정 시 Application 종료를 위한 확인창이 표시됩니다.&#xA;리턴값으로 설정한 문자열이 종료를 위한 확인창에 사용됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하거나 &quot;null&quot;, &quot;undefined&quot;, &quot;empty string&quot; 으로 설정 시 확인창이 표시되지 않습니다." />
+          <Arguments>
+            <Argument name="e" type="ExitEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeuserconfirm" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,Android nexacro Browser" description="UserConfirm 창이 표시 되기 전에 발생하는 이벤트입니다.">
+        <Syntax text="Application.onbeforeuserconfirm(obj:nexacro.Application,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onduplicateexecution" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="중복실행 불가로 설정된 어플리케이션을 중복으로 실행 시 발생하는 이벤트입니다.">
+        <Syntax text="Application.onduplicateexecution(obj:nexacro.Application,e:nexacro.DuplicateExecutionEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DuplicateExecutionEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 에서 실행한 Transaction 에서 에러가 생겼을 때 발생하는 이벤트입니다.">
+        <Syntax text="Application.onerror(obj:nexacro.Application,e:nexacro.ErrorEventInfo);">
+          <Return type="Boolean" description="이벤트에서 리턴값으로 &quot;true&quot; 를 반환하면&#xA;  &gt; Environment 의 onerror 로 이벤트를 전파하지 않습니다.&#xA;  &gt; 실행중인 Transaction 을 중지시키지 않고 유지합니다.&#xA;&#xA;이벤트에서 리턴값으로 &quot;false&quot; 를 반환하면&#xA;  &gt; Environment 의 onerror 로 이벤트를 전파합니다.&#xA;  &gt; 실행중인 Transaction 의 중지여부는 Environment 의 onerror 에서 리턴값으로 결정됩니다.&#xA;  &gt; Environment 에 onerror 이벤트가 정의되어 있지 않으면 실행중인 Transaction 은 중지됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="ErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onexit" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 이 종료될 때 발생하는 이벤트입니다.">
+        <Syntax text="Application.onexit(obj:nexacro.Application,e:nexacro.ExitEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExitEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 에 등록된 모든 오브젝트와 데이터가 로드된 후 발생하는 이벤트입니다.">
+        <Syntax text="Application.onload(obj:nexacro.Application,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onloadforms" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="ChildFrame 에 연결된 모든 Form 이 모두 로드되면 발생하는 이벤트입니다.">
+        <Syntax text="Application.onloadforms(obj:nexacro.Application,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onloadingappvariables" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Application 의 AppVariables 영역에 정의된 오브젝트가 모두 생성된 후에 발생하는 이벤트입니다.">
+        <Syntax text="Application.onloadingappvariables(obj:nexacro.Application,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onnotification" group="" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일 기기에서 nexacro platform 에 대한 Notification 을 수신하였을 때 발생하는 이벤트입니다.">
+        <Syntax text="Application.onnotification(obj:nexacro.Application,e:nexacro.NotificationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="NotificationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

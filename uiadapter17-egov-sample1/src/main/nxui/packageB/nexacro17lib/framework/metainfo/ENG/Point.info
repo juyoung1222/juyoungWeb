@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Point">
+    <ObjectInfo inheritance="" classname="nexacro.Point" shorttypename="" csstypename="Point" csscontrolname="" group="" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This object is used to handle the data on coordinates." />
+    <PropertyInfo>
+      <Property name="x" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to set the x-coordinate of a Point object." csspropertyname="" csselementname="" normalpropertyname="x" />
+      <Property name="y" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to set the y-coordinate of a Point object." csspropertyname="" csselementname="" normalpropertyname="y" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="clone" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return a new Point object by copying the property values of the current Point object.">
+        <Syntax text="Point.clone()">
+          <Return type="Object" description="This method returns a new Point object by copying the property values of the current Point object." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to copy delivered arguments as the values of the x and y properties of a Point object.">
+        <Syntax text="Point.copy( objPoint )&#xA;Point.copy( nX, nY )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a number that will be copied as a value of the x property of a Point object." />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a number that will be copied as a value of the y property of a Point object." />
+            <Argument name="objPoint" type="Object" in="false" out="false" option="false" variable="false" description="It is a Point object whose values of the x and y properties will be copied as the values of the x and y properties of the current Point object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="equals" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return whether the property values of the current Point object equals those of the Point object delivered as an argument.">
+        <Syntax text="Point.equals( objPoint )&#xA;Point.equals( arrVal )&#xA;Point.equals( nX, nY )">
+          <Return type="Boolean" description="This method will return &quot;true&quot; if the values of the x and y properties of the current Point object equals delivered arguments.&#xA;&#xA;This method will return &quot;false&quot; if the values of the x and y properties of the current Point object does not equal delivered arguments." />
+          <Arguments>
+            <Argument name="arrVal" type="Array" in="false" out="false" option="false" variable="false" description="It is an array that contains two values, which will be compared with the x and y properties of the current Point object.&#xA;The first and second elements of the array will be compared with the the x and y properties respectively." />
+            <Argument name="nX" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a number that will be compared with the x property of the current Point object." />
+            <Argument name="nY" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a number that will be compared with the y property of the current Point object." />
+            <Argument name="objPoint" type="Object" in="false" out="false" option="false" variable="false" description="It is a Point object whose x and y properties will be compared with those of the current Point object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

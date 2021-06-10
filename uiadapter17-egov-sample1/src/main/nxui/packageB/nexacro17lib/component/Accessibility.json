@@ -1,0 +1,13 @@
+﻿{
+    "name": "Accessibility",
+    "version": "17.0.0.700",
+	"description": "nexacro platform 17 Unified Framework Library",
+    "license": "",
+    "scripts": [
+      "Accessibility/Accessibility.js",
+      "Accessibility/Accessibility_Comp.js",
+      "Accessibility/Accessibility_HTML5.js",
+      "Accessibility/Accessibility_Runtime.js"
+    ]
+}
+//@ sourceURL=Accessibility.json

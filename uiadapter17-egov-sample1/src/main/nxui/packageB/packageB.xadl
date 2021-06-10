@@ -1,0 +1,172 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ADL version="2.0">
+  <Application id="packageB" screenid="Screen_D" onload="Application_onload" onerror="Application_onerror" version="17.0.0.101">
+    <Layout>
+      <MainFrame id="mainframe" showtitlebar="true" showstatusbar="false" width="1280" height="984" titletext="nexacro17MDI" showtitleicon="false" showcascadetitletext="false">
+        <VFrameSet id="VFrameSet" separatesize="44,0,*,0" showcascadetitletext="true">
+          <Frames>
+            <ChildFrame id="frameTop" showtitlebar="false" showstatusbar="false" formurl="frame::frameTop.xfdl" showtitleicon="false" dragmovetype="none"/>
+            <ChildFrame id="frameLogin" formurl="" showtitlebar="false" showtitleicon="false" dragmovetype="none"/>
+            <HFrameSet id="HFrameSet" separatesize="240,*">
+              <Frames>
+                <ChildFrame id="frameLeft" showtitlebar="false" showstatusbar="false" formurl="frame::frameLeft.xfdl" dragmovetype="none"/>
+                <VFrameSet id="VFrameSet1" separatesize="32,*,0">
+                  <Frames>
+                    <ChildFrame id="frameNavi" showtitlebar="false" showtitleicon="false" dragmovetype="none" formurl="frame::frameMDI.xfdl"/>
+                    <FrameSet id="framesetWork" showtitlebar="false" showtitleicon="false">
+                      <Frames/>
+                    </FrameSet>
+                    <ChildFrame id="frameMain" formurl="frame::frameMain.xfdl" showtitlebar="false"/>
+                  </Frames>
+                </VFrameSet>
+              </Frames>
+            </HFrameSet>
+            <ChildFrame id="frameBottom" showtitlebar="false" showstatusbar="false" formurl="frame::frameBottom.xfdl" showtitleicon="false" dragmovetype="none"/>
+          </Frames>
+        </VFrameSet>
+      </MainFrame>
+    </Layout>
+  </Application>
+  <Script type="xscript5.1"><![CDATA[/**
+*  컨설팅 표준화 작업
+*  @MenuPath    
+*  @FileName 	
+*  @Creator 	soojeong
+*  @CreateDate 	2017.03.09
+*  @Desction         스크립트 표준 및 주석 표준 정의
+************** 소스 수정 이력 ***********************************************
+*  date          		Modifier                Description
+*******************************************************************************
+*  2017.03.09     	soojeong 	           최초 생성 
+*  2017.10.17     	kyk       	           주석 정비
+*******************************************************************************
+*/
+
+/************************************************************************************************
+ * application 변수 선언 영역
+************************************************************************************************/
+this.gvVFrameSet	= "";
+this.gvLoginFrame	= "";
+this.gvHFrame      = "";
+this.gvLeftFrame   = "";
+this.gvVFrameSet1  = "";
+this.gvTopFrame    = "";
+this.gvWorkFrame   = "";
+this.gvMainFrame   = "";
+this.gvMdiFrame    = "";
+this.gvExtCommonPath  = "";
+this.gvIsComBtnUse = false;	//공통 버튼 사용유무
+
+this.gvMenuColumns = {
+	menuId : "menuId",    //  MENU ID
+	menuNm : "menuNm",
+	pageUrl : "menuUrl",
+	pageId : "pageId",    //PROGRAM_ID
+	winId : "winId",      //윈도우(프레임)아이디(열린 메뉴의 윈도우 아이디)
+	title : "title",
+	menuUrl : "menuUrl",
+	groupId : "groupId",
+	menuArgs : "menuArgs", //메뉴파라메터
+	menuLevel : "level"    //메뉴레벨	
+};
+
+this.gvMax        = 8;     //열린 메뉴 최대 갯수
+this.gvWorkWinkey = "";
+this.gvWorkMenuNm = "";
+this.gvWorkMenuId = "";
+this.gvWorkTitle  = "";
+this.gvRealTrace = trace;
+
+/***********************************************************************************************
+* Application EVENT 영역(onload, onbeforeclose)
+/***********************************************************************************************/
+
+/**
+ * @description Applicaton onload시 처리내역
+*/
+this.Application_onload = function(obj:nexacro.Application,e:nexacro.LoadEventInfo)
+{	
+	var objApp = nexacro.getApplication();
+
+	// Frame 변수 저장
+	this.gvVFrameSet	= objApp.mainframe.VFrameSet;                                			//VFrameSet	
+	this.gvLoginFrame	= objApp.mainframe.VFrameSet.frameLogin; 				   				//LoginFrame
+	this.gvHFrame       = objApp.mainframe.VFrameSet.HFrameSet;                      			//HFrame
+	this.gvLeftFrame    = objApp.mainframe.VFrameSet.HFrameSet.frameLeft;            			//leftFrame
+	this.gvVFrameSet1   = objApp.mainframe.VFrameSet.HFrameSet.VFrameSet1;           			//VFrameSet1
+	this.gvTopFrame     = objApp.mainframe.VFrameSet.frameTop;  								//TopFrame
+	this.gvWorkFrame    = objApp.mainframe.VFrameSet.HFrameSet.VFrameSet1.framesetWork;         //WorkForm
+	this.gvMainFrame    = objApp.mainframe.VFrameSet.HFrameSet.VFrameSet1.frameMain;  			//mainform
+	this.gvMdiFrame     = objApp.mainframe.VFrameSet.HFrameSet.VFrameSet1.frameNavi;  			//mdi frame
+	
+	// 접속경로 확인
+	trace("===== 접속경로 : " + nexacro.getProjectPath());	
+    var nRunMode = 0;
+	
+	//로컬(파일)
+	if (system.navigatorname == "nexacro") 
+	{
+	    nRunMode = "0";
+		objApp.mainframe.set_titletext("로컬(파일) - " + objApp.mainframe.titletext);
+	}
+	// 웹 접속
+	else {
+		var urlPath = window.location.protocol + "//" + window.location.host;
+		var objEnv = nexacro.getEnvironment();
+		
+		// service URL 설정
+		var objSrv = objEnv.services["svcurl"];
+		//objSrv.set_url(urlPath+"/nexacro/");
+
+		//로컬(웹)
+	    if (objSrv.url.indexOf("localhost") > -1 || objSrv.url.indexOf("127.0.0.1") > -1 ) {
+			nRunMode = "1";
+			objApp.mainframe.set_titletext("로컬(웹)  - " + objApp.mainframe.titletext);
+		}
+		//운영
+		else {
+		    nRunMode = "2";
+			
+			// trace 정지 설정
+			this.afnSetTraceMode(false);
+		}
+	}	
+	nexacro.setEnvironmentVariable("gvRunMode", nRunMode);
+	
+	// 로그인 화면 open
+	this.gvLoginFrame.set_formurl("frame::frameLogin.xfdl");
+	this.gvVFrameSet.set_separatesize("0,*,0,0");
+};
+
+/**
+ * @description trace 재정의하여 trace로그 생성 방지
+*/
+this.afnSetTraceMode = function(bTrace)
+{
+	trace("★★ 운영접속시에는 trace 로그를 남기지 않도록 설정되었습니다.");
+	
+    nexacro.setEnvironmentVariable("gvTraceMode", bTrace);
+    if (bTrace)
+    {
+		trace = this.gvRealTrace;
+    }
+    else {
+        trace = function trace(){};
+    }
+}
+
+/**
+ * @description ESC 통신중단 방지(10월 16일 버전에서는 작동하지 않음)
+*/
+this.Application_onerror = function(obj:nexacro.Application,e:nexacro.ErrorEventInfo)
+{
+	trace("!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!Application_onerror!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!");
+	trace("e.statuscode : " + e.statuscode);
+	trace("e.errormsg : " + e.errormsg);
+	
+	// 사용자가 ESC키를 눌렀을 경우 ESC통신 중단 방지처리
+	if (e.errorcode == -2147418039) {
+		return true;
+	}
+};]]></Script>
+</ADL>

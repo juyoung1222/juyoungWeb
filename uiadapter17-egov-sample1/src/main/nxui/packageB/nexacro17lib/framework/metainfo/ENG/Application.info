@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Application">
+    <ObjectInfo inheritance="" classname="nexacro.Application" shorttypename="Application" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This object deals with basic information of an application that is based on Nexacro Platform. This object also addresses the environmental information that is provided when the application is created." />
+    <PropertyInfo>
+      <Property name="all" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This is a read-only property that holds all the objects registered in a certain application." csspropertyname="" csselementname="" normalpropertyname="all" />
+      <Property name="licenseurl" group="" subgroup="" refreshinfo="" edittype="FileName" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser" description="This property is used to specify the path to the file that contains the information on a license." csspropertyname="" csselementname="" normalpropertyname="licenseurl" />
+      <Property name="mainframe" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The main frame property accesses a main frame of an application." csspropertyname="" csselementname="" normalpropertyname="mainframe" />
+      <Property name="name" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the name of an application." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="onlyone" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Property to set whether to use same Instance for values of Key and XADL." csspropertyname="" csselementname="" normalpropertyname="onlyone" />
+      <Property name="screenid" group="Information" subgroup="" refreshinfo="" edittype="ScreenID" readonly="false" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to set the IDs of screens applied to an application." csspropertyname="" csselementname="" normalpropertyname="screenid" />
+      <Property name="trays" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="The trays Property gives access Trays in Application." csspropertyname="" csselementname="" normalpropertyname="trays" />
+      <Property name="version" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The version Property sets version of the Application." csspropertyname="" csselementname="" normalpropertyname="version" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to add a handler to a certain event of an application.">
+        <Syntax text="Application.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to find a function and add it to a certain event of an application as a handler.">
+        <Syntax text="Application.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the handler function&#xA;If this method fails to find the funtion in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addTray" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to add a dynamically-created tray to an application.">
+        <Syntax text="Application.addTray(strTrayID, objTray)">
+          <Return type="Number" description="The index of an added tray&#xA;In case of unsuccessful addition, -1 will be returned." />
+          <Arguments>
+            <Argument name="objTray" type="Object" in="false" out="false" option="false" variable="false" description="Tray object to add to an application" />
+            <Argument name="strTrayID" type="String" in="false" out="false" option="false" variable="false" description="The ID of a tray to add to an application" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The addVariable method will add variables to the Global area.">
+        <Syntax text="Application.addVariable( strID, varValue )">
+          <Return type="Number" description="If a variable is added to the area of Global successfully, it shall return 1, and if not, it shall return 0. &#xD;&#xA;If the variable already exists in the Global area, it shall return -1." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="Variable name to add" />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="A value to be added in variables." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The alert method displays a warning dialog.">
+        <Syntax text="Application.alert( strText )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="It is a character string to indicate contents." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="cancelTransaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to cancel an ongoing transaction.">
+        <Syntax text="cancelTransaction( [strSvcID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="Transaction ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="Application.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The confirm method displays a selection dialog.">
+        <Syntax text="Application.confirm( strText [,strCaption [,strType]] )">
+          <Return type="Boolean" description="If the &quot;Confirm&quot; button is pressed, it returns true, and if the &quot;Cancel&quot; button is pressed, it returns false." />
+          <Arguments>
+            <Argument name="strCaption" type="String" in="false" out="false" option="false" variable="false" description="It is a text string to display in the title bar." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="It is a text string to display." />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="Text strings to designate a icon type&#xA;&#xA;default : no icon&#xA;error : &quot;X&quot; icon&#xA;question : &quot;?&quot; icon&#xA;warning : Warning icon  &#xA;information : Information icon" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="enableOnlyOne" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Method to activate OnlyOne function to activate the application rather than a new application if same application is conducted.">
+        <Syntax text="[application.]enableOnlyOne()">
+          <Return type="Boolean" description="If successful, it shall return true. In case of being conducted in OnlyOne status or failure, it shall return false." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="exit" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The exit method terminates nexacro platform.">
+        <Syntax text="Application.exit()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method finds a handler in a certain event of an application and returns the index of the handler.">
+        <Syntax text="Application.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getActiveForm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="getActiveForm obtains an active form object.">
+        <Syntax text="Application.getActiveForm()">
+          <Return type="Object" description="It is an active form object." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getActiveFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The getActiveFrame obtains an active frame.">
+        <Syntax text="Application.getActiveFrame()">
+          <Return type="Object" description="Active frame object" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns a specific handler from a certain event of an application by specifying the index number of the handler.">
+        <Syntax text="Application.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;&#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getTrustDomainList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Method to obtain Trust Domain list.">
+        <Syntax text="[application.]getTrustDomainList()">
+          <Return type="Object" description="It is Array Object." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTrustPathList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="It is Method to obtain Trust Path list.">
+        <Syntax text="[application.]getTrustPathList()">
+          <Return type="Object" description="It is Array Object." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isExistVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Method to confirm whether variables are in Global.">
+        <Syntax text="Application.isExistVariable( strID );">
+          <Return type="Boolean" description="If there is a variable, it shall return true and if not it shall return false." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="Variable name to confirm whether a variable exists" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The lookup method returns the object of the result of searching entire applications.">
+        <Syntax text="Application.lookup( strObjectID )">
+          <Return type="Object" description="The object of search result" />
+          <Arguments>
+            <Argument name="strObjectID" type="String" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to remove a handler in a certain event of an application.">
+        <Syntax text="Application.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to find a handler in a certain event of an application and remove it.">
+        <Syntax text="Application.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid&#xA;If this method fails to find the handler in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeTray" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This method is used to remove a dynamically-created tray.">
+        <Syntax text="application.removeTray([strID]);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strId" type="String" in="false" out="false" option="false" variable="false" description="The ID string of a tray object&#xA;All trays will be removed if this parameter is not specified." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The removeVariable method removes variables in the Global area.">
+        <Syntax text="Application.removeVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="Variable name to be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the first handler in a certain event of an application.">
+        <Syntax text="Application.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method finds a function and uses it to replace the first handler in a certain event of an application.">
+        <Syntax text="Application.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The setVariable method adds variables in the Global area.">
+        <Syntax text="Application.setVariable( strID, varValue )">
+          <Return type="Number" description="If a variable is added in the area successfully, it shall return 1. If not, it shall return 0.&#xD;&#xA;If the variable is already added in the area, it shall return -1." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="Variable name to be added" />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="A value to  be added in variables." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trace" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The trace method leaves a trace dialog.">
+        <Syntax text="Application.trace( strLog )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strLog" type="String" in="false" out="false" option="false" variable="false" description="Log character string" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="transaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to call a service to update a Dataset defined in the domain of an Application and to conduct the a callback when transaction is finished.">
+        <Syntax text="Application.transaction(strSvcID,strURL,strInDatasets,strOutDatasets,strArgument,strCallbackFunc[,bAsync[,nDataType[,bCompress]]])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bAsync" type="Boolean" in="false" out="false" option="false" variable="false" description="It specifies whether the transaction is asynchronous.&#xA;&#xA;For &quot;true&quot;, a transaction will be conducted in the asynchronous manner. Therefore, the script will be executed regardless of the completion of the transaction.&#xA;For &quot;false&quot;, a transaction will be conducted in the synchronous manner. Therefore, the script will be suspended until the completion of the transaction.&#xA;&#xA;The default value is &quot;true&quot;." />
+            <Argument name="bCompress" type="Boolean" in="false" out="false" option="false" variable="false" description="It determines whether to compress data in a transaction.&#xA; &#xA;For &quot;true&quot;, data will be compressed in a transaction.&#xA;For &quot;false&quot;, data will not be compressed in a transaction.&#xA;&#xA;The default value is &quot;false&quot;." />
+            <Argument name="nDataType" type="Number" in="false" out="false" option="false" variable="false" description="It determines the type of the data used in a transaction.&#xA; &#xA;For 0, XML-formatted data will be used.&#xA;For 1, binary data will be used.&#xA;For 2, SSV-formatted data will be used.&#xA;&#xA;The default value is 0." />
+            <Argument name="strArgument" type="String" in="false" out="false" option="false" variable="false" description="A string representing the information sent to the server page&#xA;An argument is specified with the format &quot;variable ID=variable value&quot; while you can specify multiple arguments by dividing them with white spaces.&#xA;&#xA;ex) &quot;argu0=test argu1=30&quot;" />
+            <Argument name="strCallbackFunc" type="String" in="false" out="false" option="false" variable="false" description="A string representing a callback that will be called upon receiving the result of a transaction&#xA;The callback must be defined in the domain of a Form or an Application" />
+            <Argument name="strInDatasets" type="String" in="false" out="false" option="false" variable="false" description="A string representing the ID of a Dataset sent to the server for a data transaction&#xA;The Dataset must be defined in AppVariables of an Application.&#xA;The argument is specified with the format &quot;input ID=Dataset ID&quot;. You can specify multiple Datasets by dividing them with white spaces.&#xA;&#xA;ex) &quot;input1=DataSet00 input2=DataSet01&quot;" />
+            <Argument name="strOutDatasets" type="String" in="false" out="false" option="false" variable="false" description="A string representing the ID of a Dataset for receiving data from the server for a data transaction&#xA;The Dataset must be defined in AppVariables of an Application.&#xA;The argument is specified with the format &quot;Dataset ID=output ID&quot;. You can specify multiple Datasets by dividing them with white spaces.&#xA;&#xA;ex) &quot;DataSet00=output0 DataSet01=output1&quot;" />
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="A string representing an ID to distinguish transactions." />
+            <Argument name="strURL" type="String" in="false" out="false" option="false" variable="false" description="A string representing an address to request a transaction." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onafteruserconfirm" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,Android nexacro Browser" description="The onafteruserconfirm event occurs before a UserConfirm dialog is  closed.">
+        <Syntax text="Application.onafteruserconfirm(obj:nexacro.Application,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeexit" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The onbeforeexit event is raised before an application terminates.">
+        <Syntax text="Application.onbeforeexit(obj:nexacro.Application,e:nexacro.ExitEventInfo);">
+          <Return type="String" description="It determines whether to terminate an application. If it is true, the application terminates." />
+          <Arguments>
+            <Argument name="e" type="ExitEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeuserconfirm" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,Android nexacro Browser" description="The onbeforeuserconfirm event occurs before UserConfirm is processed.">
+        <Syntax text="Application.onbeforeuserconfirm(obj:nexacro.Application,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onduplicateexecution" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="This event is triggered by the duplicate execution of an application that does not permit duplicate execution.">
+        <Syntax text="Application.onduplicateexecution(obj:nexacro.Application,e:nexacro.DuplicateExecutionEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DuplicateExecutionEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This event occurs when an error occurs in a transaction conducted in an Application.">
+        <Syntax text="Application.onerror(obj:nexacro.Application,e:nexacro.ErrorEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;,&#xA; &gt; it will not bubble to the onerror event of an Environment object.&#xA; &gt; it will maintain the transaction without a pause.&#xA;&#xA;If this event returns &quot;false&quot;,&#xA; &gt; it will bubble to the onerror event of an Environment object.&#xA; &gt; the value returned by the onerror event of the Environment will determine whether to stop the transaction.&#xA; &gt; the transaction will be cancelled if you do not define the onerror event for the Environment&#xA;&#xA;The default return value is &quot;false&quot;." />
+          <Arguments>
+            <Argument name="e" type="ErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onexit" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs when an application is shutting down.">
+        <Syntax text="Application.onexit(obj:nexacro.Application,e:nexacro.ExitEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ExitEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This event occurs after all the objects and data of an application are loaded.">
+        <Syntax text="Application.onload(obj:nexacro.Application,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onloadforms" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The onload forms will occur after all the forms connected to a child frame are loaded.">
+        <Syntax text="Application.onloadforms(obj:nexacro.Application,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onloadingappvariables" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The onloadingglobalvariables event occurs after all global variable objects are created.">
+        <Syntax text="Application.onloadingappvariables(obj:nexacro.Application,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onnotification" group="" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="This event occurs when a mobile notification takes place.">
+        <Syntax text="Application.onnotification(obj:nexacro.Application,e:nexacro.NotificationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="NotificationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

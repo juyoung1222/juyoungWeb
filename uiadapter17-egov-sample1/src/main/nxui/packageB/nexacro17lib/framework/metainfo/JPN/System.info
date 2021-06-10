@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.System">
+    <ObjectInfo inheritance="" classname="nexacro.System" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="OS、ハードウェア、入力装置の情報を提供するオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="computername" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="現在のローカルコンピュータのNetBIOS名を返すプロパティです。" csspropertyname="" csselementname="" normalpropertyname="computername" />
+      <Property name="cpuarchitecture" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="プロセッサーの製造会社を文字列で返すプロパティです。" csspropertyname="" csselementname="" normalpropertyname="cpuarchitecture" />
+      <Property name="cpucount" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="プロセッサーの個数を返すプロパティです。" csspropertyname="" csselementname="" normalpropertyname="cpucount" />
+      <Property name="cputype" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="プロセッサーの種類の情報を文字列で返すプロパティです。プロセッサーでArchtecture、Level、Revision情報を含んでいます。" csspropertyname="" csselementname="" normalpropertyname="cputype" />
+      <Property name="locale" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="ローカルシステムのlocaleコードの文字列を返します。" csspropertyname="" csselementname="" normalpropertyname="locale" />
+      <Property name="loginuser" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="現在、ログインされたユーザーの名前を返すプロパティです。" csspropertyname="" csselementname="" normalpropertyname="loginuser" />
+      <Property name="mobileorientation" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器の方向情報を取得します。" csspropertyname="" csselementname="" normalpropertyname="mobileorientation" />
+      <Property name="mobileproducttype" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器の機種名を取得します。" csspropertyname="" csselementname="" normalpropertyname="mobileproducttype" />
+      <Property name="monitorcount" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="シングルまたはマルチモニターの場合に総モニターの個数を返すプロパティです。" csspropertyname="" csselementname="" normalpropertyname="monitorcount" />
+      <Property name="navigatorfullname" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="現在のマウスカーソルのx座標を表すプロパティです。" csspropertyname="" csselementname="" normalpropertyname="navigatorfullname" />
+      <Property name="navigatorname" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="アプリケーションが実行される環境情報を返すプロパティです。" csspropertyname="" csselementname="" normalpropertyname="navigatorname" />
+      <Property name="navigatorversion" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="アプリケーションが実行されるブラウザのバージョンを返すプロパティです。" csspropertyname="" csselementname="" normalpropertyname="navigatorversion" />
+      <Property name="notificationtoken" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="アプリケーションが実行されたモバイル機器でPush通知を受信するためのDevice Token値を持つ、読み取り専用のプロパティです。" csspropertyname="" csselementname="" normalpropertyname="notificationtoken" />
+      <Property name="osversion" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="OS名称とOSバージョンが表示するプロパティでス。" csspropertyname="" csselementname="" normalpropertyname="osversion" />
+      <Property name="taskbarsize" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイルデバイスで、上段のタスクバー（Androidの場合はインジケータバー）のピクセルの長さを取得します。" csspropertyname="" csselementname="" normalpropertyname="taskbarsize" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="attachChildFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera" description="nexacro studioで開発されたxfdlファイルをユーザーHTMLで使用するための機能&#xA;  - GenerateされたxfdlファイルをユーザーDOMにロードする。">
+        <Syntax text="system.attachChildFrame(window, document, strKey, stradlurl, strDivId, strxfdlurl)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="document" type="Object" in="false" out="false" option="false" variable="false" description="documentオブジェクト" />
+            <Argument name="stradlurl" type="String" in="false" out="false" option="false" variable="false" description="xadlファイル名（nexacro.xadl、nexacro.xadl.quickview）" />
+            <Argument name="strDivId" type="String" in="false" out="false" option="false" variable="false" description="xfdlがロードされるユーザーdiv id" />
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="applicationのglobalvariableを登録するときのkey値" />
+            <Argument name="strxfdlurl" type="String" in="false" out="false" option="false" variable="false" description="xfdlファイル名" />
+            <Argument name="window" type="Object" in="false" out="false" option="false" variable="false" description="windowオブジェクト" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="システムクリップボードにある全ての内容を削除するメソッドです。">
+        <Syntax text="system.clearClipboard()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clientToScreenX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="対象のコンポーネント基準の座標値をスクリーン基準の座標値に変換するAPIです。">
+        <Syntax text="system.clientToScreenX(objComp, nPosX)">
+          <Return type="Number" description="変換されたスクリーン基準のX座標" />
+          <Arguments>
+            <Argument name="nPosX" type="Number" in="false" out="false" option="false" variable="false" description="スクリーン基準の X座標に変換するコンポーネント基準の X座標" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="クライアント座標の基準コンポーネント." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clientToScreenY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="対象のコンポーネント基準の座標をスクリーン基準の座標に変換するAPIです。">
+        <Syntax text="system.clientToScreenY(objComp, nPosY)">
+          <Return type="Number" description="変換されたスクリーン基準のY座標値。" />
+          <Arguments>
+            <Argument name="nPosY" type="Number" in="false" out="false" option="false" variable="false" description="スクリーン基準の Y座標に変換するコンポーネント基準の Y 座標。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="クライアント座標の基準コンポーネント。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="convertRealPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="Aliasが含まれたパスを実際の絶対パスに変換するメソッドです。">
+        <Syntax text="system.convertRealPath(strAlias)">
+          <Return type="String" description="絶対パスのアドレス値を得る文字列です。" />
+          <Arguments>
+            <Argument name="strAlias" type="String" in="false" out="false" option="false" variable="false" description="変更する対象となるパスの文字列です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execBrowser" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser" description="入力されたURLをインターネットエクスプローラで実行するメソッドです。 &#xA;　">
+        <Syntax text="system.execBrowser(strUrl)">
+          <Return type="" description="　&#xD;&#xA;　" />
+          <Arguments>
+            <Argument name="strUrl" type="String" in="false" out="false" option="false" variable="false" description="URLのパス文字列です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execNexacro" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="渡された実行パスと引数の値にnexacroブラウザを実行するメソッドです。">
+        <Syntax text="system.execNexacro(strCommand)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strCommand" type="String" in="false" out="false" option="false" variable="false" description="オプション予約語とオプション値をペアとし、実行オプションを設定します。&#xA;オプション値にスペースが含まれている場合は、二重引用符（&quot;）で囲む必要があります。&#xA;&#xA;- X：区別するためのキー文字列を指定します。&#xA;- S：ブートストラップパスを指定します。 &#xA;- C：コンポーネントのインストールパスを指定します。  &#xA;-THR：エンジン内部の通信とその他のManagerのスレッドの数を数字で設定します。&#xA;       スレッドの数は、最小3個、最大10個であり、デフォルト値は3です。&#xA;- SP：Splash Imageのパスを指定します。&#xA;- LF：最初の実行時にLeftの位置を指定します。 &#xA;- TP：最初の実行時にTopの位置を指定します。 &#xA;- WD：最初の実行時にWidthを指定します。&#xA;- HT：最初の実行時にHeightを指定します。 &#xA;- LG：ロードイメージのパスを指定します。 &#xA;- TW：エンジン内部マネージャのスレッドが待機する時間を指定します。 （数値） &#xA;- OO：同じキーのアプリケーションの実行を一つのみ許可するかをBooleanに設定します。&#xA;-V：アプリケーションが実行されるときに追加されるGlobal変数を「変数名:タイプ=値変数名:タイプ=値」の形式で設定します。&#xA;    各変数は、コンマ（,）で区切って設定します。&#xA;   「タイプ」に「ev」を設定した場合、EnvironmentのVariables領域に変数が追加されます。&#xA;   「タイプ」に「ec」を設定した場合、EnvironmentのCookies領域に変数が追加されます。&#xA;   「タイプ」を設定しないか、もしくは「av」を設定した場合、ApplicationのVariables領域に変数が追加されます。&#xA;-SIE：アプリケーションの実行時にエラーが発生した場合、エラーメッセージを表示して終了するかをBooleanに設定します。&#xA;- CT : 初期ネットワークが接続されているかをチェックする Timeoutを設定します。&#xA;          ネットワークが接続されているかどうかをアプリケーションが動作される前にチェックします。&#xA;          待ち時間中にネットワークの接続有無が確認されていない場合、アプリケーションが終了されます。&#xA;- SCR : LayoutManagerで使用するための ScreenIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="execShell" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="ウィンドウのシェルでプログラムの実行をサポートするメソッドです。">
+        <Syntax text="system.execShell(strShellCommand)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strShellCommand" type="String" in="false" out="false" option="false" variable="false" description="実行するシェルのコマンド" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="指定された形式のクリップボードデータを取得するメソッドです。">
+        <Syntax text="system.getClipboard(strFormat)">
+          <Return type="Variant" description="指定された形式のシステムクリップボードデータ" />
+          <Arguments>
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="クリップボードデータフォーマットの文字列です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCursorX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="現在のマウスカーソルのx座標を表示するメソッドです。">
+        <Syntax text="system.getCursorX()">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCursorY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="現在のマウスカーソルのy座標を表示するメソッドです。">
+        <Syntax text="system.getCursorY()">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMonitorIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="マルチモニターのときにマウスポインタ値にいちばん近いモニターの番号を返すメソッドです。">
+        <Syntax text="system.getMonitorIndex(nCursorX, nCursorY)">
+          <Return type="Number" description="モニターの番号値です。" />
+          <Arguments>
+            <Argument name="nCursorX" type="Number" in="false" out="false" option="false" variable="false" description="マウスポインターの x 座標値です。" />
+            <Argument name="nCursorY" type="Number" in="false" out="false" option="false" variable="false" description="マウスポインターの y 座標値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="画面全体の高さの値を返すメソッドです。">
+        <Syntax text="system.getScreenHeight()">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getScreenRect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="指定されたモニターのスクリーン座標をRect値として取得するメソッドです。&#xD;　">
+        <Syntax text="system.getScreenRect(nMonitorIndex)">
+          <Return type="Object" description="Rectオブジェクトを返します。left top right bottomの値を持ちます。" />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="モニターのインデックス番号です。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenResolution" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="マルチモニターの場合に特定のシングルモニターの解像度を返すメソッドです。&#xD;　">
+        <Syntax text="system.getScreenResolution(nMonitorIndex)">
+          <Return type="String" description="モニターの解像度の値を返します。 &#xD;　" />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="モニターのインデックス番号です。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getScreenWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="画面全体の幅の値を返すメソッドです。">
+        <Syntax text="system.getScreenWidth()">
+          <Return type="Number" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isPrimaryMonitor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="マルチモニターの場合に特定のモニターがメインモニターであるかを判断するメソッドです。&#xD;&#xA;　">
+        <Syntax text="system.isPrimaryMonitor(nMonitorIndex)">
+          <Return type="Boolean" description="メインモニターならtrue、そうでないとfalseを返します。&#xD;&#xA;　" />
+          <Arguments>
+            <Argument name="nMonitorIndex" type="Number" in="false" out="false" option="false" variable="false" description="モニターのインデックス値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="print" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser" description="指定したコンポーネントをプリンタで出力するメソッドです。">
+        <Syntax text="system.print( objComponent, [bHideDialog, [,strVAlign[,strHAlign[, bFitOnePage]]]] )&#xA;system.print( strComponentID, [bHideDialog, [,strVAlign[,strHAlign[, bFitOnePage]]]] )">
+          <Return type="Boolean" description="出力に成功するとtrue、失敗するとfalseを返します。" />
+          <Arguments>
+            <Argument name="bFitOnePage" type="Boolean" in="false" out="false" option="false" variable="false" description="出力を1ページに縮小して出力するかどうか。&#xA;[デフォルト値 = false]" />
+            <Argument name="bHideDialog" type="Boolean" in="false" out="false" option="false" variable="false" description="プリンタについて設定ウィンドウなしで印刷するかどうかの指定&#xD;&#xA;[デフォルト Value = true]" />
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strComponentID" type="String" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strHAlign" type="String" in="false" out="false" option="false" variable="false" description="出力されるイメージが用紙の水平方向に出力される位置を指定&#xD;&#xA;&quot;left&quot;   : イメージが左に出力される。&#xD;&#xA;&quot;center&quot; : イメージが中央に出力される。&#xD;&#xA;&quot;right   : イメージが右に出力される。&#xD;&#xA;[デフォルト Value = &quot;center&quot;]" />
+            <Argument name="strVAlign" type="String" in="false" out="false" option="false" variable="false" description="出力されるイメージ用紙の垂直の方向に出力される位置を指定&#xD;&#xA;&quot;top&quot;    : イメージが上に出力される。&#xD;&#xA;&quot;middle&quot; : イメージが中央に出力される。&#xD;&#xA;&quot;bottom&quot; : イメージが下に出力される。&#xD;&#xA;[デフォルト Value = &quot;middle&quot;]" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="saveToImageFile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser" description="XComponentをイメージファイルにエクスポートするメソッドです。&#xD;&#xA;　">
+        <Syntax text="system.saveToImageFile(objComponent, strFileName, strImageType[,strOptions])">
+          <Return type="Boolean" description="成功するとtrue、失敗するとfalseを返します。　" />
+          <Arguments>
+            <Argument name="objComponent" type="Object" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strFileName" type="String" in="false" out="false" option="false" variable="false" description="エクスポートするファイル名" />
+            <Argument name="strImageType" type="String" in="false" out="false" option="false" variable="false" description="エクスポートするイメージ形式&#xD;&#xA;( デフォルト : &quot;BMP&quot; )&#xD;&#xA;&quot;BMP&quot;,&quot;BMP_MONO&quot;,&quot;JPG&quot;,&quot;TIF&quot;,&quot;TIF_24&quot;,&quot;TIF_MONO&quot;,&quot;GIF&quot;,&quot;PNG&quot;" />
+            <Argument name="strOptions" type="String" in="false" out="false" option="false" variable="false" description="セーブ時のオプションで圧縮率、圧縮方式、DPIの解像度を設定し、&quot;;&quot;文字でのオプションを区分します。&#xD;&#xA;例えば、&quot;Compress:95;ResolutionX:300&quot;のように使用します。&#xD;&#xA;&#xD;&#xA;- Compress：トークンは、圧縮率と圧縮方式を設定します。デフォルト値は、JPG圧縮率の場合50であり、TIF圧縮方式の場合LZWです。&#xD;&#xA;- ResolutionX：トークンは、水平方向の解像度のDPIを設定します。デフォルト値は96です。&#xD;&#xA;- ResolutionY：トークンは、垂直解像度DPIを設定します。デフォルト値は96です。&#xD;&#xA;&#xD;&#xA;詳細設定は、Remarkをご参照ください。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="screenToClientX" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="スクリーン基準のX座標値をコンポーネントのクライアント基準X座標値に変更するメソッドです。">
+        <Syntax text="system.screenToClientX(objComp, nPosX)">
+          <Return type="Number" description="コンポーネントのクライアント基準X座標値" />
+          <Arguments>
+            <Argument name="nPosX" type="Number" in="false" out="false" option="false" variable="false" description="指定されたコンポーネントのスクリーン基準X座標値" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="対象コンポーネント" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="screenToClientY" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="スクリーン基準のY座標値をコンポーネントのクライアント基準Y座標値に変更するメソッドでス。">
+        <Syntax text="system.screenToClientY(objComp, nPosY)">
+          <Return type="Number" description="変換されたコンポーネント基準のY座標値&#xA;　" />
+          <Arguments>
+            <Argument name="nPosY" type="Number" in="false" out="false" option="false" variable="false" description="指定されたコンポーネントのスクリーン基準のY座標値" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="対象コンポーネント" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setClipboard" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="システムクリックボードに指定された形態のデータを保存するメソッドです。&#xA;　">
+        <Syntax text="system.setClipboard(strFormat, varData)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strFormat" type="String" in="false" out="false" option="false" variable="false" description="クリップボードのデータ形式" />
+            <Argument name="varData" type="String" in="false" out="false" option="false" variable="false" description="データ値" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showModalSync" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="動的に生成したChildFrameをSyncで動作するモダールウィンドウに表示するメソッドです。">
+        <Syntax text="system.showModalSync( objChildframe, objParentFrame, [{objArgumentList} [, objOpener]] );&#xA;system.showModalSync( objChildframe, strID, objParentFrame, [{objArgumentList} [, objOpener]] );">
+          <Return type="Boolean" description="表示されたModalウィンドウが閉じる際に成敗の結果を返します。" />
+          <Arguments>
+            <Argument name="objArgumentList" type="Object" in="false" out="false" option="false" variable="false" description="Modalに表示されたChildFrameに追加される変数のリストを「{変数名:変数の値, 変数名:変数の値}」の形式に設定します。" />
+            <Argument name="objChildframe" type="Object" in="false" out="false" option="false" variable="false" description="モダールウィンドウで表示するChildFrameオブジェクトを設定します。" />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="openerに設定されるFormのオブジェクトを設定します。&#xA;&#xA;値省略時、最初のイベントが発生したFormのオブジェクトが設定されます。" />
+            <Argument name="objParentFrame" type="Object" in="false" out="false" option="false" variable="false" description="親になるFrameのオブジェクトを設定します。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="ChildFrameのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="showModalWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="別のポップアップウィンドウで表示させる showModal機能">
+        <Syntax text="system.showModalWindow( objChildframe, objParentFrame[, {objArguments}[, objOpener]] );&#xA;system.showModalWindow( objChildframe, strID, objParentFrame[, {objArguments}[, objOpener]] );">
+          <Return type="String" description="Form.closeメソッドの引数に渡した値" />
+          <Arguments>
+            <Argument name="objArguments" type="Object" in="true" out="false" option="false" variable="false" description="ChildFrameに追加される変数リスト( {変数名:変数値, 変数名:変数値}の形式で入力 )" />
+            <Argument name="objChildframe" type="Object" in="true" out="false" option="false" variable="false" description="ユーザーが動的に生成したChildFrameオブジェクト" />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="OpenerになるFormオブジェクト" />
+            <Argument name="objParentFrame" type="Object" in="true" out="false" option="false" variable="false" description="親になるFrameオブジェクト" />
+            <Argument name="strID" type="String" in="true" out="false" option="false" variable="false" description="ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

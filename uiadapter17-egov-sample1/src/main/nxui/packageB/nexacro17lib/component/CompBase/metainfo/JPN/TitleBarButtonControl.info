@@ -1,0 +1,668 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.TitleBarButtonControl">
+    <ObjectInfo inheritance="nexacro.Button" classname="nexacro._TitleBarButtonControl" shorttypename="" csstypename="" csscontrolname="" group="Component" subgroup="Control" csspseudo="true" container="false" composite="false" tabstop="false" cssstyle="true" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TitleBarcontrolを構成するTitleBarButtonControlオブジェクトです。" />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="&quot;all&quot;" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="AccessibilityDescReadType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="accessibilityrole" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlの背景領域を設定するプロパティです。" csspropertyname="background" csselementname="" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="TitleBarButtonControlの角の形を設定するプロパティです。" csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに影効果を設定するプロパティです。" csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlがスクロールバーが生じるときにスクロールバーが出力される形態を指定するプロパティです。" csspropertyname="color" csselementname="" normalpropertyname="color" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlのStyleをXCSSファイルに定義されたクラスに設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ドラッグ＆ドロップ時に、ドラッグがnexacro platform内部から始まったかどうかを確認するメソッドです。" csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+      <Property name="defaultbutton" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="アクティブなフォームで、Enterキーの入力でButtonのonclickイベントを発生させるかを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="defaultbutton" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlを使用可否を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlでイベントを発生させるか否かを決定するプロパティです。 &#xA;　&#xA;　" csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="escapebutton" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ボタンが属するフォーム内でESCキーが押されたときにボタンのonclick イベントを発生させるかを決定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="escapebutton" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに表示されるテキストに適用する数式を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="expr" />
+      <Property name="fittocontents" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="fittocontents" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlで使用するフォントを設定するプロパティです。" csspropertyname="font" csselementname="" normalpropertyname="font" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlのデフォルトアクションを実行するためのホットキーを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlの一意識別子を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに適用されるInitValueのIDを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="initvalueid" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="TitleBarButtonControlに表示される文字の間隔（字間）を設定するプロパティです。" csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlの名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlの境界線を設定するプロパティです。" csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+      <Property name="icon" group="Style" subgroup="-nexa-icon" refreshinfo="" edittype="ImageID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlでテキストと一緒に表示されるアイコン画像を設定するプロパティです。" csspropertyname="-nexa-icon" csselementname="" normalpropertyname="icon" />
+      <Property name="iconPosition" group="Style" subgroup="-nexa-icon-position" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="IconPosition" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlでテキストと一緒に表示されるアイコン画像の位置を設定するプロパティです。" csspropertyname="-nexa-icon-position" csselementname="" normalpropertyname="iconPosition" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControl領域の内側の余白を設定するプロパティです。" csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに表示されるテキストまたはコンテンツの横方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに表示されるテキストに適用する効果を設定するプロパティです。" csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+      <Property name="textPadding" group="Style" subgroup="-nexa-text-padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに表示されるアイコンとテキストの間隔を設定するプロパティです。" csspropertyname="-nexa-text-padding" csselementname="" normalpropertyname="textPadding" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに表示されるテキストまたはコンテンツの縦並び替えを設定するプロパティです。" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに表示されるテキストが出力領域よりも長い場合、自動的に改行されるように設定するプロパティです。" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TitleBarButtonControl領域の透明度を設定するプロパティです。" csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlの親オブジェクトを持つプロパティです。" csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="positionstep" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="タブキー入力でコンポーネント間にフォーカスを移動するときにTitleBarButtonControlの順序を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="タブキー入力でコンポーネント間フォーカスを移動するとき、TitleBarButtonControlがフォーカスを受け取るか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="ボタンに表示される文字列を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="textwidth" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="textwidth" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="マウスポインタがTitleBarButtonControlに移動したときに表示されるバルーンヘルプを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TitleBarButtonControlでバルーンヘルプが表示される位置を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlが画面に表示されるか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="TitleBarButtonControlに表示されるテキストの単語の間の間隔を設定するプロパティです。" csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlの背景領域を設定するプロパティです。" csspropertyname="background" csselementname="" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="TitleBarButtonControlの角の形を設定するプロパティです。" csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに影効果を設定するプロパティです。" csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlがスクロールバーが生じるときにスクロールバーが出力される形態を指定するプロパティです。" csspropertyname="color" csselementname="" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="" description="ドラッグ＆ドロップ時に、ドラッグがnexacro platform内部から始まったかどうかを確認するメソッドです。" csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlで使用するフォントを設定するプロパティです。" csspropertyname="font" csselementname="" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="TitleBarButtonControlに表示される文字の間隔（字間）を設定するプロパティです。" csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlの境界線を設定するプロパティです。" csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+        <Property name="-nexa-icon" group="Style" subgroup="-nexa-icon" edittype="ImageID" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlでテキストと一緒に表示されるアイコン画像を設定するプロパティです。" csspropertyname="-nexa-icon" csselementname="" normalpropertyname="icon" />
+        <Property name="-nexa-icon-position" group="Style" subgroup="-nexa-icon-position" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="IconPosition" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlでテキストと一緒に表示されるアイコン画像の位置を設定するプロパティです。" csspropertyname="-nexa-icon-position" csselementname="" normalpropertyname="iconPosition" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControl領域の内側の余白を設定するプロパティです。" csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに表示されるテキストまたはコンテンツの横方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに表示されるテキストに適用する効果を設定するプロパティです。" csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+        <Property name="-nexa-text-padding" group="Style" subgroup="-nexa-text-padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに表示されるアイコンとテキストの間隔を設定するプロパティです。" csspropertyname="-nexa-text-padding" csselementname="" normalpropertyname="textPadding" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに表示されるテキストまたはコンテンツの縦並び替えを設定するプロパティです。" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="" description="TitleBarButtonControlに表示されるテキストが出力領域よりも長い場合、自動的に改行されるように設定するプロパティです。" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TitleBarButtonControl領域の透明度を設定するプロパティです。" csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="TitleBarButtonControlに表示されるテキストの単語の間の間隔を設定するプロパティです。" csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="deactivate" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+      <Status name="pushed" control="true" default="false" deprecated="false" unused="false" group="userstatus" />
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlの特定イベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="TitleBarButtonControl.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="関数を検索してTitleBarButtonControlの特定のイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="TitleBarButtonControl.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されない場合は、上位の領域に検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数の名前を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、TitleBarButtonControlが画面の最前面に表示されるようにします。">
+        <Syntax text="TitleBarButtonControl.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、TitleBarButtonControlが画面の一段階前に表示されるようにします。">
+        <Syntax text="TitleBarButtonControl.bringToPrev()">
+          <Return type="" description="　" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="TitleBarButtonControl.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="click" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Buttonのonclickイベントを強制的に発生させるメソッドです。">
+        <Syntax text="Button.click()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="スクリプトで動的に生成したTitleBarButtonControlを削除するメソッドです。">
+        <Syntax text="TitleBarButtonControl.destroy()">
+          <Return type="Boolean" description="TitleBarButtonControlが正常に削除されると、「true」を返します。&#xA;TitleBarButtonControlが正常に削除されないと、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントで検索しようとするハンドラ関数のインデックスを返します。&#xA;検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlに実際に表示される文字列の値を返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getDisplayText()">
+          <Return type="String" description="TitleBarButtonControlに実際の画面に表示される文字列を返します。&#xA;&#xA;exprプロパティ値によりtextプロパティ値が画面に変更されて表示されると、実際の画面に表示される値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;インデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アクセシビリティインターフェイスが実行されるときに、キー入力が処理される前に先に発生されるイベントです。">
+        <Syntax text="TitleBarButtonControl.getFocus()">
+          <Return type="Object" description="true를 리턴하면, 해당 key에 대한 onkeydown(onkeyup?)、onchar event가 발생되지 않습니다. &#xD;&#xA;&#xD;&#xA;c" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントのtopを基準にTitleBarButtonControlのbottom値をピクセル単位で返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getOffsetBottom();">
+          <Return type="Number" description="TitleBarButtonControlのbottom座標値をピクセル(pixel)単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlのheightプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getOffsetHeight();">
+          <Return type="Number" description="TitleBarButtonControlの高さをピクセル単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントのleftを基準にTitleBarButtonControlのleft値をピクセル単位で返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getOffsetLeft();">
+          <Return type="Number" description="TitleBarButtonControlのleft座標値をピクセル(pixel)単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントのleftを基準にTitleBarButtonControlのright値をピクセル単位で返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getOffsetRight();">
+          <Return type="Number" description="TitleBarButtonControlのright座標値をピクセル(pixel)単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントのtopを基準にTitleBarButtonControlのtop値をピクセル単位で返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getOffsetTop();">
+          <Return type="Number" description="TitleBarButtonControlのtop座標値をピクセル(pixel)単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlのwidthプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getOffsetWidth();">
+          <Return type="Number" description="TitleBarButtonControlの幅をピクセル単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlのbottomプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getPixelBottom();">
+          <Return type="Number" description="TitleBarButtonControlのbottomプロパティ値をピクセル単位で返します。&#xA;bottomプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlのheightプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getPixelHeight();">
+          <Return type="Number" description="TitleBarButtonControlのheightプロパティ値をピクセル単位で返します。&#xA;heightプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlのleftプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getPixelLeft();">
+          <Return type="Number" description="TitleBarButtonControlのwidthプロパティ値をピクセル単位で返します。&#xA;leftプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlのrightプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getPixelRight();">
+          <Return type="Number" description="TitleBarButtonControlのrightプロパティ値をピクセル単位で返します。&#xA;rightプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlのtopプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getPixelTop();">
+          <Return type="Number" description="TitleBarButtonControlのtopプロパティ値をピクセル単位で返します。&#xA;topプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlのwidthプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="TitleBarButtonControl.getPixelWidth();">
+          <Return type="Number" description="TitleBarButtonControlのwidthプロパティ値をピクセル単位で返します。&#xA;widthプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getSelectStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="現在ButtonのStatusがSelectedであるか確認するメソッドです。">
+        <Syntax text="Button.getSelectStatus()">
+          <Return type="Boolean" description="ButtonのStatusがSelectedであれば、「true」を返します。&#xA;ButtonのStatusがSelectedでなければ、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="スクリプトでTitleBarButtonControlを動的に生成した後に初期化するメソッドです。">
+        <Syntax text="TitleBarButtonControl.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlのIDを文字列に設定します。" />
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlのbottomプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;vTop、vHeight値をすべて設定した場合vBottom値は無視されます。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネントのtopプロパティ値に基づいてTitleBarButtonControlのbottomが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのheightプロパティ値に基づいてTitleBarButtonControlのbottomが決定されます。" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlのheightプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネント値は無視され、pixel値にTitleBarButtonControlのheightが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのheightプロパティ値に基づいてTitleBarButtonControlのheightが決定されます。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlのleftプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネントのrightプロパティ値に基づいてTitleBarButtonControlのleftが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのwidthプロパティ値に基づいてTitleBarButtonControlのleftが決定されます。" />
+            <Argument name="vMaxHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlが画面に表示される最大高さの値をpixel単位の数値に設定します。&#xA;&#xA;vMinHeightよりも小さい値を設定すると、vMinHeight値に設定されます。" />
+            <Argument name="vMaxWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlが画面に表示される最大幅の値をpixel単位の数値に設定します。&#xA;&#xA;vMinWidthよりも小さい値を設定すると、vMinWidth値に設定されます。" />
+            <Argument name="vMinHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlが画面に表示される最小高さの値をpixel単位の数値に設定します。" />
+            <Argument name="vMinWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlが画面に表示される最小幅の値をpixel単位の数値に設定します。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlのrightプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;vLeft、vWidth値をすべて設定した場合vRight値は無視されます。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネントのleftプロパティ値に基づいてTitleBarButtonControlのrightが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのwidthプロパティ値に基づいてTitleBarButtonControlのrightが決定されます。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlのtopプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネントのbottomプロパティ値に基づいてTitleBarButtonControlのtopが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのheightプロパティ値に基づいてTitleBarButtonControlのtopが決定されます。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlのwidthプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネント値は無視され、pixel値にTitleBarButtonControlのwidthが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのwidthプロパティ値に基づいてTitleBarButtonControlのwidthが決定されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlの位置とサイズを変更するメソッドです。">
+        <Syntax text="TitleBarButtonControl.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="親コンポーネントの右下端を基準にTitleBarButtonControlのbottomプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。&#xA;nLeft、nWidth値をすべて設定した場合、nBottom値は無視されます。" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlのheightプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="親コンポーネントの左上を基準に、TitleBarButtonControlのleftプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="親コンポーネントの右下端を基準にTitleBarButtonControlのrightプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。&#xA;nLeft、nWidth値をすべて設定した場合、nRight値は無視されます。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="親コンポーネントの左上を基準に、TitleBarButtonControlのleftプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlのwidthプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、引数として渡されたTitleBarButtonControlが画面に一段階後ろに表示されるようにします。">
+        <Syntax text="TitleBarButtonControl.moveToNext( objComp )&#xA;TitleBarButtonControl.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントをオブジェクトに設定します。" />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、引数として渡されたコンポーネントより、TitleBarButtonControlが画面の一段階前に表示されるようにします。">
+        <Syntax text="TitleBarButtonControl.moveToPrev( objComp )&#xA;TitleBarButtonControl.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントをオブジェクトに設定します。" />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="TitleBarButtonControl.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="TitleBarButtonControl.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlのサイズを変更するメソッドです。">
+        <Syntax text="TitleBarButtonControl.resize( vWidth, vHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlのheightプロパティ値を設定します。&#xA;Pixel単位または割合(「％」)に設定することができます。&#xA;負数を設定することはできません。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlのwidthプロパティ値を設定します。&#xA;Pixel単位または割合(「％」)に設定することができます。&#xA;負数を設定することはできません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、TitleBarButtonControlが画面の最背面に表示されるようにします。">
+        <Syntax text="TitleBarButtonControl.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、TitleBarButtonControlが画面に一段階後ろに表示されるようにします。">
+        <Syntax text="TitleBarButtonControl.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="TitleBarButtonControl.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="TitleBarButtonControl.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlにフォーカスを与えるメソッドです。">
+        <Syntax text="TitleBarButtonControl.setFocus( [bMoveScroll [, bInnerFocus]] )">
+          <Return type="Object" description="TitleBarButtonControlがフォーカスされる前にフォーカスを持っていたコンポーネントを返します。&#xA;&#xA;フォーカスを持つコンポーネントがなかったか、メソッド実行に失敗した場合には、「null」を返します。" />
+          <Arguments>
+            <Argument name="bInnerFocus" type="Boolean" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlがコンテナコンポーネントの場合、子コンポーネントにフォーカスを移動するかを設定します。&#xA;&#xA;「true」に設定時、子コンポーネントのフォーカスを受け取られる最初のコンポーネントがフォーカスになります。&#xA;「false」に設定時、TitleBarButtonControlにフォーカスされます。&#xA;&#xA;TitleBarButtonControlがコンテナコンポーネントの場合、値を設定しないと、「true」で動作します。" />
+            <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="親コンポーネントにスクロールがある場合、TitleBarButtonControlを基準にスクロールを移動するかを設定します。&#xA;&#xA;「true」に設定時、TitleBarButtonControlが画面に表示されるようにスクロールを移動させます。&#xA;「false」に設定時、TitleBarButtonControlの位置に関係なく、スクロールを移動させません。&#xA;&#xA;値を設定しない場合は、「true」で動作します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントのtopを基準にTitleBarButtonControlのbottom値をピクセル単位で設定するメソッドです。">
+        <Syntax text="TitleBarButtonControl.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのtopから離れた距離をピクセル単位の数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlのheightプロパティ値をピクセル単位で設定するメソッドです。">
+        <Syntax text="TitleBarButtonControl.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlの高さをピクセル単位で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントleftを基準にTitleBarButtonControlのleft値をピクセル単位で設定するメソッドです。">
+        <Syntax text="TitleBarButtonControl.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのleftから離れた距離をピクセル単位の数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントleftを基準にTitleBarButtonControlのright値をピクセル単位で設定するメソッドです。">
+        <Syntax text="TitleBarButtonControl.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのleftから離れた距離をピクセル単位の数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親コンポーネントのtopを基準にTitleBarButtonControlのtop値をピクセル単位で設定するメソッドです。">
+        <Syntax text="TitleBarButtonControl.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのtopから離れた距離をピクセル単位の数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlのwidthプロパティ値をピクセル単位で設定するメソッドです。">
+        <Syntax text="TitleBarButtonControl.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Object" in="false" out="false" option="false" variable="false" description="TitleBarButtonControlの幅をピクセル単位で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setSelectStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="ボタンにSelected Statusを適用または削除するメソッドです。">
+        <Syntax text="Button.setSelectStatus( bSelect )">
+          <Return type="Boolean" description="メソッドの実行前にボタンのStatusがSelectedだったら「true」を返します。&#xA;メソッドの実行前にボタンのStatusがSelectedではなかったら「false」を返します。" />
+          <Arguments>
+            <Argument name="bSelect" type="Boolean" in="false" out="false" option="false" variable="false" description="trueの場合、選択された状態に設定され、falseの場合、選択されない状態に設定されます" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="スクリプトで動的に生成したTitleBarButtonControlを画面に表示するメソッドです。">
+        <Syntax text="TitleBarButtonControl.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toggleSelectStatus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="ButtonにSelected Status適用をトグルさせるメソッドです。">
+        <Syntax text="Button.toggleSelectStatus()">
+          <Return type="Boolean" description="メソッドの実行前にButtonのStatusがSelectedであれば、「true」を返します。&#xA;メソッドの実行前にButtonのStatusがSelectedでなければ、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内でマウスの左ボタンをクリックしたときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onclick(obj:nexacro._TitleBarButtonControl,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="true" requirement="" description="">
+        <Syntax text="TitleBarButtonControl.oncontextmenu(obj:nexacro._TitleBarButtonControl,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内でマウスの左ボタンをダブルクリックしたときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.ondblclick(obj:nexacro._TitleBarButtonControl,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内でマウス左ボタンでドラッグしたときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.ondrag(obj:nexacro._TitleBarButtonControl,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、ドラッグ状態になり、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、ドラッグ状態が解除され、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="true" requirement="" description="ドラッグ状態のマウスポインタがTitleBarButtonControl領域内に移動したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.ondragenter(obj:nexacro._TitleBarButtonControl,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="true" requirement="" description="ドラッグ状態のマウスポインタがTitleBarButtonControl領域外に移動したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.ondragleave(obj:nexacro._TitleBarButtonControl,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内でドラッグ状態のマウスポインタが移動したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.ondragmove(obj:nexacro._TitleBarButtonControl,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内でドラッグ状態のマウスボタンを離したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.ondrop(obj:nexacro._TitleBarButtonControl,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、ドラッグ状態になり、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、ドラッグ状態が解除され、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TitleBarButtonControlにキーボードで値が入力されたときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.oninput(obj:nexacro._TitleBarButtonControl,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlにフォーカスがある状態でキーボードのキーが押されたときに発生するイベントです。&#xA;　">
+        <Syntax text="TitleBarButtonControl.onkeydown(obj:nexacro._TitleBarButtonControl,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、イベントが上位のコンポーネントへ伝播されません。&#xA;イベントの返り値として&quot;false&quot;を返す場合、イベントが上位のコンポーネントへ伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlにフォーカスがある状態で、押下されたキーボードが離したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onkeyup(obj:nexacro._TitleBarButtonControl,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlからフォーカスが出るときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onkillfocus(obj:nexacro._TitleBarButtonControl,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内でマウス左ボタンを押下したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onlbuttondown(obj:nexacro._TitleBarButtonControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内で押下されたマウス左ボタンを離したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onlbuttonup(obj:nexacro._TitleBarButtonControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内でマウスボタン（左/右ボタンを除く）が押下されたときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onmousedown(obj:nexacro._TitleBarButtonControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内にマウスポインターが入ってきたときに発生するイベントです。　">
+        <Syntax text="TitleBarButtonControl.onmouseenter(obj:nexacro._TitleBarButtonControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域外にマウスポインターが移動したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onmouseleave(obj:nexacro._TitleBarButtonControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内で、マウスポインターが移動するときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onmousemove(obj:nexacro._TitleBarButtonControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、イベントが上位コンポーネントへ伝播されません。&#xA;イベントの返り値として「false」を返すと、イベントが上位コンポーネントへ伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内で押下されたマウスボタン（左/右ボタンを除く）を離したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onmouseup(obj:nexacro._TitleBarButtonControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="TitleBarButtonControl領域内でマウスホイールをスクロールしたときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onmousewheel(obj:nexacro._TitleBarButtonControl,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返す場合、、マウスホイールの回転値が無視され、上位コンポーネントへイベントが伝播されません。&#xA;イベントの返り値として「false」を返す場合、ホイールボタンの回転値が処理され、上位コンポーネントへイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlの位置を移動したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onmove(obj:nexacro._TitleBarButtonControl,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlでマウス右ボタンを押下したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onrbuttondown(obj:nexacro._TitleBarButtonControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内でマウス右ボタンを離したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onrbuttonup(obj:nexacro._TitleBarButtonControl,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlにフォーカスが入ったときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onsetfocus(obj:nexacro._TitleBarButtonControl,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControlのサイズが変更されたときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.onsize(obj:nexacro._TitleBarButtonControl,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内でタッチを離したときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.ontouchend(obj:nexacro._TitleBarButtonControl,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内でタッチ状態を維持しながら移動するときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.ontouchmove(obj:nexacro._TitleBarButtonControl,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="true" requirement="" description="TitleBarButtonControl領域内でタッチが始まるときに発生するイベントです。">
+        <Syntax text="TitleBarButtonControl.ontouchstart(obj:nexacro._TitleBarButtonControl,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

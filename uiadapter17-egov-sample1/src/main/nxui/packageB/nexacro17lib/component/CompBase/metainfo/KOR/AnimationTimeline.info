@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.AnimationTimeline">
+    <ObjectInfo inheritance="nexacro.Animation" classname="nexacro.AnimationTimeline" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="아이템으로 등록된 Animation 오브젝트를 순서대로 수행하는 오브젝트입니다." />
+    <PropertyInfo>
+      <Property name="beziercurve" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="beziercurve" />
+      <Property name="delay" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="delay" />
+      <Property name="direction" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="AniDirection" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="direction" />
+      <Property name="duration" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="1000" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="duration" />
+      <Property name="easing" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="easeOutElastic" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="easing" />
+      <Property name="elasticity" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="elasticity" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="AnimationTimeline 오브젝트의 고유 식별자를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="items" group="Collection" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="AnimationTimeline 오브젝트에 등록된 모든 AnimationTimelineItem 오브젝트를 갖고 있는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="items" />
+      <Property name="loop" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="loop" />
+      <Property name="loopcount" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="loopcount" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="AnimationTimeline 오브젝트의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addTarget" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="애니메이션 효과가 정의된 Animation 오브젝트를 AnimationTimeline 오브젝트에 아이템으로 추가하는 메소드입니다.">
+        <Syntax text="AnimationTimeline.addTarget( strID, objAnimation, nOffset );">
+          <Return type="Number" description="추가된 AnimationTimelineItem 오브젝트의 인덱스를 반환합니다.&#xA;&#xA;AnimationTimelineItem 오브젝트가 정상적으로 추가되지 않은 경우에는 -1 을 반환합니다." />
+          <Arguments>
+            <Argument name="nOffset" type="Number" in="false" out="false" option="false" variable="false" description="애니메이션 효과의 시작이 지연될 시간을 밀리세컨드 단위로 설정합니다.&#xA;&#xA;이전 애니메이션 종료 후 현재 AnimationTimelineItem 의 애니메이션 시작이 설정한 시간동안 지연됩니다." />
+            <Argument name="objAnimation" type="Object" in="false" out="false" option="false" variable="false" description="애니메이션 효과가 정의된 Animation 오브젝트를 설정합니다." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="AnimationTimeline 오브젝트에 추가될 AnimationTimelineItem 오브젝트의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertTarget" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="애니메이션 효과가 정의된 Animation 오브젝트를 AnimationTimeline 오브젝트에 아이템으로 삽입하는 메소드입니다.">
+        <Syntax text="AnimationTimeline.insertTarget( nIndex, strID, objAnimation, nOffset );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="AnimationTimelineItem 오브젝트가 삽입될 위치의 인덱스를 숫자로 설정합니다." />
+            <Argument name="nOffset" type="Number" in="false" out="false" option="false" variable="false" description="애니메이션 효과의 시작이 지연될 시간을 밀리세컨드 단위로 설정합니다.&#xA;&#xA;이전 애니메이션 종료 후 현재 AnimationTimelineItem 의 애니메이션 시작이 설정한 시간동안 지연됩니다." />
+            <Argument name="objAnimation" type="Object" in="false" out="false" option="false" variable="false" description="애니메이션 효과가 정의된 Animation 오브젝트를 설정합니다." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="AnimationTimeline 오브젝트에 삽입될 AnimationTimelineItem 오브젝트의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="pause" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="진행중인 애니메이션 효과를 일시 중지하는 메소드입니다.">
+        <Syntax text="AnimationTimeline.pause()">
+          <Return type="Boolean" description="메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메소드 실행에 실패하면 false 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="play" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="애니메이션 효과를 시작하는 메소드입니다.">
+        <Syntax text="AnimationTimeline.play()">
+          <Return type="Boolean" description="메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메소드 실행에 실패하면 false 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeTarget" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="AnimationTimeline 오브젝트에 아이템으로 추가된 AnimationTimelineItem 오브젝트를 제거하는 메소드입니다.">
+        <Syntax text="AnimationTimeline.removeTarget( strID );">
+          <Return type="Object" description="AnimationTimeline 오브젝트에서 제거된 AnimationTimelineItem 오브젝트를 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="AnimationTimeline 오브젝트에 등록된 아이템에서 제거할 AnimationTimelineItem 오브젝트의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="reverse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="애니메이션 효과의 방향을 반대로 변경하는 메소드입니다.">
+        <Syntax text="AnimationTimeline.reverse()">
+          <Return type="Boolean" description="메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메소드 실행에 실패하면 false 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="seek" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="애니메이션 효과의 진행위치를 특정 시간으로 이동하는 메소드입니다.">
+        <Syntax text="AnimationTimeline.seek( nMSecond )">
+          <Return type="Number" description="메소드 실행에 의해 실제로 변경된 위치의 진행시간을 반환합니다." />
+          <Arguments>
+            <Argument name="nMSecond" type="Number" in="false" out="false" option="false" variable="false" description="이동시킬 위치의 시간을 밀리세컨드 단위의 숫자로 설정합니다.&#xA;&#xA;전체 진행시간 범위 안의 값을 설정하여야 합니다.&#xA;진행시간을 벗어난 값을 설정하면 최소 또는 최대값으로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="stop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="진행중인 애니메이션 효과를 중지하는 메소드입니다.">
+        <Syntax text="AnimationTimeline.stop()">
+          <Return type="Boolean" description="메소드 실행에 성공하면 true 를 반환합니다.&#xA;&#xA;메소드 실행에 실패하면 false 를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onbegin" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="애니메이션 효과가 시작됐을 때 발생하는 이벤트입니다.">
+        <Syntax text="AnimationTimeline.onbegin(obj:nexacro.AnimationTimeline,e:nexacro.AnimationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AnimationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncomplete" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="애니메이션 효과가 종료됐을 때 발생하는 이벤트입니다.">
+        <Syntax text="AnimationTimeline.oncomplete(obj:nexacro.AnimationTimeline,e:nexacro.AnimationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AnimationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrun" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="애니메이션 효과가 실행중일 때 Tick 마다 발생하는 이벤트입니다.">
+        <Syntax text="AnimationTimeline.onrun(obj:nexacro.AnimationTimeline,e:nexacro.AnimationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AnimationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onupdate" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="play() 메소드가 실행되면 애니메이션 효과가 종료될 때까지 Tick 마다 발생하는 이벤트입니다.">
+        <Syntax text="AnimationTimeline.onupdate(obj:nexacro.AnimationTimeline,e:nexacro.AnimationEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="AnimationEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

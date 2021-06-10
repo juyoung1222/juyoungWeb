@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Date">
+    <ObjectInfo inheritance="" classname="nexacro.Date" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This object is used to work with dates and times." />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to add as many days as specified to the value of a Date object.">
+        <Syntax text="Date.addDate(nDays)">
+          <Return type="Number" description="This method returns the date produced as a result of adding as many days as specified to the value of a Date object.&#xA;&#xA;This method eventually returns the number of milliseconds between midnight of January 1, 1970 (UTC) and the returned date." />
+          <Arguments>
+            <Argument name="nDays" type="Number" in="false" out="false" option="false" variable="false" description="It is the number of days to add to the value of a Date object.&#xA;&#xA;If it is a negative number, it will be deducted from the value of a Date object as much." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to add as many hours as specified to the value of a Date object.">
+        <Syntax text="Date.addHours(nHours)">
+          <Return type="Number" description="This method returns the date produced as a result of adding as many hours as specified to the value of a Date object.&#xA;&#xA;This method eventually returns the number of milliseconds between midnight of January 1, 1970 (UTC) and the returned date." />
+          <Arguments>
+            <Argument name="nHours" type="Number" in="false" out="false" option="false" variable="false" description="It is the number of hours to add to the value of a Date object.&#xA;&#xA;If it is a negative number, it will be deducted from the value of a Date object as much." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to add as many milliseconds as specified to the value of a Date object.">
+        <Syntax text="Date.addMilliseconds(nMsec)">
+          <Return type="Number" description="This method returns the date produced as a result of adding as many milliseconds as specified to the value of a Date object.&#xA;&#xA;This method eventually returns the number of milliseconds between midnight of January 1, 1970 (UTC) and the returned date." />
+          <Arguments>
+            <Argument name="nMsec" type="Number" in="false" out="false" option="false" variable="false" description="It is the number of milliseconds to add to the value of a Date object.&#xA;&#xA;If it is a negative number, it will be deducted from the value of a Date object as much." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to add as many minutes as specified to the value of a Date object.">
+        <Syntax text="Date.addMinutes(nMinutes)">
+          <Return type="Number" description="This method returns the date produced as a result of adding as many minutes as specified to the value of a Date object.&#xA;&#xA;This method eventually returns the number of milliseconds between midnight of January 1, 1970 (UTC) and the returned date." />
+          <Arguments>
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="It is the number of minutes to add to the value of a Date object.&#xA;&#xA;If it is a negative number, it will be deducted from the value of a Date object as much." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to add as many months as specified to the value of a Date object.">
+        <Syntax text="Date.addMonth(nMonths)">
+          <Return type="Number" description="This method returns the date produced as a result of adding as many months as specified to the value of a Date object.&#xA;&#xA;This method eventually returns the number of milliseconds between midnight of January 1, 1970 (UTC) and the returned date." />
+          <Arguments>
+            <Argument name="nMonths" type="Number" in="false" out="false" option="false" variable="false" description="It is the number of months to add to the value of a Date object.&#xA;&#xA;If it is a negative number, it will be deducted from the value of a Date object as much." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to add as many seconds as specified to the value of a Date object.">
+        <Syntax text="Date.addSeconds(nSeconds)">
+          <Return type="Number" description="This method returns the date produced as a result of adding as many seconds as specified to the value of a Date object.&#xA;&#xA;This method eventually returns the number of milliseconds between midnight of January 1, 1970 (UTC) and the returned date." />
+          <Arguments>
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="It is the number of seconds to add to the value of a Date object.&#xA;&#xA;If it is a negative number, it will be deducted from the value of a Date object as much." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to add as many years as specified to the value of a Date object.">
+        <Syntax text="Date.addYear(nYears)">
+          <Return type="Number" description="This method returns the date produced as a result of adding as many years as specified to the value of a Date object.&#xA;&#xA;This method eventually returns the number of milliseconds between midnight of January 1, 1970 (UTC) and the returned date." />
+          <Arguments>
+            <Argument name="nYears" type="Number" in="false" out="false" option="false" variable="false" description="It is the number of years to add to the value of a Date object.&#xA;&#xA;If it is a negative number, it will be deducted from the value of a Date object as much." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the day drawn from the value of a Date object.">
+        <Syntax text="Date.getDate()">
+          <Return type="Number" description="It returns a day value that ranges from 1 to 31." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDay" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the weekday drawn from the value of a Date object.">
+        <Syntax text="Date.getDay()">
+          <Return type="Number" description="This method returns a code value ranging from 0 (Sunday) to 6 (Saturday)." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the year drawn from the value of a Date object. The year will be returned in 4-digit format.">
+        <Syntax text="Date.getFullYear()">
+          <Return type="Number" description="This method will return a year value in 4-digit format." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the hour drawn from the value of a Date object.">
+        <Syntax text="Date.getHours()">
+          <Return type="Number" description="It returns an hour value that ranges from 0 to 23." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the millisecond drawn from the value of a Date object.">
+        <Syntax text="Date.getMilliseconds()">
+          <Return type="Number" description="It returns a millisecond value that ranges from 0 to 999." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the minute drawn from the value of a Date object.">
+        <Syntax text="Date.getMinutes()">
+          <Return type="Number" description="It returns a minute value that ranges from 0 to 59." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the month drawn from the value of a Date object.">
+        <Syntax text="Date.getMonth()">
+          <Return type="Number" description="This method returns a code value ranging from 0 (January) to 11 (December)." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the second drawn from the value of a Date object.">
+        <Syntax text="Date.getSeconds()">
+          <Return type="Number" description="It returns a second value that ranges from 0 to 59." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTime" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the value of a Date object in the form of a millisecond.">
+        <Syntax text="Date.getTime()">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object. The span will be returned in the form of a millisecond." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTimezoneOffset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the difference between Universal Time Coordinated (UTC) and the value of a Date object. The returned value is expressed in minute.">
+        <Syntax text="Date.getTimezoneOffset()">
+          <Return type="Number" description="This method returns the time difference between UTC and the value of a Date object, as expressed in minute.&#xA;&#xA;If the value of a Date object is slower than UTC like Pacific Daylight Time (PDT), the returned value will be a positive number. By contrast, a negative number will be returned if the value of a Date object is faster than UTC like Korea and Japan." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the day drawn from the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.getUTCDate()">
+          <Return type="Number" description="It returns a day value that ranges from 1 to 31." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCDay" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the weekday drawn from the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.getUTCDay()">
+          <Return type="Number" description="This method returns a code value ranging from 0 (Sunday) to 6 (Saturday)." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the year drawn from the value of a Date object. The year will be returned in 4-digit format. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.getUTCFullYear()">
+          <Return type="Number" description="This method will return a year value in 4-digit format." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the hour drawn from the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.getUTCHours()">
+          <Return type="Number" description="It returns an hour value that ranges from 0 to 23." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the millisecond drawn from the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.getUTCMilliseconds()">
+          <Return type="Number" description="It returns a millisecond value that ranges from 0 to 999." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the minute drawn from the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.getUTCMinutes()">
+          <Return type="Number" description="It returns a minute value that ranges from 0 to 59." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the month drawn from the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.getUTCMonth()">
+          <Return type="Number" description="This method returns a code value ranging from 0 (January) to 11 (December)." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the second drawn from the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.getUTCSeconds()">
+          <Return type="Number" description="It returns a second value that ranges from 0 to 59." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the year drawn from the value of a Date object.">
+        <Syntax text="Date.getYear()">
+          <Return type="Number" description="This method returns a two-digit number for a year ranged between 1900 and 1999.&#xA;Otherwise, it returns a four-digit number. &#xA;&#xA;For example, it will return 96 for the year of 1996 while returning the numbers as they are for the years of 1825 and 2025." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="parse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to parse a date string and returns the number of milliseconds between the date string and midnight of January 1, 1970.">
+        <Syntax text="Date.parse(strDate)">
+          <Return type="Number" description="It returns the number of milliseconds between the specified date-time and midnight January 1, 1970." />
+          <Arguments>
+            <Argument name="strDate" type="String" in="false" out="false" option="false" variable="false" description="It is a string representing a date." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the day stored in the value of a Date object.">
+        <Syntax text="Date.setDate(nDate)">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the changed value of a Date object.  The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a day to be set after change.&#xA;&#xA;If you specify a number bigger than the last day of the current month, the entire date will be changed to the next month.&#xA;If you specify 0, the entire date will be changed to the last day of the previous month.&#xA;If you specify a negative number, the date will be calculated by counting backward as much as the number, beginning from the last day of the previous month." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the year or entire date stored in the value of a Date object.">
+        <Syntax text="Date.setFullYear(nYear[, nMonth[, nDate]])">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object.  The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a day to be set after change.&#xA;&#xA;If this parameter is not set, the day will not change." />
+            <Argument name="nMonth" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a code value ranging from 0 (January) to 11 (December), which is a month to be set.&#xA;&#xA;If this parameter is not set, the month will not change." />
+            <Argument name="nYear" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a year to be set after change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the hour or entire date stored in the value of a Date object.">
+        <Syntax text="Date.setHours(nHours[, nMinutes[, nSeconds[, nMillisecond]]])">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object.  The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nHours" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of an hour to be set after change." />
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a millisecond to be set after change.&#xA;&#xA;If this parameter is not set, the millisecond will not change." />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a minute to be set after change.&#xA;&#xA;If this parameter is not set, the minute will not change." />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a second to be set after change.&#xA;&#xA;If this parameter is not set, the second will not change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the millisecond stored in the value of a Date object.">
+        <Syntax text="Date.setMilliseconds(nMilliSecond)">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object.  The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nMilliSecond" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a millisecond to be set after change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the minute stored in the value of a Date object.">
+        <Syntax text="Date.setMinutes(nMinutes[, nSeconds[, nMillisecond]])">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object. The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a millisecond to be set after change.&#xA;&#xA;If this parameter is not set, the millisecond will not change." />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a minute to be set after change." />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a second to be set after change.&#xA;&#xA;If this parameter is not set, the second will not change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the month in the value of a Date object.">
+        <Syntax text="Date.setMonth(nMonth[, nDate])">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object. The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a day to be set after change.&#xA;&#xA;If this parameter is not set, the day will not change." />
+            <Argument name="nMonth" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a code value ranging from 0 (January) to 11 (December), which is a month to be set." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the second stored in the value of a Date object.">
+        <Syntax text="Date.setSeconds(nSeconds[, nMillisecond])">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object. The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a millisecond to be set after change.&#xA;&#xA;If this parameter is not set, the millisecond will not change." />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a second to be set after change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTime" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to set the date and time values of a Date object in the form of a millisecond.">
+        <Syntax text="Date.setTime(nMs)">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object. The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nMs" type="Number" in="false" out="false" option="false" variable="false" description="You can specify the span between the midnight of 1 January 1970 and the time you want to set. The span will be specified in the form of a millisecond." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the day stored in the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.setUTCDate(nDate)">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the changed value of a Date object.  The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a day to be set after change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the year or entire date stored in the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.setUTCFullYear(nYears[, nMonths[, nDate]])">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object. The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a day to be set after change.&#xA;&#xA;If this parameter is not set, the day will not change." />
+            <Argument name="nMonths" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a code value ranging from 0 (January) to 11 (December), which is a month to be set.&#xA;&#xA;If this parameter is not set, the month will not change." />
+            <Argument name="nYears" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a year to be set after change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the hour or entire date stored in the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.setUTCHours(nHours[, nMinutes[, nSeconds[, nMillisecond]]])">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object.  The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nHours" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of an hour to be set after change." />
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a millisecond to be set after change.&#xA;&#xA;If this parameter is not set, the millisecond will not change." />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a minute to be set after change.&#xA;&#xA;If this parameter is not set, the minute will not change." />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a second to be set after change.&#xA;&#xA;If this parameter is not set, the second will not change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the millisecond stored in the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.setUTCMilliseconds(nMs)">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object.  The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nMs" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a millisecond to be set after change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the minute stored in the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.setUTCMinutes(nMinutes[, nSeconds[, nMillisecond]])">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object. The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a millisecond to be set after change.&#xA;&#xA;If this parameter is not set, the millisecond will not change." />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a minute to be set after change." />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a second to be set after change.&#xA;&#xA;If this parameter is not set, the second will not change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the month in the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.setUTCMonth(nMonth[, nDate])">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object. The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a day to be set after change.&#xA;&#xA;If this parameter is not set, the day will not change." />
+            <Argument name="nMonth" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a code value ranging from 0 (January) to 11 (December), which is a month to be set." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the second stored in the value of a Date object. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.setUTCSeconds(nSeconds[, nMillisecond])">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object. The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a millisecond to be set after change.&#xA;&#xA;If this parameter is not set, the millisecond will not change." />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a second to be set after change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to change the year in the value of a Date object.">
+        <Syntax text="Date.setYear(nYears)">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object. The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nYears" type="Number" in="false" out="false" option="false" variable="false" description="It is the value of a year to be set after change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toDateString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the date drawn from the value of a Date object. The date will be returned in the form of a string.">
+        <Syntax text="Date.toDateString()">
+          <Return type="String" description="This method returns a date whose data type has been converted into a string." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toGMTString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the date and time drawn from value of a Date object in the form of a string. The calculation is conducted based on Greenwich Mean Time (GMT).">
+        <Syntax text="Date.toGMTString()">
+          <Return type="String" description="This method returns a date and time whose data types have been converted into a string." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toLocaleDateString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the date drawn from the value of a Date object. The date will be returned in the form of the string formatted according to the current locale.">
+        <Syntax text="Date.toLocaleDateString()">
+          <Return type="String" description="This method returns a date that has been converted into the string formatted according to the current locale." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toLocaleString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the date and time drawn from the value of a Date object. The date and time will be returned in the form of the string formatted according to the current locale.">
+        <Syntax text="Date.toLocaleString()">
+          <Return type="String" description="This method returns a date and time that have been converted into the string formatted according to the current locale." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toLocaleTimeString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the time drawn from the value of a Date object. The time will be returned in the form of the string formatted according to the current locale.">
+        <Syntax text="Date.toLocaleTimeString()">
+          <Return type="String" description="This method returns a time that has been converted into the string formatted according to the current locale." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the value of a Date object in the form of a string.">
+        <Syntax text="Date.toString()">
+          <Return type="String" description="This method returns the value stored in a Date object in the form of a string.&#xA;&#xA;The format may vary according to OSes and browsers." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toTimeString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the time drawn from the value of a Date object. The date will be returned in the form of a string.">
+        <Syntax text="Date.toTimeString()">
+          <Return type="String" description="This method returns a time whose data type has been converted into a string." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toUTCString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the date and time drawn from value of a Date object in the form of a string. The calculation is conducted based on Universal Time Coordinated (UTC).">
+        <Syntax text="Date.toUTCString()">
+          <Return type="String" description="This method returns a date and time whose data types have been converted into a string." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="UTC" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This static method is used to returns the number of milliseconds between a date specified as an argument and midnight January 1 1970. The calculation is conducted based on Universal Time Coordinated (UTC) or Greenwich Mean Time (GMT).">
+        <Syntax text="Date.UTC(nYear, nMonth, nDay[, nHours[, nMinutes[, nSeconds[,nMillisecond]]]])">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object. The span will be returned in the form of a millisecond." />
+          <Arguments>
+            <Argument name="nDay" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a code value representing a day. The value ranges from 1 to 31." />
+            <Argument name="nHours" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a code value representing an hour. &#xA;&#xA;The value ranges from 0 (midnight) to 23 (11p.m.)." />
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a code value representing a millisecond. The value ranges from 0 to 999." />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a code value representing a minute. The value ranges from 0 to 59." />
+            <Argument name="nMonth" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a code value representing a month. The value ranges from 0 (January) to 11 (December)." />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="It specifies a code value representing a second. The value ranges from 0 to 59." />
+            <Argument name="nYear" type="Number" in="false" out="false" option="false" variable="false" description="It is a four-digit value representing the year.&#xA;&#xA;If you specify a value ranging from 0 to 99, the value will be added to 1900." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="valueOf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the primitive value of a Date object.">
+        <Syntax text="Date.valueOf()">
+          <Return type="Number" description="It returns the span between the midnight of 1 January 1970 and the time indicated by the value of a Date object. The span will be returned in the form of a millisecond." />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="lectureRec" classname="Work" inheritanceid="" titletext="강사정보등록" left="0" width="1050" top="0" height="818">
+    <Layouts>
+      <Layout>
+        <Grid id="grd00" taborder="0" left="20" top="40" height="150" right="20" autofittype="col">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="강사번호" expandsize="16"/>
+                <Cell col="1" text="강사명"/>
+                <Cell col="2" text="전화번호"/>
+                <Cell col="3" text="생년월일"/>
+                <Cell col="4" text="주소"/>
+                <Cell col="5" text="강사등급"/>
+                <Cell col="6" text="고용일"/>
+              </Band>
+              <Band id="body">
+                <Cell text=""/>
+                <Cell col="1" text=""/>
+                <Cell col="2" text=""/>
+                <Cell col="3" text=""/>
+                <Cell col="4" text=""/>
+                <Cell col="5" text=""/>
+                <Cell col="6" text=""/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+        <Tab id="tab00" taborder="1" tabindex="0" left="20" top="210" width="1010" height="210">
+          <Tabpages>
+            <Tabpage id="Tabpage1" text="강사기본정보" url="">
+              <Layouts>
+                <Layout>
+                  <Edit id="edt00" taborder="0" left="66" top="25" width="154" height="26" onchanged="tab00_Tabpage1_edt00_onchanged" readonly="readonly"/>
+                  <Static id="sta01" taborder="1" text="생년월일" left="-3" top="73" width="46" height="21"/>
+                  <Edit id="edt00_00_00" taborder="2" left="68" top="111" width="742" height="26"/>
+                  <Static id="sta00" taborder="3" text="주소" left="0" top="111" width="48" height="27"/>
+                  <Static id="sta02" taborder="4" text="강사명" left="245" top="25" width="59" height="26" onclick="tab00_Tabpage1_sta02_onclick"/>
+                  <Edit id="edt01" taborder="5" left="300" top="25" width="178" height="26"/>
+                  <Static id="sta03" taborder="6" text="강사등급" left="238" top="70" width="62" height="27"/>
+                  <Static id="sta04" taborder="7" text="전화번호" left="508" top="28" width="56" height="22" onclick="tab00_Tabpage1_sta04_onclick" displaytype="mask" format="### - #### - ####" maskedittype="string"/>
+                  <Static id="sta05" taborder="8" text="고용일" left="512" top="78" width="48" height="22" onclick="tab00_Tabpage1_sta05_onclick" displaytype="mask" format="yy-MM-dd" maskedittype="string"/>
+                  <Combo id="cbo00" taborder="9" text="cbo00" left="303" top="75" width="175" height="25" innerdataset="ds00" codecolumn="codecolumn" datacolumn="datacolumn"/>
+                  <MaskEdit id="msk00" taborder="10" left="572" top="35" width="234" height="23" onchanged="tab00_Tabpage1_msk00_onchanged" type="number" trimtype="both"/>
+                  <MaskEdit id="msk01" taborder="11" left="576" top="76" width="232" height="25" trimtype="both" displaytype="mask" maskeditformat="yy-MM-dd" maskedittype="number" maskchar="yy-MM-dd"/>
+                  <MaskEdit id="msk02" taborder="12" left="66" top="73" width="154" height="23" trimtype="both" maskchar="yy-MM-dd"/>
+                </Layout>
+              </Layouts>
+            </Tabpage>
+            <Tabpage id="Tabpage2" text="강사이력정보" url=""/>
+          </Tabpages>
+        </Tab>
+        <Button id="btn00" taborder="2" text="추가" left="790" top="218" width="80" height="20"/>
+        <Button id="btn01" taborder="3" text="저장" left="870" top="218" width="80" height="20"/>
+        <Button id="btn02" taborder="4" text="삭제" left="950" top="218" width="80" height="20"/>
+        <Static id="sta00" taborder="5" text="강사관리" left="20" top="20" width="500" height="19" font="normal bold 12pt/normal &quot;Arial&quot;"/>
+        <Static id="sta01" taborder="6" text="강사번호" left="16" top="264" width="62" height="28"/>
+      </Layout>
+    </Layouts>
+    <Script type="xscript5.1"><![CDATA[/************************************************************************************************
+ * CALLBACK 콜백 처리부분(Transaction, Popup)
+ ************************************************************************************************/
+
+/************************************************************************************************
+* TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+
+/************************************************************************************************
+ * 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+this.tab00.Tabpage2.set_url("nexaForm::tab_careerInfo.xfdl");
+
+
+
+
+
+
+
+
+
+]]></Script>
+    <Objects>
+      <Dataset id="ds00">
+        <ColumnInfo>
+          <Column id="codecolumn" type="STRING" size="256"/>
+          <Column id="datacolumn" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="codecolumn">00</Col>
+            <Col id="datacolumn">초급</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">01</Col>
+            <Col id="datacolumn">중급</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">02</Col>
+            <Col id="datacolumn">고급</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+  </Form>
+</FDL>

@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.nexacroAPI">
+    <ObjectInfo inheritance="" classname="nexacro.nexacro" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="nexacroで機能を拡張して、追加で提供するメソッドです。" />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addErrorMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションにユーザーが定義したエラーメッセージを追加するメソッドです。">
+        <Syntax text="nexacro.addErrorMessage( enumLang, strCode, strMsg )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="enumLang" type="String" in="false" out="false" option="false" variable="false" description="エラーメッセージが追加される言語を設定します。&#xA;&#xA;「ja」設定時、日本語の領域にエラーメッセージを追加します。&#xA;「ko」設定時、韓国語の領域にエラーメッセージを追加します。&#xA;「en」設定時、英語の領域にエラーメッセージを追加します。" />
+            <Argument name="strCode" type="String" in="false" out="false" option="false" variable="false" description="追加されるエラーメッセージのコードを文字列に設定します。" />
+            <Argument name="strMsg" type="String" in="false" out="false" option="false" variable="false" description="追加されるエラーメッセージを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="base64Decode" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="base64形式で符号化（エンコード）されたデータを復号化（デコード）する静的メソッドです。">
+        <Syntax text="nexacro.base64Decode( strData )">
+          <Return type="String" description="復号化（デコード）された結果値" />
+          <Arguments>
+            <Argument name="strData" type="String" in="false" out="false" option="false" variable="false" description="base64形式で符号化（エンコード）されたデータ" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="base64Encode" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="base64形式で符号化（エンコード）する静的メソッドです。">
+        <Syntax text="nexacro.base64Encode( strData )">
+          <Return type="Object" description="base64形式で符号化（エンコード）されたオブジェクト" />
+          <Arguments>
+            <Argument name="strData" type="String" in="false" out="false" option="false" variable="false" description="base64形式で符号化（エンコード）するデータ" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="ceil" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="数値引数より大きいか等しい、最小の整数または固定小数点実数を返す静的メソッドです">
+        <Syntax text="nexacro.ceil( nVal [,nFractionDigit] );">
+          <Return type="Number" description="切り上げた値を返します。" />
+          <Arguments>
+            <Argument name="nFractionDigit" type="Number" in="false" out="false" option="false" variable="false" description="固定小数点以下の桁数 &#xD;&#xA;デフォルト値：0" />
+            <Argument name="nVal" type="Number" in="false" out="false" option="false" variable="false" description="数値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteCacheDB" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="アプリケーションで使用したCache DBファイルと関連する一時ファイルを削除するメソッドです。">
+        <Syntax text="nexacro.deleteCacheDB()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="flashWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="タスクバーでアプリケーションアイコンを点滅するメソッドです。">
+        <Syntax text="nexacro.flashWindow( enumType, nCount, [,nInterval] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="enumType" type="String" in="false" out="false" option="false" variable="false" description="アプリケーションがアイコンの点滅方式を設定します。&#xA;&#xA;「count」の設定時、指定した回数だけ点滅した後に終了します。&#xA;「timer」設定時、「stop」の値でflashWindow()メソッドを実行するまで点滅します。&#xA;「timernofg」設定時、該当アプリケーションがアクティブになるまで点滅します。&#xA;「stop」設定時、現在点滅動作を停止します。" />
+            <Argument name="nCount" type="Number" in="false" out="false" option="false" variable="false" description="enumType値が 「count」である場合、点滅回数を数字で設定します。&#xA;&#xA;enumType値が 「count」でない場合、設定値は無視します。" />
+            <Argument name="nInterval" type="Number" in="false" out="false" option="false" variable="false" description="アプリケーションのアイコンの点滅の間隔をミリ秒（milliseconds）単位の数値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="floor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="数値引数より小さいか等しい、最も固定小数点実数を返す静的メソッドです。">
+        <Syntax text="nexacro.floor( nVal [,nFractionDigit] );">
+          <Return type="Number" description="切り捨てた値を返します。" />
+          <Arguments>
+            <Argument name="nFractionDigit" type="Number" in="false" out="false" option="false" variable="false" description="固定小数点の桁数 &#xA;デフォルト値：0" />
+            <Argument name="nVal" type="Number" in="false" out="false" option="false" variable="false" description="数値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getApplication" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="現在実行されているアプリケーションのApplicationオブジェクトを返すメソッドです。">
+        <Syntax text="nexacro.getApplication()">
+          <Return type="Object" description="Applicationオブジェクトを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="EnvironmentのCookies領域に定義されたクッキーの値を返すメソッドです。">
+        <Syntax text="nexacro.getCookieVariable( strID )">
+          <Return type="String" description="Cookies領域に定義されたクッキーの値を返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="値を取得するCookie変数のIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEnvironment" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="現在実行中のアプリケーションのEnvironmentオブジェクトを返すメソッドです。">
+        <Syntax text="nexacro.getEnvironment()">
+          <Return type="Object" description="Environmentオブジェクトを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="EnvironmentのVariables領域に定義された変数の値を返すメソッドです。">
+        <Syntax text="nexacro.getEnvironmentVariable( strID )">
+          <Return type="String" description="EnvironmentのVariable領域に定義された変数の値を返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="値を取得する変数のIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="EnvironmentのHTTP Header領域に定義された変数の値を返すメソッドです。">
+        <Syntax text="nexacro.getHTTPHeaderVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="値を取得する変数のIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getPopupFrames" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションでModalまたはModelessに実行されたFrameをCollection形で返すメソッドです。">
+        <Syntax text="nexacro.getPopupFrames()">
+          <Return type="Array" description="アプリケーションでModalもしくはModelessに実行されたFrameのセットを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションで保存した個人データを返すメソッドです。">
+        <Syntax text="nexacro.getPrivateProfile( strKey )">
+          <Return type="Variant" description="引数として渡されたキー値に該当する個人データを保存時に設定したデータタイプとして返します。" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="個人データを保存するときに設定したキー値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getProjectPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションの実行パスを返すメソッドです。">
+        <Syntax text="nexacro.getProjectPath()">
+          <Return type="String" description="アプリケーションの実行パスを文字列として返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTextSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="渡された条件に合わせて計算されたテキストのサイズを返すメソッドです。">
+        <Syntax text="nexacro.getTextSize( strText, strFont [, nLimitWidth, strWordWrap] );">
+          <Return type="Object" description="計算された全体文字列のサイズ情報をプロパティとして持つオブジェクトを返します。&#xA;&#xA;文字列の横サイズは、「nx」プロパティとして保存されます。&#xA;文字列の縦サイズは「ny」プロパティとして保存されます。" />
+          <Arguments>
+            <Argument name="nLimitWidth" type="Number" in="false" out="false" option="false" variable="false" description="strTextが表示される幅をpixel単位の数値に設定します。&#xA;strTextの値にstrFontの値を適用して計算した文字列の幅がnLimitWidthの値よりも大きい場合、文字列をワードラップします。&#xA;&#xA;strWordWrap値が「none」または 「line」の場合、nLimitWidthに設定された値は無視されます。" />
+            <Argument name="strFont" type="String" in="false" out="false" option="false" variable="false" description="strText値に適用されるfont情報を設定します。&#xA;&#xA;コンポーネントのfontプロパティを設定することができます。&#xA;fontプロパティの型に合わせて設定する必要があります。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="サイズを計算する対象の文字列を設定します。" />
+            <Argument name="strWordWrap" type="String" in="false" out="false" option="false" variable="false" description="文字列をワードラップするかどうかを設定します。&#xA;&#xA;「none」に設定時、改行文字とワードラップを適用しません。&#xA;「line」設定時、改行文字を適用します。&#xA;「char」設定時、ワードラップを文字単位で適用します。&#xA;「english」設定時、ワードラップを英単語単位で適用します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isAlpha" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="入力された文字または文字列がAlphabet文字であるかどうかを検査します。">
+        <Syntax text="nexacro.isAlpha( nChar )&#xA;nexacro.isAlpha( strChar )">
+          <Return type="Boolean" description="入力された文字または文字列がAlphabetの場合はtrue、それ以外の場合はfalseを返します。" />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="対象文字コード" />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="対象文字列" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isAlphaNumeric" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="入力された文字または文字列がAlphabetまたは数字かどうかを検査します。">
+        <Syntax text="nexacro.isAlphaNumeric( nChar )&#xA;nexacro.isAlphaNumeric( strChar )">
+          <Return type="Boolean" description="入力された文字または文字列がAlphabetまたは数字の場合はtrue、それ以外の場合はfalseを返します。　" />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="対象文字コード（10進数）" />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="対象文字列" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isLower" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="入力された文字または文字列が小文字アルファベットかどうかを検査します。">
+        <Syntax text="nexacro.isLower( nChar )&#xA;nexacro.isLower( strChar )">
+          <Return type="Boolean" description="入力された文字または文字列が小文字アルファベットの場合はtrue、それ以外の場合はfalseを返します。　" />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="対象文字コード" />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="対象文字列" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isNumeric" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="入力された文字または文字列が数字かどうかを確認する静的メソッドです。">
+        <Syntax text="nexacro.isNumeric( nChar )&#xA;nexacro.isNumeric( strChar )">
+          <Return type="Boolean" description="入力された文字または文字列が数字の場合はtrue、それ以外の場合はfalseを返します。 　" />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="対象文字コード" />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="対象文字列" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isSpace" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="入力された文字または文字列が空白文字アルファベットかどうかを検査します。">
+        <Syntax text="nexacro.isSpace( nChar )&#xA;nexacro.isSpace( strChar )">
+          <Return type="Boolean" description="入力された文字または文字列が空白文字の場合はtrue、それ以外の場合はfalseを返します。" />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="対象文字コード" />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="対象文字列" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isUpper" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="入力された文字または文字列が大文字アルファベットかどうかを検査します。">
+        <Syntax text="nexacro.isUpper( nChar );&#xA;nexacro.isUpper( strChar );">
+          <Return type="Boolean" description="入力された文字または文字列が大文字アルファベットの場合はtrue、それ以外の場合はfalseを返します。　" />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="対象文字コード" />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="対象文字列" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadStyle" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションにXCSSファイルをロードして適用するメソッドです。">
+        <Syntax text="nexacro.loadStyle( strURL )">
+          <Return type="" description="復号化（デコード）された結果値" />
+          <Arguments>
+            <Argument name="strURL" type="String" in="false" out="false" option="false" variable="false" description="アプリケーションに適用するXCSSファイルのパスを「xcssrc::[FileID]」の形式で設定します。&#xA;&#xA;ファイルパスの「xcssrc::」は、固定Prefix値に変更することができません。&#xA;XCSSファイルはResource Service領域の「./_resource_/_xcss_」に位置する必要があります。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="動的に生成したChildFrameをモードレスウィンドウで表示するメソッドです。">
+        <Syntax text="nexacro.open(strName,strFormURL,objParentFrame,{objArgumentList},strOpenStyle,nLeft,nTop[,nWidth,nHeight[,objOpener]])">
+          <Return type="Boolean" description="モードレスウィンドウが正常に表示された場合は、「true」を返します。&#xA;モードレスウィンドウ正常に表示されない場合は、「false」を返します。" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="ChildFrameのheight値を設定します。" />
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="ChildFrameのleft値を設定します。" />
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="ChildFrameのtop値を設定します。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="ChildFrameのwidth値を設定します。" />
+            <Argument name="objArgumentList" type="Object" in="false" out="false" option="false" variable="false" description="ChildFrameに追加される変数のリストを「{変数名:変数値, 変数名:変数値}」の形式で設定します。" />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="openerに設定されるFormのオブジェクトを設定します。&#xA;&#xA;値省略時の最初のイベントが発生したFormのオブジェクトが設定されます。" />
+            <Argument name="objParentFrame" type="Object" in="false" out="false" option="false" variable="false" description="親になるFrameのオブジェクトを設定します。&#xA;&#xA;getPopupFrame()メソッドを実行した場合、親Frame単位で返り値が決定されます。" />
+            <Argument name="strFormURL" type="String" in="false" out="false" option="false" variable="false" description="ChildFrameにロードするFormのURLを設定します。" />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="生成されるChildFrameのIDを設定します。" />
+            <Argument name="strOpenStyle" type="String" in="false" out="false" option="false" variable="false" description="ChildFrameに表示されるとき適用されるプロパティを「プロパティ名1=プロパティ値1 プロパティ名2=プロパティ値2」の形式で設定します。&#xA;&#xA;ChildFrameの背景を透明に処理するには、「layered= true」を設定する必要があります。&#xA;layeredプロパティはWindows nexacro BrowserとmacOS nexacro Browser環境のみをサポートします。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="parseDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="日付が含まれた文字列を分析して1970年1月1日0時から、該当日の間の時間をミリ秒単位で返す静的メソッドです。">
+        <Syntax text="nexacro.parseDate( strDate )">
+          <Return type="Number" description="1970年1月1日0時とstrDateに指定された日付の間のミリ秒を表示する整数値です。　" />
+          <Arguments>
+            <Argument name="strDate" type="String" in="false" out="false" option="false" variable="false" description="日付が含まれた文字列" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="EnvironmentのCookies領域でクッキー変数を削除するメソッドです。">
+        <Syntax text="nexacro.removeCookieVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="削除されるCookie変数のIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="EnvironmentのVariables領域に定義された変数を削除するメソッドです。">
+        <Syntax text="nexacro.removeEnvironmentVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="削除する変数のIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="EnvironmentのHTTP Header領域から変数を削除するメソッドです。">
+        <Syntax text="nexacro.removeHTTPHeaderVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="削除される変数のIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="replaceAll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="指定された文字列が別の文字列にすべて変換された新しい文字列を返すメソッドです。">
+        <Syntax text="nexacro.replaceAll( strText, strOrgText, strRepText );">
+          <Return type="String" description="変換された新しい文字列を返します。" />
+          <Arguments>
+            <Argument name="strOrgText" type="String" in="false" out="false" option="false" variable="false" description="変換指定する文字列です。" />
+            <Argument name="strRepText" type="String" in="false" out="false" option="false" variable="false" description="指定された文字列の変換される文字列です。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="元の文字列です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="round" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="与えられた数式を丸めして最も近い固定小数点実数を返す静的メソッドです。">
+        <Syntax text="nexacro.round( nVal [,nFractionDigit] );">
+          <Return type="Number" description="丸めた整数値を返します。" />
+          <Arguments>
+            <Argument name="nFractionDigit" type="Number" in="false" out="false" option="false" variable="false" description="固定小数点の桁数&#xD;&#xA;デフォルト値 : 0" />
+            <Argument name="nVal" type="Number" in="false" out="false" option="false" variable="false" description="数値です。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="EnvironmentのCookies領域にクッキーを追加するメソッドです。">
+        <Syntax text="nexacro.setCookieVariable( strID, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="追加されるCookie変数のIDを設定します。" />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="追加されるCookie変数が持つ値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="EnvironmentのVariables領域に変数を追加するメソッドです。">
+        <Syntax text="nexacro.setEnvironmentVariable( strID, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="追加する変数のIDを設定します。" />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="追加する変数が持つ値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="EnvironmentのHTTP Header領域に変数を追加するメソッドです。">
+        <Syntax text="nexacro.setHTTPHeaderVariable( strID, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="追加されるHTTP Header変数のIDを設定します。" />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="追加されるHTTP Header変数が持つ値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setInitialVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Android Default Web Browser,iOS Default Web Browser" description="UTF-8形式で符号化（エンコード）する静的メソッドです。">
+        <Syntax text="nexacro.setInitialVariable( strType, strID, varVal )">
+          <Return type="" description="UTF-8形式で符号化（エンコード）されたオブジェクト" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="UTF-8形式で符号化（エンコード）するデータ" />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setPrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="アプリケーションから個人データを保存するメソッドです。">
+        <Syntax text="nexacro.setPrivateProfile( strKey, varVal )">
+          <Return type="Boolean" description="個人データの保存に成功した場合、「true」を返します。&#xA;個人データの保存に失敗した場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="個人データを保存するためのキー値を設定します。&#xA;&#xA;XMLタグ名で使用されるため、XMLタグ名で使用できない文字は設定できません。&#xA;また、「:」の文字を設定することができません。" />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="保存する個人データを設定します。&#xA;&#xA;基本型（integer、float、string、boolean）とDateを設定することができます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setProtocolVar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="通信に使用されるProtocolアダプタに設定値を伝達するメソッドです。">
+        <Syntax text="nexacro.setProtocolVar(strName, strKey, strValue) ;">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="Protocolアダプタに渡される設定値に対応するKeyの値を設定します。" />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="TypeDefinitionのProtocols領域に定義されたProtocolアダプターの設定値を渡すProtocolの「Protocol ID」を設定します。" />
+            <Argument name="strValue" type="String" in="false" out="false" option="false" variable="false" description="Protocolアダプタに渡される設定値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setRenderingType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="Windows nexacro Browser環境でレンダリング方式を設定するメソッドです。">
+        <Syntax text="nexacro.setRenderingType( nType )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nType" type="Number" in="false" out="false" option="false" variable="false" description="nexacro Browserのレンダリング方式を0または1に設定します。&#xA;&#xA;0に設定時、RealTime方式（従来と同じ）で定期的にレンダリングを実行します。&#xA;1に設定時、Event方法で内部ルールによってレンダリングを実行します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="stripQuote" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="入力された文字列の両端の引用符(single or double quote)を削除します。">
+        <Syntax text="nexacro.stripQuote( strText )">
+          <Return type="String" description="引用符が削除された文字列。" />
+          <Arguments>
+            <Argument name="strText" type="Object" in="false" out="false" option="false" variable="false" description="対象文字列" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toNumber" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="入力された値を数値に変換して返します。">
+        <Syntax text="nexacro.toNumber( varValue [, varNanVal [, varPinfVal [, varNinfVal]]] )">
+          <Return type="Number" description="変換した数値またはDecimal値です。" />
+          <Arguments>
+            <Argument name="varNanVal" type="Number" in="false" out="false" option="false" variable="false" description="valueを数値に変換した結果の値がNaNの場合の代替使用する値&#xD;&#xA;(デフォルト値 : NaN)" />
+            <Argument name="varNinfVal" type="Number" in="false" out="false" option="false" variable="false" description="valueを数値に変換した結果の値がNEGATIVE_INFINITYの場合の代替使用する値&#xD;&#xA;(デフォルト値 : NEGATIVE_INFINITY)" />
+            <Argument name="varPinfVal" type="Number" in="false" out="false" option="false" variable="false" description="valueを数値に変換した結果の値がPOSITIVE_INFINITYの場合の代替使用する値&#xD;&#xA;(デフォルト値 : POSITIVE_INFINITY)" />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="変更する値" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trim" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="引数として渡された文字列の両端から空白文字または指定された文字を削除した後返すメソッドです。">
+        <Syntax text="nexacro.trim( strText [,strChar] )">
+          <Return type="String" description="文字列の両端から空白文字または指定された文字が削除された文字列を返します。" />
+          <Arguments>
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="文字列の両端から削除する文字を設定します。&#xA;&#xA;値省略時の文字列の両端から空白文字を削除します。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="両端での空白文字または指定された文字を削除する文字列を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trimLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="引数として渡された文字列の左端から空白文字または指定された文字を削除した後で返すメソッドです。">
+        <Syntax text="nexacro.trimLeft( strText [,strChar] )">
+          <Return type="String" description="文字列の左端から空白文字または指定された文字が削除された文字列を返します。" />
+          <Arguments>
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="文字列の左端で削除する文字を設定します。&#xA;&#xA;値を省略すると、文字列の左端から空白文字を削除します。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="左端から空白文字または指定された文字を削除する文字列を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trimRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="引数として渡された文字列の右端から空白文字または指定された文字を削除した後で返すメソッドです。">
+        <Syntax text="nexacro.trimRight( strText [,strChar] )">
+          <Return type="String" description="文字列の右端から空白文字または指定された文字が削除された文字列を返します。" />
+          <Arguments>
+            <Argument name="strTarget" type="String" in="false" out="false" option="false" variable="false" description="文字列の右端から削除する文字を設定します。値省略時の文字列の右端から空白文字を削除します。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="右端から空白文字または指定された文字を削除する文字列を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="wrapQuote" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="入力された文字列の両側に二重引用符を付けて返す静的メソッドです。">
+        <Syntax text="nexacro.wrapQuote( strText )">
+          <Return type="String" description="入力された文字列の両側に二重引用符を付けられた文字列" />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="対象文字列" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

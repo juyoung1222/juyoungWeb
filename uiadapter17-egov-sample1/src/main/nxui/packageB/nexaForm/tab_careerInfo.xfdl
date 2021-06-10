@@ -1,0 +1,100 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<FDL version="2.1">
+  <Form id="tabPage1" width="1010" height="180" titletext="강사이력정보">
+    <Layouts>
+      <Layout height="180" mobileorientation="landscape" width="1010">
+        <Combo id="cbo00" taborder="0" text="cbo00" left="20" top="20" width="150" height="20" index="-1" codecolumn="codecolumn" datacolumn="datacolumn" innerdataset="ds00" onitemchanged="cbo00_onitemchanged"/>
+        <Grid id="grd01" taborder="1" left="20" top="40" height="100" right="191" autofittype="col">
+          <Formats>
+            <Format id="default">
+              <Columns>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+                <Column size="80"/>
+              </Columns>
+              <Rows>
+                <Row size="24" band="head"/>
+                <Row size="24"/>
+              </Rows>
+              <Band id="head">
+                <Cell text="경력번호"/>
+                <Cell col="1" text="내용"/>
+                <Cell col="2" text="시작일"/>
+                <Cell col="3" text="종료일"/>
+              </Band>
+              <Band id="body">
+                <Cell text=""/>
+                <Cell col="1" text=""/>
+                <Cell col="2" text=""/>
+                <Cell col="3" text=""/>
+              </Band>
+            </Format>
+          </Formats>
+        </Grid>
+      </Layout>
+    </Layouts>
+    <Objects>
+      <Dataset id="ds00">
+        <ColumnInfo>
+          <Column id="codecolumn" type="STRING" size="256"/>
+          <Column id="datacolumn" type="STRING" size="256"/>
+        </ColumnInfo>
+        <Rows>
+          <Row>
+            <Col id="codecolumn">00</Col>
+            <Col id="datacolumn">초급</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">01</Col>
+            <Col id="datacolumn">중급</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">02</Col>
+            <Col id="datacolumn">고급</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">03</Col>
+            <Col id="datacolumn">특급</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">04</Col>
+            <Col id="datacolumn">근무경력</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">05</Col>
+            <Col id="datacolumn">자격</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">06</Col>
+            <Col id="datacolumn">수상내역</Col>
+          </Row>
+          <Row>
+            <Col id="codecolumn">07</Col>
+            <Col id="datacolumn">집필내역</Col>
+          </Row>
+        </Rows>
+      </Dataset>
+    </Objects>
+    <Script type="xscript5.1"><![CDATA[/************************************************************************************************
+ * CALLBACK 콜백 처리부분(Transaction, Popup)
+ ************************************************************************************************/
+
+/************************************************************************************************
+* TRANSACTION 서비스 호출 처리
+************************************************************************************************/
+
+/************************************************************************************************
+ * 각 COMPONENT 별 EVENT 영역
+************************************************************************************************/
+
+/************************************************************************************************
+* 사용자 FUNCTION 영역
+************************************************************************************************/
+this.cbo00_onitemchanged = function(obj:nexacro.Combo,e:nexacro.ItemChangeEventInfo)
+{
+	
+};
+]]></Script>
+  </Form>
+</FDL>

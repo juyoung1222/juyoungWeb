@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.XPush">
+    <ObjectInfo inheritance="" classname="nexacro.XPush" shorttypename="XPush" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This is a client component used to receive messages delivered from an X-PUSH server." />
+    <PropertyInfo>
+      <Property name="controlretry" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="The controlretry Property sets repetition times when an error occurs when sending commands to Push by calling Command() Method." csspropertyname="" csselementname="" normalpropertyname="controlretry" />
+      <Property name="debug" group="" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="This property is used to determine whether to show XPush messages on the Debug pane of Nexacro Studio." csspropertyname="" csselementname="" normalpropertyname="debug" />
+      <Property name="errorcode" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Property to obtain an error code in case the error occurs." csspropertyname="" csselementname="" normalpropertyname="errorcode" />
+      <Property name="errormsg" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Property to obtain an error message for an error code in case the error occurs." csspropertyname="" csselementname="" normalpropertyname="errormsg" />
+      <Property name="iplist" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The iplist property registers more than one Push server. &#xA;Adaptor attempts to connect a server randomly out of registered servers." csspropertyname="" csselementname="" normalpropertyname="iplist" />
+      <Property name="keepalivetime" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The keepalivetime Property sets Interval Time to send a message to maintain connection to Push server.&#xA;The keepalivetime property sets in one second." csspropertyname="" csselementname="" normalpropertyname="keepalivetime" />
+      <Property name="keeptimeout" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="The keeptimeout Property sets TimeOut value of communication when sending a message to maintain connection to Push server.&#xA;This property sets in one second." csspropertyname="" csselementname="" normalpropertyname="keeptimeout" />
+      <Property name="layouturl" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The layouturl Property sets a route of message layout definition files. It is necessary to set the Property." csspropertyname="" csselementname="" normalpropertyname="layouturl" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the name of a XPush." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="retry" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="The retry Property sets repetition times of attempt of Connection when Push Adaptor communicates." csspropertyname="" csselementname="" normalpropertyname="retry" />
+      <Property name="sessionid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The sessionid property sets a session ID to use for Push connection." csspropertyname="" csselementname="" normalpropertyname="sessionid" />
+      <Property name="timeout" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="The timeour Property stores waiting time for one instance of sending.&#xA;The property sets in one second." csspropertyname="" csselementname="" normalpropertyname="timeout" />
+      <Property name="userid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The userid property sets a UserID to be used for Push connection." csspropertyname="" csselementname="" normalpropertyname="userid" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to add a handler to a certain event of a XPush.">
+        <Syntax text="XPush.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to find a function and add it to a certain event of a XPush as a handler.">
+        <Syntax text="XPush.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="XPush.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="connect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The connect method helps to access the push server.">
+        <Syntax text="XPush.connect([strUserID [,strSessionID]])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strSessionID" type="String" in="false" out="false" option="false" variable="false" description="session ID for certification when accessing then Push server." />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="userID for certification when accessing the Push server." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="disconnect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The disconnect method disconnects the Push server.">
+        <Syntax text="XPush.disconnect()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method finds a handler in a certain event of a XPush and returns the index of the handler.">
+        <Syntax text="XPush.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCurrentIP" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The getCurrentIp method gets an IP value of a Push server which is being connected.">
+        <Syntax text="XPush.getCurrentIP()">
+          <Return type="String" description="IP value of a Push server which is being connected" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCurrentPort" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The getCurrentPort method gets a port of the push server currently in connection.">
+        <Syntax text="XPush.getCurrentPort()">
+          <Return type="Number" description="a port of the push server currently in connection." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method returns a specific handler from a certain event of a XPush by specifying the index number of the handler.">
+        <Syntax text="XPush.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="registerDevice" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="This method is used to register a device token in an XPush server.">
+        <Syntax text="XPush.registerDevice()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="registerTopic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to register the information on user IDs/topics in an XPush server.">
+        <Syntax text="this.XPush00.registerTopic(strMessageType, strMessgageKey);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Types of messages to register" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="Keys for the messages to register" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="registerTopicWithID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method registers a topic in an X-PUSH server so that a certain user can receive reliable messages.">
+        <Syntax text="this.XPush00.registerTopic(strMessageType, strMessgageKey, strUserID);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="It specifies a message type to be received. You can specify a type among those defined in a message layout file." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="Key value of the messages to be received" />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="ID of a user to receive reliable messages" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to remove a handler in a certain event of a XPush.">
+        <Syntax text="XPush.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to find a handler in a certain event of a XPush and remove it.">
+        <Syntax text="XPush.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid&#xA;If this method fails to find the handler in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to request a reliable message from a XPush server. The onsuccess event will occur if the request is successful. Otherwise, the onerror event will occur.">
+        <Syntax text="requestMessage ( strMsgType, strMsgKeys );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMsgKeys" type="String" in="false" out="false" option="false" variable="false" description="The key to a message to receive" />
+            <Argument name="strMsgType" type="String" in="false" out="false" option="false" variable="false" description="The type of a message to receive" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessageCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to look up the number of unreceived reliable messages.">
+        <Syntax text="XPush.requestMessageCount(strMessageType, strMessgageKey)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message type" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="Message key" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessageCountWithID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to request the number of reliable messages that a certain user has not received. The request is sent to an X-PUSH server.">
+        <Syntax text="XPush.requestMessageCount(strMessageType, strMessgageKey, strUserID)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="It specifies the type of unreceived messages whose number will be requested. You can specify a type among those defined in a message layout file." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="Key value of the unreceived reliable messages" />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="ID of a user to obtain the number of reliable messages" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendResponse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to respond to reliable messages received by an XPush server.">
+        <Syntax text="XPush.sendResponse(strmsgid)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strmsgid" type="String" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method is used to change the first handler in a certain event of a XPush.">
+        <Syntax text="XPush.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="This method finds a function and uses it to replace the first handler in a certain event of a XPush.">
+        <Syntax text="XPush.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to register a topic for receiving messages.">
+        <Syntax text="XPush.subscribe(strMsgType, strMsgKey, objForm, objDataset, strType, strCallBack[, nRow[, strCheck[, bUseActiveFormCallBack]]])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bUseActiveFormCallBack" type="Boolean" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="A dataset object to which given data will be inserted" />
+            <Argument name="objForm" type="Object" in="false" out="false" option="false" variable="false" description="Form Object" />
+            <Argument name="strCallBack" type="String" in="false" out="false" option="false" variable="false" description="The callback function performed after a received push data is applied to a dataset" />
+            <Argument name="strCheck" type="String" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="strMsgKey" type="String" in="false" out="false" option="false" variable="false" description="Key of a message to receive" />
+            <Argument name="strMsgType" type="String" in="false" out="false" option="false" variable="false" description="Message type defined in a message layout" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="Method of applying a received push message to a dataset (default:update)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unregisterDevice" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="This method is used to delete a device token from an XPush server.">
+        <Syntax text="XPush.unregisterDevice()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="unregisterTopic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to delete the information on user IDs/topics stored in an XPush server.">
+        <Syntax text="XPush.unregisterTopic(strMessageType, strMessgageKey)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Types of unused messages" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="Keys for unused messages" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unregisterTopicWithID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to remove a topic for reliable messages that are received by a certain user. The topic is removed from an X-PUSH server.">
+        <Syntax text="XPush.unregisterTopic(strMessageType, strMessgageKey, strUserID)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="It specifies a message type to remove. You can specify a type among those defined in a message layout file." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="Key value of the messages to remove" />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="ID of a user to stop receiving reliable messages" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unsubscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to cancel the topic for receiving messages.">
+        <Syntax text="XPush.unsubscribe(strMsgType, strMsgKey, objForm, objDataset, strType, strCallBack)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="A dataset object to which given data will be inserted" />
+            <Argument name="objForm" type="Object" in="false" out="false" option="false" variable="false" description="Form Object" />
+            <Argument name="strCallBack" type="String" in="false" out="false" option="false" variable="false" description="The callback function performed after a received push data is applied to a dataset" />
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message type defined in a message layout" />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="Key of a message to receive" />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="Method of applying a received push message to a dataset (default:update)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This event occurs when a task requested to an XPush server fails.">
+        <Syntax text="XPush.onerror(obj:nexacro.XPush,e:nexacro.XPushErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeepalive" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The onkeepalive event occurs after the message push server is sent and received. This message gives specific intervals to maintain communication with clients.">
+        <Syntax text="XPush.onkeepalive(obj:nexacro.XPush,e:nexacro.XPushKeepAliveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushKeepAliveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="The onsuccess event occurs when a task requested to a XPush server succeeds.">
+        <Syntax text="XPush.onsuccess(obj:nexacro.XPush,e:nexacro.XPushEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

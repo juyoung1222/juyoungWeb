@@ -1,0 +1,742 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.PopupDiv">
+    <ObjectInfo inheritance="nexacro.Div" classname="nexacro.PopupDiv" shorttypename="PopupDiv" csstypename="PopupDiv" csscontrolname="PopupDivControl" group="Component" subgroup="ContainerComponent" csspseudo="true" container="true" composite="false" tabstop="false" cssstyle="true" contents="false" formats="false" contentseditor="auto" defaultwidth="220" defaultheight="100" registration="allow" edittype="container" useinitvalue="true" popup="true" edittypecomponent="" dblclickevent="onclick" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivは一つの画面に複数の部分画面を構成する場合に使用するコンポーネントです。&#xA;&#xA;PopupDivで構成すると、メイン画面と独立してまたは連携して画面を構成することができます。&#xA;Divコンポーネントと用途が似ていますが、PopupDivはフォーカスと失うと、自動的に消滅する機能面を持っています。" />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="アクセシビリティを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="all" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DescLevel" enuminfo2="" unitinfo="" delimiter="" requirement="" description="アクセシビリティを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="アクセシビリティを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Chrome,Windows nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivに選択ボックスを移動する際のアクセシビリティ関連のプロパティ値の出力可否を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="アクセシビリティを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="" description="アクセシビリティを指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="accessibilityrole" />
+      <Property name="async" group="Appearance" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivにurlプロパティで接続されているFormがロードされる方式を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="async" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivの背景領域を設定するプロパティです。" csspropertyname="background" csselementname="" normalpropertyname="background" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="PopupDivの角の形を設定するプロパティです。" csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivを表示するための下部座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivに影効果を設定するプロパティです。" csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivに表示されるテキストの色を設定するプロパティです。" csspropertyname="color" csselementname="" normalpropertyname="color" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivのStyleをXCSSファイルに定義されたクラスに設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDiv領域内で表示されるマウスポインタの種類を設定するプロパティです。" csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivを使用可否を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivでイベントを発生させるか否かを決定するプロパティです。 &#xA;　&#xA;　" csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivで使用するフォントを設定するプロパティです。" csspropertyname="font" csselementname="" normalpropertyname="font" />
+      <Property name="form" group="Control" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivですべてのオブジェクトが登録されたFormを持つ読み取り専用のプロパティです。" csspropertyname="" csselementname="" normalpropertyname="form" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivを表示するための高さを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivのデフォルトアクションを実行するためのホットキーを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivの一意識別子を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivに適用されるInitValueのIDを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="initvalueid" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivを表示するための左側座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="PopupDivに表示される文字の間隔（字間）を設定するプロパティです。" csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="PopupDivが画面に表示される最大高さを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="PopupDivが画面に表示される最大の幅を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="PopupDivが画面に表示される最小の高さを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="PopupDivが画面に表示される最小の幅を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivの名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivの境界線を設定するプロパティです。" csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDiv領域の内側の余白を設定するプロパティです。" csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivに表示される文字列またはコンテンツの横方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="MultiEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivに表示されるテキストに適用する効果を設定するプロパティです。" csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivに表示される文字列またはコンテンツの縦方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivに表示される文字列が出力領域よりも長い場合、自動改行されるように設定するプロパティです。" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDiv領域の透明度を設定するプロパティです。" csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivの親オブジェクトを持つプロパティです。" csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="" description="親オブジェクトがステップ機能を使用するとき、PopupDivが表示されるステップを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="positionstep" />
+      <Property name="returnvalue" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivのclosePopup()メソッドの実行時に引数として渡された値を持つ、読み取り専用のプロパティです。" csspropertyname="" csselementname="" normalpropertyname="returnvalue" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivを表示するための右側座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="タブキー入力でコンポーネント間にフォーカスを移動するときにPopupDivの順序を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="タブキー入力でコンポーネント間フォーカスを移動するとき、PopupDivがフォーカスを受け取るか否かを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivに表示される文字列の値を指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="マウスポインタがPopupDivに移動したときに表示されるバルーンヘルプを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivでバルーンヘルプが表示される位置を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivを表示するための上段座標を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="url" group="Appearance" subgroup="" refreshinfo="" edittype="URL" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="コンポーネントに表示するForm url値を指定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="url" />
+      <Property name="urlchangeeffect" group="Misc." subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="urlchangeeffect" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivの画面表示するかどうかに応じて自動的に設定されるプロパティです。" csspropertyname="" csselementname="" normalpropertyname="visible" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="PopupDivを表示するための幅を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="PopupDivに表示されるテキストの単語の間の間隔を設定するプロパティです。" csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="PopupDivの背景領域を設定するプロパティです。" csspropertyname="background" csselementname="" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="PopupDivの角の形を設定するプロパティです。" csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="PopupDivに影効果を設定するプロパティです。" csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="PopupDivに表示されるテキストの色を設定するプロパティです。" csspropertyname="color" csselementname="" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="" description="PopupDiv領域内で表示されるマウスポインタの種類を設定するプロパティです。" csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="PopupDivで使用するフォントを設定するプロパティです。" csspropertyname="font" csselementname="" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="PopupDivに表示される文字の間隔（字間）を設定するプロパティです。" csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="PopupDivの境界線を設定するプロパティです。" csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="PopupDivの枠（Border）の内側に表示されるedge画像を設定するプロパティです。" csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="PopupDiv領域の内側の余白を設定するプロパティです。" csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" defaultvalue="left" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivに表示される文字列またはコンテンツの横方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="MultiEnum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivに表示されるテキストに適用する効果を設定するプロパティです。" csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" defaultvalue="middle" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivに表示される文字列またはコンテンツの縦方向の配置方法を設定するプロパティです。" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivに表示される文字列が出力領域よりも長い場合、自動改行されるように設定するプロパティです。" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="PopupDiv領域の透明度を設定するプロパティです。" csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="PopupDivに表示されるテキストの単語の間の間隔を設定するプロパティです。" csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したコンポーネントをPopupDivの子コンポーネントに追加するメソッドです。">
+        <Syntax text="PopupDiv.addChild( strChildID, objComp )">
+          <Return type="Number" description="追加された子コンポーネントのインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="子として追加されるコンポーネントのオブジェクトを設定します。" />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="子として追加されるコンポーネントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivの特定イベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="PopupDiv.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="関数を検索してPopupDivの特定のイベントにハンドラ関数として追加するメソッドです。">
+        <Syntax text="PopupDiv.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されない場合は、上位の領域に検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数の名前を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、PopupDivが画面の最前面に表示されるようにします。">
+        <Syntax text="PopupDiv.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、PopupDivが画面の一段階前に表示されるようにします。">
+        <Syntax text="PopupDiv.bringToPrev()">
+          <Return type="" description="　" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="PopupDiv.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="closePopup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="画面に表示されたPopupDivを閉じるメソッドです。">
+        <Syntax text="PopupDiv.closePopup( [varReturnvalue] )">
+          <Return type="Boolean" description="画面に表示されていたPopupDiv閉じるに成功すると、「true」を返します。&#xA;画面にPopupDivが表示されていないか、閉じるに失敗した場合、「false」を返します。" />
+          <Arguments>
+            <Argument name="varReturnvalue" type="Variant" in="false" out="false" option="false" variable="false" description="PopupDivを閉じた後、returnvalueプロパティに保存される値を設定します。&#xA;値を設定しない場合、空値がreturnvalueプロパティに保存されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したPopupDivを削除するメソッドです。">
+        <Syntax text="PopupDiv.destroy()">
+          <Return type="Boolean" description="PopupDivが正常に削除されると、「true」を返します。&#xA;PopupDivが正常に削除されないと、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="PopupDiv.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントで検索しようとするハンドラ関数のインデックスを返します。&#xA;検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="PopupDivに実際に表示される文字列の値を返すメソッドです。">
+        <Syntax text="PopupDiv.getDisplayText()">
+          <Return type="String" description="PopupDivに実際の画面に表示される文字列を返します。&#xA;&#xA;exprプロパティ値によりtextプロパティ値が画面に変更されて表示されると、実際の画面に表示される値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="PopupDiv.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;インデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="PopupDivの子コンポーネントの中で、現在フォーカスを持っているコンポーネントを返すメソッドです。">
+        <Syntax text="PopupDiv.getFocus()">
+          <Return type="Object" description="フォーカスを持つ子コンポーネントがある場合、該当コンポーネントを返します。&#xA;フォーカスを持つ子コンポーネントがない場合、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="親コンポーネントのtopを基準にPopupDivのbottom値をピクセル単位で返すメソッドです。">
+        <Syntax text="PopupDiv.getOffsetBottom();">
+          <Return type="Number" description="PopupDivのbottom座標値をピクセル(pixel)単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivのheightプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="PopupDiv.getOffsetHeight();">
+          <Return type="Number" description="PopupDivの高さをピクセル単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="親コンポーネントのleftを基準にPopupDivのleft値をピクセル単位で返すメソッドです。">
+        <Syntax text="PopupDiv.getOffsetLeft();">
+          <Return type="Number" description="PopupDivのleft座標値をピクセル(pixel)単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="親コンポーネントのleftを基準にPopupDivのright値をピクセル単位で返すメソッドです。">
+        <Syntax text="PopupDiv.getOffsetRight();">
+          <Return type="Number" description="PopupDivのright座標値をピクセル(pixel)単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="親コンポーネントのtopを基準にPopupDivのtop値をピクセル単位で返すメソッドです。">
+        <Syntax text="PopupDiv.getOffsetTop();">
+          <Return type="Number" description="PopupDivのtop座標値をピクセル(pixel)単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivのwidthプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="PopupDiv.getOffsetWidth();">
+          <Return type="Number" description="PopupDivの幅をピクセル単位で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivのbottomプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="PopupDiv.getPixelBottom();">
+          <Return type="Number" description="PopupDivのbottomプロパティ値をピクセル単位で返します。&#xA;bottomプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivのheightプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="PopupDiv.getPixelHeight();">
+          <Return type="Number" description="PopupDivのheightプロパティ値をピクセル単位で返します。&#xA;heightプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivのleftプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="PopupDiv.getPixelLeft();">
+          <Return type="Number" description="PopupDivのwidthプロパティ値をピクセル単位で返します。&#xA;leftプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivのrightプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="PopupDiv.getPixelRight();">
+          <Return type="Number" description="PopupDivのrightプロパティ値をピクセル単位で返します。&#xA;rightプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivのtopプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="PopupDiv.getPixelTop();">
+          <Return type="Number" description="PopupDivのtopプロパティ値をピクセル単位で返します。&#xA;topプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivのwidthプロパティ値をピクセル単位で返すメソッドです。">
+        <Syntax text="PopupDiv.getPixelWidth();">
+          <Return type="Number" description="PopupDivのwidthプロパティ値をピクセル単位で返します。&#xA;widthプロパティ値を設定しない場合は、「null」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトでPopupDivを動的に生成した後に初期化するメソッドです。">
+        <Syntax text="PopupDiv.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="PopupDivのIDを文字列に設定します。" />
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivのbottomプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;vTop、vHeight値をすべて設定した場合vBottom値は無視されます。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネントのtopプロパティ値に基づいてPopupDivのbottomが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのheightプロパティ値に基づいてPopupDivのbottomが決定されます。" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivのheightプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネント値は無視され、pixel値にPopupDivのheightが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのheightプロパティ値に基づいてPopupDivのheightが決定されます。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivのleftプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネントのrightプロパティ値に基づいてPopupDivのleftが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのwidthプロパティ値に基づいてPopupDivのleftが決定されます。" />
+            <Argument name="vMaxHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivが画面に表示される最大高さの値をpixel単位の数値に設定します。&#xA;&#xA;vMinHeightよりも小さい値を設定すると、vMinHeight値に設定されます。" />
+            <Argument name="vMaxWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivが画面に表示される最大幅の値をpixel単位の数値に設定します。&#xA;&#xA;vMinWidthよりも小さい値を設定すると、vMinWidth値に設定されます。" />
+            <Argument name="vMinHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivが画面に表示される最小高さの値をpixel単位の数値に設定します。" />
+            <Argument name="vMinWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivが画面に表示される最小幅の値をpixel単位の数値に設定します。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivのrightプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;vLeft、vWidth値をすべて設定した場合vRight値は無視されます。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネントのleftプロパティ値に基づいてPopupDivのrightが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのwidthプロパティ値に基づいてPopupDivのrightが決定されます。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivのtopプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネントのbottomプロパティ値に基づいてPopupDivのtopが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのheightプロパティ値に基づいてPopupDivのtopが決定されます。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivのwidthプロパティ値をpixelまたは割合（「％」）単位の数値に設定します。&#xA;&#xA;* 値に基準コンポーネントを含む設定したとき：&#xA;pixel単位で設定時、基準コンポーネント値は無視され、pixel値にPopupDivのwidthが決定されます。&#xA;割合（「％」）単位で設定時、基準コンポーネントのwidthプロパティ値に基づいてPopupDivのwidthが決定されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したコンポーネントをPopupDivの子コンポーネントに特定の順序に追加するメソッドです。">
+        <Syntax text="PopupDiv.insertChild( nIdx, strChildID, objComp )">
+          <Return type="Number" description="追加された子コンポーネントのインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントに追加される順序を設定します。&#xA;「-1」に設定した場合、子コンポーネントの中で最後に追加されます。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="子として追加されるコンポーネントのオブジェクトを設定します。" />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="子として追加されるコンポーネントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isPopup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="画面にPopupDivが表示されているかを確認するメソッドです。">
+        <Syntax text="PopupDiv.isPopup()">
+          <Return type="Boolean" description="PopupDivが画面に表示されている場合、「true」を返します。&#xA;PopupDivが画面に表示されていない場合、「false」を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isValidObject" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivの位置とサイズを変更するメソッドです。">
+        <Syntax text="PopupDiv.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="親コンポーネントの右下端を基準にPopupDivのbottomプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。&#xA;nLeft、nWidth値をすべて設定した場合、nBottom値は無視されます。" />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivのheightプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="親コンポーネントの左上を基準に、PopupDivのleftプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="親コンポーネントの右下端を基準にPopupDivのrightプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。&#xA;nLeft、nWidth値をすべて設定した場合、nRight値は無視されます。" />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="親コンポーネントの左上を基準に、PopupDivのleftプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivのwidthプロパティ値を設定します。&#xA;Pixel単位または割合（「％」）に設定することができます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、引数として渡されたPopupDivが画面に一段階後ろに表示されるようにします。">
+        <Syntax text="PopupDiv.moveToNext( objComp )&#xA;PopupDiv.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントをオブジェクトに設定します。" />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、引数として渡されたコンポーネントより、PopupDivが画面の一段階前に表示されるようにします。">
+        <Syntax text="PopupDiv.moveToPrev( objComp )&#xA;PopupDiv.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントをオブジェクトに設定します。" />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="基準となるコンポーネントのIDを文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivに動的に追加されたコンポーネントを削除するメソッドです。">
+        <Syntax text="PopupDiv.removeChild( strChildID )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="削除する子コンポーネントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="PopupDiv.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivの特定のイベントから検索された関数と同じハンドラ関数を削除するメソッドです。">
+        <Syntax text="PopupDiv.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位の領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントIDを設定します。" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivのサイズを変更するメソッドです。">
+        <Syntax text="PopupDiv.resize( vWidth, vHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivのheightプロパティ値を設定します。&#xA;Pixel単位または割合(「％」)に設定することができます。&#xA;負数を設定することはできません。" />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="PopupDivのwidthプロパティ値を設定します。&#xA;Pixel単位または割合(「％」)に設定することができます。&#xA;負数を設定することはできません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、PopupDivが画面の最背面に表示されるようにします。">
+        <Syntax text="PopupDiv.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="親が同じコンポーネントのうち、PopupDivが画面に一段階後ろに表示されるようにします。">
+        <Syntax text="PopupDiv.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="PopupDiv.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivの特定のイベントの最初のハンドラ関数を、検索された関数に変更するメソッドです。">
+        <Syntax text="PopupDiv.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数を検索する領域を設定します。&#xA;該当領域に関数が定義されていない場合は、上位領域に上がりながら検索します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数名を文字列に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="PopupDivにフォーカスを与えるメソッドです。">
+        <Syntax text="PopupDiv.setFocus( [bMoveScroll [, bInnerFocus]] )">
+          <Return type="Object" description="PopupDivがフォーカスされる前にフォーカスを持っていたコンポーネントを返します。&#xA;&#xA;フォーカスを持つコンポーネントがなかったか、メソッド実行に失敗した場合には、「null」を返します。" />
+          <Arguments>
+            <Argument name="bInnerFocus" type="Boolean" in="false" out="false" option="false" variable="false" description="PopupDivがコンテナコンポーネントの場合、子コンポーネントにフォーカスを移動するかを設定します。&#xA;&#xA;「true」に設定時、子コンポーネントのフォーカスを受け取られる最初のコンポーネントがフォーカスになります。&#xA;「false」に設定時、PopupDivにフォーカスされます。&#xA;&#xA;PopupDivがコンテナコンポーネントの場合、値を設定しないと、「true」で動作します。" />
+            <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="親コンポーネントにスクロールがある場合、PopupDivを基準にスクロールを移動するかを設定します。&#xA;&#xA;「true」に設定時、PopupDivが画面に表示されるようにスクロールを移動させます。&#xA;「false」に設定時、PopupDivの位置に関係なく、スクロールを移動させません。&#xA;&#xA;値を設定しない場合は、「true」で動作します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="親コンポーネントのtopを基準にPopupDivのbottom値をピクセル単位で設定するメソッドです。">
+        <Syntax text="PopupDiv.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのtopから離れた距離をピクセル単位の数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivのheightプロパティ値をピクセル単位で設定するメソッドです。">
+        <Syntax text="PopupDiv.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="PopupDivの高さをピクセル単位で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="親コンポーネントleftを基準にPopupDivのleft値をピクセル単位で設定するメソッドです。">
+        <Syntax text="PopupDiv.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのleftから離れた距離をピクセル単位の数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="親コンポーネントleftを基準にPopupDivのright値をピクセル単位で設定するメソッドです。">
+        <Syntax text="PopupDiv.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのleftから離れた距離をピクセル単位の数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="親コンポーネントのtopを基準にPopupDivのtop値をピクセル単位で設定するメソッドです。">
+        <Syntax text="PopupDiv.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="親コンポーネントのtopから離れた距離をピクセル単位の数字で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="PopupDivのwidthプロパティ値をピクセル単位で設定するメソッドです。">
+        <Syntax text="PopupDiv.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Object" in="false" out="false" option="false" variable="false" description="PopupDivの幅をピクセル単位で設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="スクリプトで動的に生成したPopupDivを画面に表示するメソッドです。">
+        <Syntax text="PopupDiv.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="trackPopup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivを特定の場所にポップアップで表示するメソッドです。">
+        <Syntax text="PopupDiv.trackPopup( nXpos, nYpos  [,nWidth ,nHeight [,strCallBackFunc [,bCapture]]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bCapture" type="Boolean" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="PopupDivの高さを数字で設定します。&#xA;&#xA;値を省略した場合、デザイン時に設定された値が適用されます。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="PopupDivの幅を数字で設定します。&#xA;&#xA;値を省略した場合、デザイン時に設定された値が適用されます。" />
+            <Argument name="nXpos" type="Number" in="false" out="false" option="false" variable="false" description="PopupDivが表示されるx座標位置をMainFrameの左上を基準に設定します。&#xA;&#xA;PopupDivのleftがnXpos値に適用されます。&#xA;PopupDivが画面から切れて表示される場合、nXpos値が自動的に変更されます。" />
+            <Argument name="nYpos" type="Number" in="false" out="false" option="false" variable="false" description="PopupDivが表示されるy座標位置をMainFrameの左上を基準に設定します。&#xA;&#xA;PopupDivのtopがnYpos値に適用されます。&#xA;PopupDivが画面から切れて表示される場合、nYpos値が自動的に変更されます。" />
+            <Argument name="strCallBackFunc" type="String" in="false" out="false" option="false" variable="false" description="PopupDivが閉じられたときに呼び出されるコールバック関数名です。&#xA;&#xA;コールバック関数にコンポーネントID、returnvalueがパラメータとして渡されます。&#xA;コールバック関数は、PopupDivが登録されているFormに定義されている必要があります。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trackPopupByComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="引数として渡されたコンポーネントを基準にPopupDivを特定の場所に表示するメソッドです。">
+        <Syntax text="PopupDiv.trackPopupByComponent( objComp, nXpos, nYpos [,nWidth ,nHeight [,strCallBackFunc [,bCapture]]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bCapture" type="Boolean" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="PopupDivの高さを数字で設定します。&#xA;&#xA;値を省略した場合、デザイン時に設定された値が適用されます。" />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="PopupDivの幅を数字で設定します。&#xA;&#xA;値を省略した場合、デザイン時に設定された値が適用されます。" />
+            <Argument name="nXpos" type="Number" in="false" out="false" option="false" variable="false" description="objCompコンポーネントの左上を基準にPopupDivを表示するx座標の位置を数字で設定します。 &#xA;&#xA;PopupDivのleftがnXpos値に適用されます。&#xA;PopupDivが画面から切れて表示される場合、nXpos値が自動的に変更されます。" />
+            <Argument name="nYpos" type="Number" in="false" out="false" option="false" variable="false" description="objCompコンポーネントの左上を基準にPopupDivを表示するy座標の位置を数字で設定します。 &#xA;&#xA;PopupDivのtopがnYpos値に適用されます。&#xA;PopupDivが画面から切れて表示される場合、nYpos値が自動的に変更されます。" />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="座標計算の基準となるコンポーネントをオブジェクトとして設定します。" />
+            <Argument name="strCallBackFunc" type="String" in="false" out="false" option="false" variable="false" description="PopupDivが閉じられたときに呼び出されるコールバック関数名です。&#xA;&#xA;コールバック関数にコンポーネントID、returnvalueがパラメータとして渡されます。&#xA;コールバック関数は、PopupDivが登録されているFormに定義されている必要があります。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内でマウスの左ボタンをクリックしたときに発生するイベントです。">
+        <Syntax text="PopupDiv.onclick(obj:nexacro.PopupDiv,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncloseup" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="画面に表示されたPopupDivが閉じたときに発生するイベントです。">
+        <Syntax text="PopupDiv.oncloseup(obj:nexacro.PopupDiv,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="false" requirement="" description="PopupDiv領域でマウスの右ボタンをクリックするか、タッチを一定時間維持した場合に発生するイベントです。">
+        <Syntax text="PopupDiv.oncontextmenu(obj:nexacro.PopupDiv,e:nexacro.ContextMenuEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ContextMenuEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="PopupDiv.ondblclick(obj:nexacro.PopupDiv,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内でマウス左ボタンでドラッグしたときに発生するイベントです。">
+        <Syntax text="PopupDiv.ondrag(obj:nexacro.PopupDiv,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、ドラッグ状態になり、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、ドラッグ状態が解除され、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="false" requirement="" description="ドラッグ状態のマウスポインタがPopupDiv領域内に移動したときに発生するイベントです。">
+        <Syntax text="PopupDiv.ondragenter(obj:nexacro.PopupDiv,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="false" requirement="" description="ドラッグ状態のマウスポインタがPopupDiv領域外に移動したときに発生するイベントです。">
+        <Syntax text="PopupDiv.ondragleave(obj:nexacro.PopupDiv,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内でドラッグ状態のマウスポインタが移動したときに発生するイベントです。">
+        <Syntax text="PopupDiv.ondragmove(obj:nexacro.PopupDiv,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内でドラッグ状態のマウスボタンを離したときに発生するイベントです。">
+        <Syntax text="PopupDiv.ondrop(obj:nexacro.PopupDiv,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、ドラッグ状態になり、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、ドラッグ状態が解除され、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onhscroll" group="Event" deprecated="false" unused="false" requirement="" description="PopupDivの水平スクロールバーをスクロールしたときに発生するイベントです。">
+        <Syntax text="PopupDiv.onhscroll(obj:nexacro.PopupDiv,e:nexacro.ScrollEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="ScrollEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivにキーボードで値が入力されたときに発生するイベントです。">
+        <Syntax text="PopupDiv.oninput(obj:nexacro.PopupDiv,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="false" requirement="" description="PopupDivにフォーカスがある状態でキーボードのキーが押されたときに発生するイベントです。&#xA;　">
+        <Syntax text="PopupDiv.onkeydown(obj:nexacro.PopupDiv,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、イベントが上位のコンポーネントへ伝播されません。&#xA;イベントの返り値として&quot;false&quot;を返す場合、イベントが上位のコンポーネントへ伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="false" requirement="" description="PopupDivにフォーカスがある状態で、押下されたキーボードが離したときに発生するイベントです。">
+        <Syntax text="PopupDiv.onkeyup(obj:nexacro.PopupDiv,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="false" requirement="" description="PopupDivからフォーカスが出るときに発生するイベントです。">
+        <Syntax text="PopupDiv.onkillfocus(obj:nexacro.PopupDiv,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内でマウス左ボタンを押下したときに発生するイベントです。">
+        <Syntax text="PopupDiv.onlbuttondown(obj:nexacro.PopupDiv,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内で押下されたマウス左ボタンを離したときに発生するイベントです。">
+        <Syntax text="PopupDiv.onlbuttonup(obj:nexacro.PopupDiv,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内でマウスボタン（左/右ボタンを除く）が押下されたときに発生するイベントです。">
+        <Syntax text="PopupDiv.onmousedown(obj:nexacro.PopupDiv,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内にマウスポインターが入ってきたときに発生するイベントです。　">
+        <Syntax text="PopupDiv.onmouseenter(obj:nexacro.PopupDiv,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域外にマウスポインターが移動したときに発生するイベントです。">
+        <Syntax text="PopupDiv.onmouseleave(obj:nexacro.PopupDiv,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内で、マウスポインターが移動するときに発生するイベントです。">
+        <Syntax text="PopupDiv.onmousemove(obj:nexacro.PopupDiv,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、イベントが上位コンポーネントへ伝播されません。&#xA;イベントの返り値として「false」を返すと、イベントが上位コンポーネントへ伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内で押下されたマウスボタン（左/右ボタンを除く）を離したときに発生するイベントです。">
+        <Syntax text="PopupDiv.onmouseup(obj:nexacro.PopupDiv,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivの領域内でマウスホイールボタンを回転したときに発生するイベントです。">
+        <Syntax text="PopupDiv.onmousewheel(obj:nexacro.PopupDiv,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="イベントで返り値として「true」を返す場合、ホイールボタンの回転値が無視されます。&#xA;イベントで返り値として「false」を返す場合、ホイールボタンの回転値が処理されます。&#xA;&#xA;イベントで返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="" description="PopupDivの位置を移動したときに発生するイベントです。">
+        <Syntax text="PopupDiv.onmove(obj:nexacro.PopupDiv,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onpopup" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="PopupDivが画面に表示されるときに発生するイベントです。">
+        <Syntax text="PopupDiv.onpopup(obj:nexacro.PopupDiv,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="PopupDivでマウス右ボタンを押下したときに発生するイベントです。">
+        <Syntax text="PopupDiv.onrbuttondown(obj:nexacro.PopupDiv,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内でマウス右ボタンを離したときに発生するイベントです。">
+        <Syntax text="PopupDiv.onrbuttonup(obj:nexacro.PopupDiv,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="false" requirement="" description="PopupDivにフォーカスが入ったときに発生するイベントです。">
+        <Syntax text="PopupDiv.onsetfocus(obj:nexacro.PopupDiv,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="" description="PopupDivのサイズが変更されたときに発生するイベントです。">
+        <Syntax text="PopupDiv.onsize(obj:nexacro.PopupDiv,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内でタッチを離したときに発生するイベントです。">
+        <Syntax text="PopupDiv.ontouchend(obj:nexacro.PopupDiv,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内でタッチ状態を維持しながら移動するときに発生するイベントです。">
+        <Syntax text="PopupDiv.ontouchmove(obj:nexacro.PopupDiv,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="false" requirement="" description="PopupDiv領域内でタッチが始まるときに発生するイベントです。">
+        <Syntax text="PopupDiv.ontouchstart(obj:nexacro.PopupDiv,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="イベントの返り値として「true」を返すと、上位コンポーネントにイベントが伝播されません。&#xA;イベントの返り値として「false」を返すと、上位コンポーネントにイベントが伝播されます。&#xA;&#xA;イベントの返り値を省略すると、「false」に適用されます。" />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onvscroll" group="Event" deprecated="false" unused="false" requirement="" description="PopupDivの垂直スクロールバーをスクロールしたときに発生するイベントです。">
+        <Syntax text="PopupDiv.onvscroll(obj:nexacro.PopupDiv,e:nexacro.ScrollEventInfo);">
+          <Return type="" description="　" />
+          <Arguments>
+            <Argument name="e" type="ScrollEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

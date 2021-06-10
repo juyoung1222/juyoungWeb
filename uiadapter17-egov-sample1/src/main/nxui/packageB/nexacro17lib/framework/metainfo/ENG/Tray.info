@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Tray">
+    <ObjectInfo inheritance="" classname="nexacro.Tray" shorttypename="Tray" csstypename="" csscontrolname="" group="Component" subgroup="Component ( default )" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="onrbuttonup" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This object represents the system tray used in an application. Multiple trays can be registered." />
+    <PropertyInfo>
+      <Property name="icon" group="" subgroup="" refreshinfo="" edittype="StringEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Icon" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to set an icon image on the tray." csspropertyname="" csselementname="" normalpropertyname="icon" />
+      <Property name="items" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="It is a property that contains the information on popup menu used in the tray." csspropertyname="" csselementname="" normalpropertyname="items" />
+      <Property name="name" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to specify the name of a Tray." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="tooltip" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This property is used to specify the text of a tooltip that apeears when a mouse pointer hovers over a tray icon." csspropertyname="" csselementname="" normalpropertyname="tooltip" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This method is used to add a popup menu to a tray item.">
+        <Syntax text="Tray.addItem(strID,objPopupMenu)">
+          <Return type="Number" description="It returns the index value of a added popup menu. If addition fails, it returns -1." />
+          <Arguments>
+            <Argument name="objPopupMenu" type="Object" in="false" out="false" option="false" variable="false" description="The popup menu object to be added" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the tray item whose popup menu is to be added" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This method is used to delete popup menus of tray items.">
+        <Syntax text="Tray.deleteItem( strID )">
+          <Return type="Number" description="It returns the index value of a deleted popup menu. If deletion fails, it returns -1." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the tray item whose popup menu is to be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This method is used to delete a tray that is dynamically created through a script.">
+        <Syntax text="Tray.destroy()">
+          <Return type="Boolean" description="It will return &quot;true&quot; if a tray is successfully removed.&#xA;If not, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This method is used to find popup menu items among tray items.">
+        <Syntax text="Tray.findItem(strID)">
+          <Return type="Number" description="It returns the position of a tray item that matches the strID you intend to find." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the item you want to find" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getItemCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This is a method to return the total number of tray items.">
+        <Syntax text="Tray.getItemCount()">
+          <Return type="Number" description="It returns the total number of items" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This method is used to initialize a Tray after creating it in a script dynamically.">
+        <Syntax text="Tray.init(strID, icon, tooltip);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="icon" type="String" in="false" out="false" option="false" variable="false" description="It sets an icon that will be used in the Tray." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="It sets the ID of a dynamically-created Tray." />
+            <Argument name="tooltip" type="String" in="false" out="false" option="false" variable="false" description="It sets the text that will be displayed as a tooltip in the Tray." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This method is used to insert a popup menu item into the location between tray items and then to return the index of the location.">
+        <Syntax text="Tray.insertItem(nIndex, strID, objPopupMenu)">
+          <Return type="Number" description="It returns an index value of the location where a popup menu item is inserted. If insertion is unsuccessful, it will return -1." />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="The location where an item is inserted to a tray's popup menu" />
+            <Argument name="objPopupMenu" type="Object" in="false" out="false" option="false" variable="false" description="The popup menu object to be inserted" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the popup menu object that is added to a tray" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This method is used to display a tray on the taskbar. The tray mentioned here refers to the one that is dynamically created through a script.">
+        <Syntax text="Tray.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="showBalloonTip" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="It is a method to show balloon tips on the tray.">
+        <Syntax text="Tray.showBalloonTip(strTitleIcon, strTitle, strText [, bNoSound])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bNoSound" type="Boolean" in="false" out="false" option="false" variable="false" description="It determines whether to sound when a balloon tip appears. The value is &quot;false,&quot; which is intended to sound." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="It is a content text string of a balloon tip." />
+            <Argument name="strTitle" type="String" in="false" out="false" option="false" variable="false" description="It is a title to appear in a balloon tip." />
+            <Argument name="strTitleIcon" type="String" in="false" out="false" option="false" variable="false" description="It is a name and path of an icon to appear on the left side of a balloon tip title." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="ondblclick" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This is an event that occurs when double-clicking a tray icon.">
+        <Syntax text="Tray.ondblclick(obj:nexacro.Tray,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This is an event when you release the left button of a mouse over the tray.">
+        <Syntax text="Tray.onlbuttonup(obj:nexacro.Tray,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="This is an event when you release the right button of a mouse over the tray.">
+        <Syntax text="Tray.onrbuttonup(obj:nexacro.Tray,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

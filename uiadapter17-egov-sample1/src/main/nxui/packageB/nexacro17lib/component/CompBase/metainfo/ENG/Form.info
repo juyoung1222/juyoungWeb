@@ -1,0 +1,1034 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Form">
+    <ObjectInfo inheritance="nexacro.Component" classname="nexacro.Form" shorttypename="Form" csstypename="Form" csscontrolname="" group="Form" subgroup="ContainerComponent" csspseudo="true" container="true" composite="false" tabstop="false" cssstyle="true" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="system" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="A Form is a basic unit for making a screen. You can make a screen by arranging components inside a Form." />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the action printed as an accessibility feature when a selection box moves to a Form." csspropertyname="" csselementname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="all" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DescLevel" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to print accessibility features of the children when a selection box moves to a Form." csspropertyname="" csselementname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the description printed as an accessibility feature when a selection box moves to a Form." csspropertyname="" csselementname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to print the values of accessibility-related properties when a selection box moves to a Form." csspropertyname="" csselementname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the label printed as an accessibility feature when a selection box moves to a Form." csspropertyname="" csselementname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set accessibility features." csspropertyname="" csselementname="" normalpropertyname="accessibilityrole" />
+      <Property name="all" group="Collection" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This is a read-only property that holds all the objects registered in a certain form." csspropertyname="" csselementname="" normalpropertyname="all" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the background of a Form." csspropertyname="background" csselementname="" normalpropertyname="background" />
+      <Property name="binds" group="Collection" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It accesses bind information between components and datasets in a form." csspropertyname="" csselementname="" normalpropertyname="binds" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the shape of the corners of a Form." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the shadow effect of a Form." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the color of the text displayed in a Form." csspropertyname="color" csselementname="" normalpropertyname="color" />
+      <Property name="components" group="Collection" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It contains a list of components included in a form." csspropertyname="" csselementname="" normalpropertyname="components" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the style of a Form by using a class defined in the relevant XCSS file." csspropertyname="" csselementname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the type of a mouse pointer that appears when the mouse cursor is located in a Form." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+      <Property name="dragscrolltype" group="Misc." subgroup="" refreshinfo="" edittype="Enum" defaultvalue="both" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DragScrollType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is sets operation directions in case of scrolling the screen dragging your mouse." csspropertyname="" csselementname="" normalpropertyname="dragscrolltype" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to determine whether to enable a Form." csspropertyname="" csselementname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to trigger events in a Form." csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property sets a font used for a Form." csspropertyname="font" csselementname="" normalpropertyname="font" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the height of a Form." csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set a hotkey for conducting the default action of a Form." csspropertyname="" csselementname="" normalpropertyname="hotkey" />
+      <Property name="hscrollbar" group="Appearance" subgroup="" refreshinfo="" edittype="Object" defaultvalue="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It indicates the horizontal scroll bar of a form." csspropertyname="" csselementname="" normalpropertyname="hscrollbar" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the identification of a Form." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the ID of an InitValue to be applied to an Form." csspropertyname="" csselementname="" normalpropertyname="initvalueid" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the spacing between characters (kerning) displayed in a Form." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+      <Property name="locale" group="Misc." subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LocaleCode" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to set a locale applied to an XComponent." csspropertyname="" csselementname="" normalpropertyname="locale" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the name of a Form." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the border of a Form." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the image of the edges that are displayed inside the border of a Form." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the padding, an inner margin, of a Form." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="MultiEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+      <Property name="objects" group="Collection" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It accesses an invisible object including a dataset in a form." csspropertyname="" csselementname="" normalpropertyname="objects" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the opacity of a Form." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+      <Property name="opener" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It hands over a form object which calls the showModal() and showModeless() methos of a child frame." csspropertyname="" csselementname="" normalpropertyname="opener" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This read-only property holds the parent object of a Form." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="positionstep" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="scrollbarbarminsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the minimum size of the TrackBar control of a scrollbar displayed in a Form." csspropertyname="" csselementname="" normalpropertyname="scrollbarbarminsize" />
+      <Property name="scrollbarbaroutsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the base size of a scrollbar where the track bar will disappear if the form becomes smaller than the specified size." csspropertyname="" csselementname="" normalpropertyname="scrollbarbaroutsize" />
+      <Property name="scrollbardecbuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to size the decreasing button (DecButton control) of a scrollbar displayed in a Form." csspropertyname="" csselementname="" normalpropertyname="scrollbardecbuttonsize" />
+      <Property name="scrollbarincbuttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to size the increasing button (IncButton control) of a scrollbar displayed in a Form." csspropertyname="" csselementname="" normalpropertyname="scrollbarincbuttonsize" />
+      <Property name="scrollbarsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to size the scrollbar displayed in a Form." csspropertyname="" csselementname="" normalpropertyname="scrollbarsize" />
+      <Property name="scrollbartrackbarsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to size the TrackBar control of a scrollbar displayed in a Form." csspropertyname="" csselementname="" normalpropertyname="scrollbartrackbarsize" />
+      <Property name="scrollbartype" group="Action" subgroup="" refreshinfo="" edittype="Enum2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollBarType" enuminfo2="ScrollBarType" unitinfo="" delimiter="" requirement="" description="This property is used to specify how scrollbars work in a Form." csspropertyname="" csselementname="" normalpropertyname="scrollbartype" />
+      <Property name="scrollindicatorsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="" description="This property is used to set the size of the scroll indicator bars displayed in an Form." csspropertyname="" csselementname="" normalpropertyname="scrollindicatorsize" />
+      <Property name="scrolltype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="both" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="ScrollType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set scrolling actions." csspropertyname="" csselementname="" normalpropertyname="scrolltype" />
+      <Property name="statustext" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It designates a text string which shall be indicated in the status bar" csspropertyname="" csselementname="" normalpropertyname="statustext" />
+      <Property name="stepalign" group="Appearance" subgroup="" refreshinfo="" edittype="Enum2" defaultvalue="center bottom" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="VerticalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to set the position of a step control when a form is divided into multiple step pages." csspropertyname="" csselementname="" normalpropertyname="stepalign" />
+      <Property name="stepitemgap" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the gap between radio buttons displayed on the StepControl object. Those radio buttons appear when the form is divided." csspropertyname="" csselementname="" normalpropertyname="stepitemgap" />
+      <Property name="stepitemsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the size of step buttons, which take the form of a radio button." csspropertyname="" csselementname="" normalpropertyname="stepitemsize" />
+      <Property name="stepselector" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This is a read-only property that holds the step control of the current page." csspropertyname="" csselementname="" normalpropertyname="stepselector" />
+      <Property name="stepshowtype" group="Appearance" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="StepShowType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to define the conditions for the appearance of a step control when a form is divided into multiple step pages." csspropertyname="" csselementname="" normalpropertyname="stepshowtype" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" defaultvalue="&quot;&quot;" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="" csselementname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Property to designate whether to receive focus by Tab key." csspropertyname="" csselementname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to set the text displayed in an Form." csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="titletext" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It designates a text string to be displayed in the title of the window" csspropertyname="" csselementname="" normalpropertyname="titletext" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the text of a tooltip that apeears when a mouse pointer hovers over a Form." csspropertyname="" csselementname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to specify the position where a tooltip appears in a Form." csspropertyname="" csselementname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="Position" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PixelPercent" delimiter="" requirement="" description="" csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="This property is used to determine whether to make a Form visible or not." csspropertyname="" csselementname="" normalpropertyname="visible" />
+      <Property name="vscrollbar" group="Misc." subgroup="" refreshinfo="" edittype="Object" defaultvalue="" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It displays the vertical scroll bar of a form." csspropertyname="" csselementname="" normalpropertyname="vscrollbar" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the width of a Form." csspropertyname="" csselementname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the spacing between words displayed in a Form." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the background of a Form." csspropertyname="background" csselementname="" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the shape of the corners of a Form." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the shadow effect of a Form." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the color of the text displayed in a Form." csspropertyname="color" csselementname="" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="" description="This property is used to set the type of a mouse pointer that appears when the mouse cursor is located in a Form." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property sets a font used for a Form." csspropertyname="font" csselementname="" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the spacing between characters (kerning) displayed in a Form." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the border of a Form." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the image of the edges that are displayed inside the border of a Form." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the padding, an inner margin, of a Form." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" defaultvalue="left" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="MultiEnum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" defaultvalue="middle" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="" csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="This property is used to set the opacity of a Form." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="This property is used to set the spacing between words displayed in a Form." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="contents" control="true" default="false" deprecated="false" unused="false" group="userstatus" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="hscrollbar" classname="nexacro.ScrollBarControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="vscrollbar" classname="nexacro.ScrollBarControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="stepselector" classname="nexacro.StepControl" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to add a dynamically-created component as a child to a Form.">
+        <Syntax text="Form.addChild( strChildID, objComp )">
+          <Return type="Number" description="It returns the index of a child that has been added.&#xA;If it has failed to add a child, it will return -1." />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="It specifies an object to be added as a child." />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="ID of a child component to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to add a handler to a certain event of a Form.">
+        <Syntax text="Form.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to add" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="The ID of an event that the handler will be added to" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to find a function and add it to a certain event of a Form as a handler.">
+        <Syntax text="Form.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that has been added to the event by this method.&#xA;If the same handler already exists, it will return the index of the existing handler.&#xA;If it fails to add a handler successfully, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that the handler will be added to" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="alert" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is a method to display a warning dialog.">
+        <Syntax text="Form.alert( strText )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="It is a text string to indicate contents." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="It is method to change the order to draw Component to the first position of same level Components.">
+        <Syntax text="Form.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="It is method to change the order to draw Component to the next front position of same level Components.">
+        <Syntax text="Form.bringToPrev()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="cancelTransaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to cancel an ongoing transaction.">
+        <Syntax text="cancelTransaction( [strSvcID] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="Transaction ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to delete all the event handlers registered in a certain event.">
+        <Syntax text="Form.clearEventHandler( strEventID )">
+          <Return type="Number" description="It returns the number of deleted event handler functions." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event, all of whose handlers will be deleted" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="close" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It closes a form.">
+        <Syntax text="Form.close( [strReturn] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strReturn" type="String" in="false" out="false" option="false" variable="false" description="To specify a value to be delivered to the callback function of the showModal method after the form is closed." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="confirm" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is a method to display a selection dialog.">
+        <Syntax text="Form.confirm( strText [,strCaption [,strType]] )">
+          <Return type="Boolean" description="If confirm button is pressed, it returns true and if cancel button is pressed, it returns false." />
+          <Arguments>
+            <Argument name="strCaption" type="String" in="false" out="false" option="false" variable="false" description="It is a text string to display in the title bar." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="It is a text string to display in the dialog box." />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="Text strings to designate a icon type&#xA;default : no icon&#xA;error : &quot;X&quot; icon&#xA;question : &quot;?&quot; icon&#xA;warning : Warning icon  &#xA;information : Information icon" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to delete a Form that is dynamically created through a script.">
+        <Syntax text="Form.destroy()">
+          <Return type="Boolean" description="It will return &quot;true&quot; if a Form is successfully removed.&#xA;If not, it will return &quot;false&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method finds a handler in a certain event of a Form and returns the index of the handler.">
+        <Syntax text="Form.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="It returns the index of the handler that you intend to find.&#xA;If it fails to find the handler, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="The handler function to find" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method returns the string that is actually displayed in a Form.">
+        <Syntax text="Form.getDisplayText()">
+          <Return type="String" description="It returns the string that is actually displayed in a Form.&#xA;&#xA;It will return the string that is actually displayed on the screen if the value of the text property is displayed after being changed by the expr property" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns a specific handler from a certain event of a Form by specifying the index number of the handler.">
+        <Syntax text="Form.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="It returns the object of an event handler whose index number is specified. &#xA;If there is no handler for the specified index number, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="The index number of the event handler you want to find&#xA;The index number begins from 0." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you search for your sought handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFirstComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the first component to receive focus when the user moves the focus in an Form by entering the tab key.">
+        <Syntax text="Form.getFirstComponent( [bStepIn] )">
+          <Return type="Object" description="It returns the first component to receive focus." />
+          <Arguments>
+            <Argument name="bStepIn" type="Boolean" in="false" out="false" option="false" variable="false" description="This parameter is applicable when the first component to receive focus represents a container component. This parameter determines whether to include its child components in the list of return objects.&#xA;For &quot;true,&quot; the method will also return the child components.&#xA;For &quot;false,&quot; the method will only return the container component." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="It returns a component which has focus.">
+        <Syntax text="Form.getFocus()">
+          <Return type="Object" description="It returns a component if the component which has focus exists in a designated form.&#xD;&#xA;If not, it returns 'null'." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getHScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to return the current position of the track of a horizontal scrollbar.">
+        <Syntax text="Form.getHScrollPos()">
+          <Return type="Number" description="It returns the current position of the track of a horizontal scrollbar." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getLastComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the last component to receive focus when the user moves the focus in an Form by entering the tab key.">
+        <Syntax text="Form.getLastComponent( [bStepIn] )">
+          <Return type="Object" description="It returns the last component to receive focus." />
+          <Arguments>
+            <Argument name="bStepIn" type="Boolean" in="false" out="false" option="false" variable="false" description="This parameter is applicable when the last component to receive focus represents a container component. This parameter determines whether to include its child components in the list of return objects.&#xA;For &quot;true,&quot; the method will also return the child components.&#xA;For &quot;false,&quot; the method will only return the container component." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getLayoutInfo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to obtain the information on layouts">
+        <Syntax text="Form.getLayoutInfo ( strLayoutID, strPropID )">
+          <Return type="String" description="" />
+          <Arguments>
+            <Argument name="strLayoutID" type="String" in="false" out="false" option="false" variable="false" description="Layout name" />
+            <Argument name="strPropID" type="String" in="false" out="false" option="false" variable="false" description="Name of the property that you want to find information on" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getNextComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the component to which the focus will move when users enter the tab key at a certain component in an Form.">
+        <Syntax text="Form.getNextComponent( objComp [, bStepIn] )">
+          <Return type="Object" description="It returns the component to which the focus will move when users enter the tab key at the component specified by the objComp parameter." />
+          <Arguments>
+            <Argument name="bStepIn" type="Boolean" in="false" out="false" option="false" variable="false" description="This parameter is applicable when the component to receive focus represents a container component. This parameter determines whether to include its child components in the list of return objects.&#xA;For &quot;true,&quot; the method will also return the child components.&#xA;For &quot;false,&quot; the method will only return the container component." />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="The base component from which focus will move" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to obtain the bottom position of a Form in pixel, based on the value of the parent component's top property.">
+        <Syntax text="Form.getOffsetBottom();">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Form's bottom side. The value is returned in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to obtain the height of a Form in pixel.">
+        <Syntax text="Form.getOffsetHeight();">
+          <Return type="Number" description="It returns the height of a Form in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to obtain the left position of a Form in pixel, based on the value of the parent component's left property.">
+        <Syntax text="Form.getOffsetLeft();">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Form's left side. The value is returned in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to obtain the right position of a Form in pixel, based on the value of the parent component's left property.">
+        <Syntax text="Form.getOffsetRight();">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Form's right side. The value is returned in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to obtain the top position of a Form in pixel, based on the value of the parent component's top property.">
+        <Syntax text="Form.getOffsetTop();">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Form's top side. The value is returned in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to obtain the width of a Form in pixel.">
+        <Syntax text="Form.getOffsetWidth();">
+          <Return type="Number" description="It returns the width of a Form in pixel." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOwnerFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the parent frame to which a form belongs.">
+        <Syntax text="Form.getOwnerFrame()">
+          <Return type="Object" description="It returns the parent frame object to which a form belongs.&#xA;If the form does not belong to any frame, it will return &quot;null.&quot;" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method returns the value of a Form's bottom property in pixel.">
+        <Syntax text="Form.getPixelBottom();">
+          <Return type="Number" description="It returns the value of a Form's bottom property in pixel.&#xA;If the value of the bottom property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method returns the height of a Form in pixel.">
+        <Syntax text="Form.getPixelHeight();">
+          <Return type="Number" description="It returns the height of a Form in pixel.&#xA;If the value of the height property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method returns the value of a Form's left property in pixel.">
+        <Syntax text="Form.getPixelLeft();">
+          <Return type="Number" description="It returns the value of a Form's left property in pixel.&#xA;If the value of the left property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method returns the value of a Form's right property in pixel.">
+        <Syntax text="Form.getPixelRight();">
+          <Return type="Number" description="It returns the value of a Form's right property in pixel.&#xA;If the value of the right property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method returns the value of a Form's top property in pixel.">
+        <Syntax text="Form.getPixelTop();">
+          <Return type="Number" description="It returns the value of a Form's top property in pixel.&#xA;If the value of the top property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method returns the width of a Form in pixel.">
+        <Syntax text="Form.getPixelWidth();">
+          <Return type="Number" description="It returns the width of a Form in pixel.&#xA;If the value of the width property is not set, it will return &quot;null&quot;." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPrevComponent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method returns the component to which the focus will move when users enter the Shift+Tab key at a certain component in an Form.">
+        <Syntax text="Form.getPrevtComponent( objComp [, bStepIn] )">
+          <Return type="Object" description="It returns the component to which the focus will move when users enter the Shift+Tab key at the component specified by the objComp parameter." />
+          <Arguments>
+            <Argument name="bStepIn" type="Boolean" in="false" out="false" option="false" variable="false" description="This parameter is applicable when the component to receive focus represents a container component. This parameter determines whether to include its child components in the list of return objects.&#xA;For &quot;true,&quot; the method will also return the child components.&#xA;For &quot;false,&quot; the method will only return the container component." />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="The base component from which focus will move" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getStepCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the number of step pages when a form is divided into multiple step pages.">
+        <Syntax text="Form.getStepCount();">
+          <Return type="Number" description="It returns the number of step pages." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getStepIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return the index of the current page when a Form is divided into multiple pages.">
+        <Syntax text="Form.getStepIndex()">
+          <Return type="Number" description="It returns the index of the current page." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getVScrollPos" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to return the current position of the track of a vertical scrollbar.">
+        <Syntax text="Form.getVScrollPos()">
+          <Return type="Number" description="It returns the current position of the track of a vertical scrollbar." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="go" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It loads FDL located on an input URL.">
+        <Syntax text="Form.go( strURL )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strURL" type="String" in="false" out="false" option="false" variable="false" description="It is an address of FDL document to be loaded." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="hasPopupFrame" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Method to check if there is a Frame which is shown by opener which is current Form.">
+        <Syntax text="Form.hasPopupFrame()">
+          <Return type="Boolean" description="If PopupFrame exists, true shall be returned and if not, false shall be returned." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to initialize a Form after creating it in a script dynamically.">
+        <Syntax text="Form.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="It sets the ID of a Form in the form of a string." />
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the bottom property of a Form in pixel or percent (%).&#xA;&#xA;This parameter will be ignored if both the vTop and vHeight parameters are all specified.&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be determined based on the top property of the base component.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the height property of the base component." />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the height property of a Form in pixel or percent (%).&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be specified in pixel while the base component will be ignored.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the height property of the base component." />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the left property of a Form in pixel or percent (%).&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be determined based on the right property of the base component.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the width property of the base component." />
+            <Argument name="vMaxHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies a Form's maximum height that can be displayed in the Form.&#xA;&#xA;If this value is smaller than vMinHeight, it will be replaced by the value of vMinHeight." />
+            <Argument name="vMaxWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies a Form's maximum width that can be displayed in the Form.&#xA;&#xA;If this value is smaller than vMinWidth, it will be replaced by the value of vMinWidth." />
+            <Argument name="vMinHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies a Form's minimum height that can be displayed in the Form." />
+            <Argument name="vMinWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies a Form's minimum width that can be displayed in the Form." />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the right property of a Form in pixel or percent (%).&#xA;&#xA;This parameter will be ignored if both the vLeft and vWidth parameters are all specified.&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be determined based on the left property of the base component.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the width property of the base component." />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the top property of a Form in pixel or percent (%).&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be determined based on the bottom property of the base component.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the height property of the base component." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="It specifies the value of the width property of a Form in pixel or percent (%).&#xA;&#xA;* When you include a base component in the argument:&#xA;If you use a pixel as an unit, this parameter will be specified in pixel while the base component will be ignored.&#xA;If you use a percentage (%) as an unit, this parameter will be determined based on the width property of the base component." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to insert a dynamically-created component as a child to a Form. The component is added in a specified place in order.">
+        <Syntax text="Form.insertChild( nIdx, strChildID, objComp )">
+          <Return type="Number" description="It returns the index of a child that has been added.&#xA;If it has failed to add a child, it will return -1." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the index of the place in which a child will be added.&#xA;If you specify -1, a child will be added at the end following other child components." />
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="It specifies an object to be added as a child." />
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="ID of a child component to add" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isValidObject" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to verify whether an Form has a certain object.">
+        <Syntax text="Form.isValidObject( objName )&#xA;Form.isValidObject( strName )">
+          <Return type="Boolean" description="It will return &quot;true&quot; if the Form has the object delivered as an argument.&#xA;It will return &quot;false&quot; if the Form does not have the object delivered as an argument.&#xA;It will also return &quot;false&quot; if the delivered argument is invalid." />
+          <Arguments>
+            <Argument name="objName" type="Object" in="false" out="false" option="false" variable="false" description="Object of which you want to verify the presence" />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="String of an object which you want to verify the presence of" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="killTimer" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Method to delete designated timer.">
+        <Syntax text="Form.killTimer( nTimerID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTimerID" type="Number" in="false" out="false" option="false" variable="false" description="It sets setTimer with timer ID values." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="lookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is to return the result of search starting from the current component to the upper level.">
+        <Syntax text="Form.lookup( strObjectID )">
+          <Return type="Object" description="Designated dataset object" />
+          <Arguments>
+            <Argument name="strObjectID" type="String" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="It moves a component into a specific location in specific size.">
+        <Syntax text="Form.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="bottom coordinate to locate a component." />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="height of a component" />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="left coordinate to locate a component." />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="right coordinate to locate a component." />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="top coordinate to locate a component." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="width of a component" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="It changes the order to draw a component to the next back position based on a component given as an argument.">
+        <Syntax text="Form.moveToNext( objComp )&#xA;Form.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="It is a target component object." />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="It is a character string value of the target component ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="It changes the order to draw a component to the prior front position based on a component given as an argument.">
+        <Syntax text="Form.moveToPrev( objComp )&#xA;Form.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="It is a target component object." />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="It is a character string value of the target component ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="reload" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Method to load FDL again.">
+        <Syntax text="Form.reload()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeChild" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to remove a component that has been dynamically added to a Form.">
+        <Syntax text="Form.removeChild( strChildID )">
+          <Return type="Object" description="If a component is successfully removed, this method will return the removed component.&#xA;If failed, it will return &quot;null&quot;." />
+          <Arguments>
+            <Argument name="strChildID" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the ID of a child component to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to remove a handler in a certain event of a Form.">
+        <Syntax text="Form.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function to remove" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to find a handler in a certain event of a Form and remove it.">
+        <Syntax text="Form.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in removing the handler, it will return 1.&#xA;Otherwise, it will return 0." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the handler function is valid&#xA;If this method fails to find the handler in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of an event that you will search to find the handler" />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="A string that represents the name of a handler function to remove" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resetScroll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to refresh the scrollbars and internal components of a Form in line with the screen's current state.">
+        <Syntax text="Form.resetScroll()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="It is Method to change size of Form.">
+        <Syntax text="Form.resize( vWidth, vHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="It is length to change." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="It is length to change." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scrollBy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to move the slider of a scrollbar from the current position by a certain value delivered as an argument.">
+        <Syntax text="Form.scrollBy( nHoffsetpos, nVoffsetpos )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHoffsetpos" type="Number" in="false" out="false" option="false" variable="false" description="A number indicating the distance by which the slider of a horizontal scrollbar will move from the current position&#xA;&#xA;If the number is negative, the slider will move backward.&#xA;If the number is positive, the slider will move forward.&#xA;&#xA;If the number is smaller than the value of the scrollbar's min property, the value of the min will apply.&#xA;If the number is bigger than the value of the scrollbar's max property, the value of the max will apply." />
+            <Argument name="nVoffsetpos" type="Number" in="false" out="false" option="false" variable="false" description="A number indicating the distance by which the slider of a vertical scrollbar will move from the current position&#xA;&#xA;If the number is negative, the slider will move upward.&#xA;If the number is positive, the slider will move downward.&#xA;&#xA;If the number is smaller than the value of the scrollbar's min property, the value of the min will apply.&#xA;If the number is bigger than the value of the scrollbar's max property, the value of the max will apply." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="scrollTo" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to move the slider of a scrollbar to a certain position.">
+        <Syntax text="Form.scrollTo( nHpos, nVpos )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHpos" type="Number" in="false" out="false" option="false" variable="false" description="A number indicating the position to which you intend to move the slider of a horizontal scrollbar &#xA;&#xA;If the number is smaller than the value of the scrollbar's min property, the value of the min will apply.&#xA;If the number is bigger than the value of the scrollbar's max property, the value of the max will apply." />
+            <Argument name="nVpos" type="Number" in="false" out="false" option="false" variable="false" description="A number indicating the position to which you intend to move the slider of a vertical scrollbar &#xA;&#xA;If the number is smaller than the value of the scrollbar's min property, the value of the min will apply.&#xA;If the number is bigger than the value of the scrollbar's max property, the value of the max will apply." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="It is method to change the order to draw Component to the last position of same level Components.">
+        <Syntax text="Form.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="It is method to change the order to draw Component to the next back position of same level Components.">
+        <Syntax text="Form.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to change the first handler in a certain event of a Form.">
+        <Syntax text="Form.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="A handler function that will replace the existing handler" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="The scope in which the new handler function is valid" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method finds a function and uses it to replace the first handler in a certain event of a Form.">
+        <Syntax text="Form.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="If it succeeds in changing the first handler, it will return 0.&#xA;Otherwise, it will return -1." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="A scope in which you search for the new handler function&#xA;If this method fails to find the function in a specified scope, it will then search the regions at higher levels." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="The ID of the event that holds the existing handler" />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="A string that represents the name of a function that will replace the existing handler" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="This method is used to give focus to a Form.">
+        <Syntax text="Form.setFocus( [bMoveScroll [, bInnerFocus]] )">
+          <Return type="Object" description="It returns a component which had focus right before.&#xA;&#xA;If there is no component which had focus previously, or if the method fails, it returns 'null'." />
+          <Arguments>
+            <Argument name="bInnerFocus" type="Boolean" in="false" out="false" option="false" variable="false" description="If a Form is a container component, this parameter determines whether to move focus to a child component.&#xA;&#xA;For &quot;true&quot;, focus will be given to the first child component that can receive focus.&#xA;For &quot;false&quot;, focus will be given to the Form.&#xA;&#xA;The default value is &quot;true&quot; if a Form is a container component." />
+            <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="If scrolling is enabled in the parent component, it will determine whether to scroll based on the Form.&#xA;&#xA;For &quot;true&quot;, the parent component will scroll so that the Form will show.&#xA;For &quot;false&quot;, the parent component will not scroll regardless of the Form's position.&#xA;&#xA;The default value is &quot;true&quot;." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to specify the bottom position of a Form in pixel, based on the value of the parent component's top property.">
+        <Syntax text="Form.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the distance between a Form's bottom side and its parent component's top side. The distance is expressed in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to specify the height of a Form in pixel.">
+        <Syntax text="Form.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the height of a Form in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to specify the left position of a Form in pixel, based on the value of the parent component's left property.">
+        <Syntax text="Form.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the distance between a Form's left side and its parent component's left side. The distance is expressed in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to specify the right position of a Form in pixel, based on the value of the parent component's left property.">
+        <Syntax text="Form.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the distance between a Form's right side and its parent component's left side. The distance is expressed in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to specify the top position of a Form in pixel, based on the value of the parent component's top property.">
+        <Syntax text="Form.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="It specifies the distance between a Form's top side and its parent component's top side. The distance is expressed in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to specify the width of a Form in pixel.">
+        <Syntax text="Form.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Object" in="false" out="false" option="false" variable="false" description="It specifies the width of a Form in pixel." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setStepIndex" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to specify the index of a step page to display when a Form is divided into multiple pages.">
+        <Syntax text="Form.setStepIndex( nIndex )">
+          <Return type="Boolean" description="If successful, it will return &quot;true.&quot;&#xA;If failed, it will return &quot;false.&quot;" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="It is a number representing the index of the step page to display on the screen.&#xA;&#xA;The index ranges from 0 to one smaller than the value of the stepcount property." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTimer" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Method to generate timer by designated ID.">
+        <Syntax text="Form.setTimer( nTimerID, nElapse )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nElapse" type="Number" in="false" out="false" option="false" variable="false" description="It is a cycle value for timer event to occur.&#xA;Unit is milliseconds." />
+            <Argument name="nTimerID" type="Number" in="false" out="false" option="false" variable="false" description="It is ID value to distinguish timer.&#xA;(It provides 0~65535 values)" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setWaitCursor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is Method to prevent inputs or release the status by indicating Wait Cursor.">
+        <Syntax text="Form.setWaitCursor( [bWaitFlag [, bForcely]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bForcely" type="Boolean" in="false" out="false" option="false" variable="false" description="It designates whether to disregard usewaitcursor attribution of Application.&#xA; Default : false" />
+            <Argument name="bWaitFlag" type="Boolean" in="false" out="false" option="false" variable="false" description="It determines whether to set as Wait status.&#xA; Default : true" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="This method is used to display an Form on the screen. The Form mentioned here refers to the one that is dynamically created through a script.">
+        <Syntax text="Form.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sleep" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It stops actions for a certain period.">
+        <Syntax text="Form.sleep( nMilliseconds )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nMilliseconds" type="Number" in="false" out="false" option="false" variable="false" description="Time to stop and wait" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="transaction" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to call a service to update a Dataset and conduct the a callback when transaction is finished.">
+        <Syntax text="Form.transaction( strSvcID, strURL, strInDatasets, strOutDatasets, strArgument, strCallbackFunc [,bAsync [,nDataType [,bCompress]]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bAsync" type="Boolean" in="false" out="false" option="false" variable="false" description="It specifies whether the transaction is asynchronous.&#xA;&#xA;For &quot;true&quot;, a transaction will be conducted in the asynchronous manner. Therefore, the script will be executed regardless of the completion of the transaction.&#xA;For &quot;false&quot;, a transaction will be conducted in the synchronous manner. Therefore, the script will be suspended until the completion of the transaction.&#xA;&#xA;The default value is &quot;true&quot;." />
+            <Argument name="bCompress" type="Boolean" in="false" out="false" option="false" variable="false" description="It determines whether to compress data in a transaction.&#xA; &#xA;For &quot;true&quot;, data will be compressed in a transaction.&#xA;For &quot;false&quot;, data will not be compressed in a transaction.&#xA;&#xA;The default value is &quot;false&quot;." />
+            <Argument name="nDataType" type="Number" in="false" out="false" option="false" variable="false" description="It determines the type of the data used in a transaction.&#xA; &#xA;For 0, XML-formatted data will be used.&#xA;For 1, binary data will be used.&#xA;For 2, SSV-formatted data will be used.&#xA;&#xA;The default value is 0." />
+            <Argument name="strArgument" type="String" in="false" out="false" option="false" variable="false" description="A string representing the information sent to the server page&#xA;An argument is specified with the format &quot;variable ID=variable value&quot; while you can specify multiple arguments by dividing them with white spaces.&#xA;&#xA;ex) &quot;argu0=test argu1=30&quot;" />
+            <Argument name="strCallbackFunc" type="String" in="false" out="false" option="false" variable="false" description="A string representing a callback that will be called upon receiving the result of a transaction&#xA;The callback must be defined in the domain of a Form or an Application." />
+            <Argument name="strInDatasets" type="String" in="false" out="false" option="false" variable="false" description="A string representing the ID of a Dataset sent to the server for a data transaction&#xA;The Dataset must be defined in the domain of a Form or in AppVariables of an Application.&#xA;The argument is specified with the format &quot;input ID=Dataset ID&quot;. You can specify multiple Datasets by dividing them with white spaces.&#xA;&#xA;ex) &quot;input1=DataSet00 input2=DataSet01&quot;" />
+            <Argument name="strOutDatasets" type="String" in="false" out="false" option="false" variable="false" description="A string representing the ID of a Dataset for receiving data from the server for a data transaction&#xA;The Dataset must be defined in the domain of a Form or in AppVariables of an Application.&#xA;The argument is specified with the format &quot;Dataset ID=output ID&quot;. You can specify multiple Datasets by dividing them with white spaces.&#xA;&#xA;ex) &quot;DataSet00=output0 DataSet01=output1&quot;" />
+            <Argument name="strSvcID" type="String" in="false" out="false" option="false" variable="false" description="A string representing an ID to distinguish transactions." />
+            <Argument name="strURL" type="String" in="false" out="false" option="false" variable="false" description="A string representing an address to request a transaction." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="canlayoutchange" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs right before a layout is changed.">
+        <Syntax text="Form.canlayoutchange(obj:nexacro.Form,e:nexacro.LayoutChangeEventInfo);">
+          <Return type="Boolean" description="If false is returned, a layout shall not be changed.&#xD;&#xA;&#xD;&#xA;If true is returned or no value is returned, the layout shall be changed." />
+          <Arguments>
+            <Argument name="e" type="LayoutChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="canstepchange" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This event occurs when a step page shifts in a form that is divided into multiple step pages.">
+        <Syntax text="Form.canstepchange(obj:nexacro.Form,e:nexacro.StepChangeEventInfo);">
+          <Return type="Boolean" description="If &quot;true&quot; is returned, a step page will change.&#xA;If &quot;false&quot; is returned, a step page will not change.&#xA;&#xA;If the event omits a return value, &quot;true&quot; will apply." />
+          <Arguments>
+            <Argument name="e" type="StepChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onactivate" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs when a form is activated.">
+        <Syntax text="Form.onactivate(obj:nexacro.Form,e:nexacro.ActivateEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ActivateEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbeforeclose" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It is an event that occurs before a form is closed.">
+        <Syntax text="Form.onbeforeclose(obj:nexacro.Form,e:nexacro.CloseEventInfo);">
+          <Return type="String" description="A message to confirm whether to close will be designated.&#xA;If the value is null (null, undefined, 0 size string), a confirming message does not appear as when the value is not entered." />
+          <Arguments>
+            <Argument name="e" type="CloseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onbindingvaluechanged" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs when a component is zoomed in/out.">
+        <Syntax text="Form.onbindingvaluechanged(obj:nexacro.Form,e:nexacro.BindingValueChangedEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="BindingValueChangedEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when the left button of a mouse is clicked within an Form.">
+        <Syntax text="Form.onclick(obj:nexacro.Form,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclose" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs when a form is terminated or the screen is changed.">
+        <Syntax text="Form.onclose(obj:nexacro.Form,e:nexacro.CloseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="CloseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="false" requirement="" description="This event occurs when you right-click a Form or touch a Form for a certain duration.">
+        <Syntax text="Form.oncontextmenu(obj:nexacro.Form,e:nexacro.ContextMenuEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ContextMenuEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="Form.ondblclick(obj:nexacro.Form,e:nexacro.);">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondeactivate" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs when a form is inactivated.">
+        <Syntax text="Form.ondeactivate(obj:nexacro.Form,e:nexacro.ActivateEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ActivateEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondevicebuttonup" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser" description="It occurs at the time of the buttonup action on mobile devices.">
+        <Syntax text="Form.ondevicebuttonup(obj:nexacro.Form,e:nexacro.DeviceButtonEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="DeviceButtonEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you conduct a dragging action by pressing the left button of a mouse&#xA;within a Form.">
+        <Syntax text="Form.ondrag(obj:nexacro.Form,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, dragging will be conducted while the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, dragging will be canceled while the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when dragged Component enters into Component area.">
+        <Syntax text="Form.ondragenter(obj:nexacro.Form,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, Event shall not occur in upper Component.&#xA;Default : false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when dragged Component goes out of Component area.">
+        <Syntax text="Form.ondragleave(obj:nexacro.Form,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, Event shall not occur in upper Component.&#xA;default : false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a dragged mouse moves in Component area.">
+        <Syntax text="Form.ondragmove(obj:nexacro.Form,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you release a mouse button within the area of a Form after you have pressed the button to drag an object.">
+        <Syntax text="Form.ondrop(obj:nexacro.Form,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This event occurs when an error occurs in a transaction conducted in a Form.">
+        <Syntax text="Form.onerror(obj:nexacro.Form,e:nexacro.ErrorEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;,&#xA; &gt; it will not bubble to the onerror event of an Environment object.&#xA; &gt; it will maintain the transaction without a pause.&#xA;&#xA;If this event returns &quot;false&quot;,&#xA; &gt; it will bubble to the onerror event of an Environment object.&#xA; &gt; the value returned by the onerror event of the Environment will determine whether to stop the transaction.&#xA; &gt; the transaction will be cancelled if you do not define the onerror event for the Environment&#xA;&#xA;The default return value is &quot;false&quot;." />
+          <Arguments>
+            <Argument name="e" type="ErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onhscroll" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a value of Horizontal ScrollBar of Component is changed.">
+        <Syntax text="Form.onhscroll(obj:nexacro.Form,e:nexacro.ScrollEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ScrollEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninit" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Form is initialized.">
+        <Syntax text="Form.oninit(obj:nexacro.Form,e:nexacro.EventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="">
+        <Syntax text="Form.oninput(obj:nexacro.Form,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you press a key with a Form focused.">
+        <Syntax text="Form.onkeydown(obj:nexacro.Form,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you release a key with a Form focused.">
+        <Syntax text="Form.onkeyup(obj:nexacro.Form,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Form in which Focus is located loses Focus.">
+        <Syntax text="Form.onkillfocus(obj:nexacro.Form,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlayoutchanged" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs right after a layout is changed.">
+        <Syntax text="Form.onlayoutchanged(obj:nexacro.Form,e:nexacro.LayoutChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LayoutChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you press the left button of a mouse within the area of a Form.">
+        <Syntax text="Form.onlbuttondown(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you release the left button of a mouse within the area of a Form.">
+        <Syntax text="Form.onlbuttonup(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onload" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs when all components of a form are created and all objects are loaded.">
+        <Syntax text="Form.onload(obj:nexacro.Form,e:nexacro.LoadEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="LoadEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a cursor of a mouse enters into Form area.">
+        <Syntax text="Form.onmouseenter(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmouseenter Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a cursor of a mouse goes out of Form area.">
+        <Syntax text="Form.onmouseleave(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmousleave Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a cursor of a mouse moves in Form area.">
+        <Syntax text="Form.onmousemove(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onmousemove Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you rotates your mouse wheel within a Form.">
+        <Syntax text="Form.onmousewheel(obj:nexacro.Form,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components while the value of a mouse wheel's rotation will be ignored.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components while the value of a mouse wheel's rotation will be processed.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Form moves.">
+        <Syntax text="Form.onmove(obj:nexacro.Form,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onorientationchange" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when the orientation of a mobile device's screen changes.">
+        <Syntax text="Form.onorientationchange(obj:nexacro.Form,e:nexacro.OrientationChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="OrientationChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Mouse Right Button Down occurs in Form.">
+        <Syntax text="Form.onrbuttondown(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="Whether to treat Event. If true is returned, onrbuttondown Event shall not occur in upper Component.&#xD;&#xA;default: false" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you release the right button of a mouse within the area of a Form.">
+        <Syntax text="Form.onrbuttonup(obj:nexacro.Form,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Focus is set to Form.">
+        <Syntax text="Form.onsetfocus(obj:nexacro.Form,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when Form size is changed.">
+        <Syntax text="Form.onsize(obj:nexacro.Form,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onstepchanged" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This event occurs right after a step Index is changed in a form that is divided into multiple step pages.">
+        <Syntax text="Form.onstepchanged(obj:nexacro.Form,e:nexacro.StepChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="StepChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontimer" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="It occurs at the set intervals if Timer is set.">
+        <Syntax text="Form.ontimer(obj:nexacro.Form,e:nexacro.TimerEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="TimerEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when you touch and release the screen within the area of a Form.">
+        <Syntax text="Form.ontouchend(obj:nexacro.Form,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when a touch point is moved along the touch surface within a Form.">
+        <Syntax text="Form.ontouchmove(obj:nexacro.Form,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="false" requirement="" description="This event occurs when a touch point is placed on the touch surface within a Form.">
+        <Syntax text="Form.ontouchstart(obj:nexacro.Form,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="If this event returns &quot;true&quot;, the event will not bubble to parent components.&#xA;If this event returns &quot;false&quot;, the event will bubble to parent components.&#xA;&#xA;This event returns &quot;false&quot; by default." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onvscroll" group="Event" deprecated="false" unused="false" requirement="" description="It is Event to occur when a value of Vertical ScrollBar of Component is changed.">
+        <Syntax text="Form.onvscroll(obj:nexacro.Form,e:nexacro.ScrollEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ScrollEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

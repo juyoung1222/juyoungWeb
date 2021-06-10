@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.nexacroAPI">
+    <ObjectInfo inheritance="" classname="nexacro.nexacro" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="nexacro 에서 기능을 확장하여 추가로 제공하는 메소드입니다." />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addErrorMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="어플리케이션에 사용자가 정의한 에러메시지를 추가하는 메소드입니다.">
+        <Syntax text="nexacro.addErrorMessage( enumLang, strCode, strMsg )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="enumLang" type="String" in="false" out="false" option="false" variable="false" description="에러메시지가 추가될 언어를 설정합니다.&#xA;&#xA;&quot;ko&quot; 설정 시 한국어 영역에 에러메시지를 추가합니다.&#xA;&quot;en&quot; 설정 시 영어 영역에 에러메시지를 추가합니다.&#xA;&quot;ja&quot; 설정 시 일본어 영역에 에러메시지를 추가합니다." />
+            <Argument name="strCode" type="String" in="false" out="false" option="false" variable="false" description="추가될 에러메시지의 코드를 문자열로 설정합니다." />
+            <Argument name="strMsg" type="String" in="false" out="false" option="false" variable="false" description="추가될 에러메시지를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="base64Decode" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Base64 형식으로 인코딩된 데이터를 디코딩 하는 메소드입니다.">
+        <Syntax text="nexacro.base64Decode( strData )">
+          <Return type="String" description="디코딩된 결과 데이터를 반환합니다." />
+          <Arguments>
+            <Argument name="strData" type="String" in="false" out="false" option="false" variable="false" description="Base64 형식으로 인코딩된 데이터를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="base64Encode" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="데이터를 Base64 형식으로 인코딩 하는 메소드입니다.">
+        <Syntax text="nexacro.base64Encode( strData )">
+          <Return type="Object" description="Base64 형식으로 인코딩된 오브젝트를 반환합니다." />
+          <Arguments>
+            <Argument name="strData" type="String" in="false" out="false" option="false" variable="false" description="Base64 형식으로 인코딩할 데이터를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="ceil" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="지정된 자릿수 또는 소수점을 기준으로 올림한 값을 반환하는 메소드입니다.">
+        <Syntax text="nexacro.ceil( nVal [,nFractionDigit] );">
+          <Return type="Number" description="올림한 값을 반환합니다." />
+          <Arguments>
+            <Argument name="nFractionDigit" type="Number" in="false" out="false" option="false" variable="false" description="올림을 수행할 자릿수를 설정합니다.&#xA;&#xA;&quot;0&quot; 설정 시 소숫점 자리가 기준이 됩니다.&#xA;양수 설정 시 소숫점 자리 이하가 기준이 됩니다.&#xA;음수 설정 시 소숫점 자리 이상이 기준이 됩니다.&#xA;&#xA;값 생략 시 &quot;0&quot; 으로 적용됩니다." />
+            <Argument name="nVal" type="Number" in="false" out="false" option="false" variable="false" description="올림을 수행할 숫자값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteCacheDB" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="어플리케이션에서 사용한 Cache DB 파일 및 관련된 임시파일을 삭제하는 메소드입니다.">
+        <Syntax text="nexacro.deleteCacheDB()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="flashWindow" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="작업표시줄에서 해당 어플리케이션 아이콘을 깜빡이게 하는 메소드입니다.">
+        <Syntax text="nexacro.flashWindow( enumType, nCount, [,nInterval] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="enumType" type="String" in="false" out="false" option="false" variable="false" description="어플리케이션이 아이콘이 깜빡이는 방식을 설정합니다.&#xA;&#xA;&quot;count&quot; 설정 시 지정된 횟수만큼 깜빡인 후 종료됩니다.&#xA;&quot;timer&quot; 설정 시 &quot;stop&quot; 값으로 flashWindow() 메소드를 실행할 때까지 계속 깜빡입니다.&#xA;&quot;timernofg&quot; 설정 시 해당 어플리케이션이 활성화 될 때까지 깜빡입니다.&#xA;&quot;stop&quot; 설정 시 현재 깜빡이는 동작을 중지합니다." />
+            <Argument name="nCount" type="Number" in="false" out="false" option="false" variable="false" description="enumType 값이 &quot;count&quot; 인 경우 깜박이는 횟수를 숫자로 설정합니다.&#xA;&#xA;enumType 값이 &quot;count&quot; 가 아닌 경우 설정값은 무시됩니다." />
+            <Argument name="nInterval" type="Number" in="false" out="false" option="false" variable="false" description="어플리케이션 아이콘이 깜박이는 간격을 밀리초(milliseconds) 단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="floor" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="지정된 자릿수 또는 소수점을 기준으로 내림한 값을 반환하는 메소드입니다.">
+        <Syntax text="nexacro.floor( nVal [,nFractionDigit] );">
+          <Return type="Number" description="내림한 값을 반환합니다." />
+          <Arguments>
+            <Argument name="nFractionDigit" type="Number" in="false" out="false" option="false" variable="false" description="내림을 수행할 자릿수를 설정합니다.&#xA;&#xA;&quot;0&quot; 설정 시 소숫점 자리가 기준이 됩니다.&#xA;양수 설정 시 소숫점 자리 이하가 기준이 됩니다.&#xA;음수 설정 시 소숫점 자리 이상이 기준이 됩니다.&#xA;&#xA;값 생략 시 &quot;0&quot; 으로 적용됩니다." />
+            <Argument name="nVal" type="Number" in="false" out="false" option="false" variable="false" description="내림을 수행할 숫자값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getApplication" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="현재 실행된 어플리케이션의 Application 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="nexacro.getApplication()">
+          <Return type="Object" description="Application 오브젝트를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Environment 의 Cookies 영역에 정의된 쿠키의 값을 반환하는 메소드입니다.">
+        <Syntax text="nexacro.getCookieVariable( strID )">
+          <Return type="String" description="Cookies 영역에 정의된 쿠키의 값을 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="값을 가져올 쿠키변수의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEnvironment" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="현재 실행된 어플리케이션의 Environment 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="nexacro.getEnvironment()">
+          <Return type="Object" description="Environment 오브젝트를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Environment 의 Variables 영역에 정의된 변수의 값을 반환하는 메소드입니다.">
+        <Syntax text="nexacro.getEnvironmentVariable( strID )">
+          <Return type="String" description="Environment 의 Variable 영역에 정의된 변수의 값을 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="값을 가져올 변수의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Environment 의 HTTP Header 영역에 정의된 변수의 값을 반환하는 메소드입니다.">
+        <Syntax text="nexacro.getHTTPHeaderVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="값을 가져올 변수의 ID 를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getPopupFrames" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="어플리케이션에서 Modal 또는 Modeless 로 실행된 Frame 을 Collection 형태로 반환하는 메소드입니다.">
+        <Syntax text="nexacro.getPopupFrames()">
+          <Return type="Array" description="어플리케이션에서 Modal 또는 Modeless 로 실행된 Frame 의 집합을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="어플리케이션에서 저장한 개인화 데이터를 반환하는 메소드입니다.">
+        <Syntax text="nexacro.getPrivateProfile( strKey )">
+          <Return type="Variant" description="인수로 전달된 키값에 해당하는 개인화 데이터를 저장 시 설정한 데이터 타입으로 반환합니다." />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="개인화 데이터를 저장할 때 설정했던 키값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getProjectPath" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="애플리케이션의 실행 경로를 반환하는 메소드입니다.">
+        <Syntax text="nexacro.getProjectPath()">
+          <Return type="String" description="애플리케이션의 실행 경로를 문자열로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTextSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 값을 기준으로 텍스트가 표시되는 영역의 크기를 계산하여 반환하는 메소드입니다.">
+        <Syntax text="nexacro.getTextSize( strText, strFont [, nLimitWidth, strWordWrap] );">
+          <Return type="Object" description="인수값을 기준으로 계산된 텍스트가 표시되는 영역의 크기 정보를 오브젝트로 반환합니다.&#xA;&#xA;반환된 오브젝트의 &quot;nx&quot; 속성에 텍스트의 가로크기가 저장됩니다.&#xA;반환된 오브젝트의 &quot;ny&quot; 속성에 텍스트의 세로크기가 저장됩니다." />
+          <Arguments>
+            <Argument name="nLimitWidth" type="Number" in="false" out="false" option="false" variable="false" description="텍스트가 표시되는 영역의 최대 너비를 pixel 단위의 숫자로 설정합니다.&#xA;&#xA;strWordWrap 값이 &quot;none&quot; 또는 &quot;line&quot; 이면 nLimitWidth 에 설정된 값은 무시됩니다.&#xA;strWordWrap 값이 &quot;char&quot; 또는 &quot;english&quot; 일 경우 nLimitWidth 값에 맞게 텍스트가 줄바꿈되어 표시됩니다." />
+            <Argument name="strFont" type="String" in="false" out="false" option="false" variable="false" description="텍스트에 적용될 폰트정보를 font 속성 형식에 맞게 설정합니다.&#xA;&#xA;컴포넌트의 font 속성에 값이 설정되어 있다면 font 속성을 설정할 수 있습니다." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="화면에 표시될 텍스트를 설정합니다." />
+            <Argument name="strWordWrap" type="String" in="false" out="false" option="false" variable="false" description="텍스트가 줄바꿈 되는 기준을 설정합니다.&#xA;&#xA;&quot;none&quot; 설정 시 텍스트에 포함된 개행문자와 nLimitWidth 값이 무시되어 한줄로 표시됩니다.&#xA;&quot;line&quot; 설정 시 nLimitWidth 값은 무시되고 텍스트에 포함된 개행문자를 기준으로 줄바꿈이 됩니다.&#xA;&quot;char&quot; 설정 시 nLimitWidth 값을 기준으로 글자 단위로 줄바꿈이 됩니다.&#xA;&quot;english&quot; 설정 시 nLimitWidth 값을 기준으로 글자 단위로 줄바꿈이 됩니다.&#xA;&#xA;&quot;char&quot;, &quot;english&quot; 설정 시 텍스트에 포함된 개행문자에 의해서도 줄바꿈이 됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isAlpha" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 알파벳인지 여부를 반환하는 메소드입니다.">
+        <Syntax text="nexacro.isAlpha( nChar )&#xA;nexacro.isAlpha( strChar )">
+          <Return type="Boolean" description="전달된 문자코드 또는 문자열이 알파벳이면 &quot;true&quot; 를 반환합니다.&#xA;전달된 문자코드 또는 문자열이 알파벳이 아니면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="알파벳에 대응하는 코드값인지 확인 할 10진수 숫자를 설정합니다." />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="알파벳 여부를 확인 할 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isAlphaNumeric" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 알파벳 또는 숫자인지 여부를 반환하는 메소드입니다.">
+        <Syntax text="nexacro.isAlphaNumeric( nChar )&#xA;nexacro.isAlphaNumeric( strChar )">
+          <Return type="Boolean" description="전달된 문자코드가 알파벳 또는 숫자이면 &quot;true&quot; 를 반환합니다.&#xA;전달된 문자열이 알파벳과 숫자로만 이루어져 있다면 &quot;true&quot; 를 반환합니다.&#xA;&#xA;전달된 문자코드가 알파벳 또는 숫자가 아니면 &quot;false&quot; 를 반환합니다.&#xA;전달된 문자열에 알파벳과 숫자 이외의 문자가 있다면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="알파벳 또는 숫자에 대응하는 코드값인지 확인 할 10진수 숫자를 설정합니다." />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="알파벳과 숫자로만 이루어져 있는지 확인 할 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isLower" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 알파벳 소문자인지 여부를 반환하는 메소드입니다.">
+        <Syntax text="nexacro.isLower( nChar )&#xA;nexacro.isLower( strChar )">
+          <Return type="Boolean" description="전달된 문자코드 또는 문자열이 알파벳 소문자이면 &quot;true&quot; 를 반환합니다.&#xA;전달된 문자코드 또는 문자열이 알파벳 소문자가 아니면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="알파벳 소문자에 대응하는 코드값인지 확인 할 10진수 숫자를 설정합니다." />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="알파벳 소문자 여부를 확인 할 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isNumeric" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 숫자인지 여부를 반환하는 메소드입니다.">
+        <Syntax text="nexacro.isNumeric( nChar )&#xA;nexacro.isNumeric( strChar )">
+          <Return type="Boolean" description="전달된 문자코드 또는 문자열이 숫자이면 &quot;true&quot; 를 반환합니다.&#xA;전달된 문자코드 또는 문자열이 숫자가 아니면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="숫자에 대응하는 코드값인지 확인 할 10진수 숫자를 설정합니다." />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="숫자 여부를 확인 할 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isSpace" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 공백문자인지 여부를 반환하는 메소드입니다.">
+        <Syntax text="nexacro.isSpace( nChar )&#xA;nexacro.isSpace( strChar )">
+          <Return type="Boolean" description="전달된 문자코드 또는 문자열이 공백문자이면 &quot;true&quot; 를 반환합니다.&#xA;전달된 문자코드 또는 문자열이 공백문자가 아니면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="공백문자에 대응하는 코드값인지 확인 할 10진수 숫자를 설정합니다." />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="공백문자 여부를 확인 할 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isUpper" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자코드 또는 문자열이 알파벳 대문자인지 여부를 반환하는 메소드입니다.">
+        <Syntax text="nexacro.isUpper( nChar );&#xA;nexacro.isUpper( strChar );">
+          <Return type="Boolean" description="전달된 문자코드 또는 문자열이 알파벳 대문자이면 &quot;true&quot; 를 반환합니다.&#xA;전달된 문자코드 또는 문자열이 알파벳 대문자가 아니면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nChar" type="Number" in="false" out="false" option="false" variable="false" description="알파벳 대문자에 대응하는 코드값인지 확인 할 10진수 숫자를 설정합니다." />
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="알파벳 대문자 여부를 확인 할 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="loadStyle" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="어플리케이션에 XCSS 파일을 로드하여 적용하는 메소드입니다.">
+        <Syntax text="nexacro.loadStyle( strURL )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strURL" type="String" in="false" out="false" option="false" variable="false" description="어플리케이션에 적용시킬 XCSS 파일경로를 &quot;xcssrc::[FileID]&quot; 형식으로 설정합니다.&#xA;&#xA;파일경로의 &quot;xcssrc::&quot; 는 고정 Prefix 값으로 수정할 수 없습니다.&#xA;XCSS 파일은 Resource Service 영역의 &quot;./_resource_/_xcss_&quot; 에 위치하여야 합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="open" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="동적으로 생성한 ChildFrame 을 Modeless 창으로 표시하는 메소드입니다.">
+        <Syntax text="nexacro.open(strName,strFormURL,objParentFrame,{objArgumentList},strOpenStyle,nLeft,nTop[,nWidth,nHeight[,objOpener]])">
+          <Return type="Boolean" description="Modeless 창이 정상으로 표시되면 &quot;true&quot; 를 반환합니다.&#xA;Modeless 창이 정상으로 표시되지 않으면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="ChildFrame 의 height 값을 설정합니다." />
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="ChildFrame 의 left 값을 설정합니다." />
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="ChildFrame 의 top 값을 설정합니다." />
+            <Argument name="nWidth" type="Number" in="false" out="false" option="false" variable="false" description="ChildFrame 의 width 값을 설정합니다." />
+            <Argument name="objArgumentList" type="Object" in="false" out="false" option="false" variable="false" description="ChildFrame 에 추가될 변수 리스트를 &quot;{변수명:변수값, 변수명:변수값}&quot; 형식으로 설정합니다." />
+            <Argument name="objOpener" type="Object" in="false" out="false" option="false" variable="false" description="opener 로 설정될 Form 의 오브젝트를 설정합니다.&#xA;&#xA;값 생략 시 처음 이벤트가 발생한 Form 의 오브젝트가 설정됩니다." />
+            <Argument name="objParentFrame" type="Object" in="false" out="false" option="false" variable="false" description="부모가 될 Frame 의 오브젝트를 설정합니다.&#xA;&#xA;getPopupFrame() 메소드 실행 시 부모 Frame 단위로 리턴값이 결정됩니다." />
+            <Argument name="strFormURL" type="String" in="false" out="false" option="false" variable="false" description="ChildFrame 에 로딩할 Form 의 URL 을 설정합니다." />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="생성될 ChildFrame 의 ID 를 설정합니다." />
+            <Argument name="strOpenStyle" type="String" in="false" out="false" option="false" variable="false" description="ChildFrame 이 표시될 때 적용될 속성값을 &quot;속성명1=속성값1 속성명2=속성값2&quot; 형식으로 설정합니다.&#xA;&#xA;ChildFrame 의 배경을 투명하게 처리하려면 &quot;layered=true&quot; 값을 설정하여야 합니다.&#xA;layered 속성은 Windows nexacro Browser 와 macOS nexacro Browser 환경만 지원합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="parseDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="날짜형식의 문자열을 분석해 1970년 1월 1일 자정부터 해당 날짜 사이의 시간을 밀리초로 반환하는 메소드입니다.">
+        <Syntax text="nexacro.parseDate( strDate )">
+          <Return type="Number" description="1970년 1월 1일 자정부터 인수로 전달된 날짜 사이의 시간을 밀리초로 반환합니다." />
+          <Arguments>
+            <Argument name="strDate" type="String" in="false" out="false" option="false" variable="false" description="날짜형식의 문자열을 설정합니다.&#xA;&#xA;유효하지 않은 날짜형식의 문자열은 오류로 처리됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Environment 의 Cookies 영역에서 쿠키변수를 제거하는 메소드입니다.">
+        <Syntax text="nexacro.removeCookieVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="제거될 쿠키변수의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Environment 의 Variables 영역에 정의된 변수를 제거하는 메소드입니다.">
+        <Syntax text="nexacro.removeEnvironmentVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="제거될 변수의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Environment 의 HTTP Header 영역에서 변수를 제거하는 메소드입니다.">
+        <Syntax text="nexacro.removeHTTPHeaderVariable( strID )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="제거될 변수의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="replaceAll" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자열에서 특정 문자열을 새 문자열로 모두 변환하여 반환하는 메소드입니다.">
+        <Syntax text="nexacro.replaceAll( strText, strOrgText, strRepText );">
+          <Return type="String" description="특정 문자열을 새 문자열로 변환한 문자열을 반환합니다." />
+          <Arguments>
+            <Argument name="strOrgText" type="String" in="false" out="false" option="false" variable="false" description="strText 값에서 새 문자열로 변환될 문자열을 설정합니다." />
+            <Argument name="strRepText" type="String" in="false" out="false" option="false" variable="false" description="strOrgText 값의 문자열 대신 변환할 문자열을 설정합니다." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="변환을 수행할 전체 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="round" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="지정된 자릿수 또는 소수점을 기준으로 반올림한 값을 반환하는 메소드입니다.">
+        <Syntax text="nexacro.round( nVal [,nFractionDigit] );">
+          <Return type="Number" description="반올림한 값을 반환합니다." />
+          <Arguments>
+            <Argument name="nFractionDigit" type="Number" in="false" out="false" option="false" variable="false" description="반올림을 수행할 자릿수를 설정합니다.&#xA;&#xA;&quot;0&quot; 설정 시 소숫점 자리가 기준이 됩니다.&#xA;양수 설정 시 소숫점 자리 이하가 기준이 됩니다.&#xA;음수 설정 시 소숫점 자리 이상이 기준이 됩니다.&#xA;&#xA;값 생략 시 &quot;0&quot; 으로 적용됩니다." />
+            <Argument name="nVal" type="Number" in="false" out="false" option="false" variable="false" description="반올림을 수행할 숫자값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setCookieVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Environment 의 Cookies 영역에 쿠키를 추가하는 메소드입니다.">
+        <Syntax text="nexacro.setCookieVariable( strID, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="추가될 쿠키변수의 ID 를 설정합니다." />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="추가될 쿠키변수가 갖는 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEnvironmentVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Environment 의 Variables 영역에 변수를 추가하는 메소드입니다.">
+        <Syntax text="nexacro.setEnvironmentVariable( strID, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="추가될 변수의 ID를 설정합니다." />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="추가될 변수가 갖는 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setHTTPHeaderVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Environment 의 HTTP Header 영역에 변수를 추가하는 메소드입니다.">
+        <Syntax text="nexacro.setHTTPHeaderVariable( strID, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="추가될 HTTP Header 변수의 ID 를 설정합니다." />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="추가될 HTTP Header 변수가 갖는 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setInitialVariable" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Android Default Web Browser,iOS Default Web Browser" description="웹브라우저 환경에서 어플리케이션이 로드되기 전 Global 영역 변수에 값을 설정하는 메소드입니다.">
+        <Syntax text="nexacro.setInitialVariable( strType, strID, varVal )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="설정할 Global 변수의 ID 를 문자열로 설정합니다." />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="설정할 변수의 Global 영역 위치를 문자열로 설정합니다.&#xA;&#xA;“environment” 설정 시 Environment 의 Variables 영역에 변수를 설정합니다.&#xA;“cookie” 설정 시 Environment 의 Cookies 영역에 변수를 설정합니다.&#xA;“httpheader” 설정 시 Environment 의 HTTPHeader 영역에 변수를 설정합니다.&#xA;“application” 설정 시 Application 의 Variables 영역에 변수를 설정합니다." />
+            <Argument name="varVal" type="String" in="false" out="false" option="false" variable="false" description="Global 변수의 값을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setPrivateProfile" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="어플리케이션에서 개인화 데이터를 저장하는 메소드입니다.">
+        <Syntax text="nexacro.setPrivateProfile( strKey, varVal )">
+          <Return type="Boolean" description="개인화 데이터 저장에 성공하면 &quot;true&quot; 를 반환합니다.&#xA;개인화 데이터 저장에 실패하면 &quot;false&quot; 를 반환합니다." />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="개인화 데이터를 저장하기 위한 키값을 설정합니다.&#xA;&#xA;XML 태그명으로 사용되므로 XML 태그명에서 사용 할 수 없는 문자는 설정할 수 없습니다.&#xA;또한, &quot;:&quot; 문자를 설정할 수 없습니다." />
+            <Argument name="varVal" type="Variant" in="false" out="false" option="false" variable="false" description="저장할 개인화 데이터를 설정합니다.&#xA;&#xA;기본 자료형(integer, float, string, boolean) 과 Date 를 설정할 수 있습니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setProtocolVar" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="통신에 사용되는 Protocol 어답터에 설정값을 전달하는 메소드입니다.">
+        <Syntax text="nexacro.setProtocolVar(strName, strKey, strValue) ;">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strKey" type="String" in="false" out="false" option="false" variable="false" description="Protocol 어답터에 전달될 설정값에 해당하는 Key 값을 설정합니다." />
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="TypeDefinition 의 Protocols 영역에 정의된 Protocol 어답터 중 설정값을 전달할 Protocol 의 &quot;Protocol ID&quot; 를 설정합니다." />
+            <Argument name="strValue" type="String" in="false" out="false" option="false" variable="false" description="Protocol 어답터에 전달될 설정값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setRenderingType" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="Windows nexacro Browser 환경에서 렌더링 방식을 설정하는 메소드입니다.">
+        <Syntax text="nexacro.setRenderingType( nType )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nType" type="Number" in="false" out="false" option="false" variable="false" description="nexacro Browser 의 렌더링 방식을 0 또는 1 로 설정합니다.&#xA;&#xA;0 설정 시 RealTime 방식(기존과 동일)으로 주기적으로 렌더링을 실행합니다.&#xA;1 설정 시 Event 방식으로 내부 규칙에 의해 렌더링을 실행합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="stripQuote" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자열의 양쪽 끝에서 따옴표를 제거한 후 반환하는 메소드입니다.">
+        <Syntax text="nexacro.stripQuote( strText )">
+          <Return type="String" description="전달된 문자열의 양쪽 끝에서 따옴표를 제거하여 반환합니다." />
+          <Arguments>
+            <Argument name="strText" type="Object" in="false" out="false" option="false" variable="false" description="따옴표를 제거 할 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toNumber" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자열을 숫자로 변환하여 반환하는 메소드입니다.">
+        <Syntax text="nexacro.toNumber( varValue [, varNanVal [, varPinfVal [, varNinfVal]]] )">
+          <Return type="Number" description="문자열을 숫자로 변환하여 반환합니다." />
+          <Arguments>
+            <Argument name="varNanVal" type="Number" in="false" out="false" option="false" variable="false" description="varValue 를 숫자로 변환한 결과값이 &quot;NaN&quot; 일 때 반환할 값을 설정합니다.&#xA;&#xA;값 생략 시 &quot;NaN&quot; 이 적용됩니다." />
+            <Argument name="varNinfVal" type="Number" in="false" out="false" option="false" variable="false" description="varValue 를 숫자로 변환한 결과값이 &quot;NEGATIVE_INFINITY&quot; 일 때 반환할 값을 설정합니다.&#xA;&#xA;값 생략 시 &quot;NEGATIVE_INFINITY&quot; 가 적용됩니다." />
+            <Argument name="varPinfVal" type="Number" in="false" out="false" option="false" variable="false" description="varValue 를 숫자로 변환한 결과값이 &quot;POSITIVE_INFINITY&quot; 일 때 반환할 값을 설정합니다.&#xA;&#xA;값 생략 시 &quot;POSITIVE_INFINITY&quot; 가 적용됩니다." />
+            <Argument name="varValue" type="String" in="false" out="false" option="false" variable="false" description="숫자로 변환할 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trim" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자열의 양쪽 끝에서 공백문자 또는 지정된 문자를 제거한 후 반환하는 메소드입니다.">
+        <Syntax text="nexacro.trim( strText [,strChar] )">
+          <Return type="String" description="문자열의 양쪽 끝에서 공백문자 또는 지정된 문자가 제거된 문자열을 반환합니다." />
+          <Arguments>
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="문자열의 양쪽 끝에서 제거할 문자를 설정합니다.&#xA;&#xA;값 생략 시 문자열의 양쪽 끝에서 공백문자를 제거합니다." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="양쪽 끝에서 공백문자 또는 지정된 문자를 제거 할 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trimLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자열의 왼쪽 끝에서 공백문자 또는 지정된 문자를 제거한 후 반환하는 메소드입니다.">
+        <Syntax text="nexacro.trimLeft( strText [,strChar] )">
+          <Return type="String" description="문자열의 왼쪽 끝에서 공백문자 또는 지정된 문자가 제거된 문자열을 반환합니다." />
+          <Arguments>
+            <Argument name="strChar" type="String" in="false" out="false" option="false" variable="false" description="문자열의 왼쪽 끝에서 제거할 문자를 설정합니다.&#xA;&#xA;값 생략 시 문자열의 왼쪽 끝에서 공백문자를 제거합니다." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="왼쪽 끝에서 공백문자 또는 지정된 문자를 제거 할 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="trimRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자열의 오른쪽 끝에서 공백문자 또는 지정된 문자를 제거한 후 반환하는 메소드입니다.">
+        <Syntax text="nexacro.trimRight( strText [,strChar] )">
+          <Return type="String" description="문자열의 오른쪽 끝에서 공백문자 또는 지정된 문자가 제거된 문자열을 반환합니다." />
+          <Arguments>
+            <Argument name="strTarget" type="String" in="false" out="false" option="false" variable="false" description="문자열의 오른쪽 끝에서 제거할 문자를 설정합니다.&#xA;&#xA;값 생략 시 문자열의 오른쪽 끝에서 공백문자를 제거합니다." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="오른쪽 끝에서 공백문자 또는 지정된 문자를 제거 할 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="wrapQuote" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="인수로 전달된 문자열의 양쪽 끝에 큰따옴표를 붙여 반환하는 메소드입니다.">
+        <Syntax text="nexacro.wrapQuote( strText )">
+          <Return type="String" description="전달된 문자열의 양쪽 끝에 큰따옴표를 붙여 반환합니다." />
+          <Arguments>
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="큰따옴표를 붙일 문자열을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

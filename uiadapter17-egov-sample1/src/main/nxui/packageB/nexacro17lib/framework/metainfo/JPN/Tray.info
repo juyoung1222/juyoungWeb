@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Tray">
+    <ObjectInfo inheritance="" classname="nexacro.Tray" shorttypename="Tray" csstypename="" csscontrolname="" group="Component" subgroup="Component ( default )" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="onrbuttonup" requirement="Windows nexacro Browser,macOS nexacro Browser" description="アプリケーションで使用されるシステムトレイとして複数のトレイを登録することができます。" />
+    <PropertyInfo>
+      <Property name="icon" group="" subgroup="" refreshinfo="" edittype="StringEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Icon" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="トレイのアイコンイメージを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="icon" />
+      <Property name="items" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="トレイで使用するポップアップメニューの情報を持っているプロパティです。" csspropertyname="" csselementname="" normalpropertyname="items" />
+      <Property name="name" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="トレイが持つ名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="tooltip" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="トレイアイコンのツールチップテキストを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="tooltip" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="トレイのitemsにポップアップメニューを追加するメソッドです。">
+        <Syntax text="Tray.addItem(strID,objPopupMenu)">
+          <Return type="Number" description="追加されたポップアップメニューのインデックス値を返します。追加できない場合-1を返します。" />
+          <Arguments>
+            <Argument name="objPopupMenu" type="Object" in="false" out="false" option="false" variable="false" description="追加するポップアップメニューオブジェクト" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="トレイItemsに追加される固有ID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="トレイitemsのポップアップメニューを削除します。">
+        <Syntax text="Tray.deleteItem( strID )">
+          <Return type="Number" description="削除されたポップアップメニューのインデックス値を返します。削除に失敗した場合は-1を返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="トレイItemsから削除するID" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="スクリプトで動的に生成したTrayを削除するメソッドです。">
+        <Syntax text="Tray.destroy()">
+          <Return type="Boolean" description="成功あるいは失敗かどうかを返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="トレイアイテムから PopupMenuItemを見つけ出します。">
+        <Syntax text="Tray.findItem(strID)">
+          <Return type="Number" description="tray itemsの中で目的のstrIDのposition（indexOf）を返します。" />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="検索するアイテムのidです。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getItemCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="トレイアイテムの総数を返すメソッドです。">
+        <Syntax text="Tray.getItemCount()">
+          <Return type="Number" description="アイテムの総数を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="スクリプトで動的にTrayを生成した後に初期化するメソッドです。">
+        <Syntax text="Tray.init(strID, icon, tooltip);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="icon" type="String" in="false" out="false" option="false" variable="false" description="Trayのアイコン" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="Trayのid" />
+            <Argument name="tooltip" type="String" in="false" out="false" option="false" variable="false" description="Trayのツールチップ" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="PopupMenuItemを希望するトレイアイテムの位置に挿入し、挿入された位置のindex値を返します。">
+        <Syntax text="Tray.insertItem(nIndex, strID, objPopupMenu)">
+          <Return type="Number" description="挿入された位置のインデックス値を返します。挿入できない場合は-1を返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="トレイのアイテムに挿入する場所です。" />
+            <Argument name="objPopupMenu" type="Object" in="false" out="false" option="false" variable="false" description="挿入するPopupMenuObjectです。" />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="トレイアイテムに追加されるPopupMenuObjectのIDです。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="スクリプトで動的に生成したTrayをタスクバーに表示するメソッドです。">
+        <Syntax text="Tray.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="showBalloonTip" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="トレイにバルーンヒントを設定するメソッドです。">
+        <Syntax text="Tray.showBalloonTip(strTitleIcon, strTitle, strText [, bNoSound])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bNoSound" type="Boolean" in="false" out="false" option="false" variable="false" description="バルーンヒントが表示されるときに音が出るようにするかどうかを決定します。デフォルト値は falseに音が出るようになります。" />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="バルーンヒントに表示されるテキスト文字列です。" />
+            <Argument name="strTitle" type="String" in="false" out="false" option="false" variable="false" description="バルーンヒントに表示されるタイトルです。" />
+            <Argument name="strTitleIcon" type="String" in="false" out="false" option="false" variable="false" description="バルーンヒントのタイトルの左側に表示されるアイコン名とパスです。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="ondblclick" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="トレイアイコンをダブルクリックしたときに発生するイベントです。">
+        <Syntax text="Tray.ondblclick(obj:nexacro.Tray,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="トレイでマウスの左ボタンがアップされたときに発生するイベントです。">
+        <Syntax text="Tray.onlbuttonup(obj:nexacro.Tray,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="トレイでマウスの右ボタンがアップされたときに発生するイベントです。">
+        <Syntax text="Tray.onrbuttonup(obj:nexacro.Tray,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

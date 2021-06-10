@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Tray">
+    <ObjectInfo inheritance="" classname="nexacro.Tray" shorttypename="Tray" csstypename="" csscontrolname="" group="Component" subgroup="Component ( default )" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="system" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="onrbuttonup" requirement="Windows nexacro Browser,macOS nexacro Browser" description="어플리케이션에서 사용되는 시스템 트레이로써 다중 트레이를 등록할 수 있습니다." />
+    <PropertyInfo>
+      <Property name="icon" group="" subgroup="" refreshinfo="" edittype="StringEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Icon" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="작업표시줄에 표시되는 Tray 의 아이콘 이미지를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="icon" />
+      <Property name="items" group="" subgroup="" refreshinfo="" edittype="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="Tray 에 등록된 TrayPopupMenu 오브젝트의 정보를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="items" />
+      <Property name="name" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="Tray 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="tooltip" group="" subgroup="" refreshinfo="" edittype="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,macOS nexacro Browser" description="Tray 아이콘에 마우스 포인터를 올려 놓았을 때 표시되는 풍선도움말을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="tooltip" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="Tray 의 items 속성에 TrayPopupMenu 오브젝트를 추가하는 메소드입니다.">
+        <Syntax text="Tray.addItem(strID,objPopupMenu)">
+          <Return type="Number" description="items 속성에 추가된 TrayPopupMenu 오브젝트의 인덱스를 반환합니다.&#xA;&#xA;TrayPopupMenu 오브젝트 추가에 실패했을 경우 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="objPopupMenu" type="Object" in="false" out="false" option="false" variable="false" description="Tray 의 items 속성에 추가할 TrayPopupMenu 오브젝트를 설정합니다." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="Tray 의 Items 속성에 추가될 TrayPopupMenu 오브젝트의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="Tray 의 items 속성에 등록된 TrayPopupMenu 오브젝트를 삭제하는 메소드입니다.">
+        <Syntax text="Tray.deleteItem( strID )">
+          <Return type="Number" description="tems 속성에서 삭제된 TrayPopupMenu 오브젝트의 인덱스를 반환합니다.&#xA;&#xA;TrayPopupMenu 오브젝트 삭제에 실패했을 경우 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="Tray 의 Items 속성에서 삭제될 TrayPopupMenu 오브젝트의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="스크립트에서 동적으로 생성한 Tray 를 삭제하는 메소드입니다.">
+        <Syntax text="Tray.destroy()">
+          <Return type="Boolean" description="Tray 가 정상적으로 삭제되면 &quot;true&quot;를 반환합니다.&#xA;Tray 가 정상적으로 삭제되지 않으면 &quot;false&quot;를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="Tray 의 items 속성에 등록된 특정 TrayPopupMenu 오브젝트의 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Tray.findItem(strID)">
+          <Return type="Number" description="items 속성에 등록된 strID 의 인덱스를 반환합니다." />
+          <Arguments>
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="items 속성에 등록된 TrayPopupMenu 오브젝트의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getItemCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="Tray 의 items 속성에 등록된 TrayPopupMenu 오브젝트의 갯수를 반환하는 메소드입니다.">
+        <Syntax text="Tray.getItemCount()">
+          <Return type="Number" description="items 속성에 등록된 TrayPopupMenu 오브젝트의 갯수를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="스크립트로 Tray 를 동적 생성한 후에 초기화하는 메소드입니다.">
+        <Syntax text="Tray.init(strID, icon, tooltip);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="icon" type="String" in="false" out="false" option="false" variable="false" description="Tray 에서 사용할 Icon 을 설정합니다." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="동적 생성된 Tray 의 ID 를 설정합니다." />
+            <Argument name="tooltip" type="String" in="false" out="false" option="false" variable="false" description="Tray 의 풍선도움말에 표시될 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertItem" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="Tray 의 items 속성의 특정 위치에 TrayPopupMenu 오브젝트를 추가하는 메소드입니다.">
+        <Syntax text="Tray.insertItem(nIndex, strID, objPopupMenu)">
+          <Return type="Number" description="TrayPopupMenu 오브젝트가 추가된 위치의 인덱스를 반환합니다.&#xA;&#xA;TrayPopupMenu 오브젝트 추가에 실패했을 경우 &quot;-1&quot; 을 반환합니다." />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="TrayPopupMenu 오브젝트가 추가될 위치의 인덱스를 설정합니다." />
+            <Argument name="objPopupMenu" type="Object" in="false" out="false" option="false" variable="false" description="추가될 TrayPopupMenu 오브젝트를 설정합니다." />
+            <Argument name="strID" type="String" in="false" out="false" option="false" variable="false" description="TrayPopupMenu 오브젝트의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="스크립트에서 동적으로 생성한 Tray 를 작업표시줄에 표시하는 메소드입니다.">
+        <Syntax text="Tray.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="showBalloonTip" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Windows nexacro Browser" description="Tray 에 풍선팁을 표시하는 메소드입니다.">
+        <Syntax text="Tray.showBalloonTip(strTitleIcon, strTitle, strText [, bNoSound])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bNoSound" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 풍선팁이 나타날 때 소리가 나오지 않습니다.&#xA;&quot;false&quot; 설정 시 풍선팁이 나타날 때 소리가 나옵니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="strText" type="String" in="false" out="false" option="false" variable="false" description="풍선팁에 표시할 텍스트를 설정합니다." />
+            <Argument name="strTitle" type="String" in="false" out="false" option="false" variable="false" description="풍선팁에 나타나는 제목을 설정합니다." />
+            <Argument name="strTitleIcon" type="String" in="false" out="false" option="false" variable="false" description="풍선팁의 타이틀 왼편에 나타나는 아이콘의 이름 및 경로를 설정합니다.&#xA;&#xA;아이콘으로 사용 가능한 시스템 아이콘은 &quot;information&quot;, &quot;warning&quot;, &quot;error&quot;, &quot;none&quot; 입니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="ondblclick" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="Tray 아이콘을 마우스 왼쪽버튼으로 더블클릭 했을 때 발생하는 이벤트입니다.">
+        <Syntax text="Tray.ondblclick(obj:nexacro.Tray,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="Tray 아이콘에서 마우스 왼쪽버튼을 클릭했을 때 발생하는 이벤트입니다.">
+        <Syntax text="Tray.onlbuttonup(obj:nexacro.Tray,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="" deprecated="false" unused="false" requirement="Windows nexacro Browser,macOS nexacro Browser" description="Tray 아이콘에서 마우스 오른쪽버튼을 클릭했을 때 발생하는 이벤트입니다.">
+        <Syntax text="Tray.onrbuttonup(obj:nexacro.Tray,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

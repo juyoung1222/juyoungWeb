@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.XPush">
+    <ObjectInfo inheritance="" classname="nexacro.XPush" shorttypename="XPush" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="X-PUSH 서버에서 전달되는 메시지를 받을 수 있는 클라이언트 컴포넌트입니다." />
+    <PropertyInfo>
+      <Property name="controlretry" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="X-PUSH 서버에 Topic 등록/삭제 시 에러가 발생하면 재시도 할 횟수를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="controlretry" />
+      <Property name="debug" group="" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser" description="nexacro Studio 의 output 윈도우에 디버그용 XPush 메시지를 보여줄지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="debug" />
+      <Property name="errorcode" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="에러가 발생한 경우 에러코드를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="errorcode" />
+      <Property name="errormsg" group="" subgroup="" refreshinfo="" edittype="" defaultvalue="" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="에러가 발생한 경우 에러 메시지를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="errormsg" />
+      <Property name="iplist" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="연결할 X-PUSH 서버의 IP 와 Port 를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="iplist" />
+      <Property name="keepalivetime" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="X-PUSH 서버와 연결을 유지하기 위한 메시지를 보낼 주기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="keepalivetime" />
+      <Property name="keeptimeout" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="X-PUSH 서버와 연결유지를 위해 보낸 메시지의 응답을 기다리는 시간을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="keeptimeout" />
+      <Property name="layouturl" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Message Layout 정의 파일의 위치를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="layouturl" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="XPush 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="retry" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="X-PUSH 서버에 연결을 시도할 때 에러가 발생하면 재시도 할 횟수를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="retry" />
+      <Property name="sessionid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="X-PUSH 서버 연결 시 사용할 Session ID를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="sessionid" />
+      <Property name="timeout" group="" subgroup="" refreshinfo="" edittype="Number" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="X-PUSH 서버와 연결을 위해 보낸 메시지의 응답을 기다리는 시간을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="timeout" />
+      <Property name="userid" group="" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="X-PUSH 서버 연결 시 사용할 User ID를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="userid" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="XPush 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="XPush.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="함수를 검색하여 XPush 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="XPush.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="XPush.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="connect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="X-PUSH 서버와 연결을 수행하는 메소드입니다.">
+        <Syntax text="XPush.connect([strUserID [,strSessionID]])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strSessionID" type="String" in="false" out="false" option="false" variable="false" description="X-PUSH 서버에 연결 시 인증을 위한 Session ID 를 설정합니다.&#xA;&#xA;값 생략 시 sessionid 속성값이 적용됩니다." />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="X-PUSH 서버에 연결 시 인증을 위한 User ID를 설정합니다.&#xA;&#xA;값 생략 시 userid 속성값이 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="disconnect" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="X-PUSH 서버의 연결을 해제하는 메소드입니다.">
+        <Syntax text="XPush.disconnect()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="XPush 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="XPush.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCurrentIP" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="현재 접속중인 X-PUSH 서버의 IP값을 반환하는 메소드입니다.">
+        <Syntax text="XPush.getCurrentIP()">
+          <Return type="String" description="현재 접속중인 X-PUSH 서버의 IP값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCurrentPort" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="현재 접속중인 X-PUSH 서버의 Port 값을 반환하는 메소드입니다.">
+        <Syntax text="XPush.getCurrentPort()">
+          <Return type="Number" description="현재 접속중인 X-PUSH 서버의 Port 값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="XPush 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="XPush.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="registerDevice" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일에서 Notification 을 받기 위해 DeviceToken 값을 X-PUSH 서버에 등록하는 메소드입니다.">
+        <Syntax text="XPush.registerDevice()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="registerTopic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="신뢰성 메시지를 수신하기 위해 X-PUSH 서버에 Topic 을 등록하는 메소드입니다.">
+        <Syntax text="this.XPush00.registerTopic(strMessageType, strMessgageKey);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layout 파일에 정의된 메시지 타입 중 수신 받을 메시지 타입을 설정합니다." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="수신 받을 메세지의 Key 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="registerTopicWithID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="신뢰성 메시지가 특정 사용자에게 수신될 수 있도록 X-PUSH 서버에 Topic 을 등록하는 메소드입니다.">
+        <Syntax text="this.XPush00.registerTopic(strMessageType, strMessgageKey, strUserID);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layout 파일에 정의된 메시지 타입 중 수신 받을 메시지 타입을 설정합니다." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="수신 받을 메시지의 Key 값을 설정합니다." />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="신뢰성 메시지를 수신할 사용자의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="XPush 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="XPush.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="XPush 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="XPush.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="X-PUSH 서버에서 미수신한 신뢰성 메시지를 요청하는 메서드입니다.">
+        <Syntax text="requestMessage ( strMsgType, strMsgKeys );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMsgKeys" type="String" in="false" out="false" option="false" variable="false" description="수신 받을 메세지의 Key 값을 설정합니다.&#xA;&#xA;수신 받을 메세지가 여러개일 경우 콤마(&quot;,&quot;)로 구분하여  여러개의 Key 값을 설정할 수 있습니다." />
+            <Argument name="strMsgType" type="String" in="false" out="false" option="false" variable="false" description="Message Layout 파일에 정의된 메시지 타입 중 수신 받을 메시지 타입을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessageCount" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="X-PUSH 서버에서 미수신한 신뢰성 메시지의 갯수를 요청하는 메서드입니다.">
+        <Syntax text="XPush.requestMessageCount(strMessageType, strMessgageKey)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layout 파일에 정의된 메시지 타입 중 갯수를 수신 받을 메시지의 타입을 설정합니다." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="미수신된 신뢰성 메세지의 Key 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="requestMessageCountWithID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="특정 사용자가 미수신한 신뢰성 메시지의 갯수를 X-PUSH 서버에 요청하는 메소드입니다.">
+        <Syntax text="XPush.requestMessageCount(strMessageType, strMessgageKey, strUserID)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layout 파일에 정의된 메시지 타입 중 갯수를 수신 받을 메시지의 타입을 설정합니다." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="미수신한 신뢰성 메시지의 Key 값을 설정합니다." />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="미수신한 신뢰성 메시지의 갯수를 확인할 사용자의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendResponse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="X-PUSH 서버에서 수신한 신뢰성 메시지에 대한 수신응답을 보내는 메서드입니다.">
+        <Syntax text="XPush.sendResponse(strmsgid)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strmsgid" type="String" in="false" out="false" option="false" variable="false" description="수신된 신뢰성 메시지의 ID를 설정합니다.&#xA;&#xA;메시지 수신 시 발생하는 CallBack 함수에 &quot;msgid&quot; 파라미터의 값으로 ID가 전달됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="XPush 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="XPush.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="XPush 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="XPush.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="subscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="메시지를 받기 위해 연결된 X-PUSH 서버에 Topic 을 등록하는 메소드입니다.">
+        <Syntax text="XPush.subscribe(strMsgType, strMsgKey, objForm, objDataset, strType, strCallBack[, nRow[, strCheck[, bUseActiveFormCallBack]]])">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="bUseActiveFormCallBack" type="Boolean" in="false" out="false" option="false" variable="false" description="&quot;true&quot; 설정 시 활성화된 Form 에서만 CallBack 함수를 호출합니다.&#xA;&quot;false&quot; 설정 시 활성화 되지 않은 Form 에서도 CallBack 함수를 호출합니다.&#xA;&#xA;값 생략 시 &quot;false&quot; 로 적용됩니다." />
+            <Argument name="nRow" type="Number" in="false" out="false" option="false" variable="false" description="strType 값이 &quot;insert&quot; 일 경우 DataSet 에 삽입할 Row 의 인덱스를 설정합니다." />
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="수신 받은 메시지를 저장할 DataSet 의 오브젝트를 설정합니다." />
+            <Argument name="objForm" type="Object" in="false" out="false" option="false" variable="false" description="메시지를 수신 받을 Form 의 오브젝트를 설정합니다." />
+            <Argument name="strCallBack" type="String" in="false" out="false" option="false" variable="false" description="수신된 메시지를 DataSet 에 저장 후 호출할 CallBack 함수명을 문자열로 설정합니다." />
+            <Argument name="strCheck" type="String" in="false" out="false" option="false" variable="false" description="&quot;0&quot; 설정 시 DataSet 에 메시지를 무조건 반영합니다.&#xA;strCheck 에 설정한 값이 Message Layout 파일에 &quot;check&quot; 속성값이 &quot;true&quot; 로 설정된 필드(Field)값과 일치할 경우만 DataSet 에 메시지를 반영합니다.&#xA;&#xA;값 생략 시 &quot;0&quot; 으로 적용됩니다." />
+            <Argument name="strMsgKey" type="String" in="false" out="false" option="false" variable="false" description="수신 받을 메세지의 Key 값을 설정합니다." />
+            <Argument name="strMsgType" type="String" in="false" out="false" option="false" variable="false" description="Message Layout 파일에 정의된 메시지 타입 중 수신 받을 메시지 타입을 설정합니다." />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="수신 된 메시지를 DataSet 에 저장하는 방법을 설정합니다.&#xA;&#xA;&quot;append&quot; 설정 시 수신된 메시지를 DataSet 의 마지막 Row 로 추가합니다.&#xA;&#xA;&quot;insert&quot; 설정 시 수신된 메시지를 특정 Row 위치에 추가합니다.&#xA;Row 를 지정하지 않으면 &quot;0&quot;으로 적용됩니다.&#xA;&#xA;&quot;replace&quot; 설정 시 수신된 메시지가 첫번째 Row 위치에 대체됩니다.&#xA;Row 가 없을 경우 메시지가 DataSet 에 추가되지 않습니다.&#xA;&#xA;&quot;update&quot; 설정 시 수신된 메시지를 Message Layout 파일에서 &quot;key&quot; 속성값이 &quot;true&quot; 로 설정된 필드(Field)와 동일한 이름의 Column 에서 메시지에 포함된 Key 값이 동일한 첫번째 Row 를 업데이트 합니다.&#xA;&#xA;&quot;allUpdate&quot; 설정 시 수신된 메시지를 DataSet 의 Row 중 Key 에 해당하는 모든 Row 를 업데이트 합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unregisterDevice" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="모바일에서 Notification 을 받기 위해 X-PUSH 서버에 등록한 DeviceToken 값을 삭제하는 메소드입니다.">
+        <Syntax text="XPush.unregisterDevice()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="unregisterTopic" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="신뢰성 메시지를 수신하기 위해 X-PUSH 서버에 등록한 Topic 을 삭제하는 메소드입니다.">
+        <Syntax text="XPush.unregisterTopic(strMessageType, strMessgageKey)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layout 파일에 정의된 메시지 타입 중 수신을 중지할 메시지 타입을 설정합니다." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="수신을 중지할 메세지의 Key 값을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unregisterTopicWithID" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="특정 사용자에게 수신되는 신뢰성 메시지의 Topic 을 X-PUSH 서버에서 삭제하는 메소드입니다.">
+        <Syntax text="XPush.unregisterTopic(strMessageType, strMessgageKey, strUserID)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layout 파일에 정의된 메시지 타입 중 수신을 중지할 메시지 타입을 설정합니다." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="수신을 중지할 메시지의 Key 값을 설정합니다." />
+            <Argument name="strUserID" type="String" in="false" out="false" option="false" variable="false" description="신뢰성 메시지의 수신을 중지할 사용자의 ID 를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="unsubscribe" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="메시지를 받기 위해 X-PUSH 서버에 등록한 Topic 을 삭제하는 메소드입니다.">
+        <Syntax text="XPush.unsubscribe(strMsgType, strMsgKey, objForm, objDataset, strType, strCallBack)">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="Topic 등록 시 설정한 DataSet 오브젝트를 설정합니다." />
+            <Argument name="objForm" type="Object" in="false" out="false" option="false" variable="false" description="Topic 등록 시 설정한 Form 오브젝트를 설정합니다." />
+            <Argument name="strCallBack" type="String" in="false" out="false" option="false" variable="false" description="Topic 등록 시 설정한 CallBack 함수명을 설정합니다." />
+            <Argument name="strMessageType" type="String" in="false" out="false" option="false" variable="false" description="Message Layout 파일에 정의된 메시지 타입 중 수신을 중지할 Topic 의 메시지 타입을 설정합니다." />
+            <Argument name="strMessgageKey" type="String" in="false" out="false" option="false" variable="false" description="수신을 중지할 Topic 의 Key 값을 설정합니다." />
+            <Argument name="strType" type="String" in="false" out="false" option="false" variable="false" description="Topic 등록 시 설정한 메시지 저장 방법을 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="onerror" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="XPush 에서 요청된 작업이 실패했을 때 발생하는 이벤트입니다.">
+        <Syntax text="XPush.onerror(obj:nexacro.XPush,e:nexacro.XPushErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeepalive" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="X-PUSH 서버에서 통신유지를 위해 메시지를 받았을 때 발생하는 이벤트입니다.">
+        <Syntax text="XPush.onkeepalive(obj:nexacro.XPush,e:nexacro.XPushKeepAliveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushKeepAliveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsuccess" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="XPush 에서 요청된 작업이 성공했을 때 발생하는 이벤트입니다.">
+        <Syntax text="XPush.onsuccess(obj:nexacro.XPush,e:nexacro.XPushEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="XPushEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

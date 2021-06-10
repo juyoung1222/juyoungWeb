@@ -1,0 +1,887 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Calendar">
+    <ObjectInfo inheritance="nexacro.Component" classname="nexacro.Calendar" shorttypename="Calendar" csstypename="Calendar[type=normal],Calendar[type=spin],Calendar[type=monthonly]" csscontrolname="CalendarControl[type=normal],CalendarControl[type=spin],CalendarControl[type=monthonly]" group="Component" subgroup="Component ( default )" csspseudo="true" container="false" composite="false" tabstop="true" cssstyle="true" contents="false" formats="false" contentseditor="auto" defaultwidth="150" defaultheight="20" registration="allow" edittype="" useinitvalue="true" popup="false" edittypecomponent="" dblclickevent="onchanged" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar는 날짜와 시간을 입력받기위한 컴포넌트입니다.&#xA;&#xA;날짜와 시간의 출력보다 입력 관련된 기능이 많습니다.&#xA;월단위로 보고 입력하는 방식과 편집영역에 직접입력하는 방식중에서 고를 수 있습니다.&#xA;날짜를 입력하고, 그 날짜가 정확한 날짜인지 검사해 주는 기능이 내장되어 있습니다.&#xA;그리고 Dataset의 1개의 값과 연동해 바로 입력하고, 출력할 수 있도록 되어 있습니다." />
+    <PropertyInfo>
+      <Property name="accessibilityaction" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에 선택상자 이동 시 접근성으로 출력되는 Action 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilityaction" />
+      <Property name="accessibilitydesclevel" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="all" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="DescLevel" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에 선택상자 이동 시 하위 컴포넌트의 접근성 출력여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilitydesclevel" />
+      <Property name="accessibilitydescription" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에 선택상자 이동 시 접근성으로 출력되는 Description 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilitydescription" />
+      <Property name="accessibilityenable" group="Accessibility" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE11,Chrome,Windows nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 선택상자 이동 시 접근성 관련 속성값 출력여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilityenable" />
+      <Property name="accessibilitylabel" group="Accessibility" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에 선택상자 이동 시 접근성으로 출력되는 Label 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilitylabel" />
+      <Property name="accessibilityrole" group="Accessibility" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="Role" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에 선택상자 이동 시 접근성으로 출력되는 Role 을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="accessibilityrole" />
+      <Property name="autoselect" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 편집영역이 활성화 될 때 텍스트를 전체선택 할지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="autoselect" />
+      <Property name="autoskip" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 날짜가 모두 입력 되었을 때 포커스를 자동으로 이동시킬지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="autoskip" />
+      <Property name="background" group="Style" subgroup="background" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 의 배경 영역을 설정하는 속성입니다." csspropertyname="background" csselementname="" normalpropertyname="background" />
+      <Property name="backgroundcolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 특정날짜에 배경색을 표시하기 위해 innerdataset 속성에 설정된 DataSet의 Column을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="backgroundcolumn" />
+      <Property name="bordercolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 특정날짜에 테두리을 표시하기 위해 innerdataset 속성에 설정된 DataSet의 Column을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="bordercolumn" />
+      <Property name="borderRadius" group="Style" subgroup="border-radius" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="Calendar 의 모서리 모양을 설정하는 속성입니다." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+      <Property name="bottom" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 을(를) 표시하기 위한 하단 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="bottom" />
+      <Property name="boxShadow" group="Style" subgroup="box-shadow" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에 그림자 효과를 설정하는 속성입니다." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+      <Property name="buttonsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 드롭다운 버튼이나 스핀 버튼의 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="buttonsize" />
+      <Property name="calendaredit" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 서브컨트롤인 편집영역(calendaredit) 오브젝트를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendaredit" />
+      <Property name="calendarspindownbutton" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 서브컨트롤인 스핀다운버튼(SpinDown Button) 오브젝트를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendarspindownbutton" />
+      <Property name="calendarspinupbutton" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 서브컨트롤인 스핀업버튼(SpinUp Button) 오브젝트를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="calendarspinupbutton" />
+      <Property name="color" group="Style" subgroup="color" refreshinfo="" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에 표시되는 텍스트의 색상을 설정하는 속성입니다." csspropertyname="color" csselementname="" normalpropertyname="color" />
+      <Property name="cssclass" group="Information" subgroup="" refreshinfo="" edittype="CssClass" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 의 Style을 XCSS 파일에 정의된 class로 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="cssclass" />
+      <Property name="cursor" group="Style" subgroup="cursor" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 영역내에서 표시될 마우스 포인터의 종류를 설정하는 속성입니다." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+      <Property name="datecolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 특정날짜를 표시하기 위해 innerdataset 속성에 설정된 DataSet의 Column을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="datecolumn" />
+      <Property name="dateformat" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="yyyy-MM-dd ddd" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 포커스가 없을 때 화면에 표시되는 날짜의 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="dateformat" />
+      <Property name="datepicker" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 서브컨트롤인 팝업달력(DatePicker) 오브젝트를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="datepicker" />
+      <Property name="daysize" group="Appearance" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 팝업달력(DatePicker)에서 각 날짜영역의 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="daysize" />
+      <Property name="displaynulltext" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 의 value 속성값이 &quot;null&quot; 일 때 Calendar 에 표시될 대체 문자열을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="displaynulltext" />
+      <Property name="dropbutton" group="Control" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 서브컨트롤인 드롭버튼(DropButton) 오브젝트를 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="dropbutton" />
+      <Property name="editformat" group="Misc." subgroup="" refreshinfo="" edittype="String" defaultvalue="yyyy-MM-dd" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 포커스가 있을 때 편집창에 표시되는 날짜의 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="editformat" />
+      <Property name="enable" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 의 사용가능 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="enable" />
+      <Property name="enableevent" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에서 이벤트를 발생시킬지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="enableevent" />
+      <Property name="expr" group="Action" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 표시될 날짜값에 적용할 수식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="expr" />
+      <Property name="font" group="Style" subgroup="font" refreshinfo="" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에서 사용하는 폰트를 설정하는 속성입니다." csspropertyname="font" csselementname="" normalpropertyname="font" />
+      <Property name="headformat" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="yyyy.MM" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 팝업달력(DatePicker)에서 상단에 표시되는 년/월의 순서를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="headformat" />
+      <Property name="headheight" group="Appearance" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 팝업달력(DatePicker)에서 년/월이 표시되는 Head 영역의 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="headheight" />
+      <Property name="height" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 을(를) 표시하기 위한 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="hotkey" group="Action" subgroup="" refreshinfo="" edittype="HotKey" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="HotKeyModifier" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 의 기본 액션을 수행하기 위한 단축키를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="hotkey" />
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar의 고유 식별자를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="initvalueid" group="Information" subgroup="" refreshinfo="" edittype="InitvalueID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에 적용될 InitValue 의 ID 를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="initvalueid" />
+      <Property name="innerdataset" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerDatasetID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 특정날짜를 표시하기 위해 DataSet 컴포넌트를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="innerdataset" />
+      <Property name="left" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 을(를) 표시하기 위한 좌측 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="letterSpacing" group="Style" subgroup="letter-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="Calendar 에 표시되는 문자의 간격(자간)을 설정하는 속성입니다." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+      <Property name="locale" group="Misc." subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="LocaleCode" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에 적용될 국가 및 언어(locale)를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="locale" />
+      <Property name="maxheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="Calendar 이(가) 화면에 표시되는 최대 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="maxheight" />
+      <Property name="maxwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="Calendar 이(가) 화면에 표시되는 최대 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="maxwidth" />
+      <Property name="minheight" group="Position" subgroup="" refreshinfo="boundheight" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="Calendar 이(가) 화면에 표시되는 최소 높이를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="minheight" />
+      <Property name="minwidth" group="Position" subgroup="" refreshinfo="boundwidth" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="Calendar 이(가) 화면에 표시되는 최소 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="minwidth" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 의 이름을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="border" group="Style" subgroup="border" refreshinfo="" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 의 테두리를 설정하는 속성입니다." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+      <Property name="edge" group="Style" subgroup="-nexa-edge" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 의 테두리(Border) 안쪽에 표시될 edge 이미지를 설정하는 속성입니다." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+      <Property name="padding" group="Style" subgroup="padding" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 영역의 안쪽 여백을 설정하는 속성입니다." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+      <Property name="textAlign" group="Style" subgroup="-nexa-text-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 표시되는 텍스트 또는 컨텐츠의 가로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+      <Property name="textDecoration" group="Style" subgroup="text-decoration" refreshinfo="" edittype="MultiEnum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 표시되는 텍스트에 적용할 효과를 설정하는 속성입니다." csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+      <Property name="verticalAlign" group="Style" subgroup="-nexa-vertical-align" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar에 표시되는 텍스트 또는 컨텐츠의 세로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+      <Property name="wordWrap" group="Style" subgroup="-nexa-word-wrap" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 표시되는 텍스트가 출력영역보다 길 경우 자동으로 줄바꿈 되도록 설정하는 속성입니다." csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+      <Property name="opacity" group="Style" subgroup="opacity" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 영역의 투명도를 설정하는 속성입니다." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 의 부모 오브젝트를 갖는 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="popupsize" group="Appearance" subgroup="" refreshinfo="" edittype="Number2" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Size" delimiter=" " requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="화면에 팝업으로 표시되는 팝업달력(DatePicker)의 크기를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="popupsize" />
+      <Property name="popuptype" group="Appearance" subgroup="" refreshinfo="" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CalendarPopupType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 팝업달력(DatePicker)이 표시되는 방식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="popuptype" />
+      <Property name="positionstep" group="Position" subgroup="position" refreshinfo="" edittype="Number" defaultvalue="0" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="PositionStep" delimiter="" requirement="" description="부모 오브젝트가 화면분할기능을 사용할 때 Calendar 이(가) 표시될 화면의 인덱스를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="positionstep" />
+      <Property name="readonly" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 의 편집 가능여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="readonly" />
+      <Property name="right" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 를 표시하기 위한 우측 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="right" />
+      <Property name="showmonthspin" group="Appearance" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 팝업달력(DatePicker)에서 월 변경버튼을 표시할 지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="showmonthspin" />
+      <Property name="showyearspin" group="Appearance" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 팝업달력(DatePicker)에서 연도 변경버튼을 표시할 지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="showyearspin" />
+      <Property name="taborder" group="Action" subgroup="" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="탭키 입력으로 컴포넌트간 포커스를 이동할 때 Calendar 의 순서를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="taborder" />
+      <Property name="tabstop" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="탭키 입력으로 컴포넌트간 포커스를 이동할 때 Calendar 이(가) 포커스를 받을 지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="tabstop" />
+      <Property name="text" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="true" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="dateformat 속성에 정의된 형식에 맞게 value 값이 변환되어 저장된 읽기전용 속성입니다." csspropertyname="" csselementname="" normalpropertyname="text" />
+      <Property name="textcolorcolumn" group="Binding" subgroup="bind(innerdataset)" refreshinfo="" edittype="InnerColumnID" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 특정날짜에 날짜색을 표시하기 위해 innerdataset 속성에 설정된 DataSet의 Column을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="textcolorcolumn" />
+      <Property name="tooltiptext" group="Action" subgroup="" refreshinfo="" edittype="MultilineString" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에 마우스 포인터를 올려 놓았을 때 표시되는 풍선도움말을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="tooltiptext" />
+      <Property name="tooltiptype" group="Action" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="default" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="TooltipType" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 에서 풍선도움말이 표시될 위치를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="tooltiptype" />
+      <Property name="top" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 을(를) 표시하기 위한 상단 좌표값을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="type" group="Appearance" subgroup="" refreshinfo="" edittype="Enum" defaultvalue="normal" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CalendarType" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 가 화면에 표시되는 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="type" />
+      <Property name="usecontextmenu" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 의 편집영역에서 오른쪽 마우스 클릭 시 기본팝업메뉴의 표시 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="usecontextmenu" />
+      <Property name="usesoftkeyboard" group="Misc." subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Windows nexacro Browser,Android nexacro Browser" description="Calendar 가 포커스를 가질 때 키패드의 표시 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="usesoftkeyboard" />
+      <Property name="usetrailingday" group="Appearance" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="false" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="팝업달력(DatePicker)에서 달력의 시작/끝 여백에 전/후 달의 날짜를 표시할지 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="usetrailingday" />
+      <Property name="value" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 표시되는 날짜의 원본값을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="value" />
+      <Property name="value" group="Action" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 표시되는 날짜의 원본값을 갖는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="value" />
+      <Property name="visible" group="Action" subgroup="" refreshinfo="" edittype="Boolean" defaultvalue="true" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 이(가) 화면에 표시될지 여부를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="visible" />
+      <Property name="weekformat" group="Appearance" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 팝업달력(DatePicker) 에서 요일이 표시되는 형식을 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="weekformat" />
+      <Property name="width" group="Position" subgroup="position" refreshinfo="" edittype="PositionBase" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="" description="Calendar 을(를) 표시하기 위한 너비를 설정하는 속성입니다." csspropertyname="" csselementname="" normalpropertyname="width" />
+      <Property name="wordSpacing" group="Style" subgroup="word-spacing" refreshinfo="" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="" description="Calendar 에 표시되는 텍스트의 단어 사이 간격을 설정하는 속성입니다." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo>
+        <Property name="background" group="Style" subgroup="background" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="Calendar 의 배경 영역을 설정하는 속성입니다." csspropertyname="background" csselementname="" normalpropertyname="background" />
+        <Property name="border-radius" group="Style" subgroup="border-radius" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="Calendar 의 모서리 모양을 설정하는 속성입니다." csspropertyname="border-radius" csselementname="" normalpropertyname="borderRadius" />
+        <Property name="box-shadow" group="Style" subgroup="box-shadow" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="Calendar 에 그림자 효과를 설정하는 속성입니다." csspropertyname="box-shadow" csselementname="" normalpropertyname="boxShadow" />
+        <Property name="color" group="Style" subgroup="color" edittype="Color" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="Calendar 에 표시되는 텍스트의 색상을 설정하는 속성입니다." csspropertyname="color" csselementname="" normalpropertyname="color" />
+        <Property name="cursor" group="Style" subgroup="cursor" edittype="Enum" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="CursorType" unitinfo="" delimiter="" requirement="" description="Calendar 영역내에서 표시될 마우스 포인터의 종류를 설정하는 속성입니다." csspropertyname="cursor" csselementname="" normalpropertyname="cursor" />
+        <Property name="font" group="Style" subgroup="font" edittype="Font" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="Calendar 에서 사용하는 폰트를 설정하는 속성입니다." csspropertyname="font" csselementname="" normalpropertyname="font" />
+        <Property name="letter-spacing" group="Style" subgroup="letter-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="Calendar 에 표시되는 문자의 간격(자간)을 설정하는 속성입니다." csspropertyname="letter-spacing" csselementname="" normalpropertyname="letterSpacing" />
+        <Property name="-nexa-border" group="Style" subgroup="border" edittype="Border" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="Calendar 의 테두리를 설정하는 속성입니다." csspropertyname="-nexa-border" csselementname="" normalpropertyname="border" />
+        <Property name="-nexa-edge" group="Style" subgroup="-nexa-edge" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="Calendar 의 테두리(Border) 안쪽에 표시될 edge 이미지를 설정하는 속성입니다." csspropertyname="-nexa-edge" csselementname="" normalpropertyname="edge" />
+        <Property name="-nexa-padding" group="Style" subgroup="padding" edittype="String" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="Calendar 영역의 안쪽 여백을 설정하는 속성입니다." csspropertyname="-nexa-padding" csselementname="" normalpropertyname="padding" />
+        <Property name="-nexa-text-align" group="Style" subgroup="-nexa-text-align" edittype="Enum" defaultvalue="left" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="HorizontalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 표시되는 텍스트 또는 컨텐츠의 가로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-text-align" csselementname="" normalpropertyname="textAlign" />
+        <Property name="-nexa-text-decoration" group="Style" subgroup="text-decoration" edittype="MultiEnum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="TextDecorationLine" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 표시되는 텍스트에 적용할 효과를 설정하는 속성입니다." csspropertyname="-nexa-text-decoration" csselementname="" normalpropertyname="textDecoration" />
+        <Property name="-nexa-vertical-align" group="Style" subgroup="-nexa-vertical-align" edittype="Enum" defaultvalue="middle" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="VerticalAlign" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar에 표시되는 텍스트 또는 컨텐츠의 세로 정렬 방식을 설정하는 속성입니다." csspropertyname="-nexa-vertical-align" csselementname="" normalpropertyname="verticalAlign" />
+        <Property name="-nexa-word-wrap" group="Style" subgroup="-nexa-word-wrap" edittype="Enum" defaultvalue="none" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="true" mandatory="false" objectinfo="" enuminfo="WordWrapType" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 에 표시되는 텍스트가 출력영역보다 길 경우 자동으로 줄바꿈 되도록 설정하는 속성입니다." csspropertyname="-nexa-word-wrap" csselementname="" normalpropertyname="wordWrap" />
+        <Property name="opacity" group="Style" subgroup="opacity" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="" delimiter="" requirement="" description="Calendar 영역의 투명도를 설정하는 속성입니다." csspropertyname="opacity" csselementname="" normalpropertyname="opacity" />
+        <Property name="word-spacing" group="Style" subgroup="word-spacing" edittype="Number" readonly="false" initonly="false" hidden="false" control="false" style="true" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" unitinfo="Pixel" delimiter="" requirement="" description="Calendar 에 표시되는 텍스트의 단어 사이 간격을 설정하는 속성입니다." csspropertyname="word-spacing" csselementname="" normalpropertyname="wordSpacing" />
+      </PropertyInfo>
+    </CSSInfo>
+    <StatusInfo>
+      <Status name="disabled" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="mouseover" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="focused" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="readonly" control="true" default="false" deprecated="false" unused="false" group="status" />
+      <Status name="enabled" control="true" default="true" deprecated="false" unused="false" group="status" />
+    </StatusInfo>
+    <ControlInfo>
+      <Control name="dropbutton" classname="nexacro.Button" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="calendarspinupbutton" classname="nexacro.Button" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="calendarspindownbutton" classname="nexacro.Button" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+      <Control name="datepicker" classname="nexacro.DatePickerControl" unusedstatus="" deprecated="false" unused="false" group="Control" subgroup="defaultpopup" />
+      <Control name="calendaredit" classname="nexacro.MaskEdit" unusedstatus="" deprecated="false" unused="false" group="" subgroup="" />
+    </ControlInfo>
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 특정 이벤트에 핸들러 함수를 추가하는 메소드입니다.">
+        <Syntax text="Calendar.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="함수를 검색하여 Calendar 의 특정 이벤트에 핸들러 함수로 추가하는 메소드입니다.">
+        <Syntax text="Calendar.addEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="이벤트에 추가된 핸들러 함수의 인덱스를 반환합니다.&#xA;동일한 핸들러 함수가 이미 있다면 해당 핸들러 함수의 인덱스를 반환합니다.&#xA;정상적으로 추가되지 않은 경우에는 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수가 추가될 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="이벤트 발생 시 수행될 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="bringToFront" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모가 동일한 컴포넌트 중 Calendar 이(가) 화면의 제일 앞에 표시되게 합니다.">
+        <Syntax text="Calendar.bringToFront()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="bringToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모가 동일한 컴포넌트 중 Calendar 이(가) 화면에 한단계 앞에 표시되게 합니다.">
+        <Syntax text="Calendar.bringToPrev()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="특정 이벤트에 등록된 핸들러 함수를 모두 제거하는 메소드입니다.">
+        <Syntax text="Calendar.clearEventHandler( strEventID )">
+          <Return type="Number" description="특정 이벤트에서 제거된 핸들러 함수의 갯수를 반환합니다." />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="모든 핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="destroy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="스크립트에서 동적으로 생성한 Calendar 을(를) 삭제하는 메소드입니다.">
+        <Syntax text="Calendar.destroy()">
+          <Return type="Boolean" description="Calendar 이(가) 정상적으로 삭제되면 &quot;true&quot;를 반환합니다.&#xA;Calendar 이(가) 정상적으로 삭제되지 않으면 &quot;false&quot;를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="dropdown" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="화면에 팝업달력을 표시하는 메소드입니다.">
+        <Syntax text="Calendar.dropdown()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="dropdown" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="화면에 팝업달력을 표시하는 메소드입니다.">
+        <Syntax text="Calendar.dropdown()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 특정 이벤트에서 핸들러 함수를 찾아 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Calendar.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="이벤트에서 찾으려고 하는 핸들러 함수의 인덱스를 반환합니다.&#xA;찾으려고 하는 핸들러 함수가 존재하지 않는다면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="찾으려고 하는 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 찾을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getCaretPos" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 편집영역에서 캐럿이 위치한 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getCaretPos()">
+          <Return type="Number" description="캐럿이 위치한 인덱스를 반환합니다.&#xA;읽기 전용 상태이거나 Calendar에 포커스가 없으면 &quot;-1&quot;을 반환합니다.&#xA;&#xA;첫번째 위치의 인덱스는 &quot;0&quot; 입니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getCaretPos" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 편집영역에서 캐럿이 위치한 인덱스를 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getCaretPos()">
+          <Return type="Number" description="캐럿이 위치한 인덱스를 반환합니다.&#xA;읽기 전용 상태이거나 Calendar에 포커스가 없으면 &quot;-1&quot;을 반환합니다.&#xA;&#xA;첫번째 위치의 인덱스는 &quot;0&quot; 입니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDay" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 value 속성값에서 연/월/일 중 일(Day)의 값을 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getDay()">
+          <Return type="Number" description="날짜 중 일(Day)에 해당하는 정수값을 반환합니다.&#xA;1일은 &quot;1&quot;, 31일은 &quot;31&quot;을 반환합니다.&#xA;&#xA;value 속성값이 &quot;null&quot;이면 &quot;1&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDayOfWeek" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 value 속성에 저장된 날짜에서 요일에 해당하는 숫자값을 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getDayOfWeek()">
+          <Return type="Number" description="각 요일에 해당하는 숫자값을 반환합니다. &#xA;0(일), 1(월), 2(화), 3(수), 4(목), 5(금), 6(토) 를 반환합니다.&#xA;&#xA;value 속성값이 &quot;null&quot;이면 &quot;4&quot;를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDisplayText" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 에 실제 표시되는 문자열 값을 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getDisplayText()">
+          <Return type="String" description="Calendar 에 실제 화면에 표시되는 텍스트를 반환합니다.&#xA;&#xA;expr 속성값에 의해 text 속성값이 화면에 변경되어 표시되면 실제 화면에 표시된 값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 특정 이벤트에서 지정된 인덱스에 해당하는 핸들러 함수를 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="지정된 인덱스의 핸들러 함수 오브젝트를 반환합니다.&#xA;지정된 인덱스에 핸들러 함수가 존재하지 않는다면 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="얻으려고 하는 핸들러 함수의 인덱스를 설정합니다.&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 얻을 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 자식 컴포넌트 중 현재 포커스를 가지고 있는 컴포넌트를 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getFocus()">
+          <Return type="Object" description="포커스를 가진 자식 컴포넌트가 있으면 해당 컴포넌트를 반환합니다.&#xA;포커스를 가진 자식 컴포넌트가 없으면 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getInnerDataset" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 innerdataset 속성에 설정되어 있는 DataSet 오브젝트를 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getInnerDataset()">
+          <Return type="Object" description="innerdataset 속성에 설정되어 있는 DataSet 오브젝트를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMonth" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 value 속성값에서 연/월/일 중 월(Month)의 값을 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getMonth()">
+          <Return type="Number" description="날짜 중 월(Month)에 해당하는 정수값을 반환합니다.&#xA;1월은 &quot;1&quot;, 12월은 &quot;12&quot;를 반환합니다.&#xA;&#xA;value 속성값이 &quot;null&quot;이면 &quot;1&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 top을 기준으로 Calendar 의 bottom 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getOffsetBottom();">
+          <Return type="Number" description="Calendar 의 bottom 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getOffsetHeight();">
+          <Return type="Number" description="Calendar 의 높이를 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 left를 기준으로 Calendar 의 left 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getOffsetLeft();">
+          <Return type="Number" description="Calendar 의 left 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 left를 기준으로 Calendar 의 right 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getOffsetRight();">
+          <Return type="Number" description="Calendar 의 right 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 top을 기준으로 Calendar 의 top 값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getOffsetTop();">
+          <Return type="Number" description="Calendar 의 top 좌표값을 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getOffsetWidth();">
+          <Return type="Number" description="Calendar 의 너비를 픽셀단위로 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 bottom 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getPixelBottom();">
+          <Return type="Number" description="Calendar 의 bottom 속성값을 픽셀단위로 반환합니다.&#xA;bottom 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 height 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getPixelHeight();">
+          <Return type="Number" description="Calendar 의 height 속성값을 픽셀단위로 반환합니다.&#xA;height 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 left 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getPixelLeft();">
+          <Return type="Number" description="Calendar 의 left 속성값을 픽셀단위로 반환합니다.&#xA;left 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 right 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getPixelRight();">
+          <Return type="Number" description="Calendar 의 right 속성값을 픽셀단위로 반환합니다.&#xA;right 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 top 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getPixelTop();">
+          <Return type="Number" description="Calendar 의 top 속성값을 픽셀단위로 반환합니다.&#xA;top 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getPixelWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 width 속성값을 픽셀단위로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getPixelWidth();">
+          <Return type="Number" description="Calendar 의 width 속성값을 픽셀단위로 반환합니다.&#xA;width 속성값을 설정하지 않았을 경우 &quot;null&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getSelect" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 편집영역에서 현재 선택된 텍스트의 인덱스를 배열로 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getSelect()">
+          <Return type="Array" description="선택된 텍스트의 시작 인덱스와 끝 인덱스를 각각 배열의 0번, 1번 원소로 반환합니다.&#xA;선택된 텍스트가 없는 경우 현재 캐럿 위치를 배열의 0번, 1번 원소로 반환합니다.&#xA;&#xA;인덱스는 &quot;0&quot;부터 시작합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getSelectedText" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 편집영역에서 현재 선택된 텍스트를 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getSelectedText()">
+          <Return type="String" description="편집영역에서 선택된 텍스트를 반환합니다.&#xA;선택된 텍스트가 없을 경우 빈값을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getYear" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 value 속성값에서 연/월/일 중 연도(Year) 값을 반환하는 메소드입니다.">
+        <Syntax text="Calendar.getYear()">
+          <Return type="Number" description="날짜 중 연도(Year)에 해당하는 정수값을 반환합니다.&#xA;&#xA;value 속성값이 &quot;null&quot;이면 &quot;1970&quot;을 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="init" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="스크립트로 Calendar 을(를) 동적 생성한 후에 초기화하는 메소드입니다.">
+        <Syntax text="Calendar.init( strName, vLeft, vTop , vWidth, vHeight [, vRight, vBottom, [vMinWidth, [vMaxWidth, [vMinHeight, [vMaxHeight]]]]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="strName" type="String" in="false" out="false" option="false" variable="false" description="Calendar 의 ID를 문자열로 설정합니다." />
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 bottom 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;vTop, vHeight 값을 모두 설정했을 경우 vBottom 값은 무시됩니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 top 속성값을 기준으로 Calendar 의 bottom 이 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 Calendar 의 bottom 이 결정됩니다." />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 height 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트값은 무시되고 pixel 값으로 Calendar 의 height 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 Calendar 의 height 가 결정됩니다." />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 left 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 right 속성값을 기준으로 Calendar 의 left 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 Calendar 의 left 가 결정됩니다." />
+            <Argument name="vMaxHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 이(가) 화면에 표시되는 최대 높이값을 pixel 단위의 숫자로 설정합니다.&#xA;&#xA;vMinHeight 보다 작은 값을 설정하면 vMinHeight 값으로 설정됩니다." />
+            <Argument name="vMaxWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 이(가) 화면에 표시되는 최대 너비값을 pixel 단위의 숫자로 설정합니다.&#xA;&#xA;vMinWidth 보다 작은 값을 설정하면 vMinWidth 값으로 설정됩니다." />
+            <Argument name="vMinHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 이(가) 화면에 표시되는 최소 높이값을 pixel 단위의 숫자로 설정합니다." />
+            <Argument name="vMinWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 이(가) 화면에 표시되는 최소 너비값을 pixel 단위의 숫자로 설정합니다." />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 right 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;vLeft, vWidth 값을 모두 설정했을 경우 vRight 값은 무시됩니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 left 속성값을 기준으로 Calendar 의 right 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 Calendar 의 right 가 결정됩니다." />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 top 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 bottom 속성값을 기준으로 Calendar 의 top 이 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 Calendar 의 top 이 결정됩니다." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 width 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트값은 무시되고 pixel 값으로 Calendar 의 width 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 Calendar 의 width 가 결정됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="isDropdown" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 팝업달력이 현재 화면에 표시되어 있는지 여부를 반환하는 메소드입니다.">
+        <Syntax text="Calendar.isDropdown()">
+          <Return type="Boolean" description="화면에 팝업달력이 표시되어 있으면 &quot;true&quot;를 반환합니다.&#xA;화면에 팝업달력이 표시되어 있지 않으면 &quot;false&quot;를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="move" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 위치와 크기를 변경하는 메소드입니다.">
+        <Syntax text="Calendar.move( vLeft, vTop [, vWidth, vHeight [, vRight, vBottom]] )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vBottom" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 bottom 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;vTop, vHeight 값을 모두 설정했을 경우 vBottom 값은 무시됩니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 top 속성값을 기준으로 Calendar 의 bottom 이 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 Calendar 의 bottom 이 결정됩니다." />
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 height 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트값은 무시되고 pixel 값으로 Calendar 의 height 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 Calendar 의 height 가 결정됩니다." />
+            <Argument name="vLeft" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 left 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 right 속성값을 기준으로 Calendar 의 left 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 Calendar 의 left 가 결정됩니다." />
+            <Argument name="vRight" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 right 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;vLeft, vWidth 값을 모두 설정했을 경우 vRight 값은 무시됩니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 left 속성값을 기준으로 Calendar 의 right 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 Calendar 의 right 가 결정됩니다." />
+            <Argument name="vTop" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 top 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트의 bottom 속성값을 기준으로 Calendar 의 top 이 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 Calendar 의 top 이 결정됩니다." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 width 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트값은 무시되고 pixel 값으로 Calendar 의 width 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 Calendar 의 width 가 결정됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모가 동일한 컴포넌트 중 인수로 전달된 컴포넌트보다 Calendar 이(가) 화면에 한단계 뒤에 표시되게 합니다.">
+        <Syntax text="Calendar.moveToNext( objComp )&#xA;Calendar.moveToNext( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="기준이 되는 컴포넌트를 오브젝트로 설정합니다." />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="기준이 되는 컴포넌트의 ID를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="moveToPrev" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모가 동일한 컴포넌트 중 인수로 전달된 컴포넌트보다 Calendar 이(가) 화면에 한단계 앞에 표시되게 합니다.">
+        <Syntax text="Calendar.moveToPrev( objComp )&#xA;Calendar.moveToPrev( strComp )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objComp" type="Object" in="false" out="false" option="false" variable="false" description="기준이 되는 컴포넌트를 오브젝트로 설정합니다." />
+            <Argument name="strComp" type="String" in="false" out="false" option="false" variable="false" description="기준이 되는 컴포넌트의 ID를 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 특정 이벤트에서 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="Calendar.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 특정 이벤트에서 검색된 함수와 동일한 핸들러 함수를 제거하는 메소드입니다.">
+        <Syntax text="Calendar.removeEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="핸들러 함수 제거에 성공하면 &quot;1&quot;을 반환합니다.&#xA;핸들러 함수 제거에 실패하면 &quot;0&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수가 정의된 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 제거할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="String" in="false" out="false" option="false" variable="false" description="제거할 핸들러 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="resize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 크기를 변경하는 메소드입니다.">
+        <Syntax text="Calendar.resize( vWidth, vHeight )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="vHeight" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 높이를 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;&#xA;&#xA;&#xA;Calendar 의 height 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;음수값을 설정할 수 없습니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트값은 무시되고 pixel 값으로 Calendar 의 height 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 height 속성값을 기준으로 Calendar 의 height 가 결정됩니다." />
+            <Argument name="vWidth" type="String, Number" in="false" out="false" option="false" variable="false" description="Calendar 의 width 속성값을 pixel 또는 비율(&quot;%&quot;) 단위의 숫자로 설정합니다.&#xA;음수값을 설정할 수 없습니다.&#xA;&#xA;* 값에 기준 컴포넌트를 포함하여 설정했을 때 :&#xA;pixel 단위로 설정 시 기준 컴포넌트값은 무시되고 pixel 값으로 Calendar 의 width 가 결정됩니다.&#xA;비율(&quot;%&quot;) 단위로 설정 시 기준 컴포넌트의 width 속성값을 기준으로 Calendar 의 width 가 결정됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendToBack" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모가 동일한 컴포넌트 중 Calendar 이(가) 화면의 제일 뒤에 표시되게 합니다.">
+        <Syntax text="Calendar.sendToBack()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="sendToNext" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모가 동일한 컴포넌트 중 Calendar 이(가) 화면에 한단계 뒤에 표시되게 합니다.">
+        <Syntax text="Calendar.sendToNext()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="setCaretPos" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 편집영역에서 캐럿의 위치를 인덱스로 설정하는 메소드입니다.">
+        <Syntax text="Calendar.setCaretPos( [nIndex] )">
+          <Return type="Boolean" description="캐럿 설정에 성공하면 &quot;true&quot;를 반환합니다.&#xA;캐럿 설정에 실패하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="nIndex" type="Number" in="false" out="false" option="false" variable="false" description="캐럿이 위치할 인덱스를 숫자로 설정합니다.&#xA;인덱스는 0 부터 시작하며 &quot;0 ~ 텍스트길이&quot;까지 설정할 수 있습니다.&#xA;&quot;-1&quot;을 설정할 경우 캐럿이 텍스트의 오른쪽 끝에 위치합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 특정 이벤트에서 첫번째 핸들러 함수를 변경하는 메소드입니다.">
+        <Syntax text="Calendar.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수를 설정합니다." />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수가 정의된 영역을 설정합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandlerLookup" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 특정 이벤트에서 첫번째 핸들러 함수를 검색된 함수로 변경하는 메소드입니다.">
+        <Syntax text="Calendar.setEventHandlerLookup( strEventID, strFunc, objTarget )">
+          <Return type="Number" description="첫번째 핸들러 함수 변경에 성공하면 &quot;0&quot;을 반환합니다.&#xA;첫번째 핸들러 함수 변경에 실패하면 &quot;-1&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="대체할 핸들러 함수를 검색할 영역을 설정합니다.&#xA;해당 영역에 함수가 정의되지 않았다면 상위 영역으로 올라가며 검색을 합니다." />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="핸들러 함수를 변경할 이벤트의 ID를 설정합니다." />
+            <Argument name="strFunc" type="Object" in="false" out="false" option="false" variable="false" description="기존 핸들러 함수를 대체할 함수의 이름을 문자열로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFocus" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 에 포커스를 주는 메소드입니다.">
+        <Syntax text="Calendar.setFocus( [bMoveScroll [, bInnerFocus]] )">
+          <Return type="Object" description="Calendar 이(가) 포커스되기 전에 포커스를 가졌던 컴포넌트를 반환합니다.&#xA;&#xA;포커스를 가진 컴포넌트가 없었거나 메소드 수행이 실패하는 경우에는 &quot;null&quot;을 반환합니다." />
+          <Arguments>
+            <Argument name="bInnerFocus" type="Boolean" in="false" out="false" option="false" variable="false" description="Calendar 이(가) 컨테이너 컴포넌트 일 때 자식 컴포넌트에게 포커스를 이동할지 설정합니다.&#xA;&#xA;&quot;true&quot; 설정 시 자식 컴포넌트 중 포커스를 받을 수 있는 첫번째 컴포넌트가 포커스 됩니다.&#xA;&quot;false&quot; 설정 시 Calendar 에 포커스 됩니다.&#xA;&#xA;Calendar 이(가) 컨테이너 컴포넌트 일 때 값을 설정하지 않으면 &quot;true&quot; 로 동작합니다." />
+            <Argument name="bMoveScroll" type="Boolean" in="false" out="false" option="false" variable="false" description="부모 컴포넌트에 스크롤이 있을 경우 Calendar 기준으로 스크롤을 이동할지 설정합니다.&#xA;&#xA;&quot;true&quot; 설정 시 Calendar 이(가) 화면에 표시되도록 스크롤을 이동시킵니다.&#xA;&quot;false&quot; 설정 시 Calendar 의 위치에 관계없이 스크롤을 이동시키지 않습니다.&#xA;&#xA;값을 설정하지 않으면 &quot;true&quot; 로 동작합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setInnerDataset" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 innerdataset 속성에 인수로 전달된 DataSet 오브젝트를 설정하는 메소드입니다.">
+        <Syntax text="setInnerDataset( objDataset )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objDataset" type="Object" in="false" out="false" option="false" variable="false" description="innerdataset 속성에 설정할 DataSet 을 오브젝트로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetBottom" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 top을 기준으로 Calendar 의 bottom 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="Calendar.setOffsetBottom( nBottom );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nBottom" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 top에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetHeight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 height 속성값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="Calendar.setOffsetHeight( nHeight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nHeight" type="Number" in="false" out="false" option="false" variable="false" description="Calendar 의 높이를 픽셀단위로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetLeft" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 left 를 기준으로 Calendar 의 left 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="Calendar.setOffsetLeft( nLeft );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nLeft" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 left 에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 left 를 기준으로 Calendar 의 right 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="Calendar.setOffsetRight( nRight );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nRight" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 left 에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetTop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="부모 컴포넌트의 top을 기준으로 Calendar 의 top 값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="Calendar.setOffsetTop( nTop );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nTop" type="Number" in="false" out="false" option="false" variable="false" description="부모 컴포넌트의 top에서 떨어진 거리를 픽셀단위의 숫자로 설정합니다" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setOffsetWidth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 width 속성값을 픽셀단위로 설정하는 메소드입니다.">
+        <Syntax text="Calendar.setOffsetWidth( nWidth );">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="nWidth" type="Object" in="false" out="false" option="false" variable="false" description="Calendar 의 너비를 픽셀단위로 설정합니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setSelect" group="Normal" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 편집영역에서 시작/끝 위치로 지정된 영역을 선택하는 메소드입니다.">
+        <Syntax text="Calendar.setSelect( [nBegin [,nEnd]] )">
+          <Return type="Boolean" description="지정된 영역의 선택에 성공하면 &quot;true&quot;를 반환합니다.&#xA;지정된 영역의 선택에 실패하면 &quot;false&quot;를 반환합니다." />
+          <Arguments>
+            <Argument name="nBegin" type="Number" in="false" out="false" option="false" variable="false" description="선택할 영역의 시작 인덱스를 숫자로 설정합니다.&#xA;&#xA;인덱스는 0 부터 시작하며 &quot;0 ~ 텍스트길이&quot;까지 설정할 수 있습니다.&#xA;&quot;-1&quot;을 설정하면 선택할 영역의 시작 위치가 오른쪽 끝으로 설정됩니다.&#xA;&#xA;값 생략 시 &quot;0&quot;으로 적용됩니다." />
+            <Argument name="nEnd" type="Number" in="false" out="false" option="false" variable="false" description="선택할 영역의 끝 인덱스를 숫자로 설정합니다.&#xA;&#xA;인덱스는 0 부터 시작하며 &quot;0 ~ 텍스트길이&quot;까지 설정할 수 있습니다.&#xA;&quot;-1&quot;을 설정하면 선택할 영역의 끝 위치가 오른쪽 끝으로 설정됩니다.&#xA;&#xA;값 생략 시 &quot;-1&quot;로 적용됩니다." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="show" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="스크립트로 동적 생성한 Calendar 을(를) 화면에 표시하는 메소드입니다.">
+        <Syntax text="Calendar.show()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="updateToDataset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="" description="Calendar 의 value 속성값을 바인딩 되어 있는 DataSet 에 즉시 반영시키는 메소드입니다.">
+        <Syntax text="Calendar.updateToDataset()">
+          <Return type="Boolean" description="반영에 성공하면 &quot;true&quot;를 반환합니다.&#xA;&#xA;반영에 실패하면 &quot;false&quot;를 반환합니다." />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="canchange" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar에서 선택된 날짜와 value 속성값이 다를 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.canchange(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo);">
+          <Return type="Boolean" description="이벤트에서 리턴값을 &quot;true&quot;로 반환하면 변경된 날짜가 적용됩니다.&#xA;이벤트에서 리턴값을 &quot;false&quot;로 반환하면 날짜를 변경하지 않습니다.&#xA;&#xA;이벤트에서 리턴값을 생략하면 &quot;true&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="ChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="canchange" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar에서 선택된 날짜와 value 속성값이 다를 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.canchange(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo);">
+          <Return type="Boolean" description="이벤트에서 리턴값을 &quot;true&quot;로 반환하면 변경된 날짜가 적용됩니다.&#xA;이벤트에서 리턴값을 &quot;false&quot;로 반환하면 날짜를 변경하지 않습니다.&#xA;&#xA;이벤트에서 리턴값을 생략하면 &quot;true&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="ChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onchanged" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 날짜가 변경된 후 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onchanged(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onchanged" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 날짜가 변경된 후 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onchanged(obj:nexacro.Calendar,e:nexacro.ChangeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ChangeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 영역 내에서 마우스 왼쪽버튼을 클릭했을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onclick(obj:nexacro.Calendar,e:nexacro.ClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncloseup" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="화면에 표시된 팝업달력이 닫힐 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.oncloseup(obj:nexacro.Calendar,e:nexacro.CalendarCloseUpEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="CalendarCloseUpEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncloseup" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="화면에 표시된 팝업달력이 닫힐 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.oncloseup(obj:nexacro.Calendar,e:nexacro.CalendarCloseUpEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="CalendarCloseUpEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 영역에서 오른쪽 마우스 버튼을 클릭하거나 터치를 일정시간 유지할 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.oncontextmenu-editable(obj:nexacro.Calendar,e:nexacro.ContextMenuEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ContextMenuEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oncontextmenu" group="" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 영역에서 오른쪽 마우스 버튼을 클릭하거나 터치를 일정시간 유지할 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.oncontextmenu-editable(obj:nexacro.Calendar,e:nexacro.ContextMenuEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="ContextMenuEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondayclick" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar의 날짜를 클릭할 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ondayclick(obj:nexacro.Calendar,e:nexacro.CalendarDayClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="CalendarDayClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondayclick" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar의 날짜를 클릭할 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ondayclick(obj:nexacro.Calendar,e:nexacro.CalendarDayClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="CalendarDayClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondblclick" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 영역 내에서 마우스 왼쪽버튼을 더블클릭 했을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ondblclick(obj:nexacro.Calendar,e:nexacro.MouseEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrag" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내에서 마우스 왼쪽버튼으로 드래그를 수행했을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ondrag(obj:nexacro.Calendar,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 드래그 상태가 되고 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 드래그 상태가 취소되고 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragenter" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내로 드래그 상태의 마우스 포인터가 들어왔을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ondragenter(obj:nexacro.Calendar,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragleave" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 밖으로 드래그 상태의 마우스 포인터가 나갈 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ondragleave(obj:nexacro.Calendar,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondragmove" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내에서 드래그 상태의 마우스 포인터가 움직일 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ondragmove(obj:nexacro.Calendar,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondrop" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내에서 드래그 상태의 마우스 버튼을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ondrop(obj:nexacro.Calendar,e:nexacro.DragEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="DragEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondropdown" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 달력버튼을 클릭하여 팝업달력이 화면에 표시될 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ondropdown(obj:nexacro.Calendar,e:nexacro.EventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 팝업달력이 화면에 표시됩니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 팝업달력이 표시되지 않습니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;true&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondropdown" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 의 달력버튼을 클릭하여 팝업달력이 화면에 표시될 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ondropdown(obj:nexacro.Calendar,e:nexacro.EventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 팝업달력이 화면에 표시됩니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 팝업달력이 표시되지 않습니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;true&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="EventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oneditclick" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 의 편집 영역에서 마우스 왼쪽버튼을 클릭했을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.oneditclick(obj:nexacro.Calendar,e:nexacro.EditClickEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="EditClickEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninnerdatachanged" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 의 innerdataset 속성에 바인딩된 DataSet 에서 데이터 변경이 된 후 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.oninnerdatachanged(obj:nexacro.Calendar,e:nexacro.InnerdataChangedEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InnerdataChangedEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="oninput" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 에 입력 시도 시에 발생하는 이벤트 입니다.">
+        <Syntax text="Calendar.oninput(obj:nexacro.Calendar,e:nexacro.InputEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="InputEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeydown" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 에 포커스가 있는 상태에서 키보드의 키가 눌렸을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onkeydown(obj:nexacro.Calendar,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkeyup" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 에 포커스가 있는 상태에서 눌렸던 키보드가 떼어질 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onkeyup(obj:nexacro.Calendar,e:nexacro.KeyEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="KeyEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onkillfocus" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 에서 포커스가 나갈  때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onkillfocus(obj:nexacro.Calendar,e:nexacro.KillFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="KillFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내에서 마우스 왼쪽버튼을 눌렀을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onlbuttondown(obj:nexacro.Calendar,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onlbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내에서 눌렸던 마우스 왼쪽버튼을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onlbuttonup(obj:nexacro.Calendar,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousedown" group="Event" deprecated="false" unused="true" requirement="" description="Calendar 영역 내에서 마우스의 왼쪽/오른쪽 버튼을 제외한 나머지 버튼이 눌렸을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onmousedown(obj:nexacro.Calendar,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseenter" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내로 마우스 포인터가 들어왔을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onmouseenter(obj:nexacro.Calendar,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseleave" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 밖으로 마우스 포인터가 나갈 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onmouseleave(obj:nexacro.Calendar,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousemove" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내에서 마우스 포인터가 움직일 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onmousemove(obj:nexacro.Calendar,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmouseup" group="Event" deprecated="false" unused="true" requirement="" description="마우스의 왼쪽/오른쪽 버튼을 제외한 나머지 버튼이 떼어질 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onmouseup(obj:nexacro.Calendar,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다" />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmousewheel" group="Event" deprecated="false" unused="true" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Calendar 영역 내에서 마우스의 휠버튼을 회전했을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onmousewheel(obj:nexacro.Calendar,e:nexacro.MouseWheelEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 휠버튼 회전값이 무시되고, 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 휠버튼 회전값이 처리되고, 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseWheelEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onmove" group="Event" deprecated="false" unused="false" requirement="" description="Calendar의 위치가 이동했을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onmove(obj:nexacro.Calendar,e:nexacro.MoveEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="MoveEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttondown" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내에서 마우스 오른쪽버튼을 눌렀을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onrbuttondown(obj:nexacro.Calendar,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrbuttonup" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내에서 마우스 오른쪽버튼을 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onrbuttonup(obj:nexacro.Calendar,e:nexacro.MouseEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="MouseEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsetfocus" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 에 포커스가 들어올 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onsetfocus(obj:nexacro.Calendar,e:nexacro.SetFocusEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SetFocusEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsize" group="Event" deprecated="false" unused="false" requirement="" description="Calendar의 크기가 변경됐을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onsize(obj:nexacro.Calendar,e:nexacro.SizeEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SizeEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onspin" group="Event" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="type속성값이 &quot;spin&quot;인 Calendar의 스핀버튼을 클릭할때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.onspin(obj:nexacro.Calendar,e:nexacro.CalendarSpinEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 변경된 날짜가 적용됩니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 날짜를 변경하지 않습니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;true&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="CalendarSpinEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchend" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내에서 터치를 떼었을 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ontouchend(obj:nexacro.Calendar,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchmove" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내에서 터치 상태를 유지하며 움직일 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ontouchmove(obj:nexacro.Calendar,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ontouchstart" group="Event" deprecated="false" unused="false" requirement="" description="Calendar 영역 내에서 터치가 시작될 때 발생하는 이벤트입니다.">
+        <Syntax text="Calendar.ontouchstart(obj:nexacro.Calendar,e:nexacro.TouchEventInfo);">
+          <Return type="Boolean" description="이벤트의 리턴값으로 &quot;true&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파되지 않습니다.&#xA;이벤트의 리턴값으로 &quot;false&quot;를 반환하면 상위 컴포넌트로 이벤트가 전파됩니다.&#xA;&#xA;이벤트의 리턴값을 생략하면 &quot;false&quot;로 적용됩니다." />
+          <Arguments>
+            <Argument name="e" type="TouchEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

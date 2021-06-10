@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Sms">
+    <ObjectInfo inheritance="" classname="nexacro.Sms" shorttypename="Sms" csstypename="Sms" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="allow" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="Android nexacro Browser,iOS nexacro Browser" description="ショートメッセージサービス（SMS）をサポートするオブジェクトでテキストメッセージの送受信を処理します。" />
+    <PropertyInfo>
+      <Property name="id" group="Information" subgroup="" refreshinfo="" edittype="ID" readonly="true" initonly="true" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="true" mandatory="true" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="Smsの一意識別子を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="id" />
+      <Property name="message" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器のSmsで、送信するメッセージを設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="message" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="Smsの名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+      <Property name="parent" group="Hidden" subgroup="" refreshinfo="" edittype="Object" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="Smsの親オブジェクトを持つプロパティです。" csspropertyname="" csselementname="" normalpropertyname="parent" />
+      <Property name="phonenumber" group="Appearance" subgroup="" refreshinfo="" edittype="String" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器のSMSでメッセージを送信する相手の電話番号を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="phonenumber" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Smsの特定イベントにハンドラ関数を追加するメソッドです。">
+        <Syntax text="Sms.addEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントに追加されたハンドラ関数のインデックスを返します。&#xA;同じハンドラ関数がすでにある場合は、該当ハンドラ関数のインデックスを返します。&#xA;正常に追加されない場合には、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="イベントが発生したときに実行されるハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="ハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="true" out="true" option="true" variable="true" description="ハンドラ関数が追加されるイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clearEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="特定のイベントに登録されたハンドラ関数をすべて削除するメソッドです。">
+        <Syntax text="Sms.clearEventHandler( strEventID )">
+          <Return type="Number" description="特定のイベントで削除されたハンドラ関数の数を返します。" />
+          <Arguments>
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="すべてのハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="deleteMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser" description="モバイル機器のSmsで、指定したメッセージを削除します。">
+        <Syntax text="Sms.deleteMessage(nSmsid)">
+          <Return type="Boolean" description="nSmsidで使用できない数字や文字が入力されている場合にはfalse、ない場合はtrueを返します。" />
+          <Arguments>
+            <Argument name="nSmsid" type="Number" in="false" out="false" option="false" variable="false" description="削除するメッセージのインデックス番号。&#xD;&#xA;1以上の数値であり、端末のメッセージリストに存在している値でなければなりません。&#xD;&#xA;AndroidのreadMessageListを呼び出して、MessageListをロードする場合、&#xD;&#xA;該当リストで、各メッセージのid値。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Smsの特定イベントからハンドラ関数を検索してインデックスを返すメソッドです。">
+        <Syntax text="Sms.findEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="イベントで検索しようとするハンドラ関数のインデックスを返します。&#xA;検索するハンドラ関数が存在しない場合、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="検索するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を検索するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Smsの特定のイベントで指定されたインデックスに該当するハンドラ関数を返すメソッドです。">
+        <Syntax text="Sms.getEventHandler( strEventID, nIdx )">
+          <Return type="Object" description="コンポーネントの削除に成功すると、削除されたコンポーネントのオブジェクトを返します。&#xA;コンポーネントの削除に失敗すると、「null」を返します。" />
+          <Arguments>
+            <Argument name="nIdx" type="Number" in="false" out="false" option="false" variable="false" description="取得しようとするハンドラ関数のインデックスを設定します。&#xA;インデックスは、「0」から開始します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を取得するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="readMessageList" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser" description="モバイル機器のSMSでメッセージリストを照会するメソッドです。">
+        <Syntax text="Sms.readMessageList()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="recvStart" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser" description="モバイル機器のSmsで、メッセージ受信監視を開始するメソッドです。">
+        <Syntax text="Sms.recvStart()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="recvStop" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser" description="モバイル機器のSMSで、メッセージ受信監視を終了するメソッドです。">
+        <Syntax text="Sms.recvStop()">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="removeEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Smsの特定イベントからハンドラ関数を削除するメソッドです。">
+        <Syntax text="Sms.removeEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="ハンドラ関数の削除に成功すると、「1」を返します。&#xA;ハンドラ関数の削除に失敗すると、「0」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="削除するハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を削除するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="sendMessage" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器で、SMSメッセージ送信画面を呼び出します。">
+        <Syntax text="Sms.sendMessage([strNumber [,strMessage]])">
+          <Return type="Boolean" description="パラメータが正常の場合には、trueを返します。&#xD;&#xA;パラメータエラーの場合は、falseを返します。" />
+          <Arguments>
+            <Argument name="strMessage" type="String" in="false" out="false" option="false" variable="false" description="送信するメッセージ文字列です。　" />
+            <Argument name="strNumber" type="String" in="false" out="false" option="false" variable="false" description="送信する相手の電話番語。省略時にphonenumberプロパティの値に置き換えます。　" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setEventHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="true" requirement="" description="Smsの特定のイベントの最初のハンドラ関数を変更するメソッドです。">
+        <Syntax text="Sms.setEventHandler( strEventID, objFunc, objTarget )">
+          <Return type="Number" description="最初のハンドラ関数の変更に成功すると、「0」を返します。&#xA;最初のハンドラ関数の変更に失敗すると、「-1」を返します。" />
+          <Arguments>
+            <Argument name="objFunc" type="Object" in="false" out="false" option="false" variable="false" description="既存のハンドラ関数を置換する関数を設定します。" />
+            <Argument name="objTarget" type="Object" in="false" out="false" option="false" variable="false" description="置き換えるハンドラ関数が定義された領域を設定します。" />
+            <Argument name="strEventID" type="String" in="false" out="false" option="false" variable="false" description="ハンドラ関数を変更するイベントのIDを設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo>
+      <EventHandler name="cansendmessage" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="モバイル機器のSMSで、メッセージが送信される時に発生するイベントです。">
+        <Syntax text="Sms.cansendmessage(obj:nexacro.Sms,e:nexacro.SmsEventInfo);">
+          <Return type="Boolean" description="falseの値を持つ場合メッセージが発送されません。&#xD;&#xA;デフォルト値: true　" />
+          <Arguments>
+            <Argument name="e" type="SmsEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="ondeletemessage" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser" description="モバイル機器のSMSで、メッセージが削除される時に発生するイベントです。">
+        <Syntax text="Sms.ondeletemessage(obj:nexacro.Sms,e:nexacro.SmsEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SmsEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onerror" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser" description="モバイル機器のSMS関連処理に失敗した場合発生するイベントです。">
+        <Syntax text="Sms.onerror(obj:nexacro.Sms,e:nexacro.SmsErrorEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SmsErrorEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onreadmessagelist" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser" description="モバイル機器のSMSリストの照会時に発生するイベントです。">
+        <Syntax text="Sms.onreadmessagelist(obj:nexacro.Sms,e:nexacro.SmsMessageListEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SmsMessageListEventInfo" in="false" out="false" option="false" variable="false" description="Eventオブジェクト。" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onrecvmessage" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser" description="モバイル機器のSMSでメッセージが受信された場合に発生するイベントです。">
+        <Syntax text="Sms.onrecvmessage(obj:nexacro.Sms,e:nexacro.SmsEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SmsEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+      <EventHandler name="onsendmessage" group="Event" deprecated="false" unused="false" requirement="Android nexacro Browser,iOS nexacro Browser" description="端末のSmsで、メッセージが送信されるときに発生するイベントです。">
+        <Syntax text="Sms.onsendmessage(obj:nexacro.Sms,e:nexacro.SmsEventInfo);">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="e" type="SmsEventInfo" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </EventHandler>
+    </EventHandlerInfo>
+  </Object>
+</MetaInfo>

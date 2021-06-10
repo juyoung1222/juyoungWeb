@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Rect">
+    <ObjectInfo inheritance="" classname="nexacro.Rect" shorttypename="Rect" csstypename="Rect" csscontrolname="" group="" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This object is used to handle the coordinates that indicate a rectangle area." />
+    <PropertyInfo>
+      <Property name="height" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the height of a Rect object." csspropertyname="" csselementname="" normalpropertyname="height" />
+      <Property name="left" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the value of the point that indicates the position of a Rect object's left side." csspropertyname="" csselementname="" normalpropertyname="left" />
+      <Property name="top" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the value of the point that indicates the position of a Rect object's top side." csspropertyname="" csselementname="" normalpropertyname="top" />
+      <Property name="width" group="" subgroup="" refreshinfo="" edittype="Position" defaultvalue="" readonly="false" initonly="false" hidden="false" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="Pixel" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This property is used to specify the width of a Rect object." csspropertyname="" csselementname="" normalpropertyname="width" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to initialize all the property values of a Rect object by making them 0.">
+        <Syntax text="">
+          <Return type="" description="" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="clone" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return a new Rect object by copying the property values of the current Rect object.">
+        <Syntax text="Rect.clone()">
+          <Return type="Object" description="This method returns a new Rect object by copying the property values of the current Rect object." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copy" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to copy the property values of a Rect object delivered as an argument. The copied values will become the property values of the current Rect object.">
+        <Syntax text="Rect.copy( objRect )">
+          <Return type="" description="" />
+          <Arguments>
+            <Argument name="objRect" type="Object" in="false" out="false" option="false" variable="false" description="It is a Rect object whose property values will be copied as those of the current Rect object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="equals" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return whether the current Rect object is the same as the Rect object delivered as an argument in terms of property values.">
+        <Syntax text="Rect.equals( objRect )">
+          <Return type="Boolean" description="This method will return &quot;true&quot; if the property values of the current Rect object equals those of the Rect object delivered as an argument.&#xA;&#xA;This method will return &quot;false&quot; if the property values of the current Rect object does not equal those of the Rect object delivered as an argument." />
+          <Arguments>
+            <Argument name="objRect" type="Object" in="false" out="false" option="false" variable="false" description="It is a Rect object to compare with the current Rect object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getBottom" group="Position" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the value of the point that indicates the position of a Rect object's bottom side.">
+        <Syntax text="Rect.getBottom()">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Rect object's bottom side. The value is an integer that counts pixels." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getRight" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method returns the value of the point that indicates the position of a Rect object's right side.">
+        <Syntax text="Rect.getRight()">
+          <Return type="Number" description="It returns the value of the point that indicates the position of a Rect object's right side. The value is an integer that counts pixels." />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="isSameSize" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="This method is used to return whether the current Rect object is the same as the Rect object delivered as an argument in width and height.">
+        <Syntax text="Rect.isSameSize( objRect )">
+          <Return type="Boolean" description="This method will return &quot;true&quot; if the current Rect object is the same as the Rect object delivered as an argument in width and height.&#xA;&#xA;This method will return &quot;false&quot; if the current Rect object is not the same as the Rect object delivered as an argument in width and height." />
+          <Arguments>
+            <Argument name="objRect" type="Object" in="false" out="false" option="false" variable="false" description="It is a Rect object to compare with the current Rect object." />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

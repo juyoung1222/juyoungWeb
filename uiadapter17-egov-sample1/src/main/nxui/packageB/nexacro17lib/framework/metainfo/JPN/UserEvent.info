@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.UserEvent">
+    <ObjectInfo inheritance="" classname="nexacro.UserEvent" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="Object" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="false" defaultheight="false" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="ユーザー定義イベントを定義して扱うための機能を含むオブジェクトです。　&#xD;&#xA;　　" />
+    <PropertyInfo>
+      <Property name="length" group="Misc." subgroup="" refreshinfo="" edittype="Number" defaultvalue="0" readonly="true" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="追加されたHandler関数の数を返すプロパティです。　" csspropertyname="" csselementname="" normalpropertyname="length" />
+      <Property name="name" group="Information" subgroup="" refreshinfo="" edittype="String" readonly="false" initonly="false" hidden="true" control="false" expr="false" bind="false" deprecated="false" unused="false" mandatory="false" objectinfo="" enuminfo="" enuminfo2="" unitinfo="" delimiter="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="UserEventの名前を設定するプロパティです。" csspropertyname="" csselementname="" normalpropertyname="name" />
+    </PropertyInfo>
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="イベントにハンドラ関数を追加します。&#xD;&#xA;　">
+        <Syntax text="UserEvent.addHandler(objFunction)">
+          <Return type="Integer" description="成功すると追加されたインデックスを返し、失敗すると-1を返します。&#xD;&#xA;　" />
+          <Arguments>
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="clear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="イベントに設定された全てのハンドラ関数を削除します。">
+        <Syntax text="UserEvent.clear()">
+          <Return type="Integer" description="削除されたハンドラ関数の数を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="copyHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="他のイベントオブジェクトからHandler関数をコピーします。">
+        <Syntax text="UserEvent.copyHandler(objSource)">
+          <Return type="Integer" description="コピーされたHandler関数の数を返します。" />
+          <Arguments>
+            <Argument name="objSource" type="Object" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="findHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="イベントで指定した関数を検索してインデックスを返します。">
+        <Syntax text="UserEvent.findHandler(objFunction)">
+          <Return type="Integer" description="指定した関数のインデックス。" />
+          <Arguments>
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="検索する関数オブジェクト。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="fireEvent" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="イベントを発生させ、設定されたハンドラ関数を呼び出します。">
+        <Syntax text="UserEvent.fireEvent(objSource, objEvent)">
+          <Return type="Variant" description="ハンドラ関数のreturn variantが返されます。" />
+          <Arguments>
+            <Argument name="objEvent" type="Object" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="objSource" type="Object" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="イベントで指定したインデックスの位置のHandler関数を返します。">
+        <Syntax text="UserEvent.getHandler(nIndex)">
+          <Return type="Object" description="Functionオブジェクト。もし、指定したインデックスの位置が有効でない場合はnullを返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="insertHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="指定したインデックスの位置に、Handler関数を挿入します。">
+        <Syntax text="UserEvent.insertHandler(nIndex, objFunction)">
+          <Return type="Integer" description="成功すると、挿入されたIndexを返し、失敗した場合は-1を返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="removeHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="指定したインデックスまたはハンドラ関数を削除します。">
+        <Syntax text="UserEvent.removeHandler(objFunction)&#xD;&#xA;UserEvent.removeHandler(nIndex)">
+          <Return type="Integer" description="削除されたハンドラ関数の数を返します。 （成功した場合は1、失敗した場合は0）" />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setHandler" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,Android nexacro Browser,iOS nexacro Browser" description="イベントにハンドラ関数を指定します。">
+        <Syntax text="UserEvent.setHandler(objFunction)&#xD;&#xA;UserEvent.setHandler(nIndex, objFunction)">
+          <Return type="Integer" description="成功すると変更されたインデックスを返し、失敗すると -1を返します。" />
+          <Arguments>
+            <Argument name="nIndex" type="Integer" in="false" out="false" option="false" variable="false" description="" />
+            <Argument name="objFunction" type="Object" in="false" out="false" option="false" variable="false" description="" />
+          </Arguments>
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>

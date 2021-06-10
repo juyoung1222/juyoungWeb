@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MetaInfo version="2.0">
+  <Object id="nexacro.Date">
+    <ObjectInfo inheritance="" classname="nexacro.Date" shorttypename="" csstypename="" csscontrolname="" group="Object" subgroup="" csspseudo="" container="false" composite="false" tabstop="false" cssstyle="false" contents="false" formats="false" contentseditor="" defaultwidth="" defaultheight="" registration="deny" edittype="" useinitvalue="false" popup="false" edittypecomponent="" dblclickevent="" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Date情報を処理するために提供するオブジェクトです。" />
+    <PropertyInfo />
+    <CSSInfo>
+      <PropertyInfo />
+    </CSSInfo>
+    <StatusInfo />
+    <ControlInfo />
+    <MethodInfo>
+      <Method name="addDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトで指定された日付（Day）だけ加算メソッドです。">
+        <Syntax text="Date.addDate(nDays)">
+          <Return type="Number" description="Dateオブジェクトに保存された日時に指定した日付だけ加えた日付を返します。&#xA;&#xA;UTC（協定世界時）1970年1月1日0時からのミリ秒単位で保存された時間の値を返します。" />
+          <Arguments>
+            <Argument name="nDays" type="Number" in="false" out="false" option="false" variable="false" description="Dateオブジェクトに加える日付（Day）の数を数字で設定します。&#xA;&#xA;負の設定時Dateオブジェクトで設定した日付（Day）の数を減算します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトで指定された時間（Hour）だけ加算メソッドです。">
+        <Syntax text="Date.addHours(nHours)">
+          <Return type="Number" description="Dateオブジェクトに保存された日時に指定した時間だけ加えた日付を返します。&#xA;&#xA;UTC（協定世界時）1970年1月1日0時からのミリ秒単位で保存された時間の値を返します。" />
+          <Arguments>
+            <Argument name="nHours" type="Number" in="false" out="false" option="false" variable="false" description="Dateオブジェクトに加算時間の値（Hour）を数値に設定します。&#xA;&#xA;負の設定時Dateオブジェクトで設定した時間の値（Hour）を減算します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトで指定されたミリ秒（MilliSecond）だけ加算メソッドです。">
+        <Syntax text="Date.addMilliseconds(nMsec)">
+          <Return type="Number" description="Dateオブジェクトに保存された日時に指定されたミリ秒だけ加えた日付を返します。&#xA;&#xA;UTC（協定世界時）1970年1月1日0時からのミリ秒単位で保存された時間の値を返します。" />
+          <Arguments>
+            <Argument name="nMsec" type="Number" in="false" out="false" option="false" variable="false" description="Dateオブジェクトに加えるミリ秒（MilliSecond）を数値に設定します。&#xA;&#xA;負の設定時Dateオブジェクトで設定されたミリ秒（MilliSecond）を減算します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに指定された分（Minutes）の分だけ加えるメソッドです。">
+        <Syntax text="Date.addMinutes(nMinutes)">
+          <Return type="Number" description="Dateオブジェクトに保存された日付に指定した分（Minutes）の分だけ加えた日付を返します。&#xA;&#xA;UTC（協定世界時）1970年1月1日0時からのミリ秒単位で保存された時間の値を返します。" />
+          <Arguments>
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="Dateオブジェクトに加える分の値（Minutes）を数値に設定します。&#xA;&#xA;負数に設定した場合、Dateオブジェクトで設定した分の値（Minutes）を減算します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトで指定された月（Month）だけ加算メソッドです。">
+        <Syntax text="Date.addMonth(nMonths)">
+          <Return type="Number" description="Dateオブジェクトに保存された日付に指定した月（Month）の分だけ加えた日付を返します。&#xA;&#xA;UTC（協定世界時）1970年1月1日0時からのミリ秒単位で保存された時間の値を返します。" />
+          <Arguments>
+            <Argument name="nMonths" type="Number" in="false" out="false" option="false" variable="false" description="Dateオブジェクトに加える月の値（Month）を数値に設定します。&#xA;&#xA;負数に設定した場合、Dateオブジェクトで設定した月の値（Month）を減算します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに指定された秒（Second）の分だけ加えるメソッドです。">
+        <Syntax text="Date.addSeconds(nSeconds)">
+          <Return type="Number" description="Dateオブジェクトに保存された日付に指定した秒（Second）の分だけ加えた日付を返します。&#xA;&#xA;UTC（協定世界時）1970年1月1日0時からミリ秒単位で保存された時間の値を返します。" />
+          <Arguments>
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="Dateオブジェクトに加える秒の値（Second）を数値に設定します。&#xA;&#xA;負数に設定した場合、Dateオブジェクトで設定した秒の値（Second）を減算します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="addYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに指定された年（Year）の分だけ加えるメソッドです。">
+        <Syntax text="Date.addYear(nYears)">
+          <Return type="Number" description="Dateオブジェクトに保存された日付に指定した年数（Year）の分だけ加えた日付を返します。&#xA;&#xA;UTC（協定世界時）1970年1月1日0時からのミリ秒単位で保存された時間の値を返します。" />
+          <Arguments>
+            <Argument name="nYears" type="Number" in="false" out="false" option="false" variable="false" description="Dateオブジェクトに加える年数の値（Year）を数値に設定します。&#xA;&#xA;負数に設定した場合、Dateオブジェクトで設定した年数の値（Year）を減算します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="getDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で日付（Day）を返すメソッドです。">
+        <Syntax text="Date.getDate()">
+          <Return type="Number" description="1から31の間の日付の値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getDay" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で曜日を返すメソッドです。">
+        <Syntax text="Date.getDay()">
+          <Return type="Number" description="0（日曜日）から6（土曜日）の間の曜日コード値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で4桁の年度（Year）を返すメソッドです。">
+        <Syntax text="Date.getFullYear()">
+          <Return type="Number" description="4桁の年（Year）の値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で時（Hour）値を返すメソッドです。">
+        <Syntax text="Date.getHours()">
+          <Return type="Number" description="0から23までの時（Hour）値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値でミリ秒（MilliSecond）値を返すメソッドです。">
+        <Syntax text="Date.getMilliseconds()">
+          <Return type="Number" description="0から999の間のミリ秒（MilliSecond）値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で分（Minute）値を返すメソッドです。">
+        <Syntax text="Date.getMinutes()">
+          <Return type="Number" description="0から59の間の分（Minute）値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で月（Month）値を返すメソッドです。">
+        <Syntax text="Date.getMonth()">
+          <Return type="Number" description="0（1月）から11（12月）の間の月（Month）のコード値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で秒（Second）値を返すメソッドです。">
+        <Syntax text="Date.getSeconds()">
+          <Return type="Number" description="0から59の間の秒（Second）の値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTime" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値をミリ秒（MilliSecond）値として返すメソッドです。">
+        <Syntax text="Date.getTime()">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）値で返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getTimezoneOffset" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値とUTC（協定世界時）の間の時間差を分（Minute）値で返すメソッドです。">
+        <Syntax text="Date.getTimezoneOffset()">
+          <Return type="Number" description="Dateオブジェクトに保存された値とUTC（協定世界時）の間の時間差を分（Minute）値を返します。&#xA;&#xA;Dateオブジェクトに保存された値が太平洋夏時間（PDT）のようにUTCより遅い場合、正数となり、日本や韓国のようにUTCより早ければ負数となります。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値から日付（Day）を返すメソッドです。">
+        <Syntax text="Date.getUTCDate()">
+          <Return type="Number" description="1から31の間の日付の値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCDay" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値で曜日を返すメソッドです。">
+        <Syntax text="Date.getUTCDay()">
+          <Return type="Number" description="0（日曜日）から6（土曜日）の間の曜日コード値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値で4桁の年度（Year）を返すメソッドです。">
+        <Syntax text="Date.getUTCFullYear()">
+          <Return type="Number" description="4桁の年度（Year）値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値で時（Hour）値を返すメソッドです。">
+        <Syntax text="Date.getUTCHours()">
+          <Return type="Number" description="0から23までの時（Hour）値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値でミリ秒（MilliSecond）の値を返すメソッドです。">
+        <Syntax text="Date.getUTCMilliseconds()">
+          <Return type="Number" description="0から999の間のミリ秒（MilliSecond）の値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値で分（Minute）の値を返すメソッドです。">
+        <Syntax text="Date.getUTCMinutes()">
+          <Return type="Number" description="0から59の間の分（Minute）の値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値で月（Month）の値を返すメソッドです。">
+        <Syntax text="Date.getUTCMonth()">
+          <Return type="Number" description="0（1月）から11（12月）との間の月の（Month）コード値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getUTCSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値で秒（Second）の値を返すメソッドです。">
+        <Syntax text="Date.getUTCSeconds()">
+          <Return type="Number" description="0から59の間の秒（Second）の値を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="getYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で年度（Year）を返すメソッドです。">
+        <Syntax text="Date.getYear()">
+          <Return type="Number" description="1900年から1999年までの日付は2桁の年度（Year）の値を返します。&#xA;この期間以外の期間は4桁の年度（Year）の値を返します。&#xA;&#xA;たとえば、1996年には96に返り、1825年や2025年には4桁のまま返されます。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="parse" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="日付が含まれている文字列を分析し、1970年1月1日0時から該当日付の間の時間をミリ秒単位で返す静的メソッドです。">
+        <Syntax text="Date.parse(strDate)">
+          <Return type="Number" description="1970年1月1日0時と指定された日付の間の時間をミリ秒（MilliSecond）で返します。" />
+          <Arguments>
+            <Argument name="strDate" type="String" in="false" out="false" option="false" variable="false" description="日付形式の文字列を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存した値から日付（Day）を変更するメソッドです。">
+        <Syntax text="Date.setDate(nDate)">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに変更された日付までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="変更する日（Day）を数字で設定します。現在の月（Month）の最終日（Day）よりも大きい数を設定すると、来月にすべての日付が変更されます。0を設定すると、先月の最終日にすべての日付が変更されます。負数を設定すると、先月の最終日からの日付（Day）を逆に計算してすべての日付が変更されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で年度（Year）またはすべての日付を変更するメソッドです。">
+        <Syntax text="Date.setFullYear(nYear[, nMonth[, nDate]])">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="変更する日付（Day）の値を設定します。値を設定しないと、日付（Day）を変更しません。" />
+            <Argument name="nMonth" type="Number" in="false" out="false" option="false" variable="false" description="変更する0（1月）から11（12月）との間の月の（Month）コード値を設定します。値を設定しないと、月（Month）を変更しません。" />
+            <Argument name="nYear" type="Number" in="false" out="false" option="false" variable="false" description="変更すること年度（Year）の値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存した値で時（Hour）または全時間を変更するメソッドです。">
+        <Syntax text="Date.setHours(nHours[, nMinutes[, nSeconds[, nMillisecond]]])">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nHours" type="Number" in="false" out="false" option="false" variable="false" description="変更させる時（Hour）を設定します。" />
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="変更するミリ秒（MilliSecond）を設定します。値を設定しないと、ミリ秒（MilliSecond）を変更しません。" />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="変更する分（Minute）を設定します。値を設定しないと、分（Minute）を変更しません。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="変更する秒（Second）を設定します。値を設定しないと、秒（Second）を変更しません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値でミリ秒（MilliSecond）を変更するメソッドです。">
+        <Syntax text="Date.setMilliseconds(nMilliSecond)">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nMilliSecond" type="Number" in="false" out="false" option="false" variable="false" description="変更するミリ秒（MilliSecond）を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で分（Minute）を変更するメソッドです。">
+        <Syntax text="Date.setMinutes(nMinutes[, nSeconds[, nMillisecond]])">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="変更するミリ秒（MilliSecond）を設定します。&#xA;&#xA;値を設定しないと、ミリ秒（MilliSecond）を変更しません。" />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="変更する分（Minute）を設定します。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="変更する秒（Second）を設定します。&#xA;&#xA;値を設定しないと、秒（Second）を変更しません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で月（Month）を変更するメソッドです。">
+        <Syntax text="Date.setMonth(nMonth[, nDate])">
+          <Return type="Number" description="1970년 1월 1일 자정부터 Date 오브젝트에 저장된 값까지의 시간을 밀리초(MilliSecond)값으로 반환합니다." />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="変更すせる日付（Day）を設定します。&#xA;&#xA;値を設定しないと、日付（Day）を変更しません。" />
+            <Argument name="nMonth" type="Number" in="false" out="false" option="false" variable="false" description="変更する0（1月）から11（12月）の間の月（Month）のコード値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で秒（Second）を変更するメソッドです。">
+        <Syntax text="Date.setSeconds(nSeconds[, nMillisecond])">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="変更するミリ秒（MilliSecond）を設定します。&#xA;&#xA;値を設定しないと、ミリ秒（MilliSecond）を変更しません。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="変更する秒（Second）を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setTime" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトの日付と時刻をミリ秒（MilliSecond）の値に設定するメソッドです。">
+        <Syntax text="Date.setTime(nMs)">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nMs" type="Number" in="false" out="false" option="false" variable="false" description="1970年1月1日0時から設定する日付までの時間をミリ秒（MilliSecond）の値に設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCDate" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値の日付（Day）を変更するメソッドです。">
+        <Syntax text="Date.setUTCDate(nDate)">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="変更する日（Day）を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCFullYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値で年度（Year）または全日付を変更するメソッドです。">
+        <Syntax text="Date.setUTCFullYear(nYears[, nMonths[, nDate]])">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="変更する日（Day）を設定します。&#xA;&#xA;値を設定しないと、日付（Day）を変更しません。" />
+            <Argument name="nMonths" type="Number" in="false" out="false" option="false" variable="false" description="変更することが0（1月）から11（12月）の間の月の（Month）のコード値を設定します。&#xA;&#xA;値を設定しないと、月（Month）を変更しません。" />
+            <Argument name="nYears" type="Number" in="false" out="false" option="false" variable="false" description="変更すること年（Year）を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCHours" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存した値で時（Hour）または全時間を変更するメソッドです。">
+        <Syntax text="Date.setUTCHours(nHours[, nMinutes[, nSeconds[, nMillisecond]]])">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nHours" type="Number" in="false" out="false" option="false" variable="false" description="変更する時（Hour）を設定します。" />
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="変更するミリ秒（MilliSecond）を設定します。&#xA;&#xA;値を設定しないと、ミリ秒（MilliSecond）を変更しません。" />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="変更する分（Minute）を設定します。&#xA;&#xA;値を設定しないと、分（Minute）を変更しません。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="変更する秒（Second）を設定します。&#xA;&#xA;値を設定しないと、秒（Second）を変更しません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCMilliseconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値でミリ秒（MilliSecond）を変更するメソッドです。">
+        <Syntax text="Date.setUTCMilliseconds(nMs)">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nMs" type="Number" in="false" out="false" option="false" variable="false" description="変更するミリ秒（MilliSecond）を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCMinutes" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値で分（Minute）を変更するメソッドです。">
+        <Syntax text="Date.setUTCMinutes(nMinutes[, nSeconds[, nMillisecond]])">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="変更するミリ秒（MilliSecond）を設定します。&#xA;&#xA;値を設定しないと、ミリ秒（MilliSecond）を変更しません。" />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="変更する分（Minute）を設定します。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="変更する秒（Second）を設定します。&#xA;&#xA;値を設定しないと、秒（Second）を変更しません。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCMonth" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された値で月（Month）を変更するメソッドです。">
+        <Syntax text="Date.setUTCMonth(nMonth[, nDate])">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nDate" type="Number" in="false" out="false" option="false" variable="false" description="変更する日付（Day）を設定します。&#xA;&#xA;値を設定しないと、日付（Day）を変更しません。" />
+            <Argument name="nMonth" type="Number" in="false" out="false" option="false" variable="false" description="変更する0（1月）から11（12月）の間の月（Month）のコード値を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setUTCSeconds" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）に基づいてDateオブジェクトに保存された値で秒（Second）を変更するメソッドです。">
+        <Syntax text="Date.setUTCSeconds(nSeconds[, nMillisecond])">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="変更するミリ秒（MilliSecond）を設定します。&#xA;&#xA;値を設定しないと、ミリ秒（MilliSecond）を変更しません。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="変更する秒（Second）を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="setYear" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値で年度（Year）を変更するメソッドです。">
+        <Syntax text="Date.setYear(nYears)">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nYears" type="Number" in="false" out="false" option="false" variable="false" description="変更する年度（Year）を設定します。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="toDateString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された日付を文字列に返すメソッドです。">
+        <Syntax text="Date.toDateString()">
+          <Return type="String" description="文字列に変換された日付を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toGMTString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="グリニッジ標準時（GMT）を基準にDateオブジェクトに保存された日付と時刻を文字列に返すメソッドです。">
+        <Syntax text="Date.toGMTString()">
+          <Return type="String" description="文字列に変換された日付と時刻を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toLocaleDateString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された日付を現在のロケール形式の文字列に返すメソッドです。">
+        <Syntax text="Date.toLocaleDateString()">
+          <Return type="String" description="日付を現在のロケールの形式に合わせて変換した文字列に返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toLocaleString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された日付と時刻を現在のロケール形式の文字列に返すメソッドです。">
+        <Syntax text="Date.toLocaleString()">
+          <Return type="String" description="日付と時刻を現在のロケールの形式に合わせて変換された文字列に返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toLocaleTimeString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された時間を、現在のロケール形式の文字列に返すメソッドです。">
+        <Syntax text="Date.toLocaleTimeString()">
+          <Return type="String" description="時間を現在のロケールの形式に合わせて変換された文字列に返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された値を文字列に返すメソッドです。">
+        <Syntax text="Date.toString()">
+          <Return type="String" description="Dateオブジェクトに保存された値を文字列に返します。&#xA;&#xA;OSとブラウザに応じて他の形式で返すことがあります。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toTimeString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された時間を文字列に返すメソッドです。">
+        <Syntax text="Date.toTimeString()">
+          <Return type="String" description="文字列に変換された時間を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="toUTCString" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）を基準にDateオブジェクトに保存された日付と時刻を文字列に返すメソッドです。">
+        <Syntax text="Date.toUTCString()">
+          <Return type="String" description="文字列に変換した日付と時刻を返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+      <Method name="UTC" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="UTC（協定世界時）またはグリニッジ標準時（GMT）を基準に、1970年1月1日0時から引数として渡された日付までの時間をミリ秒（MilliSecond）の値に返す静的メソッドです。">
+        <Syntax text="Date.UTC(nYear, nMonth, nDay[, nHours[, nMinutes[, nSeconds[,nMillisecond]]]])">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments>
+            <Argument name="nDay" type="Number" in="false" out="false" option="false" variable="false" description="1から31の間の日付の値を設定します。" />
+            <Argument name="nHours" type="Number" in="false" out="false" option="false" variable="false" description="0から23までの時（Hour）を設定します。&#xA;&#xA;0は子夜、23は午後11時を意味します。" />
+            <Argument name="nMillisecond" type="Number" in="false" out="false" option="false" variable="false" description="0から999の間のミリ秒（MilliSecond）を設定します。" />
+            <Argument name="nMinutes" type="Number" in="false" out="false" option="false" variable="false" description="0から59の間の分（Minute）を設定します。" />
+            <Argument name="nMonth" type="Number" in="false" out="false" option="false" variable="false" description="0（1月）から11（12月）の間の月（Month）のコード値を設定します。" />
+            <Argument name="nSeconds" type="Number" in="false" out="false" option="false" variable="false" description="0から59の間の秒（Second）を設定します。" />
+            <Argument name="nYear" type="Number" in="false" out="false" option="false" variable="false" description="4桁の年（Year）の値を設定します。&#xA;&#xA;0から99までの値を入力した場合、1900を加えた値で処理されます。" />
+          </Arguments>
+        </Syntax>
+      </Method>
+      <Method name="valueOf" group="" async="false" usecontextmenu="false" deprecated="false" unused="false" requirement="IE8,IE9,IE10,IE11,Chrome,Safari,Firefox,Opera,Windows nexacro Browser,macOS nexacro Browser,Android nexacro Browser,iOS nexacro Browser,Android Default Web Browser,iOS Default Web Browser" description="Dateオブジェクトに保存された元値を返すメソッドです。">
+        <Syntax text="Date.valueOf()">
+          <Return type="Number" description="1970年1月1日0時からDateオブジェクトに保存された値までの時間をミリ秒（MilliSecond）の値に返します。" />
+          <Arguments />
+        </Syntax>
+      </Method>
+    </MethodInfo>
+    <EventHandlerInfo />
+  </Object>
+</MetaInfo>
